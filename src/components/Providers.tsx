@@ -10,12 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import Link from "next/link";
-import {
-  AnimatePresence,
-  MotionConfig,
-  motion,
-  useReducedMotion,
-} from "motion/react";
+import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { usePathname } from "next/navigation";
 import { games, genres, mechanics, recipes } from "@/lib/knowledge";
 
@@ -112,7 +107,14 @@ export function AppProviders({ children }: { children: ReactNode }) {
     [toast, setToast] = useState("");
   const [preference, setPreference] = useState<MotionPreference>("auto");
   const [hardwareLimited, setHardwareLimited] = useState(false);
-  const reduced = useReducedMotion();
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
   const effects =
     preference === "full"
       ? !reduced
