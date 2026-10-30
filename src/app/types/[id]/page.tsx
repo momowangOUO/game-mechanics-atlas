@@ -39,7 +39,7 @@ export default async function TypePage({
       </PageHead>
       <div className="two-col">
         <aside>
-          <Assistant message="类型名可以帮助检索，却不能替代机制证据。先看看它到底由哪些规则组成。" />
+          <Assistant message="先查看这个类型的机制组成，再到游戏案例中核对具体规则和适用范围。类型标签本身不能作为机制证据。" />
         </aside>
         <article>
           <div className="paper">
@@ -73,7 +73,7 @@ export default async function TypePage({
                 </div>
               ) : (
                 <p className="scope-box">
-                  本批词表尚未提供可靠的必要组成门槛；空列表不表示所有游戏都自动符合。
+                  此列表暂无条目。核心组成未列出时，不能据此认定所有游戏都符合该类型。
                 </p>
               )}
             </section>
@@ -97,10 +97,10 @@ export default async function TypePage({
       {relatedGames.length > 0 && (
         <>
           <div className="section-head">
-            <h2>本批研究中的类型参照</h2>
+            <h2>收录案例中的类型参照</h2>
           </div>
           <p className="catalog-note">
-            类型标签为编辑检索归纳；真实机制请回读对应案例和范围。
+            类型标签由本站编辑整理，用于检索；具体机制以案例中的证据和适用范围为准。
           </p>
           <div className="case-grid">
             {relatedGames.slice(0, 6).map((game) => (

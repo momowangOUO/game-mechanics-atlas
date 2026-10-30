@@ -76,7 +76,7 @@ const MechanicNode = memo(function MechanicNode({
       </span>
       <DimensionIcon id={getMechanic(id)!.dimension} />
       <strong>{data.label}</strong>
-      <span className="node-detail">点选查看档案 →</span>
+      <span className="node-detail">点选查看详情 →</span>
       <Handle type="source" position={Position.Right} isConnectable={false} />
     </div>
   );
@@ -286,7 +286,7 @@ export default function AtlasGraph({
       <PageHead
         eyebrow="RELATION ATLAS / 分类独立，关系相连"
         title="顺着关系，找到下一份档案。"
-        description="点选机制、追踪邻接关系与样本共现。关系是独立的编辑实体，不会改变机制所属维度。"
+        description="点选机制，查看相关规则、共同出现的游戏案例与编辑分析。关系另行记录，机制所属维度保持不变。"
       >
         <span className="chip">
           {mechanics.length} 节点 / {relationships.length} 条编辑关系
@@ -443,7 +443,7 @@ export default function AtlasGraph({
             条关系。
           </p>
           <div className="scope-box">
-            图谱关系为平台编辑分析，具体成立情境见所选节点档案。游戏范围仅显示正面或条件实例；未确认机制不被补成不存在。无已建模关系的节点可以独立出现。
+            连线表示编辑分析，成立条件见机制档案。游戏范围只显示“已确认存在”和“条件成立”的机制，未确认项保持未知。尚无关系记录的节点会单独显示。
           </div>
         </section>
         <aside className="graph-inspector">
@@ -491,7 +491,7 @@ export default function AtlasGraph({
               {panel === "combinations" && (
                 <>
                   <p className="filter-note">
-                    以下为同一兼容范围的收录样本共现，不是搜索热度。
+                    以下统计收录游戏中，在同一兼容范围内共同出现的机制。搜索次数请到热度观察查看。
                   </p>
                   {cooccurrences.length ? (
                     cooccurrences.map(({ mechanic, supply }) => (

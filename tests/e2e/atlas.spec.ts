@@ -37,7 +37,7 @@ test("global search opens by keyboard, handles empty results and navigates", asy
   await expect(dialog).toBeVisible();
   const input = dialog.getByRole("textbox", { name: "搜索全部档案" });
   await input.fill("no-such-archive-987");
-  await expect(dialog.getByText("还没有这份档案")).toBeVisible();
+  await expect(dialog.getByText("没有找到匹配的档案")).toBeVisible();
   await input.fill("Balatro");
   await dialog.getByRole("link").filter({ hasText: "Balatro" }).first().click();
   await expect(page).toHaveURL(/\/games\/balatro$/);
@@ -176,11 +176,16 @@ test("search import is atomic and preserves synthetic origin", async ({
   await visit(page, "/heat");
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
+  await dialog.getByLabel("JSON 内容").fill('{"schemaVersion":1,"records":[}');
+  await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  await expect(dialog.getByRole("alert")).toContainText("JSON 语法不正确");
   await dialog
     .getByLabel("JSON 内容")
     .fill('{"schemaVersion":1,"records":[{"id":"bad"}]}');
   await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
-  await expect(dialog.getByRole("alert")).toContainText("整批未导入");
+  await expect(dialog.getByRole("alert")).toContainText(
+    "导入失败，原有数据保持不变",
+  );
   const record = {
     id: "test-1",
     datasetId: "local-test",

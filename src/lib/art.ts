@@ -10,21 +10,21 @@ export type MaidState =
 export const maidStates: Record<MaidState, { src: string; label: string }> = {
   welcome: {
     src: "/art/maid-welcome.webp",
-    label: "RIN伸手欢迎，手持研究档案",
+    label: "RIN 伸手欢迎，手持研究档案",
   },
-  explain: { src: "/art/maid-explain.webp", label: "RIN拿着铅笔讲解研究档案" },
-  think: { src: "/art/maid-think.webp", label: "RIN翻开笔记，托腮思考" },
+  explain: { src: "/art/maid-explain.webp", label: "RIN 拿着铅笔讲解研究档案" },
+  think: { src: "/art/maid-think.webp", label: "RIN 翻开笔记，托腮思考" },
   surprise: {
     src: "/art/maid-surprise.webp",
-    label: "RIN举起机制卡，发现新线索",
+    label: "RIN 举起机制卡，发现新线索",
   },
   conflict: {
     src: "/art/maid-conflict.webp",
-    label: "RIN举起手指，提醒机制边界",
+    label: "RIN 举起手指，提醒机制边界",
   },
   complete: {
     src: "/art/maid-complete.webp",
-    label: "RIN微笑举起整理好的研究报告",
+    label: "RIN 微笑举起整理好的研究报告",
   },
 };
 export const chapters = [
@@ -39,28 +39,28 @@ export const chapters = [
     id: "games",
     href: "/games",
     name: "游戏案例",
-    subtitle: "从真实游戏里拆解好玩",
+    subtitle: "对照游戏案例，理解规则与选择",
     number: "02",
   },
   {
     id: "graph",
     href: "/graph",
     name: "机制图谱",
-    subtitle: "沿着关系，发现下一条线索",
+    subtitle: "查看机制之间的联系",
     number: "03",
   },
   {
     id: "heat",
     href: "/heat",
     name: "热度观察",
-    subtitle: "玩家在搜什么，供给有多少",
+    subtitle: "比较搜索需求与收录样本",
     number: "04",
   },
   {
     id: "lab",
     href: "/lab",
     name: "混合实验室",
-    subtitle: "把机制放上桌，试一组新组合",
+    subtitle: "组合机制，提出设计假设",
     number: "05",
   },
 ] as const;

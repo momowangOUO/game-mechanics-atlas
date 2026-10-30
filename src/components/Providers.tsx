@@ -245,7 +245,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
             </div>
             <p className="search-help">
               {normalized
-                ? "匹配当前知识库；未找到的内容不会自动补全。"
+                ? "按名称、ID 或已有说明匹配，结果来自当前知识库。"
                 : "试着搜索：卡组、Balatro、重开、撤离。"}
               <span aria-live="polite">{results.length} 项</span>
             </p>
@@ -272,7 +272,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
               ) : (
                 <div className="empty-state">
                   <span aria-hidden="true">◇</span>
-                  <h3>还没有这份档案</h3>
+                  <h3>没有找到匹配的档案</h3>
                   <p>换一个关键词试试，也可从九个分类维度浏览。</p>
                   <Link
                     href="/mechanics"

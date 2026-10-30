@@ -73,7 +73,7 @@ export function Header() {
       <div className="statusline">
         <span>
           <i className="led" />
-          資料室 OPEN　/　研究入口已连接
+          資料室 OPEN　/　欢迎查阅研究档案
         </span>
         <span>
           {mechanics.length} MECHANICS　·　{games.length} CASE STUDIES　·　9

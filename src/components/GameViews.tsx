@@ -14,7 +14,7 @@ import {
   relationships,
   scopes,
 } from "@/lib/knowledge";
-import { EmptyState, LoopDiagram, StateBadge, Window } from "./Primitives";
+import { EmptyState, LoopDiagram, StateBadge, stateLabels, Window } from "./Primitives";
 import { HeatProfileMini } from "./HeatCharts";
 
 type GameView = "mechanics" | "loop" | "relations" | "heat";
@@ -98,7 +98,7 @@ export default function GameViews({ game }: { game: Game }) {
             </option>
           ))}
         </select>
-        <span className="tiny muted">范围变更，不会改写机制分类</span>
+        <span className="tiny muted">切换范围可查看对应的机制记录</span>
       </div>
       <AnimatePresence mode="wait" initial={false}>
         <motion.section
@@ -115,7 +115,7 @@ export default function GameViews({ game }: { game: Game }) {
             <>
               <p className="scope-notice">
                 {currentScope.label}
-                ：下列观察仅对标注范围成立。缺少记录不等于不存在；条件需要连同原说明一起阅读。
+                ：下列观察仅适用于标注范围。未收录的机制保持未知；“条件成立”需连同条件说明阅读。
               </p>
               {observations.length ? (
                 <div className="observation-cards">
@@ -152,7 +152,7 @@ export default function GameViews({ game }: { game: Game }) {
               ) : (
                 <EmptyState
                   title="这个范围尚无足够观察"
-                  description="范围已经建立，机制状态仍保留未知。不会借用其他模式的事实补齐。"
+                  description="这个范围尚未收录足够资料，机制状态保留为未知。可切换范围查看已有记录。"
                 />
               )}
               <div className="state-legend">
@@ -239,7 +239,7 @@ export default function GameViews({ game }: { game: Game }) {
               ) : (
                 <EmptyState
                   title="此模式的完整循环尚未整理"
-                  description="默认范围的流程没有被直接复制到这里，以免混合不同模式。"
+                  description="目前仅整理了默认范围的循环，可返回查看。"
                 >
                   <button
                     className="button primary"
@@ -254,7 +254,7 @@ export default function GameViews({ game }: { game: Game }) {
           {view === "relations" && (
             <Window title="RELATION VIEW / 当前范围的机制与编辑关系">
               <p className="scope-notice">
-                仅显示当前范围已确认或条件成立的节点。关系为带情境的编辑分析，不代表所有玩法细则已核验。
+                仅显示当前范围中“已确认存在”或“条件成立”的机制。连线来自编辑分析，需连同具体情境阅读，相关玩法细则尚未全部核验。
               </p>
               {positive.length ? (
                 <>
@@ -318,7 +318,7 @@ export default function GameViews({ game }: { game: Game }) {
                             fill="#a698b5"
                             fontSize="9"
                           >
-                            {dimension.name} / {position.observation.status}
+                            {dimension.name} / {stateLabels[position.observation.status]}
                           </text>
                         </Link>
                       );
@@ -339,7 +339,7 @@ export default function GameViews({ game }: { game: Game }) {
                     </ul>
                   ) : (
                     <p className="evidence-note">
-                      这些节点之间尚未收录可用于此图的关系说明，因此没有自动补上连线。
+                      这些机制之间尚未收录关系说明，图中暂不连线。
                     </p>
                   )}
                   <Link className="button" href={`/graph?game=${game.id}`}>
@@ -348,8 +348,8 @@ export default function GameViews({ game }: { game: Game }) {
                 </>
               ) : (
                 <EmptyState
-                  title="当前范围没有可展示的正面实例"
-                  description="可以切换到已有观察的范围，或回到机制视图查看否定与未知状态。"
+                  title="当前范围暂无可展示的机制"
+                  description="这里展示已确认存在或条件成立的机制。可切换范围，或返回机制视图查看全部记录状态。"
                 />
               )}
             </Window>
@@ -357,7 +357,7 @@ export default function GameViews({ game }: { game: Game }) {
           {view === "heat" && (
             <Window title="SEARCH CONTEXT / 搜索关注的研究口径">
               <p className="scope-notice">
-                游戏搜索可以作为相关类型与机制的代理信号，但不能证明玩家正是因为某一机制而搜索这款游戏。
+                游戏名称的搜索可作为相关类型与机制的间接线索，但无法确认玩家具体关注哪项机制。
               </p>
               <div className="type-chips">
                 {game.genreIds.map((id) => (
@@ -371,7 +371,7 @@ export default function GameViews({ game }: { game: Game }) {
                 ))}
               </div>
               <div className="signal warn">
-                站点初版的搜索数据是合成示例。搜索次数不是独立人数，收录游戏数量也不是热度。
+                默认搜索数据为合成示例。导入后的来源见下方标签。搜索次数不等于独立人数，游戏收录数量也不代表搜索热度。
               </div>
               <HeatProfileMini topicId={`game:${game.id}`} />
             </Window>

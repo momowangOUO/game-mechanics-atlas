@@ -10,19 +10,19 @@ import { chapters, chapterArt, type MaidState } from "@/lib/art";
 const messages: { state: MaidState; text: string }[] = [
   {
     state: "welcome",
-    text: "欢迎回来。档案已经整理好了，今天想从哪一种“好玩”开始研究？",
+    text: "欢迎来到研究室，我是 RIN。想从哪款游戏开始？我们可以一起看看它的规则。",
   },
   {
     state: "explain",
-    text: "先挑一个熟悉的游戏吧。把它拆成几条规则，更容易看清每个选择的来由。",
+    text: "先挑一款熟悉的游戏吧。我会陪你看它的核心循环，再找出影响玩家选择的规则。",
   },
   {
     state: "think",
-    text: "两个机制放在一起，会改变玩家的哪次决策？把它们带到实验桌上试试。",
+    text: "想试试机制组合吗？选一个核心，再加一项配合机制，看看玩家的选择会怎样变化。",
   },
   {
     state: "surprise",
-    text: "也可以沿着图谱找线索。有关联的机制，往往值得放在一起比较。",
+    text: "图谱里还有机制之间的关系。点开一个感兴趣的节点，我陪你看看相关的游戏案例。",
   },
 ];
 export default function HomeStage() {
@@ -76,7 +76,7 @@ export default function HomeStage() {
           <p className="vn-description">
             从一条规则到一组机制。
             <br />
-            这里收集那些让游戏变得好玩的秘密。
+            查机制、看案例，为下一次原型找思路。
           </p>
           <form
             className="search-window vn-search"

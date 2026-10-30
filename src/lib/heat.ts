@@ -34,7 +34,7 @@ const recordSchema=z.object({
   const weights=new Map<TopicKind,number>(),seen=new Set<string>();
   record.attributions.forEach((attribution,index)=>{
     const topic=topicById.get(attribution.topicId);
-    if(!topic) ctx.addIssue({code:'custom',path:['attributions',index,'topicId'],message:'未知主题 ID；不会按相似字符串猜测归因。'});
+    if(!topic) ctx.addIssue({code:'custom',path:['attributions',index,'topicId'],message:'主题 ID 未收录。请使用主题列表中的 ID，系统不会按名称相似度自动归因。'});
     if(seen.has(attribution.topicId)) ctx.addIssue({code:'custom',path:['attributions',index,'topicId'],message:'同一记录不能重复列出同一主题。'});
     seen.add(attribution.topicId);
     if(topic) weights.set(topic.kind,(weights.get(topic.kind)??0)+attribution.weight);
@@ -53,12 +53,12 @@ export const SearchImportSchema=z.object({schemaVersion:z.literal(1),records:z.a
   value.records.forEach((record,index)=>{
     if(ids.has(record.id)) ctx.addIssue({code:'custom',path:['records',index,'id'],message:`重复记录 ID：${record.id}。整批未导入。`});
     ids.add(record.id);
-    if(datasetSources.has(record.datasetId)&&datasetSources.get(record.datasetId)!==record.sourceKind) ctx.addIssue({code:'custom',path:['records',index,'sourceKind'],message:'同一数据集的来源类别不一致；合成与其他来源必须使用不同数据集 ID。'});
+    if(datasetSources.has(record.datasetId)&&datasetSources.get(record.datasetId)!==record.sourceKind) ctx.addIssue({code:'custom',path:['records',index,'sourceKind'],message:'同一数据集中的来源类别必须一致。请为不同来源使用不同的数据集 ID，包括合成数据。'});
     datasetSources.set(record.datasetId,record.sourceKind);
     const ruleKey=JSON.stringify([record.datasetId,record.sourceKind,record.region,record.language,normalizeQuery(record.query)]);
     const signature=JSON.stringify([...record.attributions].sort((a,b)=>a.topicId.localeCompare(b.topicId)).map(({topicId,weight,mode})=>[topicId,weight,mode]));
     const previousRule=attributionRules.get(ruleKey);
-    if(previousRule!==undefined&&previousRule!==signature) ctx.addIssue({code:'custom',path:['records',index,'attributions'],message:`搜索词「${normalizeQuery(record.query)}」的归因口径发生变化。请将历史记录按同一规则重新归因，或用独立数据集保存不同口径；不能直接比较为搜索增长。`});
+    if(previousRule!==undefined&&previousRule!==signature) ctx.addIssue({code:'custom',path:['records',index,'attributions'],message:`搜索词「${normalizeQuery(record.query)}」的归因规则不一致。请按同一规则重新归因历史记录，或用独立数据集保存不同口径；归因变化不能直接解释为搜索增长。`});
     else attributionRules.set(ruleKey,signature);
   });
 });
@@ -67,14 +67,34 @@ export function normalizeQuery(query:string):string {
   const normalized=query.normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
   return Object.hasOwn(queryAliases,normalized)?queryAliases[normalized]:normalized;
 }
+function importIssueText(issue:z.core.$ZodIssue):string {
+  if(issue.code==='custom') return issue.message;
+  if(issue.code==='invalid_type') {
+    const types:Record<string,string>={string:'文本',number:'数值',int:'整数',array:'数组',object:'对象',boolean:'布尔值'};
+    return `此字段应为${types[issue.expected]??'规定的数据类型'}，请检查是否漏填或填写了其他类型。`;
+  }
+  if(issue.code==='invalid_value') return `请使用允许的取值：${issue.values.map(String).join('、')}。`;
+  if(issue.code==='unrecognized_keys') return `包含不支持的字段：${issue.keys.join('、')}。`;
+  if(issue.code==='too_small'||issue.code==='too_big') {
+    const minimum=issue.code==='too_small';
+    const limit=minimum?issue.minimum:issue.maximum;
+    if(issue.origin==='string'||issue.origin==='array') {
+      const unit=issue.origin==='string'?'个字符':'项';
+      return `${issue.origin==='string'?'内容长度':'数组长度'}${minimum?'至少':'最多'}为 ${limit} ${unit}。`;
+    }
+    return `数值${minimum?(issue.inclusive?'不得小于':'必须大于'):(issue.inclusive?'不得大于':'必须小于')} ${limit}。`;
+  }
+  if(issue.code==='invalid_format') return '内容格式不正确，请按示例填写。';
+  return issue.message;
+}
 export function validateSearchImport(value:unknown):{success:true;stats:SearchQueryStat[];errors:[]}|{success:false;errors:string[]} {
   const parsed=SearchImportSchema.safeParse(value);
-  if(!parsed.success) return {success:false,errors:parsed.error.issues.map(issue=>`${issue.path.join('.')||'导入文件'}：${issue.message}`)};
+  if(!parsed.success) return {success:false,errors:parsed.error.issues.map(issue=>`${issue.path.join('.')||'导入文件'}：${importIssueText(issue)}`)};
   return {success:true,stats:parsed.data.records.map(record=>({...record,query:normalizeQuery(record.query)})),errors:[]};
 }
 
 export function scoreHeat(demand:number,max:number,supply:number):Pick<TopicHeatProfile,'demandIndex'|'blue'|'red'|'scoreStatus'> {
-  if(!Number.isFinite(demand)||!Number.isFinite(max)||demand<0||max<demand||max>Number.MAX_SAFE_INTEGER||!Number.isSafeInteger(supply)||supply<0) throw new Error('需求、比较组最大值和样本供给必须为有效的非负数。');
+  if(!Number.isFinite(demand)||!Number.isFinite(max)||demand<0||max<demand||max>Number.MAX_SAFE_INTEGER||!Number.isSafeInteger(supply)||supply<0) throw new Error('需求量和比较组最大值必须为有限非负数，最大值不得小于需求量或超过安全数值上限；样本供给必须为非负安全整数。');
   if(max===0) return {demandIndex:null,blue:null,red:null,scoreStatus:'no_data'};
   const d=Math.sqrt(demand/max),c=supply/(supply+SMOOTHING_K),demandIndex=100*d;
   if(demand===0) return {demandIndex,blue:null,red:supply>0?100*c:null,scoreStatus:'no_demand'};
@@ -113,7 +133,7 @@ export function analyzeHeat(stats:SearchQueryStat[],options:HeatOptions={}):Heat
   if(!validated.success) throw new Error(validated.errors.join('\n'));
   const days=options.days??30;
   if(![7,30,90].includes(days)) throw new Error('时间区间只能选择 7、30 或 90 天。');
-  if(options.kind!==undefined&&!topicKinds.includes(options.kind)) throw new Error('未知主题种类。');
+  if(options.kind!==undefined&&!topicKinds.includes(options.kind)) throw new Error('主题种类无效，请选择游戏类别、原子机制、机制组合或具体游戏。');
   const filtered=validated.stats.filter(row=>!options.region||row.region===options.region);
   const dateEnd=options.endDate??(filtered.reduce((last,row)=>row.date>last?row.date:last,'')||SEED_END_DATE);
   if(!validDate(dateEnd)) throw new Error('结束日期不是合法日历日期。');
@@ -156,11 +176,11 @@ export function analyzeHeat(stats:SearchQueryStat[],options:HeatOptions={}):Heat
     };
   }).sort((a,b)=>b.demand-a.demand||a.topicId.localeCompare(b.topicId));
   const sourceKinds=[...new Set(selected.map(row=>row.sourceKind))].sort();
-  const warnings=['供给仅表示收录样本，类型供给按编辑标签统计；缺少标签不等于该类型不存在。','搜索次数不是玩家人数或购买意愿；蓝海与红海分是研究启发式，不能相加解释为概率。','时间序列保留日期记录覆盖，缺失记录不视为实测零值；趋势要求两期逐日可比。'];
-  if(sourceKinds.includes('synthetic')) warnings.unshift('包含合成示例搜索数据；演示趋势和排序不代表当前真实市场。');
-  if(sourceKinds.includes('import')) warnings.push('import 仅说明数据来自导入；真实性与采样口径仍需核验。');
-  if(sourceKinds.length>1) warnings.push('当前包含多种来源，指数使用同一来源集合汇总比较；请分开数据集核验，不把混合结果当作单一真实市场。');
-  if(selected.length===0) warnings.push('所选范围没有搜索记录；默认空数据日期为固定示例日期。');
+  const warnings=['供给仅统计本站收录样本，类型供给按编辑标签统计；缺少标签不能证明游戏不属于该类型。','搜索次数不代表玩家人数或购买意愿；蓝海与红海线索分仅供研究参考，两者不能相加解释为概率。','时间序列保留每日记录的覆盖情况，缺失记录不视为实测零值；计算趋势需要两期逐日可比。'];
+  if(sourceKinds.includes('synthetic')) warnings.unshift('当前范围包含合成搜索数据，示例趋势和排序不代表真实市场。');
+  if(sourceKinds.includes('import')) warnings.push('来源标记 import 只表示数据由外部导入，真实性与采样口径仍需核验。');
+  if(sourceKinds.length>1) warnings.push('当前范围包含多种来源，指数按同一来源集合汇总比较。请分别核验各数据集，不能将混合结果直接视为某个真实市场的表现。');
+  if(selected.length===0) warnings.push('所选范围没有搜索记录。数据为空且未指定结束日期时，使用固定的示例日期。');
   return {profiles:profiles.filter(profile=>!options.kind||profile.kind===options.kind),series,totalSearches,dateStart,dateEnd,sourceKinds,
     seedOnly:sourceKinds.length===1&&sourceKinds[0]==='synthetic',formulaVersion:FORMULA_VERSION,warnings};
 }

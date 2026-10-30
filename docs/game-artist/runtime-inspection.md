@@ -1,4 +1,6 @@
-# 当前生产构建画面检查
+# 美术升级阶段的画面检查
+
+以下保留上一阶段的构建与 WebM 播放记录。文案更新后的当前构建、MP4 和画面检查见[文案验收](../copy-review/summary.md)与[画面检查](../copy-review/render-inspection.md)。
 
 构建：`B-I5tisGVcsFNEMsVk7-Q`。环境为本机 Edge 无头浏览器，手机使用桌面浏览器模拟视口。目标图与运行截图文件、摘要不同；本次未修改目标来适配运行结果。
 

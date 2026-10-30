@@ -571,6 +571,24 @@
 .section-head h2 {
   color: #efe0be;
 }
+.home-opportunity-strip > div {
+  min-width: 0;
+}
+.home-opportunity-strip > div:last-child {
+  min-width: 0;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+.home-opportunity-strip .filter-note {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 701px) and (max-width: 1050px) {
+  .home-opportunity-strip {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+}
 .three-col {
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
   align-items: start;

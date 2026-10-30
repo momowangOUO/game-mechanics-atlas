@@ -15,12 +15,12 @@
 
 ## 固定九维
 
-一个原子机制只有一个 `dimension`。跨维关联通过 `requires`、`modifies`、`feeds` 等关系表达，不重复建立同义条目。维度按它直接改变的规则对象分配；不是按界面出现在哪一页分配。
+一个原子机制只有一个 `dimension`。跨维度的关联通过 `requires`、`modifies`、`feeds` 等关系表达，不重复建立同义条目。维度按它直接改变的规则对象分配；不是按界面出现在哪一页分配。
 
 | dimension | 中文展示名 | 直接回答的问题 | 边界 |
 | --- | --- | --- | --- |
 | interaction | 操作与交互 | 玩家怎样对角色、物体或空间发出动作？ | 移动、瞄准、旋转、拖放。伤害结算不在此维。 |
-| rules | 规则、目标与挑战 | 状态在什么条件下如何改变，怎样判定结果？ | 伤害、连锁、阈值与规则修饰。尝试重建另归 temporal，死亡状态的不可恢复另归 progression。 |
+| rules | 规则、目标与挑战 | 状态在什么条件下如何改变，怎样判定结果？ | 伤害、连锁、阈值与规则修饰。结束后重新建立尝试另归 temporal，死亡后不可恢复的状态另归 progression。 |
 | temporal | 时间、流程与重置 | 行动按什么顺序、时限和流程推进，何时重建尝试？ | 回合、实时、冷却、暂停与重开。难度随状态变化不自动等于计时。 |
 | buildcraft | 能力配置与构筑 | 玩家怎样组合、修改和安排可用能力？ | 卡组、装备、布局与成长重配。材料向产出的转化另归 economy，规则变化本身另归 rules。 |
 | progression | 状态持久性与成长 | 哪些状态、能力或权限随进度变化、保留或不可恢复地丢失？ | 等级、跨局强化、路线解锁与角色永久死亡。重新分配成长选项另归 buildcraft。 |
@@ -77,7 +77,7 @@
 
 | ID | 名称 | 最小判定与排除项 |
 | --- | --- | --- |
-| in-run-deck-growth | 局内扩充卡组 | 当前尝试中获得并纳入可使用卡组；排除只在局外收藏。 |
+| in-run-deck-growth | 局内扩充卡组 | 在当前尝试中获得新卡，并纳入可使用卡组；排除只在局外收藏。 |
 | loadout-selection | 出战配置 | 开始遭遇前选择携带能力/物品；不要求稀有度。 |
 | spatial-loadout | 空间装备配置 | 构筑对象占用空间，位置或形状影响合法配置/效果；不是单纯列表排序。 |
 | adjacency-synergy | 邻接增益 | 构筑对象的邻接关系改变效果；需要逐项证据，不能从背包题材推断。 |
@@ -135,7 +135,7 @@
 | synchronous-session | 同步会话 | 多位玩家在同一时间窗口共同影响当前对局；不限实时操作。 |
 | team-roles | 团队分工 | 规则或能力为团队提供有区别的职责；选不同外观不计。 |
 | controllable-party | 可控队伍 | 单位控制权覆盖多个成员，并允许分别分配行动。 |
-| leaderboard-comparison | 榜单比较 | 通过统一成绩比较参与者；不等同直接 PvP。 |
+| leaderboard-comparison | 榜单比较 | 按统一的成绩标准比较参与者；不等同直接 PvP。 |
 
 ### variability：变化与随机（8）
 
@@ -146,22 +146,22 @@
 | dice-roll | 掷骰取样 | 掷骰结果参与状态决定；实际骰面概率需另核验。 |
 | generated-layout | 布局生成 | 系统生成关卡布局；排除只随机挑选完整手工场景。 |
 | randomized-encounters | 遭遇变化 | 抽取或变换敌人/事件集合；不要求几何变化。 |
-| seeded-replay | 种子重现 | 给定种子可重现规定范围的随机过程；跨版本一致性不默认。 |
+| seeded-replay | 种子重现 | 给定种子可重现规定范围的随机过程；不默认跨版本也能保持一致。 |
 | random-loot | 随机战利品 | 奖励对象由随机过程决定；随机属性与随机类别可分别扩展。 |
-| variable-start | 变化起始条件 | 起局时关键条件发生变化；玩家主动选职业不自动等于随机。 |
+| variable-start | 变化起始条件 | 开局时关键条件发生变化；玩家主动选职业不自动等于随机。 |
 
 ## 易混条目的判定
 
 - **自动攻击、自动战斗与放置不同。** 自动攻击只描述攻击触发方式；自动战斗还包含执行阶段的自动结算；放置强调玩家暂不输入时仍有有效进展。可关联，不能彼此替代。
-- **卡牌载体、卡组构筑与牌组随机抽取不同。** 有卡牌不保证可改组；可构筑不保证局内构筑；局内构筑也不保证随机抽牌。Balatro、Slay the Spire、Inscryption 应分别保留证据。
+- **卡牌载体、卡组构筑与牌组随机抽取不同。** 有卡牌不保证能修改卡组；能构筑不保证能在局内构筑；局内构筑也不保证随机抽牌。Balatro、Slay the Spire、Inscryption 应分别保留证据。
 - **单局重开与永久死亡不同。** 写清重置的是当前局面、角色还是存档；Dead Cells 的跨局解锁不应被“永久死亡”一词抹掉。
-- **随机关卡与随机选关不同。** Risk of Rain 2 官方既描述手工场景，也描述场景/敌人/物品变化。可记录内容抽取，不据此断言所有几何程序生成。
+- **随机关卡与随机选关不同。** Risk of Rain 2 官方既描述手工场景，也描述场景/敌人/物品变化。可记录内容抽取，但不能据此断言所有空间布局都由程序生成。
 - **背包空间与道具邻接不同。** Backpack Battles 商店明确位置重要，但每件物品的邻接规则仍需单独取证。
-- **建造与配方不同。** 基地设施投资和材料向产出的配方转化记录 economy；空间与能力配置记录 buildcraft。一个操作可涉及多个机制，但原子条目不复制。
-- **路线分支归 temporal。** 当前定义直接改变流程路径；节点点击可关联 interaction，能力解锁带来的持久可达性另记 progression，路径随机生成另归 variability。
-- **资源共享归 economy。** 当前定义直接改变共享余额及支取影响；参与者的使用权限可单独关联，但不改变资源机制的主维度。
+- **建造与配方不同。** 基地设施投资、材料按配方转化为产出，记入 economy；空间与能力配置记入 buildcraft。一个操作可涉及多个机制，但原子条目不复制。
+- **路线分支归 temporal。** 当前定义直接改变流程路径；节点点击可关联 interaction；解锁能力后长期获得新区域的通行权限，另记 progression；路径的随机生成另归 variability。
+- **资源共享归 economy。** 当前定义直接描述共享余额及支取对余额的影响；参与者的使用权限可单独关联，但不改变资源机制的主维度。
 
-本轮研究稿复核以“直接改变什么对象或过程”为主，不保留每维相同数量的配额：`run-reset → temporal`、`route-branching → temporal`、`rule-modifier → rules`、`recipe-crafting → economy`、`respec → buildcraft`、`shared-resource-pool → economy`、`permadeath → progression`。这些修订发生在正式数据库建立之前；后续运行页面须引用同一机制身份与定义版本。
+本轮按“直接改变什么对象或过程”复核研究稿，不要求各维度的条目数量相同：`run-reset → temporal`、`route-branching → temporal`、`rule-modifier → rules`、`recipe-crafting → economy`、`respec → buildcraft`、`shared-resource-pool → economy`、`permadeath → progression`。这些修订发生在正式数据库建立之前；后续页面运行时须引用相同的机制ID与定义版本。
 - **MOBA 风格不是 MOBA 规则证明。** 梦之形官方使用这一风格描述，已核验的是动作构筑与合作，未据此添加推塔、兵线、PvP或补刀机制。
 
 ## 五种实例状态
@@ -174,9 +174,9 @@
 | unknown | 证据不足、未核验或来源冲突 | 保留未知原因和下一步证据需求；默认未填项为此状态。 |
 | conditional | 仅在明确条件下成立 | 写出模式、选项、版本、角色或事件条件及对应来源。 |
 
-本批 `game-evidence.json` 没有为了凑齐状态示例给真实游戏添加否定。唯一 `absent` 是官方明确无限资源的 Minecraft 创造模式中的基础建造资源稀缺，范围不能扩大到自定义服务器。未使用 `not_applicable`；还没有足以支持其前提否定的必要实例。Backpack Battles 的大厅计时、Cult of the Lamb 的特殊永久死亡挑战等采用 `conditional`。
+本批 `game-evidence.json` 没有为了凑齐状态示例给真实游戏添加否定。唯一 `absent` 是官方明确无限资源的 Minecraft 创造模式中的基础建造资源稀缺，范围不能扩大到自定义服务器。未使用 `not_applicable`；尚无实例具备足够证据，能确认该机制所需的前提不成立。Backpack Battles 的大厅计时、Cult of the Lamb 的特殊永久死亡挑战等采用 `conditional`。
 
-建议最小实例字段：`gameSlug`、`mechanicId`、`status`、`scope`、`sourceRefs`、`verifiedAt`、`note`。`scope` 后续可结构化为平台、模式、版本、设置、章节和角色；未知版本不要伪装成精确版本号。来源另加 `evidenceType`（官方规则/官方宣传/本机观察/开发者访谈）以防把宣传当成实测。
+建议最小实例字段：`gameSlug`、`mechanicId`、`status`、`scope`、`sourceRefs`、`verifiedAt`、`note`。`scope` 后续可结构化为平台、模式、版本、设置、章节和角色；未知版本不要伪装成精确版本号。来源另加 `evidenceType`（官方规则/官方宣传/本机观察/开发者访谈），避免将宣传说明当作实际测试结果。
 
 否定查询不应写成“没有这个标签”。筛选“没有机制 X”时只命中相应范围的 `absent`；未知默认显示为“尚未核验”。把 `conditional` 混入 `present` 时，界面必须保留条件。
 
@@ -187,7 +187,7 @@
 | ID / 类型 | 可用于说明的组成 | 边界建议 |
 | --- | --- | --- |
 | roguelite / Roguelite | 单局尝试、重开、内容变化，常伴跨局成长 | 不把跨局数值成长设为全行业必要条件；官方标签与本项目画像并列。 |
-| traditional-roguelike / 传统 Roguelike | 常见回合/网格、复杂状态、重开与随机探索 | “传统”存在争议，不用单项计分硬判真假；记录采用的定义来源。 |
+| traditional-roguelike / 传统 Roguelike | 常见回合/网格、复杂局面、重开与随机探索 | “传统”存在争议，不用单项计分硬判真假；记录采用的定义来源。 |
 | rpg / 角色扮演 | 能力发展、角色配置、任务或身份扮演 | 数值升级单独存在不足以判为 RPG。 |
 | action-rpg / 动作角色扮演 | 直接操作战斗与角色成长/配置 | 自动战斗与动作判定并存时按具体模式说明。 |
 | deckbuilder / 卡组构筑 | 组成可用卡组、获取/移除/修改卡牌、使用卡组 | 卡牌对战不自动有构筑；局内与局外构筑分别说明。 |
@@ -206,15 +206,15 @@
 | 配方 | 原子机制组合 | 预期体验与约束 | 最小验证问题 / 参考切面 |
 | --- | --- | --- | --- |
 | 规则放大计分 | score-threshold + rule-modifier + stacking-effects | 以清楚的目标承载逐步复杂的计分；避免不透明乘区。 | 玩家能否解释一手分数为何变化？参考 Balatro 的牌型与小丑牌。 |
-| 瞄准带动构筑 | aimed-launch + in-run-deck-growth + randomized-encounters | 技术判断与配置互相补充；不能让碰撞不可读。 | 同一构筑是否保留有意义的瞄准差异？参考 Peglin 的弹珠与遗物；“卡组”口径需谨慎。 |
-| 路线与卡组协同 | route-branching + in-run-deck-growth + resource-scarcity | 通过路线决定风险暴露与未来奖励；注意信息量。 | 玩家能否根据构筑解释选路？参考 Slay the Spire；资源类型需另证。 |
+| 瞄准带动构筑 | aimed-launch + in-run-deck-growth + randomized-encounters | 技术判断与配置互相补充；要让玩家看清碰撞过程。 | 同一构筑是否保留有意义的瞄准差异？参考 Peglin 的弹珠与遗物；“卡组”口径需谨慎。 |
+| 路线与卡组协同 | route-branching + in-run-deck-growth + resource-scarcity | 通过选路决定将要面对的风险与奖励；注意信息量。 | 玩家能否根据构筑解释选路？参考 Slay the Spire；资源类型需另证。 |
 | 重试推进关系 | run-reset + persistent-stat-upgrade + relationship-progression | 重试也推进局外内容；避免强迫失败刷对话。 | 失败后是否仍有可理解的新行动？参考 Hades 的逃脱与关系。 |
-| 外出供给营地 | randomized-encounters + resource-gathering + base-construction | 战斗产出喂给经营；避免一边被另一边的杂务拖累。 | 两个循环各有什么输入、产出与暂停点？参考 Cult of the Lamb。 |
-| 布局构筑观战 | spatial-loadout + recipe-crafting + automatic-resolution | 准备是主要决策，战斗承担检验；需要可读反馈。 | 玩家能否从失败定位需要改的布局？参考 Backpack Battles。 |
-| 自建风险路径 | encounter-placement + stacking-effects + base-construction | 玩家配置资源来源，也设置威胁；不能无代价堆收益。 | 增加遭遇是否有清晰的边际风险？参考 Loop Hero；具体叠加需另证。 |
+| 外出供给营地 | randomized-encounters + resource-gathering + base-construction | 战斗所得用于经营；避免一边的杂务拖累另一边的节奏。 | 两个循环各有什么输入、产出与暂停点？参考 Cult of the Lamb。 |
+| 布局构筑观战 | spatial-loadout + recipe-crafting + automatic-resolution | 准备是主要决策，战斗承担检验；需要可读反馈。 | 玩家能否从失败中找出布局需要改的地方？参考 Backpack Battles。 |
+| 自建风险路径 | encounter-placement + stacking-effects + base-construction | 玩家配置资源来源，也设置威胁；不能无代价堆收益。 | 玩家能否看清每次新增遭遇带来的风险？参考 Loop Hero；具体叠加需另证。 |
 | 搜集还是撤离 | resource-gathering + resource-scarcity + extraction-bank | 带出前收益存在风险；失败损失过重可能压制尝试。 | 玩家何时认为继续探索不划算？参考 Escape from Tarkov 的撤离目标；容器/保险例外另证。 |
 | 增长再投资 | production-investment + persistent-unlock + objective-unlock | 用新生产选项维持增长目标；避免只有数字膨胀。 | 每次投入是否带来新的选择，而非纯等待？参考 Cookie Clicker。 |
-| 位置财产竞争 | dice-roll + toll-payment + pvp-opposition | 随机位置与技能干预共同制造局势；防止结果过早锁死。 | 落后者是否仍有合法有效的反制？参考 Game of Dice；概率与反制强度未核验。 |
+| 位置财产竞争 | dice-roll + toll-payment + pvp-opposition | 随机位置与技能干预共同制造局势；避免胜负过早失去悬念。 | 落后者是否仍有规则允许且有效的反制手段？参考 Game of Dice；概率与反制强度未核验。 |
 
 ## 本批证据覆盖与下一步
 
@@ -224,4 +224,4 @@
 
 本轮没有安装游戏、逐条实测、读取所有补丁、核验概率和商业数值，也没有下载图片。商店介绍支持的是能力与一般流程，不能代替详细结算手册。Tarkov 当前商店正文主要是图片，文本证据限于简介与功能；没有推断保险、清档、特殊容器和所有模式的损失规则。Slay the Spire 的能量、敌意图和抽弃牌细则，Vampire Survivors 的自动攻击、武器进化和关卡时长，均保留后续官方详细资料或实际观察需求。
 
-`game-evidence.json` 的 `factNotes` 是短事实归纳；`analysis`、`coreLoop`、`learning` 是设计归纳，不伪装成开发者结论。`mechanicEvidence` 为稀疏实例，只覆盖已取得足够直接说明的切面；没有填充完整的18×72矩阵。
+`game-evidence.json` 的 `factNotes` 是短事实归纳；`analysis`、`coreLoop`、`learning` 是设计归纳，不伪装成开发者结论。`mechanicEvidence` 为稀疏实例，只覆盖已取得足够直接说明的切面；没有填充18款游戏与72个候选机制的完整对应矩阵。

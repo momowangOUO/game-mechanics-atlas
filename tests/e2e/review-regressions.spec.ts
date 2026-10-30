@@ -137,7 +137,7 @@ for (const sourceKind of ["import", "synthetic"] as const) {
     await importDialog
       .getByRole("button", { name: "校验并替换本地数据 →" })
       .click();
-    await expect(importDialog.getByRole("alert")).toContainText("整批未导入");
+    await expect(importDialog.getByRole("alert")).toContainText("导入失败，原有数据保持不变");
     await page.keyboard.press("Escape");
     await expect(total).toHaveText("123");
     expect(await exportRecords()).toEqual({
@@ -218,16 +218,20 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
     .soft(balatro.locator(".seed"))
     .toContainText("包含合成示例", { timeout: 2000 });
   await expect.soft(balatro).toContainText("混合来源", { timeout: 2000 });
-  await expect(balatro.getByText(/请分开数据集核验/)).toBeVisible();
   await expect(
-    balatro.getByText(/不能把混合结果当作单一真实市场/),
+    balatro.getByText(/请分别核验各数据集的范围与真实性/),
+  ).toBeVisible();
+  await expect(
+    balatro.getByText(/不能将混合结果直接视为真实市场的完整表现/),
   ).toBeVisible();
   await expect(
     balatro.getByRole("link", { name: "查看主题与数据来源 →" }),
   ).toBeVisible();
   for (const width of [768, 390]) {
     await page.setViewportSize({ width, height: 900 });
-    await expect(balatro.getByText(/请分开数据集核验/)).toBeVisible();
+    await expect(
+      balatro.getByText(/请分别核验各数据集的范围与真实性/),
+    ).toBeVisible();
     await expect
       .poll(
         () =>
@@ -237,7 +241,9 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
         { message: `Compare at ${width}px` },
       )
       .toBe(0);
-    const bounds = await balatro.getByText(/请分开数据集核验/).boundingBox();
+    const bounds = await balatro
+      .getByText(/请分别核验各数据集的范围与真实性/)
+      .boundingBox();
     expect(bounds!.x).toBeGreaterThanOrEqual(0);
     expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
   }
@@ -253,12 +259,14 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
     .soft(page.locator(".home-opportunity-strip"))
     .toContainText("混合来源", { timeout: 2000 });
   await expect(
-    page.locator(".home-opportunity-strip").getByText(/请分开数据集核验/),
+    page
+      .locator(".home-opportunity-strip")
+      .getByText(/请分别核验各数据集的范围与真实性/),
   ).toBeVisible();
   await expect(
     page
       .locator(".home-opportunity-strip")
-      .getByText(/不能把混合结果当作单一真实市场/),
+      .getByText(/不能将混合结果直接视为真实市场的完整表现/),
   ).toBeVisible();
   await expect(
     page
@@ -292,7 +300,7 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
     }
     const qualification = page
       .locator(".home-opportunity-strip")
-      .getByText(/请分开数据集核验/);
+      .getByText(/请分别核验各数据集的范围与真实性/);
     await expect(qualification).toBeVisible();
     await expect
       .poll(

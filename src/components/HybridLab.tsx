@@ -142,7 +142,7 @@ function PagedItems({
         </ul>
       ) : (
         <p className={styles.note}>
-          {empty ?? "当前收录规则不足以提出具体关系，请通过原型补充判断。"}
+          {empty ?? "已有规则尚不足以说明具体关系，可用原型进一步验证。"}
         </p>
       )}
       <Pager
@@ -407,7 +407,7 @@ export default function HybridLab({
         title="试验一种新组合。"
         description="先选核心机制，再加入配合机制与结构。通过分工、冲突和 Demo 问题，缩小原型验证的范围。"
       >
-        <span className="chip cyan">本地确定性规则 · 无需模型 API</span>
+        <span className="chip cyan">本地规则分析 · 设计假设</span>
       </PageHead>
       {initialNote && (
         <p className={styles.urlNote} role="status">
@@ -530,7 +530,7 @@ export default function HybridLab({
                 </Link>
               </div>
               <p className={`${styles.note} ${styles.coreHelp}`}>
-                核心交互优先列出；也可用任一已收录的原子机制组织实验。
+                可以从任一维度选择核心机制，再围绕它添加配合机制。
               </p>
             </section>
             <div className={styles.selectionSummary}>
@@ -645,7 +645,7 @@ export default function HybridLab({
                 ))}
               </div>
               <p className={styles.note}>
-                以上仅为选择分组；机制维度沿用档案定义。
+                两组方便挑选配料，机制的分类维度仍与档案一致。
               </p>
               <div className={styles.filters}>
                 <label className={styles.field}>
@@ -785,7 +785,7 @@ export default function HybridLab({
                 ))}
               </div>
               <p className={styles.note}>
-                目标会改变分析中的测试问题与建议，不代表真实市场需求。
+                所选目标会影响测试问题与建议；是否满足玩家需求，仍需另行验证。
               </p>
             </section>
             <div className={styles.analyzeSection}>
@@ -827,11 +827,11 @@ export default function HybridLab({
                 ref={resultHeading}
                 className={styles.resultTitle}
               >
-                {result?.title ?? "把想法变成可验证的问题。"}
+                {result?.title ?? "这组机制会怎样配合？"}
               </h2>
               {!result && (
                 <p className={styles.assistantMessage}>
-                  先保留一个核心动作，再逐个加入配料。看看每一项是否改变了玩家的选择。
+                  先确定核心，再逐个加入配料。选好后点“分析当前组合”，我会帮你整理需要验证的关系与问题。
                 </p>
               )}
               {result && (
@@ -844,7 +844,7 @@ export default function HybridLab({
                 </span>
               )}
               <span className={styles.ruleBadge}>
-                确定性规则分析 · 设计假设
+                内置规则分析 · 设计假设
               </span>
             </div>
             {analyzed && (
@@ -998,7 +998,7 @@ export default function HybridLab({
                         <PagedItems
                           label="冲突"
                           items={result.conflicts}
-                          empty="当前未命中已收录的冲突规则。这表示情境规则证据不足，不能据此判断组合没有风险。"
+                          empty="已有规则尚未指出具体冲突。仍需用原型检查这组机制的风险。"
                         />
                       </section>
                     </>
@@ -1027,8 +1027,8 @@ export default function HybridLab({
                       <details className={styles.referenceNote}>
                         <summary>参照口径与边界</summary>
                         <p className={styles.note}>
-                          仅计入同一有效范围内的 present
-                          观察。缺少确认不等于不存在；完整匹配也不证明配方协同效果。
+                          仅计入同一有效范围内“已确认存在”的
+                          机制。未匹配项可能有条件限制、尚未确认、不适用或已确认不存在，需到案例核对。即使全部匹配，也需另行验证协同效果。
                         </p>
                       </details>
                       <PagedItems
@@ -1051,7 +1051,7 @@ export default function HybridLab({
                               已确认匹配 {reference.matchedMechanicIds.length} /{" "}
                               {reference.matchedMechanicIds.length +
                                 reference.missingMechanicIds.length}{" "}
-                              · 待确认 {reference.missingMechanicIds.length}
+                              · 未匹配 {reference.missingMechanicIds.length}
                             </p>
                             <details>
                               <summary>
@@ -1075,11 +1075,11 @@ export default function HybridLab({
                             {reference.missingMechanicIds.length > 0 && (
                               <details>
                                 <summary>
-                                  查看待确认项（
+                                  查看未匹配项（
                                   {reference.missingMechanicIds.length}）
                                 </summary>
                                 <PagedItems
-                                  label="待确认机制"
+                                  label="未匹配机制"
                                   items={reference.missingMechanicIds.map(
                                     (id) => (
                                       <Link
@@ -1133,7 +1133,7 @@ export default function HybridLab({
             )}
           </Window>
           <div className={styles.resultFootnote}>
-            LAB NOTE / 无 AI API 调用，不生成虚构分数。所有推断仍需原型测试。
+            LAB NOTE / 本地规则分析，不调用 AI API。所有推断仍需原型测试。
           </div>
         </div>
       </div>

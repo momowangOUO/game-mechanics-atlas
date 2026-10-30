@@ -12,6 +12,8 @@
 
 [目标与制作说明](docs/game-artist/upgrade.md) · [正式素材清单](docs/game-artist/assets.json) · [独立视觉评审](docs/game-artist/review.md) · [本轮验证](docs/game-artist/verification.md)
 
+网站文案已按 clear-natural-writing 复核，覆盖界面、RIN 台词、知识条目与分析说明。[审校记录](docs/copy-review/summary.md) · [MP4 操作录屏](docs/game-artist/motion/research-session.mp4)
+
 ## 本地运行
 
 需要 Node.js 22.13+（本机验证为 24.11.1）与 npm。

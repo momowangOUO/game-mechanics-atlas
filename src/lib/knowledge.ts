@@ -35,7 +35,7 @@ export const mechanics: Mechanic[] = dossierData.mechanisms.map(raw => MechanicS
 
 type GameEditorial = { genres:string[]; tags:string[]; baseline:string; resource?:string[]; progression?:string[] };
 const editorial: Record<string,GameEditorial> = {
-  balatro:{genres:['roguelite','deckbuilder'],tags:['卡牌','构筑','计分挑战'],baseline:'标准单人战役',resource:['设计归纳：筹码作为盲注目标的计量；当前来源不足以建立完整商店经济。']},
+  balatro:{genres:['roguelite','deckbuilder'],tags:['卡牌','构筑','计分挑战'],baseline:'标准单人战役',resource:['设计归纳：筹码用于衡量是否达到盲注目标；当前来源不足以说明完整的商店经济规则。']},
   peglin:{genres:['roguelite'],tags:['动作','构筑'],baseline:'标准单人冒险'},
   'slay-the-spire':{genres:['roguelite','deckbuilder'],tags:['卡牌','构筑','策略'],baseline:'第一作标准单人攀塔'},
   hades:{genres:['roguelite','action-rpg'],tags:['动作','构筑','叙事'],baseline:'第一作标准单人流程',progression:['设计归纳：夜之镜强化与人物关系提供跨次尝试的延续；未核验具体数值。']},
@@ -46,11 +46,11 @@ const editorial: Record<string,GameEditorial> = {
   'risk-of-rain-2':{genres:['roguelite'],tags:['动作','构筑'],baseline:'普通冒险'},
   inscryption:{genres:['deckbuilder'],tags:['卡牌','构筑','探索','叙事'],baseline:'主线流程（章节分别记录）'},
   'stardew-valley':{genres:['farming-life-sim'],tags:['经营','生活模拟'],baseline:'标准农场流程'},
-  minecraft:{genres:['sandbox-survival','survival-craft'],tags:['生存','经营','探索'],baseline:'原版单人生存模式',resource:['生存模式的采集与创造模式的无限基础材料分别记录，不能互相继承。']},
+  minecraft:{genres:['sandbox-survival','survival-craft'],tags:['生存','经营','探索'],baseline:'原版单人生存模式',resource:['生存模式的采集与创造模式的无限基础材料分别记录，两个模式的观察不能互相继承。']},
   tetris:{genres:[],tags:['空间解谜','计分挑战'],baseline:'官方基础规则'},
-  'cookie-clicker':{genres:['incremental-idle'],tags:['增量','经营'],baseline:'基础生产与永久强化系统',resource:['设计归纳：饼干既是产出也是再投资资源；当前来源不足以说明离线结算。'],progression:['官方列出永久强化；未核验转生公式与具体解锁条件。']},
+  'cookie-clicker':{genres:['incremental-idle'],tags:['增量','经营'],baseline:'基础生产与永久强化系统',resource:['设计归纳：饼干既是产出，也可用于再投资；当前来源不足以说明离线结算规则。'],progression:['官方列出永久强化；未核验转生公式与具体解锁条件。']},
   'dead-cells':{genres:['roguelite','metroidvania'],tags:['动作','探索'],baseline:'基础标准流程',progression:['设计归纳：跨局保留部分道路、能力与武器权限；辅助模式和 DLC 另行取证。']},
-  'escape-from-tarkov':{genres:['extraction-shooter'],tags:['动作','生存'],baseline:'基础 PvPvE 突袭',resource:['一般战利品以成功撤离为兑现目标；保险、容器与模式例外尚未核验。']},
+  'escape-from-tarkov':{genres:['extraction-shooter'],tags:['动作','生存'],baseline:'基础 PvPvE 突袭',resource:['一般战利品需要成功撤离才能带出；保险、容器与模式例外尚未核验。']},
   'game-of-dice':{genres:[],tags:['棋盘','策略','多人'],baseline:'常规个人棋盘对局',resource:['官方说明地盘、过路费与破产目标；未核验具体支付数值。']},
   'shape-of-dreams':{genres:['roguelite','action-rpg'],tags:['动作','构筑'],baseline:'PC 标准单人冒险'},
 };
@@ -86,8 +86,8 @@ export const games: Game[] = gameData.games.map(raw => {
     learning:raw.learning,caveats:raw.caveats,sourceIds:sources.filter(source => source.id.startsWith(`${raw.slug}-`)).map(source => source.id),
     defaultScopeId,genreIds:meta.genres,corePlayTags:meta.tags,
     metadataNote:'类型与核心玩法标签为编辑归纳，用于检索，不是官方完整分类或机制证据。',
-    resourceNotes:meta.resource ?? ['当前来源不足以说明完整资源流、获取条件和消耗规则；请结合已收录实例阅读。'],
-    progressionNotes:meta.progression ?? ['当前来源不足以建立完整成长结构；概要中的设计归纳不代替具体规则证据。'],
+    resourceNotes:meta.resource ?? ['当前来源不足以说明资源的完整流转、获取条件与消耗规则；请结合已收录的机制实例阅读。'],
+    progressionNotes:meta.progression ?? ['当前来源不足以说明完整的成长规则；概要中的设计分析不能替代具体规则的证据。'],
   });
 });
 function observationScope(gameId:string,mechanicId:string):string {
@@ -113,30 +113,30 @@ export const recipes: HybridRecipe[] = recipeData.recipes.map(raw => HybridRecip
 
 // Contextual design propositions, not demonstrated effects in reference games.
 const relationshipRows: [string,string,MechanicRelationship['type'],string,string][] = [
-  ['rule-modifier','score-threshold','rule_rewrite','规则放大计分','当修饰器改变计分公式时，基础牌型或行动的达标价值会改变。'],
-  ['stacking-effects','rule-modifier','synergy','规则放大计分','在结算顺序可读的前提下，多效果可为规则修饰提供组合空间；需检验极端收益。'],
+  ['rule-modifier','score-threshold','rule_rewrite','规则修改与计分目标','当修饰器改变计分公式时，基础牌型或行动对达标的作用也会改变。'],
+  ['stacking-effects','rule-modifier','synergy','规则修改与计分目标','在结算顺序清晰的前提下，多种效果可与规则修饰组合；需检验极端情况下的收益。'],
   ['aimed-launch','in-run-deck-growth','synergy','瞄准与卡组构筑原型','若卡组决定可发射对象，构筑与瞄准可分别改善结果；弹珠池不能未经定义直接视作卡组。'],
-  ['randomized-encounters','aimed-launch','feedback','变化遭遇中的瞄准','不同障碍可检验玩家的瞄准判断；随机结果仍需留下可读的反馈。'],
+  ['randomized-encounters','aimed-launch','feedback','变化遭遇中的瞄准','不同障碍可检验玩家的瞄准判断；遭遇变化后，仍需让玩家能从反馈中理解结果。'],
   ['in-run-deck-growth','route-branching','feedback','路线与卡组规划','当前卡组的长短处影响选路，沿途奖励又改变后续路线价值。'],
   ['resource-scarcity','route-branching','conflict','路线与资源规划','当资源紧缺到只剩一条可行路线时，分支可能失去实际决策价值；并非两机制天然排斥。'],
   ['run-reset','persistent-stat-upgrade','synergy','重复挑战与长期成长','若重开仅清除局内状态，跨局强化可延续目标；需测试积累是否替代操作学习。'],
   ['run-reset','relationship-progression','feedback','重复尝试与人物回应','若关系内容回应尝试过程，重开可提供新情境；需避免必须失败才推进内容的激励。'],
-  ['resource-gathering','base-construction','resource_supply','远征采集与营地建设','当设施配方消费外出材料时，采集为建设供给资源；具体流量仍需验证。'],
+  ['resource-gathering','base-construction','resource_supply','远征采集与营地建设','当建设设施需要消耗外出采集的材料时，采集为建设提供资源；获取与消耗的数量仍需验证。'],
   ['base-construction','randomized-encounters','feedback','营地与外出探索','当新设施打开外出目标时，建设可改变探索动机；不是任意建设都会影响遭遇。'],
   ['recipe-crafting','spatial-loadout','resource_supply','制作与背包布局','当制作产物需要放入有限空间时，产物形状与可用格数共同约束配置。'],
   ['spatial-loadout','automatic-resolution','feedback','空间构筑与自动战斗','自动战斗若能解释触发与结果，玩家可据此调整下一轮布局。'],
   ['encounter-placement','stacking-effects','synergy','玩家布置风险路线','当布置对象存在相互作用时，叠加可增加风险收益方案；需明确作用范围。'],
   ['encounter-placement','base-construction','feedback','风险路线与营地发展','若布置风险带来可投入营地的收益，营地目标可反过来影响布置。'],
-  ['resource-gathering','extraction-bank','resource_supply','采集与撤离兑现','当采集物需带出才能兑现时，已取得物品成为继续冒险的风险载体。'],
-  ['resource-scarcity','extraction-bank','synergy','有限补给下的撤离','消耗中的补给可为退出时机提供依据；保留例外应明确展示。'],
+  ['resource-gathering','extraction-bank','resource_supply','采集与撤离兑现','当采集物需要带出才能兑现时，继续冒险就意味着承担失去已取得物品的风险。'],
+  ['resource-scarcity','extraction-bank','synergy','有限补给下的撤离','逐渐消耗的补给可帮助玩家判断撤离时机；物品保留的例外规则应明确展示。'],
   ['production-investment','persistent-unlock','feedback','增长再投资','当新权限提供新的投资选项时，产出与解锁能形成阶段性目标。'],
   ['objective-unlock','persistent-unlock','dependency','目标触发的永久权限','仅在设计规定完成目标才授予永久权限时，目标条件才是该权限的前置；不是通用必要依赖。'],
-  ['dice-roll','toll-payment','synergy','骰子棋盘财产竞争','仅在骰子结果影响落点且落点触发支付时，取样与支付才形成位置收益关系。'],
-  ['toll-payment','pvp-opposition','feedback','多人财产竞争','若支付改变双方可用财产，位置优势会反馈到竞争；需检验落后方有效选择。'],
+  ['dice-roll','toll-payment','synergy','骰子棋盘财产竞争','仅当骰子结果影响落点、落点又触发支付时，掷点与支付才通过位置影响收益。'],
+  ['toll-payment','pvp-opposition','feedback','多人财产竞争','若支付改变双方的可用财产，位置优势会影响竞争局势；需检验落后方是否仍有有效选择。'],
   ['sequential-turns','real-time-update','alternative','同一行动阶段的推进规则','单一阶段可选择轮流行动或持续推进；不同阶段可以组合，不据此判为整款游戏冲突。'],
   ['pause-planning','planning-timer','conflict','限时规划阶段','若暂停同时冻结用于施压的计时，原规划压力可能失效；可通过分阶段计时重新组合。'],
   ['action-cooldown','dodge-move','dependency','带冷却的闪避方案','只有明确采用冷却作为再次闪避的门槛时，冷却才是此动作的前置条件。'],
-  ['shared-resource-pool','cooperative-play','synergy','协作资源分配','共享资源可形成沟通与分工需求；需防止个别玩家垄断投入。'],
+  ['shared-resource-pool','cooperative-play','synergy','协作资源分配','共享资源可带来沟通与分工需求；需防止个别玩家独占资源的使用权。'],
 ];
 export const relationships: MechanicRelationship[] = relationshipRows.map(([from,to,type,context,rationale],index) => MechanicRelationshipSchema.parse({
   id:`relationship-${index + 1}`,from,to,type,context,rationale,evidenceKind:'editorial_analysis',sourceIds:[],

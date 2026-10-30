@@ -366,9 +366,9 @@ export default function Compare({
           <div className={styles.readingNote}>
             <div>
               <span className="eyebrow">READ THE RECORDS</span>
-              <h2>记录差异，不等于设计上的有与无</h2>
+              <h2>先看记录状态，再核对规则差异</h2>
               <p>
-                “仅看差异”比较的是当前范围的记录状态。“尚未确认”表示证据不足；条件成立、不适用和已确认不存在各有边界，不能合并。
+                “仅看差异”比较两侧当前范围的记录状态。“尚未确认”表示证据不足；“条件成立”要连同条件阅读，“不适用”和“已确认不存在”也分别保留。
               </p>
             </div>
             <div className={styles.recordCounts}>
@@ -384,7 +384,7 @@ export default function Compare({
           </div>
           <Window
             title="MECHANIC MATRIX / 机制对照表"
-            extra={<span>{mechanics.length} 项标准机制</span>}
+            extra={<span>{mechanics.length} 项收录机制</span>}
             className={styles.matrixWindow}
           >
             <div className={styles.filters}>
@@ -566,7 +566,7 @@ export default function Compare({
               <p className="eyebrow">SEARCH SIGNAL / 数据口径</p>
               <h2>游戏搜索，是继续研究的线索</h2>
               <p>
-                这里比较当前数据中游戏主题的搜索归因，不随机制研究范围切换。来源标签见各项读数；搜索不能证明玩家偏好某项机制，也不代表销量。
+                这里比较分配到两款游戏主题的搜索次数，数据不随上方研究范围切换。各项读数附有来源标签；搜索次数不能说明玩家偏好哪项机制，也不代表销量。
               </p>
             </div>
           </div>

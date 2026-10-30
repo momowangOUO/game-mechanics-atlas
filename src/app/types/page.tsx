@@ -11,8 +11,8 @@ export default function TypesPage() {
       </div>
       <PageHead
         eyebrow="COMPOSITE GENRES / 独立于原子机制"
-        title="一个类型，通常是一组规则。"
-        description="Roguelite、RPG、MOBA等名称用于指向传统画像与机制集合。它们没有被当成普通原子标签，也不由简单计分自动判定真伪。"
+        title="复合类型与机制组成"
+        description="Roguelite、RPG、MOBA 等类型通常涉及多种机制。这里列出本库采用的必要、常见和可选组成，以及分类边界，供研究和检索参考。"
       />
       <div className="type-index-grid">
         {genres.map((genre, i) => (

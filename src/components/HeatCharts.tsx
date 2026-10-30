@@ -208,7 +208,7 @@ export function TrendChart({
           <>
             <span>移动指针或使用左右键查看每日值</span>
             <span>
-              {hasData ? "缺失日期保留断点" : "没有记录不等于实测为零"}
+              {hasData ? "缺少记录的日期不连线" : "没有记录不等于实测为零"}
             </span>
           </>
         )}
@@ -262,7 +262,7 @@ export function ScatterChart({
             需求指数 ↑
           </text>
           <text x={left + 8} y={top + 16} fill="#88cdc5">
-            高需求 / 低已发现供给
+            搜索较多 / 收录较少
           </text>
           <text x={width - 17} y={height - 11} textAnchor="end">
             收录供给（款）→
@@ -339,7 +339,7 @@ export function ScatterChart({
         )}
       </svg>
       <p className="chart-caption">
-        空心点＝尚无确认供给，不能直接判为蓝海。点击点查看主题与案例。
+        空心点表示本站尚未确认供给，需补充竞品调查。点击圆点查看主题与案例。
       </p>
     </div>
   );
@@ -367,7 +367,7 @@ function SearchProvenance({ sourceKinds }: Pick<HeatAnalysis, "sourceKinds">) {
       {mixed && (
         <p className="filter-note">
           来源：{sourceKinds.map((kind) => labels[kind] || kind).join("、")}。
-          请分开数据集核验，不能把混合结果当作单一真实市场。
+          请分别核验各数据集的范围与真实性，不能将混合结果直接视为真实市场的完整表现。
         </p>
       )}
     </>
@@ -408,7 +408,7 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
           {result.seedOnly
             ? "本期合成示例没有给这个主题设置搜索记录。"
             : "本期导入数据没有这个主题的搜索记录。"}
-          这里保留“未采集”，不会显示成零关注或制造趋势。
+          此项保留为“未采集”，搜索次数和趋势均暂不计算。
         </p>
       )}
       <Link

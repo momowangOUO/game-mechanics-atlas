@@ -9,6 +9,17 @@ const envelope = (records:unknown[]) => ({schemaVersion:1,records});
 const period = (previous:number,current:number) => Array.from({length:14},(_,i) => row(`day-${i}`,i<7?previous:current,'mechanic:piece-rotation',new Date(Date.UTC(2026,9,17+i)).toISOString().slice(0,10)));
 
 describe('heat import boundary', () => {
+  it('explains field errors in Chinese without hiding paths or allowed values',()=>{
+    const missing=validateSearchImport(envelope([{id:'missing-fields'}]));
+    expect(missing.success).toBe(false);
+    expect(missing.errors.join(' ')).toMatch(/records\.0\.datasetId.*文本/);
+    expect(missing.errors.join(' ')).not.toMatch(/Invalid input|expected|received/);
+    const invalid=validateSearchImport(envelope([{...row('invalid-values',-1),sourceKind:'not-a-source'}]));
+    expect(invalid.success).toBe(false);
+    expect(invalid.errors.join(' ')).toMatch(/count.*不得小于 0/);
+    expect(invalid.errors.join(' ')).toMatch(/sourceKind.*允许的取值.*synthetic.*import/);
+    expect(invalid).not.toHaveProperty('stats');
+  });
   it('normalizes reviewed aliases without creating duplicate events or guessing ambiguous queries', () => {
     expect(normalizeQuery('  ＬＯＬ  ')).toBe(normalizeQuery('League of Legends'));
     expect(normalizeQuery('  MOBA  玩法 ')).toBe('moba 玩法');

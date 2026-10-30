@@ -1,7 +1,7 @@
 import Compare from "@/components/Compare";
 import { games, getGame } from "@/lib/knowledge";
 
-export const metadata = { title: "游戏对比 · 机制研究室" };
+export const metadata = { title: "游戏对比" };
 
 export default async function ComparePage({
   searchParams,

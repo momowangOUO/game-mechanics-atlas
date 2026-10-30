@@ -136,7 +136,7 @@ export function MechanicCatalog({
         ))}
       </select>
       <p className="filter-note">
-        适配标签是设计归纳，不改变机制的主分类。某个游戏没有记录的机制，保持未知。
+        玩法适配标签来自编辑归纳，机制仍按原有维度分类。游戏中尚无记录的机制标为“尚未确认”。
       </p>
     </>
   );
@@ -228,7 +228,7 @@ export function MechanicCatalog({
                               {d?.name}
                             </span>
                             <span className="tiny muted">
-                              实现：{mechanic.complexity}
+                              实现难度：{mechanic.complexity}
                             </span>
                           </div>
                         </Link>
@@ -303,7 +303,7 @@ export function GameCatalog() {
       <PageHead
         eyebrow="CASE STUDIES / 真实案例"
         title="把熟悉的游戏拆开看。"
-        description="从核心循环、机制组合和资源结构理解设计。事实带来源，设计归纳单列，模式与版本差异保留在对应范围。"
+        description="查看核心循环、机制组合与资源结构。事实注明来源，设计分析单独展示；涉及模式或版本差异时，按对应范围阅读。"
       >
         <Link className="button" href="/compare">
           选择游戏对比 ⇄
@@ -359,7 +359,7 @@ export function GameCatalog() {
       </div>
       <p className="catalog-note">
         <span aria-live="polite">{filtered.length} 款案例</span>
-        <span>传统类型用于检索；它不会反向补全机制事实。</span>
+        <span>类型标签方便检索。游戏是否包含某项机制，需查看对应范围的观察记录。</span>
       </p>
       {filtered.length ? (
         <>

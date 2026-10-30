@@ -1,0 +1,12 @@
+[
+  {
+    "width": 390,
+    "errors": "导入失败，原有数据保持不变。\nrecords.0.datasetId：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.date：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.query：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.count：此字段应为数值，请检查是否漏填或填写了其他类型。\nrecords.0.region：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.language：此字段应为文本，请检查是否漏填或填写了其他类型。\n\n另有 2 处错误，请按所列字段路径逐项核对。",
+    "horizontalOverflow": 0
+  },
+  {
+    "width": 768,
+    "errors": "导入失败，原有数据保持不变。\nrecords.0.datasetId：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.date：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.query：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.count：此字段应为数值，请检查是否漏填或填写了其他类型。\nrecords.0.region：此字段应为文本，请检查是否漏填或填写了其他类型。\nrecords.0.language：此字段应为文本，请检查是否漏填或填写了其他类型。\n\n另有 2 处错误，请按所列字段路径逐项核对。",
+    "horizontalOverflow": 0
+  }
+]

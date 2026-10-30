@@ -1,5 +1,7 @@
 import { chromium } from "@playwright/test";
-import { mkdir, rename, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 const base = process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:3000";
 await mkdir("docs/game-artist/motion", { recursive: true });
 await mkdir(".build/motion-recordings", { recursive: true });
@@ -109,9 +111,30 @@ await writeFile(
     2,
   ),
 );
+const sourcePath = "docs/game-artist/motion/research-session.webm";
+const sourceBytes = await readFile(sourcePath);
+await writeFile(
+  "docs/game-artist/motion/manifest.json",
+  JSON.stringify(
+    {
+      buildId: (await readFile(".next/BUILD_ID", "utf8")).trim(),
+      path: sourcePath,
+      sha256: createHash("sha256").update(sourceBytes).digest("hex"),
+      bytes: sourceBytes.length,
+      viewport: { width: 1440, height: 960 },
+      environment:
+        "Windows Edge headless; actual browser actions against local production build",
+    },
+    null,
+    2,
+  ),
+);
+execFileSync(process.execPath, ["scripts/convert-recording.mjs"], {
+  stdio: "inherit",
+});
 console.log(
   JSON.stringify({
     events: events.length,
-    path: "docs/game-artist/motion/research-session.webm",
+    path: "docs/game-artist/motion/research-session.mp4",
   }),
 );

@@ -18,7 +18,7 @@ export const stateLabels: Record<MechanicStatus, string> = {
 };
 export function StateBadge({ status }: { status: MechanicStatus }) {
   return (
-    <span className={`state state-${status}`} title={status}>
+    <span className={`state state-${status}`} title={stateLabels[status]}>
       {stateLabels[status]}
     </span>
   );
@@ -165,7 +165,7 @@ export function CountUp({
 }
 
 export function Assistant({
-  message = "机制的身份不会因为作用不同而变化。关联可以增加，分类不能随意挪动。",
+  message = "同一机制可以在不同游戏里发挥不同作用。先看定义，再对照案例，会更容易分清它们的关系。",
   compact = false,
   state = "explain",
 }: {

@@ -33,9 +33,9 @@ export default function Home() {
       <HomeStage />
       <section className="metrics" aria-label="知识库规模">
         {[
-          [mechanics.length, "原子机制", "固定九维分类"],
+          [mechanics.length, "原子机制", "按九个维度分类"],
           [games.length, "真实游戏", "来源与分析分开"],
-          [genres.length, "类型配方", "复合类型独立记录"],
+          [genres.length, "复合类型", "类型与机制分别记录"],
           [recipes.length, "组合研究", "理解协同与冲突"],
         ].map(([n, a, b]) => (
           <div className="metric" key={String(a)}>
@@ -89,14 +89,14 @@ export default function Home() {
           </Window>
           <Window title="OPPORTUNITY NOTE / 机会观察">
             <div className="opportunity">
-              <div className="opportunity-label">▸ 需求与供给，分开观察</div>
+              <div className="opportunity-label">▸ 搜索关注与竞品供给</div>
               <h3>
                 先看搜索关注，
                 <br />
                 再核对供给。
               </h3>
               <p>
-                从搜索关注中寻找线索，再核对竞品覆盖。
+                搜索次数帮助发现关注方向，竞品样本帮助核对供给。
                 <br />
                 低供给不等于已经证明的市场空白。
               </p>
@@ -132,7 +132,7 @@ export default function Home() {
         <Window title="RELATION GRAPH / 分类独立，关系相连">
           <RelationPreview />
           <p className="tiny muted">
-            编辑关系示意 · 交互图谱支持缩放、拖动、邻接高亮与案例追踪
+            机制关系示意 · 可在交互图谱中缩放、拖动、查看相邻机制与游戏案例
           </p>
         </Window>
       </Reveal>

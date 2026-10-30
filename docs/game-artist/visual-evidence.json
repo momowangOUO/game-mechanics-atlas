@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "profile": "research-website",
-  "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+  "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
   "contract_sha256": "f29a6825d190c0c4994544373d634d9009bea0dd32c0e14c74038de58687b511",
   "views": [
     {
       "id": "home-desktop",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/",
       "state": "home",
       "platform": "desktop",
@@ -21,7 +21,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-desktop.png",
-        "sha256": "e7483b40958ceec9b56b6408957e0ca96cc34cd077c3328c95242e970cb0f4f7"
+        "sha256": "3608a07d02ca12a3bc02091eee83c0533e6beb5f398360888a04658868f1f967"
       },
       "viewport_rect": [
         0,
@@ -60,7 +60,7 @@
     },
     {
       "id": "home-mobile",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/",
       "state": "home",
       "platform": "phone",
@@ -75,7 +75,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-mobile.png",
-        "sha256": "ebfedb56924b02b3dc198d6af0921321b1bc2fb45cf775be936869b2efae4e30"
+        "sha256": "688e061dab5e6993d59ee88e19548c07802ad7d0048cfc6e6da9b28812a59b1d"
       },
       "viewport_rect": [
         0,
@@ -114,7 +114,7 @@
     },
     {
       "id": "home-small",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/",
       "state": "home",
       "platform": "phone",
@@ -129,7 +129,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-small.png",
-        "sha256": "80f0bbe88d65fed95a6f956873e2fe59f464cfcc4891e3ff2bbc7fd1b496ab50"
+        "sha256": "7f27d4abf4db83c5b77131e0850e45af66504467ffbbc05a3ca78c56949e4b57"
       },
       "viewport_rect": [
         0,
@@ -168,7 +168,7 @@
     },
     {
       "id": "mechanic",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/mechanics/in-run-deck-growth",
       "state": "file",
       "platform": "desktop",
@@ -183,7 +183,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/mechanic.png",
-        "sha256": "dfc30e753467dba4ffda49b783c562b78f86e50481dceb2dee92b42df5a79272"
+        "sha256": "e3d6a9c41d0308c35537b0c8ed19d3a054d45e5cd8fde94fa9705ea14285dde3"
       },
       "viewport_rect": [
         0,
@@ -207,7 +207,7 @@
       "layout_measurements": {
         "root_scroll_extent": [
           0,
-          1831
+          1851
         ],
         "fullscreen_nested_scroll": false
       },
@@ -216,7 +216,7 @@
     },
     {
       "id": "game",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/games/balatro",
       "state": "file",
       "platform": "desktop",
@@ -231,7 +231,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/game.png",
-        "sha256": "889ac0d1dbd91da0f795d8d4fc69d860a97cd1e93d7a8bfbd077a05500eb15e5"
+        "sha256": "75c8a2b36aaa4ba5970dd14af8237b18a8d787e388a543f2876777102be81baf"
       },
       "viewport_rect": [
         0,
@@ -265,7 +265,7 @@
     },
     {
       "id": "heat",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/heat",
       "state": "file",
       "platform": "desktop",
@@ -280,7 +280,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/heat.png",
-        "sha256": "2e2cc69587a9b6dc1cbf24c3988e842b122fb76172c74c7c97ef96c0fd6b6939"
+        "sha256": "eeb9fd643d856cfa9cf3a4872241b4b4921459dc56f3001691bbac42ff843637"
       },
       "viewport_rect": [
         0,
@@ -313,7 +313,7 @@
     },
     {
       "id": "lab",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "initial",
       "platform": "desktop",
@@ -328,7 +328,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab.png",
-        "sha256": "38a65536299060766d182a011cba5cf37e9fcf19d8a895ba09d90cdb99f2d194"
+        "sha256": "71741933fb8b0e1ff9340e927f1935990094f4f09c30ed9f503f578b70c0f06d"
       },
       "viewport_rect": [
         0,
@@ -363,7 +363,7 @@
     },
     {
       "id": "lab-complete",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/lab",
       "state": "complete",
       "platform": "desktop",
@@ -378,7 +378,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-complete.png",
-        "sha256": "5ffc453bd40c41570c51645a0d1e39092be76709a7ec621233c137c7fc4093aa"
+        "sha256": "f24fd6460a9065387a0992e2dd7ac130f377a2dd04e72101902fde263ca4318d"
       },
       "viewport_rect": [
         0,
@@ -413,7 +413,7 @@
     },
     {
       "id": "lab-conflict",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "conflict",
       "platform": "desktop",
@@ -428,7 +428,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-conflict.png",
-        "sha256": "64987d05204f5562339d53a2c93a2e489bf26ef2bdfab396c81121c8f398f9b0"
+        "sha256": "ade3383914fd866dc0f2ac770a725ae36b757de28c2672839182557bd98ee956"
       },
       "viewport_rect": [
         0,
@@ -462,7 +462,7 @@
     },
     {
       "id": "lab-mobile",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "initial",
       "platform": "phone",
@@ -477,7 +477,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-mobile.png",
-        "sha256": "d0e84dba4849e5d28012e77aa32d8a2efde6c2be479b45bcb01e7951fcc199af"
+        "sha256": "5633398e84dc7b5475fdc7d022ca10f9643352d05caa8b63a25ed346a137909e"
       },
       "viewport_rect": [
         0,
@@ -510,7 +510,7 @@
     },
     {
       "id": "lab-mobile-complete",
-      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
       "screen": "/lab",
       "state": "mobile-complete",
       "platform": "phone",
@@ -525,7 +525,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-mobile-complete.png",
-        "sha256": "657f9d310a0d4948149e46c3da0b692c3f1236f8a13b4d449be916bca2623831"
+        "sha256": "6d43c6c0225fd7b085a4f3842868b31c57a50c14e56fcd8d26e9c1c935df8077"
       },
       "viewport_rect": [
         0,
@@ -810,7 +810,7 @@
   ],
   "visual_review_status": "passed",
   "inspection": {
-    "path": "docs/game-artist/runtime-inspection.md",
-    "sha256": "faf0a241234d807507e3822561bc358b833a5f675c89340369c83215052b9870"
+    "path": "docs/copy-review/render-inspection.md",
+    "sha256": "c5bd234a813105211e38f96fff2e2796eee2a9947f03aae3eec1a879f2e5744d"
   }
 }

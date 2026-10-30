@@ -29,7 +29,7 @@ function referencesFor(ids:string[]):HybridAnalysis['references'] {
 export function analyzeHybrid(input:HybridInput):HybridAnalysis {
   const result:HybridAnalysis={valid:false,title:'机制组合待完善',loop:[],roles:[],synergies:[],conflicts:[],risks:[],demoTests:[],references:[],adjustments:[],warnings:[]};
   if(!input||typeof input.core!=='string'||!Array.isArray(input.mechanics)||!Array.isArray(input.structures)||!Array.isArray(input.goals)||[...input.mechanics,...input.structures,...input.goals].some(id=>typeof id!=='string')){
-    result.warnings.push('请选择一个已收录的原子机制作为核心，并使用机制与目标列表。');return result;
+    result.warnings.push('请从已收录的原子机制中选择核心，并从列表中选择配合机制、流程结构和设计目标。');return result;
   }
   const ids=unique([input.core,...input.mechanics,...input.structures]);
   const unknown=ids.filter(id=>!getMechanic(id));
@@ -39,8 +39,8 @@ export function analyzeHybrid(input:HybridInput):HybridAnalysis {
   const selected=ids.map(id=>getMechanic(id)!) as Mechanic[];
   const core=selected[0],has=(...required:string[])=>required.every(id=>ids.includes(id));
   result.valid=true;result.title=`${core.name}组合实验`;
-  result.warnings.push('以下是依据已收录定义和情境规则生成的设计假设，尚未经过原型验证。','参照案例只匹配同一有效范围的 present 观察；未确认项不代表不存在，完整匹配也不证明协同效果。');
-  if(ids.length===1) result.warnings.push('目前只有一个机制，足以讨论核心动作，但不足以判断组合关系；目标、结算和失败条件仍需定义。');
+  result.warnings.push('以下是根据已收录的机制定义和情境规则生成的设计假设，尚未经过原型验证。','参照案例只匹配同一有效范围内已确认存在的机制。未确认不等于不存在；即使全部匹配，也不能证明这些机制能产生预期的协同效果。');
+  if(ids.length===1) result.warnings.push('目前只选择了一个机制，可以讨论核心规则，尚不足以判断组合关系；目标、结算和失败条件仍需定义。');
   const fullRecipes=recipes.filter(recipe=>recipe.mechanicIds.every(id=>ids.includes(id)));
   result.roles=selected.map(mechanic=>{
     const recipe=fullRecipes.find(item=>item.roles[mechanic.id]);
@@ -48,7 +48,7 @@ export function analyzeHybrid(input:HybridInput):HybridAnalysis {
     return {mechanicId:mechanic.id,name:mechanic.name,role:`${position}：${recipe?`在「${recipe.name}」假设中，${recipe.roles[mechanic.id]}`:mechanic.definition}`};
   });
   const setup=selected.filter(mechanic=>mechanic.id!==core.id&&mechanic.dimension==='buildcraft');
-  if(setup.length) result.loop.push(`行动前安排配置：${setup.map(mechanic=>mechanic.name).join('、')}；先约定各选项何时可调整。`);
+  if(setup.length) result.loop.push(`行动前确定配置：${setup.map(mechanic=>mechanic.name).join('、')}；并明确各选项可以调整的时机。`);
   result.loop.push(coreSteps[core.id]??`执行「${core.name}」的核心规则：${core.definition}`);
   const temporal=selected.filter(mechanic=>mechanic.id!==core.id&&mechanic.dimension==='temporal');
   if(temporal.length) result.loop.push(`按约定的阶段推进：${temporal.map(mechanic=>mechanic.name).join('、')}；分别确定触发时机与结束条件。`);
@@ -71,7 +71,7 @@ export function analyzeHybrid(input:HybridInput):HybridAnalysis {
     result.demoTests.push('在同一行动阶段，两个推进时钟是否同时生效？切换阶段时是否出现抢行动或重复结算？');
   }
   if(has('pause-planning','real-time-update')) {
-    result.synergies.push('实时推进可与暂停规划配合：暂停时整理决策，恢复后继续执行；需明确暂停是否冻结敌人、冷却与其他玩家。');
+    result.synergies.push('实时推进可与暂停规划配合：暂停时制定计划，恢复后继续执行；需明确暂停是否冻结敌人、冷却与其他玩家。');
     result.adjustments.push('列出暂停冻结的系统，以及恢复时排队动作的执行顺序。');
   }
   if(has('pause-planning','planning-timer')) result.adjustments.push('把限时决策与不限时查看分为不同阶段，或明确暂停不冻结哪些计时器。');
@@ -88,7 +88,7 @@ export function analyzeHybrid(input:HybridInput):HybridAnalysis {
   if(goalSet.has('accessible')){
     const decisions=selected.filter(mechanic=>decisionDimensions.has(mechanic.dimension));
     if(decisions.length>=3){
-      result.risks.unshift('易上手目标下，多套配置、结算或选项系统可能同时增加阅读与决策成本；机制数量本身不表示质量。');
+      result.risks.unshift('如果目标是易上手，多套配置、结算或选项系统可能同时增加阅读与决策负担；机制数量本身不能说明设计质量。');
       result.adjustments.unshift('逐步开放配置与决策系统，分阶段展示选项，先测试同时需要阅读的信息量。');
     }
     result.demoTests.push('首次体验者能否在不看说明全文的情况下说出当前目标，并预测一次行动的主要结果？');
@@ -99,7 +99,7 @@ export function analyzeHybrid(input:HybridInput):HybridAnalysis {
   }
   if(goalSet.has('hardcore')) {
     result.demoTests.push('熟练玩家的判断是否能稳定改善结果，失败原因是否可解释、可练习？');
-    result.risks.push('硬核目标需要可学习的反馈；增加规则或惩罚不一定增加有效深度。');
+    result.risks.push('面向硬核体验的设计也需要让玩家能从反馈中学习；增加规则或惩罚不一定增加决策深度。');
   }
   if(goalSet.has('broad')) {
     result.demoTests.push('不同经验的玩家能否找到可理解的初始方案，并在需要时继续深入？');

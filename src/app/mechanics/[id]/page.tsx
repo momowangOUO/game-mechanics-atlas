@@ -101,7 +101,7 @@ export default async function MechanicPage({
             <br />
             本条是本库的操作定义。
             <br />
-            关系改变，不会使主分类挪位。
+            与其他机制的关系不改变主分类。
           </div>
         </aside>
         <article>
@@ -216,7 +216,7 @@ export default async function MechanicPage({
               </div>
             ) : (
               <div className="scope-box">
-                本条已有定义与设计说明，但本批官方资料还没有足够的直接实例。暂不绑定真实游戏；这不代表它不存在。
+                本条已有定义与设计说明，但已核验的官方资料尚不足以支持直接实例。目前没有关联游戏案例，不能据此认定机制不存在。
               </div>
             )}
             <div className="state-legend" aria-label="实例状态说明">
@@ -261,14 +261,14 @@ export default async function MechanicPage({
             </div>
             {!combinations.length && (
               <p className="scope-box">
-                当前没有收录包含此条的完整配方，可以将它加入实验室研究。
+                尚未收录包含此机制的完整配方，可以将它加入实验室，研究新的组合。
               </p>
             )}
           </section>
           <section id="evidence" className="detail-section">
             <h2>来源与判定范围</h2>
             <p className="scope-box">
-              机制定义、价值、风险、适配与关联属于平台编辑归纳。真实案例的观察各自绑定范围与来源；未知不补成否定，条件存在不推广为整个游戏无条件存在。
+              机制定义、价值、风险、适配建议与关联由本站编辑整理。游戏案例中的每条观察都有对应范围与来源。未知不等于不存在；有条件成立的机制，也不能推广为整个游戏中无条件存在。
             </p>
             <div className="source-list">
               {sources

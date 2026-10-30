@@ -1,0 +1,35 @@
+{
+  "buildId": "2WkLkVfiEGwEgGwg9UcPJ",
+  "path": "docs/game-artist/motion/research-session.mp4",
+  "sha256": "9d3d56ec747effd3c1d9bb0baa1528efb9822d9507fc2a203418a6b0b4dffac5",
+  "source": {
+    "path": "docs/game-artist/motion/research-session.webm",
+    "sha256": "bd0ed04613cad40736aaf55d67d387518e4827a455b4bff5ec3c2f330ded4cc0"
+  },
+  "codec": "h264",
+  "profile": "High",
+  "pixelFormat": "yuv420p",
+  "width": 1440,
+  "height": 960,
+  "frameRate": "25/1",
+  "frames": 341,
+  "durationSeconds": 13.64,
+  "bytes": 4350687,
+  "fastStart": true,
+  "audio": false,
+  "sourceMatches": {
+    "width": true,
+    "height": true,
+    "frameRate": true,
+    "frames": true,
+    "duration": true
+  },
+  "playback": {
+    "durationSeconds": 13.64,
+    "totalFrames": 341,
+    "droppedFrames": 0,
+    "ended": true
+  },
+  "playerSource": "research-session.mp4",
+  "environment": "Windows Edge headless; native HTML video playback, not real-device performance profiling"
+}

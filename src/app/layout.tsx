@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s · 机制研究室",
   },
   description:
-    "面向游戏设计师的游戏机制知识库、真实案例、组合实验室与搜索需求观察。固定九维分类，区分事实、设计分析和示例数据。",
+    "供游戏设计师查阅的机制知识库，包含游戏案例、组合实验与搜索需求分析。按九个维度整理机制，区分来源事实、设计分析和合成示例数据。",
 };
 export default function RootLayout({
   children,

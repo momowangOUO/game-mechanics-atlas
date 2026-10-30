@@ -70,9 +70,9 @@ export default async function GamePage({
           />
           <p className="analysis-label">设计判断 / 编辑归纳</p>
           <h2 className="serif">
-            熟悉一款游戏，
+            看玩家如何选择，
             <br />
-            <span className="purple">从它的选择开始。</span>
+            <span className="purple">理解规则的作用。</span>
           </h2>
           <p>{game.analysis.replace(/^设计判断[：:]\s*/, "")}</p>
           <div className="meta-grid">
@@ -109,7 +109,7 @@ export default async function GamePage({
       <SectionHead number="EVIDENCE" title="事实、来源与研究边界" />
       <div className="generic-grid">
         <section className="paper">
-          <h2>本批已核实的信息</h2>
+          <h2>已核实的来源信息</h2>
           <ul>
             {game.factNotes.map((text) => (
               <li key={text}>{text}</li>
@@ -153,7 +153,7 @@ export default async function GamePage({
         <>
           <SectionHead number="FORMULA" title="以此为参照，继续研究组合" />
           <p className="catalog-note">
-            下列配方是设计假设；此游戏仅提供部分机制或流程参照，不代表全部配料已被验证。
+            下列配方是设计假设；此游戏仅提供部分机制或流程参照，不能据此认定整组机制已经验证。
           </p>
           <div className="recipe-grid">
             {relatedRecipes.map((recipe) => (

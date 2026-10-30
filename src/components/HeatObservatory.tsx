@@ -82,7 +82,7 @@ function TopicDetails({
       </div>
       <p className="filter-note">
         有该主题记录的日期：{profile.measuredDays} / {profile.expectedDays}{" "}
-        日。日期覆盖不等于全市场采样完整。
+        日。此处仅统计有记录的日期，不能据此判断市场采样是否完整。
       </p>
       {measured ? (
         <p className="filter-note">
@@ -93,12 +93,12 @@ function TopicDetails({
         </p>
       ) : (
         <div className="signal warn">
-          这个主题本期完全没有记录。它没有被写成零需求，也没有产生机会或压力分数。
+          这个主题本期没有搜索记录，搜索次数和线索分暂不计算。
         </div>
       )}
       {profile.scoreStatus === "insufficient_supply" && (
         <div className="signal warn">
-          尚无确认供给，先补竞品样本。需求仍可见，但没有直接判为蓝海。
+          本站尚未确认供给，可先补充竞品样本。搜索数据仍可查看，线索分暂不计算。
         </div>
       )}
       {measured && profile.supply > 0 && profile.supply <= 2 && (
@@ -261,10 +261,14 @@ export default function HeatObservatory({
       setPage(1);
       setImportErrors([]);
       setImportOpen(false);
-      announce("数据已在本地完成校验与替换，来源标签保持原样。");
+      announce("数据格式校验通过，已替换当前记录。来源真实性需另行核验。");
     } catch (error) {
       setImportErrors([
-        error instanceof Error ? error.message : "无法读取JSON文件。",
+        error instanceof SyntaxError
+          ? "JSON 语法不正确，请检查引号、逗号、括号和转义字符。"
+          : error instanceof Error
+            ? error.message
+            : "无法读取 JSON 内容，请检查文件是否完整。",
       ]);
     }
   };
@@ -290,7 +294,7 @@ export default function HeatObservatory({
       <PageHead
         eyebrow="DEMAND / SUPPLY OBSERVATORY"
         title="玩家在搜什么？"
-        description="搜索关注决定热门排行，收录样本供给用于研究竞争。两者分开，才有可追溯的机会线索。"
+        description="按搜索次数查看关注方向，再对照本站收录的游戏样本，寻找值得继续调查的竞争与机会线索。"
       >
         <SeedBadge imported={isImported && !result?.seedOnly} />
       </PageHead>
@@ -320,7 +324,7 @@ export default function HeatObservatory({
               setPage(1);
             }}
           >
-            <option value="">全部已导入来源</option>
+            <option value="">全部数据来源</option>
             {sourceKinds.map((kind) => (
               <option key={kind} value={kind}>
                 {sourceLabels[kind]}
@@ -396,7 +400,7 @@ export default function HeatObservatory({
                 <strong>
                   <CountUp value={result.totalSearches} format={formatAmount} />
                 </strong>
-                <span>原始搜索事件次数 · 跨维度不重复加计</span>
+                <span>原始搜索总次数 · 每条记录计一次</span>
               </div>
               <div className="metric">
                 <span>MEASURED TOPICS</span>
@@ -490,25 +494,25 @@ export default function HeatObservatory({
                 <span className="observation-code">
                   RIN'S OBSERVATION ／ 研究便签
                 </span>
-                <h2>热度，是线索。</h2>
+                <h2>先看搜索，<br />再查竞品。</h2>
                 <p>
-                  先看搜索关注，再核对样本供给。低供给不等于已经证明的市场空白。
+                  想研究一个方向，可以先看搜索关注，再核对竞品。收录样本少，还需要进一步调查。
                 </p>
                 <div>
                   <strong>玩家在搜什么？</strong>
-                  <p>原始搜索次数决定关注排行；不是收录游戏越多，就越热门。</p>
+                  <p>排行依据归因到主题的搜索次数，方便比较当前数据中的关注方向。</p>
                 </div>
                 <div>
                   <strong>同类供给有多少？</strong>
-                  <p>供给只统计已确认的本站样本，未知与条件匹配分别保留。</p>
+                  <p>这里只统计本站已确认的样本，条件匹配与尚未确认的样本另列。</p>
                 </div>
                 <div>
-                  <strong>下一步，去核验。</strong>
+                  <strong>值得继续查什么？</strong>
                   <p>
-                    把机会线索带回真实案例和原型，核对覆盖范围、成本与玩家选择。
+                    可以打开相关案例，核对规则与范围，再用原型检验玩家的选择。
                   </p>
                 </div>
-                <span className="observation-stamp">需求 ≠ 供给</span>
+                <span className="observation-stamp">搜索关注 / 样本供给</span>
               </aside>
             </div>
             <div
@@ -575,7 +579,7 @@ export default function HeatObservatory({
                 </div>
                 <p className="ranking-note">
                   {view === "blue" || view === "red"
-                    ? "指数只在同类主题中比较；零供给与无记录不进入机会判断。"
+                    ? "线索分仅用于同类主题间比较；尚无确认供给或没有搜索记录时不计算。"
                     : "按原始归因搜索次数排序，不按游戏数或线索分排序。"}{" "}
                   关键词只筛选榜单，不改变比较基准。
                 </p>
@@ -669,7 +673,7 @@ export default function HeatObservatory({
                   ) : (
                     <EmptyState
                       title="当前没有可列出的主题"
-                      description="可能没有采集记录、缺少确认供给，或关键词没有匹配。不会用零值补出机会结论。"
+                      description="请检查关键词、数据来源与时间窗口；线索榜还需要已确认的供给样本。"
                     >
                       <button className="button" onClick={() => setQuery("")}>
                         清除关键词
@@ -689,7 +693,7 @@ export default function HeatObservatory({
                       红海线索 = 100 × c × (1 − 0.5d)
                     </p>
                     <p>
-                      分数不是成功概率。它们各自表达研究线索，不能相加后解释为100%。
+                      两项分数分别表示机会与竞争线索，用于同类比较，不代表成功概率，也不能相加解释为 100%。
                     </p>
                     <ul>
                       {result.warnings.map((warning) => (
@@ -733,8 +737,8 @@ export default function HeatObservatory({
         <div className="window-body">
           <h2 className="dialog-heading">替换一套搜索记录</h2>
           <p className="filter-note">
-            只在本地浏览器分析，不上传文件。请使用带 schemaVersion:1 和 records
-            数组的JSON；可先导出示例作为格式参考。合成来源标签会原样保留。
+            文件只在当前浏览器中分析，不会上传；刷新页面后恢复合成示例。请使用带 schemaVersion:1 和 records
+            数组的 JSON，可先导出示例查看格式。校验检查数据格式与一致性，来源标签原样保留，真实性需另行核验。
           </p>
           <input
             ref={fileRef}
@@ -746,7 +750,7 @@ export default function HeatObservatory({
               if (!file) return;
               if (file.size > 5 * 1024 * 1024) {
                 setImportErrors([
-                  "文件超过5MB，请拆成较小的、口径一致的数据集。",
+                  "文件超过 5 MB，请拆成较小且统计口径一致的数据集。",
                 ]);
                 return;
               }
@@ -767,14 +771,14 @@ export default function HeatObservatory({
           />
           {importErrors.length > 0 && (
             <div className="import-errors" role="alert">
-              <strong>整批未导入，当前数据保持不变。</strong>
+              <strong>导入失败，原有数据保持不变。</strong>
               <ul>
                 {importErrors.slice(0, 6).map((error, index) => (
                   <li key={`${index}-${error}`}>{error}</li>
                 ))}
               </ul>
               {importErrors.length > 6 && (
-                <p>另有 {importErrors.length - 6} 处错误，请按路径逐项核对。</p>
+                <p>另有 {importErrors.length - 6} 处错误，请按所列字段路径逐项核对。</p>
               )}
             </div>
           )}
