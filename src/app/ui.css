@@ -2227,7 +2227,8 @@ html[data-effects="reduced"] {
   .data-strip .metric strong {
     font-size: 25px;
   }
-  .data-strip .metric span {
+  .data-strip .metric > span,
+  .data-strip .metric .metric-unit {
     font-size: 8px;
   }
   .heat-chart-tabs {

@@ -384,7 +384,7 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
       <p className="tiny muted" style={{ marginTop: 10 }}>
         {result.dateStart} — {result.dateEnd}
       </p>
-      {profile && profile.scoreStatus !== "no_data" ? (
+      {profile && profile.measurementStatus !== "missing" ? (
         <>
           <div className="mini-profile-numbers">
             <div>

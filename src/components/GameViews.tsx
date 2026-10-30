@@ -290,7 +290,10 @@ export default function GameViews({ game }: { game: Game }) {
                         (d) => d.id === mechanic.dimension,
                       )!;
                       return (
-                        <a href={`/mechanics/${position.id}`} key={position.id}>
+                        <Link
+                          href={`/mechanics/${position.id}`}
+                          key={position.id}
+                        >
                           <rect
                             x={position.x - 85}
                             y={position.y - 28}
@@ -317,7 +320,7 @@ export default function GameViews({ game }: { game: Game }) {
                           >
                             {dimension.name} / {position.observation.status}
                           </text>
-                        </a>
+                        </Link>
                       );
                     })}
                   </svg>

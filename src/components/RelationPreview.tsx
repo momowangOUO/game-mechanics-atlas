@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getMechanic } from "@/lib/knowledge";
 
 export default function RelationPreview() {
@@ -28,7 +29,7 @@ export default function RelationPreview() {
       </g>
       <g fontSize="12" fontFamily="Microsoft YaHei">
         {nodes.map((node) => (
-          <a
+          <Link
             key={node.id}
             href={`/mechanics/${node.id}`}
             aria-label={`查看${getMechanic(node.id)?.name || node.id}`}
@@ -49,7 +50,7 @@ export default function RelationPreview() {
             >
               {getMechanic(node.id)?.name || node.id}
             </text>
-          </a>
+          </Link>
         ))}
       </g>
       <g className="chart-label">
