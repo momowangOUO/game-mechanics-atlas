@@ -1,0 +1,56 @@
+[
+  {
+    "id": "home-desktop",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "home-mobile",
+    "width": 390,
+    "height": 844,
+    "failed": []
+  },
+  {
+    "id": "mechanic",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "game",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "heat",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "lab",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "lab-complete",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "lab-conflict",
+    "width": 1440,
+    "height": 960,
+    "failed": []
+  },
+  {
+    "id": "lab-mobile",
+    "width": 390,
+    "height": 844,
+    "failed": []
+  }
+]

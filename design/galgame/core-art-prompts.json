@@ -1,0 +1,16 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "public/art/maid-cel.png",
+  "assets": [
+    {
+      "id": "room-dusk",
+      "path": "public/art/room-dusk.webp",
+      "prompt": "Production game background illustration, landscape 3:2, high resolution. Original early-2000s Japanese visual novel background for a secret GAME DESIGN RESEARCH CLUB ROOM at blue-hour dusk. No characters, NO TEXT, no logos, no UI. Viewed straight into an intimate wood-paneled room from its entrance, generous central floor and plain darker wall on left where real website text will be overlaid. Right side: large old sash window with lavender evening sky, distant quiet buildings and cream curtains. Left rear tall wooden bookshelf with richly varied ivory and violet books, index files, small brass lamp. Right midground desk with beige CRT computer, keyboard, floppy disks, mechanical pencils, playing cards, dice, a cork board of pinned diagrams. A low foreground desk edge in bottom right gives depth but must not fill picture. Warm tungsten pools against indigo shadows; muted parchment, dusty lavender, tobacco wood, teal glass accents. Strong clean ink drawing, cel-shaded 2-3 tone surfaces, hand-painted anime background charm and crisp readable details. Deliberately retro 2004-2008 Japanese PC game aesthetic, not neon cyberpunk, not glossy 3D, not photoreal, no bloom. Sophisticated authored environment, atmospheric and welcoming. This is an actual reusable website background, not a screenshot, separate object layers added later."
+    },
+    {
+      "id": "maid-welcome",
+      "path": "public/art/maid-welcome.webp",
+      "prompt": "Create a new pose of the SAME ORIGINAL ADULT MAID RESEARCH ASSISTANT shown in the reference image. Exact identity, long dark blue-black hair, straight fringe, violet eyes, white frilled maid headband with small white tassel on right, black modest short-puff-sleeve maid dress, white apron, small muted violet neck bow. Keep her adult face proportions, facial design and clothing. Style is very clear early 2000s TV anime CEL SHADING, heavy BLACK OUTER INK LINES, finer interior lines, 2-3 flat shadow tones, restrained highlights, no gradients/3D/painterly texture. Welcome pose: one open hand extending to invite the visitor into the research club, the other hand holding an ivory paper folder against her waist. Warm bright smile looking toward viewer. Three-quarter body, head to knees, hands and head fully within frame, hair silhouette fully within frame. Isolated PNG on TRUE TRANSPARENT background, NO floor shadow, no background glow or vignette, no text, no logo. Whole silhouette crisp and usable on a dark website. Reference is identity/style guidance; make a new welcome pose, not a duplicate."
+    }
+  ]
+}
