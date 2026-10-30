@@ -2,6 +2,8 @@
 
 面向游戏设计师的机制知识库、真实游戏案例、组合实验室与搜索需求观察平台。本地数据驱动，无需数据库、模型 API 或账号即可运行。
 
+[GitHub私有仓库](https://github.com/momowangOUO/game-mechanics-atlas) · [实际验收记录](docs/verification.md)
+
 ![首页桌面实际页面](docs/screenshots/home-desktop.png)
 
 ## 本地运行

@@ -68,7 +68,9 @@
 14. 需求与样本供给分别展示与计算。
 15. 桌面与手机核心路径已验证。
 16. 初始内容达到要求并保留证据边界。
-17. 私有仓库创建与远程提交核验将在上传后记录。
+17. 私有仓库已创建、推送并核验，远端main与本地HEAD一致。
+
+GitHub交付：[momowangOUO/game-mechanics-atlas](https://github.com/momowangOUO/game-mechanics-atlas)。CLI返回`isPrivate:true`、`visibility:PRIVATE`、默认分支`main`；GitHub提交API与本地HEAD比对一致。没有上传.env、缓存、依赖目录或父项目材料。
 
 独立界面审阅：首轮2项Important已修复，修订复核的1项混合来源提示也已修复；需求与代码质量均PASS。最终全分支审阅另提出2项Important与2项Minor，已在一次集中修复后复核关闭，无新增缺陷，0项未关闭。
 
