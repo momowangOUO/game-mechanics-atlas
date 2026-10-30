@@ -2,13 +2,9 @@
 
 import Link from "next/link";
 import { useId, useMemo, useState } from "react";
-import {
-  analyzeHeat,
-  heatTopics,
-  searchSeed,
-  type TopicHeatProfile,
-} from "@/lib/heat";
+import { analyzeHeat, heatTopics, type TopicHeatProfile } from "@/lib/heat";
 import { CountUp, SeedBadge } from "./Primitives";
+import { useSearchData } from "./SearchDataProvider";
 
 export function formatAmount(value: number) {
   if (value >= 100000000)
@@ -345,11 +341,12 @@ export function ScatterChart({
 }
 
 export function HeatProfileMini({ topicId }: { topicId: string }) {
-  const result = useMemo(() => analyzeHeat(searchSeed), []);
+  const { stats, isImported } = useSearchData();
+  const result = useMemo(() => analyzeHeat(stats), [stats]);
   const profile = result.profiles.find((p) => p.topicId === topicId);
   return (
     <div className="heat-mini">
-      <SeedBadge />
+      <SeedBadge imported={isImported && !result.seedOnly} />
       <p className="tiny muted" style={{ marginTop: 10 }}>
         {result.dateStart} — {result.dateEnd}
       </p>
@@ -374,7 +371,10 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
         </>
       ) : (
         <p className="scope-box">
-          本期合成示例没有给这个主题设置搜索记录。这里保留“未采集”，不会显示成零关注或制造趋势。
+          {result.seedOnly
+            ? "本期合成示例没有给这个主题设置搜索记录。"
+            : "本期导入数据没有这个主题的搜索记录。"}
+          这里保留“未采集”，不会显示成零关注或制造趋势。
         </p>
       )}
       <Link
@@ -388,7 +388,8 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
 }
 
 export function HomeHeatHighlights() {
-  const result = useMemo(() => analyzeHeat(searchSeed), []);
+  const { stats, isImported } = useSearchData();
+  const result = useMemo(() => analyzeHeat(stats), [stats]);
   const kinds = [
     ["genre", "热门类别"],
     ["mechanic", "热门机制"],
@@ -433,12 +434,12 @@ export function HomeHeatHighlights() {
           <h3>{opportunity?.name || "先收集可比较的需求与供给"}</h3>
           <p>
             {opportunity
-              ? `合成搜索 ${formatAmount(opportunity.demand)} 次 · 收录确认供给 ${opportunity.supply} 款 · 仍有 ${opportunity.unknownSupply} 款样本未确认。`
+              ? `${result.seedOnly ? "合成搜索" : "搜索归因"} ${formatAmount(opportunity.demand)} 次 · 收录确认供给 ${opportunity.supply} 款 · 仍有 ${opportunity.unknownSupply} 款样本未确认。`
               : "缺少数据时，不自动给出市场机会判断。"}
           </p>
         </div>
         <div>
-          <SeedBadge />
+          <SeedBadge imported={isImported && !result.seedOnly} />
           <Link
             className="button"
             href={
@@ -452,7 +453,7 @@ export function HomeHeatHighlights() {
         </div>
       </div>
       <p className="catalog-note">
-        示例窗口截至 {result.dateEnd}
+        数据窗口截至 {result.dateEnd}
         。热门榜按原始搜索次数排序；指数不代表销量、成功率或已证明的市场空白。
       </p>
     </>

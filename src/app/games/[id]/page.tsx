@@ -154,7 +154,10 @@ export default async function GamePage({
               >
                 <span className="eyebrow">HYBRID RECIPE</span>
                 <h3>{recipe.name}</h3>
-                <p>{recipe.evidenceNotes[0] || recipe.tensions[0]}</p>
+                <p>{recipe.synergies[0] || recipe.tensions[0]}</p>
+                <p className="filter-note">
+                  设计假设；本案例只提供部分机制或流程参照。
+                </p>
                 <span className="tiny gold">查看分工与风险 →</span>
               </Link>
             ))}

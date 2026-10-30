@@ -8,11 +8,13 @@ import {
   useRef,
   useState,
   type ReactNode,
+  type RefObject,
 } from "react";
 import Link from "next/link";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { usePathname } from "next/navigation";
 import { games, genres, mechanics, recipes } from "@/lib/knowledge";
+import { SearchDataProvider } from "./SearchDataProvider";
 
 type MotionPreference = "auto" | "full" | "reduced";
 type UIState = {
@@ -35,12 +37,14 @@ export function Dialog({
   title,
   children,
   className = "",
+  initialFocusRef,
 }: {
   open: boolean;
   onClose: () => void;
   title: string;
   children: ReactNode;
   className?: string;
+  initialFocusRef?: RefObject<HTMLElement | null>;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -51,7 +55,7 @@ export function Dialog({
     if (open) {
       if (!dialog.open) dialog.showModal();
       document.documentElement.style.overflow = "hidden";
-      dialog.querySelector<HTMLElement>("input,button,a")?.focus();
+      initialFocusRef?.current?.focus();
     } else if (dialog.open) {
       dialog.close();
     }
@@ -62,7 +66,7 @@ export function Dialog({
         previous?.focus();
       }
     };
-  }, [open]);
+  }, [open, initialFocusRef]);
   return (
     <dialog
       ref={ref}
@@ -102,6 +106,7 @@ export function Dialog({
 }
 
 export function AppProviders({ children }: { children: ReactNode }) {
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [search, setSearch] = useState(false),
     [query, setQuery] = useState(""),
     [toast, setToast] = useState("");
@@ -213,84 +218,88 @@ export function AppProviders({ children }: { children: ReactNode }) {
   ];
   return (
     <UIContext.Provider value={value}>
-      <MotionConfig
-        reducedMotion={effects ? "user" : "always"}
-        transition={{ duration: 0.26, ease: [0.2, 0, 0, 1] }}
-      >
-        {children}
-        <Dialog
-          open={search}
-          onClose={() => setSearch(false)}
-          title="SEARCH ARCHIVE / 检索研究档案"
-          className="search-dialog"
+      <SearchDataProvider>
+        <MotionConfig
+          reducedMotion={effects ? "user" : "always"}
+          transition={{ duration: 0.26, ease: [0.2, 0, 0, 1] }}
         >
-          <div className="search-input-row">
-            <span aria-hidden="true">⌕</span>
-            <input
-              autoComplete="off"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="机制、游戏、类型或组合…"
-              aria-label="搜索全部档案"
-            />
-            <span className="keycap">ESC</span>
-          </div>
-          <p className="search-help">
-            {normalized
-              ? "匹配当前知识库；未找到的内容不会自动补全。"
-              : "试着搜索：卡组、Balatro、重开、撤离。"}
-            <span aria-live="polite">{results.length} 项</span>
-          </p>
-          <motion.div layout className="search-results">
-            {results.length ? (
-              results.map((result, i) => (
-                <motion.div
-                  layout
-                  key={result.href}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: Math.min(i * 0.025, 0.2) }}
-                >
-                  <Link href={result.href} onClick={() => setSearch(false)}>
-                    <span className="chip">{result.kind}</span>
-                    <strong>{result.name}</strong>
-                    <p>{result.meta}</p>
-                    <span className="result-arrow" aria-hidden="true">
-                      ↗
-                    </span>
+          {children}
+          <Dialog
+            open={search}
+            onClose={() => setSearch(false)}
+            title="SEARCH ARCHIVE / 检索研究档案"
+            className="search-dialog"
+            initialFocusRef={searchInputRef}
+          >
+            <div className="search-input-row">
+              <span aria-hidden="true">⌕</span>
+              <input
+                ref={searchInputRef}
+                autoComplete="off"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="机制、游戏、类型或组合…"
+                aria-label="搜索全部档案"
+              />
+              <span className="keycap">ESC</span>
+            </div>
+            <p className="search-help">
+              {normalized
+                ? "匹配当前知识库；未找到的内容不会自动补全。"
+                : "试着搜索：卡组、Balatro、重开、撤离。"}
+              <span aria-live="polite">{results.length} 项</span>
+            </p>
+            <motion.div layout className="search-results">
+              {results.length ? (
+                results.map((result, i) => (
+                  <motion.div
+                    layout
+                    key={result.href}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: Math.min(i * 0.025, 0.2) }}
+                  >
+                    <Link href={result.href} onClick={() => setSearch(false)}>
+                      <span className="chip">{result.kind}</span>
+                      <strong>{result.name}</strong>
+                      <p>{result.meta}</p>
+                      <span className="result-arrow" aria-hidden="true">
+                        ↗
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))
+              ) : (
+                <div className="empty-state">
+                  <span aria-hidden="true">◇</span>
+                  <h3>还没有这份档案</h3>
+                  <p>换一个关键词试试，也可从九个分类维度浏览。</p>
+                  <Link
+                    href="/mechanics"
+                    className="button primary"
+                    onClick={() => setSearch(false)}
+                  >
+                    浏览机制档案 →
                   </Link>
-                </motion.div>
-              ))
-            ) : (
-              <div className="empty-state">
-                <span aria-hidden="true">◇</span>
-                <h3>还没有这份档案</h3>
-                <p>换一个关键词试试，也可从九个分类维度浏览。</p>
-                <Link
-                  href="/mechanics"
-                  className="button primary"
-                  onClick={() => setSearch(false)}
-                >
-                  浏览机制档案 →
-                </Link>
-              </div>
-            )}
-          </motion.div>
-        </Dialog>
-        <AnimatePresence>
-          {toast && (
-            <motion.div
-              className="toast"
-              role="status"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 10, opacity: 0 }}
-            >
-              {toast}
+                </div>
+              )}
             </motion.div>
-          )}
-        </AnimatePresence>
-      </MotionConfig>
+          </Dialog>
+          <AnimatePresence>
+            {toast && (
+              <motion.div
+                className="toast"
+                role="status"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 10, opacity: 0 }}
+              >
+                {toast}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </MotionConfig>
+      </SearchDataProvider>
     </UIContext.Provider>
   );
 }

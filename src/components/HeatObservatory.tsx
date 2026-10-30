@@ -6,15 +6,14 @@ import {
   analyzeHeat,
   FORMULA_VERSION,
   heatTopics,
-  searchSeed,
   validateSearchImport,
   type HeatAnalysis,
-  type SearchQueryStat,
   type TopicHeatProfile,
   type TopicKind,
 } from "@/lib/heat";
 import { games, getGame, getMechanic } from "@/lib/knowledge";
 import { Dialog, useUI } from "./Providers";
+import { useSearchData } from "./SearchDataProvider";
 import { CountUp, EmptyState, PageHead, SeedBadge, Window } from "./Primitives";
 import {
   formatAmount,
@@ -157,8 +156,8 @@ export default function HeatObservatory({
   initialView?: string;
 }) {
   const initial = heatTopics.find((topic) => topic.id === initialTopic);
-  const [stats, setStats] = useState<SearchQueryStat[]>(searchSeed),
-    [days, setDays] = useState<7 | 30 | 90>(30),
+  const { stats, isImported, replaceRecords, resetRecords } = useSearchData();
+  const [days, setDays] = useState<7 | 30 | 90>(30),
     [source, setSource] = useState(""),
     [dataset, setDataset] = useState(""),
     [region, setRegion] = useState("");
@@ -177,8 +176,7 @@ export default function HeatObservatory({
   const [importOpen, setImportOpen] = useState(false),
     [inspectOpen, setInspectOpen] = useState(false),
     [importText, setImportText] = useState(""),
-    [importErrors, setImportErrors] = useState<string[]>([]),
-    [isImported, setIsImported] = useState(false);
+    [importErrors, setImportErrors] = useState<string[]>([]);
   const fileRef = useRef<HTMLInputElement>(null);
   const { announce } = useUI();
   const scopedStats = useMemo(
@@ -239,11 +237,10 @@ export default function HeatObservatory({
     if (window.matchMedia("(max-width:700px)").matches) setInspectOpen(true);
   };
   const resetSeed = () => {
-    setStats(searchSeed);
+    resetRecords();
     setSource("");
     setDataset("");
     setRegion("");
-    setIsImported(false);
     setQuery("");
     setPage(1);
     announce("已恢复合成搜索示例。");
@@ -256,11 +253,10 @@ export default function HeatObservatory({
         return;
       }
       analyzeHeat(parsed.stats, { days });
-      setStats(parsed.stats);
+      replaceRecords(parsed.stats);
       setSource("");
       setDataset("");
       setRegion("");
-      setIsImported(true);
       setPage(1);
       setImportErrors([]);
       setImportOpen(false);
