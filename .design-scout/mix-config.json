@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "revision": 2,
+  "project": {
+    "brief": "人物画法已由用户在聊天中选择：凉宫春日式清晰赛璐璐。网页配色与布局由Codex结合原需求制作；原创黑发女仆、深色复古日系研究站、强动效，先六类高保真样张再实现。",
+    "title": "游戏机制研究站｜凉宫与 Key 视觉参考",
+    "media": "web",
+    "width": 1440,
+    "height": 1000
+  },
+  "sources": [
+    {
+      "id": "style:search_haruhi",
+      "kind": "style",
+      "style_id": "search_haruhi",
+      "name": "凉宫春日｜清晰赛璐璐"
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "palette",
+      "label": "配色",
+      "binding": "palette"
+    },
+    {
+      "id": "layout",
+      "label": "排版 / 构图",
+      "binding": "spacing"
+    },
+    {
+      "id": "typography",
+      "label": "字体",
+      "binding": "font"
+    },
+    {
+      "id": "shape",
+      "label": "形状语言",
+      "binding": "radius"
+    },
+    {
+      "id": "material",
+      "label": "纹理 / 材质",
+      "binding": "texture"
+    },
+    {
+      "id": "lighting",
+      "label": "光影",
+      "binding": "contrast"
+    },
+    {
+      "id": "rendering",
+      "label": "插画 / 渲染",
+      "binding": "rendering"
+    },
+    {
+      "id": "imagery",
+      "label": "图像语言",
+      "binding": "imagery"
+    },
+    {
+      "id": "rhythm",
+      "label": "视觉节奏",
+      "binding": "density"
+    },
+    {
+      "id": "ui",
+      "label": "UI 组件",
+      "binding": "radius"
+    },
+    {
+      "id": "motion",
+      "label": "动效",
+      "binding": "duration"
+    },
+    {
+      "id": "interaction",
+      "label": "交互反馈",
+      "binding": "hover"
+    },
+    {
+      "id": "mood",
+      "label": "情绪 / 氛围",
+      "binding": "saturation"
+    }
+  ],
+  "channels": {
+    "overall": {
+      "enabled": [
+        "style:search_haruhi"
+      ],
+      "weights": {
+        "style:search_haruhi": 100
+      },
+      "locked": {},
+      "explicit": true
+    },
+    "palette": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "layout": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "typography": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "shape": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "material": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "lighting": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "rendering": {
+      "enabled": [
+        "style:search_haruhi"
+      ],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "imagery": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "rhythm": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "ui": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "motion": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "interaction": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    },
+    "mood": {
+      "enabled": [],
+      "weights": {},
+      "locked": {},
+      "explicit": false
+    }
+  },
+  "overrides": {},
+  "style_only": true,
+  "mode": "pro",
+  "view": "grid",
+  "versions": [],
+  "favorites": [],
+  "baseline": null,
+  "approved": false
+}

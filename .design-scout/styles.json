@@ -1,0 +1,496 @@
+[
+  {
+    "id": "search_haruhi",
+    "name": "凉宫春日｜清晰赛璐璐",
+    "name_en": "凉宫春日｜清晰赛璐璐",
+    "aliases": [
+      "凉宫春日｜清晰赛璐璐",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "看人物神态、深色描边与少量色块阴影；两张分别为2009和2016官网图，不能混称2006首发画风。",
+    "references": [
+      "haruhi-cast",
+      "haruhi-2016"
+    ],
+    "keywords": [
+      "凉宫春日｜清晰赛璐璐",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#faf6ed",
+        "#25283f",
+        "#e5ad42"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_key_early",
+    "name": "早期 Key｜大眼与柔和上色",
+    "name_en": "早期 Key｜大眼与柔和上色",
+    "aliases": [
+      "早期 Key｜大眼与柔和上色",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "对比AIR、Kanon、CLANNAD原游戏：大眼比例、细线与低对比阴影。可只取人物画法，不必连浅色背景一起采用。",
+    "references": [
+      "air-game",
+      "kanon-game",
+      "clannad-game"
+    ],
+    "keywords": [
+      "早期 Key｜大眼与柔和上色",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#e8eff6",
+        "#363a5b",
+        "#9eaed1"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_kyoani_key",
+    "name": "Key 动画版｜利落赛璐璐",
+    "name_en": "Key 动画版｜利落赛璐璐",
+    "aliases": [
+      "Key 动画版｜利落赛璐璐",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "京阿尼版Kanon的清楚分层与旧式官网切片，配CLANNAD场景气氛；人物画法与背景应分别选。",
+    "references": [
+      "kanon-anime",
+      "clannad-anime",
+      "haruhi-cast"
+    ],
+    "keywords": [
+      "Key 动画版｜利落赛璐璐",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#e8f1f8",
+        "#2c3550",
+        "#79a7ca"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_key_twilight",
+    "name": "CLANNAD｜粉紫暮色与场景",
+    "name_en": "CLANNAD｜粉紫暮色与场景",
+    "aliases": [
+      "CLANNAD｜粉紫暮色与场景",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "粉紫暮色、蓝色远景和白边羽化；适合女仆立绘与背景的融合方式。场景氛围可以与深色研究页面局部组合。",
+    "references": [
+      "clannad-game",
+      "clannad-anime",
+      "air-game"
+    ],
+    "keywords": [
+      "CLANNAD｜粉紫暮色与场景",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#f2e6ef",
+        "#43395c",
+        "#a78cab"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_little_busters",
+    "name": "Little Busters!｜活力与群像",
+    "name_en": "Little Busters!｜活力与群像",
+    "aliases": [
+      "Little Busters!｜活力与群像",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "红黑服装、斜向人物、紧凑群像和醒目字标；可用于首页焦点和活动入口，正文保持清楚。包含2012及之后版本。",
+    "references": [
+      "little-busters",
+      "rewrite",
+      "angel-beats"
+    ],
+    "keywords": [
+      "Little Busters!｜活力与群像",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#f6f1ed",
+        "#302b3c",
+        "#c24d65"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_planetarian",
+    "name": "planetarian｜旧式科幻助手",
+    "name_en": "planetarian｜旧式科幻助手",
+    "aliases": [
+      "planetarian｜旧式科幻助手",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "深色制服、白底金色环与柔和立绘；比霓虹终端更接近旧式科幻视觉小说，可研究助手服装和资料面板。",
+    "references": [
+      "planetarian",
+      "harmonia"
+    ],
+    "keywords": [
+      "planetarian｜旧式科幻助手",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#f3eff4",
+        "#303554",
+        "#ac9ac9"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_key_modern",
+    "name": "后期 Key｜明亮夏日（对照）",
+    "name_en": "后期 Key｜明亮夏日（对照）",
+    "aliases": [
+      "后期 Key｜明亮夏日（对照）",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "较新的发丝、光影与通透蓝天，用来判断想保留多少现代精致度；不是默认方向。",
+    "references": [
+      "summer-pockets",
+      "harmonia",
+      "angel-beats"
+    ],
+    "keywords": [
+      "后期 Key｜明亮夏日（对照）",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#e5f3fa",
+        "#303e59",
+        "#55a8d7"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  },
+  {
+    "id": "search_old_web",
+    "name": "SOS 团｜旧式官网与个人站",
+    "name_en": "SOS 团｜旧式官网与个人站",
+    "aliases": [
+      "SOS 团｜旧式官网与个人站",
+      "凉宫春日",
+      "Key",
+      "复古二次元"
+    ],
+    "domains": [
+      "C",
+      "E"
+    ],
+    "era": "本项目策展分组；每张图的年份单独标记",
+    "media": [
+      "web",
+      "illustration",
+      "game"
+    ],
+    "moods": [
+      "鲜明"
+    ],
+    "features": "主要选网页元素：入口页、图片按钮、窄幅主体、局部纹理与站点标记。需点开原站看布局；人物参考可另选。",
+    "references": [
+      "haruhi-sos-website",
+      "kanon-anime",
+      "clannad-game"
+    ],
+    "keywords": [
+      "SOS 团｜旧式官网与个人站",
+      "2000年代",
+      "视觉小说"
+    ],
+    "compatible_with": [],
+    "avoid": "不直接复制既有角色、字标或完整构图；不把新版宣传图冒充首发版本。",
+    "params": {
+      "palette": [
+        "#f5eff3",
+        "#302d46",
+        "#bd5d8a"
+      ],
+      "font": "serif",
+      "auxFont": "sans-serif",
+      "columns": 2,
+      "spacing": 28,
+      "radius": 0,
+      "texture": 0.1,
+      "contrast": 1,
+      "saturation": 0.9,
+      "density": 4,
+      "duration": 0.4,
+      "imagery": "organic",
+      "rendering": "soft",
+      "layout": "split",
+      "hover": 1.02,
+      "stroke": 1,
+      "easing": "ease-out"
+    },
+    "params_basis": "参考板策展近似值，不是参考原图测量；最终方案等待用户选择。",
+    "verified": true
+  }
+]

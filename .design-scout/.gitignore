@@ -1,0 +1,6 @@
+service.json
+conversation.json
+deliveries.json
+.start.lock
+*.tmp
+*.bak

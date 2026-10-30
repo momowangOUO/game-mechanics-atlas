@@ -1,0 +1,460 @@
+[
+  {
+    "id": "clannad-game",
+    "title": "CLANNAD（原游戏）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/product/clannad/",
+    "thumbnail": "https://key.visualarts.co.jp/product/clannad/images/clannad_main.jpg",
+    "year": 2004,
+    "notes": "Key官方产品页主图；year为原作首发年份，产品页同时列有后续版本。京都动画版另见 https://www.kyotoanimation.co.jp/works/clannad/ ，同作品不另计数量。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "大眼、小鼻口，纤细发束，衣褶阴影偏柔；粉紫暮色和边缘白色晕染让人物融入背景。适合旧式视觉小说立绘与温柔色彩。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "kanon-game",
+    "title": "Kanon（原游戏）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/product/kanon/",
+    "thumbnail": "https://key.visualarts.co.jp/product/kanon/images/kanon_main.jpg",
+    "year": 1999,
+    "notes": "Key官方产品页主图；year为原作首发年份。页面同时列有全年龄及其他版本，本条仅引用公开主图。京都动画版另见 https://www.kyotoanimation.co.jp/works/kanon/ 。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "1990年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "头脸与眼睛比例突出，发色分区明确，细线描画冬装；雪景底色、淡粉装饰和密集群像表现早期美少女游戏封面感。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "air-game",
+    "title": "AIR（原游戏）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/product/air/",
+    "thumbnail": "https://key.visualarts.co.jp/product/air/images/air_main.jpg",
+    "year": 2000,
+    "notes": "Key官方产品页主图；year为原作首发年份。页面同时列有全年龄及其他版本，本条仅引用公开主图。京都动画版另见 https://www.kyotoanimation.co.jp/works/air/ 。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "金色长发、大面积蓝色眼睛、浅蓝水面与白裙；人物轮廓细，阴影低对比，背景明亮。适合早期Key的通透留白和柔和人物。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "little-busters",
+    "title": "Little Busters!（游戏）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/product/little/",
+    "thumbnail": "https://key.visualarts.co.jp/product/little/images/main_little_pe.jpg",
+    "year": 2007,
+    "notes": "Key官方PERFECT EDITION产品页公开主图；year为原作2007首发，图对应2012年全年龄PERFECT EDITION，不应标为2007首发封面。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "人物群像叠放，动态长发、红黑服装、艳蓝底色与粗字标形成活力。当前图片是2012 PERFECT EDITION，不是2007首发封面。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "planetarian",
+    "title": "planetarian ～ちいさなほしのゆめ～",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/product/planetarian/",
+    "thumbnail": "https://key.visualarts.co.jp/product/planetarian/images/planetarian_main.jpg",
+    "year": 2004,
+    "notes": "Key官方产品页公开主图；year为原作首发年份，产品页也列出HD等后续版本。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "淡紫长发、绿色大眼、深色制服，弧形金色环与白底结合；科幻气质主要由服装和环形图形承担，适合研究助手与旧式SF包装。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "rewrite",
+    "title": "Rewrite（通过Rewrite＋官方页）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/rewrite/",
+    "thumbnail": "https://key.visualarts.co.jp/rewrite/common/image/header_main_bg.png",
+    "year": 2011,
+    "notes": "官方CSS实际引用的页头背景图；year为原作2011首发，本页面与图属于2016年的Rewrite＋。比本次2000年前后范围略晚，可作相邻年代补充。 仅核验来源与图像URL可访问，尚未进行目视内容或画风判断；公开展示不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:39:45.838333+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2010年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "白底上的角色群像以红黑制服统一，长发与蝴蝶结构成轻柔轮廓；背景留白多。当前是Rewrite＋页面，不冒充2011原版页面。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "angel-beats",
+    "title": "Angel Beats! -1st beat-（游戏）",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/angelbeats/",
+    "thumbnail": "https://key.visualarts.co.jp/angelbeats/common/image/ab_main_image2.png",
+    "year": 2015,
+    "notes": "Key官方游戏页CSS实际引用的主体图。2015为游戏年份，非2010动画年份；较晚年代补充。 仅核验来源与URL可访问，尚未作目视判断；公开预览不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:40:22.457831+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2010年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "人物纵向成组，制服灰白蓝与鲜明发色相配，边缘白色羽化；画法较早期Key更利落，作为2015年的相邻年代参考。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "harmonia",
+    "title": "Harmonia",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/harmonia/",
+    "thumbnail": "https://key.visualarts.co.jp/harmonia/common/image/shiona_chara_1.png",
+    "year": null,
+    "notes": "Key官方产品页实际引用的Shiona角色透明图；页面列有2017初回限定版，不把它直接当原作首发年份。 仅核验来源与URL可访问，尚未作目视判断；公开预览不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:40:22.457831+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "年代未核验",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "柔和金发、蓝色大眼、蓝白衣着与少量金色细节；立绘轮廓细、边缘浅，适合说明助手的亲和感。年代较晚，不当作早期Key原画。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "summer-pockets",
+    "title": "Summer Pockets",
+    "creator": "VisualArt’s / Key",
+    "url": "https://key.visualarts.co.jp/summer/",
+    "thumbnail": "https://key.visualarts.co.jp/summer/common/image/main_bg2.jpg",
+    "year": 2018,
+    "notes": "Key官方页面CSS引用的主背景；作为较新年代的对照，不归入2000年前后原始作品。 仅核验来源与URL可访问，尚未作目视判断；公开预览不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:40:22.457831+00:00",
+    "platform": "Key 官方",
+    "tags": [
+      "2010年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "大块明亮蓝天、云海与白衣角色，色彩鲜明，光影和发丝更细；这是2018年的现代对照，用于判断是否过于新潮。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "haruhi-sos-website",
+    "title": "SOS团原官网（网页审美参考）",
+    "creator": "《凉宫春日》官方／SOS团",
+    "url": "https://www.haruhi.tv/",
+    "thumbnail": "https://www.haruhi.tv/img/zozlogo.jpg",
+    "year": null,
+    "notes": "独立网页审美条目，预览为首页实际引用的SOS团图案，不代表人物画风。应打开网页观察布局、文字和图像关系；页面含较新公告，不能称为未经修改的2006历史快照。 仅核验来源与URL可访问，尚未作目视判断；公开预览不代表可转载授权。",
+    "verifiedAt": "2026-10-30T09:40:22.457831+00:00",
+    "platform": "SOS团官方",
+    "tags": [
+      "年代未核验",
+      "日系",
+      "真实作品",
+      "凉宫春日",
+      "动画"
+    ],
+    "analysis": "当前只目视核验SOS团彩色标记，并读取官网HTML：入口、访问计数文字、图片按钮和1024×768提示。网页布局仍须打开原站观察，不能从logo推断完整页面效果。",
+    "analysis_basis": "2026-10-30：已实际查看标记图、读取官方HTML；未完成原网页浏览器目视。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "haruhi-cast",
+    "title": "凉宫春日｜动画人物与网点（2009官网图）",
+    "creator": "京都动画／SOS团",
+    "url": "https://www.haruhi.tv/fanclub/cast.html",
+    "thumbnail": "https://www.haruhi.tv/fanclub/img/haruhi_cast_main2_091201.jpg",
+    "year": 2009,
+    "notes": "官方CSS引用的2009年人物介绍底图；不能标为2006首发KV。",
+    "platform": "SOS团官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "凉宫春日",
+      "动画"
+    ],
+    "analysis": "深色头发以少量明暗色块区分，眼睛轮廓清楚；斜向人物裁切配合密集网点与白底文字。适合研究有表情的2000年代动画人物和局部印刷感。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "haruhi-2016",
+    "title": "凉宫春日｜2016官网宣传图（年代对照）",
+    "creator": "京都动画／SOS团",
+    "url": "https://www.haruhi.tv/fanclub/",
+    "thumbnail": "https://www.haruhi.tv/fanclub/img/haruhi_top_main160930.jpg",
+    "year": 2016,
+    "notes": "官方CSS引用的2016年宣传图，作为较晚画法与网页包装对照。",
+    "platform": "SOS团官方",
+    "tags": [
+      "2010年代",
+      "日系",
+      "真实作品",
+      "凉宫春日",
+      "动画"
+    ],
+    "analysis": "红白版面、黄色爆炸形公告、蓝白服装与褐黑发色；人物阴影以明确色块为主。比2006更晚，只作年代变化和醒目菜单对照。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "clannad-anime",
+    "title": "CLANNAD｜京阿尼版官网主图",
+    "creator": "京都动画／TBS／光坂高校演剧部",
+    "url": "https://www.tbs.co.jp/clannad/clannad1/",
+    "thumbnail": "https://www.tbs.co.jp/clannad/clannad1/images/top-img.jpg",
+    "year": 2007,
+    "notes": "TBS官方页面CSS实际引用；与原游戏是同一作品的不同媒介，不能算成两部独立作品。",
+    "platform": "TBS 动画官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "人物在大场景中占比很小；暖色云层、深蓝夜空和金色草地形成情绪层次，官网外框有淡粉线条。适合场景气氛，不能用这一张判断脸部画法。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  },
+  {
+    "id": "kanon-anime",
+    "title": "Kanon｜京阿尼版官网主图",
+    "creator": "京都动画／TBS／百花屋",
+    "url": "https://www.tbs.co.jp/anime/kanon/",
+    "thumbnail": "https://www.tbs.co.jp/anime/kanon/images/kanon_1.jpg",
+    "year": 2006,
+    "notes": "TBS官方页面CSS实际引用；网页含DVD发售提示，非纯角色原画。",
+    "platform": "TBS 动画官方",
+    "tags": [
+      "2000年代",
+      "日系",
+      "真实作品",
+      "Key",
+      "视觉小说"
+    ],
+    "analysis": "清楚的赛璐璐分层、深色描边、较完整的衣装结构；蓝色横纹、雪花、字标与人物拼接，保留旧式游戏官网的图像切片感。",
+    "analysis_basis": "2026-10-30：已实际查看官方公开图；观察限该图，不是原作完整画集、字体或色值实测。",
+    "license": "官方作品版权保留，仅作为视觉研究；未获角色、图像、字标或完整构图的再利用授权。",
+    "rights": {
+      "type": "visual-reference",
+      "asset_reuse_authorized": false,
+      "license": null
+    },
+    "verified_at": "2026-10-30",
+    "validation": {
+      "source_verified": true,
+      "image_http": 200,
+      "visually_inspected": true
+    },
+    "params_basis": "用于参考板的策展方案近似值，不是原图色值、字体或尺寸测量。"
+  }
+]

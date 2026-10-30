@@ -1,0 +1,70 @@
+[
+  {
+    "id": "home-desktop",
+    "viewport": "1440x1000",
+    "images": [
+      {
+        "loaded": true,
+        "alt": "原创黑发女仆助手"
+      }
+    ],
+    "overflow": false,
+    "h1": "拆解游戏，发现新玩法。",
+    "errors": []
+  },
+  {
+    "id": "home-mobile",
+    "viewport": "390x844",
+    "images": [
+      {
+        "loaded": true,
+        "alt": "原创黑发女仆助手"
+      }
+    ],
+    "overflow": false,
+    "h1": "拆解游戏，发现新玩法。",
+    "errors": []
+  },
+  {
+    "id": "mechanic",
+    "viewport": "1440x1000",
+    "images": [
+      {
+        "loaded": true,
+        "alt": "黑发女仆研究助手"
+      }
+    ],
+    "overflow": false,
+    "h1": "分数达标",
+    "errors": []
+  },
+  {
+    "id": "game",
+    "viewport": "1440x1000",
+    "images": [],
+    "overflow": false,
+    "h1": "Balatro",
+    "errors": []
+  },
+  {
+    "id": "heat",
+    "viewport": "1440x1000",
+    "images": [],
+    "overflow": false,
+    "h1": "玩家在搜什么？",
+    "errors": []
+  },
+  {
+    "id": "lab",
+    "viewport": "1440x1000",
+    "images": [
+      {
+        "loaded": true,
+        "alt": "黑发女仆研究助手"
+      }
+    ],
+    "overflow": false,
+    "h1": "试验一种新组合。",
+    "errors": []
+  }
+]

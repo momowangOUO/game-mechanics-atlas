@@ -1,0 +1,26 @@
+[
+  {
+    "id": "key",
+    "name": "Key 官方",
+    "enabled": true,
+    "url": "https://key.visualarts.co.jp/",
+    "kind": "public-metadata",
+    "terms": "只作视觉研究，原图未授权用于产品。"
+  },
+  {
+    "id": "haruhi",
+    "name": "SOS团官方",
+    "enabled": true,
+    "url": "https://www.haruhi.tv/",
+    "kind": "public-metadata",
+    "terms": "公开官网；原图未授权用于产品。"
+  },
+  {
+    "id": "tbs",
+    "name": "TBS 动画官方",
+    "enabled": true,
+    "url": "https://www.tbs.co.jp/",
+    "kind": "public-metadata",
+    "terms": "公开动画官网；原图未授权用于产品。"
+  }
+]

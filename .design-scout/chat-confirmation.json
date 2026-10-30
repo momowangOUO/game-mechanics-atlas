@@ -1,0 +1,17 @@
+{
+  "confirmed": true,
+  "selection_origin": "user_chat",
+  "date": "2026-10-30",
+  "exact_answer": "凉宫春日：清晰赛璐璐",
+  "selected_style_id": "search_haruhi",
+  "selected_reference_ids": [
+    "haruhi-cast",
+    "haruhi-2016"
+  ],
+  "elements": [
+    "rendering"
+  ],
+  "scope": "人物画法",
+  "website_layout_and_palette": "Codex结合原始brief确定的方案，不冒充用户另行选择",
+  "note": "网页approved只表示网页应用状态；本聊天确认已解除选稿阻塞。"
+}

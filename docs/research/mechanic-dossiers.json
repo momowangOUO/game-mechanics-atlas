@@ -1,0 +1,1931 @@
+{
+  "schemaNote": "本文件为平台机制档案研究稿；定义、设计价值、风险与实现建议均为编辑归纳，不声称学界统一标准。",
+  "preparedAt": "2026-10-30",
+  "vocabularySource": "taxonomy-notes.md",
+  "gameEvidenceSource": "game-evidence.json",
+  "coverage": {
+    "mechanics": 52,
+    "dimensions": 9,
+    "perDimension": {
+      "interaction": 5,
+      "rules": 5,
+      "temporal": 8,
+      "buildcraft": 5,
+      "progression": 6,
+      "economy": 8,
+      "information": 5,
+      "participants": 4,
+      "variability": 6
+    }
+  },
+  "evidencePolicy": {
+    "referenceMeaning": "evidenceRefs只索引既有游戏研究中同机制ID的present或conditional实例，不是完整游戏画像，也不是游戏对本平台全部定义的背书。",
+    "scopeResolution": "使用引用时须回到game-evidence.json读取该实例的status、scope、sourceUrl与note；conditional不得改成无条件present。",
+    "missingMeaning": "evidenceRefs为空表示尚无符合本轮直接证据要求的正面实例，按unknown保留，不能解释为机制不存在或不适用。",
+    "negativeEvidence": "既有absent实例不进入本文件正面参考；否定和not_applicable需另存带范围的证据。",
+    "inferenceLimit": "不从复合类型、游戏标签、相近机制或个人印象推断实例；本轮未新增外部核验或游戏实测。"
+  },
+  "complexityPolicy": "低、中、高仅粗略表达最小实现需要处理的状态、交互与一致性难点，是编辑判断，不代表工期、预算或游戏设计优劣；联网和内容规模可能改变实际成本。",
+  "mechanisms": [
+    {
+      "id": "direct-movement",
+      "name": "直接移动",
+      "dimension": "interaction",
+      "definition": "玩家的方向或位置输入直接改变可控对象的位置。",
+      "inclusionRules": [
+        "输入与位置变化存在直接对应关系。",
+        "移动过程允许玩家调整方向或目的地。"
+      ],
+      "exclusionRules": [
+        "只选择下一处路线节点不计入。",
+        "完全按预设路线自动行进不计入。"
+      ],
+      "misconceptions": [
+        "能看到角色走动，不代表玩家直接控制移动。"
+      ],
+      "designValue": [
+        "让位置成为可持续调整的行动选择。"
+      ],
+      "risks": [
+        "镜头与移动方向不一致可能妨碍判断。",
+        "碰撞和加速度反馈不清会削弱控制感。"
+      ],
+      "adaptation": [
+        "先确定移动在探索、战斗或避险中承担的作用。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "统一处理输入方向、碰撞和移动反馈，避免不同输入设备产生不必要的差异。",
+      "relatedMechanics": [
+        "dodge-move",
+        "real-time-update"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "aimed-launch",
+      "name": "瞄准发射",
+      "dimension": "interaction",
+      "definition": "玩家先指定方向或目标，再发射按该选择运动的对象。",
+      "inclusionRules": [
+        "玩家能在发射前改变方向或目标。",
+        "发射结果受所选方向或目标影响。"
+      ],
+      "exclusionRules": [
+        "系统完全随机决定发射方向不计入。",
+        "只点选对象并立即结算效果不计入。"
+      ],
+      "misconceptions": [
+        "可瞄准不意味着弹道结果完全确定。"
+      ],
+      "designValue": [
+        "让空间判断与执行时机直接参与结果。"
+      ],
+      "risks": [
+        "瞄准指示与实际弹道不符会误导决策。",
+        "碰撞太复杂时玩家难以理解失败原因。"
+      ],
+      "adaptation": [
+        "用少量可读的障碍和明确反馈建立首个瞄准场景。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "让瞄准预览与实际发射共用方向和起点数据，并明确弹道中的随机部分。",
+      "relatedMechanics": [
+        "direct-movement",
+        "real-time-update"
+      ],
+      "evidenceRefs": [
+        "peglin"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "dodge-move",
+      "name": "闪避位移",
+      "dimension": "interaction",
+      "definition": "玩家主动触发短时移动，以改变位置并避开威胁。",
+      "inclusionRules": [
+        "玩家可以主动决定何时触发。",
+        "动作通过位移改变与威胁的空间关系。"
+      ],
+      "exclusionRules": [
+        "纯防御姿态且没有位移不计入。",
+        "被攻击强制击退不计入。"
+      ],
+      "misconceptions": [
+        "闪避位移不必附带无敌状态。"
+      ],
+      "designValue": [
+        "给玩家主动处理危险的空间手段。"
+      ],
+      "risks": [
+        "缺少前后摇约束可能挤压其他移动选择。",
+        "无敌时段和视觉动作不一致会使命中难以理解。"
+      ],
+      "adaptation": [
+        "先决定靠位移避险，还是另加明确的免伤规则。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分别维护位移轨迹、碰撞行为与免伤状态，避免用同一开关混合处理。",
+      "relatedMechanics": [
+        "direct-movement",
+        "action-cooldown"
+      ],
+      "evidenceRefs": [
+        "dead-cells"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "piece-rotation",
+      "name": "物件旋转",
+      "dimension": "interaction",
+      "definition": "玩家改变可操作物件的朝向，以适应当前空间或规则。",
+      "inclusionRules": [
+        "朝向变化由玩家输入触发。",
+        "朝向影响放置、通过或其他合法状态。"
+      ],
+      "exclusionRules": [
+        "只有装饰性的旋转动画不计入。",
+        "镜头旋转但物件朝向不变不计入。"
+      ],
+      "misconceptions": [
+        "旋转不等于必须使用网格或固定角度。"
+      ],
+      "designValue": [
+        "让有限物件通过朝向变化产生更多可用方案。"
+      ],
+      "risks": [
+        "旋转中心不清会造成位置预判错误。",
+        "边界处的自动修正可能出现意外跳位。"
+      ],
+      "adaptation": [
+        "为物件给出清晰的旋转中心与非法位置反馈。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确旋转基点、合法性检查和边界修正规则，并保持输入结果一致。",
+      "relatedMechanics": [
+        "drag-placement",
+        "spatial-loadout"
+      ],
+      "evidenceRefs": [
+        "tetris"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "drag-placement",
+      "name": "拖放布置",
+      "dimension": "interaction",
+      "definition": "玩家拖动物件，并在允许的位置释放以提交放置。",
+      "inclusionRules": [
+        "拖动过程中能改变候选位置。",
+        "释放或确认动作将候选位置提交为结果。"
+      ],
+      "exclusionRules": [
+        "只能点击预设槽位且不能拖动不计入。",
+        "系统自行排布而玩家不能干预不计入。"
+      ],
+      "misconceptions": [
+        "支持拖放不代表物件位置会提供战斗加成。"
+      ],
+      "designValue": [
+        "让物件与空间的对应关系便于观察和调整。"
+      ],
+      "risks": [
+        "抓取点与实际占位不一致会产生误放。",
+        "只靠精细拖动会增加触屏和辅助操作负担。"
+      ],
+      "adaptation": [
+        "同时提供吸附预览与可替代的选择放置方式。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分离拖动预览和正式占位，在提交时统一验证并处理无效放置。",
+      "relatedMechanics": [
+        "piece-rotation",
+        "spatial-loadout"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "score-threshold",
+      "name": "分数达标",
+      "dimension": "rules",
+      "definition": "在指定结算范围内，累计分数达到目标会触发通过或奖励。",
+      "inclusionRules": [
+        "规则存在可比较的分数与目标值。",
+        "是否达标直接影响通过或奖励结果。"
+      ],
+      "exclusionRules": [
+        "只在结束时展示分数不计入。",
+        "单纯比较玩家名次但没有目标值不计入。"
+      ],
+      "misconceptions": [
+        "存在计分界面，不等于以达标作为过关条件。"
+      ],
+      "designValue": [
+        "给复杂的行动结果提供清楚的近期目标。"
+      ],
+      "risks": [
+        "分数来源不透明时难以制定策略。",
+        "目标增长与能力增长失衡会迫使单一解法。"
+      ],
+      "adaptation": [
+        "先让玩家理解基础分，再逐步开放改变计分的效果。"
+      ],
+      "complexity": "低",
+      "implementationNotes": "明确累计范围、目标比较时点和结算顺序，防止重复触发通关。",
+      "relatedMechanics": [
+        "rule-modifier",
+        "stacking-effects"
+      ],
+      "evidenceRefs": [
+        "balatro"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "line-completion-clear",
+      "name": "满行消除",
+      "dimension": "rules",
+      "definition": "物件填满规定横行且没有空隙后，系统清除该行的组成部分。",
+      "inclusionRules": [
+        "判定对象是规定方向的完整横行。",
+        "满足无空隙条件会触发清除。"
+      ],
+      "exclusionRules": [
+        "相同颜色相连便消除不计入。",
+        "仅对齐物件但不发生清除不计入。"
+      ],
+      "misconceptions": [
+        "满行消除与按颜色匹配的消除规则不同。"
+      ],
+      "designValue": [
+        "让空间整理同时带来可见成果与可用空间。"
+      ],
+      "risks": [
+        "清除后的落位规则不清会阻碍连步规划。",
+        "过多特例可能破坏玩家对完整横行的判断。"
+      ],
+      "adaptation": [
+        "先固定清行后的物件移动规则，再加入特殊方块。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "先收集同次满足条件的行，再统一清除与重排，避免遍历顺序改变结果。",
+      "relatedMechanics": [
+        "piece-rotation",
+        "score-threshold"
+      ],
+      "evidenceRefs": [
+        "tetris"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "automatic-resolution",
+      "name": "自动战斗结算",
+      "dimension": "rules",
+      "definition": "进入战斗执行阶段后，主要战斗行为由预设规则自动推进。",
+      "inclusionRules": [
+        "系统按已配置状态执行主要战斗行为。",
+        "玩家的准备或规则配置影响结算结果。"
+      ],
+      "exclusionRules": [
+        "仅攻击动画自动播放但每步仍由玩家下令不计入。",
+        "只存在自动寻路而战斗完全手动不计入。"
+      ],
+      "misconceptions": [
+        "自动战斗不等于异步多人，也不等于离线放置。"
+      ],
+      "designValue": [
+        "把决策重心移到配置，并用战斗检验配置效果。"
+      ],
+      "risks": [
+        "结果缺少解释会使配置学习依赖猜测。",
+        "准备阶段选择过少会使观战显得无事可做。"
+      ],
+      "adaptation": [
+        "把关键触发和失效原因显示在战斗反馈中。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "固定事件调度与效果优先级，保留可追查的关键结算记录。",
+      "relatedMechanics": [
+        "spatial-loadout",
+        "stacking-effects"
+      ],
+      "evidenceRefs": [
+        "backpack-battles"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "stacking-effects",
+      "name": "效果叠加",
+      "dimension": "rules",
+      "definition": "多个有效效果按明确的组合规则共同改变同一结果或状态。",
+      "inclusionRules": [
+        "至少两个效果能在同一结算范围生效。",
+        "规则说明它们如何合并或依次计算。"
+      ],
+      "exclusionRules": [
+        "只是同时出现多个无关联特效不计入。",
+        "不同效果彼此覆盖且不能共同作用不计入。"
+      ],
+      "misconceptions": [
+        "叠加不必相乘，也不保证收益不断增大。"
+      ],
+      "designValue": [
+        "让已有组件之间产生值得探索的组合关系。"
+      ],
+      "risks": [
+        "无上限增长可能很快压缩可用难度范围。",
+        "计算顺序隐蔽会让相同描述产生不同预期。"
+      ],
+      "adaptation": [
+        "先公布加法、乘法、上限与覆盖关系，再扩充效果数量。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "建立一致的效果合并顺序，并区分来源、层数、持续时间与最大值。",
+      "relatedMechanics": [
+        "rule-modifier",
+        "automatic-resolution"
+      ],
+      "evidenceRefs": [
+        "risk-of-rain-2"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "rule-modifier",
+      "name": "规则修饰器",
+      "dimension": "rules",
+      "definition": "特定有效效果改变既有结算的条件、作用对象或计算方式。",
+      "inclusionRules": [
+        "存在可辨认的基础规则。",
+        "组件的启用改变该规则如何生效或结算。"
+      ],
+      "exclusionRules": [
+        "仅改变外观和说明文字不计入。",
+        "单纯增加基础数值且未改变规则关系不计入。"
+      ],
+      "misconceptions": [
+        "改变规则不等于取消限制，也不保证组件越多越强。"
+      ],
+      "designValue": [
+        "让熟悉的基础玩法产生新的使用方式。"
+      ],
+      "risks": [
+        "修饰器冲突可能使结算难以预测。",
+        "例外过多会使基础规则失去教学作用。"
+      ],
+      "adaptation": [
+        "先说明基础规则，再让每个组件只引入可理解的变化。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "以明确的作用范围和优先级组合修饰器，并处理互斥与覆盖关系。",
+      "relatedMechanics": [
+        "stacking-effects",
+        "score-threshold"
+      ],
+      "evidenceRefs": [
+        "balatro"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "run-reset",
+      "name": "单局重开",
+      "dimension": "temporal",
+      "definition": "一次尝试结束后，当前尝试的指定局面被清除并从起点重新建立。",
+      "inclusionRules": [
+        "存在可识别的一次尝试边界。",
+        "结束后清除部分当前局面并开始新的尝试。"
+      ],
+      "exclusionRules": [
+        "只回到附近检查点且原局面延续不计入。",
+        "没有重新开始过程的永久结束不计入。"
+      ],
+      "misconceptions": [
+        "单局重开不意味着全部存档或跨局解锁消失。"
+      ],
+      "designValue": [
+        "让每次尝试成为有开始和终点的完整决策过程。"
+      ],
+      "risks": [
+        "重置范围不清会使玩家误判保留内容。",
+        "前段缺少变化时重玩成本容易累积。"
+      ],
+      "adaptation": [
+        "明确区分清除的局面与保留的权限，并缩短无选择的重复段。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分别存储当前尝试状态和长期状态，在结束时按清单重置。",
+      "relatedMechanics": [
+        "persistent-stat-upgrade",
+        "persistent-unlock"
+      ],
+      "evidenceRefs": [
+        "peglin"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "sequential-turns",
+      "name": "轮流行动",
+      "dimension": "temporal",
+      "definition": "参与者按照规则规定的回合顺序依次获得行动权限。",
+      "inclusionRules": [
+        "存在区分行动归属的回合。",
+        "行动权限随回合顺序转移。"
+      ],
+      "exclusionRules": [
+        "所有参与者同时提交再统一执行不计入。",
+        "仅让动画排队但行动权限同时开放不计入。"
+      ],
+      "misconceptions": [
+        "轮流行动不保证玩家拥有无限思考时间。"
+      ],
+      "designValue": [
+        "让行动顺序和资源分配具有可推演的后果。"
+      ],
+      "risks": [
+        "等待时间过长会降低非行动者的参与感。",
+        "插队与额外回合过多会增加顺序理解成本。"
+      ],
+      "adaptation": [
+        "用少量清晰的回合变化建立顺序感，再加入打断和额外行动。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "为回合归属、阶段转换和插入行动建立明确状态，避免重复发放行动权限。",
+      "relatedMechanics": [
+        "planning-timer",
+        "intent-preview"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "real-time-update",
+      "name": "实时推进",
+      "dimension": "temporal",
+      "definition": "即使玩家暂时不输入，指定范围内的世界状态仍按时钟持续变化。",
+      "inclusionRules": [
+        "存在驱动该范围状态变化的时钟。",
+        "等待本身可以改变局势。"
+      ],
+      "exclusionRules": [
+        "必须由下一次输入才推进状态不计入。",
+        "只有背景动画变化而规则状态不变不计入。"
+      ],
+      "misconceptions": [
+        "实时推进可以发生在单人游戏，也可以允许暂停。"
+      ],
+      "designValue": [
+        "让时机与持续注意成为决策的一部分。"
+      ],
+      "risks": [
+        "操作延迟会放大输入与结果之间的落差。",
+        "持续压力可能压缩阅读和学习规则的机会。"
+      ],
+      "adaptation": [
+        "明确哪些系统随时间推进，哪些界面或阶段暂停。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "采用稳定的规则更新方式，并明确暂停、变速与跨设备时间差的处理。",
+      "relatedMechanics": [
+        "direct-movement",
+        "pause-planning"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "action-cooldown",
+      "name": "行动冷却",
+      "dimension": "temporal",
+      "definition": "某行动使用后必须等待规定时间，才能再次合法使用。",
+      "inclusionRules": [
+        "行动使用会启动时间限制。",
+        "限制结束前不能按普通方式再次使用。"
+      ],
+      "exclusionRules": [
+        "只受消耗品数量限制不计入。",
+        "仅有播放动画但不限制再次使用不计入。"
+      ],
+      "misconceptions": [
+        "冷却限制的是可再次使用的时间，不等于行动本身持续时间。"
+      ],
+      "designValue": [
+        "让强力行动的使用时机具有机会成本。"
+      ],
+      "risks": [
+        "同时冷却的行动太多会使等待取代决策。",
+        "剩余时间难以辨认会造成无效输入。"
+      ],
+      "adaptation": [
+        "先确定冷却期间玩家还有哪些有效选择。"
+      ],
+      "complexity": "低",
+      "implementationNotes": "以统一时钟保存可用时间，并明确冷却受暂停、加速与重置影响的规则。",
+      "relatedMechanics": [
+        "dodge-move",
+        "real-time-update"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "planning-timer",
+      "name": "规划时限",
+      "dimension": "temporal",
+      "definition": "决策阶段有截止时刻，超时会结束、锁定或按规则代选。",
+      "inclusionRules": [
+        "限制直接约束一个决策阶段。",
+        "超时后存在明确的规则后果。"
+      ],
+      "exclusionRules": [
+        "只显示整局耗时而不终止决策不计入。",
+        "对局外活动倒计时但不限制当前规划不计入。"
+      ],
+      "misconceptions": [
+        "一款游戏有计时模式，不代表所有模式都限时。"
+      ],
+      "designValue": [
+        "压缩犹豫时间，并让参与者在相近节奏下推进。"
+      ],
+      "risks": [
+        "时间不足会使复杂配置变成操作速度考验。",
+        "默认代选不清楚时超时结果难以接受。"
+      ],
+      "adaptation": [
+        "按决策复杂度设置时限，并提前显示超时处理方式。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "由明确的阶段截止时刻决定锁定结果，统一处理最后一刻提交与超时事件。",
+      "relatedMechanics": [
+        "sequential-turns",
+        "automatic-resolution"
+      ],
+      "evidenceRefs": [
+        "backpack-battles"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "pause-planning",
+      "name": "暂停规划",
+      "dimension": "temporal",
+      "definition": "世界时钟停止时，玩家仍能作出会影响恢复后局势的选择。",
+      "inclusionRules": [
+        "暂停会停止相关规则系统的时间推进。",
+        "暂停期间允许配置、指令或其他有效决策。"
+      ],
+      "exclusionRules": [
+        "只能查看静态菜单但不能改变后续决策不计入。",
+        "慢速推进但未停止时间不计入。"
+      ],
+      "misconceptions": [
+        "有暂停按钮，不一定具备暂停规划。"
+      ],
+      "designValue": [
+        "为复杂实时局势保留观察和安排的空间。"
+      ],
+      "risks": [
+        "暂停权限不一致可能改变多人模式的公平性。",
+        "恢复时多项指令集中生效可能造成难读的突变。"
+      ],
+      "adaptation": [
+        "列清暂停中可改的内容，并控制恢复后的集中执行。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "暂停规则时钟而保留允许的界面操作，并明确指令提交与恢复的顺序。",
+      "relatedMechanics": [
+        "real-time-update",
+        "loadout-selection"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "in-run-deck-growth",
+      "name": "局内扩充卡组",
+      "dimension": "buildcraft",
+      "definition": "玩家在一次尝试进行期间，取得新卡并将其纳入当前可使用卡组。",
+      "inclusionRules": [
+        "新增卡牌发生在同一次尝试中。",
+        "新增卡牌改变后续可使用的卡组内容。"
+      ],
+      "exclusionRules": [
+        "只在局外收藏而当前卡组不变不计入。",
+        "临时展示一张卡但不能使用不计入。"
+      ],
+      "misconceptions": [
+        "使用卡牌作为界面，不等于玩家能在局内扩充卡组。"
+      ],
+      "designValue": [
+        "让奖励选择持续改变后续行动组合。"
+      ],
+      "risks": [
+        "无代价增加卡牌可能稀释核心组合。",
+        "奖励候选过多会增加每次选择的阅读负担。"
+      ],
+      "adaptation": [
+        "先确定新增卡牌如何改变后续使用机会，再决定是否提供跳过。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "区分卡组、手牌与临时卡，并明确新卡何时进入可使用范围。",
+      "relatedMechanics": [
+        "random-draw",
+        "run-reset"
+      ],
+      "evidenceRefs": [
+        "slay-the-spire",
+        "inscryption"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "loadout-selection",
+      "name": "出战配置",
+      "dimension": "buildcraft",
+      "definition": "玩家在遭遇开始前，选择本次携带或启用的能力与物品组合。",
+      "inclusionRules": [
+        "选择发生在相应遭遇的执行前。",
+        "所选内容影响遭遇中的可用能力或效果。"
+      ],
+      "exclusionRules": [
+        "只改变角色外观且不影响规则不计入。",
+        "所有装备固定且玩家无法选择不计入。"
+      ],
+      "misconceptions": [
+        "出战配置不要求有随机掉落或稀有度系统。"
+      ],
+      "designValue": [
+        "让准备阶段承担当局目标与风险的判断。"
+      ],
+      "risks": [
+        "优势配置固定后可能失去重复选择的意义。",
+        "不了解遭遇信息时配置可能退化为盲猜。"
+      ],
+      "adaptation": [
+        "让出战信息足以支持取舍，同时保留配置之间的适用差别。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "统一验证槽位、互斥与携带限制，并在遭遇开始时锁定或保存配置。",
+      "relatedMechanics": [
+        "spatial-loadout",
+        "persistent-unlock"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "spatial-loadout",
+      "name": "空间装备配置",
+      "dimension": "buildcraft",
+      "definition": "构筑组件占用空间，形状或位置影响可用配置或组件效果。",
+      "inclusionRules": [
+        "组件具有规则意义上的占位或位置。",
+        "空间安排影响合法配置或实际效果。"
+      ],
+      "exclusionRules": [
+        "列表排序只影响展示不计入。",
+        "物件自由摆放但位置不影响规则不计入。"
+      ],
+      "misconceptions": [
+        "空间装备配置不必具备相邻加成，空间限制本身也能产生取舍。"
+      ],
+      "designValue": [
+        "把装配选择变成可观察的空间问题。"
+      ],
+      "risks": [
+        "摆放操作过密会遮住构筑决策。",
+        "占位预览不清容易让玩家误判合法布局。"
+      ],
+      "adaptation": [
+        "先用少量形状建立空间约束，再引入位置相关效果。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分离组件占位与效果范围，并在移动或旋转后重新校验合法性。",
+      "relatedMechanics": [
+        "drag-placement",
+        "piece-rotation"
+      ],
+      "evidenceRefs": [
+        "backpack-battles"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "respec",
+      "name": "成长重配",
+      "dimension": "buildcraft",
+      "definition": "玩家可以撤回已分配的成长资源或选项，再按规则重新配置。",
+      "inclusionRules": [
+        "存在此前已分配的成长选项。",
+        "规则允许撤回并重新分配其中一部分。"
+      ],
+      "exclusionRules": [
+        "只替换随身装备而未改成长分配不计入。",
+        "仅重新开始整个存档不计入。"
+      ],
+      "misconceptions": [
+        "成长重配可以有费用、地点或次数条件，不一定随时免费。"
+      ],
+      "designValue": [
+        "降低尝试不同成长方向的长期损失。"
+      ],
+      "risks": [
+        "过于频繁的重配可能让长期取舍失去意义。",
+        "撤回条件不清会使玩家误判资源是否可返还。"
+      ],
+      "adaptation": [
+        "根据希望鼓励的试验频率决定开放时机与代价。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "以可追溯的分配记录撤回效果和资源，并重新检查依赖该成长的内容。",
+      "relatedMechanics": [
+        "persistent-stat-upgrade",
+        "persistent-unlock"
+      ],
+      "evidenceRefs": [
+        "vampire-survivors"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "persistent-stat-upgrade",
+      "name": "跨局数值强化",
+      "dimension": "progression",
+      "definition": "数值增强在明确的重开边界之后仍然保留，并影响后续尝试。",
+      "inclusionRules": [
+        "存在可识别的重开或重新尝试边界。",
+        "增强后的数值跨越该边界继续生效。"
+      ],
+      "exclusionRules": [
+        "只持续到当前局结束的增益不计入。",
+        "只解锁内容但未增强数值不计入。"
+      ],
+      "misconceptions": [
+        "跨局强化不代表玩家无需学习操作或规则。"
+      ],
+      "designValue": [
+        "给重复尝试提供持续积累的目标。"
+      ],
+      "risks": [
+        "成长幅度过大可能让失败看起来只是数值不足。",
+        "初始难度过高可能迫使玩家反复积累后才能参与。"
+      ],
+      "adaptation": [
+        "让基础能力也能支持有效决策，再用强化扩大容错或选择。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "长期状态独立于单局状态保存，并明确强化应用与回退的时点。",
+      "relatedMechanics": [
+        "run-reset",
+        "respec"
+      ],
+      "evidenceRefs": [
+        "hades",
+        "vampire-survivors"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "persistent-unlock",
+      "name": "持久内容解锁",
+      "dimension": "progression",
+      "definition": "完成条件后获得的内容权限，在后续会话或尝试中继续保留。",
+      "inclusionRules": [
+        "完成条件会改变内容是否可用的权限。",
+        "该权限跨越规定的长期边界保留。"
+      ],
+      "exclusionRules": [
+        "一次性临时奖励结束后失效不计入。",
+        "只展示尚不可使用的内容预告不计入。"
+      ],
+      "misconceptions": [
+        "解锁物品进入候选池，不等于玩家立即持有该物品。"
+      ],
+      "designValue": [
+        "让进度带来新的行动可能，而不只增加数值。"
+      ],
+      "risks": [
+        "大量内容锁定可能使早期体验过于贫乏。",
+        "解锁条件不清会让玩家难以形成目标。"
+      ],
+      "adaptation": [
+        "为关键解锁提供可理解的条件与实际用途。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "区分权限、候选池和当前持有物，并记录解锁条件已满足的持久状态。",
+      "relatedMechanics": [
+        "loadout-selection",
+        "run-reset"
+      ],
+      "evidenceRefs": [
+        "cookie-clicker",
+        "dead-cells"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "skill-experience",
+      "name": "技能经验成长",
+      "dimension": "progression",
+      "definition": "指定行为或奖励累积技能经验，并在达到条件时改变该技能等级。",
+      "inclusionRules": [
+        "经验累计与明确的技能项目关联。",
+        "达到条件后技能等级或对应权限改变。"
+      ],
+      "exclusionRules": [
+        "仅记录操作次数且不改变等级不计入。",
+        "每次拾取直接临时加属性而没有经验累计不计入。"
+      ],
+      "misconceptions": [
+        "技能经验成长不必只由战斗产生。"
+      ],
+      "designValue": [
+        "把特定活动与相应能力发展连接起来。"
+      ],
+      "risks": [
+        "按次数发奖可能诱发无意义的重复操作。",
+        "等级收益不清会使成长目标难以理解。"
+      ],
+      "adaptation": [
+        "奖励有代表性的有效行为，避免只鼓励快速重复。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "定义经验事件、等级阈值与跨级结算，并防止同一事件重复发放经验。",
+      "relatedMechanics": [
+        "persistent-unlock",
+        "persistent-stat-upgrade"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "relationship-progression",
+      "name": "关系发展",
+      "dimension": "progression",
+      "definition": "玩家与角色的互动累积为关系状态变化，并影响后续互动或内容。",
+      "inclusionRules": [
+        "存在可持续记录的关系状态。",
+        "互动会改变状态或由该状态开放内容。"
+      ],
+      "exclusionRules": [
+        "一次性对白结束后不影响后续不计入。",
+        "只更换角色称呼而没有关系状态变化不计入。"
+      ],
+      "misconceptions": [
+        "关系发展不必使用可见好感度，也不必以恋爱为目标。"
+      ],
+      "designValue": [
+        "让人物互动产生持续的回应与变化。"
+      ],
+      "risks": [
+        "过度公式化的奖励可能让关系只剩刷数值。",
+        "角色反应缺少情境差异会削弱人物可信度。"
+      ],
+      "adaptation": [
+        "先确定角色在意什么，再决定哪些互动能够改变关系。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "将关系状态、触发条件和已发生事件分开记录，避免重复播放或跳过关键回应。",
+      "relatedMechanics": [
+        "persistent-unlock",
+        "environmental-clues"
+      ],
+      "evidenceRefs": [
+        "hades",
+        "stardew-valley"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "permadeath",
+      "name": "角色永久死亡",
+      "dimension": "progression",
+      "definition": "在指定存档或挑战范围内，角色实例死亡后不能通过常规玩法恢复其原有生存状态。",
+      "inclusionRules": [
+        "死亡使该角色实例进入不可常规恢复的终止状态。",
+        "不可恢复限制有明确的存档、挑战或角色范围。"
+      ],
+      "exclusionRules": [
+        "死亡后可常规复活并继续原有角色实例不计入。",
+        "只重新开始当前遭遇、没有不可恢复的角色损失不计入。"
+      ],
+      "misconceptions": [
+        "不能仅凭Roguelike或Roguelite标签断定存在角色永久死亡；单局重开是另一个机制。"
+      ],
+      "designValue": [
+        "让角色生存风险影响当下选择与长期投入。"
+      ],
+      "risks": [
+        "损失范围不清会让玩家误判投入是否仍可保留。",
+        "不可预见的失败造成巨大损失时，可能压缩尝试新方案的意愿。"
+      ],
+      "adaptation": [
+        "先明确损失的是角色实例、当前流程还是整个存档，再说明仍会保留的内容。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分离角色终止状态、当前流程重建与全局进度，并在存档恢复时遵循同一范围规则。",
+      "relatedMechanics": [
+        "run-reset",
+        "persistent-unlock",
+        "persistent-stat-upgrade"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "recipe-crafting",
+      "name": "配方制作",
+      "dimension": "economy",
+      "definition": "按规定的输入组合，将材料或组件转化为指定输出。",
+      "inclusionRules": [
+        "存在能判定输入是否满足条件的配方。",
+        "制作会生成规则规定的输出。"
+      ],
+      "exclusionRules": [
+        "只用货币购买单一商品不计入。",
+        "随意组合物件但没有转化结果不计入。"
+      ],
+      "misconceptions": [
+        "配方规定组合关系，材料从哪里取得是另一个机制。"
+      ],
+      "designValue": [
+        "让不同资源和组件通过明确用途形成联系。"
+      ],
+      "risks": [
+        "配方依赖过长会增加重复搜集负担。",
+        "关键输入缺乏可查信息会使目标难以规划。"
+      ],
+      "adaptation": [
+        "让首批配方呈现清楚的用途，再逐步增加替代输入。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "在一次事务中校验输入、扣除材料并生成输出，防止失败后丢失材料。",
+      "relatedMechanics": [
+        "resource-gathering",
+        "base-construction"
+      ],
+      "evidenceRefs": [
+        "stardew-valley"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "resource-gathering",
+      "name": "资源采集",
+      "dimension": "economy",
+      "definition": "玩家从环境对象或资源节点取得可储存或可使用的资源。",
+      "inclusionRules": [
+        "资源来源是可识别的环境对象或节点。",
+        "采集使资源进入可使用或持有状态。"
+      ],
+      "exclusionRules": [
+        "只结算任务奖励且未接触环境资源不计入。",
+        "只观察对象但未取得资源不计入。"
+      ],
+      "misconceptions": [
+        "采集不必通过破坏环境完成，也不必伴随随机掉落。"
+      ],
+      "designValue": [
+        "把探索路线与后续制作、生产目标连接起来。"
+      ],
+      "risks": [
+        "重复交互过多可能掩盖探索本身的乐趣。",
+        "资源分布单一会让最优路线很快固定。"
+      ],
+      "adaptation": [
+        "让资源位置和获取方式与环境差异相呼应。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "分开维护资源节点储量、采集条件和取得结果，并明确节点是否恢复。",
+      "relatedMechanics": [
+        "recipe-crafting",
+        "resource-scarcity"
+      ],
+      "evidenceRefs": [
+        "minecraft"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "resource-scarcity",
+      "name": "资源稀缺",
+      "dimension": "economy",
+      "definition": "在指定范围内，资源可用量不足以同时满足所有有意义的用途，因而构成取舍。",
+      "inclusionRules": [
+        "资源有至少两个相互竞争的有效用途。",
+        "可用量或取得速度实际限制同时满足这些用途。"
+      ],
+      "exclusionRules": [
+        "资源无限供应且取得不构成限制不计入。",
+        "只有数字计数但从不影响选择不计入。"
+      ],
+      "misconceptions": [
+        "资源稀缺既可能来自数量限制，也可能来自取得时间或携带限制。"
+      ],
+      "designValue": [
+        "让支出与保留形成有代价的选择。"
+      ],
+      "risks": [
+        "过度短缺可能使玩家只能等待或重复劳作。",
+        "不可预见的强制支出可能让合理规划突然失效。"
+      ],
+      "adaptation": [
+        "先确定希望玩家取舍的用途，再设置相应约束。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "按作用范围记录供给、支出与持有上限，避免只凭资源总量判断是否稀缺。",
+      "relatedMechanics": [
+        "production-investment",
+        "extraction-bank"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "production-investment",
+      "name": "生产投资",
+      "dimension": "economy",
+      "definition": "玩家消耗当前资源，换取未来持续或重复产生资源的能力。",
+      "inclusionRules": [
+        "投资会消耗当前可用资源。",
+        "投资对象能在之后产生多次或持续产出。"
+      ],
+      "exclusionRules": [
+        "购买只能使用一次的消耗品不计入。",
+        "仅领取固定奖励且不投入资源不计入。"
+      ],
+      "misconceptions": [
+        "生产投资不保证离线时仍然产出。"
+      ],
+      "designValue": [
+        "把当前消费与未来收益放在同一选择中。"
+      ],
+      "risks": [
+        "回本关系过于固定时选择可能只剩机械排序。",
+        "无约束复利可能过快冲破目标规模。"
+      ],
+      "adaptation": [
+        "让不同投资在回报时机、条件或用途上有所区别。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确生产时钟、产出领取与离线处理方式，并防止重复结算时间段。",
+      "relatedMechanics": [
+        "resource-scarcity",
+        "persistent-unlock"
+      ],
+      "evidenceRefs": [
+        "cookie-clicker"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "extraction-bank",
+      "name": "撤离兑现",
+      "dimension": "economy",
+      "definition": "玩家满足退出条件后，才将本次活动中的指定收益转为可保留资源。",
+      "inclusionRules": [
+        "收益在退出前处于尚未兑现的状态。",
+        "成功退出会改变这些收益的保留状态。"
+      ],
+      "exclusionRules": [
+        "所有拾取立即永久入账且退出不影响保留不计入。",
+        "只有离开场景动作而没有收益状态变化不计入。"
+      ],
+      "misconceptions": [
+        "撤离兑现不意味着失败必然损失全部财产。"
+      ],
+      "designValue": [
+        "让继续搜集与及时退出形成可见的风险取舍。"
+      ],
+      "risks": [
+        "损失范围过重可能使玩家回避所有试验。",
+        "保留例外不清会导致对失败后果的误判。"
+      ],
+      "adaptation": [
+        "明确列出需带出的资源，以及容器、保险或模式提供的例外。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "分离临时所得与长期库存，在撤离结果确认后统一转移并处理例外。",
+      "relatedMechanics": [
+        "resource-gathering",
+        "resource-scarcity"
+      ],
+      "evidenceRefs": [
+        "escape-from-tarkov"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "base-construction",
+      "name": "基地建设",
+      "dimension": "economy",
+      "definition": "玩家把资源投入可保留的基地设施，以改变后续可用功能或产出。",
+      "inclusionRules": [
+        "建造或升级会消耗可分配资源。",
+        "设施在当前建造动作结束后继续存在并发挥作用。"
+      ],
+      "exclusionRules": [
+        "只在遭遇中放置一次性攻击物不计入。",
+        "不改变功能或产出的纯外观布置不计入。"
+      ],
+      "misconceptions": [
+        "基地建设不要求自由摆放；固定槽位也可以承担设施投资。"
+      ],
+      "designValue": [
+        "让短期所得具有可持续的投入方向。"
+      ],
+      "risks": [
+        "设施依赖过长可能使目标被大量前置任务阻塞。",
+        "维护消耗过密会把基地变成持续催促的负担。"
+      ],
+      "adaptation": [
+        "围绕基地要支持的活动安排设施用途与解锁顺序。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "分别保存设施状态、建造成本与提供的功能，并检查升级后的依赖关系。",
+      "relatedMechanics": [
+        "recipe-crafting",
+        "production-investment"
+      ],
+      "evidenceRefs": [
+        "cult-of-the-lamb",
+        "loop-hero"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "shared-resource-pool",
+      "name": "团队共享资源",
+      "dimension": "economy",
+      "definition": "多个行动者按权限从同一资源池支取或补充资源。",
+      "inclusionRules": [
+        "存在多个能影响同一资源池的行动者。",
+        "一方支取会改变其他方可用的共享余额。"
+      ],
+      "exclusionRules": [
+        "每人独立持有同名货币且互不影响不计入。",
+        "只共享资源显示但实际上分别结算不计入。"
+      ],
+      "misconceptions": [
+        "共享资源规定谁能支配资源，不能据此推断如何生产或分配。"
+      ],
+      "designValue": [
+        "让团队成员的投入与支出形成共同决策。"
+      ],
+      "risks": [
+        "缺少沟通时个体消费可能破坏他人的计划。",
+        "权限不清可能让资源管理变成争执来源。"
+      ],
+      "adaptation": [
+        "明确谁能使用哪些资源，并提供用途可见的协商或限制方式。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "统一校验共享余额与支取权限，避免同时消费导致余额或归属不一致。",
+      "relatedMechanics": [
+        "cooperative-play",
+        "resource-scarcity"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "intent-preview",
+      "name": "行动意图预告",
+      "dimension": "information",
+      "definition": "行动执行之前，系统向玩家展示某行动者即将采取行动的相关信息。",
+      "inclusionRules": [
+        "展示发生在相应行动执行前。",
+        "信息能帮助玩家判断后续行动或威胁。"
+      ],
+      "exclusionRules": [
+        "行动结束后才显示伤害结果不计入。",
+        "只展示角色当前属性而不提示后续行动不计入。"
+      ],
+      "misconceptions": [
+        "意图预告可以只透露行动类别，不一定公开精确结果。"
+      ],
+      "designValue": [
+        "让应对建立在可读的信息上，并支持提前规划。"
+      ],
+      "risks": [
+        "预告与实际行为缺少一致关系会损害信任。",
+        "透露过多可能使局势很快被固定解法穷尽。"
+      ],
+      "adaptation": [
+        "先确定玩家需要提前知道什么，再决定预告的精度与例外。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确预告取自已确定行动还是预测结果，并在行动改变时同步更新。",
+      "relatedMechanics": [
+        "sequential-turns",
+        "pause-planning"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "next-piece-preview",
+      "name": "后续对象预览",
+      "dimension": "information",
+      "definition": "玩家作出当前决策前，可以看到之后将出现的一个或多个对象。",
+      "inclusionRules": [
+        "所示对象将在后续规则流程中出现。",
+        "玩家能在当前决策前读取该信息。"
+      ],
+      "exclusionRules": [
+        "只展示可能出现的完整候选池不计入。",
+        "当前对象出现后才显示其身份不计入。"
+      ],
+      "misconceptions": [
+        "后续对象预览与随机生成相互独立，不能互相推断。"
+      ],
+      "designValue": [
+        "把眼前选择与后续安排联系起来。"
+      ],
+      "risks": [
+        "预览过长可能使读图负担超过行动本身。",
+        "预览顺序与实际出现不一致会破坏规划。"
+      ],
+      "adaptation": [
+        "从较短的预览范围开始，观察玩家是否会据此调整决策。"
+      ],
+      "complexity": "低",
+      "implementationNotes": "让预览读取真实待出现队列，并明确替换或改序后何时更新。",
+      "relatedMechanics": [
+        "random-draw",
+        "piece-rotation"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "hidden-hand",
+      "name": "隐藏手牌",
+      "dimension": "information",
+      "definition": "某参与者持有的手牌身份，在指定阶段对至少另一方不可见。",
+      "inclusionRules": [
+        "存在归属于参与者的手牌集合。",
+        "规则限制其他方知晓其中至少部分身份。"
+      ],
+      "exclusionRules": [
+        "手牌对所有相关方完全公开不计入。",
+        "仅用卡背表现抽取动画但身份一直可知不计入。"
+      ],
+      "misconceptions": [
+        "隐藏手牌需要说明对谁隐藏，而不只是说牌面没有展开。"
+      ],
+      "designValue": [
+        "为推断对手能力和管理信息暴露提供空间。"
+      ],
+      "risks": [
+        "卡面之外的提示可能意外泄露隐藏信息。",
+        "信息差过大可能使合理决策近似猜测。"
+      ],
+      "adaptation": [
+        "明确隐藏对象、可推断线索和公开时机。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "按信息权限提供手牌数据，在需要保密的多人模式中避免提前下发完整身份。",
+      "relatedMechanics": [
+        "pvp-opposition",
+        "random-draw"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "fog-of-war",
+      "name": "战争迷雾",
+      "dimension": "information",
+      "definition": "区域及其中对象的信息，受探索、侦察或视野权限限制。",
+      "inclusionRules": [
+        "信息可见性依赖规则规定的区域权限。",
+        "探索或侦察能改变相关信息的可见状态。"
+      ],
+      "exclusionRules": [
+        "只有画面变暗但信息仍完全可读不计入。",
+        "未制作或未加载的地图内容不计入。"
+      ],
+      "misconceptions": [
+        "战争迷雾可以保留已探索地形，同时隐藏当前动态对象。"
+      ],
+      "designValue": [
+        "让侦察、探索与路线安排具有信息价值。"
+      ],
+      "risks": [
+        "历史信息和当前信息混淆会误导判断。",
+        "频繁补充视野可能变成重复操作负担。"
+      ],
+      "adaptation": [
+        "区分未探索、已知但不可见、当前可见等状态。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "分别维护探索记录与即时可见性，并明确多人之间是否共享视野。",
+      "relatedMechanics": [
+        "direct-movement",
+        "shared-resource-pool"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "environmental-clues",
+      "name": "环境线索",
+      "dimension": "information",
+      "definition": "玩家通过场景中的可读信息，推断行动条件、规则或解谜方法。",
+      "inclusionRules": [
+        "场景信息与可推断的条件存在稳定联系。",
+        "读取信息能够支持后续行动或解释。"
+      ],
+      "exclusionRules": [
+        "只是装饰且与规则或解谜没有联系不计入。",
+        "只能依赖游戏外答案才能建立联系不计入。"
+      ],
+      "misconceptions": [
+        "不直接给出答案，也应让线索与结果之间有可理解的关系。"
+      ],
+      "designValue": [
+        "让观察环境成为推进过程的一部分。"
+      ],
+      "risks": [
+        "线索过于隐蔽时会把理解困难变成搜像素。",
+        "误导信息缺少解释可能让玩家不再相信场景。"
+      ],
+      "adaptation": [
+        "先确定玩家需要得出哪一步推断，再安排能支持它的线索。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "将线索状态与实际解谜条件保持一致，并记录查看与使用的必要触发。",
+      "relatedMechanics": [
+        "persistent-unlock",
+        "intent-preview"
+      ],
+      "evidenceRefs": [
+        "inscryption"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "cooperative-play",
+      "name": "玩家合作",
+      "dimension": "participants",
+      "definition": "多位玩家通过各自行动，共同推进共享或相容的目标。",
+      "inclusionRules": [
+        "存在至少两位具有行动权限的玩家。",
+        "规则允许他们的行动共同支持同一或相容目标。"
+      ],
+      "exclusionRules": [
+        "只是同屏观看而不能影响目标不计入。",
+        "只比较独立成绩且不能共同推进不计入。"
+      ],
+      "misconceptions": [
+        "支持合作模式，不代表同一游戏的单人流程也有合作实例。"
+      ],
+      "designValue": [
+        "让玩家通过配合分担任务并形成共同成果。"
+      ],
+      "risks": [
+        "一位玩家包办关键决策可能削弱他人的参与。",
+        "能力差异过大可能让失败归责变成主要体验。"
+      ],
+      "adaptation": [
+        "让不同玩家都能看见自己的有效贡献，并提供必要的协调信息。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "明确共享目标、各自权限和失败条件，并统一处理加入、离开与同步。",
+      "relatedMechanics": [
+        "shared-resource-pool",
+        "synchronous-session"
+      ],
+      "evidenceRefs": [
+        "minecraft",
+        "game-of-dice",
+        "shape-of-dreams"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "pvp-opposition",
+      "name": "玩家竞争",
+      "dimension": "participants",
+      "definition": "玩家的行动能够影响其他玩家的胜负或竞争资源，从而形成直接对抗。",
+      "inclusionRules": [
+        "至少两位玩家参与同一规则上的竞争。",
+        "玩家行动能改变对方的胜负条件或竞争资源。"
+      ],
+      "exclusionRules": [
+        "仅比较互不影响的排行榜成绩不计入。",
+        "只与系统敌人战斗且目标相容不计入。"
+      ],
+      "misconceptions": [
+        "玩家竞争可以异步发生，不必要求同时在线操作。"
+      ],
+      "designValue": [
+        "让其他玩家的选择成为需要适应的局势来源。"
+      ],
+      "risks": [
+        "明显的先手或投入优势可能压缩反制空间。",
+        "结果解释不足容易使失败归因于不可控因素。"
+      ],
+      "adaptation": [
+        "明确玩家能影响对方什么，并为关键优势设置可读的应对方式。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "先定义合法对抗行为与胜负判定，再处理身份、结果可信度和同步边界。",
+      "relatedMechanics": [
+        "asynchronous-opponent",
+        "hidden-hand"
+      ],
+      "evidenceRefs": [
+        "escape-from-tarkov"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "asynchronous-opponent",
+      "name": "异步对手",
+      "dimension": "participants",
+      "definition": "对手提供的状态或行动记录，在双方不必同时在线的条件下参与当前对抗结算。",
+      "inclusionRules": [
+        "结算实际使用另一玩家贡献的状态或记录。",
+        "规则不要求双方同时在线完成该次结算。"
+      ],
+      "exclusionRules": [
+        "系统随机生成的假想对手不计入。",
+        "必须双方在线才能执行的实时对抗不计入。"
+      ],
+      "misconceptions": [
+        "自动战斗不证明对手是异步的，匹配与结算方式需要另证。"
+      ],
+      "designValue": [
+        "让对抗不依赖双方在同一时刻参与。"
+      ],
+      "risks": [
+        "记录版本过旧可能产生不一致或不可复现的结果。",
+        "对手信息不透明时难以理解匹配是否合理。"
+      ],
+      "adaptation": [
+        "限定对手快照的有效范围，并明确玩家实际面对的是什么记录。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "为对手记录保存规则版本与必要状态，并定义复用、失效和结果验证方式。",
+      "relatedMechanics": [
+        "pvp-opposition",
+        "automatic-resolution"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "synchronous-session",
+      "name": "同步会话",
+      "dimension": "participants",
+      "definition": "多位玩家在同一会话时间窗口内，共同影响当前对局的状态或结果。",
+      "inclusionRules": [
+        "多位玩家参与同一个进行中的会话。",
+        "当前对局依赖他们在该窗口内的行动或提交。"
+      ],
+      "exclusionRules": [
+        "只共享历史记录而无需当前参与不计入。",
+        "同一时间游玩但各自局面互不影响不计入。"
+      ],
+      "misconceptions": [
+        "同步会话可以采用轮流行动，不等于所有行动都实时发生。"
+      ],
+      "designValue": [
+        "让参与者围绕同一局势及时回应彼此。"
+      ],
+      "risks": [
+        "延迟和掉线可能阻塞全体参与者的推进。",
+        "时间安排要求可能限制可参与的人群。"
+      ],
+      "adaptation": [
+        "根据行动频率选择同步方式，并给断线和暂离预留处理。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "明确会话时钟、状态权威与超时策略，避免各端对当前阶段产生分歧。",
+      "relatedMechanics": [
+        "cooperative-play",
+        "planning-timer"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "random-upgrade-offer",
+      "name": "随机强化候选",
+      "dimension": "variability",
+      "definition": "系统通过随机过程生成一组可供玩家选择的强化选项。",
+      "inclusionRules": [
+        "候选内容由随机过程从规定范围产生。",
+        "玩家从生成的候选中选择强化。"
+      ],
+      "exclusionRules": [
+        "候选固定且只因等级按顺序解锁不计入。",
+        "系统随机直接给予强化而没有选择阶段不计入。"
+      ],
+      "misconceptions": [
+        "候选随机不等于玩家没有构筑方向，选择权与取样过程是两层规则。"
+      ],
+      "designValue": [
+        "让重复流程出现变化，同时保留适应性选择。"
+      ],
+      "risks": [
+        "连续无用候选可能使玩家觉得构筑无法推进。",
+        "候选权重不当可能让少数选项长期占据优势。"
+      ],
+      "adaptation": [
+        "先确保候选之间有可比较的用途，再考虑保底或刷新。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确候选池、去重、权重和不可用项过滤，并在需要时记录取样结果。",
+      "relatedMechanics": [
+        "rule-modifier",
+        "seeded-replay"
+      ],
+      "evidenceRefs": [
+        "shape-of-dreams"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "random-draw",
+      "name": "随机抽取",
+      "dimension": "variability",
+      "definition": "对象或其出现顺序由规定的随机过程决定。",
+      "inclusionRules": [
+        "规则使用随机过程选择对象或顺序。",
+        "取样结果会影响后续可见或可用内容。"
+      ],
+      "exclusionRules": [
+        "顺序未知但实际由固定脚本决定不计入。",
+        "玩家自由指定结果且没有随机取样不计入。"
+      ],
+      "misconceptions": [
+        "随机抽取不一定是每次独立取样，也可能从有限集合中无放回抽取。"
+      ],
+      "designValue": [
+        "使已知内容以不同顺序或组合产生新局势。"
+      ],
+      "risks": [
+        "连串不利结果可能超出玩家可应对的范围。",
+        "实际取样方式与玩家预期不符会影响判断。"
+      ],
+      "adaptation": [
+        "根据需要的变化幅度选择有放回、无放回或受约束取样。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确取样空间、权重和剩余集合状态，并区分展示顺序与实际抽取顺序。",
+      "relatedMechanics": [
+        "hidden-hand",
+        "next-piece-preview"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "dice-roll",
+      "name": "掷骰取样",
+      "dimension": "variability",
+      "definition": "掷骰结果作为规则输入，参与决定移动、效果或其他状态变化。",
+      "inclusionRules": [
+        "规则读取骰面或等价的骰子结果。",
+        "读取结果会改变至少一项游戏状态。"
+      ],
+      "exclusionRules": [
+        "骰子只作装饰动画而结果不影响规则不计入。",
+        "单纯使用任意随机数但没有骰子结果语义不计入。"
+      ],
+      "misconceptions": [
+        "骰子外观不证明各面等概率，也不证明玩家无法干预结果。"
+      ],
+      "designValue": [
+        "用易辨认的离散结果表达一次不确定事件。"
+      ],
+      "risks": [
+        "多层修正可能让直观骰面与最终结果脱节。",
+        "关键失败过度依赖单次掷骰可能压缩补救空间。"
+      ],
+      "adaptation": [
+        "明确骰面如何转化为结果，以及玩家能否重掷、修正或预防。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "先确定结果分布与修正规则，再让骰子表现准确对应已确定的结果。",
+      "relatedMechanics": [
+        "random-draw",
+        "rule-modifier"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "generated-layout",
+      "name": "布局生成",
+      "dimension": "variability",
+      "definition": "系统按生成规则建立关卡或空间布局，而不只是挑选一个完整预制场景。",
+      "inclusionRules": [
+        "系统在生成时决定空间的结构关系。",
+        "生成结果影响通行、布置或遭遇所在位置。"
+      ],
+      "exclusionRules": [
+        "仅随机选取完整手工关卡不计入。",
+        "仅替换材质或装饰而结构不变不计入。"
+      ],
+      "misconceptions": [
+        "布局生成可以拼接手工模块，不等于每个细节都由算法创造。"
+      ],
+      "designValue": [
+        "在可复用内容中提供不同的空间决策。"
+      ],
+      "risks": [
+        "生成结果可能出现不可达目标或无解结构。",
+        "变化缺少节奏约束时容易形成相似但冗长的流程。"
+      ],
+      "adaptation": [
+        "先保证关键路径和必要空间，再扩大可变部分。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "将结构生成与可达性校验分开，并保存能复现异常布局的生成输入。",
+      "relatedMechanics": [
+        "seeded-replay",
+        "direct-movement"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "seeded-replay",
+      "name": "种子重现",
+      "dimension": "variability",
+      "definition": "在规定的规则版本和输入条件下，相同种子能够重现约定范围的随机过程。",
+      "inclusionRules": [
+        "系统接受或保存可确定随机序列的种子。",
+        "相同条件下可重现明确列出的随机结果。"
+      ],
+      "exclusionRules": [
+        "只给对局编号但无法决定随机过程不计入。",
+        "同种子仍完全重新取样且不承诺任何范围重现不计入。"
+      ],
+      "misconceptions": [
+        "相同种子不保证跨版本、不同输入顺序或所有平台得到完全相同结果。"
+      ],
+      "designValue": [
+        "让分享、比较和排查随机局势具有可复查的起点。"
+      ],
+      "risks": [
+        "多个系统共用取样顺序时，小改动可能改变全部后续结果。",
+        "没有记录版本与设置时，种子可能失去复现价值。"
+      ],
+      "adaptation": [
+        "先声明能够重现的范围，再决定哪些系统使用独立随机流。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "同时记录种子、规则版本和必要设置，并控制各随机系统的取样顺序。",
+      "relatedMechanics": [
+        "random-upgrade-offer",
+        "generated-layout"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "route-branching",
+      "name": "路线分支",
+      "dimension": "temporal",
+      "definition": "玩家在流程节点选择后续路径，使一次流程沿不同的分支继续推进。",
+      "inclusionRules": [
+        "当前节点存在至少两条可选择的后续路径。",
+        "选择会改变后续节点、遭遇或推进顺序。"
+      ],
+      "exclusionRules": [
+        "只有画面岔路但后续流程完全相同不计入。",
+        "系统随机选路且玩家不能选择不计入。"
+      ],
+      "misconceptions": [
+        "路线分支不要求随机生成，也不等于能力解锁后的区域通行。"
+      ],
+      "designValue": [
+        "让玩家根据当前状况安排接下来要面对的风险与收益。"
+      ],
+      "risks": [
+        "缺少路径信息时选择容易退化为盲猜。",
+        "分支很快汇合且没有实际差异时可能只增加操作。"
+      ],
+      "adaptation": [
+        "先让两条路径在遭遇或资源机会方面有可辨认的差异。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确节点连接、可选条件和选择后的流程状态，并检查所有有效分支能否继续推进。",
+      "relatedMechanics": [
+        "randomized-encounters",
+        "resource-scarcity"
+      ],
+      "evidenceRefs": [
+        "slay-the-spire"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "encounter-placement",
+      "name": "遭遇布置",
+      "dimension": "buildcraft",
+      "definition": "玩家通过放置或配置组件，决定敌人或事件在流程中的出现位置。",
+      "inclusionRules": [
+        "遭遇位置由玩家的配置选择改变。",
+        "位置变化影响后续会遇到什么或何时遇到。"
+      ],
+      "exclusionRules": [
+        "只把已有敌人作为攻击目标不计入。",
+        "系统独立随机布置而玩家不能配置不计入。"
+      ],
+      "misconceptions": [
+        "由玩家布置遭遇，不代表玩家直接操控敌人的战斗行为。"
+      ],
+      "designValue": [
+        "让玩家参与安排挑战，并承担配置产生的后果。"
+      ],
+      "risks": [
+        "可以无限堆叠收益而没有相应威胁时选择会失衡。",
+        "配置后果延迟太长会使玩家难以理解因果。"
+      ],
+      "adaptation": [
+        "先建立少量可读的遭遇组件，让位置对风险和收益有实际影响。"
+      ],
+      "complexity": "高",
+      "implementationNotes": "将组件占位、遭遇生成条件与执行状态分开维护，并在配置变化后更新合法遭遇。",
+      "relatedMechanics": [
+        "spatial-loadout",
+        "randomized-encounters"
+      ],
+      "evidenceRefs": [
+        "loop-hero"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "optional-endless-loop",
+      "name": "可选延长流程",
+      "dimension": "temporal",
+      "definition": "玩家在通常可结束的流程节点，选择继续循环而不立即结算退出。",
+      "inclusionRules": [
+        "规则提供可辨认的结束或退出机会。",
+        "玩家也可选择继续进入可重复的后续流程。"
+      ],
+      "exclusionRules": [
+        "结束后从头开始一次独立尝试不计入。",
+        "没有退出选择且只能被动坚持的流程不计入。"
+      ],
+      "misconceptions": [
+        "可选延长流程与失败重开不同，也不保证继续后能够安全兑现收益。"
+      ],
+      "designValue": [
+        "把结束时机变成玩家可以主动权衡的选择。"
+      ],
+      "risks": [
+        "后续收益增长过快可能让及时结束显得没有价值。",
+        "继续后的压力缺少变化时容易只延长耗时。"
+      ],
+      "adaptation": [
+        "让继续与结束各有清楚的用途，并显示继续会承担的条件。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "明确循环边界、保留状态和结束结算时点，避免重复进入或重复发奖。",
+      "relatedMechanics": [
+        "run-reset",
+        "extraction-bank"
+      ],
+      "evidenceRefs": [
+        "risk-of-rain-2"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "toll-payment",
+      "name": "过路支付",
+      "dimension": "economy",
+      "definition": "参与者满足经过或停留位置的条件时，向该位置的拥有者支付资源。",
+      "inclusionRules": [
+        "支付由规则规定的位置经过或停留事件触发。",
+        "资源从经过者转入相应拥有者的账户或资源池。"
+      ],
+      "exclusionRules": [
+        "只向系统支付普通移动费用不计入。",
+        "位置奖励由系统发放而没有向拥有者转账不计入。"
+      ],
+      "misconceptions": [
+        "过路支付需要说明触发位置、支付者和收取者，不能只写出现了地盘。"
+      ],
+      "designValue": [
+        "把位置控制转化为能反复兑现的经济收益。"
+      ],
+      "risks": [
+        "控制优势不断放大时可能使落后者很难再参与竞争。",
+        "破产、减免和不足额支付规则不清会造成结算争议。"
+      ],
+      "adaptation": [
+        "先确定支付如何影响局势，再设计减免、转换或其他反制手段。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "在同次结算中确定位置归属、应付金额与余额变化，并明确不足额时的处理。",
+      "relatedMechanics": [
+        "resource-scarcity",
+        "pvp-opposition"
+      ],
+      "evidenceRefs": [
+        "game-of-dice"
+      ],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "randomized-encounters",
+      "name": "遭遇变化",
+      "dimension": "variability",
+      "definition": "系统通过随机过程决定后续敌人或事件的组成、出现位置或顺序。",
+      "inclusionRules": [
+        "遭遇内容的至少一部分由随机取样决定。",
+        "取样结果改变玩家后续会面对的敌人或事件。"
+      ],
+      "exclusionRules": [
+        "固定遭遇只更换装饰或动画不计入。",
+        "玩家自由选择固定路线但没有随机取样不计入。"
+      ],
+      "misconceptions": [
+        "遭遇变化可以发生在手工场景中，不证明地形布局也由程序生成。"
+      ],
+      "designValue": [
+        "让玩家在熟悉规则下适应不同的挑战组合。"
+      ],
+      "risks": [
+        "不受约束的组合可能形成无准备余地的极端局面。",
+        "变化只增加数量而不改变应对时可能显得重复。"
+      ],
+      "adaptation": [
+        "按遭遇职责和出现条件约束取样，保留玩家能够判断的应对空间。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "定义遭遇候选池、组合限制与生成时点，并保存排查异常组合所需的随机输入。",
+      "relatedMechanics": [
+        "generated-layout",
+        "route-branching"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    },
+    {
+      "id": "objective-unlock",
+      "name": "目标条件解锁",
+      "dimension": "progression",
+      "definition": "完成明确目标后，系统开放此前不可用的内容、功能或权限。",
+      "inclusionRules": [
+        "存在可以判断是否完成的目标条件。",
+        "达成条件会改变内容或功能的可用权限。"
+      ],
+      "exclusionRules": [
+        "只获得资源奖励而可用权限不变不计入。",
+        "只展示目标完成动画但没有开放内容不计入。"
+      ],
+      "misconceptions": [
+        "目标条件解锁可以只在当前流程有效，是否长期保留需要另行记录。"
+      ],
+      "designValue": [
+        "把目标完成与新的行动可能联系起来。"
+      ],
+      "risks": [
+        "条件隐蔽或表述含糊时玩家难以理解如何推进。",
+        "大量无关前置目标可能阻碍玩家接触核心内容。"
+      ],
+      "adaptation": [
+        "让目标与解锁后的用途有可理解的联系，并明确生效范围。"
+      ],
+      "complexity": "中",
+      "implementationNotes": "将目标完成记录与权限授予分开处理，保证重复检测不会重复发放或撤回权限。",
+      "relatedMechanics": [
+        "persistent-unlock",
+        "skill-experience"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition"
+    }
+  ],
+  "classificationReview": {
+    "date": "2026-10-30",
+    "version": "research-draft-2",
+    "principle": "按直接改变的对象或过程归类；不设每维数量配额。正式实现须引用同一规范机制身份。",
+    "decisions": {
+      "run-reset": "temporal",
+      "rule-modifier": "rules",
+      "recipe-crafting": "economy",
+      "respec": "buildcraft",
+      "shared-resource-pool": "economy",
+      "permadeath": "progression",
+      "route-branching": "temporal"
+    }
+  }
+}

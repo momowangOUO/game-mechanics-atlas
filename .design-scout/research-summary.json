@@ -1,0 +1,19 @@
+{
+  "status": "awaiting_selection",
+  "directions": 8,
+  "referenceImages": 14,
+  "distinctWorks": 10,
+  "inspectedAt": "2026-10-30",
+  "coverage": "本批针对用户明确给出的凉宫/Key方向收集14张真实参考，未达到技能默认40–60案例广泛研究规模，不声称穷尽。",
+  "excluded": [
+    {
+      "id": "lucky-star",
+      "reason": "当前官方缩略图只有字标，不足以支持人物画风选择。"
+    },
+    {
+      "id": "haruhi-2006",
+      "reason": "入口横幅不是人物图，已替换成标明年份的官方人物图。"
+    }
+  ],
+  "newDirection": "用户2026-10-30明确要求亲自选参考后再制作。"
+}

@@ -1,0 +1,679 @@
+{
+  "schemaNote": "本文件把复合类型和组合配方作为独立的编辑实体维护；它们不进入原子机制清单，也不代表行业统一标准。",
+  "epistemicStatus": "editorial_definition",
+  "preparedAt": "2026-10-30",
+  "sources": [
+    "taxonomy-notes.md",
+    "mechanic-dossiers.json",
+    "game-evidence.json"
+  ],
+  "coverage": {
+    "compositeTypes": 16,
+    "recipes": 10,
+    "availableAtomicMechanisms": 52
+  },
+  "typePolicy": {
+    "requiredMeaning": "requiredMechanics只列出本文所选画像中能由现有档案明确表达的核心组成，不能作为完整或充分的市场类型判定标准。",
+    "emptyRequiredMeaning": "空数组表示本批档案未提供可靠的必要组成门槛；不能将空集合当作自动命中，也不能解释为该类型没有条件。",
+    "frequencyMeaning": "commonMechanics是值得讨论的常见组成，optionalMechanics是可探索的附加组成；二者均为编辑归纳，不表示统计频率或任何游戏的已验证实例。",
+    "classificationMeaning": "每个复合类型保留边界说明；不按满足机制数量计算类型真伪，也不从市场标签反向补齐机制。",
+    "incompleteVocabulary": "仅使用当前52个完整档案的ID。原子词表未表达的特征在boundaries中写出，不以相近机制冒充。"
+  },
+  "recipePolicy": {
+    "meaning": "组合配方是可试验的设计假设。roles说明各机制在该假设中的作用，synergies和tensions提出需要验证的关系，不宣称一定成功。",
+    "exampleMeaning": "exampleGameIds只提供设计参照，不代表这些游戏具备配方全部组件，也不证明本配方的协同效果已经实测。",
+    "evidenceResolution": "真实游戏实例须回读game-evidence.json中的同ID机制证据及其status、scope、sourceUrl；引用不折叠conditional，不把unknown或未列项写成absent。",
+    "scope": "本轮只做资料结构化与设计归纳，没有新增游戏实测、完整机制矩阵或市场研究。"
+  },
+  "exampleReferenceNotes": {
+    "amplified-scoring": "Balatro的现有直接实例支持分数达标和规则修饰器；叠加细则仍须另证，不能由配方补齐。",
+    "aimed-buildcraft": "Peglin参照其瞄准与弹珠、遗物构筑的切面；当前直接实例只支持aimed-launch，卡组扩充和随机遭遇没有同ID直接实例。若实际方案使用弹珠池，应补建准确的构筑定义。",
+    "route-deck-planning": "Slay the Spire的现有直接实例支持路线分支与局内扩充卡组；资源稀缺在当前研究中尚无该游戏的同ID直接实例。",
+    "retry-relationships": "Hades的现有直接实例支持跨局数值强化与关系发展；单局重开仍需按实际重置范围补充同ID证据。",
+    "expedition-base-supply": "Cult of the Lamb的现有直接实例支持基地建设；资源采集与遭遇变化尚未建立该游戏的同ID直接实例。",
+    "spatial-build-spectate": "Backpack Battles的现有直接实例支持空间装备配置与自动战斗结算；配方制作仍需建立该游戏的同ID直接实例。",
+    "player-built-risk-route": "Loop Hero的现有直接实例支持遭遇布置与基地建设；具体叠加关系没有该游戏的同ID直接实例。",
+    "gather-or-extract": "Escape from Tarkov的现有直接实例支持基础突袭的一般撤离兑现目标；采集、稀缺的具体约束，以及容器、保险、模式例外仍需补证。",
+    "growth-reinvestment": "Cookie Clicker的现有直接实例支持生产投资与持久内容解锁；目标条件解锁没有该游戏的同ID直接实例。",
+    "positional-property-rivalry": "Game of Dice的现有直接实例支持过路支付；骰子分布、位置修正及玩家竞争的完整结算尚未建立同ID直接实例，不能据配方推断。"
+  },
+  "compositeTypes": [
+    {
+      "id": "roguelite",
+      "name": "Roguelite",
+      "definition": "本目录用来讨论围绕多次单局尝试组织内容变化与成长的复合玩法画像。",
+      "requiredMechanics": [
+        "run-reset"
+      ],
+      "commonMechanics": [
+        "randomized-encounters",
+        "random-upgrade-offer",
+        "loadout-selection"
+      ],
+      "optionalMechanics": [
+        "persistent-stat-upgrade",
+        "persistent-unlock",
+        "route-branching"
+      ],
+      "boundaries": [
+        "这是本目录的单局冒险画像，不作为判定市场标签真假的统一标准。",
+        "跨局数值强化不是所有使用此标签作品的必要条件；重置与保留范围须分别记录。"
+      ]
+    },
+    {
+      "id": "traditional-roguelike",
+      "name": "传统 Roguelike",
+      "definition": "以轮流行动、探索和具有重开代价的状态决策为主要讨论对象的传统玩法画像。",
+      "requiredMechanics": [
+        "sequential-turns",
+        "run-reset"
+      ],
+      "commonMechanics": [
+        "generated-layout",
+        "randomized-encounters",
+        "resource-scarcity"
+      ],
+      "optionalMechanics": [
+        "permadeath",
+        "fog-of-war"
+      ],
+      "boundaries": [
+        "本批档案没有网格移动、复杂物品交互等完整特征，不能据此建立充分的自动判类条件。",
+        "传统 Roguelike 的定义存在不同约定；这里的必要组成只限定本目录采用的画像。"
+      ]
+    },
+    {
+      "id": "rpg",
+      "name": "角色扮演",
+      "definition": "围绕角色能力发展、配置选择及角色在世界中的行动来讨论的复合类型。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "skill-experience",
+        "persistent-unlock",
+        "loadout-selection",
+        "objective-unlock"
+      ],
+      "optionalMechanics": [
+        "relationship-progression",
+        "recipe-crafting",
+        "route-branching"
+      ],
+      "boundaries": [
+        "数值升级单独存在不足以判为角色扮演。",
+        "当前档案未完整描述身份扮演、任务结构和角色属性，因此不设统一必要机制。"
+      ]
+    },
+    {
+      "id": "action-rpg",
+      "name": "动作角色扮演",
+      "definition": "将玩家直接操作的实时行动，与角色成长和能力配置结合的复合玩法画像。",
+      "requiredMechanics": [
+        "direct-movement",
+        "real-time-update"
+      ],
+      "commonMechanics": [
+        "loadout-selection",
+        "skill-experience",
+        "persistent-unlock"
+      ],
+      "optionalMechanics": [
+        "dodge-move",
+        "action-cooldown",
+        "recipe-crafting"
+      ],
+      "boundaries": [
+        "还需观察操作如何决定战斗结果；直接移动和实时推进本身不足以判类。",
+        "成长、自动战斗或暂停规划可与动作部分并存，应按具体阶段说明。"
+      ]
+    },
+    {
+      "id": "deckbuilder",
+      "name": "卡组构筑",
+      "definition": "玩家通过获取、移除或修改卡牌来组织可用卡组，再以该卡组参与后续流程。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "in-run-deck-growth",
+        "random-draw",
+        "loadout-selection"
+      ],
+      "optionalMechanics": [
+        "rule-modifier",
+        "resource-scarcity",
+        "run-reset"
+      ],
+      "boundaries": [
+        "当前档案只有局内扩充卡组，缺少覆盖局外编辑、删牌与改牌的通用原子项，因此不将局内扩充设为所有卡组构筑的必要条件。",
+        "卡牌作为表现载体、随机抽牌和可编辑卡组分别核验，不能互相替代。"
+      ]
+    },
+    {
+      "id": "auto-battler",
+      "name": "自动战斗构筑",
+      "definition": "玩家先配置出战内容，再让主要战斗按预设规则自动执行，并根据结果调整配置。",
+      "requiredMechanics": [
+        "loadout-selection",
+        "automatic-resolution"
+      ],
+      "commonMechanics": [
+        "spatial-loadout",
+        "stacking-effects",
+        "rule-modifier"
+      ],
+      "optionalMechanics": [
+        "asynchronous-opponent",
+        "synchronous-session",
+        "planning-timer"
+      ],
+      "boundaries": [
+        "自动结算、对手是否异步和准备是否限时是独立机制。",
+        "此处采用准备与自动战斗结合的画像，不要求所有作品都有棋盘、随机商店或多人对抗。"
+      ]
+    },
+    {
+      "id": "survivor-like",
+      "name": "生存割草",
+      "definition": "围绕持续敌群、位置应对和局内成长选择形成生存压力的复合玩法概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "direct-movement",
+        "real-time-update",
+        "random-upgrade-offer",
+        "stacking-effects"
+      ],
+      "optionalMechanics": [
+        "persistent-stat-upgrade",
+        "cooperative-play",
+        "action-cooldown"
+      ],
+      "boundaries": [
+        "本批缺少持续敌群和自动攻击等独立档案，不能从现有共同项推出完整判类。",
+        "自动攻击需另证；仅有生存目标、计时或大量敌人都不足以单独决定类型。"
+      ]
+    },
+    {
+      "id": "extraction-shooter",
+      "name": "撤离射击",
+      "definition": "围绕射击行动、携带风险和成功带出收益组织一轮进入与退出流程的复合类型。",
+      "requiredMechanics": [
+        "extraction-bank"
+      ],
+      "commonMechanics": [
+        "loadout-selection",
+        "resource-gathering",
+        "resource-scarcity",
+        "route-branching"
+      ],
+      "optionalMechanics": [
+        "pvp-opposition",
+        "cooperative-play",
+        "fog-of-war"
+      ],
+      "boundaries": [
+        "本批没有完整的射击与携带损失档案，撤离兑现只是可表达的核心切面。",
+        "PvP不作为所有衍生玩法的必要条件；保险、容器和模式对收益保留的例外必须另列。"
+      ]
+    },
+    {
+      "id": "metroidvania",
+      "name": "类银河恶魔城",
+      "definition": "以互联区域探索和能力变化带来的新通路为重点的复合探索概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "direct-movement",
+        "route-branching",
+        "persistent-unlock",
+        "environmental-clues"
+      ],
+      "optionalMechanics": [
+        "dodge-move",
+        "recipe-crafting",
+        "objective-unlock"
+      ],
+      "boundaries": [
+        "本批缺少能力门槛通行与区域互联的完整原子档案，不能用路线分支替代它们。",
+        "平台动作或分支地图单独存在不足以判类；受其启发也不等于完全符合某种定义。"
+      ]
+    },
+    {
+      "id": "farming-life-sim",
+      "name": "农场生活模拟",
+      "definition": "围绕农场生产、日常安排、人物交往和自主生活目标组织活动的复合类型。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "production-investment",
+        "resource-gathering",
+        "recipe-crafting",
+        "relationship-progression"
+      ],
+      "optionalMechanics": [
+        "base-construction",
+        "cooperative-play",
+        "skill-experience"
+      ],
+      "boundaries": [
+        "本批没有作物生长、周期日程和农务操作的完整档案，因此不设必要机制门槛。",
+        "出现种植、制作或好感度系统，不能单独证明整款游戏属于农场生活模拟。"
+      ]
+    },
+    {
+      "id": "sandbox-survival",
+      "name": "沙盒生存",
+      "definition": "将玩家自主目标、环境改造、资源约束与生存威胁结合的复合玩法概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "resource-gathering",
+        "resource-scarcity",
+        "recipe-crafting",
+        "base-construction"
+      ],
+      "optionalMechanics": [
+        "generated-layout",
+        "cooperative-play",
+        "persistent-unlock"
+      ],
+      "boundaries": [
+        "本批缺少环境改造、生命威胁和自主目标的完整原子档案，现有组合只表达资源与建设部分。",
+        "同一作品的创造模式可能取消生存约束，不能继承生存模式的资源稀缺或威胁实例。"
+      ]
+    },
+    {
+      "id": "incremental-idle",
+      "name": "增量放置",
+      "definition": "围绕规模增长与生产再投资延续目标，并让部分进展可以在暂不输入时发生的复合概念。",
+      "requiredMechanics": [
+        "production-investment"
+      ],
+      "commonMechanics": [
+        "persistent-unlock",
+        "objective-unlock",
+        "resource-scarcity"
+      ],
+      "optionalMechanics": [
+        "respec",
+        "rule-modifier",
+        "score-threshold"
+      ],
+      "boundaries": [
+        "本目录以生产投资作为所选画像的核心；当前档案尚未覆盖完整的被动产出与离线收益规则。",
+        "点击、自动生产和离线收益分别取证；暂不输入仍有进展不代表关闭游戏后也继续产出。"
+      ]
+    },
+    {
+      "id": "moba",
+      "name": "MOBA（多人在线战术竞技）",
+      "definition": "市场中用于讨论团队角色协作、局内发展及地图目标争夺的复合玩法概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "pvp-opposition",
+        "synchronous-session",
+        "direct-movement",
+        "skill-experience"
+      ],
+      "optionalMechanics": [
+        "cooperative-play",
+        "fog-of-war",
+        "loadout-selection",
+        "action-cooldown"
+      ],
+      "boundaries": [
+        "本批缺少阵营结构、兵线、防御建筑、团队目标和局内经济等完整档案，必要机制暂留空。",
+        "MOBA风格的操作或技能表现不能证明存在完整MOBA对局；梦之形不据此添加推塔、兵线或PvP实例。"
+      ]
+    },
+    {
+      "id": "soulslike",
+      "name": "Soulslike（类魂）",
+      "definition": "市场中用于讨论强调行动承诺、危险学习及探索与失败代价关系的复合概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "dodge-move",
+        "real-time-update",
+        "loadout-selection",
+        "resource-scarcity"
+      ],
+      "optionalMechanics": [
+        "persistent-stat-upgrade",
+        "environmental-clues",
+        "route-branching"
+      ],
+      "boundaries": [
+        "本批缺少动作承诺、体力约束、休息点及死亡后资源处理等完整档案，不能建立可靠的必要机制门槛。",
+        "翻滚、难度高或角色死亡其中任一项，都不能单独证明属于类魂；永久死亡也不设为默认特征。"
+      ]
+    },
+    {
+      "id": "immersive-sim",
+      "name": "Immersive Sim（沉浸式模拟）",
+      "definition": "市场和设计讨论中用于描述系统相互响应、工具可迁移使用并支持多种解法的复合概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "environmental-clues",
+        "resource-scarcity",
+        "route-branching",
+        "direct-movement"
+      ],
+      "optionalMechanics": [
+        "fog-of-war",
+        "recipe-crafting",
+        "rule-modifier"
+      ],
+      "boundaries": [
+        "本批未完整表达系统响应、工具复用、因果模拟与多解目标，必要机制暂留空。",
+        "自由路线、第一人称表现或环境线索不能单独证明系统涌现；列出的共同项不构成充分判类条件。"
+      ]
+    },
+    {
+      "id": "survival-craft",
+      "name": "Survival Craft（生存制作）",
+      "definition": "市场中用于描述采集、制作与建设服务于持续生存需要的复合玩法概念。",
+      "requiredMechanics": [],
+      "commonMechanics": [
+        "resource-gathering",
+        "recipe-crafting",
+        "base-construction",
+        "resource-scarcity"
+      ],
+      "optionalMechanics": [
+        "cooperative-play",
+        "generated-layout",
+        "real-time-update"
+      ],
+      "boundaries": [
+        "本批未完整表达饥饿、环境暴露、持续威胁等生存约束，暂不把资源制作组合当成充分门槛。",
+        "与沙盒生存可能重叠；出现制作菜单不证明存在生存压力，也不证明环境可自由改造。"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "amplified-scoring",
+      "name": "规则放大计分",
+      "mechanicIds": [
+        "score-threshold",
+        "rule-modifier",
+        "stacking-effects"
+      ],
+      "roles": {
+        "score-threshold": "提供本轮可以判断是否完成的近期目标。",
+        "rule-modifier": "让基础牌型或行动在不同条件下产生新的计分方式。",
+        "stacking-effects": "让多个效果共同放大或改变计分结果。"
+      },
+      "synergies": [
+        "明确的分数目标让规则变化仍有可理解的方向。",
+        "效果之间的组合为重复尝试提供不同解法。"
+      ],
+      "tensions": [
+        "计算顺序不透明时，玩家可能只看到数字而学不到规律。",
+        "少数高收益组合可能让其他选项失去用途。"
+      ],
+      "demoQuestions": [
+        "玩家能否解释这次得分主要来自哪些规则和效果？",
+        "同一目标是否允许几种代价不同的构筑通过？"
+      ],
+      "exampleGameIds": [
+        "balatro"
+      ]
+    },
+    {
+      "id": "aimed-buildcraft",
+      "name": "瞄准带动构筑",
+      "mechanicIds": [
+        "aimed-launch",
+        "in-run-deck-growth",
+        "randomized-encounters"
+      ],
+      "roles": {
+        "aimed-launch": "为每次执行保留可调整的方向与空间判断。",
+        "in-run-deck-growth": "在本配方假设中，通过新增可用卡牌改变后续执行选项。",
+        "randomized-encounters": "改变后续挑战，要求玩家按当前配置适应。"
+      },
+      "synergies": [
+        "执行技术与构筑选择可以分别改善结果。",
+        "不同遭遇能检验同一配置在不同环境下的用途。"
+      ],
+      "tensions": [
+        "随机碰撞或遭遇过难读时，失败原因难以区分。",
+        "卡组内容过多可能稀释玩家希望使用的关键选项。"
+      ],
+      "demoQuestions": [
+        "同一构筑是否仍允许有意义的瞄准差异？",
+        "若使用弹珠而非卡牌，是否需要另建更准确的构筑机制？"
+      ],
+      "exampleGameIds": [
+        "peglin"
+      ]
+    },
+    {
+      "id": "route-deck-planning",
+      "name": "路线与卡组协同",
+      "mechanicIds": [
+        "route-branching",
+        "in-run-deck-growth",
+        "resource-scarcity"
+      ],
+      "roles": {
+        "route-branching": "让玩家主动安排接下来承担的风险与机会。",
+        "in-run-deck-growth": "让每次新增卡牌改变后续遭遇的应对能力。",
+        "resource-scarcity": "使恢复、补强或继续冒险之间形成取舍。"
+      },
+      "synergies": [
+        "当前卡组的长短处可以为选路提供理由。",
+        "沿途奖励又会改变下一段路线的价值。"
+      ],
+      "tensions": [
+        "路径缺少可读信息时，构筑难以真正参与选路。",
+        "资源紧缺到没有选择余地时，规划只剩被迫求生。"
+      ],
+      "demoQuestions": [
+        "玩家能否根据当前卡组解释为何选择这条路线？",
+        "关键资源的约束是否让至少两个选项仍然有价值？"
+      ],
+      "exampleGameIds": [
+        "slay-the-spire"
+      ]
+    },
+    {
+      "id": "retry-relationships",
+      "name": "重试推进关系",
+      "mechanicIds": [
+        "run-reset",
+        "persistent-stat-upgrade",
+        "relationship-progression"
+      ],
+      "roles": {
+        "run-reset": "把挑战组织成多次可重新开始的尝试。",
+        "persistent-stat-upgrade": "让部分投入在后续尝试中继续产生作用。",
+        "relationship-progression": "让人物互动随多次尝试持续发生变化。"
+      },
+      "synergies": [
+        "挑战暂时失败后，长期目标仍可继续推进。",
+        "人物回应能让重复过程具有新的情境。"
+      ],
+      "tensions": [
+        "数值强化过重时，失败可能只被理解为积累不足。",
+        "关系内容若必须反复失败才能出现，容易形成反向激励。"
+      ],
+      "demoQuestions": [
+        "失败回来后，玩家是否仍有明确且值得做的行动？",
+        "关系推进是否回应实际经历，而非机械重复同一句话？"
+      ],
+      "exampleGameIds": [
+        "hades"
+      ]
+    },
+    {
+      "id": "expedition-base-supply",
+      "name": "外出供给营地",
+      "mechanicIds": [
+        "randomized-encounters",
+        "resource-gathering",
+        "base-construction"
+      ],
+      "roles": {
+        "randomized-encounters": "为外出过程提供需要调整应对的遭遇。",
+        "resource-gathering": "把外出中的行动转化为可投入的资源。",
+        "base-construction": "让资源形成可保留的设施和后续功能。"
+      },
+      "synergies": [
+        "营地为外出所得提供用途。",
+        "设施的新功能可以给下一次外出建立目标。"
+      ],
+      "tensions": [
+        "营地杂务过密时会打断玩家希望继续的冒险节奏。",
+        "外出只为补固定消耗时，变化的遭遇也可能变成重复劳作。"
+      ],
+      "demoQuestions": [
+        "外出和营地各自的输入、产出及可暂停位置是否清楚？",
+        "新增设施是否改变后续行动，还是只提高维护需求？"
+      ],
+      "exampleGameIds": [
+        "cult-of-the-lamb"
+      ]
+    },
+    {
+      "id": "spatial-build-spectate",
+      "name": "布局构筑观战",
+      "mechanicIds": [
+        "spatial-loadout",
+        "recipe-crafting",
+        "automatic-resolution"
+      ],
+      "roles": {
+        "spatial-loadout": "让占位和摆放参与出战配置。",
+        "recipe-crafting": "把现有组件转化为新的构筑材料。",
+        "automatic-resolution": "用自动战斗执行并检验准备结果。"
+      },
+      "synergies": [
+        "制作选择与空间安排共同约束最终配置。",
+        "战斗结果可以引导下一轮的材料使用与布局调整。"
+      ],
+      "tensions": [
+        "反馈只显示输赢时，玩家难以定位配置问题。",
+        "拖放和整理过于繁琐时，操作成本会压过构筑乐趣。"
+      ],
+      "demoQuestions": [
+        "玩家能否从战斗失败中找出具体可改的配置？",
+        "制作一个新组件后，是否需要重新权衡空间？"
+      ],
+      "exampleGameIds": [
+        "backpack-battles"
+      ]
+    },
+    {
+      "id": "player-built-risk-route",
+      "name": "自建风险路径",
+      "mechanicIds": [
+        "encounter-placement",
+        "stacking-effects",
+        "base-construction"
+      ],
+      "roles": {
+        "encounter-placement": "让玩家安排后续路径中的遭遇位置。",
+        "stacking-effects": "让不同配置效果共同改变风险或收益。",
+        "base-construction": "承接所得并改变未来可用功能。"
+      },
+      "synergies": [
+        "玩家能观察自己配置的威胁如何带来收益。",
+        "长期设施为眼前的风险投入提供新的用途。"
+      ],
+      "tensions": [
+        "收益可以叠加而威胁没有相应变化时容易形成单一最优配置。",
+        "配置后果延迟太久时，玩家难以建立因果联系。"
+      ],
+      "demoQuestions": [
+        "再增加一次遭遇时，边际收益与风险是否都可理解？",
+        "玩家能否追溯哪项布置造成了本次结果？"
+      ],
+      "exampleGameIds": [
+        "loop-hero"
+      ]
+    },
+    {
+      "id": "gather-or-extract",
+      "name": "搜集还是撤离",
+      "mechanicIds": [
+        "resource-gathering",
+        "resource-scarcity",
+        "extraction-bank"
+      ],
+      "roles": {
+        "resource-gathering": "提供继续留在场景中的即时收益机会。",
+        "resource-scarcity": "限制携带、投入或保障行动安全的资源。",
+        "extraction-bank": "把成功退出设为本次部分收益的兑现条件。"
+      },
+      "synergies": [
+        "已取得收益会让后续冒险的风险更具体。",
+        "有限资源为退出时机提供持续变化的判断依据。"
+      ],
+      "tensions": [
+        "失败损失过重可能使玩家拒绝探索和试验。",
+        "保留例外不清会让风险判断建立在错误预期上。"
+      ],
+      "demoQuestions": [
+        "玩家在什么信息出现后会认为继续搜集不划算？",
+        "退出、死亡和例外保留各自如何影响这次所得？"
+      ],
+      "exampleGameIds": [
+        "escape-from-tarkov"
+      ]
+    },
+    {
+      "id": "growth-reinvestment",
+      "name": "增长再投资",
+      "mechanicIds": [
+        "production-investment",
+        "persistent-unlock",
+        "objective-unlock"
+      ],
+      "roles": {
+        "production-investment": "把当前资源换成未来持续产出的能力。",
+        "persistent-unlock": "使部分新内容在后续过程继续可用。",
+        "objective-unlock": "为开放新权限提供明确的完成条件。"
+      },
+      "synergies": [
+        "增长所得可以继续投入，形成可理解的循环。",
+        "新权限和明确目标能给增长提供不同阶段的用途。"
+      ],
+      "tensions": [
+        "只有产出规模扩大而没有新选择时，进展可能变成等待。",
+        "解锁前置过长时，新内容的价值难以在当前体验中体现。"
+      ],
+      "demoQuestions": [
+        "每次重要投资是否带来新的选择或改变取舍？",
+        "完成目标后开放的内容是否真能被玩家使用？"
+      ],
+      "exampleGameIds": [
+        "cookie-clicker"
+      ]
+    },
+    {
+      "id": "positional-property-rivalry",
+      "name": "位置财产竞争",
+      "mechanicIds": [
+        "dice-roll",
+        "toll-payment",
+        "pvp-opposition"
+      ],
+      "roles": {
+        "dice-roll": "通过骰子结果为局势引入离散的不确定输入。",
+        "toll-payment": "让位置拥有者从经过或停留事件中取得资源。",
+        "pvp-opposition": "让玩家争夺的资源和行动直接影响彼此胜负。"
+      },
+      "synergies": [
+        "位置优势可以通过支付规则转化为可持续收益。",
+        "玩家对局势的应对使随机结果进入可干预的竞争过程。"
+      ],
+      "tensions": [
+        "财产优势持续放大时，落后者可能过早失去有效行动。",
+        "骰面、位置修正与最终支付不一致时，结果难以预测。"
+      ],
+      "demoQuestions": [
+        "落后者是否仍有合法且有实际作用的反制？",
+        "骰子结果、移动处理与过路支付的因果链是否清楚？"
+      ],
+      "exampleGameIds": [
+        "game-of-dice"
+      ]
+    }
+  ]
+}

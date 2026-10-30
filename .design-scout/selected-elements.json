@@ -1,0 +1,25 @@
+{
+  "palette": [],
+  "layout": [],
+  "typography": [],
+  "shape": [],
+  "material": [],
+  "lighting": [],
+  "rendering": [
+    {
+      "id": "style:search_haruhi",
+      "name": "凉宫春日｜清晰赛璐璐",
+      "weight": 100,
+      "reference_ids": [
+        "haruhi-cast",
+        "haruhi-2016"
+      ]
+    }
+  ],
+  "imagery": [],
+  "rhythm": [],
+  "ui": [],
+  "motion": [],
+  "interaction": [],
+  "mood": []
+}
