@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-31",
+  "direction": "Original early-2000s clean cel environment art; navy/violet/parchment/teal/amber; bold ink contours. No existing IP copied.",
+  "assets": [
+    {
+      "id": "mechanics",
+      "kind": "chapter",
+      "asset": "public/art/chapters/mechanics.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Chapter illustration MECHANICS ARCHIVE: a study room archive, wooden open index-card drawers containing blank parchment dividers, a broad reading desk with magnifying glass, and a careful arrangement of NINE distinct research tools: small mechanical hand clamp, rulebook, hourglass, modular puzzle blocks, plant seedling, coin tray, magnifier, paired pawn tokens, and a six-sided die. These are tangible tools, not pictogram buttons. Drawer handles and paper grain are carefully drawn. Main drawers and tools grouped in the right 60% of the picture; left 40% is a quiet dark navy wall and gently lit empty desktop, reserved for HTML text overlay. Keep all important props in the central vertical 65% so a wide banner crop remains readable. Composition has depth and warm nocturnal atmosphere, crisp bold linework.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-b2fbbf5f-2f7c-4f5c-95e6-726636983eb4.png",
+        "originalSha256": "aa6f5b76d28a757339e4bf687b713f1470ebcbcfc00bf183d8bc41199ae7bb6f",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "65a45212dd4f0acaaf2d8cc2355418690eb6606e8e67531eee16dfe2cd634d55",
+      "dimensions": [
+        1672,
+        940
+      ],
+      "bytes": 254708,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "lab",
+      "kind": "chapter",
+      "asset": "public/art/chapters/lab.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Chapter illustration MECHANISM LABORATORY: a beautifully constructed walnut tabletop, thick parchment experiment board with fitted card slots, a fan of blank rule cards carrying only simple unlettered geometric emblems, ivory dice with pips, small interlocking wooden miniature walls and bridges, a brass seal stamp, open notebook with simple abstract flow sketches, pencil and small glass vial of teal ink. Specific physical design experiment equipment, orderly but alive with possibilities. Main board and props grouped in the right 60%; left 40% quiet dark navy desk and shadowed wall reserved for HTML text overlay. Low three-quarter camera perspective, all key props central vertically to survive wide banner cropping. Amber lamp light, dark violet room, bold clean cel ink.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-10662bca-07a1-456e-af5d-6164b9fe8903.png",
+        "originalSha256": "5e56306d9ea6c70247d093bbaf50aed8c134b42be8bf4e3e6c0340ff85530d6f",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "7626b5bfb16dc97675ef43cfd50fe37e8e7686e9244c4b0408c477e5b4e13c0a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 284630,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "games",
+      "kind": "chapter",
+      "asset": "public/art/chapters/games.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Chapter illustration GAMES DISPLAY: a handcrafted walnut glass display case containing five miniature imaginary play-world dioramas: a tiny woodland farm with windmill, floating stone dungeon platforms, miniature clockwork city, small sailing island, and tabletop castle labyrinth, with distinct unbranded plain game cartridges arranged on the lower shelf. Rich tiny roofs, bridges, trees and pathways, all drawn in confident clean cel ink. No recognizable existing game IP. Main display fills right 60%, left 40% a dark quiet violet paneled study wall and empty desk reserved for HTML text overlay. Keep worlds in central vertical 65% to survive wide banner crops. Warm amber case lighting, teal evening window, a sense of collected possibilities.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-3f294bf2-1804-4b56-be0d-0f12a9439380.png",
+        "originalSha256": "ce8ef0db5856b311a6e6d41a4b7b4b47b511e5877e02c99b077834d2988749e9",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "4919c5cc077a589bc304eb014694dbcfbca2f55e40a711a229f8c2bca48b247c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 347440,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "graph",
+      "kind": "chapter",
+      "asset": "public/art/chapters/graph.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Chapter illustration RELATIONSHIP GRAPH: an analog research corkboard on a handsome study desk, physically pinned small photographs of miniature original game worlds and blank archive cards, teal and dusty violet threads connecting brass pin nodes in a clear branching network, a magnifier and card filing tray underneath, amber shaded desk lamp to far right. Images on board show a tiny castle, a wooded path, dice and gears, never people. Threads form visible physical links, no textual labels or writing. Main corkboard and lamp occupy right 60%, left 40% dark navy paneled wall and a little empty desk for HTML copy overlay. Keep main network in middle 65% vertical safe band for panoramic banner cropping. Well-built chunky wooden frame, intimate nocturnal research atmosphere, precise thick outlined background art.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-0753f060-b712-4cab-a1dc-e8ec8b2a4df4.png",
+        "originalSha256": "9161807340ac07f062c000dd775a8927ce485ec0d455a98e3237bccf10e2648f",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "66db98f5e12dff532d6c0cb17129252746b303d02d8f7257f5e03889a9c4642d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 316126,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "heat",
+      "kind": "chapter",
+      "asset": "public/art/chapters/heat.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Chapter illustration OBSERVATION STATION: an authentic retro curved-glass CRT monitor on a walnut desk, showing only simple abstract teal wave shapes and blank plotting grids without any numerals or letters. Beside it folded binoculars, loose parchment paper plots with abstract unlabeled curves, tabbed blank observation cards, brass pencil stand, a compact analog meter with unnumbered ticks, and warm amber desk lamp. A twilight observatory study interior, physically detailed monitor casing and cable. Main station grouped in right 60%; left 40% quiet navy paneled wall and empty desktop for HTML copy overlay. Keep key monitor and binoculars in central vertical 65% safe crop. It communicates observation and uncertainty, not a claim about real statistics. Sharp thick contour lines, restrained cel shadows.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-736077bc-9c0e-4d7b-bd81-a31b932080e0.png",
+        "originalSha256": "dbc02a0deabe04554f131fb519e495fcae3e65e8d2468ebee98c7401589a9611",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "3fc43a9cfbe2b857e59c9c83187c8a7687677b3fe94dc858edd117d5c7a3cb02",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 168122,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "amplified-scoring",
+      "kind": "recipe",
+      "asset": "public/art/recipes/amplified-scoring.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration AMPLIFIED SCORING. An original physical tabletop scoring machine: a small row of ivory playing cards carrying only bold abstract suit-like geometric emblems, beneath THREE layered brass modifier lenses that visibly amplify a warm light beam, the beam reaching a raised golden target bell at the end of a wooden scoring lane. Several translucent teal and violet effect tiles physically stack in fitted rails beside the cards. No numbers or letters anywhere. The interaction between score target, altered rules and stacked effects must be clear through arrangement. Close three-quarter diorama composition, centered active objects, coherent walnut tabletop research room background, strong silhouettes and rich small hardware. Landscape 16:9 card artwork, no empty text panel needed. No actual casino brands, no recognizable existing card-game IP.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-f767ab7b-c756-4dcc-8f34-a3bb06c4a532.png",
+        "originalSha256": "7b21e56c8ba7d416da9725176ba8231d59113d4039430c4c861a0eae6fe222e9",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "316bf0857a712897504a9596bcd988bf9907f0c8826679e4a802cf2b6b30acd8",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 335224,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "aimed-buildcraft",
+      "kind": "recipe",
+      "asset": "public/art/recipes/aimed-buildcraft.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration AIMED BUILDCRAFT. A charming original tabletop adventure contraption in a wooden box: a brass adjustable ball launcher with a clearly visible pivot and aiming arm at lower left points a gleaming teal marble toward staggered carved pegs and curved stone barriers. At lower right, a growing fan of blank parchment ability cards with distinct simple pictorial emblems (spring, shield, spark) sits in a fitted deck holder. Three small interchangeable miniature encounter gates, one forest, one cavern and one clockwork, stand at the back, visibly offering different obstacles. Express the combination of aimed launch, acquiring cards within a run, and changing encounters. No people, no game characters, no recognizable commercial game props. Centered close three-quarter diorama, crisp thick outlines, ample specific physical detail, landscape 16:9 card artwork.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-c93be94f-0c2e-4c77-bf1b-81fd17ea4bc8.png",
+        "originalSha256": "5b6c083da8443a816feb7a74b0ca24368ce494c1180d40c20eeea67385077604",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "47603c3ecb35ee40fdefede25eba37d89ef7a62ff26fedf376fbdc1774baa4cf",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 366882,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "route-deck-planning",
+      "kind": "recipe",
+      "asset": "public/art/recipes/route-deck-planning.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration ROUTE AND DECK PLANNING. A richly built tabletop adventure map on folded parchment, physically raised branching paths leading toward a small ruined tower. One branch passes a tiny safe fountain and an empty supply pouch; the other passes a jagged stone encounter gate and a small card-reward chest. In foreground a wooden holder contains a partly built deck of parchment ability cards with only simple shield, leaf and flame emblems; a nearly empty tray contains only three amber resource stones. A brass compass rests beside the visible route fork. Express the meaningful choice between route opportunity, changing card deck and scarce supplies. No text, no arrows with labels, no game UI, no people, no official IP. Centered three-quarter tabletop diorama, landscape 16:9, clear silhouettes and bold cel contours.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-fa4d0641-f70d-4b77-8f67-c2a6a69e781e.png",
+        "originalSha256": "d3ea1e94ea3e466f1a5bd48a2014fb1e1690c7597c450d372203c9c2a7640c34",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "1438f2832d2dd65ce9cf535e3088bfe4978eedab70d16d217c2932387b982abb",
+      "dimensions": [
+        1672,
+        940
+      ],
+      "bytes": 339122,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "retry-relationships",
+      "kind": "recipe",
+      "asset": "public/art/recipes/retry-relationships.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration RETRY AND RELATIONSHIPS. A physical storytelling tabletop diorama in a walnut hinged box: a circular stone adventure trail returns to its beginning through a modest brass reset arch; several footprints are carved into the loop but no person is present. Outside the loop stands a permanent small upgrade shrine with stepped teal crystals, visibly separate from resettable scenery. Beside it, a keepsake shelf holds paired mugs, tied blank letters and a growing ivy vine winding between two small chairs, expressing a relationship that persists through repeated journeys. A worn adventure satchel rests at the reset arch. Focus on reset loop, persistent strengthening and accumulating bonds without depicting characters or writing. Warm intimate amber room, dusty violet shadows, landscape 16:9 close three-quarter diorama, bold clean outlined cel background.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-262c3247-8a4f-42e7-a256-4060a56c01ae.png",
+        "originalSha256": "255f3f9d0e5651e341228b8dc813b09acd0d916ff1f15b3d929ec45fd31bc4dd",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "28bf2366c420d101f200290a52fadd3ef4e3218fdacd57727140f202485f5939",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 356228,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "expedition-base-supply",
+      "kind": "recipe",
+      "asset": "public/art/recipes/expedition-base-supply.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration EXPEDITION SUPPLIES A BASE. A wooden tabletop miniature landscape with a snug half-built camp on the right, tiny timber cabins, stone storehouse foundations and a small warm lantern. A winding trail leads left into three differently shaped removable encounter tiles: rocky ravine, forest grove and shallow stream. At the trail return, a compact wooden handcart carries freshly gathered logs, ore and herbs to the unfinished camp structures. Empty sockets beside completed cabins show where the gathered supplies can build more rooms. No people or creatures, no lettering or map labels, no known game IP. The picture must clearly connect varying encounters, resource gathering and base construction, rather than merely showing a generic campsite. Close three-quarter diorama, landscape 16:9, thick clear ink, warm amber highlights and teal night woodlands.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-1a71a9f4-3b1d-404a-b91c-3fef360112a2.png",
+        "originalSha256": "73e4e49e116980adf54a8e8ea4d1e5349cad7a37150fb8ac2955c6b63613841f",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "0b4237b8ff4a643e3eda363e529b659c00a35d0a7fab51ca0f29fa751407a5fd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 405208,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "spatial-build-spectate",
+      "kind": "recipe",
+      "asset": "public/art/recipes/spatial-build-spectate.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration SPATIAL BUILD AND SPECTATE. A fitted wooden equipment-grid case at lower left contains a handcrafted curved dagger, square potion bottle, long wand and two shield pieces, all occupying distinctly shaped spaces. Beside it a small crafting bench shows two raw components fitting together into a single finished gear item under a tiny clamp. At right, a miniature mechanical duel theater holds two NONHUMANOID clockwork beetle tokens on rails, with a wound brass key and connected gear train visibly powering an automatic encounter without hands. No combat gore, no people, no text, no stat numbers, no known game IP. Clear three-part arrangement communicating spatial equipment layout, recipe crafting and automatic resolution. Rich wood, brass and parchment details rendered with flat cel color and confident thick ink; landscape 16:9 three-quarter tabletop scene.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-55067058-4393-4130-ba26-77ca3c1d4506.png",
+        "originalSha256": "1d9489c3844b25bfffb4c1ed52aa12811ed17849dd688d7a09c19ecfeca245cf",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "e34cd27179145d00afc6ed7d1ed782cbd5fe7e396d86490f36052137ffc3ffc9",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 372200,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "player-built-risk-route",
+      "kind": "recipe",
+      "asset": "public/art/recipes/player-built-risk-route.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration PLAYER-BUILT RISK ROUTE. A wooden tabletop loop-path board surrounds a tiny home base of connected miniature buildings. Along the path are clearly removable encounter tiles being physically slotted into grooves: dense forest, jagged rocks and amber treasure grove. A stack of two translucent teal terrain-effect plates overlaps a violet tile, their patterns visibly combining over the route. A small tray of extra tiles lies beside the board and the base has one finished workshop and two empty foundation slots. No person or hands, no lettering, no numbers, no actual game IP. Show that the player constructs the risky route and stacked effects, with the base receiving future development; do not depict a fixed generic boardgame only. Landscape 16:9 close three-quarter diorama, crisp heavy ink and controlled two-tone cel shading.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-d056efd3-a9d5-4234-91b3-ba870ef4878b.png",
+        "originalSha256": "3ec37c81dcc2a4ce63b3766b6f6d949446d8502853d673e47b07498d97a0b437",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "f54d93a7062d99421528493232e4aaaf93c7d39b60a70add0658ff7acdf1cfe5",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 422090,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "gather-or-extract",
+      "kind": "recipe",
+      "asset": "public/art/recipes/gather-or-extract.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration GATHER OR EXTRACT. An original compact miniature expedition site inside a wooden tabletop terrain box: at a stone crossroads, one rough trail continues toward tempting amber crystal deposits and an open cache, while the other reaches a quiet teal-lit exit arch with a secure locked deposit chest beyond it. A visibly bulging small backpack with gathered ore sits at the crossroads beside a nearly empty flask and a short candle, suggesting limited carrying capacity and supplies. The crystals inside the secure chest beyond the arch contrast with the exposed gathered contents of the backpack. No soldiers, weapons, people or hands, no text, no arrows with writing, no existing game IP. Readable choice between gathering more and securing a return, scarce resources and exit-dependent payoff. Landscape 16:9 three-quarter tabletop diorama, thick ink outlines and crisp cel shadow blocks.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-45d73993-295b-41d0-bbb9-78bd38cd38bb.png",
+        "originalSha256": "9f2a434a5e2833cb73335e7d342672b111feb89fec4ecd5d6d03596926f664b9",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "6a48eb1436b84633aec9970f28cdd8cd9c8db21582e126a84b1b894f26ab420c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 356102,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "growth-reinvestment",
+      "kind": "recipe",
+      "asset": "public/art/recipes/growth-reinvestment.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration GROWTH REINVESTMENT. A charming tabletop production model in a walnut research room: a small amber crystal mine on the left feeds a wooden cart track toward a brass gear-driven workshop; its conveyor returns refined golden tokens toward a larger newly constructed workshop, visibly creating a reinvestment loop. Behind it two expansion doors are physically open to reveal new useful production tools while one final door is still locked with a brass padlock. A small completed geometric objective medallion fits an empty socket next to the unlocked doorway. No text, no labels, no numerals, no people or hands, no known game IP. Emphasize earned output funding more productive capacity, persistent unlocked facilities, and a clear condition unlocking the next workshop; not merely piles of coins. Landscape 16:9 three-quarter diorama with thick dark contours, warm amber and muted teal cel fills.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-0f20a94e-35e6-498e-9088-bb7a884652cd.png",
+        "originalSha256": "4788548d498c57839e2b81799dd44410d4f380f22dd53c2a4315ca1397b42286",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "339b5562ab6c5dd8ba8e9ffc735bc737b1222700fb6f4e678fcff595316ad0e6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 411938,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    },
+    {
+      "id": "positional-property-rivalry",
+      "kind": "recipe",
+      "asset": "public/art/recipes/positional-property-rivalry.webp",
+      "prompt": "Use case: stylized-concept. Original environment illustration for an early-2000s Japanese visual novel game-design research website. Clean confident thick dark-navy ink contours, crisp flat cel color fills, one hard-edged shadow tone and tiny restrained highlight shapes. Rich readable physical prop construction, hand-drawn animation background, no painterly brush haze, no glossy modern gacha rendering, no photorealism or 3D. Twilight navy, dusty violet, warm parchment, muted teal and amber palette; warm desk-lamp glow described with flat clear shadow shapes. Landscape 16:9 full-bleed scene, NOT an interface. No text, no letters, no numerals, no logos, no watermark, no people, no characters or visible hands. Recipe illustration POSITIONAL PROPERTY RIVALRY. A sophisticated original walnut tabletop property board winds around a miniature town, with two clearly contrasting ownership styles: teal-roofed houses and dusty-violet-roofed houses. Two simple nonhuman pawn tokens, one teal and one violet, face opposite goals. At the foreground a large ivory die with black pips has landed beside the path; a brass toll gate on a teal-owned square has a small coin tray receiving amber tokens, while a rival violet pawn approaches it. Farther along the path, a violet-owned gate presents the reciprocal threat. Original house shapes and paths, never the layout or symbols of any existing commercial board game. Clear combination of dice uncertainty, ownership payment and opposing players. No people or hands, no words, letters, numerals, labels or logos. Landscape 16:9 close three-quarter diorama, readable silhouettes, rich physical construction, crisp heavy cel ink.",
+      "source": {
+        "tool": "built-in image_gen",
+        "generationRecord": "exec-cbe4a695-07d8-42e7-bed3-709e98314bf8.png",
+        "originalSha256": "03b0848e7f1dc3b5e9586226459b86faa22f3655104f291a514fb49d8890d056",
+        "reference": "design/image-prompts.json and .design-scout/design-direction.md",
+        "mode": "original-generation",
+        "postprocess": "format conversion only: sharp WebP quality 88"
+      },
+      "sha256": "e5ec874dc2ee5b277f3e086510321034c719558ba906aa8c861210becb482f55",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 356154,
+      "visualReview": "Source reviewed for composition, readable physical metaphor, no people and no text; runtime crop verification belongs to integration."
+    }
+  ],
+  "icons": [
+    {
+      "id": "interaction",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/interaction.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "5f9f047dc4eba9f9c87a0a6b5f09d2ea2277e35dc2ed24b80f9da4f1ec3bb6d1",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "rules",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/rules.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "22bb2337b00e9d12971e29a63c743d755ee4926f99ddd9960a7adea62f304642",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "temporal",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/temporal.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "e55ae3ca80cd276b8bf5a5bd585f8da9bebe6d58352b09f98e365cda1a54802f",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "buildcraft",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/buildcraft.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "573e8188c01e1eeb79ddf2788ab81e582678c32406df27c0afc93142677f75b7",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "progression",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/progression.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "2626fc88b163f4649a3268abbdba980f350a93444c1ed558bfdfbacc6cad484d",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "economy",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/economy.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "8d82d1c8849c7bcd8294939e1f8bbfcb517a54631f9baebb408a418ee89c532f",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "information",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/information.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "4c0fe4a44211d39d6501b6c21aaeb3c349aea1d36b335e1430b25415a2111bcc",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "participants",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/participants.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "25a4660a89002eed1a85145eca2b6886e7357e6adb34486822507c93e5191141",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    },
+    {
+      "id": "variability",
+      "kind": "mechanism-icon",
+      "asset": "public/art/ui/variability.svg",
+      "source": {
+        "tool": "repo-native SVG",
+        "mode": "original vector drawing"
+      },
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "7f1a0baabb7c2a4da292fc93fc8a62bb9fbdd025ec07774021b6a13788b3cea2",
+      "description": "Distinct physical motif for canonical dimension; 2px navy ink with parchment, teal, violet and gold fills."
+    }
+  ]
+}

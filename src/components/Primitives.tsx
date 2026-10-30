@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 import { animate, motion } from "motion/react";
 import { useUI } from "./Providers";
 import type { Game, MechanicStatus } from "@/lib/model";
+import { ArtImage, MaidPortrait } from "./Art";
+import { chapterArt, gameArt, type ChapterId, type MaidState } from "@/lib/art";
 
 export const stateLabels: Record<MechanicStatus, string> = {
   present: "已确认存在",
@@ -71,9 +74,27 @@ export function PageHead({
   description: string;
   children?: ReactNode;
 }) {
+  const pathname = usePathname();
+  const chapter: ChapterId = pathname.startsWith("/lab")
+    ? "lab"
+    : pathname.startsWith("/heat")
+      ? "heat"
+      : pathname.startsWith("/graph")
+        ? "graph"
+        : pathname.startsWith("/games") || pathname.startsWith("/compare")
+          ? "games"
+          : "mechanics";
   return (
-    <div className="page-head">
-      <div>
+    <div className={`page-head chapter-head chapter-${chapter}`}>
+      <ArtImage
+        src={chapterArt(chapter)}
+        alt=""
+        className="chapter-backdrop"
+        width={1672}
+        height={941}
+        priority
+      />
+      <div className="chapter-heading-copy">
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -146,26 +167,18 @@ export function CountUp({
 export function Assistant({
   message = "机制的身份不会因为作用不同而变化。关联可以增加，分类不能随意挪动。",
   compact = false,
+  state = "explain",
 }: {
   message?: string;
   compact?: boolean;
+  state?: MaidState;
 }) {
-  const { effects } = useUI();
   return (
     <section
       className={`window assistant ${compact ? "assistant-compact" : ""}`}
     >
       <div className="assistant-small">
-        <motion.img
-          src="/art/maid-cel.png"
-          alt="粗黑轮廓的原创赛璐璐女仆研究助手"
-          animate={effects ? { y: [0, -3, 0] } : { y: 0 }}
-          transition={{
-            duration: 5,
-            repeat: effects ? Infinity : 0,
-            ease: "easeInOut",
-          }}
-        />
+        <MaidPortrait state={state} />
       </div>
       <p className="assistant-caption">
         <span className="gold tiny">ASSISTANT / RIN</span>
@@ -233,12 +246,16 @@ export function GameCover({
       className={`cover ${large ? "game-feature-cover" : ""}`}
       style={{ background: item.color }}
       role="img"
-      aria-label={`${game.name} 原创机制图形，非官方封面`}
+      aria-label={`${game.name} 原创玩法示意，非官方封面`}
     >
-      <small>MECHANICS STUDY / 原创图形示意</small>
-      <span className="cover-symbol" aria-hidden="true">
-        {item.symbol}
-      </span>
+      <ArtImage
+        src={gameArt(game.id)}
+        alt=""
+        className="game-cover-art"
+        width={1672}
+        height={941}
+      />
+      <small>MECHANICS STUDY / 原创玩法示意</small>
       <span className="cover-title">{item.label}</span>
     </div>
   );
@@ -272,7 +289,7 @@ export function EmptyState({
 }) {
   return (
     <div className="empty-state">
-      <span aria-hidden="true">◇</span>
+      <MaidPortrait state="think" className="empty-maid" decorative />
       <h2>{title}</h2>
       <p>{description}</p>
       {children}

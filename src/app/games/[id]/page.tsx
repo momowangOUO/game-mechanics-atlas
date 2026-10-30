@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import GameViews from "@/components/GameViews";
+import { ArtImage } from "@/components/Art";
 import { GameCover, PageHead, SectionHead } from "@/components/Primitives";
 import {
   games,
@@ -55,8 +56,18 @@ export default async function GamePage({
         </div>
       </PageHead>
       <div className="game-layout">
-        <GameCover game={game} large />
-        <div className="game-summary">
+        <div className="game-worksheet">
+          <GameCover game={game} large />
+          <GameViews game={game} />
+        </div>
+        <div className="game-summary game-study-notes">
+          <ArtImage
+            className="study-board-art"
+            src="/art/chapters/graph.webp"
+            alt="研究室的线索板与档案，原创栏目插画"
+            width={1672}
+            height={941}
+          />
           <p className="analysis-label">设计判断 / 编辑归纳</p>
           <h2 className="serif">
             熟悉一款游戏，
@@ -95,7 +106,6 @@ export default async function GamePage({
           </div>
         </div>
       </div>
-      <GameViews game={game} />
       <SectionHead number="EVIDENCE" title="事实、来源与研究边界" />
       <div className="generic-grid">
         <section className="paper">

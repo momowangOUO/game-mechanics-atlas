@@ -1,0 +1,13 @@
+{
+  "buildId": "B-I5tisGVcsFNEMsVk7-Q",
+  "path": "docs/game-artist/motion/research-session.webm",
+  "sha256": "4635ae34641fd563e245cb464472fad9be66d3d674edcfcef3ee28566d94699e",
+  "bytes": 7065151,
+  "playback": {
+    "durationSeconds": 13.68,
+    "totalFrames": 342,
+    "droppedFrames": 0,
+    "ended": true
+  },
+  "environment": "Edge headless video replay; desktop viewport, not real-device frame-rate profiling"
+}

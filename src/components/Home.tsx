@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { motion } from "motion/react";
-import { useUI } from "./Providers";
+import HomeStage from "./HomeStage";
+import { ArtImage, DimensionIcon } from "./Art";
+import { recipeArt } from "@/lib/art";
+
 import {
   CountUp,
   GameCard,
@@ -24,119 +25,12 @@ import {
 } from "@/lib/knowledge";
 
 export default function Home() {
-  const { openSearch, effects } = useUI();
-  const [query, setQuery] = useState(""),
-    [greeting, setGreeting] = useState(false);
   const featured = ["balatro", "slay-the-spire", "hades"]
     .map((id) => games.find((g) => g.id === id))
     .filter((g) => g !== undefined);
   return (
-    <>
-      <section className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">GAME DESIGN RESEARCH / ゲームデザイン研究室</p>
-          <h1>
-            拆解游戏，
-            <br />
-            发现<em>新玩法。</em>
-          </h1>
-          <p className="hero-desc">
-            从一条规则到一组机制，从经典案例到新的组合。
-            <br />
-            为游戏设计师整理定义、边界、关系与研究线索。
-          </p>
-          <form
-            className="search-window"
-            onSubmit={(event) => {
-              event.preventDefault();
-              openSearch(query);
-            }}
-          >
-            <div className="search-title">
-              <span>SEARCH ARCHIVE / 检索档案</span>
-              <span aria-hidden="true">─　□　×</span>
-            </div>
-            <div className="search-body">
-              <span className="search-icon" aria-hidden="true">
-                ⌕
-              </span>
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="搜机制、游戏，或者一种玩法组合…"
-                aria-label="首页搜索"
-              />
-              <button type="submit" className="keycap" aria-label="搜索知识库">
-                Ctrl K
-              </button>
-            </div>
-          </form>
-          <div className="hero-tags">
-            <span>试着搜索：</span>
-            {["卡组", "Balatro", "撤离"].map((tag) => (
-              <button key={tag} onClick={() => openSearch(tag)}>
-                {tag}
-              </button>
-            ))}
-          </div>
-          <div className="hero-actions">
-            <Link className="button primary" href="/mechanics">
-              进入机制档案 <span aria-hidden="true">→</span>
-            </Link>
-            <Link className="button" href="/lab">
-              试验一种新组合 ↗
-            </Link>
-          </div>
-        </div>
-        <div
-          className="hero-art"
-          onMouseEnter={() => setGreeting(true)}
-          onMouseLeave={() => setGreeting(false)}
-        >
-          <div className="art-disc" />
-          <span className="hero-number" aria-hidden="true">
-            01
-          </span>
-          <span className="orbit-label">研究助手 ／ 黒髪メイド</span>
-          <motion.img
-            className="maid"
-            width="1024"
-            height="1536"
-            src="/art/maid-cel.png"
-            alt="黑发女仆研究助手，手持档案夹和铅笔，采用粗黑线赛璐璐画法"
-            animate={effects ? { y: [0, -4, 0] } : { y: 0 }}
-            whileHover={effects ? { rotate: -0.7 } : undefined}
-            transition={{
-              duration: 5,
-              repeat: effects ? Infinity : 0,
-              ease: "easeInOut",
-            }}
-            fetchPriority="high"
-          />
-          <div className="dialogue">
-            <div className="dialogue-title">
-              <strong>研究助手 RIN</strong>
-              <span>MESSAGE / 001</span>
-            </div>
-            <p>
-              {greeting ? (
-                <>
-                  我会帮你保留那些容易被忽略的条件。
-                  <br />
-                  <strong>未知，不等于不存在。</strong>
-                </>
-              ) : (
-                <>
-                  欢迎来到研究室。
-                  <br />
-                  <strong>今天，想从哪一种“好玩”开始研究？</strong>
-                </>
-              )}
-              <span aria-hidden="true"> ▾</span>
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="illustrated-home">
+      <HomeStage />
       <section className="metrics" aria-label="知识库规模">
         {[
           [mechanics.length, "原子机制", "固定九维分类"],
@@ -156,7 +50,7 @@ export default function Home() {
           </div>
         ))}
       </section>
-      <Reveal>
+      <Reveal className="home-research-section">
         <SectionHead number="01" title="从一条机制开始">
           <Link href="/mechanics">查看全部档案 →</Link>
         </SectionHead>
@@ -176,7 +70,7 @@ export default function Home() {
                 >
                   <span className="mechanic-number">0{index + 1}</span>
                   <span className="mechanic-mark" aria-hidden="true">
-                    {mark}
+                    {mechanic && <DimensionIcon id={mechanic.dimension} />}
                   </span>
                   <div>
                     <h3>{mechanic?.name}</h3>
@@ -221,7 +115,7 @@ export default function Home() {
           </Window>
         </div>
       </Reveal>
-      <Reveal>
+      <Reveal className="home-research-section">
         <SectionHead number="02" title="把熟悉的游戏拆开看">
           <Link href="/games">{games.length} 款真实案例 →</Link>
         </SectionHead>
@@ -231,7 +125,7 @@ export default function Home() {
           ))}
         </div>
       </Reveal>
-      <Reveal>
+      <Reveal className="home-research-section">
         <SectionHead number="03" title="机制之间，发生了什么？">
           <Link href="/graph">打开交互图谱 ↗</Link>
         </SectionHead>
@@ -242,7 +136,7 @@ export default function Home() {
           </p>
         </Window>
       </Reveal>
-      <Reveal>
+      <Reveal className="home-research-section">
         <SectionHead number="04" title="下一次实验，先从哪里开始？">
           <Link href="/lab">进入混合实验室 ↗</Link>
         </SectionHead>
@@ -253,6 +147,13 @@ export default function Home() {
               className="recipe-card interactive-card"
               key={recipe.id}
             >
+              <ArtImage
+                className="recipe-illustration"
+                src={recipeArt(recipe.id)}
+                alt=""
+                width={1672}
+                height={941}
+              />
               <span className="eyebrow">FORMULA / 0{i + 1}</span>
               <h3>{recipe.name}</h3>
               <p>
@@ -266,12 +167,12 @@ export default function Home() {
           ))}
         </div>
       </Reveal>
-      <Reveal>
+      <Reveal className="home-research-section">
         <SectionHead number="05" title="从玩家的搜索里，找研究线索">
           <Link href="/heat">查看完整热度观察 ↗</Link>
         </SectionHead>
         <HomeHeatHighlights />
       </Reveal>
-    </>
+    </div>
   );
 }

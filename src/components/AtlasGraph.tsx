@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { DimensionIcon } from "./Art";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import {
   Background,
@@ -73,6 +74,7 @@ const MechanicNode = memo(function MechanicNode({
       <span className="tiny" style={{ color: data.color }}>
         {data.dimension}
       </span>
+      <DimensionIcon id={getMechanic(id)!.dimension} />
       <strong>{data.label}</strong>
       <span className="node-detail">点选查看档案 →</span>
       <Handle type="source" position={Position.Right} isConnectable={false} />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@xyflow/react/dist/style.css";
 import "./ui.css";
+import "./galgame.css";
 import { AppProviders, PageTransition } from "@/components/Providers";
 import { Footer, Header, MobileNavigation } from "@/components/Shell";
 

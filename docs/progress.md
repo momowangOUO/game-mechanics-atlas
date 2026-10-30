@@ -1,5 +1,7 @@
 # 项目进度
 
+2026-10-31：已完成 Galgame 美术与演出升级。新增正式素材、当前构建截图、录屏及34项生产浏览器回归，详见[本轮验收](game-artist/verification.md)。以下首版记录保留为历史。
+
 **当前状态：已完成。网站、六类先行样张与最终截图已保存，独立审阅及全部验证通过，代码已推送GitHub私有仓库，并核验PRIVATE、main分支和远端提交一致。** 下方保留前序阶段记录，不作为当前待办。
 
 仓库：https://github.com/momowangOUO/game-mechanics-atlas 。本地运行及测试结果见README与docs/verification.md。

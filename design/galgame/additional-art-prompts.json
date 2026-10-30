@@ -1,0 +1,37 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "public/art/maid-cel.png",
+  "explain": {
+    "path": "public/art/maid-explain.webp",
+    "derivedFrom": "public/art/maid-cel.png",
+    "operation": "format conversion and downsample only",
+    "sourceProvenance": "design/image-prompts.json"
+  },
+  "assets": [
+    {
+      "id": "maid-think",
+      "path": "public/art/maid-think.webp",
+      "prompt": "Create another new pose of the EXACT same adult original maid research assistant in provided identity reference: long black hair with blue-black blocks, straight bangs, violet eyes, white frilled bonnet with tiny tassel on right, black short puff sleeve high-neck dress, white ruffled apron, small muted violet neck bow. Heavy black silhouette INK, finer interior lines and flat early2000s anime 2-tone cel shadows, no soft gradient shine. Pose and expression: thoughtful researcher, eyes looking toward viewer-left at an imaginary mechanism, one index finger gently touching chin, other arm supporting an open ivory research notebook at waist. Slight curious brow, closed mouth small thoughtful smile, clearly different from welcome. Three quarter body to knees with ALL silhouette inside frame. Transparent isolated cutout, TRUE ALPHA completely empty outside, no background, NO HALO, no glow, no floor, no cast shadow, no lettering or logos. Identity and clothing must stay consistent with reference."
+    },
+    {
+      "id": "maid-surprise",
+      "path": "public/art/maid-surprise.webp",
+      "prompt": "New pose of the SAME original adult black-haired maid researcher as reference. Preserve violet eyes, long navy-black hair, straight fringe, white maid bonnet/tassel, modest black puff-sleeved high-neck dress, white ruffle apron and small violet bow. Clear nostalgic 2000s cel anime, HEAVY BLACK CONTOUR, flat 2-level shadows, no glossy gacha rendering. Expression SURPRISED DISCOVERY: wide excited eyes, eyebrows lifted, delighted little open mouth, right index finger raised as an idea occurs, left hand holds a small stack of ivory mechanism cards fanned slightly. Friendly intelligent adult expression, not childlike. Pose knee-up, whole hair and both hands fully inside canvas. Isolated on TRUE TRANSPARENT alpha with absolutely no backdrop, vignette, glow, shadow, text or logos. Maintain exact reference identity."
+    },
+    {
+      "id": "maid-conflict",
+      "path": "public/art/maid-conflict.webp",
+      "prompt": "Create a new pose of the SAME original ADULT maid researcher in reference. Keep face identity, violet eyes, long navy-black hair straight bangs, white frilled maid headband/right tassel, black modest high-neck short-puff-sleeve dress, white apron, small violet neck bow. Early2000s crisp cel anime, HEAVY BLACK OUTER INK and finer inner lines, only 2-3 flat shadow tones. Expression WARNING / checking a boundary: gently serious intelligent face, eyebrows slightly concerned, not angry or sad. Hold two ivory research cards separated in one hand, other index finger raised to point out a specific conflict. Looking at viewer, closed mouth slight knowing smile. Threequarter knee-up, complete hair/hands within canvas. Isolated TRUE transparent PNG, completely empty pixels outside silhouette, no vignette, no glow, no shadow/background, no letters or text/logos. Not a duplicate of welcome. Preserve adult proportions and exact reference costume."
+    },
+    {
+      "id": "maid-complete",
+      "path": "public/art/maid-complete.webp",
+      "prompt": "New celebratory but composed pose of SAME original adult maid RESEARCH assistant reference: long black/navy hair, straight fringe, violet eyes, white frilled bonnet/tassel on right, black modest high-neck puff-sleeved dress with white apron and muted violet neck bow. Maintain exact adult face/costume. Heavy BLACK outline, clear flat early2000s TV-anime cel shading in 2 tones, internal lines finer, no glowy rendering. REPORT COMPLETE pose: warm satisfied closed-eye smile, head tilted slightly, holding an open cream research report folder up in left hand, right hand gives a small thumbs-up beside chest. NO STAMP TEXT on folder. Threequarter body head-to-knees full silhouette inside frame. Isolated TRUE TRANSPARENT alpha, entirely empty outside, no floor/shadow, glow, background/vignette, no lettering or logos. The meaning is paperwork organized, not proof of commercial success."
+    },
+    {
+      "id": "desk-foreground",
+      "path": "public/art/desk-foreground.webp",
+      "prompt": "Transparent cutout production art foreground element for a retro Japanese visual novel game design research room. Landscape wide2:1. A SMALL elegantly drawn wooden desk corner occupying ONLY lower-right of image, with cream scattered playing cards, a violet cloth-bound closed notebook, tiny brass paperclip, fountain pen and three wooden polyhedral dice. Clear perspective seen from front slightly above, warm lamplight from right. Drawn clean dark ink outline and 2-3 flat cel shades, mid2000s anime prop art, NOT photo or glossy3D. Large LEFT and TOP areas completely EMPTY transparent. Objects and table edge fully within frame where possible, no background beyond wooden corner. TRUE transparent alpha PNG, no cast shadow or glow outside objects, no letters, logos or people. Simple readable silhouettes. This will be a small 380px-wide independent foreground overlay over room backdrop, must not include any room/scenery, no large wall or background."
+    }
+  ]
+}

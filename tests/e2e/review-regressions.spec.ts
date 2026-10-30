@@ -241,6 +241,7 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
     expect(bounds!.x).toBeGreaterThanOrEqual(0);
     expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
   }
+  await page.setViewportSize({ width: 1280, height: 900 });
   await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
   await hydrated(page);
   await expect(page.locator(".home-heat-grid strong")).toHaveText("123");
@@ -266,6 +267,29 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
   ).toBeVisible();
   for (const width of [768, 390]) {
     await page.setViewportSize({ width, height: 900 });
+    if (width === 390) {
+      // The phone title screen uses chapter entries instead of the old long
+      // desktop overview. Verify the actual visible demand destination.
+      await page
+        .getByRole("navigation", { name: "研究室章节" })
+        .getByRole("link")
+        .filter({ hasText: "热度观察" })
+        .click();
+      await hydrated(page);
+      await expect(
+        page.locator(".data-strip .metric").first().locator(".sr-only"),
+      ).toHaveText("123");
+      await expect(page.locator(".heat-window-note")).toContainText("合成示例");
+      await expect(page.locator(".heat-window-note")).toContainText("外部导入");
+      await expect
+        .poll(() =>
+          page.evaluate(
+            () => document.documentElement.scrollWidth - innerWidth,
+          ),
+        )
+        .toBe(0);
+      continue;
+    }
     const qualification = page
       .locator(".home-opportunity-strip")
       .getByText(/请分开数据集核验/);

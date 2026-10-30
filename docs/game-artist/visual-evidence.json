@@ -1,0 +1,816 @@
+{
+  "schema_version": 1,
+  "profile": "research-website",
+  "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+  "contract_sha256": "f29a6825d190c0c4994544373d634d9009bea0dd32c0e14c74038de58687b511",
+  "views": [
+    {
+      "id": "home-desktop",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/",
+      "state": "home",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/home-desktop.png",
+        "sha256": "7c6e684830079a7a633976e8de23ceb5338aab069c5e3c483156fe9024d2efef"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/home-desktop.png",
+        "sha256": "e7483b40958ceec9b56b6408957e0ca96cc34cd077c3328c95242e970cb0f4f7"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/",
+        "steps": [
+          "进入 /",
+          "执行 home 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "room-dusk",
+        "desk-foreground",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          2663
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "home-mobile",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/",
+      "state": "home",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": {
+        "path": "design/galgame/targets/home-mobile.png",
+        "sha256": "d33c7989b1a8286cf1d79b65bd8ba98f4c08d60134ad911bca22621fd9bcd596"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/home-mobile.png",
+        "sha256": "ebfedb56924b02b3dc198d6af0921321b1bc2fb45cf775be936869b2efae4e30"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/",
+        "steps": [
+          "进入 /",
+          "执行 home 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "room-dusk",
+        "desk-foreground",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          0
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "home-small",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/",
+      "state": "home",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 320,
+        "height": 640
+      },
+      "target": {
+        "path": "design/galgame/targets/home-mobile.png",
+        "sha256": "d33c7989b1a8286cf1d79b65bd8ba98f4c08d60134ad911bca22621fd9bcd596"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/home-small.png",
+        "sha256": "80f0bbe88d65fed95a6f956873e2fe59f464cfcc4891e3ff2bbc7fd1b496ab50"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        320,
+        640
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/",
+        "steps": [
+          "进入 /",
+          "执行 home 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "room-dusk",
+        "desk-foreground",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          0
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "mechanic",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/mechanics/in-run-deck-growth",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/mechanic.png",
+        "sha256": "7245314f316a5a4fa5d41e5a87d7ae96a2ef3c48a2575e4736bea1ea1e3641f6"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/mechanic.png",
+        "sha256": "dfc30e753467dba4ffda49b783c562b78f86e50481dceb2dee92b42df5a79272"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/mechanics/in-run-deck-growth",
+        "steps": [
+          "进入 /mechanics/in-run-deck-growth",
+          "执行 file 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-explain",
+        "chapter-mechanics"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          1831
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "game",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/games/balatro",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/game.png",
+        "sha256": "10939511266c046faaeaf79c14687b28eb24175e2488a53ae7c6b61ef96adba8"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/game.png",
+        "sha256": "889ac0d1dbd91da0f795d8d4fc69d860a97cd1e93d7a8bfbd077a05500eb15e5"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/games/balatro",
+        "steps": [
+          "进入 /games/balatro",
+          "执行 file 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "chapter-games",
+        "chapter-graph",
+        "game-balatro"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          1381
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "heat",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/heat",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/heat.png",
+        "sha256": "e09f38d55644ae4081adf411339e15d4d680723d1939ae70cadbdcd20719273b"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/heat.png",
+        "sha256": "2e2cc69587a9b6dc1cbf24c3988e842b122fb76172c74c7c97ef96c0fd6b6939"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/heat",
+        "steps": [
+          "进入 /heat",
+          "执行 file 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-think",
+        "chapter-heat"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          1821
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "lab",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "initial",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab.png",
+        "sha256": "7a91e0a447f336641a33da2b1c1c4d2280a956a40b60ac90ff953c9d585a7f98"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/lab.png",
+        "sha256": "38a65536299060766d182a011cba5cf37e9fcf19d8a895ba09d90cdb99f2d194"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab?recipe=aimed-buildcraft",
+        "steps": [
+          "进入 /lab?recipe=aimed-buildcraft",
+          "执行 initial 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-explain",
+        "chapter-lab",
+        "recipe-aimed-buildcraft",
+        "dimension-interaction"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          469
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "lab-complete",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/lab",
+      "state": "complete",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-complete.png",
+        "sha256": "f5323b065599c2e48e3e54e217873ab79e91da95733b3df83bc6678138a06a99"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/lab-complete.png",
+        "sha256": "5ffc453bd40c41570c51645a0d1e39092be76709a7ec621233c137c7fc4093aa"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab",
+        "steps": [
+          "进入 /lab",
+          "执行 complete 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-complete",
+        "chapter-lab",
+        "dimension-interaction",
+        "dimension-rules"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          423
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "lab-conflict",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "conflict",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-conflict.png",
+        "sha256": "3640820ea5f7ed1b15cd9ce8b0ac19be9ac6abca97b79d916752ff26720a2246"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/lab-conflict.png",
+        "sha256": "64987d05204f5562339d53a2c93a2e489bf26ef2bdfab396c81121c8f398f9b0"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab?recipe=aimed-buildcraft",
+        "steps": [
+          "进入 /lab?recipe=aimed-buildcraft",
+          "执行 conflict 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-conflict",
+        "chapter-lab",
+        "dimension-temporal"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          419
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "lab-mobile",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "initial",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-mobile.png",
+        "sha256": "08d17b2f64dc98f7c2a2cf682622f8ddc717ec56533eaac599552d1565d02908"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/lab-mobile.png",
+        "sha256": "d0e84dba4849e5d28012e77aa32d8a2efde6c2be479b45bcb01e7951fcc199af"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab?recipe=aimed-buildcraft",
+        "steps": [
+          "进入 /lab?recipe=aimed-buildcraft",
+          "执行 initial 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "chapter-lab",
+        "recipe-aimed-buildcraft"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          0
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "lab-mobile-complete",
+      "build_id": "B-I5tisGVcsFNEMsVk7-Q",
+      "screen": "/lab",
+      "state": "mobile-complete",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 320,
+        "height": 640
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-mobile.png",
+        "sha256": "08d17b2f64dc98f7c2a2cf682622f8ddc717ec56533eaac599552d1565d02908"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/lab-mobile-complete.png",
+        "sha256": "657f9d310a0d4948149e46c3da0b692c3f1236f8a13b4d449be916bca2623831"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        320,
+        640
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab",
+        "steps": [
+          "进入 /lab",
+          "执行 mobile-complete 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-complete"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          0
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    }
+  ],
+  "assetChecks": [
+    {
+      "id": "room-dusk",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "desk-foreground",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-welcome",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-explain",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-think",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-surprise",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-conflict",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "maid-complete",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "chapter-mechanics",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "chapter-games",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "chapter-graph",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "chapter-heat",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "chapter-lab",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-balatro",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-peglin",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-slay-the-spire",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-hades",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-cult-of-the-lamb",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-backpack-battles",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-loop-hero",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-vampire-survivors",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-risk-of-rain-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-inscryption",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-stardew-valley",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-minecraft",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-tetris",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-cookie-clicker",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dead-cells",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-escape-from-tarkov",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-game-of-dice",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-shape-of-dreams",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-amplified-scoring",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-aimed-buildcraft",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-route-deck-planning",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-retry-relationships",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-expedition-base-supply",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-spatial-build-spectate",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-player-built-risk-route",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-gather-or-extract",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-growth-reinvestment",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-positional-property-rivalry",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-interaction",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-rules",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-temporal",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-buildcraft",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-progression",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-economy",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-information",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-participants",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "dimension-variability",
+      "status": 200,
+      "hashMatches": true
+    }
+  ],
+  "visual_review_status": "passed",
+  "inspection": {
+    "path": "docs/game-artist/runtime-inspection.md",
+    "sha256": "faf0a241234d807507e3822561bc358b833a5f675c89340369c83215052b9870"
+  }
+}

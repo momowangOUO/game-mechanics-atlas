@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { MaidPortrait } from "./Art";
 import { useMemo, useRef, useState } from "react";
 import {
   analyzeHeat,
@@ -438,48 +439,77 @@ export default function HeatObservatory({
               </button>
               <button onClick={() => setInspectOpen(true)}>当前主题 ↗</button>
             </div>
-            <div className="heat-layout heat-charts">
-              <div
-                className={`chart-pane ${chart === "trend" ? "mobile-chart-active" : ""}`}
-              >
-                <Window
-                  title="SEARCH TREND / 搜索关注趋势"
-                  extra={<span className="tiny">{selectedProfile?.name}</span>}
+            <div className="heat-illustrated-layout">
+              <div className="heat-layout heat-charts">
+                <div
+                  className={`chart-pane ${chart === "trend" ? "mobile-chart-active" : ""}`}
                 >
-                  {selectedProfile && (
-                    <TrendChart
-                      key={`${selectedProfile.topicId}-${days}-${dataset}-${source}-${region}`}
-                      name={selectedProfile.name}
-                      points={result.series.map((day) => ({
-                        date: day.date,
-                        value: day.values[selectedProfile.topicId] || 0,
-                        measured: Object.hasOwn(
-                          day.values,
-                          selectedProfile.topicId,
-                        ),
-                      }))}
+                  <Window
+                    title="SEARCH TREND / 搜索关注趋势"
+                    extra={
+                      <span className="tiny">{selectedProfile?.name}</span>
+                    }
+                  >
+                    {selectedProfile && (
+                      <TrendChart
+                        key={`${selectedProfile.topicId}-${days}-${dataset}-${source}-${region}`}
+                        name={selectedProfile.name}
+                        points={result.series.map((day) => ({
+                          date: day.date,
+                          value: day.values[selectedProfile.topicId] || 0,
+                          measured: Object.hasOwn(
+                            day.values,
+                            selectedProfile.topicId,
+                          ),
+                        }))}
+                      />
+                    )}
+                    <p className="chart-caption">
+                      趋势：
+                      {selectedProfile
+                        ? trendLabel(selectedProfile)
+                        : "暂无可比数据"}
+                      。来源、归因规则或日期覆盖不一致时不计算增长。
+                    </p>
+                  </Window>
+                </div>
+                <div
+                  className={`chart-pane ${chart === "scatter" ? "mobile-chart-active" : ""}`}
+                >
+                  <Window title="DEMAND × SUPPLY / 需求供给散点">
+                    <ScatterChart
+                      profiles={cohortProfiles}
+                      selected={selectedProfile?.topicId || ""}
+                      onSelect={selectTopic}
                     />
-                  )}
-                  <p className="chart-caption">
-                    趋势：
-                    {selectedProfile
-                      ? trendLabel(selectedProfile)
-                      : "暂无可比数据"}
-                    。来源、归因规则或日期覆盖不一致时不计算增长。
+                  </Window>
+                </div>
+              </div>
+              <aside className="heat-observation-note">
+                <MaidPortrait state="think" decorative />
+                <span className="observation-code">
+                  RIN'S OBSERVATION ／ 研究便签
+                </span>
+                <h2>热度，是线索。</h2>
+                <p>
+                  先看搜索关注，再核对样本供给。低供给不等于已经证明的市场空白。
+                </p>
+                <div>
+                  <strong>玩家在搜什么？</strong>
+                  <p>原始搜索次数决定关注排行；不是收录游戏越多，就越热门。</p>
+                </div>
+                <div>
+                  <strong>同类供给有多少？</strong>
+                  <p>供给只统计已确认的本站样本，未知与条件匹配分别保留。</p>
+                </div>
+                <div>
+                  <strong>下一步，去核验。</strong>
+                  <p>
+                    把机会线索带回真实案例和原型，核对覆盖范围、成本与玩家选择。
                   </p>
-                </Window>
-              </div>
-              <div
-                className={`chart-pane ${chart === "scatter" ? "mobile-chart-active" : ""}`}
-              >
-                <Window title="DEMAND × SUPPLY / 需求供给散点">
-                  <ScatterChart
-                    profiles={cohortProfiles}
-                    selected={selectedProfile?.topicId || ""}
-                    onSelect={selectTopic}
-                  />
-                </Window>
-              </div>
+                </div>
+                <span className="observation-stamp">需求 ≠ 供给</span>
+              </aside>
             </div>
             <div
               className="tabs heat-ranking-tabs"

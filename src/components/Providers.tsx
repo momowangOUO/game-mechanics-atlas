@@ -307,14 +307,24 @@ export function AppProviders({ children }: { children: ReactNode }) {
 export function PageTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const { effects } = useUI();
+  const entry = pathname.startsWith("/lab")
+    ? { y: 8 }
+    : pathname.startsWith("/games")
+      ? { x: 12 }
+      : pathname.startsWith("/graph")
+        ? { scale: 0.985 }
+        : pathname.startsWith("/heat")
+          ? { y: 4 }
+          : { x: -8 };
   return (
     <AnimatePresence mode="wait" initial={false}>
       <motion.div
         key={pathname}
-        initial={{ opacity: 0.85, y: effects ? 12 : 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0.8, y: effects ? -7 : 0 }}
-        transition={{ duration: effects ? 0.35 : 0 }}
+        className="chapter-transition"
+        initial={effects ? { opacity: 0.7, ...entry } : false}
+        animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
+        exit={{ opacity: effects ? 0.75 : 1 }}
+        transition={{ duration: effects ? 0.22 : 0 }}
       >
         {children}
       </motion.div>

@@ -1,0 +1,790 @@
+{
+  "schema_version": 1,
+  "profile": "research-website",
+  "contract_id": "galgame-2026-10-31",
+  "assets": [
+    {
+      "id": "room-dusk",
+      "path": "public/art/room-dusk.webp",
+      "sha256": "6c460a59f9a182cd13a03b71e6946d023cb3b317c976dd5fff36b2165c158cb4",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 211796,
+      "hasAlpha": false,
+      "runtime_binding": "HomeStage / Assistant room",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "desk-foreground",
+      "path": "public/art/desk-foreground.webp",
+      "sha256": "80f6793477ddee0293b87696e36af630ed3d46b967797fdb94092a8b1379b019",
+      "width": 1000,
+      "height": 500,
+      "bytes": 44206,
+      "hasAlpha": true,
+      "runtime_binding": "HomeStage foreground",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-welcome",
+      "path": "public/art/maid-welcome.webp",
+      "sha256": "735eb62fa8b2666f59cc44d032a64fb826cecf866ec1280f89158cde165c7668",
+      "width": 880,
+      "height": 1320,
+      "bytes": 173944,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-explain",
+      "path": "public/art/maid-explain.webp",
+      "sha256": "aae90974ad4c32f654fd90a13094881c58d509a2e5dfc5031385663cd9e6ecd6",
+      "width": 880,
+      "height": 1320,
+      "bytes": 162548,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-think",
+      "path": "public/art/maid-think.webp",
+      "sha256": "2575b1fe0e610da851b02dc6c9ffa7a00c2d7aebea2ea30387955dc7e13464f4",
+      "width": 880,
+      "height": 1320,
+      "bytes": 160848,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-surprise",
+      "path": "public/art/maid-surprise.webp",
+      "sha256": "01f5f3cf497dc63a9219f7babf23e37c7ef8cb56a3fedabfeca928af849662e9",
+      "width": 880,
+      "height": 1320,
+      "bytes": 184852,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-conflict",
+      "path": "public/art/maid-conflict.webp",
+      "sha256": "92e8290705489d99b7bbdfc9916daec0be3b76e4f69ae873d82742629de65032",
+      "width": 880,
+      "height": 1320,
+      "bytes": 174794,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "maid-complete",
+      "path": "public/art/maid-complete.webp",
+      "sha256": "ba82a1b8ab997c1140aa0ebab0f780becbb30573d8600cd9106b455ce03b7d75",
+      "width": 880,
+      "height": 1320,
+      "bytes": 169630,
+      "hasAlpha": true,
+      "runtime_binding": "MaidPortrait / HomeStage / Assistant / HybridLab",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "chapter-mechanics",
+      "path": "public/art/chapters/mechanics.webp",
+      "sha256": "65a45212dd4f0acaaf2d8cc2355418690eb6606e8e67531eee16dfe2cd634d55",
+      "width": 1672,
+      "height": 940,
+      "bytes": 254708,
+      "hasAlpha": false,
+      "runtime_binding": "PageHead / HomeStage chapter navigation",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "chapter-games",
+      "path": "public/art/chapters/games.webp",
+      "sha256": "4919c5cc077a589bc304eb014694dbcfbca2f55e40a711a229f8c2bca48b247c",
+      "width": 1672,
+      "height": 941,
+      "bytes": 347440,
+      "hasAlpha": false,
+      "runtime_binding": "PageHead / HomeStage chapter navigation",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "chapter-graph",
+      "path": "public/art/chapters/graph.webp",
+      "sha256": "66db98f5e12dff532d6c0cb17129252746b303d02d8f7257f5e03889a9c4642d",
+      "width": 1672,
+      "height": 941,
+      "bytes": 316126,
+      "hasAlpha": false,
+      "runtime_binding": "PageHead / HomeStage chapter navigation",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "chapter-heat",
+      "path": "public/art/chapters/heat.webp",
+      "sha256": "3fc43a9cfbe2b857e59c9c83187c8a7687677b3fe94dc858edd117d5c7a3cb02",
+      "width": 1672,
+      "height": 941,
+      "bytes": 168122,
+      "hasAlpha": false,
+      "runtime_binding": "PageHead / HomeStage chapter navigation",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "chapter-lab",
+      "path": "public/art/chapters/lab.webp",
+      "sha256": "7626b5bfb16dc97675ef43cfd50fe37e8e7686e9244c4b0408c477e5b4e13c0a",
+      "width": 1672,
+      "height": 941,
+      "bytes": 284630,
+      "hasAlpha": false,
+      "runtime_binding": "PageHead / HomeStage chapter navigation",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-balatro",
+      "path": "public/art/games/balatro.webp",
+      "sha256": "bed27883fceab7746218ce67573be2b67b23a091cfa1560c1d303eeb42356aa7",
+      "width": 1672,
+      "height": 941,
+      "bytes": 368752,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-peglin",
+      "path": "public/art/games/peglin.webp",
+      "sha256": "6fc167ba269620db7bfef064c4f460f0ca54bd29a2cbb2af764385a33fe66ae9",
+      "width": 1672,
+      "height": 941,
+      "bytes": 518574,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-slay-the-spire",
+      "path": "public/art/games/slay-the-spire.webp",
+      "sha256": "d461a10f46bb1b3088a6b49d213fc71640b4d9dca07ab83c5e6de318172e72dc",
+      "width": 1672,
+      "height": 941,
+      "bytes": 528364,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-hades",
+      "path": "public/art/games/hades.webp",
+      "sha256": "273a67a88cc9efc4b34709c73ad32af0af84ddcbf5c5008348363981c8c35b98",
+      "width": 1672,
+      "height": 941,
+      "bytes": 537940,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-cult-of-the-lamb",
+      "path": "public/art/games/cult-of-the-lamb.webp",
+      "sha256": "47404aa3e5892ae96e0d7dd5f9865d0632bf07513d2e4d63428423cbbeaeb7d7",
+      "width": 1672,
+      "height": 941,
+      "bytes": 600452,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-backpack-battles",
+      "path": "public/art/games/backpack-battles.webp",
+      "sha256": "e5cfac97915210fe61d40098ddcf346c4a361a62df73fa988e3f52cef5eed45c",
+      "width": 1672,
+      "height": 941,
+      "bytes": 501380,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-loop-hero",
+      "path": "public/art/games/loop-hero.webp",
+      "sha256": "e281c76d2bfc544204b10f625509d46b825d49fe2746c72f18ad4e5af29ee675",
+      "width": 1672,
+      "height": 941,
+      "bytes": 615954,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-vampire-survivors",
+      "path": "public/art/games/vampire-survivors.webp",
+      "sha256": "cfe856d9c089e6708d57b9903461420f7cc3aec7f4c02b6bbe8c90f4f8c18e34",
+      "width": 1672,
+      "height": 941,
+      "bytes": 568860,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-risk-of-rain-2",
+      "path": "public/art/games/risk-of-rain-2.webp",
+      "sha256": "5507f139f2d3113c6a6e3218c33ab73f279f570fd21c332e4d70ab726789bb15",
+      "width": 1672,
+      "height": 941,
+      "bytes": 530618,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-inscryption",
+      "path": "public/art/games/inscryption.webp",
+      "sha256": "afa41882ccf8e6496ef5ae9f06ee86799a329404a4e625348b86cfe696bac123",
+      "width": 1672,
+      "height": 941,
+      "bytes": 354212,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-stardew-valley",
+      "path": "public/art/games/stardew-valley.webp",
+      "sha256": "dc77867bf71afa8b2a23ae48ce1c19f4d04f72c8cb9da7c0a1cbefb621929680",
+      "width": 1672,
+      "height": 941,
+      "bytes": 749716,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-minecraft",
+      "path": "public/art/games/minecraft.webp",
+      "sha256": "2e430fa4be5dd3d297dbc288a1fcff22669be8c11c88e7c38883e0b1416f0db7",
+      "width": 1672,
+      "height": 941,
+      "bytes": 543946,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-tetris",
+      "path": "public/art/games/tetris.webp",
+      "sha256": "2abd5a821f725b508f8b7c3ff6589c2354277e275d9d1d1993a3ac6377e34ae7",
+      "width": 1672,
+      "height": 941,
+      "bytes": 408946,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-cookie-clicker",
+      "path": "public/art/games/cookie-clicker.webp",
+      "sha256": "10965948b3aadeefce7fb54e5ef45ce4f6a3d23ae45467c24218ef49a09ac698",
+      "width": 1672,
+      "height": 941,
+      "bytes": 543744,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-dead-cells",
+      "path": "public/art/games/dead-cells.webp",
+      "sha256": "d24a652ee4fbbe8f9d8f3587349382a93118287bc78d989c3ec4276564ed396a",
+      "width": 1672,
+      "height": 941,
+      "bytes": 411278,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-escape-from-tarkov",
+      "path": "public/art/games/escape-from-tarkov.webp",
+      "sha256": "9d9419e40651fc36d2f555848606fbd98325b82d1ceddd951b18efad7172c1ba",
+      "width": 1672,
+      "height": 941,
+      "bytes": 535714,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-game-of-dice",
+      "path": "public/art/games/game-of-dice.webp",
+      "sha256": "f976401bc32ae9981e4a09c2fac6a9953740531baa0602696f7dfccc2a1948cc",
+      "width": 1672,
+      "height": 941,
+      "bytes": 423492,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "game-shape-of-dreams",
+      "path": "public/art/games/shape-of-dreams.webp",
+      "sha256": "cd3168172ad0f41503ef49277c89075f7442761dcb181d435021df3c9beceb98",
+      "width": 1672,
+      "height": 941,
+      "bytes": 438346,
+      "hasAlpha": false,
+      "runtime_binding": "GameCover / GameCard / Compare",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-amplified-scoring",
+      "path": "public/art/recipes/amplified-scoring.webp",
+      "sha256": "316bf0857a712897504a9596bcd988bf9907f0c8826679e4a802cf2b6b30acd8",
+      "width": 1672,
+      "height": 941,
+      "bytes": 335224,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-aimed-buildcraft",
+      "path": "public/art/recipes/aimed-buildcraft.webp",
+      "sha256": "47603c3ecb35ee40fdefede25eba37d89ef7a62ff26fedf376fbdc1774baa4cf",
+      "width": 1672,
+      "height": 941,
+      "bytes": 366882,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-route-deck-planning",
+      "path": "public/art/recipes/route-deck-planning.webp",
+      "sha256": "1438f2832d2dd65ce9cf535e3088bfe4978eedab70d16d217c2932387b982abb",
+      "width": 1672,
+      "height": 940,
+      "bytes": 339122,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-retry-relationships",
+      "path": "public/art/recipes/retry-relationships.webp",
+      "sha256": "28bf2366c420d101f200290a52fadd3ef4e3218fdacd57727140f202485f5939",
+      "width": 1672,
+      "height": 941,
+      "bytes": 356228,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-expedition-base-supply",
+      "path": "public/art/recipes/expedition-base-supply.webp",
+      "sha256": "0b4237b8ff4a643e3eda363e529b659c00a35d0a7fab51ca0f29fa751407a5fd",
+      "width": 1672,
+      "height": 941,
+      "bytes": 405208,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-spatial-build-spectate",
+      "path": "public/art/recipes/spatial-build-spectate.webp",
+      "sha256": "e34cd27179145d00afc6ed7d1ed782cbd5fe7e396d86490f36052137ffc3ffc9",
+      "width": 1672,
+      "height": 941,
+      "bytes": 372200,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-player-built-risk-route",
+      "path": "public/art/recipes/player-built-risk-route.webp",
+      "sha256": "f54d93a7062d99421528493232e4aaaf93c7d39b60a70add0658ff7acdf1cfe5",
+      "width": 1672,
+      "height": 941,
+      "bytes": 422090,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-gather-or-extract",
+      "path": "public/art/recipes/gather-or-extract.webp",
+      "sha256": "6a48eb1436b84633aec9970f28cdd8cd9c8db21582e126a84b1b894f26ab420c",
+      "width": 1672,
+      "height": 941,
+      "bytes": 356102,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-growth-reinvestment",
+      "path": "public/art/recipes/growth-reinvestment.webp",
+      "sha256": "339b5562ab6c5dd8ba8e9ffc735bc737b1222700fb6f4e678fcff595316ad0e6",
+      "width": 1672,
+      "height": 941,
+      "bytes": 411938,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "recipe-positional-property-rivalry",
+      "path": "public/art/recipes/positional-property-rivalry.webp",
+      "sha256": "e5ec874dc2ee5b277f3e086510321034c719558ba906aa8c861210becb482f55",
+      "width": 1672,
+      "height": 941,
+      "bytes": 356154,
+      "hasAlpha": false,
+      "runtime_binding": "Home recipe cards / HybridLab recipe preview",
+      "source": "built-in imagegen; original illustrative asset"
+    },
+    {
+      "id": "dimension-interaction",
+      "path": "public/art/ui/interaction.svg",
+      "sha256": "5f9f047dc4eba9f9c87a0a6b5f09d2ea2277e35dc2ed24b80f9da4f1ec3bb6d1",
+      "width": 64,
+      "height": 64,
+      "bytes": 463,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-rules",
+      "path": "public/art/ui/rules.svg",
+      "sha256": "22bb2337b00e9d12971e29a63c743d755ee4926f99ddd9960a7adea62f304642",
+      "width": 64,
+      "height": 64,
+      "bytes": 422,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-temporal",
+      "path": "public/art/ui/temporal.svg",
+      "sha256": "e55ae3ca80cd276b8bf5a5bd585f8da9bebe6d58352b09f98e365cda1a54802f",
+      "width": 64,
+      "height": 64,
+      "bytes": 430,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-buildcraft",
+      "path": "public/art/ui/buildcraft.svg",
+      "sha256": "573e8188c01e1eeb79ddf2788ab81e582678c32406df27c0afc93142677f75b7",
+      "width": 64,
+      "height": 64,
+      "bytes": 467,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-progression",
+      "path": "public/art/ui/progression.svg",
+      "sha256": "2626fc88b163f4649a3268abbdba980f350a93444c1ed558bfdfbacc6cad484d",
+      "width": 64,
+      "height": 64,
+      "bytes": 436,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-economy",
+      "path": "public/art/ui/economy.svg",
+      "sha256": "8d82d1c8849c7bcd8294939e1f8bbfcb517a54631f9baebb408a418ee89c532f",
+      "width": 64,
+      "height": 64,
+      "bytes": 513,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-information",
+      "path": "public/art/ui/information.svg",
+      "sha256": "4c0fe4a44211d39d6501b6c21aaeb3c349aea1d36b335e1430b25415a2111bcc",
+      "width": 64,
+      "height": 64,
+      "bytes": 480,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-participants",
+      "path": "public/art/ui/participants.svg",
+      "sha256": "25a4660a89002eed1a85145eca2b6886e7357e6adb34486822507c93e5191141",
+      "width": 64,
+      "height": 64,
+      "bytes": 473,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    },
+    {
+      "id": "dimension-variability",
+      "path": "public/art/ui/variability.svg",
+      "sha256": "7f1a0baabb7c2a4da292fc93fc8a62bb9fbdd025ec07774021b6a13788b3cea2",
+      "width": 64,
+      "height": 64,
+      "bytes": 709,
+      "hasAlpha": true,
+      "runtime_binding": "DimensionIcon / Catalogs / HybridLab / AtlasGraph",
+      "source": "original repo-native SVG"
+    }
+  ],
+  "required_views": [
+    {
+      "id": "home-desktop",
+      "screen": "/",
+      "state": "home",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/home-desktop.png",
+        "sha256": "7c6e684830079a7a633976e8de23ceb5338aab069c5e3c483156fe9024d2efef"
+      },
+      "required_assets": [
+        "room-dusk",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab",
+        "desk-foreground"
+      ]
+    },
+    {
+      "id": "home-mobile",
+      "screen": "/",
+      "state": "home",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": {
+        "path": "design/galgame/targets/home-mobile.png",
+        "sha256": "d33c7989b1a8286cf1d79b65bd8ba98f4c08d60134ad911bca22621fd9bcd596"
+      },
+      "required_assets": [
+        "room-dusk",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab"
+      ]
+    },
+    {
+      "id": "home-small",
+      "screen": "/",
+      "state": "home",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 320,
+        "height": 640
+      },
+      "target": {
+        "path": "design/galgame/targets/home-mobile.png",
+        "sha256": "d33c7989b1a8286cf1d79b65bd8ba98f4c08d60134ad911bca22621fd9bcd596"
+      },
+      "required_assets": [
+        "room-dusk",
+        "maid-welcome",
+        "chapter-mechanics",
+        "chapter-games",
+        "chapter-graph",
+        "chapter-heat",
+        "chapter-lab"
+      ]
+    },
+    {
+      "id": "mechanic",
+      "screen": "/mechanics/in-run-deck-growth",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/mechanic.png",
+        "sha256": "7245314f316a5a4fa5d41e5a87d7ae96a2ef3c48a2575e4736bea1ea1e3641f6"
+      },
+      "required_assets": [
+        "chapter-mechanics",
+        "maid-explain"
+      ]
+    },
+    {
+      "id": "game",
+      "screen": "/games/balatro",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/game.png",
+        "sha256": "10939511266c046faaeaf79c14687b28eb24175e2488a53ae7c6b61ef96adba8"
+      },
+      "required_assets": [
+        "chapter-games",
+        "game-balatro",
+        "chapter-graph"
+      ]
+    },
+    {
+      "id": "heat",
+      "screen": "/heat",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/heat.png",
+        "sha256": "e09f38d55644ae4081adf411339e15d4d680723d1939ae70cadbdcd20719273b"
+      },
+      "required_assets": [
+        "chapter-heat",
+        "maid-think"
+      ]
+    },
+    {
+      "id": "lab",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "initial",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab.png",
+        "sha256": "7a91e0a447f336641a33da2b1c1c4d2280a956a40b60ac90ff953c9d585a7f98"
+      },
+      "required_assets": [
+        "chapter-lab",
+        "recipe-aimed-buildcraft",
+        "maid-explain"
+      ]
+    },
+    {
+      "id": "lab-complete",
+      "screen": "/lab",
+      "state": "complete",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-complete.png",
+        "sha256": "f5323b065599c2e48e3e54e217873ab79e91da95733b3df83bc6678138a06a99"
+      },
+      "required_assets": [
+        "chapter-lab",
+        "maid-complete"
+      ]
+    },
+    {
+      "id": "lab-conflict",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "conflict",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-conflict.png",
+        "sha256": "3640820ea5f7ed1b15cd9ce8b0ac19be9ac6abca97b79d916752ff26720a2246"
+      },
+      "required_assets": [
+        "chapter-lab",
+        "maid-conflict"
+      ]
+    },
+    {
+      "id": "lab-mobile",
+      "screen": "/lab?recipe=aimed-buildcraft",
+      "state": "initial",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-mobile.png",
+        "sha256": "08d17b2f64dc98f7c2a2cf682622f8ddc717ec56533eaac599552d1565d02908"
+      },
+      "required_assets": [
+        "chapter-lab",
+        "recipe-aimed-buildcraft"
+      ]
+    },
+    {
+      "id": "lab-mobile-complete",
+      "screen": "/lab",
+      "state": "mobile-complete",
+      "platform": "phone",
+      "layout": "portrait",
+      "viewport": {
+        "width": 320,
+        "height": 640
+      },
+      "target": {
+        "path": "design/galgame/targets/lab-mobile.png",
+        "sha256": "08d17b2f64dc98f7c2a2cf682622f8ddc717ec56533eaac599552d1565d02908"
+      },
+      "required_assets": [
+        "maid-complete"
+      ]
+    }
+  ],
+  "rules": {
+    "allViews": "no horizontal overflow, no page errors, current build and real UI",
+    "phoneTaskViews": "home and lab must have zero vertical root scroll and no near-fullscreen nested reader",
+    "desktopDocuments": "vertical browser reading scroll is intentional; pages contain complete research content"
+  }
+}

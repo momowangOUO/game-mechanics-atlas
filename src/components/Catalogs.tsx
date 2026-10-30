@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { DimensionIcon } from "./Art";
 import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { dimensions, games, genres, mechanics } from "@/lib/knowledge";
@@ -108,7 +109,7 @@ export function MechanicCatalog({
               setPage(1);
             }}
           >
-            <i style={{ background: d.color }} />
+            <DimensionIcon id={d.id} />
             <span>{d.name}</span>
             <small>
               {mechanics.filter((m) => m.dimension === d.id).length}
@@ -212,7 +213,7 @@ export function MechanicCatalog({
                                 "0",
                               )}
                             </span>
-                            <span aria-hidden="true">↗</span>
+                            <DimensionIcon id={mechanic.dimension} />
                           </div>
                           <h2>{mechanic.name}</h2>
                           <p>{mechanic.definition}</p>

@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "scope": "Original visual metaphors for game mechanics; no official artwork, characters, logos or covers.",
+  "styleSource": ".design-scout/design-direction.md",
+  "generatedAt": "2026-10-31",
+  "assets": [
+    {
+      "id": "balatro",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A magical card-game tabletop in a dusky violet salon. Large fan of five ivory playing cards with simple red suit pips only, stacked teal and red clay scoring chips, and one mischievous original purple jester-mask card floating at an angle above the hand, its gold magic visually linking cards into a multiplying cascade. Warm focused lamp light, ornate wood and green felt, cards and chips dominate, coherent still-life perspective.",
+      "status": "generated",
+      "destination": "public/art/games/balatro.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-ea0a87f9-85fc-4b6c-af08-8eec2793fd81.png",
+        "original": ".build/game-art-originals/balatro.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 368752,
+      "sha256": "bed27883fceab7746218ce67573be2b67b23a091cfa1560c1d303eeb42356aa7",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "peglin",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A tiny original hooded green traveler at the top-left rim of a magical underground peg chamber, launching a bright pearl orb. The orb follows a clean zigzag trail through rows of large brass pegs embedded in ancient rock, striking several pegs with gold sparks before dropping toward a small treasure basin. Mossy teal cave, violet crystals, tactile brass pegs and dynamic bouncing motion dominate; a real pinball-like cavern scene, not UI.",
+      "status": "generated",
+      "destination": "public/art/games/peglin.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-ea7a4062-eb14-4e0f-b345-cf5436addc6e.png",
+        "original": ".build/game-art-originals/peglin.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 518574,
+      "sha256": "6fc167ba269620db7bfef064c4f460f0ca54bd29a2cbb2af764385a33fe66ae9",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "slay-the-spire",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A tabletop miniature of a tall ancient spiral tower rising at right out of a parchment route-map landscape. A forked winding stone route across islands connects little battle arenas, campfires and a treasure chest, while three large illustrated ability cards and a small original cloaked adventurer anchor the foreground. The route visibly offers two alternative climbs; dusty violet sky and golden torchlight, detailed cel-painted miniature scene.",
+      "status": "generated",
+      "destination": "public/art/games/slay-the-spire.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-7b9fe3e4-be7a-43fa-9706-0c18d8f08fdb.png",
+        "original": ".build/game-art-originals/slay-the-spire.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 528364,
+      "sha256": "d461a10f46bb1b3088a6b49d213fc71640b4d9dca07ab83c5e6de318172e72dc",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "hades",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A dramatic isometric underworld combat arena with cracked marble platforms, teal ghostly braziers and massive violet temple columns. An original short-haired cloaked spear fighter lunges across the center, a broad gold spear arc cleaving a ring of shadow creatures; three floating jewel-like boons with distinct elemental glows hover near the fighter. Fast readable action and dash trails, no recognizable game characters.",
+      "status": "generated",
+      "destination": "public/art/games/hades.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-0de667e7-6ea0-4a43-af84-dc32a9558f35.png",
+        "original": ".build/game-art-originals/hades.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 537940,
+      "sha256": "273a67a88cc9efc4b34709c73ad32af0af84ddcbf5c5008348363981c8c35b98",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "cult-of-the-lamb",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. An original woodland creature settlement at twilight, without recognizable mascot characters. A tiny woolly animal caretaker with a plain dark cloak tends seed rows and pumpkins in the foreground; cottages, lumber stacks and villagers frame a tall central ritual altar where golden fire nourishes crops with an elegant spiral of light. Show the reciprocal farming-and-ritual loop with tangible connected scene elements, cozy yet mysterious violet forest.",
+      "status": "generated",
+      "destination": "public/art/games/cult-of-the-lamb.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-9d159c59-837c-4b55-9102-7a4e65336a69.png",
+        "original": ".build/game-art-originals/cult-of-the-lamb.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 600452,
+      "sha256": "47404aa3e5892ae96e0d7dd5f9865d0632bf07513d2e4d63428423cbbeaeb7d7",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "backpack-battles",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. Close three-quarter top-down view into a richly drawn open adventurer backpack on a tavern table. A chunky sword, leather shield, red potion, mushrooms, herbs, two gemstones and an apple are packed tightly into clearly fitted rectangular fabric pockets. Adjacent herbs glow and feed a thin gold spark into the potion, the sword touches a whetstone and gleams; carefully organized adjacency is immediately visible. No grid UI, just physical sewn compartments and items.",
+      "status": "generated",
+      "destination": "public/art/games/backpack-battles.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-5a2edf53-b4dc-4e11-9046-de7d28f79644.png",
+        "original": ".build/game-art-originals/backpack-battles.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 501380,
+      "sha256": "e5cfac97915210fe61d40098ddcf346c4a361a62df73fa988e3f52cef5eed45c",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "loop-hero",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A floating tabletop fantasy landscape made of chunky square terrain tiles. One closed oval cobblestone road circles a ruined village, mountains, dark forest and small meadow; a single original cloaked traveler walks the loop while a hand-like magical ribbon lays a new forest tile beside the road. Foreground tiles have clear thick ink edges, dusty violet mist and parchment horizon, readable loop and changing environment, no interface.",
+      "status": "generated",
+      "destination": "public/art/games/loop-hero.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-ea733a28-b28f-4c7b-917f-bd271d0e43d4.png",
+        "original": ".build/game-art-originals/loop-hero.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 615954,
+      "sha256": "e281c76d2bfc544204b10f625509d46b825d49fe2746c72f18ad4e5af29ee675",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "vampire-survivors",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. High oblique view of an ancient nighttime cemetery. A tiny original traveler with a floppy hat holds the center of a large tight ring of approaching bats and simple shadow beasts. A bright radial burst of gold blades and teal magic clears a visible circular space around the traveler; waves of creatures fill the outer scene. Strong organized radial composition, warm center against dusty violet ruins, no blood, no official characters.",
+      "status": "generated",
+      "destination": "public/art/games/vampire-survivors.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-e68340a5-89e0-4efa-b0a4-f769e4d8b98b.png",
+        "original": ".build/game-art-originals/vampire-survivors.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 568860,
+      "sha256": "cfe856d9c089e6708d57b9903461420f7cc3aec7f4c02b6bbe8c90f4f8c18e34",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "risk-of-rain-2",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A lone original helmeted explorer on a rocky alien plateau beneath two pale moons, surrounded by increasingly large alien creatures. A tall stacked collection of strange gadgets, feather charms and energy cells strapped to their backpack combines into a big teal-gold chain lightning burst. Layered distant plateaus with giant looming enemies suggest escalating danger, bold cel-ink sci-fi landscape, no recognizable character designs.",
+      "status": "generated",
+      "destination": "public/art/games/risk-of-rain-2.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-e72c6e73-4803-45a2-8148-3283e76c190a.png",
+        "original": ".build/game-art-originals/risk-of-rain-2.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 530618,
+      "sha256": "5507f139f2d3113c6a6e3218c33ab73f279f570fd21c332e4d70ab726789bb15",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "inscryption",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A mysterious candlelit wooden cabin card table viewed from a slightly elevated seated perspective. Physical ivory animal-etching cards stand opposite rough bone tokens, an antique brass balance scale at right tilts as small teeth-like white counters fall onto its tray. An indistinct shadowed opponent's hands at the far edge, moss-green boards, dusty violet darkness, amber candle pools; card strategy and tangible risk, no text or card numbers.",
+      "status": "generated",
+      "destination": "public/art/games/inscryption.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-3ab0eb81-1383-41ed-b4e1-e64325645a5e.png",
+        "original": ".build/game-art-originals/inscryption.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 354212,
+      "sha256": "afa41882ccf8e6496ef5ae9f06ee86799a329404a4e625348b86cfe696bac123",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable.",
+      "editPrompt": "Use case: precise-object-edit. Edit this original candlelit game-mechanic card-table illustration. Remove ONLY the two clasped hands at the upper middle of the image and replace that local area naturally with uninterrupted dark cloak folds. Keep the one opponent hand dropping white tooth-shaped counters onto the scale at upper right, and keep the player's card-holding hand in the foreground. Exactly one visible opponent hand, exactly one player hand. Preserve every card, candle, tabletop item, balance scale, light direction, wide 16:9 composition, thick dark ink and cel-shaded early-2000s anime rendering. No new text, numbers, logos, interface, border, characters, panels or objects.",
+      "replacedSource": {
+        "file": "exec-fc50f71f-2a5a-443b-ae95-d560bd3d335f.png",
+        "reason": "Three visible opponent hands",
+        "archive": ".build/game-art-originals/inscryption-before-hand-fix.png"
+      }
+    },
+    {
+      "id": "stardew-valley",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A charming original rural farm landscape with tilled soil rows, a small wooden cottage, watering can and a basket of vegetables. One original straw-hatted farmer waters the nearest seedlings; the same winding path leads through spring blossoms at left, full summer crops centrally, gold autumn leaves right and distant snowy mountains, coherent natural scene evoking the seasonal planting and harvest cycle, no quadriptych or panels.",
+      "status": "generated",
+      "destination": "public/art/games/stardew-valley.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-3a03de33-7aa8-4871-a966-6ed73f0593ef.png",
+        "original": ".build/game-art-originals/stardew-valley.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 749716,
+      "sha256": "dc77867bf71afa8b2a23ae48ce1c19f4d04f72c8cb9da7c0a1cbefb621929680",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "minecraft",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. An original voxel-crafting landscape painted in early-2000s anime cel art rather than a game screenshot. Big stepped square earth blocks with grass, exposed stone and ore form a valley; foreground wooden crafting bench with arranged wood and stone ingredients beside one large plain iron pickaxe, a small original block-proportioned explorer builds a modest stone shelter. Square geometry, tangible materials, warm gold sunlight and violet distance.",
+      "status": "generated",
+      "destination": "public/art/games/minecraft.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-c9e2e400-2343-469a-aa89-3d78e3bbada8.png",
+        "original": ".build/game-art-originals/minecraft.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 543946,
+      "sha256": "2e430fa4be5dd3d297dbc288a1fcff22669be8c11c88e7c38883e0b1416f0db7",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "tetris",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A whimsical physical puzzle workshop made of polished chunky interlocking tetromino-shaped colored blocks. Top-down oblique landscape composition of a rectangular wooden well almost filled with distinct teal, violet, brick-red, ivory and gold block shapes; one gold T-shaped block descends into the only gap, completing a horizontal row that shines and dissolves into little sparks. Strong simple geometry with tactile cel shading, no numbers or UI.",
+      "status": "generated",
+      "destination": "public/art/games/tetris.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-6e6a8678-2297-4962-acf8-0b3cd272f341.png",
+        "original": ".build/game-art-originals/tetris.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 408946,
+      "sha256": "2abd5a821f725b508f8b7c3ff6589c2354277e275d9d1d1993a3ac6377e34ae7",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "cookie-clicker",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A richly drawn whimsical cookie bakery production chain. Huge golden chocolate-chip cookie on an ornate hand-cranked press in foreground, its lever surrounded by small repeated motion marks; little conveyor belts connect mixing bowls, busy ovens and taller increasingly elaborate cookie machines into the background. Cozy dusty violet brick workshop, teal machinery, golden cookies cascading into a basket, visual growth from manual pressing to automated production, no interface.",
+      "status": "generated",
+      "destination": "public/art/games/cookie-clicker.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-d5de6ce2-d2ce-44c4-a2fe-40f4578b1d87.png",
+        "original": ".build/game-art-originals/cookie-clicker.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 543744,
+      "sha256": "10965948b3aadeefce7fb54e5ef45ce4f6a3d23ae45467c24218ef49a09ac698",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "dead-cells",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. Side-view cutaway of a crumbling violet castle dungeon with multiple clearly separated stone platforms, ladders and a branching path toward two lit doorways. An original scarf-wearing armored rogue with normal helmet face leaps from left platform toward a shadow enemy, swinging a curved sword while a bow and shield lie in a nearby alcove. Bold gold action slash, teal torchlight, readable platform geometry and weapon choices, no official character silhouettes.",
+      "status": "generated",
+      "destination": "public/art/games/dead-cells.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-69eb6645-c574-4178-979a-96f1f69ac0e0.png",
+        "original": ".build/game-art-originals/dead-cells.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 411278,
+      "sha256": "d24a652ee4fbbe8f9d8f3587349382a93118287bc78d989c3ec4276564ed396a",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "escape-from-tarkov",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A peaceful nonviolent exploration and cargo-retrieval scene in an empty abandoned industrial district, drawn as an elaborate tabletop landscape diorama. No people, no soldiers, no weapons, no combat, no blood, no injuries. A large opened canvas backpack filled with spare parts, canned food and small tools anchors the foreground beside an unmarked brass compass. A thin golden winding trail leads from scattered warehouse buildings past closed gates, rubble and a flooded street toward a distant clearly open green-lit exit arch. Another shorter route ends at a locked shutter, visibly contrasting a risky shortcut and longer reliable exit. Cloudy violet sky, muted teal warehouses, amber lantern pools, original drawn scenery, absolutely no logos, no interface, no wording.",
+      "status": "generated",
+      "destination": "public/art/games/escape-from-tarkov.webp",
+      "attempts": [
+        {
+          "status": "blocked",
+          "tool": "built-in image_gen.imagegen",
+          "reason": "output safety category violence",
+          "requestId": "83d28aaa-4365-46ed-b970-5e6f2f59b3f3",
+          "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. An original grounded tactical extraction illustration, no logos or known characters. Oblique view of a ruined industrial district rendered as a detailed tabletop route-map diorama. An anonymous helmeted scavenger crouches behind a concrete wall beside a bulging loot backpack and a brass compass; a thin gold trail winds from warehouses through danger-marked red searchlight zones to a distant green-lit open gate. Risk and safe extraction are clear through physical terrain, no map words or labels."
+        }
+      ],
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-492dfefe-2325-4977-a59a-3aae2f430b04.png",
+        "original": ".build/game-art-originals/escape-from-tarkov.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 535714,
+      "sha256": "9d9419e40651fc36d2f555848606fbd98325b82d1ceddd951b18efad7172c1ba",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "game-of-dice",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. A richly drawn tabletop board-game world with a winding square-tile route circling miniature city properties. Two large ivory dice tumble in foreground, an original tiny adventurer pawn advances toward a golden building, while illustrated property cards with building drawings but no words lie beside coin stacks. Distinct branching tiles, teal rooftops, brick-red tiles, dusty violet velvet underlay, dynamic dice motion and property growth, no official mascot.",
+      "status": "generated",
+      "destination": "public/art/games/game-of-dice.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-f9a2e3a9-0c9c-47d1-a2b5-03acb9b40174.png",
+        "original": ".build/game-art-originals/game-of-dice.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 423492,
+      "sha256": "f976401bc32ae9981e4a09c2fac6a9953740531baa0602696f7dfccc2a1948cc",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    },
+    {
+      "id": "shape-of-dreams",
+      "prompt": "Use case: stylized-concept. Asset type: original game-mechanic illustration for a small website card, NOT a screenshot or official game art. Make one beautifully drawn landscape scene, 16:9 framing. Early-2000s Japanese PC game / cel anime illustration, thick confident dark ink contours, crisp hand-painted cel color, 2 to 3 hard-edged shadow tones, restrained parchment ivory, dusty violet, muted teal, brick red and old gold colors. Rich real drawn scenery and tangible objects with purposeful foreground, middle ground and backdrop. Keep major gameplay subject large and readable at 320 pixels wide, all essential subjects inside central 80% so a 16:9 card crop works. Full-bleed scene, no border, no panels, no collage, no sheet, no typography, no numbers, no UI, no interface, no official logos, no existing copyrighted game characters or cover composition. Original visual metaphor illustrating the described mechanic, not an arbitrary collection of symbols. An original surreal dream combat arena floating among dusty violet clouds. A cloaked dreamer at center arranges three tangible glowing skill fragments shaped as jagged crystals around a small orbiting ring; their teal, red and gold energies combine into one sweeping arc that strikes approaching shadow creatures. Islands, broken stairs and abstract sleeping flowers form a coherent dream landscape, large readable skill fragments, no interface or known character designs.",
+      "status": "generated",
+      "destination": "public/art/games/shape-of-dreams.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-43284157-45a8-48fc-b156-8db501a70bd5.png",
+        "original": ".build/game-art-originals/shape-of-dreams.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "bytes": 438346,
+      "sha256": "cd3168172ad0f41503ef49277c89075f7442761dcb181d435021df3c9beceb98",
+      "review": "Source image and 320x180 centered cover crop visually inspected; main mechanic readable."
+    }
+  ],
+  "review": {
+    "method": "Source images inspected individually; 320x180 centered cover crops inspected together in original-size contact sheet",
+    "contactSheet": ".build/game-card-contact-sheet.png",
+    "applicationIntegration": "Not in this asset-only scope; parent orchestrator validates actual pages",
+    "result": "All 18 mechanics retain readable primary objects and different scene compositions; no official logos or recognizable game characters",
+    "inscryptionCorrection": "Removed extra clasped opponent hands with built-in image editor; retained one opponent hand and one player hand"
+  }
+}

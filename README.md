@@ -6,6 +6,12 @@
 
 ![首页桌面实际页面](docs/screenshots/home-desktop.png)
 
+## Galgame 美术升级 · 2026-10-31
+
+按「游戏艺术家」工作流完成研究室场景、独立前景、六种 RIN 角色状态、五张栏目插画、18张原创玩法示意、10张配方场景和九维图标。首页使用标题画面与角色对话；内页增加纸面档案、线索板和观察便签。实验室的机制卡、冲突标记、盖章与角色反应由实际操作驱动。
+
+[目标与制作说明](docs/game-artist/upgrade.md) · [正式素材清单](docs/game-artist/assets.json) · [独立视觉评审](docs/game-artist/review.md) · [本轮验证](docs/game-artist/verification.md)
+
 ## 本地运行
 
 需要 Node.js 22.13+（本机验证为 24.11.1）与 npm。
