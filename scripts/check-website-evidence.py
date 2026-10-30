@@ -63,6 +63,6 @@ checker.check({c['id'] for c in checks} == set(assets), 'served assets', 'incomp
 for item in checks:
     checker.check(item['status'] == 200 and item['hashMatches'], item['id'], 'served bytes differ from reviewed asset')
 report = {'profile': 'research-website', 'buildId': evidence['build_id'], 'views': len(views), 'assets': len(assets), 'errors': checker.errors}
-(base / 'evidence-check.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf8')
+(base / 'evidence-check.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf8', newline='\n')
 print(json.dumps(report, ensure_ascii=False))
 raise SystemExit(1 if checker.errors else 0)
