@@ -2,7 +2,12 @@
 
 import Link from "next/link";
 import { useId, useMemo, useState } from "react";
-import { analyzeHeat, heatTopics, type TopicHeatProfile } from "@/lib/heat";
+import {
+  analyzeHeat,
+  heatTopics,
+  type HeatAnalysis,
+  type TopicHeatProfile,
+} from "@/lib/heat";
 import { CountUp, SeedBadge } from "./Primitives";
 import { useSearchData } from "./SearchDataProvider";
 
@@ -340,13 +345,42 @@ export function ScatterChart({
   );
 }
 
+function SearchProvenance({ sourceKinds }: Pick<HeatAnalysis, "sourceKinds">) {
+  const hasSynthetic = sourceKinds.includes("synthetic");
+  const mixed = sourceKinds.length > 1;
+  const labels: Record<string, string> = {
+    synthetic: "合成示例",
+    site_log: "站内日志（由导入提供）",
+    import: "外部导入（真实性待核验）",
+  };
+  return (
+    <>
+      {mixed ? (
+        <span className="seed">
+          混合来源{hasSynthetic ? " · 包含合成示例" : " · 本地导入"}
+        </span>
+      ) : sourceKinds.length ? (
+        <SeedBadge imported={!hasSynthetic} />
+      ) : (
+        <span className="seed">暂无搜索记录</span>
+      )}
+      {mixed && (
+        <p className="filter-note">
+          来源：{sourceKinds.map((kind) => labels[kind] || kind).join("、")}。
+          请分开数据集核验，不能把混合结果当作单一真实市场。
+        </p>
+      )}
+    </>
+  );
+}
+
 export function HeatProfileMini({ topicId }: { topicId: string }) {
-  const { stats, isImported } = useSearchData();
+  const { stats } = useSearchData();
   const result = useMemo(() => analyzeHeat(stats), [stats]);
   const profile = result.profiles.find((p) => p.topicId === topicId);
   return (
     <div className="heat-mini">
-      <SeedBadge imported={isImported && !result.seedOnly} />
+      <SearchProvenance sourceKinds={result.sourceKinds} />
       <p className="tiny muted" style={{ marginTop: 10 }}>
         {result.dateStart} — {result.dateEnd}
       </p>
@@ -388,7 +422,7 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
 }
 
 export function HomeHeatHighlights() {
-  const { stats, isImported } = useSearchData();
+  const { stats } = useSearchData();
   const result = useMemo(() => analyzeHeat(stats), [stats]);
   const kinds = [
     ["genre", "热门类别"],
@@ -439,7 +473,7 @@ export function HomeHeatHighlights() {
           </p>
         </div>
         <div>
-          <SeedBadge imported={isImported && !result.seedOnly} />
+          <SearchProvenance sourceKinds={result.sourceKinds} />
           <Link
             className="button"
             href={

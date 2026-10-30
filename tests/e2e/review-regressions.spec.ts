@@ -167,3 +167,120 @@ for (const sourceKind of ["import", "synthetic"] as const) {
     await expect(total).not.toHaveText("123");
   });
 }
+
+test("mixed sources keep synthetic disclosure beside Compare and home totals", async ({
+  page,
+}) => {
+  const records = (
+    [
+      { sourceKind: "synthetic", count: 100 },
+      { sourceKind: "import", count: 23 },
+    ] as const
+  ).map(({ sourceKind, count }) => ({
+    id: `mixed-${sourceKind}`,
+    datasetId: `review-${sourceKind}`,
+    date: "2026-10-30",
+    query: "Balatro",
+    count,
+    region: "CN",
+    language: "zh-CN",
+    sourceKind,
+    attributions: [
+      { topicId: "game:balatro", weight: 1, mode: "direct" },
+      { topicId: "combination:score-modifier", weight: 1, mode: "direct" },
+    ],
+  }));
+  await page.goto("/heat");
+  await hydrated(page);
+  await page.getByRole("button", { name: "导入数据 ⇧" }).click();
+  const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
+  await dialog
+    .getByLabel("JSON 内容")
+    .fill(JSON.stringify({ schemaVersion: 1, records }));
+  await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  await expect(dialog).not.toBeVisible();
+  await expect(
+    page.locator(".data-strip .metric").first().locator(".sr-only"),
+  ).toHaveText("123");
+  await page
+    .getByRole("navigation", { name: "主导航", exact: true })
+    .getByRole("link", { name: "游戏对比", exact: true })
+    .click();
+  await hydrated(page);
+  await page.getByRole("button", { name: /搜索热度/ }).click();
+  const balatro = page
+    .locator(".heat-mini")
+    .filter({ has: page.locator('a[href="/heat?topic=game%3Abalatro"]') });
+  await expect(balatro.locator(".mini-profile-numbers .sr-only")).toHaveText(
+    "123",
+  );
+  await expect
+    .soft(balatro.locator(".seed"))
+    .toContainText("包含合成示例", { timeout: 2000 });
+  await expect.soft(balatro).toContainText("混合来源", { timeout: 2000 });
+  await expect(balatro.getByText(/请分开数据集核验/)).toBeVisible();
+  await expect(
+    balatro.getByText(/不能把混合结果当作单一真实市场/),
+  ).toBeVisible();
+  await expect(
+    balatro.getByRole("link", { name: "查看主题与数据来源 →" }),
+  ).toBeVisible();
+  for (const width of [768, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await expect(balatro.getByText(/请分开数据集核验/)).toBeVisible();
+    await expect
+      .poll(
+        () =>
+          page.evaluate(
+            () => document.documentElement.scrollWidth - innerWidth,
+          ),
+        { message: `Compare at ${width}px` },
+      )
+      .toBe(0);
+    const bounds = await balatro.getByText(/请分开数据集核验/).boundingBox();
+    expect(bounds!.x).toBeGreaterThanOrEqual(0);
+    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
+  }
+  await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
+  await hydrated(page);
+  await expect(page.locator(".home-heat-grid strong")).toHaveText("123");
+  await expect(page.locator(".home-opportunity-strip")).toContainText("123 次");
+  await expect
+    .soft(page.locator(".home-opportunity-strip .seed"))
+    .toContainText("包含合成示例", { timeout: 2000 });
+  await expect
+    .soft(page.locator(".home-opportunity-strip"))
+    .toContainText("混合来源", { timeout: 2000 });
+  await expect(
+    page.locator(".home-opportunity-strip").getByText(/请分开数据集核验/),
+  ).toBeVisible();
+  await expect(
+    page
+      .locator(".home-opportunity-strip")
+      .getByText(/不能把混合结果当作单一真实市场/),
+  ).toBeVisible();
+  await expect(
+    page
+      .locator(".home-opportunity-strip")
+      .getByRole("link", { name: "核对线索与案例 →" }),
+  ).toBeVisible();
+  for (const width of [768, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    const qualification = page
+      .locator(".home-opportunity-strip")
+      .getByText(/请分开数据集核验/);
+    await expect(qualification).toBeVisible();
+    await expect
+      .poll(
+        () =>
+          page.evaluate(
+            () => document.documentElement.scrollWidth - innerWidth,
+          ),
+        { message: `Home at ${width}px` },
+      )
+      .toBe(0);
+    const bounds = await qualification.boundingBox();
+    expect(bounds!.x).toBeGreaterThanOrEqual(0);
+    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
+  }
+});
