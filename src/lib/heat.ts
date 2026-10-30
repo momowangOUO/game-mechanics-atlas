@@ -156,7 +156,7 @@ export function analyzeHeat(stats:SearchQueryStat[],options:HeatOptions={}):Heat
     };
   }).sort((a,b)=>b.demand-a.demand||a.topicId.localeCompare(b.topicId));
   const sourceKinds=[...new Set(selected.map(row=>row.sourceKind))].sort();
-  const warnings=['供给仅表示收录样本，类型供给按编辑标签统计；缺少标签不等于该类型不存在。','搜索次数不是玩家人数或购买意愿；蓝海与红海分是研究启发式，不能相加解释为概率。','时间序列未记录的日期按 0 绘制，但缺失记录不视为实测零值；趋势要求两期逐日可比。'];
+  const warnings=['供给仅表示收录样本，类型供给按编辑标签统计；缺少标签不等于该类型不存在。','搜索次数不是玩家人数或购买意愿；蓝海与红海分是研究启发式，不能相加解释为概率。','时间序列保留日期记录覆盖，缺失记录不视为实测零值；趋势要求两期逐日可比。'];
   if(sourceKinds.includes('synthetic')) warnings.unshift('包含合成示例搜索数据；演示趋势和排序不代表当前真实市场。');
   if(sourceKinds.includes('import')) warnings.push('import 仅说明数据来自导入；真实性与采样口径仍需核验。');
   if(sourceKinds.length>1) warnings.push('当前包含多种来源，指数使用同一来源集合汇总比较；请分开数据集核验，不把混合结果当作单一真实市场。');

@@ -5,15 +5,15 @@ import { DimensionIdSchema, MechanicSchema, GameSchema, GameModeSchema, ScopeSch
 import type { DimensionId, Mechanic, Game, GameMode, Scope, MechanicInstance, CompositeGenre, HybridRecipe, MechanicRelationship, Source, MechanicStatus } from './model';
 
 export const dimensions: {id:DimensionId;name:string;description:string;color:string;short:string}[] = [
-  {id:'interaction',name:'核心交互',short:'交互',description:'玩家通过什么输入直接改变局面。',color:'#527fa1'},
-  {id:'rules',name:'规则与结算',short:'规则',description:'行动如何被判定、组合并结算。',color:'#a96b75'},
-  {id:'temporal',name:'时间与流程',short:'流程',description:'行动如何推进，阶段与尝试如何组织。',color:'#8e76ae'},
-  {id:'buildcraft',name:'构筑与配置',short:'构筑',description:'玩家如何配置可用能力与内容。',color:'#b68a43'},
-  {id:'progression',name:'成长与延续',short:'成长',description:'哪些能力、权限和关系随过程改变或保留。',color:'#718d62'},
-  {id:'economy',name:'资源与经济',short:'资源',description:'资源如何获取、转换、共享与消耗。',color:'#b17855'},
-  {id:'information',name:'信息与认知',short:'信息',description:'玩家能获知什么，以及如何判断局面。',color:'#5e9690'},
-  {id:'participants',name:'参与者关系',short:'参与',description:'玩家之间怎样协作、竞争与同步。',color:'#b1749c'},
-  {id:'variability',name:'变化与随机',short:'变化',description:'内容与结果如何产生变化或被重现。',color:'#7786af'},
+  {id:'interaction',name:'核心交互',short:'交互',description:'玩家通过什么输入直接改变局面。',color:'#8fb7d6'},
+  {id:'rules',name:'规则与结算',short:'规则',description:'行动如何被判定、组合并结算。',color:'#d69b9d'},
+  {id:'temporal',name:'时间与流程',short:'流程',description:'行动如何推进，阶段与尝试如何组织。',color:'#c3a6df'},
+  {id:'buildcraft',name:'构筑与配置',short:'构筑',description:'玩家如何配置可用能力与内容。',color:'#dfbd77'},
+  {id:'progression',name:'成长与延续',short:'成长',description:'哪些能力、权限和关系随过程改变或保留。',color:'#adbf92'},
+  {id:'economy',name:'资源与经济',short:'资源',description:'资源如何获取、转换、共享与消耗。',color:'#d7aa86'},
+  {id:'information',name:'信息与认知',short:'信息',description:'玩家能获知什么，以及如何判断局面。',color:'#88cdc5'},
+  {id:'participants',name:'参与者关系',short:'参与',description:'玩家之间怎样协作、竞争与同步。',color:'#d5a0c8'},
+  {id:'variability',name:'变化与随机',short:'变化',description:'内容与结果如何产生变化或被重现。',color:'#a5b5df'},
 ];
 
 // Retrieval tags are editorial aids, not additional mechanic identities.
