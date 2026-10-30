@@ -1,0 +1,470 @@
+{
+  "viewportChecks": [
+    {
+      "name": "home-desktop",
+      "path": "/",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "home-mobile",
+      "path": "/",
+      "width": 390,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "mechanic",
+      "path": "/mechanics/score-threshold",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "game",
+      "path": "/games/balatro",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "heat",
+      "path": "/heat?topic=combination:spatial-auto",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "lab",
+      "path": "/lab?recipe=aimed-buildcraft",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "graph",
+      "path": "/graph",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "compare",
+      "path": "/compare",
+      "width": 1440,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "heat-mobile",
+      "path": "/heat",
+      "width": 390,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "name": "lab-mobile",
+      "path": "/lab",
+      "width": 390,
+      "status": 200,
+      "overflow": 0,
+      "errors": []
+    }
+  ],
+  "routeChecks": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/mechanics",
+      "status": 200
+    },
+    {
+      "route": "/games",
+      "status": 200
+    },
+    {
+      "route": "/types",
+      "status": 200
+    },
+    {
+      "route": "/graph",
+      "status": 200
+    },
+    {
+      "route": "/heat",
+      "status": 200
+    },
+    {
+      "route": "/lab",
+      "status": 200
+    },
+    {
+      "route": "/compare",
+      "status": 200
+    },
+    {
+      "route": "/method",
+      "status": 200
+    },
+    {
+      "route": "/sources",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/direct-movement",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/aimed-launch",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/dodge-move",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/piece-rotation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/drag-placement",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/score-threshold",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/line-completion-clear",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/automatic-resolution",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/stacking-effects",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/rule-modifier",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/run-reset",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/sequential-turns",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/real-time-update",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/action-cooldown",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/planning-timer",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/pause-planning",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/in-run-deck-growth",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/loadout-selection",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/spatial-loadout",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/respec",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/persistent-stat-upgrade",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/persistent-unlock",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/skill-experience",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/relationship-progression",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/permadeath",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/recipe-crafting",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/resource-gathering",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/resource-scarcity",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/production-investment",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/extraction-bank",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/base-construction",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/shared-resource-pool",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/intent-preview",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/next-piece-preview",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/hidden-hand",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/fog-of-war",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/environmental-clues",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/cooperative-play",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/pvp-opposition",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/asynchronous-opponent",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/synchronous-session",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/random-upgrade-offer",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/random-draw",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/dice-roll",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/generated-layout",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/seeded-replay",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/route-branching",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/encounter-placement",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/optional-endless-loop",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/toll-payment",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/randomized-encounters",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/objective-unlock",
+      "status": 200
+    },
+    {
+      "route": "/games/balatro",
+      "status": 200
+    },
+    {
+      "route": "/games/peglin",
+      "status": 200
+    },
+    {
+      "route": "/games/slay-the-spire",
+      "status": 200
+    },
+    {
+      "route": "/games/hades",
+      "status": 200
+    },
+    {
+      "route": "/games/cult-of-the-lamb",
+      "status": 200
+    },
+    {
+      "route": "/games/backpack-battles",
+      "status": 200
+    },
+    {
+      "route": "/games/loop-hero",
+      "status": 200
+    },
+    {
+      "route": "/games/vampire-survivors",
+      "status": 200
+    },
+    {
+      "route": "/games/risk-of-rain-2",
+      "status": 200
+    },
+    {
+      "route": "/games/inscryption",
+      "status": 200
+    },
+    {
+      "route": "/games/stardew-valley",
+      "status": 200
+    },
+    {
+      "route": "/games/minecraft",
+      "status": 200
+    },
+    {
+      "route": "/games/tetris",
+      "status": 200
+    },
+    {
+      "route": "/games/cookie-clicker",
+      "status": 200
+    },
+    {
+      "route": "/games/dead-cells",
+      "status": 200
+    },
+    {
+      "route": "/games/escape-from-tarkov",
+      "status": 200
+    },
+    {
+      "route": "/games/game-of-dice",
+      "status": 200
+    },
+    {
+      "route": "/games/shape-of-dreams",
+      "status": 200
+    },
+    {
+      "route": "/types/roguelite",
+      "status": 200
+    },
+    {
+      "route": "/types/traditional-roguelike",
+      "status": 200
+    },
+    {
+      "route": "/types/rpg",
+      "status": 200
+    },
+    {
+      "route": "/types/action-rpg",
+      "status": 200
+    },
+    {
+      "route": "/types/deckbuilder",
+      "status": 200
+    },
+    {
+      "route": "/types/auto-battler",
+      "status": 200
+    },
+    {
+      "route": "/types/survivor-like",
+      "status": 200
+    },
+    {
+      "route": "/types/extraction-shooter",
+      "status": 200
+    },
+    {
+      "route": "/types/metroidvania",
+      "status": 200
+    },
+    {
+      "route": "/types/farming-life-sim",
+      "status": 200
+    },
+    {
+      "route": "/types/sandbox-survival",
+      "status": 200
+    },
+    {
+      "route": "/types/incremental-idle",
+      "status": 200
+    },
+    {
+      "route": "/types/moba",
+      "status": 200
+    },
+    {
+      "route": "/types/soulslike",
+      "status": 200
+    },
+    {
+      "route": "/types/immersive-sim",
+      "status": 200
+    },
+    {
+      "route": "/types/survival-craft",
+      "status": 200
+    }
+  ]
+}

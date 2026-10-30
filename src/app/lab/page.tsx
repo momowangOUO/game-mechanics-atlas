@@ -2,7 +2,7 @@ import HybridLab from "@/components/HybridLab";
 import { getMechanic, recipes } from "@/lib/knowledge";
 import type { HybridInput } from "@/lib/hybrid";
 
-export const metadata = { title: "混合实验室 · 机制研究室" };
+export const metadata = { title: "混合实验室" };
 
 export default async function LabPage({
   searchParams,
