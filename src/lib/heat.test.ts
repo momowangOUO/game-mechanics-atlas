@@ -75,7 +75,8 @@ describe('demand and sample supply',()=>{
     const profile=(records:SearchQueryStat[])=>analyzeHeat(records,{days:7,endDate}).profiles.find(p=>p.topicId==='mechanic:piece-rotation')!;
     const measured=profile([...clear,...rotationZeros]),missing=profile(clear),partial=profile([...clear,rotationZeros[0]]);
     expect(measured).toMatchObject({demand:0,measurementStatus:'complete',measuredDays:7,expectedDays:7,demandIndex:0,scoreStatus:'no_demand',blue:null});
-    expect(measured.red).toBeCloseTo(33.333333,5);
+    const measuredSupply=getMechanicSupply(['piece-rotation']).count;
+    expect(measured.red).toBeCloseTo(scoreHeat(0,700,measuredSupply).red!,5);
     expect(missing).toMatchObject({demand:0,measurementStatus:'missing',measuredDays:0,expectedDays:7,demandIndex:null,blue:null,red:null,scoreStatus:'no_data'});
     expect(partial).toMatchObject({measurementStatus:'partial',measuredDays:1,expectedDays:7});
     // Historical records and duplicated records on one current day do not fill the current period.
@@ -139,7 +140,8 @@ describe('demand and sample supply',()=>{
       expect(profile).toMatchObject({supply:supply.count,conditionalSupply:supply.conditional,unknownSupply:supply.unknown,gameIds:supply.gameIds});
       expect(supply.count).toBeGreaterThan(0);expect(new Set(profile.gameIds).size).toBe(profile.supply);
     }
-    expect(result.profiles.find(p=>p.topicId==='mechanic:cooperative-play')).toMatchObject({supply:0,conditionalSupply:3,blue:null});
+    const cooperative=getMechanicSupply(['cooperative-play']);
+    expect(result.profiles.find(p=>p.topicId==='mechanic:cooperative-play')).toMatchObject({supply:cooperative.count,conditionalSupply:cooperative.conditional,unknownSupply:cooperative.unknown});
   });
   it('uses full kind cohorts, raw popularity and selected region without wall-clock dependence',()=>{
     const rows=[row('large',100),row('small',25,'mechanic:line-completion-clear'),{...row('foreign',10000),region:'US'},row('game',10000,'game:tetris')];

@@ -2413,3 +2413,23 @@ html[data-effects="reduced"] .trend-line {
     font-size: 10px;
   }
 }
+.cover .official-game-art {
+  object-fit: contain;
+  background: #17141e;
+}
+.cover:has(.official-game-art):after {
+  background: none;
+}
+.case-card.interactive-card:hover .official-game-art,
+.case-card.interactive-card:focus-visible .official-game-art {
+  transform: none;
+}
+.game-worksheet .game-art-credit {
+  color: #573b60;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.game-worksheet .game-art-credit a {
+  color: #573b60;
+  text-decoration: underline;
+}

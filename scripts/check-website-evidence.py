@@ -28,7 +28,8 @@ checker.check(evidence.get('contract_sha256') == hashlib.sha256(contract_bytes).
 checker.check(evidence.get('visual_review_status') == 'passed', 'inspection', 'current runtime images must be reviewed')
 checker.file(evidence.get('inspection'), 'inspection')
 assets = {a['id']: a for a in contract['assets']}
-checker.check(len(assets) == len(contract['assets']) == 50, 'assets', 'expected all 50 required assets')
+manifest = json.loads((base / 'assets.json').read_text(encoding='utf8'))
+checker.check(len(assets) == len(contract['assets']) and set(assets) == {a['id'] for a in manifest['assets']}, 'assets', 'expected every registered asset without duplicate IDs')
 for asset in assets.values():
     checker.file({'path': asset['path'], 'sha256': asset['sha256']}, 'asset.' + asset['id'])
     checker.check(bool(asset.get('runtime_binding')), asset['id'], 'missing runtime binding')

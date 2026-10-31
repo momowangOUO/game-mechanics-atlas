@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { dimensions, games, genres, mechanics } from "@/lib/knowledge";
 import { Dialog } from "./Providers";
 import { EmptyState, GameCard, PageHead, Reveal } from "./Primitives";
+import { matchesCatalog } from "@/lib/catalog-search";
 
 function Pagination({
   page,
@@ -66,9 +67,7 @@ export function MechanicCatalog({
           (!dimension || m.dimension === dimension) &&
           (!core || m.corePlayTags.includes(core)) &&
           (!genreIds || genreIds.has(m.id)) &&
-          `${m.name} ${m.id} ${m.definition}`
-            .toLowerCase()
-            .includes(query.trim().toLowerCase()),
+          matchesCatalog(m, query, m.definition),
       ),
     [query, dimension, core, genreIds],
   );
@@ -283,9 +282,7 @@ export function GameCatalog() {
     (g) =>
       (!genre || g.genreIds.includes(genre)) &&
       (!core || g.corePlayTags.includes(core)) &&
-      `${g.name} ${g.id} ${g.summary}`
-        .toLowerCase()
-        .includes(query.trim().toLowerCase()),
+      matchesCatalog(g, query, g.summary),
   );
   const total = Math.ceil(filtered.length / 6),
     safePage = Math.min(page, Math.max(1, total));
@@ -359,7 +356,9 @@ export function GameCatalog() {
       </div>
       <p className="catalog-note">
         <span aria-live="polite">{filtered.length} 款案例</span>
-        <span>类型标签方便检索。游戏是否包含某项机制，需查看对应范围的观察记录。</span>
+        <span>
+          类型标签方便检索。游戏是否包含某项机制，需查看对应范围的观察记录。
+        </span>
       </p>
       {filtered.length ? (
         <>

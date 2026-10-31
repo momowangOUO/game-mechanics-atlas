@@ -3,7 +3,12 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import GameViews from "@/components/GameViews";
 import { ArtImage } from "@/components/Art";
-import { GameCover, PageHead, SectionHead } from "@/components/Primitives";
+import {
+  GameCover,
+  GameArtCredit,
+  PageHead,
+  SectionHead,
+} from "@/components/Primitives";
 import {
   games,
   getGame,
@@ -58,6 +63,7 @@ export default async function GamePage({
       <div className="game-layout">
         <div className="game-worksheet">
           <GameCover game={game} large />
+          <GameArtCredit gameId={game.id} />
           <GameViews game={game} />
         </div>
         <div className="game-summary game-study-notes">

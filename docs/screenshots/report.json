@@ -331,6 +331,286 @@
       "status": 200
     },
     {
+      "route": "/mechanics/jump",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/wall-climb",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/parry",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/melee-attack",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/grappling",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/traversal-portal",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/block-pushing",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/rhythmic-input",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/vehicle-steering",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/destructible-terrain",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/physics-manipulation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/stealth-detection",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/damage-health",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/posture-break",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/elemental-reaction",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/status-effect",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/area-control",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/victory-points",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/risk-staking",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/identity-voting",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/ability-check",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/recipe-discovery",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/checkpoint-respawn",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/timed-loop",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/day-night-cycle",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/season-weather",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/round-phases",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/skill-tree",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/modular-ability",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/equipment-upgrade",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/unit-drafting",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/public-market",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/team-composition",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/adjacency-bonus",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/blueprint-replication",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/technology-research",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/knowledge-gating",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/ability-gating",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/quest-progression",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/collectible-catalog",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/loot-drop",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/barter-trade",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/upkeep-needs",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/inventory-capacity",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/transport-network",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/production-chain",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/energy-network",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/thermal-regulation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/fluid-network",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/agriculture-husbandry",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/workforce-assignment",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/territory-policy",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/combat-resource-conversion",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/deduction-validation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/language-decoding",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/clue-journal",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/document-check",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/scouting-tracking",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/sound-information",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/map-navigation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/hidden-role",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/role-asymmetry",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/social-diplomacy",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/shared-objective",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/world-simulation",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/event-director",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/mutable-environment",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/randomized-market",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/hold-input",
+      "status": 200
+    },
+    {
+      "route": "/mechanics/combo-chain",
+      "status": 200
+    },
+    {
       "route": "/games/balatro",
       "status": 200
     },
@@ -403,6 +683,254 @@
       "status": 200
     },
     {
+      "route": "/games/hollow-knight",
+      "status": 200
+    },
+    {
+      "route": "/games/celeste",
+      "status": 200
+    },
+    {
+      "route": "/games/sekiro",
+      "status": 200
+    },
+    {
+      "route": "/games/dark-souls-3",
+      "status": 200
+    },
+    {
+      "route": "/games/monster-hunter-world",
+      "status": 200
+    },
+    {
+      "route": "/games/genshin-impact",
+      "status": 200
+    },
+    {
+      "route": "/games/doom-eternal",
+      "status": 200
+    },
+    {
+      "route": "/games/world-of-warcraft",
+      "status": 200
+    },
+    {
+      "route": "/games/into-the-breach",
+      "status": 200
+    },
+    {
+      "route": "/games/ftl",
+      "status": 200
+    },
+    {
+      "route": "/games/xcom-2",
+      "status": 200
+    },
+    {
+      "route": "/games/civilization-6",
+      "status": 200
+    },
+    {
+      "route": "/games/starcraft-2",
+      "status": 200
+    },
+    {
+      "route": "/games/age-of-empires-2",
+      "status": 200
+    },
+    {
+      "route": "/games/against-the-storm",
+      "status": 200
+    },
+    {
+      "route": "/games/frostpunk",
+      "status": 200
+    },
+    {
+      "route": "/games/factorio",
+      "status": 200
+    },
+    {
+      "route": "/games/satisfactory",
+      "status": 200
+    },
+    {
+      "route": "/games/dyson-sphere-program",
+      "status": 200
+    },
+    {
+      "route": "/games/oxygen-not-included",
+      "status": 200
+    },
+    {
+      "route": "/games/rimworld",
+      "status": 200
+    },
+    {
+      "route": "/games/dwarf-fortress",
+      "status": 200
+    },
+    {
+      "route": "/games/cities-skylines",
+      "status": 200
+    },
+    {
+      "route": "/games/potion-craft",
+      "status": 200
+    },
+    {
+      "route": "/games/baba-is-you",
+      "status": 200
+    },
+    {
+      "route": "/games/portal-2",
+      "status": 200
+    },
+    {
+      "route": "/games/outer-wilds",
+      "status": 200
+    },
+    {
+      "route": "/games/return-of-the-obra-dinn",
+      "status": 200
+    },
+    {
+      "route": "/games/the-witness",
+      "status": 200
+    },
+    {
+      "route": "/games/chants-of-sennaar",
+      "status": 200
+    },
+    {
+      "route": "/games/papers-please",
+      "status": 200
+    },
+    {
+      "route": "/games/dishonored-2",
+      "status": 200
+    },
+    {
+      "route": "/games/dominion",
+      "status": 200
+    },
+    {
+      "route": "/games/hearthstone",
+      "status": 200
+    },
+    {
+      "route": "/games/marvel-snap",
+      "status": 200
+    },
+    {
+      "route": "/games/teamfight-tactics",
+      "status": 200
+    },
+    {
+      "route": "/games/luck-be-a-landlord",
+      "status": 200
+    },
+    {
+      "route": "/games/monster-train",
+      "status": 200
+    },
+    {
+      "route": "/games/league-of-legends",
+      "status": 200
+    },
+    {
+      "route": "/games/dota-2",
+      "status": 200
+    },
+    {
+      "route": "/games/counter-strike-2",
+      "status": 200
+    },
+    {
+      "route": "/games/valorant",
+      "status": 200
+    },
+    {
+      "route": "/games/rocket-league",
+      "status": 200
+    },
+    {
+      "route": "/games/splatoon-3",
+      "status": 200
+    },
+    {
+      "route": "/games/deep-rock-galactic",
+      "status": 200
+    },
+    {
+      "route": "/games/overcooked-2",
+      "status": 200
+    },
+    {
+      "route": "/games/dont-starve-together",
+      "status": 200
+    },
+    {
+      "route": "/games/subnautica",
+      "status": 200
+    },
+    {
+      "route": "/games/valheim",
+      "status": 200
+    },
+    {
+      "route": "/games/project-zomboid",
+      "status": 200
+    },
+    {
+      "route": "/games/lethal-company",
+      "status": 200
+    },
+    {
+      "route": "/games/hunt-showdown-1896",
+      "status": 200
+    },
+    {
+      "route": "/games/animal-crossing-new-horizons",
+      "status": 200
+    },
+    {
+      "route": "/games/among-us",
+      "status": 200
+    },
+    {
+      "route": "/games/osu",
+      "status": 200
+    },
+    {
+      "route": "/games/beat-saber",
+      "status": 200
+    },
+    {
+      "route": "/games/mario-kart-8-deluxe",
+      "status": 200
+    },
+    {
+      "route": "/games/path-of-exile",
+      "status": 200
+    },
+    {
+      "route": "/games/disco-elysium",
+      "status": 200
+    },
+    {
+      "route": "/games/binding-of-isaac-rebirth",
+      "status": 200
+    },
+    {
+      "route": "/games/noita",
+      "status": 200
+    },
+    {
+      "route": "/games/caves-of-qud",
+      "status": 200
+    },
+    {
       "route": "/types/roguelite",
       "status": 200
     },
@@ -464,6 +992,70 @@
     },
     {
       "route": "/types/survival-craft",
+      "status": 200
+    },
+    {
+      "route": "/types/precision-platformer",
+      "status": 200
+    },
+    {
+      "route": "/types/tactical-turn-based",
+      "status": 200
+    },
+    {
+      "route": "/types/real-time-strategy",
+      "status": 200
+    },
+    {
+      "route": "/types/four-x",
+      "status": 200
+    },
+    {
+      "route": "/types/factory-automation",
+      "status": 200
+    },
+    {
+      "route": "/types/colony-simulation",
+      "status": 200
+    },
+    {
+      "route": "/types/city-builder",
+      "status": 200
+    },
+    {
+      "route": "/types/logic-puzzle",
+      "status": 200
+    },
+    {
+      "route": "/types/investigation-adventure",
+      "status": 200
+    },
+    {
+      "route": "/types/language-puzzle",
+      "status": 200
+    },
+    {
+      "route": "/types/digital-card-duel",
+      "status": 200
+    },
+    {
+      "route": "/types/tactical-shooter",
+      "status": 200
+    },
+    {
+      "route": "/types/vehicle-sport",
+      "status": 200
+    },
+    {
+      "route": "/types/social-deduction",
+      "status": 200
+    },
+    {
+      "route": "/types/rhythm-game",
+      "status": 200
+    },
+    {
+      "route": "/types/party-cooperation",
       "status": 200
     }
   ]

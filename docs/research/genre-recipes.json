@@ -1,41 +1,63 @@
 {
   "schemaNote": "本文件把复合类型和组合配方作为独立的编辑实体维护；它们不进入原子机制清单，也不代表行业统一标准。",
   "epistemicStatus": "editorial_definition",
-  "preparedAt": "2026-10-30",
+  "preparedAt": "2026-10-31",
   "sources": [
     "taxonomy-notes.md",
     "mechanic-dossiers.json",
     "game-evidence.json"
   ],
   "coverage": {
-    "compositeTypes": 16,
-    "recipes": 10,
-    "availableAtomicMechanisms": 52
+    "compositeTypes": 32,
+    "recipes": 32,
+    "availableAtomicMechanisms": 122
   },
   "typePolicy": {
     "requiredMeaning": "requiredMechanics只列出本目录所讨论的玩法中，现有档案能够明确表达的核心组成；不能将其作为完整或充分的市场类型判定标准。",
     "emptyRequiredMeaning": "空数组表示本批档案尚不足以确定可靠的必要组成；不能据此自动判为该类型，也不能理解为该类型没有成立条件。",
     "frequencyMeaning": "commonMechanics列出值得讨论的常见组成，optionalMechanics列出可探索的附加组成。二者均由编辑归纳，不代表统计频率，也不证明任何游戏具有这些机制。",
     "classificationMeaning": "每个复合类型保留边界说明；不按满足机制数量计算类型真伪，也不从市场标签反向补齐机制。",
-    "incompleteVocabulary": "仅使用当前52个完整档案的ID。原子词表未表达的特征在boundaries中写出，不以相近机制冒充。"
+    "incompleteVocabulary": "仅引用当前规范化原子机制ID；未表达的特征保留在边界说明中，不以相近机制冒充。"
   },
   "recipePolicy": {
     "meaning": "组合配方是可试验的设计假设。roles说明各机制在假设中的作用；synergies提出可能相互促进的关系，tensions指出可能的冲突，二者都需要验证，不保证配方一定成功。",
     "exampleMeaning": "exampleGameIds只提供设计参照，不代表这些游戏具备配方全部组件，也不证明本配方的协同效果已经实测。",
-    "evidenceResolution": "真实游戏实例须回读game-evidence.json中的同ID机制证据及其status、scope、sourceUrl；引用不折叠conditional，不把unknown或未列项写成absent。",
-    "scope": "本轮只做资料结构化与设计归纳，没有新增游戏实测、完整机制矩阵或市场研究。"
+    "evidenceResolution": "真实实例须回读game-evidence.json中的instances、scopes与sources；相同机制只在相容范围内组合，未知不等于不存在。",
+    "scope": "本轮进行公开资料读取与设计归纳；没有游戏实测、完整市场研究或原型效果验证。"
   },
   "exampleReferenceNotes": {
-    "amplified-scoring": "Balatro的现有直接实例支持分数达标和规则修饰器；叠加细则仍须另证，不能由配方补齐。",
-    "aimed-buildcraft": "Peglin参照其瞄准与弹珠、遗物构筑的切面；当前直接实例只支持aimed-launch，卡组扩充和随机遭遇没有同ID直接实例。若实际方案使用弹珠池，应补建准确的构筑定义。",
-    "route-deck-planning": "Slay the Spire的现有直接实例支持路线分支与局内扩充卡组；资源稀缺在当前研究中尚无该游戏的同ID直接实例。",
-    "retry-relationships": "Hades的现有直接实例支持跨局数值强化与关系发展；单局重开仍需按实际重置范围补充同ID证据。",
-    "expedition-base-supply": "Cult of the Lamb的现有直接实例支持基地建设；资源采集与遭遇变化尚未建立该游戏的同ID直接实例。",
-    "spatial-build-spectate": "Backpack Battles的现有直接实例支持空间装备配置与自动战斗结算；配方制作仍需建立该游戏的同ID直接实例。",
-    "player-built-risk-route": "Loop Hero的现有直接实例支持遭遇布置与基地建设；具体叠加关系没有该游戏的同ID直接实例。",
-    "gather-or-extract": "Escape from Tarkov的现有直接实例支持基础突袭的一般撤离兑现目标；采集、稀缺的具体约束，以及容器、保险、模式例外仍需补证。",
-    "growth-reinvestment": "Cookie Clicker的现有直接实例支持生产投资与持久内容解锁；目标条件解锁没有该游戏的同ID直接实例。",
-    "positional-property-rivalry": "Game of Dice的现有直接实例支持过路支付；骰子分布、位置修正及玩家竞争的完整结算尚未建立同ID直接实例，不能据配方推断。"
+    "amplified-scoring": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "aimed-buildcraft": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "route-deck-planning": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "retry-relationships": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "expedition-base-supply": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "spatial-build-spectate": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "player-built-risk-route": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "gather-or-extract": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "growth-reinvestment": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "positional-property-rivalry": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "automation-logistics": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "telegraphed-tactics": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "precision-retry": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "parry-pressure": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "ability-gated-exploration": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "elemental-team-combos": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "settlement-weather": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "thermal-colony": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "knowledge-loop": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "language-deduction": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "documents-economy": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "stealth-systemic-solutions": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "deck-market-economy": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "bid-and-retreat": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "draft-auto-battle": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "lane-objective-pressure": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "team-ability-breach": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "cooperative-logistics": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "survival-expedition": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "social-deduction-vote": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "rhythm-performance": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。",
+    "dialogue-skill-checks": "参照游戏用于研究相关设计切面。请打开该游戏的机制实例核对已确认、条件成立与未确认的组件；类型标签和配方本身不补齐缺失证据。"
   },
   "compositeTypes": [
     {
@@ -382,6 +404,319 @@
         "本批尚未完整描述饥饿、环境暴露、持续威胁等生存约束，因此采集与制作的组合不足以判定此类型。",
         "与沙盒生存可能重叠；出现制作菜单不证明存在生存压力，也不证明环境可自由改造。"
       ]
+    },
+    {
+      "id": "precision-platformer",
+      "name": "精确平台跳跃",
+      "definition": "围绕跳跃和局部重试组织精确移动挑战。",
+      "requiredMechanics": [
+        "jump",
+        "checkpoint-respawn"
+      ],
+      "commonMechanics": [
+        "wall-climb",
+        "dodge-move"
+      ],
+      "optionalMechanics": [
+        "collectible-catalog"
+      ],
+      "boundaries": [
+        "不是所有含跳跃的动作游戏都以精确平台挑战为核心。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "tactical-turn-based",
+      "name": "回合战术",
+      "definition": "以局部单位行动和空间应对为主要决策对象的回合制玩法。",
+      "requiredMechanics": [
+        "sequential-turns",
+        "team-composition"
+      ],
+      "commonMechanics": [
+        "intent-preview",
+        "loadout-selection"
+      ],
+      "optionalMechanics": [
+        "permadeath"
+      ],
+      "boundaries": [
+        "大规模帝国经营和单纯轮流选牌不自动归入。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "real-time-strategy",
+      "name": "即时战略",
+      "definition": "实时安排资源、基地和多单位作战的策略玩法。",
+      "requiredMechanics": [
+        "real-time-update",
+        "team-composition"
+      ],
+      "commonMechanics": [
+        "resource-gathering",
+        "base-construction"
+      ],
+      "optionalMechanics": [
+        "technology-research"
+      ],
+      "boundaries": [
+        "不能把控制一个角色的实时战斗直接当作即时战略。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "four-x",
+      "name": "4X策略",
+      "definition": "围绕探索、扩张、开发与竞争组织长期文明或帝国发展。",
+      "requiredMechanics": [
+        "base-construction",
+        "technology-research"
+      ],
+      "commonMechanics": [
+        "resource-gathering",
+        "social-diplomacy"
+      ],
+      "optionalMechanics": [
+        "fog-of-war"
+      ],
+      "boundaries": [
+        "4X是一组活动结构；不通过机制数量自动判定类型。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "factory-automation",
+      "name": "自动化工厂",
+      "definition": "设计连续生产与物流，把手工作业逐步转成自动系统。",
+      "requiredMechanics": [
+        "production-chain",
+        "transport-network"
+      ],
+      "commonMechanics": [
+        "energy-network",
+        "technology-research"
+      ],
+      "optionalMechanics": [
+        "blueprint-replication"
+      ],
+      "boundaries": [
+        "只有点击升级产量而无生产和物流组织时，不据此归入。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "colony-simulation",
+      "name": "殖民地模拟",
+      "definition": "管理具有需求与差异的居民，并让设施系统共同维持聚落。",
+      "requiredMechanics": [
+        "upkeep-needs",
+        "workforce-assignment"
+      ],
+      "commonMechanics": [
+        "base-construction",
+        "world-simulation"
+      ],
+      "optionalMechanics": [
+        "event-director"
+      ],
+      "boundaries": [
+        "居民只有抽象人口数字的城市游戏不一定具有个体殖民模拟。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "city-builder",
+      "name": "城市建设",
+      "definition": "通过空间建设与公共服务组织城市发展。",
+      "requiredMechanics": [
+        "base-construction"
+      ],
+      "commonMechanics": [
+        "transport-network",
+        "territory-policy"
+      ],
+      "optionalMechanics": [
+        "day-night-cycle"
+      ],
+      "boundaries": [
+        "建设是主要决策对象；仅有一处可升级基地并不足够。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "logic-puzzle",
+      "name": "逻辑解谜",
+      "definition": "根据可推理的规则求出满足约束的行动或结构。",
+      "requiredMechanics": [
+        "knowledge-gating"
+      ],
+      "commonMechanics": [
+        "deduction-validation",
+        "environmental-clues"
+      ],
+      "optionalMechanics": [
+        "rule-modifier"
+      ],
+      "boundaries": [
+        "挑战重点在理解约束，不能把所有需要思考的游戏都归入。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "investigation-adventure",
+      "name": "调查冒险",
+      "definition": "通过探索与证据整合推进事件或人物判断。",
+      "requiredMechanics": [
+        "environmental-clues"
+      ],
+      "commonMechanics": [
+        "clue-journal",
+        "deduction-validation"
+      ],
+      "optionalMechanics": [
+        "ability-check"
+      ],
+      "boundaries": [
+        "故事中出现侦探不等于玩家实际进行调查推理。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "language-puzzle",
+      "name": "语言解谜",
+      "definition": "把未知语言的意义推断作为主要推进方式。",
+      "requiredMechanics": [
+        "language-decoding"
+      ],
+      "commonMechanics": [
+        "environmental-clues",
+        "clue-journal"
+      ],
+      "optionalMechanics": [
+        "deduction-validation"
+      ],
+      "boundaries": [
+        "已知语言的对话选项或翻译展示不属于语言解谜核心。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "digital-card-duel",
+      "name": "数字卡牌对战",
+      "definition": "以预先组织的卡牌和轮次行动进行玩家竞争。",
+      "requiredMechanics": [
+        "loadout-selection",
+        "pvp-opposition"
+      ],
+      "commonMechanics": [
+        "random-draw",
+        "hidden-hand"
+      ],
+      "optionalMechanics": [
+        "risk-staking"
+      ],
+      "boundaries": [
+        "局内扩充卡组不是必要条件，不能与所有deckbuilder等同。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "tactical-shooter",
+      "name": "战术射击",
+      "definition": "射击精度与队伍信息、装备和目标执行共同决定局势。",
+      "requiredMechanics": [
+        "aimed-launch",
+        "pvp-opposition"
+      ],
+      "commonMechanics": [
+        "shared-objective",
+        "round-phases"
+      ],
+      "optionalMechanics": [
+        "role-asymmetry"
+      ],
+      "boundaries": [
+        "不能仅因多人射击就假定购买回合或爆破目标存在。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "vehicle-sport",
+      "name": "载具竞技",
+      "definition": "通过直接操纵载具完成共同规则下的竞技目标。",
+      "requiredMechanics": [
+        "vehicle-steering",
+        "pvp-opposition"
+      ],
+      "commonMechanics": [
+        "physics-manipulation"
+      ],
+      "optionalMechanics": [
+        "shared-objective"
+      ],
+      "boundaries": [
+        "竞速与球类目标可以不同，不能互相补齐规则。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "social-deduction",
+      "name": "社交推理",
+      "definition": "围绕隐藏身份和交流证据组织阵营判断。",
+      "requiredMechanics": [
+        "hidden-role"
+      ],
+      "commonMechanics": [
+        "identity-voting",
+        "role-asymmetry"
+      ],
+      "optionalMechanics": [
+        "shared-objective"
+      ],
+      "boundaries": [
+        "聊天与投票本身不足以证明存在身份推理。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "rhythm-game",
+      "name": "节奏游戏",
+      "definition": "以相对节拍或音符目标的输入偏差作为主要判定。",
+      "requiredMechanics": [
+        "rhythmic-input"
+      ],
+      "commonMechanics": [
+        "loadout-selection",
+        "rule-modifier"
+      ],
+      "optionalMechanics": [
+        "run-reset"
+      ],
+      "boundaries": [
+        "有配乐的动作游戏不自动属于节奏游戏。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
+    },
+    {
+      "id": "party-cooperation",
+      "name": "派对协作",
+      "definition": "以容易理解的共同任务组织多人即时分工。",
+      "requiredMechanics": [
+        "cooperative-play",
+        "shared-objective"
+      ],
+      "commonMechanics": [
+        "recipe-crafting",
+        "mutable-environment"
+      ],
+      "optionalMechanics": [
+        "planning-timer"
+      ],
+      "boundaries": [
+        "轻松气氛不是规则，难度和失误惩罚仍需按实例核对。",
+        "本目录为编辑归纳，不作为完整行业分类或市场标签认证。"
+      ]
     }
   ],
   "recipes": [
@@ -673,6 +1008,631 @@
       ],
       "exampleGameIds": [
         "game-of-dice"
+      ]
+    },
+    {
+      "id": "automation-logistics",
+      "name": "自动化物流网络",
+      "mechanicIds": [
+        "resource-gathering",
+        "production-chain",
+        "transport-network",
+        "energy-network"
+      ],
+      "roles": {
+        "resource-gathering": "提供原材料",
+        "production-chain": "把产物连接为多步加工",
+        "transport-network": "连接矿点与生产线",
+        "energy-network": "约束设施持续运行"
+      },
+      "synergies": [
+        "运输容量与加工需求相匹配时，扩产能转为稳定产出。"
+      ],
+      "tensions": [
+        "一处缺料或断电可能使整条链停顿，需要显示瓶颈。"
+      ],
+      "demoQuestions": [
+        "玩家能否沿物流反查缺料的源头？"
+      ],
+      "exampleGameIds": [
+        "factorio",
+        "satisfactory",
+        "dyson-sphere-program"
+      ]
+    },
+    {
+      "id": "telegraphed-tactics",
+      "name": "预告驱动战术",
+      "mechanicIds": [
+        "intent-preview",
+        "sequential-turns",
+        "team-composition",
+        "resource-scarcity"
+      ],
+      "roles": {
+        "intent-preview": "公开下一次攻击目标",
+        "sequential-turns": "留出计划与执行间隔",
+        "team-composition": "提供互补的应对手段",
+        "resource-scarcity": "迫使玩家选择保护重点"
+      },
+      "synergies": [
+        "公开意图可让玩家在多种应对方案之间比较代价。"
+      ],
+      "tensions": [
+        "若每轮只有一种无损解，阵容选择可能失去作用。"
+      ],
+      "demoQuestions": [
+        "玩家能否在行动前预测关键损失？"
+      ],
+      "exampleGameIds": [
+        "into-the-breach"
+      ]
+    },
+    {
+      "id": "precision-retry",
+      "name": "精确操作与快速重试",
+      "mechanicIds": [
+        "jump",
+        "wall-climb",
+        "dodge-move",
+        "checkpoint-respawn"
+      ],
+      "roles": {
+        "jump": "跨越高度差",
+        "wall-climb": "改变可用起跳位置",
+        "dodge-move": "修正空中轨迹",
+        "checkpoint-respawn": "缩短失误到再次练习的距离"
+      },
+      "synergies": [
+        "局部复活让复杂动作能通过短周期练习掌握。"
+      ],
+      "tensions": [
+        "复活虽快，但输入容错不一致仍会导致挫败。"
+      ],
+      "demoQuestions": [
+        "失败后能否立即指出哪一步需要调整？"
+      ],
+      "exampleGameIds": [
+        "celeste"
+      ]
+    },
+    {
+      "id": "parry-pressure",
+      "name": "招架与姿态压制",
+      "mechanicIds": [
+        "parry",
+        "posture-break",
+        "melee-attack",
+        "stealth-detection"
+      ],
+      "roles": {
+        "parry": "用时机防御反转攻防",
+        "posture-break": "积累可见的压制目标",
+        "melee-attack": "主动维持攻击压力",
+        "stealth-detection": "提供接敌前的替代方案"
+      },
+      "synergies": [
+        "招架与进攻都能推进姿态目标时，防守也参与主动节奏。"
+      ],
+      "tensions": [
+        "安全潜行若能绕过全部正面教学，首领可能形成突兀门槛。"
+      ],
+      "demoQuestions": [
+        "姿态恢复是否给持续压迫留下合理窗口？"
+      ],
+      "exampleGameIds": [
+        "sekiro"
+      ]
+    },
+    {
+      "id": "ability-gated-exploration",
+      "name": "能力解锁探索",
+      "mechanicIds": [
+        "direct-movement",
+        "ability-gating",
+        "map-navigation",
+        "route-branching"
+      ],
+      "roles": {
+        "direct-movement": "建立基础移动能力",
+        "ability-gating": "让新能力打开旧障碍",
+        "map-navigation": "记录尚未可达的地点",
+        "route-branching": "保留多个探索方向"
+      },
+      "synergies": [
+        "地图提示与新能力结合，可为回访提供明确目标。"
+      ],
+      "tensions": [
+        "若必经回程太长，能力解锁只会变成赶路成本。"
+      ],
+      "demoQuestions": [
+        "取得能力后玩家能否想到一处值得回访的位置？"
+      ],
+      "exampleGameIds": [
+        "hollow-knight",
+        "dead-cells"
+      ]
+    },
+    {
+      "id": "elemental-team-combos",
+      "name": "元素与队伍连携",
+      "mechanicIds": [
+        "team-composition",
+        "elemental-reaction",
+        "action-cooldown",
+        "status-effect"
+      ],
+      "roles": {
+        "team-composition": "配置互补元素",
+        "elemental-reaction": "按顺序触发额外结果",
+        "action-cooldown": "限制技能连续使用",
+        "status-effect": "保存可被后续行动利用的状态"
+      },
+      "synergies": [
+        "持续状态能连接前后两名角色的动作。"
+      ],
+      "tensions": [
+        "冷却与状态持续时间不匹配时，组合只能偶然成立。"
+      ],
+      "demoQuestions": [
+        "不看攻略能否从反馈理解反应先后顺序？"
+      ],
+      "exampleGameIds": [
+        "genshin-impact"
+      ]
+    },
+    {
+      "id": "settlement-weather",
+      "name": "聚落与天气压力",
+      "mechanicIds": [
+        "season-weather",
+        "upkeep-needs",
+        "workforce-assignment",
+        "production-chain"
+      ],
+      "roles": {
+        "season-weather": "提供周期性准备窗口",
+        "upkeep-needs": "形成持续供给目标",
+        "workforce-assignment": "在岗位间分配人手",
+        "production-chain": "连接不同层级的需求供给"
+      },
+      "synergies": [
+        "可预期的恶劣季节能让提前储备成为明确选择。"
+      ],
+      "tensions": [
+        "人口需求增长过快可能让新设施始终无法落地。"
+      ],
+      "demoQuestions": [
+        "玩家能否在天气变化前调整生产优先级？"
+      ],
+      "exampleGameIds": [
+        "against-the-storm",
+        "frostpunk"
+      ]
+    },
+    {
+      "id": "thermal-colony",
+      "name": "温控与殖民地生存",
+      "mechanicIds": [
+        "thermal-regulation",
+        "fluid-network",
+        "energy-network",
+        "upkeep-needs"
+      ],
+      "roles": {
+        "thermal-regulation": "限制居住与生产温度",
+        "fluid-network": "搬运气液和热量",
+        "energy-network": "为调节设施供能",
+        "upkeep-needs": "定义殖民者可接受的生存条件"
+      },
+      "synergies": [
+        "气液输送若能带走热量，可把生存压力转为系统规划。"
+      ],
+      "tensions": [
+        "为降温增加用电可能反过来增加发电热量。"
+      ],
+      "demoQuestions": [
+        "界面能否显示一次设备扩建的热量后果？"
+      ],
+      "exampleGameIds": [
+        "oxygen-not-included"
+      ]
+    },
+    {
+      "id": "knowledge-loop",
+      "name": "知识驱动循环探索",
+      "mechanicIds": [
+        "timed-loop",
+        "environmental-clues",
+        "knowledge-gating",
+        "resource-scarcity"
+      ],
+      "roles": {
+        "timed-loop": "重置世界时间",
+        "environmental-clues": "提供可积累的信息",
+        "knowledge-gating": "让理解改变可行路线",
+        "resource-scarcity": "限制每次探索半径"
+      },
+      "synergies": [
+        "世界重置而知识保留，可让重复路线逐次缩短。"
+      ],
+      "tensions": [
+        "重要信息只出现一次时，错过可能造成无效等待。"
+      ],
+      "demoQuestions": [
+        "新线索能否直接改变下一次出发计划？"
+      ],
+      "exampleGameIds": [
+        "outer-wilds"
+      ]
+    },
+    {
+      "id": "language-deduction",
+      "name": "语言线索推理",
+      "mechanicIds": [
+        "language-decoding",
+        "environmental-clues",
+        "clue-journal",
+        "deduction-validation"
+      ],
+      "roles": {
+        "language-decoding": "推断符号意义",
+        "environmental-clues": "提供语境参照",
+        "clue-journal": "保存跨地点的观察",
+        "deduction-validation": "确认推断是否成立"
+      },
+      "synergies": [
+        "不同情境重复出现的符号可帮助排除错误解释。"
+      ],
+      "tensions": [
+        "验证反馈太直接会替代观察，太弱则诱发盲猜。"
+      ],
+      "demoQuestions": [
+        "一个符号是否有多个相互印证的语境？"
+      ],
+      "exampleGameIds": [
+        "chants-of-sennaar"
+      ]
+    },
+    {
+      "id": "documents-economy",
+      "name": "证件审查与家庭开支",
+      "mechanicIds": [
+        "document-check",
+        "rule-modifier",
+        "resource-scarcity",
+        "upkeep-needs"
+      ],
+      "roles": {
+        "document-check": "形成主要操作与判断",
+        "rule-modifier": "逐步改变审查要求",
+        "resource-scarcity": "限制可承受的错误",
+        "upkeep-needs": "把收入转成家庭取舍"
+      },
+      "synergies": [
+        "工作结果进入日结预算后，速度与准确度产生实际取舍。"
+      ],
+      "tensions": [
+        "生存压力过大可能让所有道德选择都只剩唯一解。"
+      ],
+      "demoQuestions": [
+        "在规则增加时，旧工具是否仍支持快速核对？"
+      ],
+      "exampleGameIds": [
+        "papers-please"
+      ]
+    },
+    {
+      "id": "stealth-systemic-solutions",
+      "name": "潜行与环境解法",
+      "mechanicIds": [
+        "stealth-detection",
+        "route-branching",
+        "modular-ability",
+        "mutable-environment"
+      ],
+      "roles": {
+        "stealth-detection": "建立敌方感知状态",
+        "route-branching": "提供多条接近方式",
+        "modular-ability": "组合不同解决工具",
+        "mutable-environment": "允许装置改变局部通路"
+      },
+      "synergies": [
+        "观察者状态与路径可变时，玩家能主动创造接近机会。"
+      ],
+      "tensions": [
+        "能力组合可能绕过任务关键状态，需验证后续仍可达。"
+      ],
+      "demoQuestions": [
+        "失败暴露后是否仍有可继续执行的方案？"
+      ],
+      "exampleGameIds": [
+        "dishonored-2"
+      ]
+    },
+    {
+      "id": "deck-market-economy",
+      "name": "卡组与公共市场",
+      "mechanicIds": [
+        "public-market",
+        "in-run-deck-growth",
+        "victory-points",
+        "random-draw"
+      ],
+      "roles": {
+        "public-market": "提供共享购买机会",
+        "in-run-deck-growth": "让购买改变后续抽牌",
+        "victory-points": "定义终局价值",
+        "random-draw": "限制每轮可用牌"
+      },
+      "synergies": [
+        "购买既改善未来手牌又消耗共享供给，可产生间接竞争。"
+      ],
+      "tensions": [
+        "终局牌过早进入牌组可能降低运转效率，需让这种代价可读。"
+      ],
+      "demoQuestions": [
+        "玩家能否判断何时从经济建设转向胜利点？"
+      ],
+      "exampleGameIds": [
+        "dominion"
+      ]
+    },
+    {
+      "id": "bid-and-retreat",
+      "name": "加注与主动撤退",
+      "mechanicIds": [
+        "risk-staking",
+        "hidden-hand",
+        "area-control",
+        "round-phases"
+      ],
+      "roles": {
+        "risk-staking": "主动提高本轮风险",
+        "hidden-hand": "保留对手信息的不确定性",
+        "area-control": "提供可观察的局势线索",
+        "round-phases": "限定风险承诺的时机"
+      },
+      "synergies": [
+        "局部可见优势与隐藏手牌结合，为加注提供有根据的不确定性。"
+      ],
+      "tensions": [
+        "领先反馈过晚会使撤退只剩事后懊悔。"
+      ],
+      "demoQuestions": [
+        "玩家是否能在风险提高前识别关键信息缺口？"
+      ],
+      "exampleGameIds": [
+        "marvel-snap"
+      ]
+    },
+    {
+      "id": "draft-auto-battle",
+      "name": "招募与自动战斗",
+      "mechanicIds": [
+        "unit-drafting",
+        "team-composition",
+        "automatic-resolution",
+        "randomized-market"
+      ],
+      "roles": {
+        "unit-drafting": "增加可用单位",
+        "team-composition": "组织阵容功能",
+        "automatic-resolution": "执行战斗并暴露缺口",
+        "randomized-market": "提供变化的补强机会"
+      },
+      "synergies": [
+        "自动战斗反馈可以帮助玩家有目的地选择下一次招募。"
+      ],
+      "tensions": [
+        "若胜负原因不清，刷新商店会退化成追逐稀有度。"
+      ],
+      "demoQuestions": [
+        "看完战斗能否指出下一轮要补的阵容能力？"
+      ],
+      "exampleGameIds": [
+        "teamfight-tactics"
+      ]
+    },
+    {
+      "id": "lane-objective-pressure",
+      "name": "兵线与目标争夺",
+      "mechanicIds": [
+        "shared-objective",
+        "team-composition",
+        "loot-drop",
+        "barter-trade"
+      ],
+      "roles": {
+        "shared-objective": "集中队伍推进进度",
+        "team-composition": "分配行动职责",
+        "barter-trade": "把金币转成装备能力",
+        "loot-drop": "将战斗与推进转成可用于装备的金币收益"
+      },
+      "synergies": [
+        "局内成长使队伍有理由在不同阶段改变目标优先级。"
+      ],
+      "tensions": [
+        "击杀收益若远高于目标收益，协作推进会被个人追击替代。"
+      ],
+      "demoQuestions": [
+        "地图目标出现前，队员能否看懂各自的准备工作？"
+      ],
+      "exampleGameIds": [
+        "league-of-legends",
+        "dota-2"
+      ]
+    },
+    {
+      "id": "team-ability-breach",
+      "name": "技能配合与据点突破",
+      "mechanicIds": [
+        "role-asymmetry",
+        "aimed-launch",
+        "shared-objective",
+        "round-phases"
+      ],
+      "roles": {
+        "role-asymmetry": "提供不同突破工具",
+        "aimed-launch": "保留射击基本能力",
+        "shared-objective": "集中爆破任务",
+        "round-phases": "给出购买与执行窗口"
+      },
+      "synergies": [
+        "准备阶段能让技能分工服务于同一突破计划。"
+      ],
+      "tensions": [
+        "技能效果过密时，射击反馈和敌方信息可能被遮挡。"
+      ],
+      "demoQuestions": [
+        "投入技能取得的空间优势是否可被队友利用？"
+      ],
+      "exampleGameIds": [
+        "valorant",
+        "counter-strike-2"
+      ]
+    },
+    {
+      "id": "cooperative-logistics",
+      "name": "协作搬运与交付",
+      "mechanicIds": [
+        "cooperative-play",
+        "recipe-crafting",
+        "transport-network",
+        "mutable-environment"
+      ],
+      "roles": {
+        "cooperative-play": "允许多名玩家分工",
+        "recipe-crafting": "规定加工顺序",
+        "transport-network": "连接工位与交付点",
+        "mutable-environment": "改变局部通路"
+      },
+      "synergies": [
+        "物流与加工相互制约，可形成随场地变化的角色分工。"
+      ],
+      "tensions": [
+        "一人卡住关键工位时，其他玩家可能只剩等待。"
+      ],
+      "demoQuestions": [
+        "堵塞发生后，队员能否临时交换职责？"
+      ],
+      "exampleGameIds": [
+        "overcooked-2"
+      ]
+    },
+    {
+      "id": "survival-expedition",
+      "name": "生存建设与远征",
+      "mechanicIds": [
+        "upkeep-needs",
+        "base-construction",
+        "resource-gathering",
+        "ability-gating"
+      ],
+      "roles": {
+        "upkeep-needs": "限制离开补给点的时间",
+        "base-construction": "提供稳定返回点",
+        "resource-gathering": "支撑补给和扩张",
+        "ability-gating": "用新装备扩大探索范围"
+      },
+      "synergies": [
+        "基地供给与远征材料互相连接，让建设服务于探索。"
+      ],
+      "tensions": [
+        "维护频率过高会挤掉远征本身。"
+      ],
+      "demoQuestions": [
+        "玩家是否有理由离开已稳定运转的基地？"
+      ],
+      "exampleGameIds": [
+        "subnautica",
+        "valheim",
+        "dont-starve-together"
+      ]
+    },
+    {
+      "id": "social-deduction-vote",
+      "name": "隐藏身份与投票",
+      "mechanicIds": [
+        "hidden-role",
+        "identity-voting",
+        "shared-objective",
+        "role-asymmetry"
+      ],
+      "roles": {
+        "hidden-role": "制造阵营信息差",
+        "identity-voting": "把讨论转成处置",
+        "shared-objective": "给公开合作提供观察背景",
+        "role-asymmetry": "提供伪装者特有行动"
+      },
+      "synergies": [
+        "共同任务让行为偏差成为可讨论的线索。"
+      ],
+      "tensions": [
+        "任务信息若能直接证明全部身份，语言推理会失去空间。"
+      ],
+      "demoQuestions": [
+        "玩家能否提出可被其他人核对的怀疑依据？"
+      ],
+      "exampleGameIds": [
+        "among-us"
+      ]
+    },
+    {
+      "id": "rhythm-performance",
+      "name": "节奏判定与表现计分",
+      "mechanicIds": [
+        "rhythmic-input",
+        "combo-chain",
+        "rule-modifier",
+        "run-reset"
+      ],
+      "roles": {
+        "rhythmic-input": "建立节拍判定",
+        "rule-modifier": "调整挑战条件",
+        "run-reset": "提供重复练习",
+        "combo-chain": "将连续正确输入转成可积累的表现目标"
+      },
+      "synergies": [
+        "固定谱面与可重复尝试有利于比较输入改进。"
+      ],
+      "tensions": [
+        "评分过度强调一次失误可能盖过整段表现进步。"
+      ],
+      "demoQuestions": [
+        "设备校准后，同一输入能否得到稳定判定？"
+      ],
+      "exampleGameIds": [
+        "osu",
+        "beat-saber"
+      ]
+    },
+    {
+      "id": "dialogue-skill-checks",
+      "name": "对话与能力检定",
+      "mechanicIds": [
+        "ability-check",
+        "clue-journal",
+        "quest-progression",
+        "loadout-selection"
+      ],
+      "roles": {
+        "ability-check": "让角色能力影响尝试结果",
+        "clue-journal": "保存调查发现",
+        "quest-progression": "记录案件推进",
+        "loadout-selection": "让工具与配置改变可用方案"
+      },
+      "synergies": [
+        "调查记录若能提供新的检定条件，探索就能改变对话可能性。"
+      ],
+      "tensions": [
+        "单次失败锁死必需线索会把剧情推进交给运气。"
+      ],
+      "demoQuestions": [
+        "失败之后是否仍有另一条有代价的调查路线？"
+      ],
+      "exampleGameIds": [
+        "disco-elysium"
       ]
     }
   ]

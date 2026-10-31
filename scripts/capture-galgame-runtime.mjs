@@ -1,7 +1,10 @@
 import { chromium } from "@playwright/test";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
-const base = process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:3000";
+const base = (
+  process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:3000"
+).replace(/\/$/, "");
+const basePath = new URL(base).pathname.replace(/\/$/, "");
 const root = "docs/game-artist";
 await mkdir(`${root}/runtime`, { recursive: true });
 const manifest = JSON.parse(await readFile(`${root}/assets.json`, "utf8"));
@@ -29,6 +32,12 @@ const requiredByView = {
   "home-small": homeAssets,
   mechanic: ["chapter-mechanics", "maid-explain"],
   game: ["chapter-games", "game-balatro", "chapter-graph"],
+  "game-factorio": ["chapter-games", "game-factorio", "chapter-graph"],
+  "recipe-automation": [
+    "chapter-lab",
+    "recipe-automation-logistics",
+    "maid-explain",
+  ],
   heat: ["chapter-heat", "maid-think"],
   lab: ["chapter-lab", "recipe-aimed-buildcraft", "maid-explain"],
   "lab-complete": ["chapter-lab", "maid-complete"],
@@ -42,6 +51,15 @@ const definitions = [
   ["home-small", "/", 320, 640, "home-mobile", "home"],
   ["mechanic", "/mechanics/in-run-deck-growth", 1440, 960, "mechanic", "file"],
   ["game", "/games/balatro", 1440, 960, "game", "file"],
+  ["game-factorio", "/games/factorio", 1440, 960, "game", "file"],
+  [
+    "recipe-automation",
+    "/lab?recipe=automation-logistics",
+    1440,
+    960,
+    "lab",
+    "initial",
+  ],
   ["heat", "/heat", 1440, 960, "heat", "file"],
   ["lab", "/lab?recipe=aimed-buildcraft", 1440, 960, "lab", "initial"],
   ["lab-complete", "/lab", 1440, 960, "lab-complete", "complete"],
@@ -145,7 +163,7 @@ for (const [id, route, width, height, target, state] of definitions) {
       .map((image) => new URL(image.src).pathname),
   );
   const visible = manifest.assets
-    .filter((a) => seen.includes(a.path.replace("public", "")))
+    .filter((a) => seen.includes(basePath + a.path.replace("public", "")))
     .map((a) => a.id);
   visible.forEach((a) => allSeen.add(a));
   const capture = `${root}/runtime/${id}.png`;

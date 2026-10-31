@@ -1,3 +1,4 @@
+import { gotoApp, appHref, appPath } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
 import { readFile } from "node:fs/promises";
 
@@ -12,7 +13,7 @@ async function hydrated(page: Page) {
 test("search shortcut accepts immediate typing and restores trigger focus", async ({
   page,
 }) => {
-  await page.goto("/");
+  await gotoApp(page, "/");
   await hydrated(page);
   const trigger = page.getByRole("button", { name: "搜索档案（Ctrl K）" });
   await trigger.focus();
@@ -87,7 +88,7 @@ for (const sourceKind of ["import", "synthetic"] as const) {
       const download = await downloadReady;
       return JSON.parse(await readFile((await download.path())!, "utf8"));
     };
-    await page.goto("/heat");
+    await gotoApp(page, "/heat");
     await hydrated(page);
     await page.getByRole("button", { name: "导入数据 ⇧" }).click();
     await importDialog
@@ -100,8 +101,11 @@ for (const sourceKind of ["import", "synthetic"] as const) {
     await expect(total).toHaveText("123");
     await expect(page.locator(".page-head .seed")).toHaveText(badge);
     await page.getByRole("tab", { name: "热门机制", exact: true }).click();
-    await page.locator('.heat-inspector a[href^="/games/"]').first().click();
-    await expect(page).toHaveURL(/\/games\/[^/?]+$/);
+    await page
+      .locator(`.heat-inspector a[href^="${appPath("/games/")}"]`)
+      .first()
+      .click();
+    await expect(page).toHaveURL(/\/games\/[^/?]+\/?$/);
     await hydrated(page);
     await page.getByRole("tab", { name: "热度标签", exact: true }).click();
     await expect(page.locator(".heat-mini .seed")).toHaveText(badge);
@@ -121,7 +125,7 @@ for (const sourceKind of ["import", "synthetic"] as const) {
       .getByRole("navigation", { name: "主导航", exact: true })
       .getByRole("link", { name: "热度观察", exact: true })
       .click();
-    await expect(page).toHaveURL(/\/heat$/);
+    await expect(page).toHaveURL(/\/heat\/?$/);
     await hydrated(page);
     await expect(total).toHaveText("123");
     await expect(reset).toBeVisible();
@@ -137,7 +141,9 @@ for (const sourceKind of ["import", "synthetic"] as const) {
     await importDialog
       .getByRole("button", { name: "校验并替换本地数据 →" })
       .click();
-    await expect(importDialog.getByRole("alert")).toContainText("导入失败，原有数据保持不变");
+    await expect(importDialog.getByRole("alert")).toContainText(
+      "导入失败，原有数据保持不变",
+    );
     await page.keyboard.press("Escape");
     await expect(total).toHaveText("123");
     expect(await exportRecords()).toEqual({
@@ -145,7 +151,7 @@ for (const sourceKind of ["import", "synthetic"] as const) {
       records: [record],
     });
     const fresh = await context.newPage();
-    await fresh.goto("/heat");
+    await gotoApp(fresh, "/heat");
     await hydrated(fresh);
     await expect(
       fresh.getByRole("button", { name: "恢复合成示例", exact: true }),
@@ -190,7 +196,7 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
       { topicId: "combination:score-modifier", weight: 1, mode: "direct" },
     ],
   }));
-  await page.goto("/heat");
+  await gotoApp(page, "/heat");
   await hydrated(page);
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
@@ -210,7 +216,9 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
   await page.getByRole("button", { name: /搜索热度/ }).click();
   const balatro = page
     .locator(".heat-mini")
-    .filter({ has: page.locator('a[href="/heat?topic=game%3Abalatro"]') });
+    .filter({
+      has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
+    });
   await expect(balatro.locator(".mini-profile-numbers .sr-only")).toHaveText(
     "123",
   );

@@ -13,20 +13,27 @@ import {
   mechanics,
   relationships,
   scopes,
+  sources,
 } from "@/lib/knowledge";
-import { EmptyState, LoopDiagram, StateBadge, stateLabels, Window } from "./Primitives";
+import {
+  EmptyState,
+  LoopDiagram,
+  StateBadge,
+  stateLabels,
+  Window,
+} from "./Primitives";
 import { HeatProfileMini } from "./HeatCharts";
+import { listGameScopes } from "@/lib/graph-layout";
+import { evidenceLabels } from "@/lib/evidence-labels";
 
 type GameView = "mechanics" | "loop" | "relations" | "heat";
 export default function GameViews({ game }: { game: Game }) {
   const [scopeId, setScopeId] = useState(game.defaultScopeId),
     [view, setView] = useState<GameView>("mechanics"),
     [showUnknown, setShowUnknown] = useState(false);
-  const availableScopes = scopes.filter(
-    (scope) =>
-      scope.gameId === game.id &&
-      (scope.kind === "mode" || scope.id === game.defaultScopeId),
-  );
+  const [relationFocus, setRelationFocus] = useState("");
+  const [relationPage, setRelationPage] = useState(0);
+  const availableScopes = listGameScopes(scopes, game.id, game.defaultScopeId);
   const currentScope = scopes.find((s) => s.id === scopeId)!;
   const observations = getInstances(game.id, scopeId),
     unknown = mechanics.filter(
@@ -39,19 +46,35 @@ export default function GameViews({ game }: { game: Game }) {
   const localRelations = relationships.filter(
     (r) => ids.has(r.from) && ids.has(r.to),
   );
-  const positions = positive.map((observation, index) => ({
+  const activeFocus =
+    positive.find((o) => o.mechanicId === relationFocus)?.mechanicId ??
+    positive[0]?.mechanicId;
+  const neighbors = new Set(
+    localRelations
+      .filter((r) => r.from === activeFocus || r.to === activeFocus)
+      .flatMap((r) => [r.from, r.to]),
+  );
+  const peers = positive.filter(
+    (o) =>
+      o.mechanicId !== activeFocus &&
+      (neighbors.size === 0 || neighbors.has(o.mechanicId)),
+  );
+  const peerPages = Math.max(1, Math.ceil(peers.length / 6));
+  const safeRelationPage = Math.min(relationPage, peerPages - 1);
+  const displayed = positive.length
+    ? [
+        positive.find((o) => o.mechanicId === activeFocus)!,
+        ...peers.slice(safeRelationPage * 6, safeRelationPage * 6 + 6),
+      ]
+    : [];
+  const displayedIds = new Set(displayed.map((o) => o.mechanicId));
+  const displayedRelations = localRelations.filter(
+    (r) => displayedIds.has(r.from) && displayedIds.has(r.to),
+  );
+  const positions = displayed.map((observation, index) => ({
     id: observation.mechanicId,
-    x:
-      positive.length === 1
-        ? 380
-        : 380 +
-          250 *
-            Math.cos(-Math.PI / 2 + (index * Math.PI * 2) / positive.length),
-    y:
-      positive.length === 1
-        ? 150
-        : 160 +
-          95 * Math.sin(-Math.PI / 2 + (index * Math.PI * 2) / positive.length),
+    x: index === 0 ? 380 : 140 + ((index - 1) % 3) * 240,
+    y: index === 0 ? 48 : 150 + Math.floor((index - 1) / 3) * 110,
     observation,
   }));
   return (
@@ -90,6 +113,7 @@ export default function GameViews({ game }: { game: Game }) {
           onChange={(event) => {
             setScopeId(event.target.value);
             setShowUnknown(false);
+            setRelationPage(0);
           }}
         >
           {availableScopes.map((scope) => (
@@ -144,7 +168,34 @@ export default function GameViews({ game }: { game: Game }) {
                             成立条件：{observation.condition}
                           </p>
                         )}
-                        <p className="evidence-tag">开发者或发行商正式说明</p>
+                        <p className="evidence-tag">
+                          {evidenceLabels[observation.evidenceKind]}
+                        </p>
+                        <details>
+                          <summary>查看资料依据</summary>
+                          <ul className="content-list">
+                            {observation.sourceIds
+                              .map((id) =>
+                                sources.find((source) => source.id === id),
+                              )
+                              .filter((source) => source !== undefined)
+                              .map((source) => (
+                                <li key={source.id}>
+                                  <a
+                                    href={source.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {source.title} ↗
+                                  </a>
+                                  <span className="tiny muted">
+                                    {" "}
+                                    · 核验 {source.checkedAt}
+                                  </span>
+                                </li>
+                              ))}
+                          </ul>
+                        </details>
                       </div>
                     );
                   })}
@@ -258,6 +309,29 @@ export default function GameViews({ game }: { game: Game }) {
               </p>
               {positive.length ? (
                 <>
+                  <label
+                    className="field-label"
+                    htmlFor={`relation-focus-${game.id}`}
+                  >
+                    关系焦点
+                  </label>
+                  <select
+                    id={`relation-focus-${game.id}`}
+                    value={activeFocus}
+                    onChange={(event) => {
+                      setRelationFocus(event.target.value);
+                      setRelationPage(0);
+                    }}
+                  >
+                    {positive.map((o) => (
+                      <option key={o.mechanicId} value={o.mechanicId}>
+                        {getMechanic(o.mechanicId)!.name}
+                      </option>
+                    ))}
+                  </select>
+                  <p className="tiny muted">
+                    当前显示焦点及最多六个相邻机制；没有已收录连线时展示同范围机制供查阅。
+                  </p>
                   <svg
                     className="case-relation-graph"
                     viewBox="0 0 760 330"
@@ -265,7 +339,7 @@ export default function GameViews({ game }: { game: Game }) {
                     aria-label={`${game.name}当前范围的机制关系`}
                   >
                     <g fill="none" stroke="#ac8ac7" strokeWidth="1.5">
-                      {localRelations.map((relation) => {
+                      {displayedRelations.map((relation) => {
                         const from = positions.find(
                             (p) => p.id === relation.from,
                           )!,
@@ -318,15 +392,35 @@ export default function GameViews({ game }: { game: Game }) {
                             fill="#a698b5"
                             fontSize="9"
                           >
-                            {dimension.name} / {stateLabels[position.observation.status]}
+                            {dimension.name} /{" "}
+                            {stateLabels[position.observation.status]}
                           </text>
                         </Link>
                       );
                     })}
                   </svg>
-                  {localRelations.length ? (
+                  {peerPages > 1 && (
+                    <nav className="pagination" aria-label="相邻机制分页">
+                      <button
+                        disabled={safeRelationPage === 0}
+                        onClick={() => setRelationPage(safeRelationPage - 1)}
+                      >
+                        ← 上一页
+                      </button>
+                      <span>
+                        {safeRelationPage + 1} / {peerPages}
+                      </span>
+                      <button
+                        disabled={safeRelationPage + 1 >= peerPages}
+                        onClick={() => setRelationPage(safeRelationPage + 1)}
+                      >
+                        下一页 →
+                      </button>
+                    </nav>
+                  )}
+                  {displayedRelations.length ? (
                     <ul className="content-list">
-                      {localRelations.map((relation) => (
+                      {displayedRelations.map((relation) => (
                         <li key={relation.id}>
                           <strong>
                             {getMechanic(relation.from)?.name} ↔{" "}

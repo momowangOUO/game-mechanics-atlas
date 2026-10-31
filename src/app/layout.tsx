@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
+import { publicAssetPath } from "@/lib/paths";
 import "./globals.css";
 import "@xyflow/react/dist/style.css";
 import "./ui.css";
@@ -7,7 +9,7 @@ import { AppProviders, PageTransition } from "@/components/Providers";
 import { Footer, Header, MobileNavigation } from "@/components/Shell";
 
 export const metadata: Metadata = {
-  icons: { icon: "/icon.svg" },
+  icons: { icon: publicAssetPath("/icon.svg") },
   title: {
     default: "机制研究室 · Game Mechanics Atlas",
     template: "%s · 机制研究室",
@@ -21,7 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN">
+    <html
+      lang="zh-CN"
+      style={
+        {
+          "--room-dusk-image": `url("${publicAssetPath("/art/room-dusk.webp")}")`,
+        } as CSSProperties
+      }
+    >
       <body>
         <AppProviders>
           <div className="frame">

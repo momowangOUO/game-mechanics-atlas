@@ -8,6 +8,11 @@ import { useUI } from "./Providers";
 import type { Game, MechanicStatus } from "@/lib/model";
 import { ArtImage, MaidPortrait } from "./Art";
 import { chapterArt, gameArt, type ChapterId, type MaidState } from "@/lib/art";
+import gameArtSourceData from "@/data/game-art-sources.json";
+const gameArtSources: Record<
+  string,
+  { kind: string; sourceUrl: string; publisher: string }
+> = gameArtSourceData;
 
 export const stateLabels: Record<MechanicStatus, string> = {
   present: "已确认存在",
@@ -241,22 +246,27 @@ export function GameCover({
     symbol: "◇",
     label: game.name,
   };
+  const official = gameArtSources[game.id]?.kind === "official";
   return (
     <div
       className={`cover ${large ? "game-feature-cover" : ""}`}
       style={{ background: item.color }}
       role="img"
-      aria-label={`${game.name} 原创玩法示意，非官方封面`}
+      aria-label={`${game.name} ${official ? "官方代表图" : "原创玩法示意，非官方封面"}`}
     >
       <ArtImage
         src={gameArt(game.id)}
         alt=""
-        className="game-cover-art"
+        className={`game-cover-art${official ? " official-game-art" : ""}`}
         width={1672}
         height={941}
       />
-      <small>MECHANICS STUDY / 原创玩法示意</small>
-      <span className="cover-title">{item.label}</span>
+      <small>
+        {official
+          ? "GAME ARCHIVE / 官方代表图"
+          : "MECHANICS STUDY / 原创玩法示意"}
+      </small>
+      {!official && <span className="cover-title">{item.label}</span>}
     </div>
   );
 }
@@ -276,6 +286,26 @@ export function GameCard({ game }: { game: Game }) {
         </div>
       </div>
     </Link>
+  );
+}
+export function GameArtCredit({ gameId }: { gameId: string }) {
+  const source = gameArtSources[gameId];
+  const publisher =
+    source?.publisher === "Publisher via official Steam store"
+      ? "官方 Steam 商店"
+      : source?.publisher;
+  return source?.kind === "official" ? (
+    <p className="tiny evidence-note game-art-credit">
+      官方代表图 · {publisher} ·{" "}
+      <a href={source.sourceUrl} target="_blank" rel="noreferrer">
+        查看图源 ↗
+      </a>
+      。图像权利归相应权利人；本站的机制分析另列依据。
+    </p>
+  ) : (
+    <p className="tiny evidence-note">
+      本站原创玩法示意，不是游戏截图或官方封面。
+    </p>
   );
 }
 export function EmptyState({

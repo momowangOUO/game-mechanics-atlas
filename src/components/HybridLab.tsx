@@ -73,7 +73,7 @@ const subsections: Record<ResultTab, string[]> = {
   loop: ["核心循环", "机制分工"],
   relations: ["协同假设", "冲突与张力"],
   tests: ["设计风险", "Demo 问题"],
-  references: ["相似参照"],
+  references: ["参照案例", "匹配机制", "未匹配项", "口径说明"],
   adjustments: ["调整建议", "阅读边界"],
 };
 const signature = (input: HybridInput) =>
@@ -152,6 +152,101 @@ function PagedItems({
         label={`${label}分页`}
       />
     </div>
+  );
+}
+
+function ReferenceReport({
+  references,
+  detail,
+}: {
+  references: HybridAnalysis["references"];
+  detail: number;
+}) {
+  const [page, setPage] = useState(0);
+  const current = Math.min(page, Math.max(0, references.length - 1));
+  const reference = references[current];
+  const caseLink = reference && (
+    <Link className={styles.textLink} href={`/games/${reference.gameId}`}>
+      {getGame(reference.gameId)?.name} ↗
+    </Link>
+  );
+  const mechanicLinks = (ids: string[]) =>
+    ids.map((id) => (
+      <Link key={id} className={styles.textLink} href={`/mechanics/${id}`}>
+        {getMechanic(id)?.name} ↗
+      </Link>
+    ));
+  return (
+    <>
+      <section className={styles.resultSection} data-active={detail === 0}>
+        <h3>同范围的已确认参照</h3>
+        {reference ? (
+          <>
+            <ul className={styles.resultList}>
+              <li>
+                {caseLink}
+                <p className="tiny purple">
+                  范围：
+                  {scopes.find((scope) => scope.id === reference.scopeId)
+                    ?.label ?? reference.scopeId}
+                </p>
+                <p>
+                  已确认匹配 {reference.matchedMechanicIds.length} /{" "}
+                  {reference.matchedMechanicIds.length +
+                    reference.missingMechanicIds.length}{" "}
+                  · 未匹配 {reference.missingMechanicIds.length}
+                </p>
+              </li>
+            </ul>
+            <Pager
+              page={current}
+              pages={references.length}
+              onPage={setPage}
+              label="相似参照分页"
+            />
+          </>
+        ) : (
+          <p className={styles.note}>
+            当前样本没有这些机制的已确认参照，资料不足不代表市场空白。
+          </p>
+        )}
+      </section>
+      <section className={styles.resultSection} data-active={detail === 1}>
+        <h3>已确认匹配 · {reference?.matchedMechanicIds.length ?? 0} 项</h3>
+        <p>{caseLink}</p>
+        <PagedItems
+          key={`matched-${reference?.gameId}`}
+          label="匹配机制"
+          items={mechanicLinks(reference?.matchedMechanicIds ?? [])}
+          empty="当前参照没有已确认匹配的机制。"
+        />
+      </section>
+      <section className={styles.resultSection} data-active={detail === 2}>
+        <h3>未匹配项 · {reference?.missingMechanicIds.length ?? 0} 项</h3>
+        <p>{caseLink}</p>
+        <PagedItems
+          key={`missing-${reference?.gameId}`}
+          label="未匹配机制"
+          items={mechanicLinks(reference?.missingMechanicIds ?? [])}
+          empty={
+            reference
+              ? "当前组合的机制已在此参照范围全部匹配；这仍不代表协同效果已经验证。"
+              : "尚无可核对的参照案例。"
+          }
+        />
+      </section>
+      <section className={styles.resultSection} data-active={detail === 3}>
+        <h3>参照口径与边界</h3>
+        <PagedItems
+          label="参照口径"
+          items={[
+            "仅计入同一有效范围内“已确认存在”的机制。",
+            "未匹配项可能有条件限制、尚未确认、不适用或已确认不存在，需到案例核对。",
+            "即使全部匹配，也需另行验证协同效果。",
+          ]}
+        />
+      </section>
+    </>
   );
 }
 
@@ -843,9 +938,7 @@ export default function HybridLab({
                   {result.conflicts.length ? "需要验证" : "分析完成"}
                 </span>
               )}
-              <span className={styles.ruleBadge}>
-                内置规则分析 · 设计假设
-              </span>
+              <span className={styles.ruleBadge}>内置规则分析 · 设计假设</span>
             </div>
             {analyzed && (
               <div className={styles.snapshot}>
@@ -878,7 +971,7 @@ export default function HybridLab({
               ) : result ? (
                 "结果对应当前选择。先用最小 Demo 检验这些假设。"
               ) : (
-                "完成选择后点击“分析当前组合”。你可以从十个配方中选一个起点。"
+                `完成选择后点击“分析当前组合”。你可以从 ${recipes.length} 个配方中选一个起点。`
               )}
             </div>
             {result ? (
@@ -1022,82 +1115,10 @@ export default function HybridLab({
                     </>
                   )}
                   {tab === "references" && (
-                    <>
-                      <h3>同范围的已确认参照</h3>
-                      <details className={styles.referenceNote}>
-                        <summary>参照口径与边界</summary>
-                        <p className={styles.note}>
-                          仅计入同一有效范围内“已确认存在”的
-                          机制。未匹配项可能有条件限制、尚未确认、不适用或已确认不存在，需到案例核对。即使全部匹配，也需另行验证协同效果。
-                        </p>
-                      </details>
-                      <PagedItems
-                        label="相似参照"
-                        items={result.references.map((reference) => (
-                          <>
-                            <Link
-                              className={styles.textLink}
-                              href={`/games/${reference.gameId}`}
-                            >
-                              {getGame(reference.gameId)?.name} ↗
-                            </Link>
-                            <p className="tiny purple">
-                              范围：
-                              {scopes.find(
-                                (scope) => scope.id === reference.scopeId,
-                              )?.label ?? reference.scopeId}
-                            </p>
-                            <p>
-                              已确认匹配 {reference.matchedMechanicIds.length} /{" "}
-                              {reference.matchedMechanicIds.length +
-                                reference.missingMechanicIds.length}{" "}
-                              · 未匹配 {reference.missingMechanicIds.length}
-                            </p>
-                            <details>
-                              <summary>
-                                查看匹配机制（
-                                {reference.matchedMechanicIds.length}）
-                              </summary>
-                              <PagedItems
-                                label="匹配机制"
-                                items={reference.matchedMechanicIds.map(
-                                  (id) => (
-                                    <Link
-                                      className={styles.textLink}
-                                      href={`/mechanics/${id}`}
-                                    >
-                                      {getMechanic(id)?.name} ↗
-                                    </Link>
-                                  ),
-                                )}
-                              />
-                            </details>
-                            {reference.missingMechanicIds.length > 0 && (
-                              <details>
-                                <summary>
-                                  查看未匹配项（
-                                  {reference.missingMechanicIds.length}）
-                                </summary>
-                                <PagedItems
-                                  label="未匹配机制"
-                                  items={reference.missingMechanicIds.map(
-                                    (id) => (
-                                      <Link
-                                        className={styles.textLink}
-                                        href={`/mechanics/${id}`}
-                                      >
-                                        {getMechanic(id)?.name} ↗
-                                      </Link>
-                                    ),
-                                  )}
-                                />
-                              </details>
-                            )}
-                          </>
-                        ))}
-                        empty="当前样本没有这些机制的已确认参照，资料不足不代表市场空白。"
-                      />
-                    </>
+                    <ReferenceReport
+                      references={result.references}
+                      detail={detail}
+                    />
                   )}
                   {tab === "adjustments" && (
                     <>

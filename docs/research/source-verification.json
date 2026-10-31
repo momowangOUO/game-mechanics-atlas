@@ -1,0 +1,1364 @@
+{
+  "checkedAt": "2026-10-31",
+  "policy": "仅记录实际读取。HTTP成功但正文为空、错误页或转向无关产品者不计为规则来源。完整正文仅在忽略的本地缓存中保留；正式数据采用原创事实概述。",
+  "sources": [
+    {
+      "sourceId": "sekiro-official",
+      "url": "https://store.steampowered.com/app/814380",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "5005d3d2eb979d133a29aebb4279ace5106a9630f02daa95b9d193f05913b78d",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "ftl-official",
+      "url": "https://store.steampowered.com/app/212680",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "00315987338e88c0bfcc818b8cf89bb00b6d8dcae9d5f36fc083ab478aeb0d2d",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dark-souls-3-official",
+      "url": "https://store.steampowered.com/app/374320",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "aed36cc6b9e2674f770c9856492056c61911109321e45f8392d60868ccf2e792",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "doom-eternal-official",
+      "url": "https://store.steampowered.com/app/782330",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "e89d7b79a9418308f8e045be05b01c083c97c43ab6dc4537ba887e0265a0b610",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "celeste-official",
+      "url": "https://store.steampowered.com/app/504230",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1c0f2a8430d0ae9f16cc82c3e50f37ffbcd638b2c429712d090d25f1abf9afdb",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "hollow-knight-official",
+      "url": "https://store.steampowered.com/app/367520",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "93e8621079db1605f060d99957f7b60110f3550a3b448c1c55d6e38521fa219a",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "monster-hunter-world-official",
+      "url": "https://store.steampowered.com/app/582010",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "4ea5c6733e1c7f58481aa97ca4c1478fb9ca42c2e296a6a4752983e591827c83",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "into-the-breach-official",
+      "url": "https://store.steampowered.com/app/590380",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a6d8d3beb96190e8b080e18498fb62daaa97280302f152070d5aa5a32669656d",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "age-of-empires-2-official",
+      "url": "https://store.steampowered.com/app/813780",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "2ca2efdfea31444217f7cab72842a7673614b624f89062fdf453cfe37f2b4d07",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "civilization-6-official",
+      "url": "https://store.steampowered.com/app/289070",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "55a40d4d49e23fbc875b9b4980dc3351d208048d410187fef24b8b8b16f51a61",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "xcom-2-official",
+      "url": "https://store.steampowered.com/app/268500",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3bffabd01ba2757be43205737c121e9d4a91240f9621b920f6c32e57be3bb906",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "factorio-official",
+      "url": "https://store.steampowered.com/app/427520",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "dd96c970791db28da3d572decf4b4e6861232fa3084d2a89bef1111739b3aa9c",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "frostpunk-official",
+      "url": "https://store.steampowered.com/app/323190",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "7120234060441d163eb3784bd9ce74d45cff060888cedc03976dc7f4edff05f4",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "against-the-storm-official",
+      "url": "https://store.steampowered.com/app/1336490",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "dd104a37f78f9becc707d7789312de6578b1dcf4dc5f5a551526a2f6eb7d7e5b",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "satisfactory-official",
+      "url": "https://store.steampowered.com/app/526870",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "771d9fd1b13cd2f5723dff51ee400a771d514b371e229cd419b949800180dedb",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dyson-sphere-program-official",
+      "url": "https://store.steampowered.com/app/1366540",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0f0fc875de55c87c6004a9bfde60b2013d212c3e4fde76065c44ebac851342b8",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "oxygen-not-included-official",
+      "url": "https://store.steampowered.com/app/457140",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "4e6b53994a879fe81fcf5d7ad6d25ca3f9447f04c99ebeddeeb72613e7397c25",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "rimworld-official",
+      "url": "https://store.steampowered.com/app/294100",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "e318634d057a6ddec53f2a84ccbcd79bc94cd6031c4282f2a154349a1b0cb5b7",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dwarf-fortress-official",
+      "url": "https://store.steampowered.com/app/975370",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "fa7d1cb736d2d4f8652a43a1ed45d3ec572d33e82a09c3f5c30ffce05dd9ac99",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "potion-craft-official",
+      "url": "https://store.steampowered.com/app/1210320",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "23541f4ad7a43b85cdac57f019d4ebbb2affdc72de98b2bcee35743b4cd43242",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "baba-is-you-official",
+      "url": "https://store.steampowered.com/app/736260",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "57d9a83483752775607d933c3b0a0678c3a59fc967660cfeeb61b9067819694f",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "cities-skylines-official",
+      "url": "https://store.steampowered.com/app/255710",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ed59382e61fe506d6f3cbde6723e1aea8446bbcca80bb7e26d13ed92609394e0",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "outer-wilds-official",
+      "url": "https://store.steampowered.com/app/753640",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3c2efe93daeb77b6d4b2381b8b1cf756393d16eb537ddaa01958806f4b83c226",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "portal-2-official",
+      "url": "https://store.steampowered.com/app/620",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0b71b0e024260506b5786f298065df340456fee7018a42e7fa0724c255d863fa",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "return-of-the-obra-dinn-official",
+      "url": "https://store.steampowered.com/app/653530",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "604da657b07e944cfcfb4dc873fe23632e793df9ee40e5040531c61defa81ef0",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "the-witness-official",
+      "url": "https://store.steampowered.com/app/210970",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "bdcecc8c0d7c3deeeece75245a8f69ea4522ee1a7cbd7109f7f4bf44417e2d47",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "papers-please-official",
+      "url": "https://store.steampowered.com/app/239030",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "71dcd5b8991906eb507e52f12caff969362e91e07975606fd1661c150d44920a",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dishonored-2-official",
+      "url": "https://store.steampowered.com/app/403640",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "5ce213de9d5ba15371e5423751e33acebee9d1878bea821b8cdd4e3e0ca61987",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "chants-of-sennaar-official",
+      "url": "https://store.steampowered.com/app/1931770",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "b99d1e207e6dbbb20696a13552a34661be64cfa27233621cd7ed433fad8e53e5",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dominion-official",
+      "url": "https://store.steampowered.com/app/1131620",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a77cb165d53fc7b7a380e071443790971e7420d8d0e0242ece195a39b782028c",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "marvel-snap-official",
+      "url": "https://store.steampowered.com/app/1997040",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a693f83ccbe5e79f7ed1a5a266be99622cd631bd903b8caaf52e0edb476ecd91",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "luck-be-a-landlord-official",
+      "url": "https://store.steampowered.com/app/1404850",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "36a4366e32bd4cd6a680e3829096cc929bb4437b6bf04ebfa0cccef0311adadb",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dota-2-official",
+      "url": "https://store.steampowered.com/app/570",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1011bf1b8f7e975711a9ed27bb1dff8e42b7b76f6795a30a1751b98751ba2a92",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "counter-strike-2-official",
+      "url": "https://store.steampowered.com/app/730",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "7537ba46a94ca9d90203a537d841e75a0ae7493eada00b6f440efb652fdfb17e",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "overcooked-2-official",
+      "url": "https://store.steampowered.com/app/728880",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ed0dd58550b9dc9c95cfa26d02b517c2fd2fdc991ccb84b63bc8b67dc6279473",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "deep-rock-galactic-official",
+      "url": "https://store.steampowered.com/app/548430",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "142439e6a32b7dbd60a0dfc964388842724f71b1ecdac2f93bb5e99037189480",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dont-starve-together-official",
+      "url": "https://store.steampowered.com/app/322330",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "d0969c74373bf4ec065aee35a679a236ec39fb37fb80e182f8855846af3269b0",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "monster-train-official",
+      "url": "https://store.steampowered.com/app/1102190",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ca186931062aef90deafdb684172008d717ca313ead241a6cad6e495c0e38a31",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "valheim-official",
+      "url": "https://store.steampowered.com/app/892970",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "41153ce4a01fc0a9acba71ffb30a4269eba0fcc9c1e5509501164c179f3e100e",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "subnautica-official",
+      "url": "https://store.steampowered.com/app/264710",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1d24b149085d38a23148b2038955ac1f0f48c009ac91c4f19cf968596569942d",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "project-zomboid-official",
+      "url": "https://store.steampowered.com/app/108600",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "fb986eb1f6f2555d53c718999867104f791e9f81382a37f89682005bfb3f1b89",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "lethal-company-official",
+      "url": "https://store.steampowered.com/app/1966720",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1cd23c1f1eefb2a6f6b338197bbf7ccd09b6dfe949062aa29f6750aa6048c950",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "among-us-official",
+      "url": "https://store.steampowered.com/app/945360",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0861465332222b9bfed428b96989f8c0d90d826dbb7b710ba74282baba172eab",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "beat-saber-official",
+      "url": "https://store.steampowered.com/app/620980",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "55dcd795785858adb0ecc96755fb2461a97305e828c9bb1208b1502521a110cf",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "hunt-showdown-1896-official",
+      "url": "https://store.steampowered.com/app/594650",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0886bf257e9c329d9081431b49192e917a964a71c9a7ef4a73d4f083a6ac0ab5",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "path-of-exile-official",
+      "url": "https://store.steampowered.com/app/238960",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "35774b1e7bd0112dc207bd5e83f2d4078d22092ec8f6ac1832a4fce5a5e007ed",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "disco-elysium-official",
+      "url": "https://store.steampowered.com/app/632470",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1b273056c71a382b3b59140bd907973a88c6221beea5e7b70ed1aeeeb5fbeda0",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "binding-of-isaac-rebirth-official",
+      "url": "https://store.steampowered.com/app/250900",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "b2d421215703c0f87de7f7aaf7fe82cea98e1e71e364118a49db315ba2f64646",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "noita-official",
+      "url": "https://store.steampowered.com/app/881100",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "2c698e18a6b3001ba5da89ddd3fa31550420826ff379b3cc4e3800e60c3a41ce",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "caves-of-qud-official",
+      "url": "https://store.steampowered.com/app/333640",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "f8682d5e100acc56f1a6486ba3f5b6284db4475f007812440c1e92b60753b4d8",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "balatro-official",
+      "url": "https://store.steampowered.com/app/2379780",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "27a446fede3344a7be330b7ee14122f9c8df3e02f412f1210b3c5cbd06572b8f",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "slay-the-spire-official",
+      "url": "https://store.steampowered.com/app/646570",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "47c01fff8a7f81e6846142817d863b1dac547f55a59a8cab3f649533be2ecd89",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "hades-official",
+      "url": "https://store.steampowered.com/app/1145360",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "6c48d0949ac0c3183a189a489a3e0d74b83d6cc1e7b4d9353deb01602928f6ff",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "cult-of-the-lamb-official",
+      "url": "https://store.steampowered.com/app/1313140",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "6d11f36b63f101e2feef5c3e982b79f54d1859a5f0438c6eede003c35a8afa52",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "backpack-battles-official",
+      "url": "https://store.steampowered.com/app/2427700",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "45f9305bda43d0697eaebc07feefc627178629e8892040c345df0d713222a0cb",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "loop-hero-official",
+      "url": "https://store.steampowered.com/app/1282730",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "39ecce212881ffcefa6600460983b45641c60189a91241c3fdafc8ace29a0f71",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "peglin-official",
+      "url": "https://store.steampowered.com/app/1296610",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "866a491de6fc08addd15b08934b985761a8eb8788cf34862299dce978f4985f1",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "risk-of-rain-2-official",
+      "url": "https://store.steampowered.com/app/632360",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "cb274a11fc0f3821e0d5e360425a686c9b68461430e72a2e54d29792a209b28e",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "inscryption-official",
+      "url": "https://store.steampowered.com/app/1092790",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "383b5a9625662489adba985768a2b764a74ca516e8ae22313108e503aa1f51e9",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "stardew-valley-official",
+      "url": "https://store.steampowered.com/app/413150",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "8cbb4fc65c02dbadbef27bf690983c36fe8881c8df044de27527dc908deff07f",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "cookie-clicker-official",
+      "url": "https://store.steampowered.com/app/1454400",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3e763fbd602c3fc939af81bb0b61b33446e7818c08817271974984375198595b",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "vampire-survivors-official",
+      "url": "https://store.steampowered.com/app/1794680",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3c75b586fe5013fdc8d6c349e4ef587e27e65da8d2d8277f947d6b1b241b017b",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dead-cells-official",
+      "url": "https://store.steampowered.com/app/588650",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a24ce166829258224cd065ae70437444305345afd5843242dc893d96c5f7f831",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "shape-of-dreams-official",
+      "url": "https://store.steampowered.com/app/2444750",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ce68d2e2158511da689c7914eddb4f94bce746b0b782dfea1d40a2b270f9bf3b",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "sekiro-website",
+      "url": "https://www.sekirothegame.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "57cca7922babe6261403cba9d1d7caafcf34d03ac27fa9598ed69f8c5f395d01",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "hollow-knight-website",
+      "url": "https://www.hollowknight.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "92b1993fed99bc52a009c1389410bcf7566878906eb5ec9448ebabe5d51bd3ce",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "age-of-empires-2-website",
+      "url": "https://www.ageofempires.com/games/aoeiide",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3bb256e05b5a9ea2f669f69f17c4fcc543fc26b99a6f8dfbb86b1082b1639cff",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "factorio-website",
+      "url": "https://www.factorio.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ab0573a9796f4896c6ae92cdd9fa14258da5caaa5284d527337b8ba09626bb88",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "satisfactory-website",
+      "url": "https://www.satisfactorygame.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0b53b66bcc9ac8cda92ab06b47fcc25790386151cbcea4aa8c8cae0f31b75ecf",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "against-the-storm-website",
+      "url": "https://eremitegames.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1f65d97a9bf7ac29e8e495066f5ba5f9f20f94d5d77af24fdcc2f64dfe095776",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "celeste-website",
+      "url": "https://www.celestegame.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "d6398fd4ad83e6fcfffaa26d6af6ee19f64e277441cb844111fb9b9d2ffae099",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "potion-craft-website",
+      "url": "https://www.potioncraft.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ef28dc3d4ace0c57c3daf4a4496579fdec622e5e163f0c5fe9ffcfe4c7c59971",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "portal-2-website",
+      "url": "https://www.thinkwithportals.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "fc9ae905f089f705ad24421818ee96851d4090fc836c1c3f011fbdc7b80f8f2b",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "return-of-the-obra-dinn-website",
+      "url": "https://obradinn.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "177a4a4115bd33a37b063114974bb8782b57e58b9a06b91bcdfb935b4749b1fe",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "frostpunk-website",
+      "url": "https://11bitstudios.com/games/frostpunk",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "2730725c9250170158e6817f4dd9d884312ff90d461fc8f217ae9f4b21b8db10",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "papers-please-website",
+      "url": "https://papersplea.se/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "c14459d652cceced277ad008ce512c6089894d195de0eb9a30c6f77b0bbc4f3c",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "marvel-snap-website",
+      "url": "https://marvelsnap.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "09e44a84c54ee90dbae89d5299fb35ccd25b2a6b6ed7767ffb608a6b1a954848",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "oxygen-not-included-website",
+      "url": "https://www.klei.com/games/oxygen-not-included",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1069d103c5b04778dd6b080e03403eb626dce0eddb5deec3de03491e320cf54a",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "monster-train-website",
+      "url": "https://www.themonstertrain.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "befaf9b1bd0c8b277088868b093f048c74d1c12dfac934c85fc016018c85961c",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "valheim-website",
+      "url": "https://www.valheim.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "f0e01a1028374a33be95630ff17bcd316f171c1ec41e179f6700df0133d3075c",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "deep-rock-galactic-website",
+      "url": "https://www.deeprockgalactic.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1d69dfa570f19c90e94effa336fd08e2be768882328e182d7155f3855cb0ca57",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "hunt-showdown-1896-website",
+      "url": "https://www.huntshowdown.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "f915288b1bfa6f6e95ba4a6e063a2e60bafaaf5837fef4b7557cbc5da49325e6",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "beat-saber-website",
+      "url": "https://beatsaber.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1197c62241d2f9e6bb09bf411fc3c25eb40d277a9088dca4dfcba9534e3c5fcb",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "among-us-website",
+      "url": "https://www.innersloth.com/games/among-us",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "d5e5ccb12f75b0e40517bee6c8acc5aa094368b65d36375d98b9533b2132c66f",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "backpack-battles-website",
+      "url": "https://playwithfurcifer.github.io/backpack-battles-presskit",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "094e2c6b5e9e441bc0ef5dc1908ff21fb4281b0c3a550227ce443e4a23bc713f",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "noita-website",
+      "url": "https://noitagame.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "51c991d85e7bd0e59e292d2e843a8b80cda9bc45f9454c6224c667a02b2d46c6",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "balatro-website",
+      "url": "https://www.playbalatro.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a50bd549e89d1d0c1e8e326d9a6cd43055037e425defc6e78e663f39b4a66537",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "chants-of-sennaar-website",
+      "url": "https://www.focus-entmt.com/en/games/chants-of-sennaar",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "acdb25879820fb842931e8e7bb16fac00619682e31e75b8ef113a71cabcda762",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "peglin-website",
+      "url": "https://rednexus.games/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "8fd0a8a486debb5dd1d17d8dca37e75f6af2204e74b6c4d3f04840897f0ac2dd",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "cookie-clicker-website",
+      "url": "https://cookieclicker.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a6f7cf61fa781531f248956022ad1f18f07f547dc6d2f7a8cb739f215ac75a45",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "dead-cells-website",
+      "url": "https://dead-cells.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3fe393b03305d5fadb201e111a335872ebae5b873c1ae9b5bd4ff2d98ceca055",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "inscryption-website",
+      "url": "https://www.inscryption.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1f55363147fabf204a3a16e20facd198b99163703f28cb34ad05a5523dc1f95a",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "shape-of-dreams-website",
+      "url": "https://www.playshapeofdreams.com/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "f4a866797ff2d77321f0519b19af56f32475932430015f61a9af862ba8cca428",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "stardew-valley-website",
+      "url": "https://www.stardewvalley.net/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a0fbaaa0c337307c640b7dae00e1305e749833d385a1fb2f6259adfd4741e3fa",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "league-of-legends-website",
+      "url": "https://www.leagueoflegends.com/en-us/how-to-play",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "98c5b1cfb0a72a182daa46631fe40730573740f4f32b53b50e2f8cbc253d7557",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "valorant-website",
+      "url": "https://playvalorant.com/en-us/news/announcements/beginners-guide",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1ee3bf4c1ca1301d22ddeef73581459a6c28061106ed8cdde9aa5a52cbfaf6e5",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "osu-website",
+      "url": "https://osu.ppy.sh/wiki/en/Game_mode/osu!",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "eb23d0b033204a822ef763aa8d2d6ef8392798ba34405786fa38e51e6dfc3511",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "mario-kart-8-deluxe-website",
+      "url": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3ff427d702210a4f80ba33bd0d71843c1780887334849ed0732b77415c255e25",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "minecraft-official",
+      "url": "https://www.minecraft.net/en-us/about-minecraft",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a38ce965281f67ef9fb6331f33aa3dc11e8311ec79d768c103f053d6f64aa5b4",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "game-of-dice-official",
+      "url": "https://play.google.com/store/apps/details?id=com.joycity.god",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "af2a18f85d6534128f1f5c530ae5b21f125cc81fea8f1df87ab42c3d9a98d9b4",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "factorio-content",
+      "url": "https://www.factorio.com/game/content",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "607a2c25464cd77c98ea17e387ad6936b501c5cb02d654f37bc82ba034ea90c5",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "animal-crossing-new-horizons-website",
+      "url": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a0a8396550be32fdfe78bf29eb2df5aa5ceaacd62d09b5de1786334f53abdc72",
+      "scope": "官方页面正文"
+    },
+    {
+      "sourceId": "baba-is-you-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Baba_Is_You",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "b0fc6309c46f8ad1434a0110fb8b37c7559ace7f3fcdb9432622d0f8da34585c",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "papers-please-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Papers,_Please",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "28925096c241b7a5685c80fc44e0456bc2bff03d04ec2d3f5dc5201ae6550158",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "return-of-the-obra-dinn-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "8599063d123b1085f84363deb62fac56beb3619c3ffc0973fdf584323c52972a",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "sekiro-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "4a2a0b071e9df86e0cc8376b477ebd914262c1189275ab567a7554392f777041",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "dark-souls-3-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Dark_Souls_III",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "0fe677032562613194fc882a669b0ecf6ac14bd112ed09cd373dbf2afe7d24e2",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "counter-strike-2-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Counter-Strike_2",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "940e7b8e1336b4a06c7de31fe3d170f2e76038d63b96e408103d8eead5f0cbb9",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "the-witness-community-overview",
+      "url": "https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "000233598502fc50927056fd2c77371beb9d1feb96c781856570ffce1aacf0d4",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "portal-2-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Portal_2",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ae2fa84ea2c982a5567cc254f898b2bc1a90fc22d747e7f91ebc99415bd1808b",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "splatoon-3-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Splatoon_3",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "f71925edd3534eee9726e270bcb46c4ef3652e4c13161c907546316cb84ddfdb",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "hearthstone-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Hearthstone",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "6fd0a4c9e714ececee0fc29df01159317e252e1584ac649f4045e702b3e01a81",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "rocket-league-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Rocket_League",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "349d8315506f1207fbe8080f38a131e593f46815563983147b19ea54d433b56a",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "dota-2-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Dota_2",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "fa9e3c6ed69836d3746ac8cc0ad4718140a414fc8d168325a7c689b0e820eaab",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "starcraft-2-community-overview",
+      "url": "https://en.wikipedia.org/wiki/StarCraft_II",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "d5dcf18ffc63b016892c14b87c052e6e111c28527c480e2971c3cc51c91a9762",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "world-of-warcraft-community-overview",
+      "url": "https://en.wikipedia.org/wiki/World_of_Warcraft",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "736064b2cf836eee7cf3326c374b2b80384b0ccb3317cf2c12caa0977c6014f7",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "teamfight-tactics-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Teamfight_Tactics",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "1a67a225b14515ba276e770820f9e82bcc5e3d80261a2c03b5eaec09345e57c4",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "genshin-impact-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Genshin_Impact",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "24623c25b29492dc8d55a76384a96da82cdb68b8f0ca289fa14945a2d383c157",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "escape-from-tarkov-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Escape_from_Tarkov",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ebc4c8a8ac6e088a413be3a7bdfbeb58d9f08c054ce8f54e899fbe7618aff464",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "inscryption-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Inscryption",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "3c4cfa6b4125684706bb9daca6fda3a073b9f22f43c109c838cf397f34ac16ae",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "tetris-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Tetris",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "c3215ab617fcbefd76de5ab6c02c40d9891b265f8089614611e5f52d626b2e78",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "vampire-survivors-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Vampire_Survivors",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "5a571cf8e10bc482160229c1d8f3a5ff2850bc30d2a72ebf1a4d3c47746f2c46",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "cookie-clicker-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Cookie_Clicker",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "9309716adce1f293dcf349e273775b6d4cb9c4b99980589bcfe865ca35de9299",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "luck-be-a-landlord-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Luck_Be_a_Landlord",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "9bfafb9ca3415b27ba7e2df4c09b8eb61f9e5867fee50db2fcbc8e907bb1b2b3",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "age-of-empires-2-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Age_of_Empires_II:_Definitive_Edition",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "c1403fb7ecc3fd1ad08317fe6526dd2104e1733a9c017a1454d392f732a0f196",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "animal-crossing-new-horizons-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "a682340d3d5c55753da54c15c1502a001669d0b6b1834c5bee381f9065e26cd1",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "peglin-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Peglin",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "4c00186dd1f40b1da8b7296845b07f8f8f68c4faf78f7955beb2473c2749f6be",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "balatro-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Balatro_(video_game)",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "c686ad9e03b42238f05dc8989e926aa2bca59cf4a6bfda663ab7d747044dfeb4",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "celeste-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Celeste_(video_game)",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "ca1766ddf150852533e6fe39aa064d031cb7204070a31c640833d567e8d1578a",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "hades-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Hades_(video_game)",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "b8fba472d102bee9cda3ed83e35bae63858d7ed1ed5513d0900958751bb9287a",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "cult-of-the-lamb-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Cult_of_the_Lamb",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "bea1c8e7651f094ffe4f52ba4c5e2031dbb55dfa58d9884ab227c6944f008961",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "mario-kart-8-deluxe-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Mario_Kart_8",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "b062b8b00b2dd85d7fde95e9fe7b68b829d7f821e6752f7c198a9b2968f751fe",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "loop-hero-community-overview",
+      "url": "https://en.wikipedia.org/wiki/Loop_Hero",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "010e8c40c4fbb2aac9847d87506c1c8cf73d04b42a12d8ab46bf51eac943b4e8",
+      "scope": "社区玩法概述"
+    },
+    {
+      "sourceId": "dark-souls-3-primary-1",
+      "url": "https://www.fromsoftware.jp/manual/darksouls3/win/basic.html",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "探索时接近可调查或拾取对象会显示提示，按对应键交互。 右手与左手武器分别操作；左手盾可防御，两手持武器或特定盾配置下可使用战技。 击败敌人或使用道具可获得灵魂；灵魂用于升级、购买和装备强化或修理。 篝火休息恢复HP、FP、两种原素瓶次数、耐久和异常状态，但多数已击败敌人会复活。 HP归零死亡；携带灵魂留在死亡地点，可返回血痕取回；取回前再次死亡会失去旧血痕。 使用余火可暂时获得火之力并召唤其他灵体；不是所有范围无条件多人。"
+    },
+    {
+      "sourceId": "portal-2-primary-1",
+      "url": "https://www.thinkwithportals.com/about.php",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "官方介绍传送门装置与空间物理解谜。 包含单人与合作游戏模式；不能把合作观察自动继承为单人存在。"
+    },
+    {
+      "sourceId": "portal-2-official",
+      "url": "https://store.steampowered.com/app/620",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "双人合作是独立战役，有独立故事、测试室和两个角色。 物理系统支持挑战，提供编辑工具与合作谜题制作；编辑器不等于基础关卡随机生成。"
+    },
+    {
+      "sourceId": "the-witness-primary-1",
+      "url": "https://the-witness.net/news/about",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "官方仅明确探索与解谜，不能凭此认定具体谜题符号的规则。"
+    },
+    {
+      "sourceId": "the-witness-official",
+      "url": "https://store.steampowered.com/app/210970",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "单人开放世界，探索岛屿寻找线索；商店明确列出多个地点与超过500个谜题。"
+    },
+    {
+      "sourceId": "return-of-the-obra-dinn-website",
+      "url": "https://obradinn.com/",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "官方说明玩家为保险调查员登船并准备损失评估，单凭简介不支持怀表具体操作。"
+    },
+    {
+      "sourceId": "dark-souls-3-primary-2",
+      "url": "https://www.fromsoftware.jp/manual/darksouls3/win/screen.html",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "攻击、冲刺和回避消耗精力；精力为零时不能再执行需要精力的行动，随时间自动恢复。 魔法和战技消耗FP，FP为零不能发挥效果；可用原素灰瓶或篝火恢复。 锁定附近敌人后可切换目标。 异常积累到阈值触发出血、毒、冻伤或诅咒，各自效果不同；不要把积累值与即刻HP伤害混为一类。"
+    },
+    {
+      "sourceId": "dark-souls-3-primary-3",
+      "url": "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "玩家直接控制移动、冲刺、定向翻滚和后撤步。 锁定时保持面向目标移动。 可切换装备槽中的左右手武器、魔法、物品；单手与双手持握可切换，双手持握改变左手可用性与攻击。"
+    },
+    {
+      "sourceId": "dark-souls-3-primary-4",
+      "url": "https://www.fromsoftware.jp/manual/darksouls3/win/action2.html",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "可在破防、弹反后或从背后触发致命一击；部分敌人或装备例外。 魔法需先记忆、装备对应触媒，并支付FP。 弓弩需要适配箭矢或弩箭，可装备两种弹药；弓可进入精密瞄准。 战技需要相应持握配置或支持武器战技的盾，效果与武器有关。"
+    },
+    {
+      "sourceId": "dark-souls-3-primary-5",
+      "url": "https://www.fromsoftware.jp/manual/darksouls3/win/bonfire.html",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "休息恢复HP/FP、耐久、异常与瓶子次数，自动保存进度，并复活多数已败敌人。 需先点燃篝火才能休息；可传送到曾休息过的其他篝火。 可记忆魔法，记忆槽数与角色属性相关；可把物品移入木箱。 不死人遗骨只能在传火祭祀场篝火投入，提升全篝火共享等级与瓶子恢复量。"
+    },
+    {
+      "sourceId": "osu-keyboard-reference",
+      "url": "https://osu.ppy.sh/wiki/en/Client/Keyboard_shortcuts",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "Play mode小节明确Ctrl+R或反引号可快速重试当前谱面。"
+    },
+    {
+      "sourceId": "league-of-legends-lux-16-21-1",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/en_US/champion/Lux.json",
+      "checkedAt": "2026-10-31",
+      "method": "web_read",
+      "scope": "官方静态英雄数据逐技能列出随技能等级变化的冷却时间；只据此记录该英雄能力冷却，不由此推断死亡复活或全部模式。"
+    }
+  ],
+  "failures": [
+    {
+      "id": "ftl",
+      "url": "https://subsetgames.com/ftl.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "monster-hunter-world",
+      "url": "http://www.monsterhunterworld.com/",
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "id": "overcooked-2",
+      "url": "http://www.ghosttowngames.com/overcooked-2/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "dont-starve-together",
+      "url": "http://www.dontstarvegame.com",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "id": "subnautica",
+      "url": "http://unknownworlds.com/subnautica",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "id": "project-zomboid",
+      "url": "https://www.projectzomboid.com",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "path-of-exile",
+      "url": "http://www.pathofexile.com",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "caves-of-qud",
+      "url": "http://www.cavesofqud.com",
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "id": "cult-of-the-lamb",
+      "url": "http://cultofthelamb.com",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "id": "loop-hero",
+      "url": "http://loophero.com",
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "id": "starcraft-2",
+      "url": "https://starcraft2.blizzard.com/en-us/game",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "teamfight-tactics",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/how-to-play/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "rocket-league",
+      "url": "https://www.rocketleague.com/en/news/rocket-league-101",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "splatoon-3",
+      "url": "https://splatoon.nintendo.com/en/",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "id": "tetris",
+      "url": "https://tetris.com/how-to-play-tetris",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

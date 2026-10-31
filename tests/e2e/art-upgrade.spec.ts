@@ -1,7 +1,8 @@
+import { gotoApp } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
 
 async function visit(page: Page, path: string) {
-  await page.goto(path);
+  await gotoApp(page, path);
   await expect(page.locator("html")).toHaveAttribute(
     "data-effects",
     /^(full|reduced)$/,
@@ -119,7 +120,7 @@ test("failed scenery preserves search and usable chapter links", async ({
     .getByRole("link")
     .filter({ hasText: "机制档案" })
     .click();
-  await expect(page).toHaveURL(/\/mechanics$/);
+  await expect(page).toHaveURL(/\/mechanics\/?$/);
 });
 
 test("system reduced motion prevents pointer parallax while preserving pose changes", async ({

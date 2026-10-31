@@ -1,7 +1,15 @@
+import { gotoApp, appHref, appPath } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const mechanicDirectory = JSON.parse(
+  readFileSync("docs/research/mechanic-dossiers.json", "utf8"),
+).mechanisms as { dimension: string }[];
+const gameDirectory = JSON.parse(
+  readFileSync("docs/research/game-evidence.json", "utf8"),
+).games as { genreIds: string[] }[];
 
 async function visit(page: Page, path: string) {
-  const response = await page.goto(path);
+  const response = await gotoApp(page, path);
   await expect(page.locator("html")).toHaveAttribute(
     "data-effects",
     /^(full|reduced)$/,
@@ -40,7 +48,7 @@ test("global search opens by keyboard, handles empty results and navigates", asy
   await expect(dialog.getByText("没有找到匹配的档案")).toBeVisible();
   await input.fill("Balatro");
   await dialog.getByRole("link").filter({ hasText: "Balatro" }).first().click();
-  await expect(page).toHaveURL(/\/games\/balatro$/);
+  await expect(page).toHaveURL(/\/games\/balatro\/?$/);
   await expect(dialog).not.toBeVisible();
 });
 
@@ -53,7 +61,12 @@ test("mechanics filter by canonical dimension, core tag and keyword", async ({
     .getByRole("button")
     .filter({ hasText: "核心交互" })
     .click();
-  await expect(page.locator(".mechanic-card")).toHaveCount(5);
+  await expect(page.locator(".mechanic-card")).toHaveCount(
+    Math.min(
+      8,
+      mechanicDirectory.filter((m) => m.dimension === "interaction").length,
+    ),
+  );
   await page.getByRole("textbox", { name: "搜索机制" }).fill("不存在的机制987");
   await expect(
     page.getByRole("heading", { name: "没有找到匹配档案" }),
@@ -63,7 +76,9 @@ test("mechanics filter by canonical dimension, core tag and keyword", async ({
     .getByRole("button", { name: "重置", exact: true })
     .click();
   await page.getByLabel("适用核心玩法").selectOption("卡牌");
-  await expect(page.locator(".result-count")).not.toHaveText("52 条档案");
+  await expect(page.locator(".result-count")).not.toHaveText(
+    `${mechanicDirectory.length} 条档案`,
+  );
   await page.locator(".mechanic-card").first().click();
   await expect(page).toHaveURL(/\/mechanics\/.+/);
   await expect(
@@ -97,7 +112,12 @@ test("game catalog filters real cases by type and literal search", async ({
 }) => {
   await visit(page, "/games");
   await page.getByLabel("筛选传统类型").selectOption("deckbuilder");
-  await expect(page.locator(".catalog-games .case-card")).toHaveCount(3);
+  await expect(page.locator(".catalog-games .case-card")).toHaveCount(
+    Math.min(
+      6,
+      gameDirectory.filter((g) => g.genreIds.includes("deckbuilder")).length,
+    ),
+  );
   await page.getByRole("textbox", { name: "搜索游戏" }).fill("Balatro");
   await expect(page.locator(".catalog-games .case-card")).toHaveCount(1);
   await page.getByRole("textbox", { name: "搜索游戏" }).fill("no-case-987");
@@ -139,7 +159,7 @@ test("graph selects, filters, zooms, drags and follows cooccurrence cases", asyn
   await expect(page.locator(".cooccurrence-item").first()).toBeVisible();
   await page.locator(".cooccurrence-item").first().click();
   await expect(
-    page.locator('.graph-inspector a[href^="/games/"]').first(),
+    page.locator(`.graph-inspector a[href^="${appPath("/games/")}"]`).first(),
   ).toBeVisible();
   for (const check of await page.locator(".graph-dimensions input").all())
     await check.uncheck();
@@ -297,14 +317,16 @@ test("mobile tools use drawers and have no document overflow", async ({
     .getByRole("dialog")
     .getByRole("link", { name: /混合实验室/ })
     .click();
-  await expect(page).toHaveURL(/\/lab$/);
+  await expect(page).toHaveURL(/\/lab\/?$/);
 });
 
 test("invalid archive route has a usable not-found page", async ({ page }) => {
   const response = await visit(page, "/mechanics/no-such-mechanic");
   expect(response?.status()).toBe(404);
   await expect(page.locator("main")).toContainText("档案");
-  await expect(page.locator('main a[href="/mechanics"]').first()).toBeVisible();
+  await expect(
+    page.locator(`main a[href="${appHref("/mechanics")}"]`).first(),
+  ).toBeVisible();
 });
 
 test("lab keeps analyzed snapshots and explains a timing conflict", async ({
@@ -362,7 +384,7 @@ test("full motion can be selected while system reduction takes priority", async 
   await expect(page.locator("html")).toHaveAttribute("data-effects", "full");
   await expect(
     page.getByRole("region", { name: "知识库规模", exact: true }),
-  ).toContainText("52");
+  ).toContainText(String(mechanicDirectory.length));
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.locator("html")).toHaveAttribute("data-effects", "reduced");
   await context.close();

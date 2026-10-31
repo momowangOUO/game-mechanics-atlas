@@ -1,7 +1,7 @@
 import { chromium } from "@playwright/test";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
-const base = process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:3000";
+const base = (process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:3000").replace(/\/$/, "");
 const output = "docs/screenshots";
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({
@@ -75,7 +75,7 @@ const routes = [
   "/method",
   "/sources",
   ...research.mechanisms.map((m) => `/mechanics/${m.id}`),
-  ...gameData.games.map((g) => `/games/${g.slug}`),
+  ...gameData.games.map((g) => `/games/${g.id ?? g.slug}`),
   ...genreData.compositeTypes.map((g) => `/types/${g.id}`),
 ];
 const api = await browser.newContext();

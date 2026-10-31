@@ -1,9 +1,9 @@
 import dossierData from '../../docs/research/mechanic-dossiers.json';
 import gameData from '../../docs/research/game-evidence.json';
 import recipeData from '../../docs/research/genre-recipes.json';
+import relationshipData from '../../docs/research/mechanic-relationships.json';
 import { DimensionIdSchema, MechanicSchema, GameSchema, GameModeSchema, ScopeSchema, MechanicInstanceSchema, CompositeGenreSchema, HybridRecipeSchema, MechanicRelationshipSchema, SourceSchema } from './model';
 import type { DimensionId, Mechanic, Game, GameMode, Scope, MechanicInstance, CompositeGenre, HybridRecipe, MechanicRelationship, Source, MechanicStatus } from './model';
-
 export const dimensions: {id:DimensionId;name:string;description:string;color:string;short:string}[] = [
   {id:'interaction',name:'核心交互',short:'交互',description:'玩家通过什么输入直接改变局面。',color:'#8fb7d6'},
   {id:'rules',name:'规则与结算',short:'规则',description:'行动如何被判定、组合并结算。',color:'#d69b9d'},
@@ -16,179 +16,79 @@ export const dimensions: {id:DimensionId;name:string;description:string;color:st
   {id:'variability',name:'变化与随机',short:'变化',description:'内容与结果如何产生变化或被重现。',color:'#a5b5df'},
 ];
 
-// Retrieval tags are editorial aids, not additional mechanic identities.
-const tagsByDimension: Record<DimensionId,string[]> = {
-  interaction:['动作','空间解谜'],rules:['策略','构筑'],temporal:['策略','冒险'],buildcraft:['构筑','策略'],
-  progression:['成长','冒险'],economy:['经营','生存'],information:['探索','策略'],participants:['多人'],variability:['构筑','冒险'],
-};
-const tagOverrides: Record<string,string[]> = {
-  'direct-movement':['动作','探索'], 'aimed-launch':['动作','空间解谜'], 'piece-rotation':['空间解谜','构筑'],
-  'drag-placement':['空间解谜','构筑'], 'score-threshold':['计分挑战','策略'], 'line-completion-clear':['空间解谜','计分挑战'],
-  'in-run-deck-growth':['卡牌','构筑'], 'random-draw':['卡牌','策略'], 'hidden-hand':['卡牌','多人'],
-  'relationship-progression':['叙事','生活模拟'], 'environmental-clues':['探索','叙事','空间解谜'],
-  'toll-payment':['棋盘','经营'], 'dice-roll':['棋盘','策略'], 'production-investment':['经营','增量'],
-  'base-construction':['经营','生存'], 'recipe-crafting':['经营','生存','构筑'], 'extraction-bank':['生存','动作'],
-};
-export const mechanics: Mechanic[] = dossierData.mechanisms.map(raw => MechanicSchema.parse({
-  ...raw,corePlayTags:tagOverrides[raw.id] ?? tagsByDimension[raw.dimension as DimensionId],
-}));
-
-type GameEditorial = { genres:string[]; tags:string[]; baseline:string; resource?:string[]; progression?:string[] };
-const editorial: Record<string,GameEditorial> = {
-  balatro:{genres:['roguelite','deckbuilder'],tags:['卡牌','构筑','计分挑战'],baseline:'标准单人战役',resource:['设计归纳：筹码用于衡量是否达到盲注目标；当前来源不足以说明完整的商店经济规则。']},
-  peglin:{genres:['roguelite'],tags:['动作','构筑'],baseline:'标准单人冒险'},
-  'slay-the-spire':{genres:['roguelite','deckbuilder'],tags:['卡牌','构筑','策略'],baseline:'第一作标准单人攀塔'},
-  hades:{genres:['roguelite','action-rpg'],tags:['动作','构筑','叙事'],baseline:'第一作标准单人流程',progression:['设计归纳：夜之镜强化与人物关系提供跨次尝试的延续；未核验具体数值。']},
-  'cult-of-the-lamb':{genres:['roguelite'],tags:['动作','经营'],baseline:'基础单人主线'},
-  'backpack-battles':{genres:['auto-battler'],tags:['构筑','策略'],baseline:'常规背包构筑与战斗'},
-  'loop-hero':{genres:['roguelite'],tags:['构筑','经营','策略'],baseline:'标准远征与营地流程'},
-  'vampire-survivors':{genres:['survivor-like','roguelite'],tags:['动作','构筑'],baseline:'基础标准流程',progression:['设计归纳：基础金币强化服务后续尝试，强化购买可退款重配。']},
-  'risk-of-rain-2':{genres:['roguelite'],tags:['动作','构筑'],baseline:'普通冒险'},
-  inscryption:{genres:['deckbuilder'],tags:['卡牌','构筑','探索','叙事'],baseline:'主线流程（章节分别记录）'},
-  'stardew-valley':{genres:['farming-life-sim'],tags:['经营','生活模拟'],baseline:'标准农场流程'},
-  minecraft:{genres:['sandbox-survival','survival-craft'],tags:['生存','经营','探索'],baseline:'原版单人生存模式',resource:['生存模式的采集与创造模式的无限基础材料分别记录，两个模式的观察不能互相继承。']},
-  tetris:{genres:[],tags:['空间解谜','计分挑战'],baseline:'官方基础规则'},
-  'cookie-clicker':{genres:['incremental-idle'],tags:['增量','经营'],baseline:'基础生产与永久强化系统',resource:['设计归纳：饼干既是产出，也可用于再投资；当前来源不足以说明离线结算规则。'],progression:['官方列出永久强化；未核验转生公式与具体解锁条件。']},
-  'dead-cells':{genres:['roguelite','metroidvania'],tags:['动作','探索'],baseline:'基础标准流程',progression:['设计归纳：跨局保留部分道路、能力与武器权限；辅助模式和 DLC 另行取证。']},
-  'escape-from-tarkov':{genres:['extraction-shooter'],tags:['动作','生存'],baseline:'基础 PvPvE 突袭',resource:['一般战利品需要成功撤离才能带出；保险、容器与模式例外尚未核验。']},
-  'game-of-dice':{genres:[],tags:['棋盘','策略','多人'],baseline:'常规个人棋盘对局',resource:['官方说明地盘、过路费与破产目标；未核验具体支付数值。']},
-  'shape-of-dreams':{genres:['roguelite','action-rpg'],tags:['动作','构筑'],baseline:'PC 标准单人冒险'},
-};
-
-export const sources: Source[] = gameData.games.flatMap(raw => [
-  SourceSchema.parse({id:`${raw.slug}-official`,title:raw.sourceTitle,url:raw.sourceUrl,publisher:raw.studio,
-    checkedAt:raw.verifiedAt,type:raw.sourceUrl.includes('store.') || raw.sourceUrl.includes('play.google') ? 'official_store' : 'official_site',
-    claimScope:`${raw.scopeNotes} 仅核验官方可读介绍与发行信息；未安装实测。`}),
-  ...(raw.additionalSources ?? []).map((source,index) => SourceSchema.parse({
-    id:`${raw.slug}-additional-${index + 1}`,title:source.title,url:source.url,publisher:raw.studio,
-    checkedAt:raw.verifiedAt,type:'official_site',claimScope:source.supports,
-  })),
-]);
-export const scopes: Scope[] = [];
-export const gameModes: GameMode[] = [];
-function addScope(gameId:string,suffix:string,kind:Scope['kind'],label:string,parentScopeId?:string):string {
-  const id = `${gameId}:${suffix}`;
-  if (!scopes.some(scope => scope.id === id)) scopes.push({id,gameId,kind,label,...(parentScopeId ? {parentScopeId} : {})});
-  return id;
-}
-function addMode(gameId:string,suffix:string,label:string):string {
-  const scopeId = addScope(gameId,suffix,'mode',label,`${gameId}:game`);
-  if (!gameModes.some(mode => mode.scopeId === scopeId)) gameModes.push({id:`${gameId}:mode:${suffix}`,gameId,name:label,description:`研究范围：${label}。其他模式不自动继承此范围的观察。`,scopeId});
-  return scopeId;
-}
-export const games: Game[] = gameData.games.map(raw => {
-  const meta = editorial[raw.slug];
-  addScope(raw.slug,'game','game',raw.name);
-  const standard = addMode(raw.slug,'standard',meta.baseline);
-  const defaultScopeId = raw.slug === 'inscryption' ? addScope(raw.slug,'opening','chapter','主线开篇小屋',standard) : standard;
-  return GameSchema.parse({id:raw.slug,name:raw.name,studio:raw.studio,year:raw.year,yearBasis:raw.yearBasis,
-    summary:raw.summary,analysis:raw.analysis,factNotes:raw.factNotes,scopeNotes:raw.scopeNotes,coreLoop:raw.coreLoop,
-    learning:raw.learning,caveats:raw.caveats,sourceIds:sources.filter(source => source.id.startsWith(`${raw.slug}-`)).map(source => source.id),
-    defaultScopeId,genreIds:meta.genres,corePlayTags:meta.tags,
-    metadataNote:'类型与核心玩法标签为编辑归纳，用于检索，不是官方完整分类或机制证据。',
-    resourceNotes:meta.resource ?? ['当前来源不足以说明资源的完整流转、获取条件与消耗规则；请结合已收录的机制实例阅读。'],
-    progressionNotes:meta.progression ?? ['当前来源不足以说明完整的成长规则；概要中的设计分析不能替代具体规则的证据。'],
-  });
-});
-function observationScope(gameId:string,mechanicId:string):string {
-  if (gameId === 'minecraft' && mechanicId === 'resource-scarcity') return addMode(gameId,'creative','创造模式基础建造');
-  if (gameId === 'minecraft' && mechanicId === 'cooperative-play') return addMode(gameId,'multiplayer','多人世界、Realms 或服务器');
-  if (gameId === 'cult-of-the-lamb' && mechanicId === 'permadeath') return addMode(gameId,'permadeath-challenge','Permadeath 特殊挑战');
-  if (gameId === 'backpack-battles' && mechanicId === 'planning-timer') return addMode(gameId,'lobby','大厅模式');
-  if (gameId === 'game-of-dice' && mechanicId === 'cooperative-play') return addMode(gameId,'team','组队赛');
-  if (gameId === 'shape-of-dreams' && mechanicId === 'cooperative-play') return addMode(gameId,'cooperative','在线合作冒险');
-  return games.find(game => game.id === gameId)!.defaultScopeId;
-}
-export const instances: MechanicInstance[] = gameData.games.flatMap(raw => raw.mechanicEvidence.map((observation,index) => MechanicInstanceSchema.parse({
-  id:`${raw.slug}:observation:${index + 1}`,mechanicId:observation.mechanic,scopeId:observationScope(raw.slug,observation.mechanic),
-  status:observation.status,...(observation.status === 'conditional' ? {condition:`仅在「${observation.scope}」范围成立；${observation.note}`} : {}),
-  sourceIds:[sources.find(source => source.url === observation.sourceUrl)!.id],evidenceKind:'official_description',
-  rationale:observation.note,scopeNote:observation.scope,
-})));
-export const genres: CompositeGenre[] = recipeData.compositeTypes.map(raw => CompositeGenreSchema.parse(raw));
-export const recipes: HybridRecipe[] = recipeData.recipes.map(raw => HybridRecipeSchema.parse({...raw,
-  evidenceNotes:[recipeData.recipePolicy.meaning,recipeData.recipePolicy.exampleMeaning,
-    recipeData.exampleReferenceNotes[raw.id as keyof typeof recipeData.exampleReferenceNotes]],
-}));
-
-// Contextual design propositions, not demonstrated effects in reference games.
-const relationshipRows: [string,string,MechanicRelationship['type'],string,string][] = [
-  ['rule-modifier','score-threshold','rule_rewrite','规则修改与计分目标','当修饰器改变计分公式时，基础牌型或行动对达标的作用也会改变。'],
-  ['stacking-effects','rule-modifier','synergy','规则修改与计分目标','在结算顺序清晰的前提下，多种效果可与规则修饰组合；需检验极端情况下的收益。'],
-  ['aimed-launch','in-run-deck-growth','synergy','瞄准与卡组构筑原型','若卡组决定可发射对象，构筑与瞄准可分别改善结果；弹珠池不能未经定义直接视作卡组。'],
-  ['randomized-encounters','aimed-launch','feedback','变化遭遇中的瞄准','不同障碍可检验玩家的瞄准判断；遭遇变化后，仍需让玩家能从反馈中理解结果。'],
-  ['in-run-deck-growth','route-branching','feedback','路线与卡组规划','当前卡组的长短处影响选路，沿途奖励又改变后续路线价值。'],
-  ['resource-scarcity','route-branching','conflict','路线与资源规划','当资源紧缺到只剩一条可行路线时，分支可能失去实际决策价值；并非两机制天然排斥。'],
-  ['run-reset','persistent-stat-upgrade','synergy','重复挑战与长期成长','若重开仅清除局内状态，跨局强化可延续目标；需测试积累是否替代操作学习。'],
-  ['run-reset','relationship-progression','feedback','重复尝试与人物回应','若关系内容回应尝试过程，重开可提供新情境；需避免必须失败才推进内容的激励。'],
-  ['resource-gathering','base-construction','resource_supply','远征采集与营地建设','当建设设施需要消耗外出采集的材料时，采集为建设提供资源；获取与消耗的数量仍需验证。'],
-  ['base-construction','randomized-encounters','feedback','营地与外出探索','当新设施打开外出目标时，建设可改变探索动机；不是任意建设都会影响遭遇。'],
-  ['recipe-crafting','spatial-loadout','resource_supply','制作与背包布局','当制作产物需要放入有限空间时，产物形状与可用格数共同约束配置。'],
-  ['spatial-loadout','automatic-resolution','feedback','空间构筑与自动战斗','自动战斗若能解释触发与结果，玩家可据此调整下一轮布局。'],
-  ['encounter-placement','stacking-effects','synergy','玩家布置风险路线','当布置对象存在相互作用时，叠加可增加风险收益方案；需明确作用范围。'],
-  ['encounter-placement','base-construction','feedback','风险路线与营地发展','若布置风险带来可投入营地的收益，营地目标可反过来影响布置。'],
-  ['resource-gathering','extraction-bank','resource_supply','采集与撤离兑现','当采集物需要带出才能兑现时，继续冒险就意味着承担失去已取得物品的风险。'],
-  ['resource-scarcity','extraction-bank','synergy','有限补给下的撤离','逐渐消耗的补给可帮助玩家判断撤离时机；物品保留的例外规则应明确展示。'],
-  ['production-investment','persistent-unlock','feedback','增长再投资','当新权限提供新的投资选项时，产出与解锁能形成阶段性目标。'],
-  ['objective-unlock','persistent-unlock','dependency','目标触发的永久权限','仅在设计规定完成目标才授予永久权限时，目标条件才是该权限的前置；不是通用必要依赖。'],
-  ['dice-roll','toll-payment','synergy','骰子棋盘财产竞争','仅当骰子结果影响落点、落点又触发支付时，掷点与支付才通过位置影响收益。'],
-  ['toll-payment','pvp-opposition','feedback','多人财产竞争','若支付改变双方的可用财产，位置优势会影响竞争局势；需检验落后方是否仍有有效选择。'],
-  ['sequential-turns','real-time-update','alternative','同一行动阶段的推进规则','单一阶段可选择轮流行动或持续推进；不同阶段可以组合，不据此判为整款游戏冲突。'],
-  ['pause-planning','planning-timer','conflict','限时规划阶段','若暂停同时冻结用于施压的计时，原规划压力可能失效；可通过分阶段计时重新组合。'],
-  ['action-cooldown','dodge-move','dependency','带冷却的闪避方案','只有明确采用冷却作为再次闪避的门槛时，冷却才是此动作的前置条件。'],
-  ['shared-resource-pool','cooperative-play','synergy','协作资源分配','共享资源可带来沟通与分工需求；需防止个别玩家独占资源的使用权。'],
-];
-export const relationships: MechanicRelationship[] = relationshipRows.map(([from,to,type,context,rationale],index) => MechanicRelationshipSchema.parse({
-  id:`relationship-${index + 1}`,from,to,type,context,rationale,evidenceKind:'editorial_analysis',sourceIds:[],
-}));
-
-export function getMechanic(id:string):Mechanic|undefined { return mechanics.find(mechanic => mechanic.id === id); }
-export function getGame(id:string):Game|undefined { return games.find(game => game.id === id); }
+export const mechanics = dossierData.mechanisms.map(raw => MechanicSchema.parse(raw));
+export const sources = gameData.sources.map(raw => SourceSchema.parse(raw));
+export const games = gameData.games.map(raw => GameSchema.parse(raw));
+export const gameModes = gameData.gameModes.map(raw => GameModeSchema.parse(raw));
+export const scopes = gameData.scopes.map(raw => ScopeSchema.parse(raw));
+export const instances = gameData.instances.map(raw => MechanicInstanceSchema.parse(raw));
+export const genres = recipeData.compositeTypes.map(raw => CompositeGenreSchema.parse(raw));
+export const recipes = recipeData.recipes.map(raw => HybridRecipeSchema.parse({...raw,evidenceNotes:[recipeData.recipePolicy.meaning,recipeData.recipePolicy.exampleMeaning,recipeData.exampleReferenceNotes[raw.id as keyof typeof recipeData.exampleReferenceNotes]]}));
+export const relationships = relationshipData.map(raw => MechanicRelationshipSchema.parse(raw));
+export type KnowledgeDataset = {dimensions:typeof dimensions;mechanics:Mechanic[];sources:Source[];games:Game[];gameModes:GameMode[];scopes:Scope[];instances:MechanicInstance[];genres:CompositeGenre[];recipes:HybridRecipe[];relationships:MechanicRelationship[]};
+export const dataset:KnowledgeDataset={dimensions,mechanics,sources,games,gameModes,scopes,instances,genres,recipes,relationships};
+/** Each query instance owns a snapshot. Tests and callers never mutate the production catalog. */
+export function createKnowledgeBase(input:KnowledgeDataset) {
+const {dimensions,mechanics,sources,games,gameModes,scopes,instances,genres,recipes,relationships}=structuredClone(input);
+const gameById=new Map(games.map(row=>[row.id,row]));
+const mechanicById=new Map(mechanics.map(row=>[row.id,row]));
+const scopeById=new Map(scopes.map(row=>[row.id,row]));
+const instancesByScope=new Map<string,MechanicInstance[]>();
+for(const row of instances){const bucket=instancesByScope.get(row.scopeId)??[];bucket.push(row);instancesByScope.set(row.scopeId,bucket);}
+const scopesByGame=new Map<string,Scope[]>();
+for(const row of scopes){const bucket=scopesByGame.get(row.gameId)??[];bucket.push(row);scopesByGame.set(row.gameId,bucket);}
+const instancesByGame=new Map<string,MechanicInstance[]>();
+for(const row of instances){const gameId=scopeById.get(row.scopeId)?.gameId;if(!gameId)continue;const bucket=instancesByGame.get(gameId)??[];bucket.push(row);instancesByGame.set(gameId,bucket);}
+const modeScopeIds=new Set(gameModes.map(mode=>mode.scopeId));
+const candidatesByGame=new Map(games.map(game=>[game.id,(scopesByGame.get(game.id)??[]).filter(scope=>scope.id===game.defaultScopeId||scope.kind==='mode'||modeScopeIds.has(scope.id)||instancesByScope.has(scope.id))]));
+const resolvedScopes=new Map<string,MechanicInstance[]>();
+function getMechanic(id:string):Mechanic|undefined { return mechanicById.get(id); }
+function getGame(id:string):Game|undefined { return gameById.get(id); }
 // Explicit parent assertions inherit downward. Child observations do not
 // become facts about a parent, sibling, unrelated mode, character or chapter.
 function scopeChain(gameId:string,scopeId:string):string[] {
   const chain:string[] = [];
-  let current = scopes.find(scope => scope.id === scopeId && scope.gameId === gameId);
+  let current = scopeById.get(scopeId)?.gameId === gameId ? scopeById.get(scopeId) : undefined;
   while (current && !chain.includes(current.id)) {
     chain.push(current.id);
-    current = current.parentScopeId ? scopes.find(scope => scope.id === current!.parentScopeId && scope.gameId === gameId) : undefined;
+    current = current.parentScopeId ? scopeById.get(current.parentScopeId)?.gameId === gameId ? scopeById.get(current.parentScopeId) : undefined : undefined;
   }
   return chain;
 }
-export function getInstances(gameId:string,scopeId?:string):MechanicInstance[] {
+function getInstances(gameId:string,scopeId?:string):MechanicInstance[] {
   if (!getGame(gameId)) return [];
   if (scopeId === undefined) {
-    const owned = new Set(scopes.filter(scope => scope.gameId === gameId).map(scope => scope.id));
-    return instances.filter(instance => owned.has(instance.scopeId));
+    return [...(instancesByGame.get(gameId) ?? [])];
   }
+  const cacheKey=`${gameId}/${scopeId}`;
+  const cached=resolvedScopes.get(cacheKey);
+  if(cached)return [...cached];
   const chain = scopeChain(gameId,scopeId);
   const observed = new Set<string>();
-  return chain.flatMap(id => instances.filter(instance => instance.scopeId === id).filter(instance => {
+  const resolved=chain.flatMap(id => (instancesByScope.get(id) ?? []).filter(instance => {
     if (observed.has(instance.mechanicId)) return false;
     observed.add(instance.mechanicId);
     return true;
   }));
+  resolvedScopes.set(cacheKey,resolved);
+  return [...resolved];
 }
-export function getInstanceStatus(gameId:string,mechanicId:string,scopeId?:string):MechanicStatus {
+function getInstanceStatus(gameId:string,mechanicId:string,scopeId?:string):MechanicStatus {
   const game = getGame(gameId);
   if (!game) return 'unknown';
   return getInstances(gameId,scopeId ?? game.defaultScopeId).find(instance => instance.mechanicId === mechanicId)?.status ?? 'unknown';
 }
-export function getRelatedGames(mechanicId:string):Game[] {
+function getRelatedGames(mechanicId:string):Game[] {
   return games.filter(game => getInstances(game.id).some(instance => instance.mechanicId === mechanicId && ['present','conditional'].includes(instance.status)));
 }
-export function getMechanicSupply(mechanicIds:string[]):{count:number;conditional:number;unknown:number;gameIds:string[]} {
+function getMechanicSupply(mechanicIds:string[]):{count:number;conditional:number;unknown:number;gameIds:string[]} {
   const requested = [...new Set(mechanicIds)];
   if (requested.length === 0) return {count:0,conditional:0,unknown:0,gameIds:[]};
   const result = {count:0,conditional:0,unknown:0,gameIds:[] as string[]};
   for (const game of games) {
-    const modeScopeIds = new Set(gameModes.filter(mode => mode.gameId === game.id).map(mode => mode.scopeId));
     // A registered mode is comparable even before its first observation.
     // Empty game roots remain containers, not substitutes for mode coverage.
-    const candidates = scopes.filter(scope => scope.gameId === game.id && (
-      scope.id === game.defaultScopeId || scope.kind === 'mode' || modeScopeIds.has(scope.id) ||
-      instances.some(instance => instance.scopeId === scope.id)
-    ));
+    const candidates = candidatesByGame.get(game.id) ?? [];
     const statuses = candidates.map(scope => requested.map(id => getInstanceStatus(game.id,id,scope.id)));
     if (statuses.some(values => values.every(value => value === 'present'))) {
       result.count += 1; result.gameIds.push(game.id);
@@ -201,7 +101,7 @@ export function getMechanicSupply(mechanicIds:string[]):{count:number;conditiona
   return result;
 }
 
-export function validateKnowledge():string[] {
+function validateKnowledge():string[] {
   const errors:string[] = [];
   if (dimensions.length !== 9 || new Set(dimensions.map(dimension => dimension.id)).size !== 9 ||
     dimensions.some(dimension => !DimensionIdSchema.safeParse(dimension.id).success)) {
@@ -222,6 +122,9 @@ export function validateKnowledge():string[] {
   const mechanicIds = new Set(mechanics.map(row => row.id));
   const gameIds = new Set(games.map(row => row.id));
   const sourceIds = new Set(sources.map(row => row.id));
+  const sourceById = new Map(sources.map(row => [row.id,row]));
+  const sourceUrls = new Set<string>();
+  for(const source of sources){if(sourceUrls.has(source.url))errors.push(`${source.id}: duplicate source URL ${source.url}`);sourceUrls.add(source.url);}
   const genreIds = new Set(genres.map(row => row.id));
   const scopeById = new Map(scopes.map(scope => [scope.id,scope]));
   function refs(owner:string,ids:string[],known:Set<string>,kind:string) {
@@ -256,6 +159,13 @@ export function validateKnowledge():string[] {
   for (const instance of instances) {
     refs(instance.id,[instance.mechanicId],mechanicIds,'mechanic');refs(instance.id,instance.sourceIds,sourceIds,'source');
     if (!scopeById.has(instance.scopeId)) errors.push(`${instance.id}: invalid scope ${instance.scopeId}`);
+    for(const id of instance.sourceIds){
+      const source=sourceById.get(id);if(!source)continue;
+      if(instance.evidenceKind==='official_description'&&!['official_site','official_store'].includes(source.type))errors.push(`${instance.id}: source is not an official description ${id}`);
+      if(instance.evidenceKind==='manual'&&source.type!=='manual')errors.push(`${instance.id}: source is not a manual ${id}`);
+      if(instance.evidenceKind==='community_documentation'&&source.type!=='community')errors.push(`${instance.id}: source is not community documentation ${id}`);
+      if(instance.evidenceKind==='developer_description'&&source.type!=='developer')errors.push(`${instance.id}: source is not developer documentation ${id}`);
+    }
     const key = `${instance.scopeId}/${instance.mechanicId}`;
     if (assertions.has(key)) errors.push(`${instance.id}: duplicate assertion ${key}`);
     assertions.add(key);
@@ -271,3 +181,8 @@ export function validateKnowledge():string[] {
   }
   return errors;
 }
+
+return {getMechanic,getGame,getInstances,getInstanceStatus,getRelatedGames,getMechanicSupply,validateKnowledge};
+}
+const knowledge=createKnowledgeBase(dataset);
+export const {getMechanic,getGame,getInstances,getInstanceStatus,getRelatedGames,getMechanicSupply,validateKnowledge}=knowledge;

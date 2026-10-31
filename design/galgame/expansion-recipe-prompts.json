@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "scope": "22 new original gameplay combination illustrations; each independently generated; not official game artwork.",
+  "generatedAt": "2026-10-31",
+  "assets": [
+    {
+      "id": "automation-logistics",
+      "prompt": "Use case: stylized-concept. One original 16:9 illustration for a game-design recipe card. Match attached reference's cel-painted early-2000s Japanese PC game drawing, bold ink outlines, 2–3 hard shadow tones, tactile brass wood and teal enamel, warm amber lamps against dusty violet dusk. A broad overhead three-quarter tabletop diorama in the same research library. Show a connected automated logistics system: left iron quarry with mineral carts, central belt splitter divides ore into two separate processing branches, one furnace branch and one gear assembler branch, both rejoin at a finished-goods warehouse at right. Copper power cables connect generators to machines. In foreground an original tiny engineer is rerouting a congested belt by turning a brass lever, clearly depicting finding and fixing a bottleneck. A deliberately wider view than the reference, distinct composition with two branching routes, rich meaningful objects large enough for a 320px card. Full bleed, no text, numbers, UI, logos, borders, collage or official game characters.",
+      "status": "generated",
+      "destination": "public/art/recipes/automation-logistics.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-764deb18-f141-4c33-8226-4e54bf8d9340.png",
+        "original": ".build/expansion-art-originals/automation-logistics.png"
+      },
+      "references": [
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2359480,
+      "sha256": "40f02124104b54ab0a4a5e7b8c25ee142cdf1752ad52604d574b976162cf19fa",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "telegraphed-tactics",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A small square stone city battle board in a research salon. Two original brass walking mechs defend miniature buildings from looming beetle creatures. Translucent red cones on the ground show incoming attacks, and a mech pushes a beetle aside so its blast will strike an empty canal. Show the visible planned attack direction and one positional counter clearly, no lettering.",
+      "status": "generated",
+      "destination": "public/art/recipes/telegraphed-tactics.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-3d1c0a14-7f82-4705-b4b5-b71b704f513e.png",
+        "original": ".build/expansion-art-originals/telegraphed-tactics.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2230910,
+      "sha256": "f8afa0af7b118eb95cdb559097d4a5931a807417dbac50f27802a0729ea346cc",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "precision-retry",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original red-scarfed climber leaps from a narrow snowy ledge toward a distant golden checkpoint lantern, with sharp crystals below and a short bright dash trail behind. Several empty tiny lanterns along the ascent suggest quick retry checkpoints. Side-on dramatic mountain section with clear landing gap, bold cel shadows, no recognizable game character.",
+      "status": "generated",
+      "destination": "public/art/recipes/precision-retry.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-2a9e7d1e-e396-4c4d-bd3c-16b7e179fd7d.png",
+        "original": ".build/expansion-art-originals/precision-retry.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2405194,
+      "sha256": "59446a7ad0bfc74c9a54c4cfbd61d004711466b55a86f703384ea7e546336bc3",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "parry-pressure",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. Two original armored duelists face off in a bamboo courtyard at dusk. Foreground fighter deflects a downward blade with a single golden spark while the opponent is visibly leaning off balance, stance cracked through body pose. Strong diagonals, warm lanterns and violet mist; a tangible sword clash, no magical UI meters.",
+      "status": "generated",
+      "destination": "public/art/recipes/parry-pressure.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-09be7023-0290-421b-9768-5e1b3176554b.png",
+        "original": ".build/expansion-art-originals/parry-pressure.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2291550,
+      "sha256": "44d4bdc70950e814e43d5f0e0e47140fa7ca48fe4c19b90f2333b4b6bc167a16",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "ability-gated-exploration",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A cutaway ancient cavern with two connected routes. A small original teal-cloaked explorer who has just acquired a grappling gauntlet crosses a gap toward a high locked garden gate, a lower previously visited tunnel visible below. Large hook, anchor and reachable new path convey a traversal upgrade unlocking access, violet crystals and warm lamps.",
+      "status": "generated",
+      "destination": "public/art/recipes/ability-gated-exploration.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-7d5f6f48-b159-4e78-b2ab-0d676b5e8f61.png",
+        "original": ".build/expansion-art-originals/ability-gated-exploration.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2527606,
+      "sha256": "ddb9ca440f9a70ef9b308ede50940e2fa546bcf4851809894e54718bb11d5028",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "elemental-team-combos",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. Three original adventurers cooperate on a ruined stone bridge: a blue water stream wets a large stone guardian, a second character channels gold lightning into the wet surface, and a third raises a protective earth slab. Large readable linked effects, no copied characters, confident ink contours and a coherent fantasy battlefield.",
+      "status": "generated",
+      "destination": "public/art/recipes/elemental-team-combos.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-adc9cdd7-8b7d-467f-83f4-7eaeaccc810e.png",
+        "original": ".build/expansion-art-originals/elemental-team-combos.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2553566,
+      "sha256": "3953b3badd8f3698d5139a07c52b55383fe58a83ee03011e2a1bc00462e095d1",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "settlement-weather",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A dense miniature woodland settlement beneath an immense storm cloud, sawmill, food store and warm lit houses around a central hearth. Small original villagers rush wood crates under shelter as heavy rain approaches. Visible competing demands of expanding construction and keeping a full hearth alive, dusty teal forest and amber fire.",
+      "status": "generated",
+      "destination": "public/art/recipes/settlement-weather.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-5524ec5e-70d8-4a42-b5b8-21b8acdcccda.png",
+        "original": ".build/expansion-art-originals/settlement-weather.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2555606,
+      "sha256": "ec6ad5e4dc7a379c43b97c020d83e00071acf9236cf597fa7b0bbf4d6f93bc66",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "thermal-colony",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. Cross-section underground colony inside a research table terrarium. At left frozen ice chambers, center warm inhabited greenhouse and sleeping quarters, right overheated industrial furnace, with clearly routed brass coolant pipes joining heat exchangers. A tiny worker adjusts a valve; color zones show thermal contrast through actual scenery not interface.",
+      "status": "generated",
+      "destination": "public/art/recipes/thermal-colony.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-af9fe4e3-301d-4837-bc30-fa5a0d9ca76f.png",
+        "original": ".build/expansion-art-originals/thermal-colony.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2413422,
+      "sha256": "9d73b70364e7e69e2ca8b5fc0ddec60da49278626e4f12e3699d5586cb5a413f",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "knowledge-loop",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original astronomer in a tiny wooden observatory studies an open handwritten-but-unreadable star chart, with an hourglass and miniature orbital model of three planets showing different phases. A small launch boat points toward a hidden cave revealed by low tide on a nearby moon. Recurring astronomical cycle and newly learned route, warm brass and violet space.",
+      "status": "generated",
+      "destination": "public/art/recipes/knowledge-loop.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-f48b0aa3-685f-4334-b142-82153cad6862.png",
+        "original": ".build/expansion-art-originals/knowledge-loop.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2357956,
+      "sha256": "940b9dfcb82cd9c476b70c381d7252b825169ab95ac4588a94d4d3a82fb2b56b",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "language-deduction",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A research desk with two ancient stone tablets, a cloth market banner and illustrated notes. One tablet's simple original pictograms align with a scene of two robed merchants exchanging water vessels in a courtyard, connected by colored threads. A scholar hand matches a wooden token to a repeated symbol. Invented pictograms, no real words or UI.",
+      "status": "generated",
+      "destination": "public/art/recipes/language-deduction.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-cae8f5c2-c773-4624-b386-72615847a71f.png",
+        "original": ".build/expansion-art-originals/language-deduction.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2254426,
+      "sha256": "13b06eab6445a47008d3b09b658433fe3c6fd5bec617683af9654b03384a55e8",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "documents-economy",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original border inspection desk at dusk, large passport with a painted face but no text, separate permit and a stamp held above them. Through the window a queue waits; at right a small open household coin box and bread, medicine and a family silhouette photograph show financial consequence. Paper discrepancies visually obvious in seal shapes.",
+      "status": "generated",
+      "destination": "public/art/recipes/documents-economy.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-c6fb679b-6ca8-4359-a8bd-9187c76aafa4.png",
+        "original": ".build/expansion-art-originals/documents-economy.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 1869714,
+      "sha256": "b9e10c6d34c1760c315b6fd1aee21b0fcc118a49dea02b3052697f686a715163",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "stealth-systemic-solutions",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A vertical cutaway mansion scene. A small original masked infiltrator on a chandelier chooses between a dark ventilation passage and a brightly guarded staircase; below, spilled oil beside a suspended lamp offers an environmental distraction. Warm windows against teal shadows, strong route geometry, no copied characters or brand iconography.",
+      "status": "generated",
+      "destination": "public/art/recipes/stealth-systemic-solutions.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-5d2c796c-b4a3-46d3-a92f-ce0ceba483e8.png",
+        "original": ".build/expansion-art-originals/stealth-systemic-solutions.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2096514,
+      "sha256": "fb10f6b8de1f7206fc4cd38df82b6a0b1c82a36e6dea4d14fca8913136f56f31",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "deck-market-economy",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A luxurious research-room tabletop card market. Several distinct face-up piles of original pictorial cards depict a coin, workshop, farmland and castle; a hand buys a workshop card with brass coins and slides it into a growing deck. Clear exchange and future deck growth, ivory card faces, muted teal velvet and warm gold lamps, no writing.",
+      "status": "generated",
+      "destination": "public/art/recipes/deck-market-economy.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-11874b4a-c4d1-4066-85ee-5e121517f99e.png",
+        "original": ".build/expansion-art-originals/deck-market-economy.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2105416,
+      "sha256": "93551d1174b1f2da9fb855281823b0dc67a8c367c41f882363408836fd297cf1",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "bid-and-retreat",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original tabletop competition for three miniature stone bridges. Large ivory cards are placed facedown near the bridges, a small red betting cube and rising stacks of brass stakes at center. One hand pulls its cards back while another adds a coin, visibly showing withdrawal versus raising. Dusky velvet gaming room, no numbers or letters.",
+      "status": "generated",
+      "destination": "public/art/recipes/bid-and-retreat.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-85a99456-e87c-4963-932c-83a8920a8443.png",
+        "original": ".build/expansion-art-originals/bid-and-retreat.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 1994038,
+      "sha256": "17df5954d2be0f2682297fc2b2da5b4763b1026b57d97c74c5eef582ea02bfa9",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "draft-auto-battle",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original miniature tactical arena in a warm research room. On a foreground brass recruitment shelf stand five different fantasy figurines, three matching small knights combine into a larger armored champion while a hand places it onto a hexagonal stone battlefield. Opposing tiny teams fight in background. Distinct recruit-combine-deploy composition, no official heroes.",
+      "status": "generated",
+      "destination": "public/art/recipes/draft-auto-battle.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-00deacff-193d-4c26-ae10-a0a4d56b670b.png",
+        "original": ".build/expansion-art-originals/draft-auto-battle.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2189116,
+      "sha256": "8c341583321469b66ea232a4aca8d91249d8846f8731e18356d3f3c43b8a640a",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "lane-objective-pressure",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An overhead three-quarter miniature valley battlefield with three curving lanes connecting two walled fortresses, small waves of foot soldiers, defensive towers and a large neutral crystal shrine in the river center. Two original teams visibly split between holding lanes and contesting shrine. Clear geography, warm gold versus muted teal units, no logos or UI.",
+      "status": "generated",
+      "destination": "public/art/recipes/lane-objective-pressure.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-2e1580f5-7085-4487-9d4d-9f48ad80f469.png",
+        "original": ".build/expansion-art-originals/lane-objective-pressure.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2510990,
+      "sha256": "29cf0d0636ec619f564ab9ac7b960b16b9de8ae01896a7675e875c998cbccf66",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "team-ability-breach",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original tactical team breaches a fortified courtyard. One teammate throws a curved smoke canister obscuring a doorway, a second projects a short teal barrier while the third moves behind cover toward a brass objective device. Readable smoke, cover, entry route and cooperation, no copied guns or characters, cel-painted brick and violet dusk.",
+      "status": "generated",
+      "destination": "public/art/recipes/team-ability-breach.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-d710b1dd-60d6-4144-a919-95a58c9689dc.png",
+        "original": ".build/expansion-art-originals/team-ability-breach.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2076696,
+      "sha256": "e77e40109f939a52410a2a74726c0a6aeec9effb28a2d4de5c1d8f40f1de737c",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "cooperative-logistics",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. Three original aproned workers in a busy traveling kitchen. Left chef chops vegetables, center carrier passes a pot across a narrow gap, right chef plates food beside a waiting serving bell, with a conspicuous conveyor and a stove threatening to boil over. Each task spatially separate but linked; warm copper cookware, teal cabinets, no text.",
+      "status": "generated",
+      "destination": "public/art/recipes/cooperative-logistics.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-68f1ad52-d78d-48a3-9d7e-530f669b1efa.png",
+        "original": ".build/expansion-art-originals/cooperative-logistics.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2378036,
+      "sha256": "3406fb88d2c8dbd301a02e8e2ed81f51a0403277d3d88e8f3fb15c10cd4d7fba",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "survival-expedition",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A cozy timber base at the edge of a stormy pine forest. Foreground chest holds sorted wood, stone and dried food; two original explorers equip a rope, lantern and pickaxe beside a map while a bridge leads away into distant mountains. Visible preparation and protected home contrasting with uncertain expedition, warm cabin light, no official character.",
+      "status": "generated",
+      "destination": "public/art/recipes/survival-expedition.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-49b183dc-7637-41fd-ac14-bc8aa050f94a.png",
+        "original": ".build/expansion-art-originals/survival-expedition.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1671,
+      "height": 941,
+      "bytes": 2453534,
+      "sha256": "0605e0ac2ca47f0140853e459c0008b2a73050a9ae013cba60ca1c1676c1dab7",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "social-deduction-vote",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. A round discussion table in an original brass-and-teal starship common room. Six distinct small humanoid crew members point toward a central pile of voting tokens; through a glass partition one shadowy figure hides near a severed cable. Social suspicion, conflicting gestures and secret action, no copied astronaut design or text.",
+      "status": "generated",
+      "destination": "public/art/recipes/social-deduction-vote.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-c85c5dcc-37e3-4a56-a6bf-eb11992e82f6.png",
+        "original": ".build/expansion-art-originals/social-deduction-vote.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2160426,
+      "sha256": "a9d2820ab436e15c7d359b879e09c91b327335fe68c70bbd9edf788029c2d9a3",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "rhythm-performance",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original rhythm performance stage made of ivory, brass and violet velvet. Two luminous batons strike staggered floating crystal targets arriving along three curved musical trails, while a mechanical metronome and glowing struck fragments show timing. A performer silhouette and readable target rhythm, no familiar game interface, no numbers.",
+      "status": "generated",
+      "destination": "public/art/recipes/rhythm-performance.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-c8c8dcbd-6146-468b-9ca3-465d95193edf.png",
+        "original": ".build/expansion-art-originals/rhythm-performance.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1671,
+      "height": 941,
+      "bytes": 2187412,
+      "sha256": "55cd1ff22d0a9771a7aaa704a97619a4c475c7eb6daaaa698c8ac475d694c321",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    },
+    {
+      "id": "dialogue-skill-checks",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay combination recipe illustration for a website card, not official game art. One beautifully drawn full-bleed 16:9 landscape scene. Early-2000s Japanese PC game cel illustration matching attached references: thick confident dark ink contours, crisp hand-painted color, 2–3 hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red, old gold. Rich tangible scenery, layered foreground/middle/backdrop, readable main mechanism at 320px wide, essential subjects inside central 80%. No text, numbers, logo, watermark, UI, border, panels or collage. No existing game characters or recognizable official composition. An original detective seated across from a witness in a dim seaside cafe. Between them a small brass dice pair and a notebook with pictorial clue sketches lie on the table; behind the detective translucent original silhouettes of logic, empathy and courage whisper different advice. Expressive faces and visible conflicting inner voices, no copied characters or words.",
+      "status": "generated",
+      "destination": "public/art/recipes/dialogue-skill-checks.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-8a3b2e0d-4f37-4780-b133-2a1392885163.png",
+        "original": ".build/expansion-art-originals/dialogue-skill-checks.png"
+      },
+      "references": [
+        "design/archive/original-game-art/peglin.webp",
+        "public/art/recipes/growth-reinvestment.webp"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2042440,
+      "sha256": "25cb0a67c3a857579a225cc96a48c3b21f2347bdd369620c9b3628d93e149263",
+      "review": "原始图与320×180卡面均实际查看；原创组合示意，无官方角色或标识。"
+    }
+  ]
+}

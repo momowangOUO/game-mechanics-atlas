@@ -1,29 +1,13 @@
-import Compare from "@/components/Compare";
-import { games, getGame } from "@/lib/knowledge";
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import { CompareQuery } from "@/components/QueryEntrypoints";
 
-export const metadata = { title: "游戏对比" };
+export const metadata: Metadata = { title: "游戏对比" };
 
-export default async function ComparePage({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const query = await searchParams;
-  const leftId = typeof query.left === "string" ? query.left : undefined;
-  const rightId = typeof query.right === "string" ? query.right : undefined;
-  const left = getGame(leftId ?? "") ?? getGame("balatro") ?? games[0];
-  const requestedRight = getGame(rightId ?? "") ?? getGame("slay-the-spire");
-  const right =
-    requestedRight && requestedRight.id !== left.id
-      ? requestedRight
-      : [getGame("slay-the-spire"), getGame("balatro"), ...games].find(
-          (game) => game && game.id !== left.id,
-        )!;
+export default function Page() {
   return (
-    <Compare
-      key={`${left.id}:${right.id}`}
-      initialLeft={left.id}
-      initialRight={right.id}
-    />
+    <Suspense fallback={<p role="status">正在打开研究工具…</p>}>
+      <CompareQuery />
+    </Suspense>
   );
 }

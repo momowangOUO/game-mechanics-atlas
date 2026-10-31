@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "next dev --webpack --hostname 127.0.0.1",
     "build": "node scripts/next-build.mjs",
-    "start": "next start --hostname 127.0.0.1",
-    "typecheck": "tsc --noEmit",
+    "build:pages": "node scripts/next-build.mjs --pages",
+    "start": "node scripts/static-preview.mjs",
+    "preview": "node scripts/static-preview.mjs",
+    "preview:pages": "node scripts/static-preview.mjs --base-path=/game-mechanics-atlas",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:readlink": "node --test scripts/readlink-compat.test.mjs",
+    "test:static": "node --test scripts/static-preview.test.mjs",
     "test:e2e": "playwright test",
     "preview:design": "node scripts/serve-design.mjs"
   },

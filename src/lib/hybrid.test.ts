@@ -41,8 +41,8 @@ describe('rule-driven design hypotheses',()=>{
   it('finds a documented two-mechanic subset but never validates an entire recipe from partial evidence',()=>{
     const complete=analyzeHybrid({...base,core:'score-threshold',mechanics:['rule-modifier']});
     expect(complete.references.find(r=>r.gameId==='balatro')).toMatchObject({complete:true,missingMechanicIds:[]});
-    const partial=analyzeHybrid({...base,core:'score-threshold',mechanics:['rule-modifier','stacking-effects']});
-    expect(partial.references.find(r=>r.gameId==='balatro')).toMatchObject({complete:false,missingMechanicIds:['stacking-effects']});
+    const partial=analyzeHybrid({...base,core:'score-threshold',mechanics:['rule-modifier','parry']});
+    expect(partial.references.find(r=>r.gameId==='balatro')).toMatchObject({complete:false,missingMechanicIds:['parry']});
     const few=analyzeHybrid({...base,mechanics:[]});
     expect(few.valid).toBe(true);expect(few.warnings.join(' ')).toMatch(/单个|一个|不足/);
   });

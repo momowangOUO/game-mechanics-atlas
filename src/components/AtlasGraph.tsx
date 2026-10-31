@@ -31,6 +31,11 @@ import {
 } from "@/lib/knowledge";
 import { EmptyState, PageHead, Window } from "./Primitives";
 import { useUI } from "./Providers";
+import {
+  dimensionGrid,
+  neighborhoodGrid,
+  listGameScopes,
+} from "@/lib/graph-layout";
 
 type GraphNode = Node<
   {
@@ -96,50 +101,34 @@ function GraphCanvas({
   mode: string;
   onSelect: (id: string) => void;
 }) {
-  const initialNodes = useMemo<GraphNode[]>(
-    () =>
-      ids.map((id, index) => {
-        const mechanic = getMechanic(id)!;
-        const dimension = dimensions.find((d) => d.id === mechanic.dimension)!;
-        let x: number, y: number;
-        if (mode === "all") {
-          const group = dimensions.findIndex(
-            (d) => d.id === mechanic.dimension,
-          );
-          const inside = ids
-            .slice(0, index)
-            .filter(
-              (other) => getMechanic(other)?.dimension === mechanic.dimension,
-            ).length;
-          x = (group % 3) * 610 + (inside % 3) * 190;
-          y = Math.floor(group / 3) * 450 + Math.floor(inside / 3) * 120;
-        } else if (id === focused || ids.length === 1) {
-          x = 425;
-          y = 275;
-        } else {
-          const peers = ids.filter((other) => other !== focused);
-          const angle =
-            -Math.PI / 2 +
-            (peers.indexOf(id) * Math.PI * 2) / Math.max(peers.length, 1);
-          x = 425 + 325 * Math.cos(angle);
-          y = 275 + 205 * Math.sin(angle);
-        }
-        return {
-          id,
-          type: "mechanic",
-          position: { x, y },
-          data: {
-            label: mechanic.name,
-            dimension: dimension.name,
-            color: dimension.color,
-            focused: id === focused,
-            onSelect,
-          },
-          ariaRole: "group",
-        };
-      }),
-    [ids, focused, mode, onSelect],
-  );
+  const initialNodes = useMemo<GraphNode[]>(() => {
+    const layout =
+      mode === "all"
+        ? dimensionGrid(
+            ids,
+            dimensions.map((d) => d.id),
+            (id) => getMechanic(id)!.dimension,
+          )
+        : neighborhoodGrid(ids, focused);
+    return ids.map((id) => {
+      const mechanic = getMechanic(id)!;
+      const dimension = dimensions.find((d) => d.id === mechanic.dimension)!;
+      const { x, y } = layout.get(id)!;
+      return {
+        id,
+        type: "mechanic",
+        position: { x, y },
+        data: {
+          label: mechanic.name,
+          dimension: dimension.name,
+          color: dimension.color,
+          focused: id === focused,
+          onSelect,
+        },
+        ariaRole: "group",
+      };
+    });
+  }, [ids, focused, mode, onSelect]);
   const [nodes, setNodes, onNodesChange] =
     useNodesState<GraphNode>(initialNodes);
   useEffect(() => {
@@ -368,18 +357,15 @@ export default function AtlasGraph({
                 );
               }}
             >
-              {scopes
-                .filter(
-                  (s) =>
-                    s.gameId === gameId &&
-                    (s.kind === "mode" ||
-                      s.id === getGame(gameId)?.defaultScopeId),
-                )
-                .map((scope) => (
-                  <option key={scope.id} value={scope.id}>
-                    {scope.label}
-                  </option>
-                ))}
+              {listGameScopes(
+                scopes,
+                gameId,
+                getGame(gameId)!.defaultScopeId,
+              ).map((scope) => (
+                <option key={scope.id} value={scope.id}>
+                  {scope.label}
+                </option>
+              ))}
             </select>
           </>
         )}

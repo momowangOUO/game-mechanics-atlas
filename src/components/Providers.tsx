@@ -15,6 +15,7 @@ import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { usePathname } from "next/navigation";
 import { games, genres, mechanics, recipes } from "@/lib/knowledge";
 import { SearchDataProvider } from "./SearchDataProvider";
+import { matchesCatalog } from "@/lib/catalog-search";
 
 type MotionPreference = "auto" | "full" | "reduced";
 type UIState = {
@@ -180,7 +181,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
     `${name} ${id} ${extra}`.toLocaleLowerCase().includes(normalized);
   const results = [
     ...mechanics
-      .filter((m) => matches(m.name, m.id, m.definition))
+      .filter((m) => matchesCatalog(m, query, m.definition))
       .slice(0, 5)
       .map((m) => ({
         name: m.name,
@@ -189,7 +190,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
         href: `/mechanics/${m.id}`,
       })),
     ...games
-      .filter((g) => matches(g.name, g.id, g.summary))
+      .filter((g) => matchesCatalog(g, query, g.summary))
       .slice(0, 4)
       .map((g) => ({
         name: g.name,

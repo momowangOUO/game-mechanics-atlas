@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import AtlasGraph from "@/components/AtlasGraph";
+import { Suspense } from "react";
+import { GraphQuery } from "@/components/QueryEntrypoints";
+
 export const metadata: Metadata = { title: "交互机制图谱" };
-export default async function GraphPage({
-  searchParams,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-}) {
-  const params = await searchParams;
+
+export default function Page() {
   return (
-    <AtlasGraph
-      initialFocus={typeof params.focus === "string" ? params.focus : ""}
-      initialGame={typeof params.game === "string" ? params.game : ""}
-    />
+    <Suspense fallback={<p role="status">正在打开研究工具…</p>}>
+      <GraphQuery />
+    </Suspense>
   );
 }

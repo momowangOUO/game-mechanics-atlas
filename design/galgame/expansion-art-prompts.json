@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "scope": "Representative stage before user switched game artwork to official representative images. Factorio draft is historical; automation-logistics recipe remains in use.",
+  "assets": [
+    {
+      "id": "factorio",
+      "prompt": "Use case: stylized-concept. Asset type: one original gameplay-mechanic illustration for an existing game research website card, never official game art. Wide landscape 16:9. Match the attached reference images' early-2000s Japanese PC game cel illustration: thick confident dark ink contours, crisp hand-painted color, two to three hard-edged shadow tones, parchment ivory, dusty violet, muted teal, brick red and old gold, detailed drawn scenery and tactile materials. Full bleed, central 80% contains essential subjects, main mechanic readable at 320 pixels. Create an original miniature automated factory on a dark wooden research table at twilight: a sweeping conveyor belt brings copper ore from an open quarry at left to three large teal furnaces, then brass articulated inserter arms transfer plates into an assembly machine at center-right, while another belt carries finished gears back toward foreground storage. Parallel belts, branching splitter and visible production bottleneck, a tiny original engineer beside a blueprint, warm furnace gold contrasted with blue-violet windows. Factory logistics and transformation dominate, not character portrait. No lettering, no numbers, no logo, no UI, no border, no collage, no official characters.",
+      "status": "historical-generated-not-in-use",
+      "destination": "design/archive/original-game-art/factorio-initial-draft.webp",
+      "source": {
+        "tool": "built-in image_gen.imagegen",
+        "file": "exec-40f33bb2-b8c6-4253-99d6-29907592b15e.png",
+        "original": ".build/expansion-art-originals/factorio.png"
+      },
+      "references": [
+        "public/art/recipes/growth-reinvestment.webp",
+        "design/archive/original-game-art/peglin.webp"
+      ]
+    },
+    {
+      "id": "automation-logistics",
+      "status": "generated-in-use",
+      "record": "design/galgame/expansion-recipe-prompts.json"
+    }
+  ]
+}

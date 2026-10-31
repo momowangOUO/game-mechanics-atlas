@@ -522,7 +522,7 @@
 .assistant-small {
   position: relative;
   overflow: hidden;
-  background: #292337 url("/art/room-dusk.webp") 60% 45% / cover !important;
+  background: #292337 var(--room-dusk-image) 60% 45% / cover !important;
 }
 .assistant-small:before {
   content: "";

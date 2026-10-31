@@ -22,15 +22,11 @@ import {
   Window,
 } from "./Primitives";
 import styles from "./Compare.module.css";
+import { evidenceLabels } from "@/lib/evidence-labels";
 
 type Side = { gameId: string; scopeId: string };
 type View = "mechanics" | "structure" | "heat";
 const pageSize = 12;
-const evidenceLabels = {
-  official_description: "官方介绍观察",
-  editorial_analysis: "编辑分析",
-  unverified: "尚待核验",
-};
 
 function resolvePair(leftId?: string, rightId?: string): [Game, Game] {
   const left = getGame(leftId ?? "") ?? getGame("balatro") ?? games[0];

@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { useUI } from "./Providers";
 import { dimensionArt, maidStates, type MaidState } from "@/lib/art";
 import type { DimensionId } from "@/lib/model";
+import { publicAssetPath } from "@/lib/paths";
 
 type ArtProps = {
   src: string;
@@ -52,7 +53,7 @@ function ArtContent({
     <img
       ref={imageRef}
       className={className}
-      src={src}
+      src={publicAssetPath(src)}
       alt={alt}
       width={width}
       height={height}

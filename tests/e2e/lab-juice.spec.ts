@@ -1,7 +1,8 @@
+import { gotoApp } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
 
 async function openLab(page: Page, path = "/lab?recipe=aimed-buildcraft") {
-  await page.goto(path);
+  await gotoApp(page, path);
   await expect(page.locator("html")).toHaveAttribute(
     "data-effects",
     /full|reduced/,
@@ -248,6 +249,11 @@ test("compact stale reports preserve every result section and the update action 
     "调整与边界",
   ]) {
     await page.getByRole("tab", { name, exact: true }).click();
+    if (name === "相似参照") {
+      await expect(
+        page.getByRole("navigation", { name: "报告分区" }).getByRole("button"),
+      ).toHaveText(["参照案例", "匹配机制", "未匹配项", "口径说明"]);
+    }
     await fitsTaskViewport(page);
     const sections = page
       .getByRole("navigation", { name: "报告分区" })

@@ -1,10 +1,10 @@
 {
-  "buildId": "2WkLkVfiEGwEgGwg9UcPJ",
+  "buildId": "fAl6W-HEbWqpg5aJMGgyi",
   "path": "docs/game-artist/motion/research-session.mp4",
-  "sha256": "9d3d56ec747effd3c1d9bb0baa1528efb9822d9507fc2a203418a6b0b4dffac5",
+  "sha256": "25e4516590139507f31a9a782274095bda06d77b7a70501bb961a2dac8eaf549",
   "source": {
     "path": "docs/game-artist/motion/research-session.webm",
-    "sha256": "bd0ed04613cad40736aaf55d67d387518e4827a455b4bff5ec3c2f330ded4cc0"
+    "sha256": "bb7a70347b2c9b33826a51235ef0549df54396f3673b3a04a6665340408030a7"
   },
   "codec": "h264",
   "profile": "High",
@@ -12,9 +12,9 @@
   "width": 1440,
   "height": 960,
   "frameRate": "25/1",
-  "frames": 341,
-  "durationSeconds": 13.64,
-  "bytes": 4350687,
+  "frames": 362,
+  "durationSeconds": 14.48,
+  "bytes": 4602074,
   "fastStart": true,
   "audio": false,
   "sourceMatches": {
@@ -25,8 +25,8 @@
     "duration": true
   },
   "playback": {
-    "durationSeconds": 13.64,
-    "totalFrames": 341,
+    "durationSeconds": 14.48,
+    "totalFrames": 362,
     "droppedFrames": 0,
     "ended": true
   },

@@ -1,5 +1,7 @@
 # 项目进度
 
+最新阶段：静态改造及资料扩充已实现并通过本地验收，实际 Pages 创建请求因私有仓库套餐限制返回 422，尚未上线。当前状态以[静态版验收](static-expansion/verification.md)为准；下面保留此前已交付阶段的记录。
+
 网站文字已按 clear-natural-writing 重新审校，当前操作录屏已导出为 MP4 并更新播放器。完整范围、测试及播放结果见[本轮记录](copy-review/summary.md)。
 
 2026-10-31：已完成 Galgame 美术与演出升级。新增正式素材、当前构建截图、录屏及34项生产浏览器回归，详见[本轮验收](game-artist/verification.md)。以下首版记录保留为历史。

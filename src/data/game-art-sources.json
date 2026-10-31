@@ -1,0 +1,482 @@
+{
+  "sekiro": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/814380/",
+    "publisher": "FromSoftware, Inc.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg"
+  },
+  "hollow-knight": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/367520/",
+    "publisher": "Team Cherry",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/capsule_616x353.jpg"
+  },
+  "dark-souls-3": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/374320/",
+    "publisher": "FromSoftware, Inc.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_616x353.jpg"
+  },
+  "monster-hunter-world": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/582010/",
+    "publisher": "CAPCOM Co., Ltd.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582010/capsule_616x353.jpg"
+  },
+  "celeste": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/504230/",
+    "publisher": "Maddy Makes Games Inc., Extremely OK Games, Ltd.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg"
+  },
+  "ftl": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/212680/",
+    "publisher": "Subset Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/212680/capsule_616x353.jpg"
+  },
+  "into-the-breach": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/590380/",
+    "publisher": "Subset Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/590380/capsule_616x353.jpg"
+  },
+  "doom-eternal": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/782330/",
+    "publisher": "id Software",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/capsule_616x353.jpg"
+  },
+  "xcom-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/268500/",
+    "publisher": "Firaxis Games, Feral Interactive (Mac), Feral Interactive (Linux)",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268500/capsule_616x353.jpg"
+  },
+  "age-of-empires-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/813780/",
+    "publisher": "World's Edge, Forgotten Empires, CaptureAge, Tantalus Media, Wicked Witch, Feral Interactive",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/813780/capsule_616x353.jpg"
+  },
+  "against-the-storm": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1336490/",
+    "publisher": "Eremite Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336490/capsule_616x353.jpg"
+  },
+  "frostpunk": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/323190/",
+    "publisher": "11 bit studios",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323190/capsule_616x353.jpg"
+  },
+  "factorio": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/427520/",
+    "publisher": "Wube Software LTD.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/capsule_616x353.jpg"
+  },
+  "satisfactory": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/526870/",
+    "publisher": "Coffee Stain Studios",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/526870/capsule_616x353.jpg"
+  },
+  "genshin-impact": {
+    "kind": "official",
+    "sourceUrl": "https://genshin.hoyoverse.com/en-us/home",
+    "publisher": "HoYoverse",
+    "imageUrl": "https://upload-static.hoyoverse.com/hk4e/upload/fb/common.jpg"
+  },
+  "civilization-6": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/289070/",
+    "publisher": "Firaxis Games, Aspyr (Mac), Aspyr (Linux)",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/capsule_616x353.jpg"
+  },
+  "dyson-sphere-program": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1366540/",
+    "publisher": "Youthcat Studio",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1366540/capsule_616x353.jpg"
+  },
+  "dwarf-fortress": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/975370/",
+    "publisher": "Bay 12 Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/975370/capsule_616x353.jpg"
+  },
+  "oxygen-not-included": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/457140/",
+    "publisher": "Klei Entertainment",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457140/capsule_616x353.jpg"
+  },
+  "rimworld": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/294100/",
+    "publisher": "Ludeon Studios",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/294100/capsule_616x353.jpg"
+  },
+  "cities-skylines": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/255710/",
+    "publisher": "Colossal Order",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/capsule_616x353.jpg"
+  },
+  "baba-is-you": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/736260/",
+    "publisher": "Hempuli Oy",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/736260/capsule_616x353.jpg"
+  },
+  "portal-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/620/",
+    "publisher": "Valve",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/capsule_616x353.jpg"
+  },
+  "potion-craft": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1210320/",
+    "publisher": "niceplay games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1210320/capsule_616x353.jpg"
+  },
+  "outer-wilds": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/753640/",
+    "publisher": "Mobius Digital",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/capsule_616x353.jpg"
+  },
+  "the-witness": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/210970/",
+    "publisher": "Thekla, Inc.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/210970/capsule_616x353.jpg"
+  },
+  "return-of-the-obra-dinn": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/653530/",
+    "publisher": "Lucas Pope",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/653530/capsule_616x353.jpg"
+  },
+  "chants-of-sennaar": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1931770/",
+    "publisher": "Rundisc",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1931770/capsule_616x353.jpg"
+  },
+  "papers-please": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/239030/",
+    "publisher": "Lucas Pope",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239030/capsule_616x353.jpg"
+  },
+  "dishonored-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/403640/",
+    "publisher": "Arkane Studios",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/403640/capsule_616x353.jpg"
+  },
+  "world-of-warcraft": {
+    "kind": "official",
+    "sourceUrl": "https://worldofwarcraft.blizzard.com/en-us/",
+    "publisher": "Blizzard Entertainment",
+    "imageUrl": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltb5a24e5ab1e2cfb0/6a88e3589b942efdb6f74110/wow-thumbnail-homepage.jpg"
+  },
+  "marvel-snap": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1997040/",
+    "publisher": "Second Dinner Studios, Inc.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1997040/capsule_616x353.jpg"
+  },
+  "luck-be-a-landlord": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1404850/",
+    "publisher": "TrampolineTales",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1404850/capsule_616x353.jpg"
+  },
+  "monster-train": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1102190/",
+    "publisher": "Shiny Shoe",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1102190/capsule_616x353.jpg"
+  },
+  "starcraft-2": {
+    "kind": "official",
+    "sourceUrl": "https://starcraft2.blizzard.com/en-us/",
+    "publisher": "Blizzard Entertainment",
+    "imageUrl": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltbe2068a317e02d9f/6966bac0fb2fd910dbda4a26/og_image.webp"
+  },
+  "dota-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/570/",
+    "publisher": "Valve",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg"
+  },
+  "counter-strike-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/730/",
+    "publisher": "Valve",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg"
+  },
+  "dominion": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1131620/",
+    "publisher": "Temple Gates Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1131620/capsule_616x353.jpg"
+  },
+  "deep-rock-galactic": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/548430/",
+    "publisher": "Ghost Ship Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/548430/capsule_616x353.jpg"
+  },
+  "overcooked-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/728880/",
+    "publisher": "Ghost Town Games Ltd., Team17",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728880/capsule_616x353.jpg"
+  },
+  "dont-starve-together": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/322330/",
+    "publisher": "Klei Entertainment",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322330/capsule_616x353.jpg"
+  },
+  "league-of-legends": {
+    "kind": "official",
+    "sourceUrl": "https://www.leagueoflegends.com/en-us/",
+    "publisher": "Riot Games",
+    "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/565197caf987af4e4da307df6e2b235a28714736-837x469.jpg?accountingTag=LoL?w=1200&h=630&fm=webp&fit=crop&crop=center"
+  },
+  "subnautica": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/264710/",
+    "publisher": "Unknown Worlds Entertainment",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/capsule_616x353.jpg"
+  },
+  "valorant": {
+    "kind": "official",
+    "sourceUrl": "https://playvalorant.com/en-us/",
+    "publisher": "Riot Games",
+    "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/cbf4460132cdfeb2a97fad5f9dd25ba0bc058f76-128x128.png?accountingTag=VAL?w=1200&h=630&fm=webp&fit=crop&crop=center"
+  },
+  "teamfight-tactics": {
+    "kind": "official",
+    "sourceUrl": "https://teamfighttactics.leagueoflegends.com/en-us/",
+    "publisher": "Riot Games",
+    "imageUrl": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d63adacd93e313c1e61bbeb2eb37d8c4ca85848d-1920x1080.jpg?accountingTag=TFT?w=1200&h=630&fm=webp&fit=crop&crop=center"
+  },
+  "valheim": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/892970/",
+    "publisher": "Iron Gate AB",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/capsule_616x353.jpg"
+  },
+  "project-zomboid": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/108600/",
+    "publisher": "The Indie Stone",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/capsule_616x353.jpg"
+  },
+  "among-us": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/945360/",
+    "publisher": "Innersloth",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/945360/capsule_616x353.jpg"
+  },
+  "hunt-showdown-1896": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/594650/",
+    "publisher": "Crytek",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/capsule_616x353.jpg"
+  },
+  "beat-saber": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/620980/",
+    "publisher": "Beat Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620980/capsule_616x353.jpg"
+  },
+  "lethal-company": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1966720/",
+    "publisher": "Zeekerss",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg"
+  },
+  "splatoon-3": {
+    "kind": "official",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/splatoon-3-switch/",
+    "publisher": "Nintendo",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000046395/94a4095cda06c4d85c637d1af451979f9933302b6b17174d97c45de7a68584a2"
+  },
+  "hearthstone": {
+    "kind": "official",
+    "sourceUrl": "https://hearthstone.blizzard.com/en-us/",
+    "publisher": "Blizzard Entertainment",
+    "imageUrl": "https://d39zum0jwvcigt.cloudfront.net/_next/static/images/default-475d770302527dbab7708dca2af05afd.jpg"
+  },
+  "disco-elysium": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/632470/",
+    "publisher": "ZA/UM",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632470/capsule_616x353.jpg"
+  },
+  "noita": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/881100/",
+    "publisher": "Nolla Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/capsule_616x353.jpg"
+  },
+  "binding-of-isaac-rebirth": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/250900/",
+    "publisher": "Nicalis, Inc., Edmund McMillen",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/capsule_616x353.jpg"
+  },
+  "animal-crossing-new-horizons": {
+    "kind": "official",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+    "publisher": "Nintendo",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a"
+  },
+  "mario-kart-8-deluxe": {
+    "kind": "official",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/",
+    "publisher": "Nintendo",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000000153/de697f487a36d802dd9a5ff0341f717c8486221f2f1219b675af37aca63bc453"
+  },
+  "path-of-exile": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/238960/",
+    "publisher": "Grinding Gear Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/238960/capsule_616x353.jpg"
+  },
+  "caves-of-qud": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/333640/",
+    "publisher": "Freehold Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/333640/capsule_616x353.jpg"
+  },
+  "balatro": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/2379780/Balatro/",
+    "publisher": "LocalThunk",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/capsule_616x353.jpg"
+  },
+  "peglin": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1296610/Peglin/",
+    "publisher": "Red Nexus Games Inc.",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296610/capsule_616x353.jpg"
+  },
+  "slay-the-spire": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+    "publisher": "Mega Crit",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/capsule_616x353.jpg"
+  },
+  "hades": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1145360/Hades/",
+    "publisher": "Supergiant Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_616x353.jpg"
+  },
+  "cult-of-the-lamb": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/",
+    "publisher": "Massive Monster",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1313140/capsule_616x353.jpg"
+  },
+  "backpack-battles": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/2427700/Backpack_Battles/",
+    "publisher": "PlayWithFurcifer",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2427700/capsule_616x353.jpg"
+  },
+  "loop-hero": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1282730/Loop_Hero/",
+    "publisher": "Four Quarters",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1282730/capsule_616x353.jpg"
+  },
+  "vampire-survivors": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1794680/Vampire_Survivors/",
+    "publisher": "poncle",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1794680/capsule_616x353.jpg"
+  },
+  "risk-of-rain-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
+    "publisher": "Hopoo Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/capsule_616x353.jpg"
+  },
+  "inscryption": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1092790/Inscryption/",
+    "publisher": "Daniel Mullins Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/capsule_616x353.jpg"
+  },
+  "stardew-valley": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "publisher": "ConcernedApe",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg"
+  },
+  "minecraft": {
+    "kind": "official",
+    "sourceUrl": "https://www.minecraft.net/en-us/about-minecraft",
+    "publisher": "Mojang Studios",
+    "imageUrl": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/About-Minecraft_Featured-Image-0_570x321.jpg"
+  },
+  "tetris": {
+    "kind": "official",
+    "sourceUrl": "https://tetris.com/about",
+    "publisher": "Alexey Pajitnov（原始设计者）",
+    "imageUrl": "https://www.datocms-assets.com/145957/1733342653-tetris_keyart_v1.png?auto=format&fit=max&w=1200"
+  },
+  "cookie-clicker": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1454400/Cookie_Clicker/",
+    "publisher": "Orteil, DashNet",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1454400/capsule_616x353.jpg"
+  },
+  "dead-cells": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/588650/Dead_Cells/",
+    "publisher": "Motion Twin",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/588650/capsule_616x353.jpg"
+  },
+  "game-of-dice": {
+    "kind": "official",
+    "sourceUrl": "https://play.google.com/store/apps/details?id=com.joycity.god&hl=en_US",
+    "publisher": "JOYCITY Corp.",
+    "imageUrl": "https://webservice-cf.joycityglobal.com/web/god/images/v2/en/feature1.jpg"
+  },
+  "shape-of-dreams": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/2444750/Shape_of_Dreams/?l=schinese",
+    "publisher": "Lizard Smoothie",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2444750/capsule_616x353.jpg"
+  },
+  "rocket-league": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/252950/",
+    "publisher": "Psyonix / Epic Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252950/capsule_616x353.jpg"
+  },
+  "osu": {
+    "kind": "official",
+    "sourceUrl": "https://osu.ppy.sh/home",
+    "publisher": "ppy",
+    "imageUrl": "https://assets.ppy.sh/logo-with-background.png"
+  },
+  "escape-from-tarkov": {
+    "kind": "official",
+    "sourceUrl": "https://www.battlestategames.com/",
+    "publisher": "Battlestate Games",
+    "imageUrl": "https://www.battlestategames.com/_nuxt/img/eft_banner.99b7dee.svg"
+  }
+}

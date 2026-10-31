@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "profile": "research-website",
-  "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
-  "contract_sha256": "f29a6825d190c0c4994544373d634d9009bea0dd32c0e14c74038de58687b511",
+  "build_id": "fAl6W-HEbWqpg5aJMGgyi",
+  "contract_sha256": "21dc94ae34141dffd82e7400794106b6924ea5fbef2720a4d718038bf0e025f7",
   "views": [
     {
       "id": "home-desktop",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/",
       "state": "home",
       "platform": "desktop",
@@ -21,7 +21,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-desktop.png",
-        "sha256": "3608a07d02ca12a3bc02091eee83c0533e6beb5f398360888a04658868f1f967"
+        "sha256": "4358915aef783afc9320b188380954f3d31cd8d48e2cf087ff0ecc171db0711a"
       },
       "viewport_rect": [
         0,
@@ -60,7 +60,7 @@
     },
     {
       "id": "home-mobile",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/",
       "state": "home",
       "platform": "phone",
@@ -75,7 +75,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-mobile.png",
-        "sha256": "688e061dab5e6993d59ee88e19548c07802ad7d0048cfc6e6da9b28812a59b1d"
+        "sha256": "4779db8ff35d19816fd3143d1912fe094f957e70726d6b0f05bc679f05deb83b"
       },
       "viewport_rect": [
         0,
@@ -114,7 +114,7 @@
     },
     {
       "id": "home-small",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/",
       "state": "home",
       "platform": "phone",
@@ -129,7 +129,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/home-small.png",
-        "sha256": "7f27d4abf4db83c5b77131e0850e45af66504467ffbbc05a3ca78c56949e4b57"
+        "sha256": "a7753f48a327da8396e5bb8589f9922b21ddecd01433cc01879491182725d34a"
       },
       "viewport_rect": [
         0,
@@ -168,7 +168,7 @@
     },
     {
       "id": "mechanic",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/mechanics/in-run-deck-growth",
       "state": "file",
       "platform": "desktop",
@@ -183,7 +183,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/mechanic.png",
-        "sha256": "e3d6a9c41d0308c35537b0c8ed19d3a054d45e5cd8fde94fa9705ea14285dde3"
+        "sha256": "2fe10a89bbfa592cbb7b687dd11d30c7c878059f516c089e98604e08a40009fa"
       },
       "viewport_rect": [
         0,
@@ -207,7 +207,7 @@
       "layout_measurements": {
         "root_scroll_extent": [
           0,
-          1851
+          2234
         ],
         "fullscreen_nested_scroll": false
       },
@@ -216,7 +216,7 @@
     },
     {
       "id": "game",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/games/balatro",
       "state": "file",
       "platform": "desktop",
@@ -231,7 +231,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/game.png",
-        "sha256": "75c8a2b36aaa4ba5970dd14af8237b18a8d787e388a543f2876777102be81baf"
+        "sha256": "fadb1485591037408937edf4869cf024bfe9b69931298245718e1de68cf7f7f5"
       },
       "viewport_rect": [
         0,
@@ -256,7 +256,106 @@
       "layout_measurements": {
         "root_scroll_extent": [
           0,
-          1381
+          2614
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "game-factorio",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
+      "screen": "/games/factorio",
+      "state": "file",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/game.png",
+        "sha256": "10939511266c046faaeaf79c14687b28eb24175e2488a53ae7c6b61ef96adba8"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/game-factorio.png",
+        "sha256": "d2e8be16dc29b8c26d1c56fe4c386573ddf1bfc0a29230c26d1d5716cffc3b77"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/games/factorio",
+        "steps": [
+          "进入 /games/factorio",
+          "执行 file 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "chapter-games",
+        "chapter-graph",
+        "game-factorio"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          2614
+        ],
+        "fullscreen_nested_scroll": false
+      },
+      "status": 200,
+      "errors": []
+    },
+    {
+      "id": "recipe-automation",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
+      "screen": "/lab?recipe=automation-logistics",
+      "state": "initial",
+      "platform": "desktop",
+      "layout": "landscape",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "target": {
+        "path": "design/galgame/targets/lab.png",
+        "sha256": "7a91e0a447f336641a33da2b1c1c4d2280a956a40b60ac90ff953c9d585a7f98"
+      },
+      "capture": {
+        "path": "docs/game-artist/runtime/recipe-automation.png",
+        "sha256": "7530ecd0f6e9e862165474e806f038d911008fb332147cd261333c2aaef2725b"
+      },
+      "viewport_rect": [
+        0,
+        0,
+        1440,
+        960
+      ],
+      "runtime_origin": {
+        "kind": "browser_runtime",
+        "entry": "/lab?recipe=automation-logistics",
+        "steps": [
+          "进入 /lab?recipe=automation-logistics",
+          "执行 initial 状态的真实页面操作"
+        ],
+        "environment": "Windows Edge headless; desktop browser with simulated viewport"
+      },
+      "visible_asset_ids": [
+        "maid-explain",
+        "chapter-lab",
+        "dimension-economy",
+        "recipe-automation-logistics"
+      ],
+      "layout_measurements": {
+        "root_scroll_extent": [
+          0,
+          469
         ],
         "fullscreen_nested_scroll": false
       },
@@ -265,7 +364,7 @@
     },
     {
       "id": "heat",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/heat",
       "state": "file",
       "platform": "desktop",
@@ -280,7 +379,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/heat.png",
-        "sha256": "eeb9fd643d856cfa9cf3a4872241b4b4921459dc56f3001691bbac42ff843637"
+        "sha256": "c43d32048bc65ac65fbaf5be58791f127a2a18aaa7559fd14efef0a19bf0bfd4"
       },
       "viewport_rect": [
         0,
@@ -304,7 +403,7 @@
       "layout_measurements": {
         "root_scroll_extent": [
           0,
-          1821
+          1861
         ],
         "fullscreen_nested_scroll": false
       },
@@ -313,7 +412,7 @@
     },
     {
       "id": "lab",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "initial",
       "platform": "desktop",
@@ -328,7 +427,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab.png",
-        "sha256": "71741933fb8b0e1ff9340e927f1935990094f4f09c30ed9f503f578b70c0f06d"
+        "sha256": "8b666960d5e1c37751ec2991b6d820bace55e567f7fb327f5ba0ca1bf9145d7f"
       },
       "viewport_rect": [
         0,
@@ -363,7 +462,7 @@
     },
     {
       "id": "lab-complete",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/lab",
       "state": "complete",
       "platform": "desktop",
@@ -378,7 +477,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-complete.png",
-        "sha256": "f24fd6460a9065387a0992e2dd7ac130f377a2dd04e72101902fde263ca4318d"
+        "sha256": "f73e2f55634b5cc52a1ddc3d9c1699e8d5d2a3edb9092f87aac7dac8fb52a137"
       },
       "viewport_rect": [
         0,
@@ -413,7 +512,7 @@
     },
     {
       "id": "lab-conflict",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "conflict",
       "platform": "desktop",
@@ -428,7 +527,7 @@
       },
       "capture": {
         "path": "docs/game-artist/runtime/lab-conflict.png",
-        "sha256": "ade3383914fd866dc0f2ac770a725ae36b757de28c2672839182557bd98ee956"
+        "sha256": "b60b31f5317d5efa3c2153411d4323308599d585ea854caa5e2fd8d92bed3ff5"
       },
       "viewport_rect": [
         0,
@@ -462,7 +561,7 @@
     },
     {
       "id": "lab-mobile",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/lab?recipe=aimed-buildcraft",
       "state": "initial",
       "platform": "phone",
@@ -510,7 +609,7 @@
     },
     {
       "id": "lab-mobile-complete",
-      "build_id": "2WkLkVfiEGwEgGwg9UcPJ",
+      "build_id": "fAl6W-HEbWqpg5aJMGgyi",
       "screen": "/lab",
       "state": "mobile-complete",
       "platform": "phone",
@@ -806,11 +905,431 @@
       "id": "dimension-variability",
       "status": 200,
       "hashMatches": true
+    },
+    {
+      "id": "game-factorio",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-sekiro",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-hollow-knight",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dark-souls-3",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-monster-hunter-world",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-celeste",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-ftl",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-into-the-breach",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-doom-eternal",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-xcom-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-age-of-empires-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-against-the-storm",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-frostpunk",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-satisfactory",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-genshin-impact",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-civilization-6",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dyson-sphere-program",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dwarf-fortress",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-oxygen-not-included",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-rimworld",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-cities-skylines",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-baba-is-you",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-portal-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-potion-craft",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-outer-wilds",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-the-witness",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-return-of-the-obra-dinn",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-chants-of-sennaar",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-papers-please",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dishonored-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-world-of-warcraft",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-marvel-snap",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-luck-be-a-landlord",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-monster-train",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-starcraft-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dota-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-counter-strike-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dominion",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-deep-rock-galactic",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-overcooked-2",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-dont-starve-together",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-league-of-legends",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-subnautica",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-valorant",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-teamfight-tactics",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-valheim",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-project-zomboid",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-among-us",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-hunt-showdown-1896",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-beat-saber",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-lethal-company",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-splatoon-3",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-hearthstone",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-disco-elysium",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-noita",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-binding-of-isaac-rebirth",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-animal-crossing-new-horizons",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-mario-kart-8-deluxe",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-path-of-exile",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-caves-of-qud",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-rocket-league",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "game-osu",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-automation-logistics",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-telegraphed-tactics",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-precision-retry",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-parry-pressure",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-ability-gated-exploration",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-elemental-team-combos",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-settlement-weather",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-thermal-colony",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-knowledge-loop",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-language-deduction",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-documents-economy",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-stealth-systemic-solutions",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-deck-market-economy",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-bid-and-retreat",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-draft-auto-battle",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-lane-objective-pressure",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-team-ability-breach",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-cooperative-logistics",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-survival-expedition",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-social-deduction-vote",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-rhythm-performance",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "id": "recipe-dialogue-skill-checks",
+      "status": 200,
+      "hashMatches": true
     }
   ],
   "visual_review_status": "passed",
   "inspection": {
-    "path": "docs/copy-review/render-inspection.md",
-    "sha256": "c5bd234a813105211e38f96fff2e2796eee2a9947f03aae3eec1a879f2e5744d"
+    "path": "docs/static-expansion/visual-review.md",
+    "sha256": "11d4f63dec5f741f4e6bc98f5b856ef4985a3ec7f8e8262e4712b87a98b43562"
   }
 }
