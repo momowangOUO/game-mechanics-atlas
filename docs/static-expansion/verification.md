@@ -43,3 +43,13 @@
 发布工作流保留：`main` 推送或手动触发，先校验和构建，再上传仅含 `out/` 的 Pages artifact，最后配置与部署 Pages。构建产物上传与受账号限制的部署分开；不包含自动研究、定时采集或后台更新。未来账号具备资格并启用 Pages 后，可以重新运行工作流。
 
 完整本地静态包位于 `.build/game-mechanics-atlas-static.zip`，解压后按项目子路径部署。构建和预览命令见 [README](../../README.md)；静态实现细节见[实施说明](../static-pages-implementation.md)。代码是否已推送、远端提交和 CI 状态由最终交付步骤核验，不以本文的本地测试代替。
+
+## 远端交付确认
+
+代码与资源提交 `8a9e134` 已推送到原私有仓库，核验 `isPrivate: true`、`visibility: PRIVATE`，且当时本地与远端 `main` 提交一致。父目录的分享材料未修改。
+
+[GitHub Actions 本次运行](https://github.com/momowangOUO/game-mechanics-atlas/actions/runs/41164970699)的 Linux 构建任务通过：59 项单元测试、246／246 页面静态构建、42 项 Chromium 浏览器回归通过。`github-pages` 静态 artifact 已上传，大小 67,764,638 字节。部署任务在配置 Pages 时失败：创建站点先前已因套餐返回 422，站点未能启用，工作流读取 Pages 配置因而返回 Not Found；没有公开网站地址可交付。
+
+本地 ZIP 为 71,570,130 字节，SHA-256：`0f49af6736762f3d8b92f8bcc27f14a19f18af61d1c8b11fe1a4eb787bff0e3d`。它对应本机最终构建；远端 artifact 是 Linux 重新构建的产物，不以两个包字节相同作为验证条件。
+
+最终文档补充只记录以上已执行结果，不改变网站代码或构建产物。
