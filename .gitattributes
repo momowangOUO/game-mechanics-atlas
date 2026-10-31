@@ -3,3 +3,5 @@
 *.webp binary
 *.webm binary
 *.mp4 binary
+# Keep captured source responses byte-exact for their recorded SHA-256.
+public/data/search-demand/*.txt -text -whitespace

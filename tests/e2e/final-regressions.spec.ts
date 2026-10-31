@@ -13,6 +13,8 @@ async function hydrated(page: Page) {
 async function importRecords(page: Page, records: unknown[]) {
   await gotoApp(page, "/heat");
   await hydrated(page);
+  const ownCounts = page.getByRole("button", { name: "分析自己的搜索次数 →" });
+  if (await ownCounts.isVisible()) await ownCounts.click();
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
   await dialog
@@ -75,7 +77,7 @@ for (const entry of ["home preview", "case relations"] as const) {
       .click();
     await hydrated(fresh);
     await expect(
-      fresh.getByRole("button", { name: "恢复合成示例", exact: true }),
+      fresh.getByRole("button", { name: "清空本地记录", exact: true }),
     ).toHaveCount(0);
     await fresh.close();
     const documents: string[] = [];
@@ -98,6 +100,10 @@ for (const entry of ["home preview", "case relations"] as const) {
       .getByRole("link", { name: "热度观察", exact: true })
       .click();
     await hydrated(page);
+    const ownCounts = page.getByRole("button", {
+      name: "分析自己的搜索次数 →",
+    });
+    if (await ownCounts.isVisible()) await ownCounts.click();
     await expect(
       page.locator(".data-strip .metric").first().locator(".sr-only"),
     ).toHaveText("123");
@@ -113,7 +119,7 @@ for (const entry of ["home preview", "case relations"] as const) {
     await page.reload();
     await hydrated(page);
     await expect(
-      page.getByRole("button", { name: "恢复合成示例", exact: true }),
+      page.getByRole("button", { name: "清空本地记录", exact: true }),
     ).toHaveCount(0);
   });
 }
@@ -155,11 +161,9 @@ test("complete measured zeros display zero and flat trend in case and Compare", 
     .click();
   await hydrated(page);
   await page.getByRole("button", { name: /搜索热度/ }).click();
-  const measured = page
-    .locator(".heat-mini")
-    .filter({
-      has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
-    });
+  const measured = page.locator(".heat-mini").filter({
+    has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
+  });
   await expect
     .soft(measured.locator(".mini-profile-numbers .sr-only"))
     .toHaveText("0", { timeout: 2000 });
@@ -173,6 +177,6 @@ test("complete measured zeros display zero and flat trend in case and Compare", 
       `a[href="${appHref("/heat?topic=game%3Aslay-the-spire")}"]`,
     ),
   });
-  await expect(missing).toContainText("本期导入数据没有这个主题的搜索记录");
+  await expect(missing).toContainText("尚未取得这个主题的直接搜索记录");
   await expect(missing.locator(".mini-profile-numbers")).toHaveCount(0);
 });

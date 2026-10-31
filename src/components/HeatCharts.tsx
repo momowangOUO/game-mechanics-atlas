@@ -10,6 +10,7 @@ import {
 } from "@/lib/heat";
 import { CountUp, SeedBadge } from "./Primitives";
 import { useSearchData } from "./SearchDataProvider";
+import { annualSearchSnapshot } from "@/lib/search-demand";
 
 export function formatAmount(value: number) {
   if (value >= 100000000)
@@ -28,19 +29,24 @@ export function trendLabel(profile: TopicHeatProfile) {
 export function TrendChart({
   name,
   points,
+  unit = "次",
 }: {
   name: string;
   points: { date: string; value: number; measured?: boolean }[];
+  unit?: "次" | "指数";
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const id = useId().replace(/:/g, "");
   const width = 640,
     height = 235,
     pad = { left: 52, right: 18, top: 20, bottom: 35 };
-  const maximum = Math.max(
-    1,
-    ...points.filter((p) => p.measured !== false).map((p) => p.value),
-  );
+  const maximum =
+    unit === "指数"
+      ? 100
+      : Math.max(
+          1,
+          ...points.filter((p) => p.measured !== false).map((p) => p.value),
+        );
   const x = (index: number) =>
     pad.left +
     (index / Math.max(1, points.length - 1)) * (width - pad.left - pad.right);
@@ -73,7 +79,7 @@ export function TrendChart({
       <svg
         viewBox={`0 0 ${width} ${height}`}
         role="img"
-        aria-label={`${name}每日归因搜索次数，左右方向键查看日期`}
+        aria-label={`${name}每日${unit === "指数" ? "相对搜索指数" : "归因搜索次数"}，左右方向键查看日期`}
         tabIndex={0}
         onKeyDown={(event) => {
           if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
@@ -201,7 +207,7 @@ export function TrendChart({
             <strong>
               {selected.measured === false
                 ? "未记录"
-                : `${formatAmount(selected.value)} 次`}
+                : `${formatAmount(selected.value)} ${unit}`}
             </strong>
           </>
         ) : (
@@ -405,10 +411,7 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
         </>
       ) : (
         <p className="scope-box">
-          {result.seedOnly
-            ? "本期合成示例没有给这个主题设置搜索记录。"
-            : "本期导入数据没有这个主题的搜索记录。"}
-          此项保留为“未采集”，搜索次数和趋势均暂不计算。
+          尚未取得这个主题的直接搜索记录。此项保留为“未采集”，搜索次数和趋势均暂不计算。
         </p>
       )}
       <Link
@@ -422,73 +425,33 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
 }
 
 export function HomeHeatHighlights() {
-  const { stats } = useSearchData();
-  const result = useMemo(() => analyzeHeat(stats), [stats]);
-  const kinds = [
-    ["genre", "热门类别"],
-    ["mechanic", "热门机制"],
-    ["combination", "热门组合"],
-  ] as const;
-  const opportunity = result.profiles
-    .filter(
-      (p) =>
-        p.kind === "combination" && p.scoreStatus === "ok" && p.blue !== null,
-    )
-    .sort((a, b) => (b.blue || 0) - (a.blue || 0))[0];
   return (
     <>
-      <div className="home-heat-grid">
-        {kinds.map(([kind, title]) => (
-          <section className="small-card" key={kind}>
-            <p className="eyebrow">SEARCH SIGNAL / {kind}</p>
-            <h3 className="serif" style={{ fontSize: 23, margin: "10px 0" }}>
-              {title}
-            </h3>
-            <ol className="home-heat-ranking">
-              {result.profiles
-                .filter((p) => p.kind === kind && p.demand > 0)
-                .slice(0, 3)
-                .map((profile) => (
-                  <li key={profile.topicId}>
-                    <Link
-                      href={`/heat?topic=${encodeURIComponent(profile.topicId)}`}
-                    >
-                      <span>{profile.name}</span>
-                      <strong>{formatAmount(profile.demand)}</strong>
-                    </Link>
-                  </li>
-                ))}
-            </ol>
-          </section>
-        ))}
-      </div>
-      <div className="home-opportunity-strip">
-        <div>
-          <span className="eyebrow">BLUE OCEAN / 继续研究的线索</span>
-          <h3>{opportunity?.name || "先收集可比较的需求与供给"}</h3>
-          <p>
-            {opportunity
-              ? `${result.seedOnly ? "合成搜索" : "搜索归因"} ${formatAmount(opportunity.demand)} 次 · 收录确认供给 ${opportunity.supply} 款 · 仍有 ${opportunity.unknownSupply} 款样本未确认。`
-              : "缺少数据时，不自动给出市场机会判断。"}
-          </p>
-        </div>
-        <div>
-          <SearchProvenance sourceKinds={result.sourceKinds} />
-          <Link
-            className="button"
-            href={
-              opportunity
-                ? `/heat?view=blue&topic=${encodeURIComponent(opportunity.topicId)}`
-                : "/heat"
-            }
-          >
-            核对线索与案例 →
-          </Link>
-        </div>
+      <div className="small-card">
+        <p className="eyebrow">GOOGLE YEAR IN SEARCH / 2025 · 全球</p>
+        <h3 className="serif" style={{ fontSize: 23, margin: "10px 0" }}>
+          游戏搜索飙升资料
+        </h3>
+        <ol className="home-heat-ranking">
+          {annualSearchSnapshot.entries.slice(0, 5).map((entry) => (
+            <li key={entry.rank}>
+              <Link href="/heat">
+                <span>{entry.query}</span>
+                <strong>#{entry.rank}</strong>
+              </Link>
+            </li>
+          ))}
+        </ol>
+        <p className="filter-note">
+          Google 官方年度飙升名次 · 2025-01-01 至 11-25
+          对比上年同期。名次反映增长，不代表搜索总量或当前需求。
+        </p>
+        <Link className="button" href="/heat">
+          核对真实来源与数据范围 →
+        </Link>
       </div>
       <p className="catalog-note">
-        数据窗口截至 {result.dateEnd}
-        。热门榜按原始搜索次数排序；指数不代表销量、成功率或已证明的市场空白。
+        类型、机制和机制组合的直接搜索需求尚未取得；暂不生成相关热门或市场机会榜。
       </p>
     </>
   );

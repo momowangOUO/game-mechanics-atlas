@@ -8,6 +8,8 @@ import { dimensions, games, genres, mechanics } from "@/lib/knowledge";
 import { Dialog } from "./Providers";
 import { EmptyState, GameCard, PageHead, Reveal } from "./Primitives";
 import { matchesCatalog } from "@/lib/catalog-search";
+import { taxonomyGroups } from "@/data/taxonomy-reference";
+import taxonomyStyles from "./TaxonomyExplorer.module.css";
 
 function Pagination({
   page,
@@ -151,6 +153,19 @@ export function MechanicCatalog({
       >
         <span className="chip cyan">{mechanics.length} 条原子机制</span>
       </PageHead>
+      <Link
+        className={taxonomyStyles.catalogDoor}
+        href={dimension ? `/taxonomy?dimension=${dimension}` : "/taxonomy"}
+      >
+        <div>
+          <strong>先从玩法分类图鉴看起</strong>
+          <p>
+            9 个维度 → {taxonomyGroups.length} 个分组 → {mechanics.length}{" "}
+            条机制；逐层看用途、边界与典型游戏。
+          </p>
+        </div>
+        <span>打开分类图鉴 →</span>
+      </Link>
       {genre && (
         <div className="note">
           正在查看复合类型“{genre.name}”关联的原子机制。

@@ -49,10 +49,18 @@ test("graph and heat tools reinitialize on query-only changes", async ({
   );
   await gotoApp(page, "/heat?topic=game%3Abalatro");
   await hydrated(page);
+  await expect(
+    page.locator(".scope-box").filter({ hasText: "正在研究「Balatro" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
   await expect(page.locator(".selected-topic-heading h2")).toHaveText(
     "Balatro",
   );
   await changeQuery(page, "/heat?topic=game%3Aslay-the-spire&view=blue");
+  await expect(
+    page.locator(".scope-box").filter({ hasText: "正在研究「Slay the Spire" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
   await expect(
     page.getByRole("tab", { name: "蓝海线索", exact: true }),
   ).toHaveAttribute("aria-selected", "true");
@@ -60,6 +68,10 @@ test("graph and heat tools reinitialize on query-only changes", async ({
     page,
     "/heat?topic=game%3Abalatro&topic=game%3Aslay-the-spire",
   );
+  await expect(
+    page.locator(".scope-box").filter({ hasText: "正在研究「" }),
+  ).toHaveCount(0);
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
   await expect(
     page.getByRole("tab", { name: "热门类别", exact: true }),
   ).toHaveAttribute("aria-selected", "true");

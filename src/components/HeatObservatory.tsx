@@ -16,6 +16,7 @@ import { games, getGame, getMechanic } from "@/lib/knowledge";
 import { Dialog, useUI } from "./Providers";
 import { useSearchData } from "./SearchDataProvider";
 import { CountUp, EmptyState, PageHead, SeedBadge, Window } from "./Primitives";
+import RealSearchDemand from "./RealSearchDemand";
 import {
   formatAmount,
   ScatterChart,
@@ -141,7 +142,7 @@ function TopicDetails({
         {topic.kind === "combination" ? "在图谱中继续研究" : "阅读相关档案"} →
       </Link>
       <p className="tiny muted" style={{ marginTop: 16 }}>
-        公式 {result.formulaVersion}
+        分析版本 {result.formulaVersion}
         <br />
         {result.dateStart} — {result.dateEnd}
       </p>
@@ -149,7 +150,7 @@ function TopicDetails({
   );
 }
 
-export default function HeatObservatory({
+function CountObservatory({
   initialTopic = "",
   initialView = "",
 }: {
@@ -244,13 +245,19 @@ export default function HeatObservatory({
     setRegion("");
     setQuery("");
     setPage(1);
-    announce("已恢复合成搜索示例。");
+    announce("已清空本地搜索记录。");
   };
   const importData = () => {
     try {
       const parsed = validateSearchImport(JSON.parse(importText));
       if (!parsed.success) {
         setImportErrors(parsed.errors);
+        return;
+      }
+      if (parsed.stats.some((row) => row.sourceKind === "synthetic")) {
+        setImportErrors([
+          "这里不接收合成搜索数据。请使用实际取得的搜索记录，并保留来源信息。",
+        ]);
         return;
       }
       analyzeHeat(parsed.stats, { days });
@@ -282,7 +289,7 @@ export default function HeatObservatory({
     anchor.href = url;
     anchor.download = isImported
       ? "atlas-search-data.json"
-      : "atlas-search-seed.json";
+      : "atlas-search-empty.json";
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   };
@@ -293,10 +300,12 @@ export default function HeatObservatory({
       </div>
       <PageHead
         eyebrow="DEMAND / SUPPLY OBSERVATORY"
-        title="玩家在搜什么？"
-        description="按搜索次数查看关注方向，再对照本站收录的游戏样本，寻找值得继续调查的竞争与机会线索。"
+        title="自己的搜索记录"
+        description="分析自行导入的搜索次数，查看日期覆盖与归因；数据真实性和市场覆盖需要另行核验。"
       >
-        <SeedBadge imported={isImported && !result?.seedOnly} />
+        <span className="seed">
+          {isImported ? "本地导入 · 来源待核验" : "尚未导入记录"}
+        </span>
       </PageHead>
       <div className="heat-filter-row">
         <label>
@@ -373,7 +382,7 @@ export default function HeatObservatory({
           </button>
           {isImported && (
             <button className="text-button" onClick={resetSeed}>
-              恢复合成示例
+              清空本地记录
             </button>
           )}
         </div>
@@ -381,7 +390,7 @@ export default function HeatObservatory({
       {computed.error ? (
         <EmptyState title="数据暂时无法分析" description={computed.error}>
           <button className="button primary" onClick={resetSeed}>
-            恢复合成示例
+            清空本地记录
           </button>
         </EmptyState>
       ) : (
@@ -398,7 +407,14 @@ export default function HeatObservatory({
               <div className="metric">
                 <span>RAW SEARCH EVENTS</span>
                 <strong>
-                  <CountUp value={result.totalSearches} format={formatAmount} />
+                  {scopedStats.length ? (
+                    <CountUp
+                      value={result.totalSearches}
+                      format={formatAmount}
+                    />
+                  ) : (
+                    "未记录"
+                  )}
                 </strong>
                 <span>原始搜索总次数 · 每条记录计一次</span>
               </div>
@@ -494,17 +510,25 @@ export default function HeatObservatory({
                 <span className="observation-code">
                   RIN'S OBSERVATION ／ 研究便签
                 </span>
-                <h2>先看搜索，<br />再查竞品。</h2>
+                <h2>
+                  先看搜索，
+                  <br />
+                  再查竞品。
+                </h2>
                 <p>
                   想研究一个方向，可以先看搜索关注，再核对竞品。收录样本少，还需要进一步调查。
                 </p>
                 <div>
                   <strong>玩家在搜什么？</strong>
-                  <p>排行依据归因到主题的搜索次数，方便比较当前数据中的关注方向。</p>
+                  <p>
+                    排行依据归因到主题的搜索次数，方便比较当前数据中的关注方向。
+                  </p>
                 </div>
                 <div>
                   <strong>同类供给有多少？</strong>
-                  <p>这里只统计本站已确认的样本，条件匹配与尚未确认的样本另列。</p>
+                  <p>
+                    这里只统计本站已确认的样本，条件匹配与尚未确认的样本另列。
+                  </p>
                 </div>
                 <div>
                   <strong>值得继续查什么？</strong>
@@ -579,7 +603,7 @@ export default function HeatObservatory({
                 </div>
                 <p className="ranking-note">
                   {view === "blue" || view === "red"
-                    ? "线索分仅用于同类主题间比较；尚无确认供给或没有搜索记录时不计算。"
+                    ? "当前暂停市场机会评估：本站收录样本不能代表完整市场供给，实际导入数据不计算蓝海、红海分。"
                     : "按原始归因搜索次数排序，不按游戏数或线索分排序。"}{" "}
                   关键词只筛选榜单，不改变比较基准。
                 </p>
@@ -673,7 +697,11 @@ export default function HeatObservatory({
                   ) : (
                     <EmptyState
                       title="当前没有可列出的主题"
-                      description="请检查关键词、数据来源与时间窗口；线索榜还需要已确认的供给样本。"
+                      description={
+                        view === "blue" || view === "red"
+                          ? "市场需求与供给范围尚不足以支持机会判断，当前不发布蓝海、红海排名。"
+                          : "请检查关键词、数据来源与时间窗口；未取得的需求保持为空。"
+                      }
                     >
                       <button className="button" onClick={() => setQuery("")}>
                         清除关键词
@@ -684,23 +712,16 @@ export default function HeatObservatory({
                 <details className="method-details">
                   <summary>查看公式、来源限制与分析提示</summary>
                   <div className="paper">
-                    <h2>平滑参数 k = 2</h2>
+                    <h2>搜索与供给的范围</h2>
                     <p>
-                      d = √(D / Dmax)，c = S / (S + 2)
-                      <br />
-                      蓝海线索 = 100 × d × (1 − c)
-                      <br />
-                      红海线索 = 100 × c × (1 − 0.5d)
-                    </p>
-                    <p>
-                      两项分数分别表示机会与竞争线索，用于同类比较，不代表成功概率，也不能相加解释为 100%。
+                      导入的搜索次数与本站收录规模不能共同证明市场机会。实际记录不计算蓝海或红海分，供给只用于查看相关案例。
                     </p>
                     <ul>
                       {result.warnings.map((warning) => (
                         <li key={warning}>{warning}</li>
                       ))}
                     </ul>
-                    <Link href="/method#heat">完整口径与算例 ↗</Link>
+                    <Link href="/method#heat">完整口径与适用范围 ↗</Link>
                     <p className="tiny">{FORMULA_VERSION}</p>
                   </div>
                 </details>
@@ -737,8 +758,9 @@ export default function HeatObservatory({
         <div className="window-body">
           <h2 className="dialog-heading">替换一套搜索记录</h2>
           <p className="filter-note">
-            文件只在当前浏览器中分析，不会上传；刷新页面后恢复合成示例。请使用带 schemaVersion:1 和 records
-            数组的 JSON，可先导出示例查看格式。校验检查数据格式与一致性，来源标签原样保留，真实性需另行核验。
+            文件只在当前浏览器中分析，不会上传；刷新页面后清空本地记录。请使用带
+            schemaVersion:1 和 records 数组的
+            JSON，可先导出示例查看格式。校验检查数据格式与一致性，来源标签原样保留，真实性需另行核验。
           </p>
           <input
             ref={fileRef}
@@ -778,7 +800,10 @@ export default function HeatObservatory({
                 ))}
               </ul>
               {importErrors.length > 6 && (
-                <p>另有 {importErrors.length - 6} 处错误，请按所列字段路径逐项核对。</p>
+                <p>
+                  另有 {importErrors.length - 6}{" "}
+                  处错误，请按所列字段路径逐项核对。
+                </p>
               )}
             </div>
           )}
@@ -793,5 +818,26 @@ export default function HeatObservatory({
         </div>
       </Dialog>
     </>
+  );
+}
+
+export default function HeatObservatory(props: {
+  initialTopic?: string;
+  initialView?: string;
+}) {
+  const { isImported } = useSearchData();
+  const [showCounts, setShowCounts] = useState(isImported);
+  return showCounts ? (
+    <>
+      <button className="button" onClick={() => setShowCounts(false)}>
+        ← 返回真实搜索资料
+      </button>
+      <CountObservatory {...props} />
+    </>
+  ) : (
+    <RealSearchDemand
+      initialTopic={props.initialTopic}
+      onOpenCounts={() => setShowCounts(true)}
+    />
   );
 }

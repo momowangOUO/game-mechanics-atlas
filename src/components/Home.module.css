@@ -1,0 +1,71 @@
+.dimensions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.dimension {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border: 2px solid #64576c;
+  background: #211d2d;
+  box-shadow: 3px 3px #0f0e18;
+  transition:
+    transform 0.15s,
+    border-color 0.15s;
+}
+.dimension:hover,
+.dimension:focus-visible {
+  transform: translateY(-3px);
+  border-color: #dfbd77;
+}
+.dimension strong {
+  color: #f0e5d0;
+  font-size: 15px;
+}
+.dimension p {
+  color: #beb3c6;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.dimension small {
+  color: #dfbd77;
+  font-size: 11px;
+}
+.guide {
+  display: grid;
+  gap: 20px;
+  padding: 14px 8px;
+}
+.guide h3 {
+  font-family: SimSun, serif;
+  font-size: 25px;
+  line-height: 1.6;
+  color: #dfbd77;
+}
+.guide ol {
+  margin: 0;
+  padding-left: 24px;
+  display: grid;
+  gap: 20px;
+}
+.guide li::marker {
+  color: #dfbd77;
+}
+.guide li p {
+  margin-top: 4px;
+  color: #beb3c6;
+}
+@media (max-width: 1000px) {
+  .dimensions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dimension {
+    transition: none;
+  }
+  .dimension:hover {
+    transform: none;
+  }
+}

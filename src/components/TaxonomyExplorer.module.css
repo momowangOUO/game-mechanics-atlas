@@ -1,0 +1,1293 @@
+.atlas {
+  --dimension-accent: #c4aff0;
+  margin-top: 22px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  min-height: 135px;
+  border: 1px solid #89738e;
+  border-left: 4px solid #c4aff0;
+  padding: 20px 28px;
+  background:
+    linear-gradient(90deg, #211d31f5, #211d31b8),
+    var(--room-dusk-image) center 54% / cover;
+  position: relative;
+  overflow: hidden;
+}
+.heading h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  color: #f4eddf;
+}
+.intro {
+  color: #c7bdcd;
+  font-size: 13px;
+}
+.headingAside {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.headingAside > span {
+  color: #dfbd77;
+  font:
+    21px Consolas,
+    monospace;
+}
+.headingAside small {
+  font:
+    11px "Microsoft YaHei",
+    sans-serif;
+  color: #d9cbdc;
+}
+.headingAside > div {
+  width: 105px;
+  height: 130px;
+  margin: -20px 0 -25px;
+}
+.toolbar {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin: 16px 0;
+}
+.toolbar > button,
+.toolbar > a {
+  display: grid;
+  place-items: center;
+  border: 1px solid #847190;
+  background: #272237;
+  color: #ded1eb;
+  padding: 8px 14px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.toolbar .activeTool {
+  background: #c4aff0;
+  color: #251f35;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #8d7996;
+  background: #f0e5d0;
+  color: #332a3f;
+  padding: 0 12px;
+  min-height: 44px;
+}
+.search > span {
+  font-size: 24px;
+}
+.search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #332a3f;
+  background: transparent;
+  font-size: 13px;
+}
+.search input::placeholder {
+  color: #786c80;
+}
+.search button {
+  border: 0;
+  background: transparent;
+  color: #54415e;
+  font-size: 22px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #6b6078;
+  background: #1c1b2b;
+}
+.steps button {
+  border: 0;
+  border-right: 1px solid #51465e;
+  background: transparent;
+  color: #b5a8c2;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+.steps button:last-child {
+  border-right: 0;
+}
+.steps button[aria-current] {
+  background: #c4aff0;
+  color: #292237;
+}
+.steps button > span {
+  font:
+    11px Consolas,
+    monospace;
+  opacity: 0.65;
+}
+.steps small {
+  margin-left: auto;
+  font:
+    11px Consolas,
+    monospace;
+}
+.path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 0;
+  font-size: 11px;
+  color: #b4a3c2;
+}
+.path button {
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+}
+.path button:hover {
+  color: #f3dfb1;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(215px, 0.9fr) minmax(260px, 1.08fr) minmax(
+      330px,
+      1.4fr
+    );
+  gap: 13px;
+  min-height: 630px;
+  align-items: stretch;
+}
+.panel {
+  background: #252133;
+  border: 1px solid #76667e;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px #09091480;
+}
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  min-height: 39px;
+  padding: 8px 13px;
+  border-bottom: 1px solid #76667e;
+  color: #dec9f2;
+  background: #201d2c;
+  font:
+    11px Consolas,
+    "Microsoft YaHei",
+    sans-serif;
+  letter-spacing: 0.5px;
+}
+.panelHead button {
+  border: 0;
+  padding: 0;
+  color: #dec9f2;
+  background: none;
+  font: inherit;
+  text-align: left;
+}
+.panelHead small {
+  font-size: 11px;
+  color: #aa9bb6;
+  white-space: nowrap;
+}
+.panelHint {
+  font-size: 11px;
+  color: #b1a2bc;
+  padding: 12px 13px 6px;
+}
+.dimensionList {
+  padding: 4px 9px;
+  flex: 1;
+}
+.dimensionList button {
+  border: 1px solid transparent;
+  border-bottom-color: #4c415a;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 5px;
+  background: none;
+  color: #e4d9e9;
+}
+.dimensionList button > img {
+  width: 28px;
+  height: 28px;
+}
+.dimensionList button > span {
+  flex: 1;
+  min-width: 0;
+}
+.dimensionList strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dimensionList small {
+  display: none;
+}
+.dimensionList b {
+  font:
+    11px Consolas,
+    monospace;
+  color: #a695b5;
+}
+.dimensionList i {
+  font-style: normal;
+  font-size: 11px;
+  color: #9b88a8;
+}
+.dimensionList button.selected,
+.groupList button.selected,
+.mechanicList button.selected {
+  border: 1px solid var(--dimension-accent);
+  background: #c4aff016;
+  box-shadow: inset 3px 0 var(--dimension-accent);
+}
+.panelFoot {
+  border-top: 1px solid #51465c;
+  margin-top: auto;
+  color: #b4a5bd;
+  font-size: 11px;
+  padding: 12px 14px;
+  line-height: 1.8;
+}
+.dimensionSummary {
+  display: flex;
+  gap: 12px;
+  background: #1b1928;
+  border-bottom: 1px solid #51465c;
+  padding: 17px 15px;
+}
+.dimensionSummary img {
+  width: 39px;
+  height: 39px;
+}
+.dimensionSummary h2 {
+  font-size: 17px;
+  color: var(--dimension-accent);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.dimensionSummary p {
+  font-size: 12px;
+  color: #c6b9cd;
+  line-height: 1.8;
+}
+.groupList,
+.mechanicList {
+  padding: 12px;
+  display: grid;
+  gap: 9px;
+}
+.groupList button,
+.mechanicList button {
+  color: #e9dfed;
+  background: #201d2c;
+  border: 1px solid #65566f;
+  padding: 13px 14px;
+  width: 100%;
+  text-align: left;
+}
+.groupList button > div,
+.mechanicList button > div {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.groupList strong,
+.mechanicList strong {
+  font-size: 13px;
+}
+.groupList button span,
+.mechanicList button span {
+  color: #af9cbe;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.groupList p,
+.mechanicList p {
+  color: #bcaec7;
+  font-size: 12px;
+  line-height: 1.75;
+  margin-top: 7px;
+}
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 5px 14px 12px;
+  color: #ab99bb;
+  font:
+    11px Consolas,
+    monospace;
+  margin-top: auto;
+}
+.pager button {
+  border: 1px solid #71607d;
+  background: #211c30;
+  min-height: 32px;
+  min-width: 42px;
+  color: #d8c5e8;
+}
+.pager button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.dimensionDetails {
+  margin: 0 14px 15px;
+  padding-top: 12px;
+  border-top: 1px solid #51465c;
+  font-size: 11px;
+  color: #ad9cba;
+}
+.dimensionDetails summary {
+  cursor: pointer;
+  color: #dcc4f1;
+}
+.dimensionDetails p {
+  margin-top: 9px;
+  line-height: 1.85;
+}
+.groupSummary {
+  background: #f0e5d0;
+  color: #332a3f;
+  padding: 19px;
+  border-bottom: 3px double #b098bd;
+}
+.mobileGroupSummary {
+  display: none;
+}
+.conditionHint {
+  color: #dfbd77;
+  font-size: 10px;
+  margin-top: 9px;
+}
+.groupSummary h2 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+.groupSummary > p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.typicalGames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 12px;
+}
+.typicalGames > span {
+  color: #827082;
+}
+.typicalGames a {
+  border-bottom: 1px dotted #80628d;
+  color: #735780;
+}
+.readingPanel {
+  display: none;
+}
+.stage3 .mechanicPanel {
+  display: none;
+}
+.stage3 .readingPanel {
+  display: flex;
+}
+.readingHead {
+  padding: 19px;
+  background: #f0e5d0;
+  color: #332a3f;
+}
+.stamp {
+  display: inline-block;
+  font:
+    10px Consolas,
+    "Microsoft YaHei",
+    sans-serif;
+  letter-spacing: 1px;
+  color: #8a619c;
+  border: 1px solid #b49ac1;
+  padding: 3px 7px;
+}
+.readingHead h2 {
+  font-size: 25px;
+  margin: 9px 0;
+}
+.readingHead > p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+.readingTabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #65566f;
+}
+.readingTabs button {
+  background: #1d1a29;
+  border: 0;
+  border-right: 1px solid #51465c;
+  color: #ad9cba;
+  padding: 11px 5px;
+  font-size: 12px;
+}
+.readingTabs button[aria-selected="true"] {
+  background: #40314e;
+  color: #ead9fc;
+  box-shadow: inset 0 -2px #c4aff0;
+}
+.readingContent {
+  padding: 18px;
+  flex: 1;
+  color: #d5c5df;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.readingContent h3 {
+  color: #ddc5ef;
+  font-size: 12px;
+  margin: 0 0 7px;
+}
+.readingContent h3:not(:first-child) {
+  margin-top: 15px;
+}
+.readingContent ul {
+  padding-left: 17px;
+  margin: 0 0 12px;
+}
+.readingContent li {
+  margin: 4px 0;
+}
+.readingContent > small {
+  display: block;
+  color: #a18fad;
+  font-size: 10px;
+  margin-top: 12px;
+}
+.readingLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #65566f;
+  padding: 12px 17px;
+  font-size: 12px;
+  color: #ddc5ef;
+}
+.readingLinks a:first-child {
+  color: #f0d09a;
+}
+.example > div {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  justify-content: space-between;
+}
+.example > div a {
+  color: #e2c897;
+  font-size: 16px;
+  font-family: SimSun, serif;
+  font-weight: bold;
+}
+.example > div span {
+  font-size: 9px;
+  border: 1px solid #71958d;
+  padding: 1px 6px;
+  color: #88cdc5;
+  white-space: nowrap;
+}
+.example small {
+  display: block;
+  color: #b39fc0;
+  margin: 8px 0 13px;
+  font-size: 10px;
+}
+.condition {
+  margin-top: 10px;
+  color: #dfbd77;
+}
+.sourceLink {
+  display: block;
+  margin-top: 13px;
+  color: #c4aff0;
+  font-size: 10px;
+}
+.readingContent .pager {
+  margin-top: 14px;
+  padding: 8px 0 0;
+}
+.atlasNote {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: #9d8ba9;
+  font-size: 10px;
+  margin-top: 15px;
+}
+.atlasNote a {
+  color: #baa3ca;
+}
+.mobilePager {
+  display: none;
+}
+.guide,
+.results {
+  border: 1px solid #76667e;
+  background: #252133;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+}
+.guideContent {
+  max-width: 750px;
+  padding: 40px;
+  margin: 0 auto;
+  flex: 1;
+}
+.guideContent h2 {
+  font-size: 32px;
+  color: #f0e5d0;
+  margin: 17px 0 7px;
+}
+.guideContent h3 {
+  color: #dbc4ec;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.guideContent > p {
+  color: #c7b6d2;
+  line-height: 1.9;
+}
+.guideExample {
+  border-left: 3px solid #cfad74;
+  padding: 15px 20px;
+  background: #f0e5d0;
+  color: #483552;
+  margin-top: 20px;
+}
+.guideContent .guideNote {
+  color: #9f8ead;
+  font-size: 12px;
+  margin: 20px 0;
+}
+.guideLinks {
+  display: flex;
+  gap: 25px;
+  color: #dec6ef;
+  font-size: 12px;
+}
+.guide > .pager {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 15px;
+}
+.resultList {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  flex: 1;
+  align-content: start;
+}
+.resultList > button {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #786186;
+  color: #e9dcec;
+  background: #201d2c;
+}
+.resultList > button > span {
+  color: #b69ac9;
+  font-size: 10px;
+}
+.resultList h2 {
+  font-size: 21px;
+  margin: 7px 0;
+}
+.resultList h2 small {
+  float: right;
+  color: #b695ce;
+  font-size: 15px;
+}
+.resultList p {
+  font-size: 12px;
+  color: #bfaec9;
+  line-height: 1.8;
+}
+.noResults {
+  padding: 40px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.noResults button {
+  padding: 8px 18px;
+  margin-top: 20px;
+  background: #c4aff0;
+  border: 1px solid #e3d7ed;
+}
+.catalogDoor {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  border: 1px solid #8f769d;
+  border-left: 4px solid #c4aff0;
+  background: #2b2339;
+  padding: 17px 20px;
+  margin-bottom: 22px;
+}
+.catalogDoor strong {
+  color: #dec5f1;
+  display: block;
+  font-size: 16px;
+}
+.catalogDoor p {
+  color: #baa8c6;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.catalogDoor > span {
+  color: #dfbd77;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.detailContext {
+  padding: 15px 19px;
+  border: 1px solid #786386;
+  background: #2c2339;
+  margin-bottom: 22px;
+}
+.detailContext > div {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #dcc4ee;
+  font-size: 12px;
+}
+.detailContext a {
+  border-bottom: 1px dotted #a78abc;
+}
+.detailContext p {
+  color: #bca8ca;
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 1.8;
+}
+@media (max-width: 1100px) and (min-width: 701px) {
+  .workspace {
+    grid-template-columns: 175px minmax(210px, 0.9fr) minmax(270px, 1.2fr);
+    gap: 9px;
+  }
+  .headingAside > div {
+    display: none;
+  }
+  .dimensionSummary {
+    padding: 14px 12px;
+    gap: 8px;
+  }
+  .dimensionSummary img {
+    width: 28px;
+    height: 28px;
+  }
+  .dimensionSummary h2 {
+    font-size: 15px;
+  }
+  .groupList,
+  .mechanicList {
+    padding: 9px;
+  }
+  .groupList button,
+  .mechanicList button {
+    padding: 11px;
+  }
+}
+@media (max-width: 700px) {
+  .atlas {
+    margin-top: 10px;
+    height: calc(100svh - 164px);
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  :global(body):has(.atlas) :global(.footer) {
+    display: none;
+  }
+  :global(body):has(.atlas) :global(.frame) {
+    padding-bottom: 0;
+  }
+  .heading {
+    min-height: 0;
+    padding: 11px 13px;
+    flex-shrink: 0;
+  }
+  .heading h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 1px 0 0;
+  }
+  .heading :global(.eyebrow) {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .intro,
+  .headingAside {
+    display: none;
+  }
+  .toolbar {
+    margin: 9px 0;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .search {
+    min-height: 39px;
+    gap: 6px;
+    padding: 0 8px;
+  }
+  .search input {
+    font-size: 11px;
+  }
+  .search > span {
+    font-size: 20px;
+  }
+  .toolbar > button {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .toolbar > a {
+    display: none;
+  }
+  .steps {
+    flex-shrink: 0;
+  }
+  .steps button {
+    padding: 8px 7px;
+    gap: 5px;
+    font-size: 11px;
+    justify-content: center;
+  }
+  .steps button > span {
+    font-size: 9px;
+  }
+  .steps small {
+    display: none;
+  }
+  .path {
+    flex-shrink: 0;
+    gap: 5px;
+    padding: 7px 0;
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  .path > * {
+    flex-shrink: 0;
+  }
+  .path > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+  }
+  .workspace {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+  }
+  .workspace .panel {
+    display: none;
+    width: 100%;
+    min-height: 0;
+  }
+  .stage0 .dimensionPanel,
+  .stage1 .groupPanel,
+  .stage2 .mechanicPanel,
+  .stage3 .readingPanel {
+    display: flex;
+  }
+  .panelHead {
+    min-height: 32px;
+    padding: 6px 11px;
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+  .panelHint {
+    padding: 9px 12px 1px;
+    font-size: 11px;
+  }
+  .dimensionList {
+    padding: 5px 10px;
+    flex: 1;
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+  .dimensionList button {
+    padding: 8px;
+    gap: 11px;
+  }
+  .dimensionList button > img {
+    width: 36px;
+    height: 36px;
+  }
+  .dimensionList strong {
+    font-size: 14px;
+  }
+  .dimensionList small {
+    display: block;
+    font-size: 11px;
+    color: #b1a0bf;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+  .dimensionList b {
+    font-size: 14px;
+  }
+  .dimensionList .mobileHidden {
+    display: none;
+  }
+  .mobilePager {
+    display: block;
+  }
+  .pager {
+    padding: 7px 12px;
+    flex-shrink: 0;
+  }
+  .pager button {
+    min-height: 32px;
+    min-width: 46px;
+  }
+  .panelFoot {
+    font-size: 10px;
+    padding: 8px 12px;
+    line-height: 1.7;
+    flex-shrink: 0;
+  }
+  .dimensionSummary {
+    padding: 11px 12px;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .dimensionSummary img {
+    width: 30px;
+    height: 30px;
+  }
+  .dimensionSummary h2 {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .dimensionSummary p {
+    font-size: 11px;
+    line-height: 1.65;
+  }
+  .groupList,
+  .mechanicList {
+    padding: 9px;
+    gap: 7px;
+    flex: 1;
+    align-content: start;
+  }
+  .groupList button,
+  .mechanicList button {
+    padding: 10px 12px;
+  }
+  .groupList strong,
+  .mechanicList strong {
+    font-size: 12px;
+  }
+  .groupList p,
+  .mechanicList p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-top: 4px;
+  }
+  .dimensionDetails {
+    font-size: 10px;
+    margin: 0 12px 9px;
+    padding-top: 7px;
+    flex-shrink: 0;
+  }
+  .dimensionDetails[open] {
+    position: absolute;
+    background: #2b2339;
+    border: 1px solid #ac8ec0;
+    padding: 17px;
+    inset: 190px 0 0;
+    z-index: 4;
+    margin: 0;
+  }
+  .groupPanel {
+    position: relative;
+  }
+  .dimensionDetails[open] summary {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+  .dimensionDetails[open] p {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  .groupSummary {
+    padding: 11px 13px;
+    flex-shrink: 0;
+  }
+  .mechanicPanel .groupSummary,
+  .groupBoundary {
+    display: none;
+  }
+  .mobileGroupSummary {
+    display: block;
+    background: #f0e5d0;
+    color: #332a3f;
+    padding: 11px 13px 0;
+    flex-shrink: 0;
+  }
+  .mobileGroupSummary h2 {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+  .mobileGroupSummary [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #b9a2c3;
+  }
+  .mobileGroupSummary [role="tab"] {
+    background: transparent;
+    border: 0;
+    color: #8d7598;
+    font-size: 10px;
+    padding: 6px 3px;
+  }
+  .mobileGroupSummary [role="tab"][aria-selected="true"] {
+    color: #614576;
+    box-shadow: inset 0 -2px #8e68a2;
+  }
+  .groupReadingBody {
+    padding: 9px 0 11px;
+    font-size: 11px;
+    line-height: 1.75;
+    min-height: 59px;
+  }
+  .groupGameLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 12px;
+  }
+  .groupGameLinks a {
+    color: #79558c;
+    border-bottom: 1px dotted #bfa9c9;
+  }
+  .groupSummary h2 {
+    font-size: 19px;
+    margin-bottom: 4px;
+  }
+  .groupSummary > p {
+    font-size: 11px;
+    line-height: 1.75;
+  }
+  .typicalGames {
+    gap: 4px 8px;
+    font-size: 9px;
+    margin-top: 6px;
+  }
+  .readingHead {
+    padding: 11px 13px;
+    flex-shrink: 0;
+  }
+  .stamp {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+  .readingHead h2 {
+    font-size: 23px;
+    margin: 5px 0;
+  }
+  .readingHead > p {
+    font-size: 11px;
+    line-height: 1.75;
+  }
+  .readingTabs {
+    flex-shrink: 0;
+  }
+  .readingTabs button {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  .readingContent {
+    padding: 12px 14px;
+    font-size: 11px;
+    line-height: 1.75;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .readingContent h3 {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+  .readingContent h3:not(:first-child) {
+    margin-top: 9px;
+  }
+  .readingContent ul {
+    margin-bottom: 7px;
+  }
+  .readingContent li {
+    margin: 3px 0;
+  }
+  .readingContent > small {
+    font-size: 9px;
+    margin-top: 9px;
+  }
+  .readingLinks {
+    padding: 9px 13px;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+  .example > div a {
+    font-size: 15px;
+  }
+  .example small {
+    margin: 5px 0 9px;
+    font-size: 9px;
+  }
+  .sourceLink {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+  .readingContent .pager {
+    padding-top: 5px;
+    margin-top: auto;
+  }
+  .readingHead[data-reading="examples"] > p {
+    display: none;
+  }
+  .atlasNote {
+    display: none;
+  }
+  .guide,
+  .results {
+    min-height: 0;
+    flex: 1;
+  }
+  .guideContent {
+    padding: 20px 17px;
+  }
+  .guideContent h2 {
+    font-size: 25px;
+    margin: 12px 0 6px;
+  }
+  .guideContent h3 {
+    font-size: 13px;
+    margin-bottom: 11px;
+  }
+  .guideContent > p {
+    font-size: 12px;
+  }
+  .guideExample {
+    padding: 11px 13px;
+    font-size: 12px;
+    margin-top: 14px;
+  }
+  .guideContent .guideNote {
+    font-size: 10px;
+    margin: 15px 0;
+  }
+  .guideLinks {
+    gap: 15px;
+    font-size: 11px;
+  }
+  .guide > .pager {
+    margin-bottom: 5px;
+  }
+  .resultList {
+    padding: 10px;
+    gap: 8px;
+    grid-template-columns: 1fr;
+  }
+  .resultList > button {
+    padding: 10px 12px;
+  }
+  .resultList > button > span {
+    font-size: 9px;
+  }
+  .resultList h2 {
+    font-size: 17px;
+    margin: 2px 0 4px;
+  }
+  .resultList p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .catalogDoor {
+    padding: 13px;
+    gap: 10px;
+  }
+  .catalogDoor strong {
+    font-size: 14px;
+  }
+  .catalogDoor p {
+    font-size: 11px;
+  }
+  .catalogDoor > span {
+    font-size: 10px;
+  }
+  .detailContext {
+    padding: 12px;
+  }
+}
+@media (max-width: 700px) and (max-height: 740px) {
+  .mobileGroupSummary {
+    padding-top: 9px;
+  }
+  .groupReadingBody {
+    padding: 6px 0 7px;
+    min-height: 51px;
+  }
+  .groupGameLinks {
+    row-gap: 1px;
+  }
+  .example > div a {
+    line-height: 1.5;
+  }
+  .example small {
+    margin: 3px 0 6px;
+  }
+  .path {
+    display: none;
+  }
+  .workspace {
+    margin-top: 8px;
+  }
+  .heading {
+    padding: 7px 11px;
+  }
+  .heading :global(.eyebrow) {
+    display: none;
+  }
+  .heading h1 {
+    font-size: 21px;
+  }
+  .toolbar {
+    margin: 6px 0;
+  }
+  .search {
+    min-height: 34px;
+  }
+  .steps button {
+    padding: 6px;
+  }
+  .path {
+    padding: 5px 0;
+  }
+  .dimensionList small {
+    margin-top: 2px;
+  }
+  .dimensionList button {
+    padding: 5px;
+  }
+  .dimensionList button > img {
+    width: 30px;
+    height: 30px;
+  }
+  .panelFoot {
+    padding: 6px 11px;
+    line-height: 1.6;
+  }
+  .dimensionSummary {
+    padding: 9px 11px;
+  }
+  .groupSummary {
+    padding: 9px 11px;
+  }
+  .groupSummary h2 {
+    font-size: 18px;
+  }
+  .groupSummary > p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .typicalGames {
+    margin-top: 5px;
+  }
+  .groupList,
+  .mechanicList {
+    align-content: center;
+  }
+  .readingHead {
+    padding: 8px 11px;
+  }
+  .readingHead .stamp {
+    display: none;
+  }
+  .readingHead h2 {
+    font-size: 21px;
+    margin: 0 0 5px;
+    line-height: 1.3;
+  }
+  .readingHead > p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .readingContent {
+    padding: 9px 11px;
+  }
+  .sourceLink {
+    display: none;
+  }
+  .readingContent h3:not(:first-child) {
+    margin-top: 7px;
+  }
+  .guideContent {
+    padding: 13px 15px;
+  }
+  .guideContent .guideNote {
+    display: none;
+  }
+  .guideLinks {
+    margin-top: 15px;
+  }
+  .resultList {
+    gap: 6px;
+  }
+  .resultList > button {
+    padding: 7px 10px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .dimensionList button,
+  .groupList button,
+  .mechanicList button,
+  .steps button,
+  .readingTabs button {
+    transition:
+      background 140ms,
+      border-color 140ms;
+  }
+  .resultList > button:hover,
+  .groupList button:hover,
+  .mechanicList button:hover {
+    border-color: #c4aff0;
+    background: #3a2c48;
+  }
+}

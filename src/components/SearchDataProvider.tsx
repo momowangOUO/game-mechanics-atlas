@@ -7,7 +7,8 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { searchSeed, type SearchQueryStat } from "@/lib/heat";
+import { type SearchQueryStat } from "@/lib/heat";
+import { DEFAULT_SEARCH_RECORDS } from "@/lib/search-demand";
 
 type SearchDataset = { stats: SearchQueryStat[]; isImported: boolean };
 type SearchDataState = SearchDataset & {
@@ -19,7 +20,7 @@ const SearchDataContext = createContext<SearchDataState | null>(null);
 export function SearchDataProvider({ children }: { children: ReactNode }) {
   // Each mounted browser session owns its records; no storage or server mutation.
   const [dataset, setDataset] = useState<SearchDataset>(() => ({
-    stats: searchSeed,
+    stats: DEFAULT_SEARCH_RECORDS,
     isImported: false,
   }));
   const value = useMemo(
@@ -27,7 +28,8 @@ export function SearchDataProvider({ children }: { children: ReactNode }) {
       ...dataset,
       replaceRecords: (stats: SearchQueryStat[]) =>
         setDataset({ stats, isImported: true }),
-      resetRecords: () => setDataset({ stats: searchSeed, isImported: false }),
+      resetRecords: () =>
+        setDataset({ stats: DEFAULT_SEARCH_RECORDS, isImported: false }),
     }),
     [dataset],
   );

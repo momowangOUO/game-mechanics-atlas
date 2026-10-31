@@ -1,5 +1,7 @@
 # 数据实体与分类约束
 
+2026-10-31 修订：新增完整分类浏览结构 `src/data/taxonomy-reference.ts`（9 维 → 50 分组 → 122 机制 → 有范围的实例）；分组不改变 `Mechanic.dimension`。搜索默认数据改为有来源的官方年度增长名次；相对指数使用独立 `SearchInterestSnapshot`，不写入计数字段，见 [真实搜索资料](real-search-demand.md)。正式界面拒绝合成记录并暂停市场机会分，旧合成数据仅供测试。
+
 本文说明当前本地实现的数据边界。`src/lib/model.ts` 已实现实体的 Zod schema，`src/lib/knowledge.ts` 提供知识库校验与范围查询，`src/lib/heat.ts` 提供搜索导入校验和分析器。数据来自随应用交付的资料与本标签页内存中的导入记录；当前没有数据库或远程数据服务。尚未实现的历史修订、循环步骤实体等设计在下文单独标明。
 
 ## 分类身份

@@ -1,0 +1,119 @@
+{
+  "annual": {
+    "schemaVersion": 1,
+    "provider": "google_year_in_search",
+    "status": "available",
+    "metric": "trending_search_rank",
+    "year": 2025,
+    "region": "GLOBAL",
+    "category": "Games",
+    "dateStart": "2025-01-01",
+    "dateEnd": "2025-11-25",
+    "comparisonStart": "2024-01-01",
+    "comparisonEnd": "2024-11-25",
+    "collectedAt": "2026-10-31T05:21:40.077Z",
+    "sourceUrl": "https://trends.withgoogle.com/year-in-search/2025/",
+    "methodologyUrl": "https://trends.withgoogle.com/year-in-search/data-methodology/",
+    "rawSha256": "aa27718db98f28922782131b8a545774806adf306e29740b21c9369bd223f857",
+    "methodologySha256": "44d66664d8c559cf6961aeda848e490915a602ecec2cce197498d5db4a99a3ee",
+    "excerptSha256": "75e0c291bb73754f5c32228deb2eb23f5b79adbbf2f358d0b1cc95d2c732008a",
+    "evidencePath": "/data/search-demand/annual-games-source.txt",
+    "entries": [
+      {
+        "rank": 1,
+        "query": "Arc Raiders"
+      },
+      {
+        "rank": 2,
+        "query": "Battlefield 6"
+      },
+      {
+        "rank": 3,
+        "query": "Strands"
+      },
+      {
+        "rank": 4,
+        "query": "Split Fiction"
+      },
+      {
+        "rank": 5,
+        "query": "Clair Obscur: Expedition 33"
+      },
+      {
+        "rank": 6,
+        "query": "Path Of Exile 2"
+      },
+      {
+        "rank": 7,
+        "query": "Grand Theft Auto 6"
+      },
+      {
+        "rank": 8,
+        "query": "Pokémon Legends: Z-A"
+      },
+      {
+        "rank": 9,
+        "query": "Minecraft"
+      },
+      {
+        "rank": 10,
+        "query": "Roblox"
+      }
+    ]
+  },
+  "current": {
+    "schemaVersion": 1,
+    "provider": "google_trends",
+    "status": "unavailable",
+    "metric": "relative_search_interest",
+    "collectedAt": "2026-10-31T05:21:42.172Z",
+    "region": "GLOBAL",
+    "dateStart": "2026-07-31",
+    "dateEnd": "2026-10-30",
+    "terms": [
+      "roguelike",
+      "deck-building game",
+      "auto battler",
+      "idle game",
+      "extraction shooter"
+    ],
+    "requestUrl": "https://trends.google.com/trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22roguelike%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22deck-building%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22auto%20battler%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22idle%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22extraction%20shooter%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+    "request": {
+      "comparisonItem": [
+        {
+          "keyword": "roguelike",
+          "geo": "",
+          "time": "2026-07-31 2026-10-30"
+        },
+        {
+          "keyword": "deck-building game",
+          "geo": "",
+          "time": "2026-07-31 2026-10-30"
+        },
+        {
+          "keyword": "auto battler",
+          "geo": "",
+          "time": "2026-07-31 2026-10-30"
+        },
+        {
+          "keyword": "idle game",
+          "geo": "",
+          "time": "2026-07-31 2026-10-30"
+        },
+        {
+          "keyword": "extraction shooter",
+          "geo": "",
+          "time": "2026-07-31 2026-10-30"
+        }
+      ],
+      "category": 0,
+      "property": ""
+    },
+    "httpStatus": 429,
+    "reason": "Google Trends explore 返回 HTTP 429，未获取搜索指数。",
+    "rawSha256": "c14fd656f2118a2dd8b28c0180814955080ee639317576a431771d500d1f8bf4",
+    "evidencePath": "/data/search-demand/genre-request-response.txt",
+    "sourceUrl": "https://trends.google.com/trends/explore?date=2026-07-31%202026-10-30&q=roguelike,deck-building%20game,auto%20battler,idle%20game,extraction%20shooter",
+    "apiAccessUrl": "https://developers.google.com/search/apis/trends"
+  }
+}

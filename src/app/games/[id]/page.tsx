@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import GameViews from "@/components/GameViews";
 import { ArtImage } from "@/components/Art";
 import {
@@ -64,7 +65,9 @@ export default async function GamePage({
         <div className="game-worksheet">
           <GameCover game={game} large />
           <GameArtCredit gameId={game.id} />
-          <GameViews game={game} />
+          <Suspense fallback={<p role="status">正在打开游戏研究范围…</p>}>
+            <GameViews game={game} />
+          </Suspense>
         </div>
         <div className="game-summary game-study-notes">
           <ArtImage

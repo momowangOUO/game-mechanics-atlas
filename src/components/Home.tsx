@@ -4,15 +4,10 @@ import Link from "next/link";
 import HomeStage from "./HomeStage";
 import { ArtImage, DimensionIcon } from "./Art";
 import { recipeArt } from "@/lib/art";
+import styles from "./Home.module.css";
+import { taxonomyGroups } from "@/data/taxonomy-reference";
 
-import {
-  CountUp,
-  GameCard,
-  Reveal,
-  SectionHead,
-  SeedBadge,
-  Window,
-} from "./Primitives";
+import { CountUp, GameCard, Reveal, SectionHead, Window } from "./Primitives";
 import RelationPreview from "./RelationPreview";
 import { HomeHeatHighlights } from "./HeatCharts";
 import {
@@ -51,65 +46,64 @@ export default function Home() {
         ))}
       </section>
       <Reveal className="home-research-section">
-        <SectionHead number="01" title="从一条机制开始">
-          <Link href="/mechanics">查看全部档案 →</Link>
+        <SectionHead number="01" title="每一层有哪些类别？">
+          <Link href="/taxonomy">打开完整分类参考 →</Link>
         </SectionHead>
         <div className="dashboard-row">
-          <Window title="MECHANICS / 研究入口">
-            {[
-              ["in-run-deck-growth", "♧", "构筑选择如何改变后续行动？"],
-              ["run-reset", "⌁", "一次尝试结束后，哪些状态会重建？"],
-              ["spatial-loadout", "◇", "位置、形状与能力组合如何配合？"],
-            ].map(([id, mark, desc], index) => {
-              const mechanic = getMechanic(id);
-              return (
+          <Window title="TAXONOMY / 九个观察维度">
+            <div className={styles.dimensions}>
+              {dimensions.map((dimension) => (
                 <Link
-                  className="mechanic-row"
-                  href={`/mechanics/${id}`}
-                  key={id}
+                  className={styles.dimension}
+                  href={`/taxonomy?dimension=${dimension.id}`}
+                  key={dimension.id}
                 >
-                  <span className="mechanic-number">0{index + 1}</span>
-                  <span className="mechanic-mark" aria-hidden="true">
-                    {mechanic && <DimensionIcon id={mechanic.dimension} />}
-                  </span>
-                  <div>
-                    <h3>{mechanic?.name}</h3>
-                    <p>
-                      {
-                        dimensions.find((d) => d.id === mechanic?.dimension)
-                          ?.name
-                      }{" "}
-                      · {desc}
-                    </p>
-                  </div>
-                  <span className="tail">阅读档案 ↗</span>
+                  <DimensionIcon id={dimension.id} />
+                  <strong>{dimension.name}</strong>
+                  <p>{dimension.description}</p>
+                  <small>
+                    {
+                      taxonomyGroups.filter(
+                        (group) => group.dimensionId === dimension.id,
+                      ).length
+                    }{" "}
+                    个分组 ·{" "}
+                    {
+                      mechanics.filter(
+                        (mechanic) => mechanic.dimension === dimension.id,
+                      ).length
+                    }{" "}
+                    个机制 →
+                  </small>
                 </Link>
-              );
-            })}
+              ))}
+            </div>
           </Window>
-          <Window title="OPPORTUNITY NOTE / 机会观察">
-            <div className="opportunity">
-              <div className="opportunity-label">▸ 搜索关注与竞品供给</div>
-              <h3>
-                先看搜索关注，
-                <br />
-                再核对供给。
-              </h3>
-              <p>
-                搜索次数帮助发现关注方向，竞品样本帮助核对供给。
-                <br />
-                低供给不等于已经证明的市场空白。
-              </p>
-              <div className="mini-bars" aria-hidden="true">
-                {[24, 28, 25, 33, 31, 38, 42, 47, 52, 61, 70, 84].map(
-                  (h, i) => (
-                    <i key={i} style={{ height: `${h}%` }} />
-                  ),
-                )}
-              </div>
-              <SeedBadge />
-              <Link className="tiny cyan opportunity-link" href="/heat">
-                打开热度观察 →
+          <Window title="READING GUIDE / 沿着分类找参考">
+            <div className={styles.guide}>
+              <span className="eyebrow">维度 → 分组 → 机制 → 游戏实例</span>
+              <h3>先知道有哪些选择，再看它们怎样运作。</h3>
+              <ol>
+                <li>
+                  <strong>选观察维度</strong>
+                  <p>例如“构筑与配置”，关注玩家如何安排可用能力。</p>
+                </li>
+                <li>
+                  <strong>看分组和边界</strong>
+                  <p>区分卡组变化、空间配置、局前选择等不同问题。</p>
+                </li>
+                <li>
+                  <strong>对照具体游戏</strong>
+                  <p>
+                    查看规则、发生范围、成立条件和来源，再决定可以借鉴什么。
+                  </p>
+                </li>
+              </ol>
+              <Link className="button primary" href="/taxonomy">
+                逐层查分类 →
+              </Link>
+              <Link className="button" href="/types">
+                另查 {genres.length} 个复合类型 →
               </Link>
             </div>
           </Window>
@@ -168,7 +162,7 @@ export default function Home() {
         </div>
       </Reveal>
       <Reveal className="home-research-section">
-        <SectionHead number="05" title="从玩家的搜索里，找研究线索">
+        <SectionHead number="05" title="搜索趋势，先看来源与时间">
           <Link href="/heat">查看完整热度观察 ↗</Link>
         </SectionHead>
         <HomeHeatHighlights />

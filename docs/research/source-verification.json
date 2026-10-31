@@ -1282,6 +1282,24 @@
       "checkedAt": "2026-10-31",
       "method": "web_read",
       "scope": "官方静态英雄数据逐技能列出随技能等级变化的冷却时间；只据此记录该英雄能力冷却，不由此推断死亡复活或全部模式。"
+    },
+    {
+      "sourceId": "disco-elysium-active-checks-devlog",
+      "url": "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "56ad8cc1ba61b803bc306010230e73a1f96ee11b30f70e6ab68b2e413e88abb4",
+      "scope": "开发期日志解释主动检定：角色属性、技能、物品与思想效果面对任务难度，随机掷骰参与结果。与发行后的官方 FAQ 交叉确认机制存在，不把开发期全部细则或数值视为现行版本保证。"
+    },
+    {
+      "sourceId": "disco-elysium-official-faq",
+      "url": "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/",
+      "checkedAt": "2026-10-31",
+      "method": "http_get_and_body_review",
+      "status": 200,
+      "bodySha256": "001f65ef1ac0d84bddfb3e2eefd527e9666cd52f83bacbcedbf2b4dcab24a37f",
+      "scope": "发行后的官方置顶 FAQ 确认耐力等白色检定会失败；提升对应技能或发现修饰条件可重新尝试。只核验技能参与尝试判定与再尝试条件，不引入未列明的成功率或完整计算公式。"
     }
   ],
   "failures": [

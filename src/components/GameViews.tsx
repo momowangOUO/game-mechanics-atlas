@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import type { Game } from "@/lib/model";
@@ -28,7 +29,30 @@ import { evidenceLabels } from "@/lib/evidence-labels";
 
 type GameView = "mechanics" | "loop" | "relations" | "heat";
 export default function GameViews({ game }: { game: Game }) {
-  const [scopeId, setScopeId] = useState(game.defaultScopeId),
+  const query = useSearchParams();
+  const scopeValues = query.getAll("scope");
+  const availableScopes = listGameScopes(scopes, game.id, game.defaultScopeId);
+  const requestedScope =
+    scopeValues.length === 1 &&
+    availableScopes.some((scope) => scope.id === scopeValues[0])
+      ? scopeValues[0]
+      : game.defaultScopeId;
+  return (
+    <ScopedGameViews
+      key={`${game.id}/${requestedScope}`}
+      game={game}
+      initialScopeId={requestedScope}
+    />
+  );
+}
+function ScopedGameViews({
+  game,
+  initialScopeId,
+}: {
+  game: Game;
+  initialScopeId: string;
+}) {
+  const [scopeId, setScopeId] = useState(initialScopeId),
     [view, setView] = useState<GameView>("mechanics"),
     [showUnknown, setShowUnknown] = useState(false);
   const [relationFocus, setRelationFocus] = useState("");

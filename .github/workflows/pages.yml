@@ -32,6 +32,7 @@ jobs:
       - run: node scripts/check-content.mjs
       - run: npm run test:readlink
       - run: npm run test:static
+      - run: node --test scripts/collect-search-demand.test.mjs
       - run: npm run build:pages
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e

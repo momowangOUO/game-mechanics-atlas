@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s · 机制研究室",
   },
   description:
-    "供游戏设计师查阅的机制知识库，包含游戏案例、组合实验与搜索需求分析。按九个维度整理机制，区分来源事实、设计分析和合成示例数据。",
+    "供游戏设计师逐层查阅的分类参考库：九个维度、类别分组、具体机制与游戏用法，并列出复合类型、组合实验和注明来源及时间的搜索趋势。",
 };
 export default function RootLayout({
   children,

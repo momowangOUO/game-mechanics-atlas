@@ -83,7 +83,7 @@ test("phone title scene keeps every chapter reachable without document scrolling
     await visit(page, "/");
     const directory = page.getByRole("navigation", { name: "研究室章节" });
     for (const name of [
-      "机制档案",
+      "分类参考",
       "游戏案例",
       "机制图谱",
       "热度观察",
@@ -118,9 +118,9 @@ test("failed scenery preserves search and usable chapter links", async ({
   await page
     .getByRole("navigation", { name: "研究室章节" })
     .getByRole("link")
-    .filter({ hasText: "机制档案" })
+    .filter({ hasText: "分类参考" })
     .click();
-  await expect(page).toHaveURL(/\/mechanics\/?$/);
+  await expect(page).toHaveURL(/\/taxonomy\/?$/);
 });
 
 test("system reduced motion prevents pointer parallax while preserving pose changes", async ({

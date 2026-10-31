@@ -1,0 +1,82 @@
+<ol aria-label="Trend list for Games">
+<li class="glue-card__list-item list-item"
+    value="1"
+    data-list-index="1"
+    tabindex="0"
+    role="button"
+    aria-label="1 of 10. Arc Raiders"
+    
+    ></li>
+<li class="glue-card__list-item list-item"
+    value="2"
+    data-list-index="2"
+    tabindex="0"
+    role="button"
+    aria-label="2 of 10. Battlefield 6"
+    
+    ></li>
+<li class="glue-card__list-item list-item"
+    value="3"
+    data-list-index="3"
+    tabindex="0"
+    role="button"
+    aria-label="3 of 10. Strands"
+    
+    ></li>
+<li class="glue-card__list-item list-item"
+    value="4"
+    data-list-index="4"
+    tabindex="0"
+    role="button"
+    aria-label="4 of 10. Split Fiction"
+    
+    ></li>
+<li class="glue-card__list-item list-item"
+    value="5"
+    data-list-index="5"
+    tabindex="0"
+    role="button"
+    aria-label="5 of 10. Clair Obscur: Expedition 33"
+    
+    ></li>
+<li class="glue-card__list-item list-item list-item--page-two"
+    value="6"
+    data-list-index="6"
+    tabindex="0"
+    role="button"
+    aria-label="6 of 10. Path Of Exile 2"
+    
+    aria-hidden="true" inert></li>
+<li class="glue-card__list-item list-item list-item--page-two"
+    value="7"
+    data-list-index="7"
+    tabindex="0"
+    role="button"
+    aria-label="7 of 10. Grand Theft Auto 6"
+    
+    aria-hidden="true" inert></li>
+<li class="glue-card__list-item list-item list-item--page-two"
+    value="8"
+    data-list-index="8"
+    tabindex="0"
+    role="button"
+    aria-label="8 of 10. Pokémon Legends: Z-A"
+    
+    aria-hidden="true" inert></li>
+<li class="glue-card__list-item list-item list-item--page-two"
+    value="9"
+    data-list-index="9"
+    tabindex="0"
+    role="button"
+    aria-label="9 of 10. Minecraft"
+    
+    aria-hidden="true" inert></li>
+<li class="glue-card__list-item list-item list-item--page-two"
+    value="10"
+    data-list-index="10"
+    tabindex="0"
+    role="button"
+    aria-label="10 of 10. Roblox"
+    
+    aria-hidden="true" inert></li>
+</ol>

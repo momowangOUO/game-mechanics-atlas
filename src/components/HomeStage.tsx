@@ -10,7 +10,7 @@ import { chapters, chapterArt, type MaidState } from "@/lib/art";
 const messages: { state: MaidState; text: string }[] = [
   {
     state: "welcome",
-    text: "欢迎来到研究室，我是 RIN。想从哪款游戏开始？我们可以一起看看它的规则。",
+    text: "欢迎来到研究室，我是 RIN。先打开分类参考吧：每一类负责什么、有哪些机制、哪些游戏值得看，都整理在里面。",
   },
   {
     state: "explain",
@@ -74,9 +74,9 @@ export default function HomeStage() {
             发现<em>新玩法。</em>
           </h1>
           <p className="vn-description">
-            从一条规则到一组机制。
+            每一类是什么，怎样改变玩法？
             <br />
-            查机制、看案例，为下一次原型找思路。
+            逐层查分类，对照游戏找设计参考。
           </p>
           <form
             className="search-window vn-search"
@@ -105,8 +105,8 @@ export default function HomeStage() {
             </div>
           </form>
           <div className="vn-actions">
-            <Link className="button primary" href="/mechanics">
-              进入机制档案 →
+            <Link className="button primary" href="/taxonomy">
+              逐层查分类 →
             </Link>
             <Link className="button" href="/lab">
               试验一种新组合 ↗

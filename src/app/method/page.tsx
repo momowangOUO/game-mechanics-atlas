@@ -7,17 +7,15 @@ import {
   genres,
   recipes,
   instances,
-  relationships,
 } from "@/lib/knowledge";
-import { FORMULA_VERSION } from "@/lib/heat";
 import {
-  PageHead,
-  SeedBadge,
-  StateBadge,
-  Window,
-} from "@/components/Primitives";
+  classificationLevels,
+  taxonomyGroups,
+} from "@/data/taxonomy-reference";
+import { annualSearchSnapshot } from "@/lib/search-demand";
+import { PageHead, StateBadge, Window } from "@/components/Primitives";
 
-export const metadata: Metadata = { title: "分类与分析方法" };
+export const metadata: Metadata = { title: "分类、证据与搜索数据" };
 export default function MethodPage() {
   return (
     <>
@@ -25,74 +23,121 @@ export default function MethodPage() {
         <Link href="/">研究室</Link> / 方法说明
       </div>
       <PageHead
-        eyebrow="RESEARCH PROTOCOL / 分类与分析依据"
-        title="机制分类、证据与热度计算"
-        description="查看机制如何分类、实例如何判定，以及搜索需求和样本供给如何计算。阅读结果时，请一并核对适用范围、数据来源和设计假设。"
+        eyebrow="RESEARCH PROTOCOL / 查阅依据"
+        title="分类怎样读，数据怎样用？"
+        description="先分清分类的不同层次，再查看游戏中的范围和证据。搜索资料分别保留原始的时间、地区与指标，不用游戏收录数量代替玩家需求。"
       />
       <div className="method-page">
         <div className="type-chips">
-          <Link href="#taxonomy" className="chip">
-            固定九维
+          <Link className="chip" href="#taxonomy">
+            分类层次
           </Link>
-          <Link href="#evidence" className="chip">
+          <Link className="chip" href="#evidence">
             状态与范围
           </Link>
-          <Link href="#heat" className="chip">
-            需求与供给
+          <Link className="chip" href="#heat">
+            真实搜索资料
           </Link>
-          <Link href="#import" className="chip">
-            导入数据
+          <Link className="chip" href="#import">
+            本地导入
           </Link>
-          <Link href="/sources" className="chip">
+          <Link className="chip" href="/sources">
             来源目录 ↗
           </Link>
         </div>
         <section id="taxonomy">
-          <h2>每个机制使用唯一标识和固定主维度</h2>
+          <h2>从维度逐层查到具体游戏</h2>
           <p>
-            每条原子机制都有唯一 ID，归属一个固定主维度。游戏案例引用这条机制，再补充状态、成立条件与作用范围。同一机制不会因案例不同而改变主分类。机制之间的依赖、协同、替代、冲突、资源供给、规则改写和双向反馈，作为关系单独记录。
+            分类参考按“维度 → 分组 → 原子机制 →
+            游戏实例”组织浏览。九个维度回答不同问题，并不是由低到高的价值排序。分组用于把同一维度里的相关机制放在一起查阅；它不会替换原子机制的定义，也不会因某款游戏的用法而改变机制身份。
+          </p>
+          <p>
+            当前整理 {dimensions.length} 个维度、{taxonomyGroups.length}{" "}
+            个分组和 {mechanics.length}{" "}
+            个原子机制。分组完整覆盖已收录机制；每一层都能查看作用、边界及游戏用法。
+            <Link className="cyan" href="/taxonomy">
+              打开分类参考 →
+            </Link>
           </p>
           <table className="dimension-table">
             <thead>
               <tr>
-                <th>维度</th>
-                <th>判断问题</th>
-                <th>收录</th>
+                <th>层次或实体</th>
+                <th>回答的问题</th>
+                <th>如何理解</th>
               </tr>
             </thead>
             <tbody>
-              {dimensions.map((d) => (
-                <tr key={d.id}>
+              {classificationLevels.map((level) => (
+                <tr key={level.id}>
+                  <td>{level.name}</td>
+                  <td>{level.question}</td>
                   <td>
-                    <Link href={`/mechanics?dimension=${d.id}`}>{d.name}</Link>
+                    {level.explanation}
                     <br />
-                    <code>{d.id}</code>
-                  </td>
-                  <td>{d.description}</td>
-                  <td>
-                    {mechanics.filter((m) => m.dimension === d.id).length}
+                    例：{level.example}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-          <h3>用边界规则消除歧义</h3>
+          <h3>九个维度分别负责什么？</h3>
+          <table className="dimension-table">
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th>观察问题</th>
+                <th>类别与机制</th>
+              </tr>
+            </thead>
+            <tbody>
+              {dimensions.map((dimension) => (
+                <tr key={dimension.id}>
+                  <td>
+                    <Link href={`/taxonomy?dimension=${dimension.id}`}>
+                      {dimension.name} →
+                    </Link>
+                  </td>
+                  <td>{dimension.description}</td>
+                  <td>
+                    {
+                      taxonomyGroups.filter(
+                        (group) => group.dimensionId === dimension.id,
+                      ).length
+                    }{" "}
+                    个分组 /{" "}
+                    {
+                      mechanics.filter(
+                        (mechanic) => mechanic.dimension === dimension.id,
+                      ).length
+                    }{" "}
+                    个机制
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <h3>分类身份不随案例漂移</h3>
           <p>
-            “局次重置”描述尝试如何组织，属于时间与流程；“永久死亡”描述状态的保留与丢失，属于成长与延续。“规则修饰器”属于规则与结算，“配方制作”属于资源转换。它们常常相互作用，关联紧密也不改变分类身份。
+            “局次重置”描述尝试如何组织，归时间与流程；“永久死亡”描述状态怎样丢失，归成长与延续。“拖放”是输入动作，“空间装备配置”是能力配置，“邻接加成”是结算规则。它们可以共同出现在一款游戏里，关联紧密也不需要合并或改变分类。
+          </p>
+          <h3>复合类型、配方与元数据各有用途</h3>
+          <p>
+            <Link className="cyan" href="/types">
+              {genres.length} 个复合类型
+            </Link>
+            汇集多种机制，例如
+            Roguelite、RPG、MOBA、撤离射击。类型页解释玩家主要在做什么、与相近类型的差别及典型参照。它们可以重叠，不能当作原子机制树的上一级，也不能从类型标签反向补全游戏实例。
           </p>
           <p>
-            题材、叙事、画风、平台和世界观作为独立元数据记录，不纳入机制九维。核心玩法标签辅助检索，传统类型汇集多种机制；两者都不作为原子机制的标识。
-          </p>
-          <h3>复合类型保留独立入口</h3>
-          <p>
-            Roguelite、Roguelike、RPG、MOBA、Soulslike、Extraction
-            Shooter、Survival Craft、Immersive Sim 等通过
-            <Link href="/types">类型配方</Link>
-            表达必要、常见、可选特征与争议边界。缺少公认必要条件时可以留空，不会因此自动匹配所有游戏。编辑配方中的案例仅是设计参照，不能代替同范围机制证据。
+            <Link className="cyan" href="/lab">
+              {recipes.length} 组组合配方
+            </Link>
+            用于提出设计假设，说明机制分工、潜在协同与风险。题材、画风、叙事、平台和世界观作为元数据辅助检索，不混入机制九维。所有目录均可扩展，当前收录并不代表游戏设计只有这些可能。
           </p>
         </section>
         <section id="evidence">
-          <h2>五种状态分别记录，结论限定适用范围</h2>
+          <h2>看典型游戏时，一并看范围与状态</h2>
           <Window title="FIVE STATES / 五种实例状态">
             <div className="state-legend">
               {(
@@ -103,132 +148,106 @@ export default function MethodPage() {
                   "unknown",
                   "conditional",
                 ] as const
-              ).map((s) => (
-                <StateBadge key={s} status={s} />
+              ).map((status) => (
+                <StateBadge key={status} status={status} />
               ))}
             </div>
             <ul>
               <li>
-                <strong>存在：</strong>已有证据说明机制在所选范围中成立。
+                <strong>存在：</strong>已有记录说明机制在所选范围成立。
               </li>
               <li>
-                <strong>不存在：</strong>有明确否定证据，只约束所记录的范围。
+                <strong>不存在：</strong>有明确否定依据，只约束当前范围。
               </li>
               <li>
                 <strong>不适用：</strong>当前范围没有适用对象，需要说明理由。
               </li>
               <li>
-                <strong>未知：</strong>尚未核验。未填写的实例也按未知查询。
+                <strong>未知：</strong>尚未核验；未填写的实例也按未知查询。
               </li>
               <li>
                 <strong>条件存在：</strong>
-                必须写明角色、条件、阶段或其他成立约束。
+                需要满足记录中的角色、阶段或其他条件。
               </li>
             </ul>
           </Window>
           <p>
-            范围可以是整个游戏、模式、系统、章节、角色或职业，也可以是特定版本。父范围的观察只沿明确的父子关系向下继承；子范围有更具体的观察时，以子范围为准，兄弟模式互不继承。Minecraft 创造模式的基础材料结论不能用于生存模式，Inscryption 开篇的卡牌观察也不能扩展到所有章节。
+            范围包括整个游戏、模式、系统、章节、角色和版本。父范围记录只沿明确的父子关系向下继承；更具体的子范围可以覆盖，兄弟模式互不继承。Minecraft
+            创造模式的资源结论不能用于生存模式，某个角色的能力也不能扩展为所有角色共同拥有。
           </p>
-          <h3>事实和分析分开阅读</h3>
+          <h3>事实、规则归纳与设计判断分开</h3>
           <p>
-            官方资料明确支持的描述作为来源事实记录；机制定义、核心循环与设计价值由本站编辑归纳，未核验事项另作说明。当前有{" "}
-            {games.length} 款游戏、{mechanics.length} 条原子机制、
-            {genres.length} 个复合类型、{recipes.length} 组配方、
-            {instances.length} 条稀疏实例与 {relationships.length}{" "}
-            条编辑关系。实例按已核验的内容逐条收录，没有记录的游戏与机制组合仍按未知处理。
+            当前 {games.length} 款游戏有 {instances.length}{" "}
+            条机制实例。分类参考中的游戏说明引用这些实例，保留原范围、状态和来源；游戏名不是自动判类的证据。官方介绍、手册、社区资料与编辑分析分别标识，本轮没有安装全部游戏实测。机制定义、分组、设计价值和类型阅读指引是本站编辑归纳。
           </p>
           <p>
-            复杂度与实现难点是定性判断，不代表工期或精确难度分数。实验室根据已收录的定义和规则生成设计假设，仍需通过原型验证。
+            部分机制尚未收录可核验的游戏实例，页面会明确说明。复杂度、实现难点和实验室输出是定性分析，不是精确工期、成功率或已验证的协同效果。
           </p>
         </section>
         <section id="heat">
-          <h2>分别观察搜索需求与样本供给</h2>
-          <SeedBadge />
+          <h2>热门结果必须有真实来源</h2>
           <p>
-            默认演示数据全部在本地合成，用于演示计算与排序，不代表真实玩家规模或当前行业趋势。搜索次数统计搜索事件，不是独立人数；游戏名称搜索可作代理信号，但不能证明玩家在寻找其中的某一机制。
+            网站已撤下默认合成热门榜。没有真实搜索记录的类别、机制与组合保留“未取得”或“未采集”，不补造次数、趋势或市场机会。
           </p>
-          <h3>先保留原始需求总量</h3>
+          <h3>已取得：Google 官方年度搜索趋势</h3>
           <p>
-            主题需求 D
-            是归因后的搜索次数。明确指向主题的搜索记为直接归因，借游戏名等信号推断主题需求的搜索记为代理归因，两者分别保留。同一次搜索可分别归入游戏、类型、机制和组合；在每个主题种类内，归因权重合计不超过 1，全站原始搜索总量只计一次。
+            当前公开展示的是 Google Year in Search {annualSearchSnapshot.year}{" "}
+            全球 Games 榜，共 {annualSearchSnapshot.entries.length} 条。统计区间{" "}
+            {annualSearchSnapshot.dateStart} 至 {annualSearchSnapshot.dateEnd}
+            ，与上一年同期比较。榜单反映当年的搜索增长趋势，原文没有公布各词的次数和增长百分比；不能把它改写成“搜索最多的游戏”，也不能当作当前类别的需求排名。
           </p>
-          <div className="paper">
-            <h2>1000万次与10组各1万次，按总量比较</h2>
-            <p>
-              示例中MOBA方向近30日归因搜索为1000万次，虚构恐怖方向的10组搜索各1万次，合计10万次。前者原始需求是后者100倍。子类更多或收录游戏更多，都不会改变这个结果。
-            </p>
-          </div>
-          <h3>供给只统计已收录样本</h3>
           <p>
-            S
-            是本站收录样本中符合统计条件的不同游戏数。类型按编辑标签统计；机制和组合按已确认存在的实例统计。组合要求全部机制在同一兼容范围共存，不能把不同模式或角色的观察拼在一起。条件匹配与未知样本单列；S=0
-            表示尚无确认样本，不能据此认定市场空白，也不会直接给出最高蓝海分。
+            <a
+              className="cyan"
+              href={annualSearchSnapshot.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              官方榜单 ↗
+            </a>{" "}
+            ·{" "}
+            <a
+              className="cyan"
+              href={annualSearchSnapshot.methodologyUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              官方统计方法 ↗
+            </a>{" "}
+            ·{" "}
+            <Link className="cyan" href="/heat">
+              查看本站保留的来源与采集时间 →
+            </Link>
           </p>
-          <h3>平滑后的研究线索</h3>
-          <pre>
-            <code>{`Dmax = 同一比较组内的最大搜索次数
-k = 2
-d = √(D / Dmax)
-c = S / (S + k)
-
-需求指数 = 100 × d
-蓝海线索分 = 100 × d × (1 − c)
-红海线索分 = 100 × c × (1 − 0.5d)
-公式版本：${FORMULA_VERSION}`}</code>
-          </pre>
+          <h3>相对指数与搜索次数分别计算</h3>
           <p>
-            比较组限定相同时间、来源集合、地区和主题种类。类型、机制、组合和游戏分别建立基准，榜单文字筛选不改变基准。热门排行按归因搜索次数排序；两个线索分供研究参考，不是成功率，也不是合计为100%的互补概率。
+            Google Trends 的相对搜索兴趣按请求范围归一到 0–100。不同请求中的 100
+            不代表同样的搜索总量；0
+            也可能表示数据过少。本站仅接受同组搜索词、时间、地区和搜索类型一致的指数结构，在日期完整时比较组内均值，不把指数相加成搜索次数。
           </p>
-          <ul>
-            <li>Dmax=0 或主题完全未记录：不产生可用分数。</li>
-            <li>D=0 且确有记录：已记录日期的归因搜索量为零，不进入蓝海推荐；未记录日期仍视为缺失。</li>
-            <li>S=0：搜索需求仍可查看，蓝海与红海线索分保留为空，等待补充样本。</li>
-            <li>少量样本即使得分较高，仍显示样本有限与未知数量。</li>
-          </ul>
-          <h3>趋势必须同口径可比</h3>
           <p>
-            比较当前与前一等长区间，趋势=(当前−上期)/上期。需要相同数据集、来源、地区、语言与稳定的搜索词归因规则，并且两期每日记录完整。缺少上一期或日期时保留“暂无可比数据”；上期为0、本期大于0时标记“新出现”，不显示无穷百分比。折线保留缺失日期断点。
+            搜索次数只统计有来源的搜索事件，不代表独立玩家人数、购买意愿或销量。游戏名称搜索可能涉及攻略、新闻或故障，不能直接证明用户想玩其中某个机制。本站当前没有可展示的真实类别总搜索量。
+          </p>
+          <h3>收录样本不等于市场供给</h3>
+          <p>
+            已收录游戏数只说明本站能展示多少参照，不能当作全市场竞品数。机制组合还需要在同一兼容范围内共同成立，不能拼接不同模式和角色。样本为零表示本库暂未确认，不表示市场空白。
+          </p>
+          <p>
+            年度名次与相对指数缺少可用的绝对需求，当前游戏样本也不覆盖市场，因此网站暂停给出蓝海、红海分与机会排名。导入真实站内搜索次数仍然不足以补齐市场供给；站内结果仅反映该站用户。取得可比的需求与供给范围后，才能另外建立并验证市场分析模型。
           </p>
         </section>
         <section id="import">
-          <h2>导入自己的搜索记录</h2>
+          <h2>本地分析保留来源边界</h2>
           <p>
-            热度页支持 JSON 整批校验、替换与导出，文件只在当前浏览器中分析，不上传服务端。整批校验通过后才替换现有数据；导入失败时保留原数据。导入内容不会自动保存，刷新后需要重新导入；离开前可先导出，方便后续继续分析。
-          </p>
-          <pre>
-            <code>
-              {JSON.stringify(
-                {
-                  schemaVersion: 1,
-                  records: [
-                    {
-                      id: "demo-2026-10-30",
-                      datasetId: "my-research",
-                      date: "2026-10-30",
-                      query: "MOBA",
-                      count: 100,
-                      region: "CN",
-                      language: "zh-CN",
-                      sourceKind: "import",
-                      attributions: [
-                        { topicId: "genre:moba", weight: 1, mode: "direct" },
-                      ],
-                    },
-                  ],
-                },
-                null,
-                2,
-              )}
-            </code>
-          </pre>
-          <p>
-            日期必须是有效日历日期，次数必须是非负安全整数，主题 ID 必须已注册，记录 ID 必须唯一。每条记录在同一主题种类内的归因权重合计不超过 1。合成记录的{" "}
-            <code>sourceKind:synthetic</code>{" "}
-            标记必须保留，同一数据集不能混合来源类别。在同一数据集、来源、地区和语言下，同一个归一化搜索词必须沿用一致的归因规则。更换规则时，应统一重算历史记录，或使用独立数据集保存不同口径，分别分析。
+            搜索观察页提供两种独立入口：同组 Google Trends
+            相对指数，以及自行取得的搜索次数。整批格式校验通过后才替换当前记录，失败时保留原数据。格式通过不代表来源真实性已经核验。
           </p>
           <p>
-            可从<Link href="/heat">热度观察</Link>
-            导出完整示例结构。真实日志、API 或第三方分析数据须先转换为该结构再导入；本版不包含自动抓取、自动研究或定时更新功能。
+            次数记录保留数据集、日期、搜索词、次数、地区、语言与主题归因。次数须为非负安全整数；同一搜索在每个主题种类中的归因权重合计不超过
+            1；同一词的历史归因规则须一致。缺失日期不视为零，趋势需要前后等长区间及稳定的采样口径。
+          </p>
+          <p>
+            正式工具拒绝合成搜索记录。开发测试中的数值只用于验证计算，不进入热门结果。导入文件仅在浏览器会话中使用，不上传服务端；刷新后清除，离开前可导出。当前没有自动研究、定时更新或后台抓取服务。
           </p>
         </section>
       </div>

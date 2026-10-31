@@ -30,9 +30,9 @@ export const maidStates: Record<MaidState, { src: string; label: string }> = {
 export const chapters = [
   {
     id: "mechanics",
-    href: "/mechanics",
-    name: "机制档案",
-    subtitle: "一条规则，如何改变选择",
+    href: "/taxonomy",
+    name: "分类参考",
+    subtitle: "逐层看类别、作用与游戏用法",
     number: "01",
   },
   {

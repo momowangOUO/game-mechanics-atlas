@@ -47,150 +47,165 @@ test("search shortcut accepts immediate typing and restores trigger focus", asyn
   await expect(settings).toBeFocused();
 });
 
-for (const sourceKind of ["import", "synthetic"] as const) {
-  test(`${sourceKind} working data survives a case visit and invalid import, but resets on reload`, async ({
-    page,
-    context,
-  }) => {
-    const record = {
-      id: "review-record-1",
-      datasetId: "review-working-set",
-      date: "2026-10-30",
-      query: "计分",
-      count: 123,
-      region: "CN",
-      language: "zh-CN",
-      sourceKind,
-      attributions: [
-        { topicId: "mechanic:score-threshold", weight: 1, mode: "direct" },
-      ],
-    };
-    const badge =
-      sourceKind === "synthetic"
-        ? "合成示例 · 非真实市场数据"
-        : "本地导入 · 来源见数据说明";
-    const total = page
-      .locator(".data-strip .metric")
-      .first()
-      .locator(".sr-only");
-    const reset = page.getByRole("button", {
-      name: "恢复合成示例",
-      exact: true,
-    });
-    const importDialog = page.getByRole("dialog", {
-      name: "IMPORT / 本地搜索记录",
-    });
-    const exportRecords = async () => {
-      const downloadReady = page.waitForEvent("download");
-      await page
-        .getByRole("button", { name: "导出当前JSON", exact: true })
-        .click();
-      const download = await downloadReady;
-      return JSON.parse(await readFile((await download.path())!, "utf8"));
-    };
-    await gotoApp(page, "/heat");
-    await hydrated(page);
+async function openCounts(page: Page) {
+  const action = page.getByRole("button", { name: "分析自己的搜索次数 →" });
+  if (await action.isVisible()) await action.click();
+}
+async function exportRecords(page: Page) {
+  const ready = page.waitForEvent("download");
+  await page.getByRole("button", { name: "导出当前JSON", exact: true }).click();
+  const download = await ready;
+  return JSON.parse(await readFile((await download.path())!, "utf8"));
+}
+const record = {
+  id: "review-record-1",
+  datasetId: "review-working-set",
+  date: "2026-10-30",
+  query: "计分",
+  count: 123,
+  region: "CN",
+  language: "zh-CN",
+  sourceKind: "import",
+  attributions: [
+    { topicId: "mechanic:score-threshold", weight: 1, mode: "direct" },
+  ],
+};
+
+test("imported working data survives case navigation and invalid or synthetic replacement, but resets on reload", async ({
+  page,
+  context,
+}) => {
+  await gotoApp(page, "/heat");
+  await hydrated(page);
+  await openCounts(page);
+  const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
+  const importData = async (value: unknown) => {
     await page.getByRole("button", { name: "导入数据 ⇧" }).click();
-    await importDialog
-      .getByLabel("JSON 内容")
-      .fill(JSON.stringify({ schemaVersion: 1, records: [record] }));
-    await importDialog
-      .getByRole("button", { name: "校验并替换本地数据 →" })
-      .click();
-    await expect(importDialog).not.toBeVisible();
-    await expect(total).toHaveText("123");
-    await expect(page.locator(".page-head .seed")).toHaveText(badge);
-    await page.getByRole("tab", { name: "热门机制", exact: true }).click();
-    await page
-      .locator(`.heat-inspector a[href^="${appPath("/games/")}"]`)
-      .first()
-      .click();
-    await expect(page).toHaveURL(/\/games\/[^/?]+\/?$/);
-    await hydrated(page);
-    await page.getByRole("tab", { name: "热度标签", exact: true }).click();
-    await expect(page.locator(".heat-mini .seed")).toHaveText(badge);
-    await expect(page.locator(".heat-mini")).toContainText(
-      sourceKind === "synthetic" ? "本期合成示例没有" : "本期导入数据没有",
-    );
-    await page
-      .getByRole("link", { name: "机制研究室首页", exact: true })
-      .click();
-    await expect(page).toHaveURL(/\/$/);
-    await hydrated(page);
-    await expect(page.locator(".home-heat-grid strong")).toHaveText("123");
-    await expect(page.locator(".home-opportunity-strip .seed")).toHaveText(
-      badge,
-    );
-    await page
-      .getByRole("navigation", { name: "主导航", exact: true })
-      .getByRole("link", { name: "热度观察", exact: true })
-      .click();
-    await expect(page).toHaveURL(/\/heat\/?$/);
-    await hydrated(page);
-    await expect(total).toHaveText("123");
-    await expect(reset).toBeVisible();
-    await expect(page.locator(".page-head .seed")).toHaveText(badge);
-    expect(await exportRecords()).toEqual({
-      schemaVersion: 1,
-      records: [record],
-    });
-    await page.getByRole("button", { name: "导入数据 ⇧" }).click();
-    await importDialog
-      .getByLabel("JSON 内容")
-      .fill('{"schemaVersion":1,"records":[{"id":"invalid"}]}');
-    await importDialog
-      .getByRole("button", { name: "校验并替换本地数据 →" })
-      .click();
-    await expect(importDialog.getByRole("alert")).toContainText(
+    await dialog.getByLabel("JSON 内容").fill(JSON.stringify(value));
+    await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  };
+  const total = page.locator(".data-strip .metric").first().locator(".sr-only");
+  await importData({ schemaVersion: 1, records: [record] });
+  await expect(dialog).not.toBeVisible();
+  await expect(total).toHaveText("123");
+  await expect(page.locator(".page-head .seed")).toHaveText(
+    "本地导入 · 来源待核验",
+  );
+  await page.getByRole("tab", { name: "热门机制", exact: true }).click();
+  await page
+    .locator(`.heat-inspector a[href^="${appPath("/games/")}"]`)
+    .first()
+    .click();
+  await expect(page).toHaveURL(/\/games\/[^/?]+\/?$/);
+  await hydrated(page);
+  await page.getByRole("tab", { name: "热度标签", exact: true }).click();
+  await expect(page.locator(".heat-mini .seed")).toHaveText(
+    "本地导入 · 来源见数据说明",
+  );
+  await expect(page.locator(".heat-mini")).toContainText(
+    "尚未取得这个主题的直接搜索记录",
+  );
+  await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
+  await hydrated(page);
+  await expect(page.locator(".home-heat-ranking")).toContainText("Arc Raiders");
+  await expect(page.locator(".home-heat-ranking")).not.toContainText("123");
+  await expect(page.locator(".home-opportunity-strip")).toHaveCount(0);
+  await page
+    .getByRole("navigation", { name: "主导航", exact: true })
+    .getByRole("link", { name: "热度观察", exact: true })
+    .click();
+  await hydrated(page);
+  await openCounts(page);
+  await expect(total).toHaveText("123");
+  expect(await exportRecords(page)).toEqual({
+    schemaVersion: 1,
+    records: [record],
+  });
+  for (const [replacement, message] of [
+    [
+      { schemaVersion: 1, records: [{ id: "invalid" }] },
       "导入失败，原有数据保持不变",
-    );
+    ],
+    [
+      { schemaVersion: 1, records: [{ ...record, sourceKind: "synthetic" }] },
+      "这里不接收合成搜索数据",
+    ],
+  ] as const) {
+    await importData(replacement);
+    await expect(dialog.getByRole("alert")).toContainText(message);
     await page.keyboard.press("Escape");
     await expect(total).toHaveText("123");
-    expect(await exportRecords()).toEqual({
+    expect(await exportRecords(page)).toEqual({
       schemaVersion: 1,
       records: [record],
     });
-    const fresh = await context.newPage();
-    await gotoApp(fresh, "/heat");
-    await hydrated(fresh);
-    await expect(
-      fresh.getByRole("button", { name: "恢复合成示例", exact: true }),
-    ).toHaveCount(0);
-    await expect(
-      fresh
-        .getByLabel("搜索数据集")
-        .getByRole("option", { name: "synthetic-demo-v1" }),
-    ).toBeAttached();
-    await fresh.close();
-    await page.reload();
-    await hydrated(page);
-    await expect(reset).toHaveCount(0);
-    await expect(
-      page
-        .getByLabel("搜索数据集")
-        .getByRole("option", { name: "synthetic-demo-v1" }),
-    ).toBeAttached();
-    await expect(total).not.toHaveText("123");
-  });
-}
+  }
+  const fresh = await context.newPage();
+  await gotoApp(fresh, "/heat");
+  await hydrated(fresh);
+  await expect(
+    fresh.getByRole("heading", { name: "2025 年搜索飙升游戏" }),
+  ).toBeVisible();
+  await openCounts(fresh);
+  await expect(
+    fresh
+      .getByLabel("搜索数据集")
+      .getByRole("option", { name: "review-working-set" }),
+  ).toHaveCount(0);
+  expect(await exportRecords(fresh)).toEqual({ schemaVersion: 1, records: [] });
+  await fresh.close();
+  await page.reload();
+  await hydrated(page);
+  await expect(
+    page.getByRole("heading", { name: "2025 年搜索飙升游戏" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "清空本地记录", exact: true }),
+  ).toHaveCount(0);
+});
 
-test("mixed sources keep synthetic disclosure beside Compare and home totals", async ({
+test("mixed imports containing synthetic records are rejected atomically", async ({
   page,
 }) => {
-  const records = (
-    [
-      { sourceKind: "synthetic", count: 100 },
-      { sourceKind: "import", count: 23 },
-    ] as const
-  ).map(({ sourceKind, count }) => ({
+  await gotoApp(page, "/heat");
+  await hydrated(page);
+  await openCounts(page);
+  await page.getByRole("button", { name: "导入数据 ⇧" }).click();
+  const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
+  const records = [
+    record,
+    {
+      ...record,
+      id: "synthetic-only-test",
+      datasetId: "synthetic-only-test",
+      sourceKind: "synthetic",
+    },
+  ];
+  await dialog
+    .getByLabel("JSON 内容")
+    .fill(JSON.stringify({ schemaVersion: 1, records }));
+  await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  await expect(dialog.getByRole("alert")).toContainText(
+    "这里不接收合成搜索数据",
+  );
+  await page.keyboard.press("Escape");
+  expect(await exportRecords(page)).toEqual({ schemaVersion: 1, records: [] });
+  await expect(page.locator(".heat-ranking-table tbody tr")).toHaveCount(0);
+});
+
+test("mixed declared sources remain qualified in Compare while home keeps official historical ranks", async ({
+  page,
+}) => {
+  const records = [
+    { sourceKind: "site_log", count: 100 },
+    { sourceKind: "import", count: 23 },
+  ].map(({ sourceKind, count }) => ({
+    ...record,
     id: `mixed-${sourceKind}`,
-    datasetId: `review-${sourceKind}`,
-    date: "2026-10-30",
+    datasetId: `mixed-${sourceKind}`,
     query: "Balatro",
-    count,
-    region: "CN",
-    language: "zh-CN",
     sourceKind,
+    count,
     attributions: [
       { topicId: "game:balatro", weight: 1, mode: "direct" },
       { topicId: "combination:score-modifier", weight: 1, mode: "direct" },
@@ -198,6 +213,7 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
   }));
   await gotoApp(page, "/heat");
   await hydrated(page);
+  await openCounts(page);
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
   await dialog
@@ -214,113 +230,31 @@ test("mixed sources keep synthetic disclosure beside Compare and home totals", a
     .click();
   await hydrated(page);
   await page.getByRole("button", { name: /搜索热度/ }).click();
-  const balatro = page
-    .locator(".heat-mini")
-    .filter({
-      has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
-    });
+  const balatro = page.locator(".heat-mini").filter({
+    has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
+  });
   await expect(balatro.locator(".mini-profile-numbers .sr-only")).toHaveText(
     "123",
   );
-  await expect
-    .soft(balatro.locator(".seed"))
-    .toContainText("包含合成示例", { timeout: 2000 });
-  await expect.soft(balatro).toContainText("混合来源", { timeout: 2000 });
-  await expect(
-    balatro.getByText(/请分别核验各数据集的范围与真实性/),
-  ).toBeVisible();
-  await expect(
-    balatro.getByText(/不能将混合结果直接视为真实市场的完整表现/),
-  ).toBeVisible();
-  await expect(
-    balatro.getByRole("link", { name: "查看主题与数据来源 →" }),
-  ).toBeVisible();
+  await expect(balatro.locator(".seed")).toContainText("混合来源");
+  await expect(balatro).not.toContainText("合成示例");
+  const qualification = balatro.getByText(/请分别核验各数据集的范围与真实性/);
   for (const width of [768, 390]) {
     await page.setViewportSize({ width, height: 900 });
-    await expect(
-      balatro.getByText(/请分别核验各数据集的范围与真实性/),
-    ).toBeVisible();
-    await expect
-      .poll(
-        () =>
-          page.evaluate(
-            () => document.documentElement.scrollWidth - innerWidth,
-          ),
-        { message: `Compare at ${width}px` },
-      )
-      .toBe(0);
-    const bounds = await balatro
-      .getByText(/请分别核验各数据集的范围与真实性/)
-      .boundingBox();
-    expect(bounds!.x).toBeGreaterThanOrEqual(0);
-    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
-  }
-  await page.setViewportSize({ width: 1280, height: 900 });
-  await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
-  await hydrated(page);
-  await expect(page.locator(".home-heat-grid strong")).toHaveText("123");
-  await expect(page.locator(".home-opportunity-strip")).toContainText("123 次");
-  await expect
-    .soft(page.locator(".home-opportunity-strip .seed"))
-    .toContainText("包含合成示例", { timeout: 2000 });
-  await expect
-    .soft(page.locator(".home-opportunity-strip"))
-    .toContainText("混合来源", { timeout: 2000 });
-  await expect(
-    page
-      .locator(".home-opportunity-strip")
-      .getByText(/请分别核验各数据集的范围与真实性/),
-  ).toBeVisible();
-  await expect(
-    page
-      .locator(".home-opportunity-strip")
-      .getByText(/不能将混合结果直接视为真实市场的完整表现/),
-  ).toBeVisible();
-  await expect(
-    page
-      .locator(".home-opportunity-strip")
-      .getByRole("link", { name: "核对线索与案例 →" }),
-  ).toBeVisible();
-  for (const width of [768, 390]) {
-    await page.setViewportSize({ width, height: 900 });
-    if (width === 390) {
-      // The phone title screen uses chapter entries instead of the old long
-      // desktop overview. Verify the actual visible demand destination.
-      await page
-        .getByRole("navigation", { name: "研究室章节" })
-        .getByRole("link")
-        .filter({ hasText: "热度观察" })
-        .click();
-      await hydrated(page);
-      await expect(
-        page.locator(".data-strip .metric").first().locator(".sr-only"),
-      ).toHaveText("123");
-      await expect(page.locator(".heat-window-note")).toContainText("合成示例");
-      await expect(page.locator(".heat-window-note")).toContainText("外部导入");
-      await expect
-        .poll(() =>
-          page.evaluate(
-            () => document.documentElement.scrollWidth - innerWidth,
-          ),
-        )
-        .toBe(0);
-      continue;
-    }
-    const qualification = page
-      .locator(".home-opportunity-strip")
-      .getByText(/请分别核验各数据集的范围与真实性/);
     await expect(qualification).toBeVisible();
     await expect
-      .poll(
-        () =>
-          page.evaluate(
-            () => document.documentElement.scrollWidth - innerWidth,
-          ),
-        { message: `Home at ${width}px` },
+      .poll(() =>
+        page.evaluate(() => document.documentElement.scrollWidth - innerWidth),
       )
       .toBe(0);
     const bounds = await qualification.boundingBox();
     expect(bounds!.x).toBeGreaterThanOrEqual(0);
     expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
   }
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
+  await hydrated(page);
+  await expect(page.locator(".home-heat-ranking")).toContainText("Arc Raiders");
+  await expect(page.locator(".home-heat-ranking")).not.toContainText("123");
+  await expect(page.locator(".home-opportunity-strip")).toHaveCount(0);
 });

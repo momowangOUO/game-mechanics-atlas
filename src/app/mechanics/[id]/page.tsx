@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { getMechanicTaxonomy } from "@/data/taxonomy-reference";
+import taxonomyStyles from "@/components/TaxonomyExplorer.module.css";
 import {
   Assistant,
   GameCard,
@@ -39,6 +41,7 @@ export default async function MechanicPage({
     mechanic = getMechanic(id);
   if (!mechanic) notFound();
   const dimension = dimensions.find((d) => d.id === mechanic.dimension)!;
+  const taxonomy = getMechanicTaxonomy(mechanic.id);
   const relatedGames = getRelatedGames(id),
     combinations = recipes.filter((r) => r.mechanicIds.includes(id));
   const related = mechanic.relatedMechanics
@@ -56,7 +59,19 @@ export default async function MechanicPage({
     <>
       <div className="breadcrumb">
         <Link href="/">研究室</Link> / <Link href="/mechanics">机制档案</Link> /{" "}
-        {dimension.name} / {mechanic.name}
+        <Link href={`/taxonomy?dimension=${dimension.id}`}>
+          {dimension.name}
+        </Link>{" "}
+        /{" "}
+        {taxonomy && (
+          <>
+            <Link href={`/taxonomy?group=${taxonomy.group.id}`}>
+              {taxonomy.group.name}
+            </Link>{" "}
+            /{" "}
+          </>
+        )}
+        {mechanic.name}
       </div>
       <PageHead
         eyebrow={`MECHANIC FILE / ${dimension.short} / ${mechanic.id}`}
@@ -72,6 +87,32 @@ export default async function MechanicPage({
           </Link>
         </div>
       </PageHead>
+      {taxonomy && (
+        <section
+          className={taxonomyStyles.detailContext}
+          aria-label="机制分类位置"
+        >
+          <div>
+            <Link href="/taxonomy">玩法分类图鉴</Link>
+            <span>›</span>
+            <Link href={`/taxonomy?dimension=${dimension.id}`}>
+              {dimension.name}
+            </Link>
+            <span>›</span>
+            <Link href={`/taxonomy?group=${taxonomy.group.id}`}>
+              {taxonomy.group.name}
+            </Link>
+            <span>›</span>
+            <strong>{mechanic.name}</strong>
+          </div>
+          <p>
+            {taxonomy.group.function}{" "}
+            <Link href={`/taxonomy?mechanic=${mechanic.id}`}>
+              对照同组机制 →
+            </Link>
+          </p>
+        </section>
+      )}
       <div className="three-col">
         <aside className="sidebar detail-sidebar">
           <h3>档案索引 / CONTENTS</h3>

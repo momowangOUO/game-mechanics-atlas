@@ -7,7 +7,7 @@ import { Dialog, useUI } from "./Providers";
 import { mechanics, games } from "@/lib/knowledge";
 
 const routes = [
-  ["/mechanics", "机制档案", "▤"],
+  ["/taxonomy", "分类参考", "▤"],
   ["/games", "游戏案例", "♧"],
   ["/graph", "机制图谱", "⌘"],
   ["/heat", "热度观察", "⌁"],
@@ -37,7 +37,7 @@ export function Header() {
         <nav className="nav" aria-label="主导航">
           {routes.map(([href, name]) => (
             <Link
-              className={`${pathname.startsWith(href) ? "active" : ""} ${href === "/lab" ? "nav-lab" : ""}`}
+              className={`${(href === "/taxonomy" ? ["/taxonomy", "/mechanics", "/types"].some((path) => pathname.startsWith(path)) : pathname.startsWith(href)) ? "active" : ""} ${href === "/lab" ? "nav-lab" : ""}`}
               href={href}
               key={href}
             >
@@ -95,6 +95,12 @@ export function Header() {
               {symbol}　{name} →
             </Link>
           ))}
+          <Link href="/mechanics" onClick={() => setMenu(false)}>
+            ▤　全部机制档案 →
+          </Link>
+          <Link href="/types" onClick={() => setMenu(false)}>
+            ▧　复合类型与配方 →
+          </Link>
           <Link href="/method" onClick={() => setMenu(false)}>
             ？　分类与热度方法
           </Link>
@@ -165,7 +171,7 @@ export function MobileNavigation() {
   const pathname = usePathname();
   const bottom = [
     ["/", "研究室", "⌂"],
-    ["/mechanics", "机制", "▤"],
+    ["/taxonomy", "分类", "▤"],
     ["/games", "案例", "♧"],
     ["/heat", "热度", "⌁"],
     ["/lab", "实验室", "⚗"],
@@ -177,7 +183,15 @@ export function MobileNavigation() {
           href={href}
           key={href}
           className={
-            (href === "/" ? pathname === "/" : pathname.startsWith(href))
+            (
+              href === "/"
+                ? pathname === "/"
+                : href === "/taxonomy"
+                  ? ["/taxonomy", "/mechanics", "/types"].some((path) =>
+                      pathname.startsWith(path),
+                    )
+                  : pathname.startsWith(href)
+            )
               ? "active"
               : ""
           }

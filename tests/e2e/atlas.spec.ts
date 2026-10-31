@@ -25,6 +25,10 @@ test("heat charts hydrate without runtime errors", async ({ page }) => {
   page.on("pageerror", (error) => errors.push(error.message));
   await visit(page, "/heat");
   await expect(
+    page.getByRole("heading", { name: "2025 年搜索飙升游戏" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
+  await expect(
     page.getByRole("tab", { name: "热门类别", exact: true }),
   ).toBeVisible();
   await page.getByRole("tab", { name: "热门机制", exact: true }).click();
@@ -101,7 +105,7 @@ test("game scopes keep creative absence separate from survival unknown", async (
   await expect(page.locator(".loop-step").first()).toBeVisible();
   await page.getByRole("tab", { name: "热度标签" }).click();
   await expect(
-    page.getByText("本期合成示例没有给这个主题设置搜索记录。", {
+    page.getByText("尚未取得这个主题的直接搜索记录。", {
       exact: false,
     }),
   ).toBeVisible();
@@ -170,30 +174,51 @@ test("graph selects, filters, zooms, drags and follows cooccurrence cases", asyn
   await expect(graph.locator(".react-flow__node").first()).toBeVisible();
 });
 
-test("heat rankings use raw demand and expose blue/red same-kind results", async ({
+test("count rankings preserve imported ratios and withhold unsupported market scores", async ({
   page,
 }) => {
   await visit(page, "/heat");
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
+  await page.getByRole("button", { name: "导入数据 ⇧" }).click();
+  const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
+  const records = [
+    { topicId: "genre:moba", count: 10000000 },
+    { topicId: "genre:roguelite", count: 100000 },
+  ].map((item, index) => ({
+    id: `test-count-${index}`,
+    datasetId: "test-only-import",
+    date: "2026-10-30",
+    query: `test-query-${index}`,
+    count: item.count,
+    region: "CN",
+    language: "zh",
+    sourceKind: "import",
+    attributions: [{ topicId: item.topicId, weight: 1, mode: "direct" }],
+  }));
+  await dialog
+    .getByLabel("JSON 内容")
+    .fill(JSON.stringify({ schemaVersion: 1, records }));
+  await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  await expect(dialog).not.toBeVisible();
   const rows = page.locator(".heat-ranking-table tbody tr");
   await expect(rows.first()).toContainText("MOBA");
   await expect(rows.first()).toContainText("1,000 万");
   await expect(rows.nth(1)).toContainText("10 万");
   await page.getByRole("tab", { name: "蓝海线索", exact: true }).click();
   await expect(page.getByLabel("线索分比较组")).toHaveValue("combination");
-  await expect(rows.first()).toContainText("方块旋转");
-  await rows.first().getByRole("button").click();
-  await expect(page.locator(".heat-inspector")).toContainText("样本有限");
+  await expect(rows).toHaveCount(0);
   await page.getByRole("tab", { name: "红海观察", exact: true }).click();
   await page.getByLabel("线索分比较组").selectOption("genre");
-  await expect(rows.first()).toContainText("Roguelite");
+  await expect(rows).toHaveCount(0);
   await page.getByLabel("热度时间窗口").selectOption("7");
   await expect(page.locator(".heat-window-note")).toContainText("2026-10-24");
 });
 
-test("search import is atomic and preserves synthetic origin", async ({
+test("search import is atomic and rejects synthetic records", async ({
   page,
 }) => {
   await visit(page, "/heat");
+  await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   const dialog = page.getByRole("dialog", { name: "IMPORT / 本地搜索记录" });
   await dialog.getByLabel("JSON 内容").fill('{"schemaVersion":1,"records":[}');
@@ -223,13 +248,22 @@ test("search import is atomic and preserves synthetic origin", async ({
     .getByLabel("JSON 内容")
     .fill(JSON.stringify({ schemaVersion: 1, records: [record] }));
   await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
+  await expect(dialog.getByRole("alert")).toContainText(
+    "这里不接收合成搜索数据",
+  );
+  await expect(
+    page.getByLabel("搜索数据集").getByRole("option", { name: "local-test" }),
+  ).toHaveCount(0);
+  record.sourceKind = "import";
+  await dialog
+    .getByLabel("JSON 内容")
+    .fill(JSON.stringify({ schemaVersion: 1, records: [record] }));
+  await dialog.getByRole("button", { name: "校验并替换本地数据 →" }).click();
   await expect(dialog).not.toBeVisible();
   await expect(
     page.getByLabel("搜索数据集").getByRole("option", { name: "local-test" }),
   ).toBeAttached();
-  await expect(
-    page.getByText("合成示例 · 非真实市场数据").first(),
-  ).toBeVisible();
+  await expect(page.getByText("本地导入 · 来源待核验").first()).toBeVisible();
   await page.getByRole("tab", { name: "热门机制", exact: true }).click();
   await expect(page.locator(".heat-ranking-table tbody tr")).toHaveCount(1);
   await expect(page.locator(".heat-ranking-table")).toContainText(
@@ -238,12 +272,11 @@ test("search import is atomic and preserves synthetic origin", async ({
   await expect(page.locator(".heat-ranking-table")).toContainText(
     "暂无可比数据",
   );
-  await page.getByRole("button", { name: "恢复合成示例", exact: true }).click();
+  await page.getByRole("button", { name: "清空本地记录", exact: true }).click();
   await expect(
-    page
-      .getByLabel("搜索数据集")
-      .getByRole("option", { name: "synthetic-demo-v1" }),
-  ).toBeAttached();
+    page.getByLabel("搜索数据集").getByRole("option", { name: "local-test" }),
+  ).toHaveCount(0);
+  await expect(page.locator(".heat-ranking-table tbody tr")).toHaveCount(0);
 });
 
 test("compare swaps the selected scopes and exposes unknown observations", async ({

@@ -1462,6 +1462,29 @@
       "type": "official_site",
       "claimScope": "官方静态英雄数据逐技能列出随技能等级变化的冷却时间；只据此记录该英雄能力冷却，不由此推断死亡复活或全部模式。",
       "verificationNote": "已实际读取Riot官方Data Dragon英雄JSON；16.21.1只表示来源数据版本，不代表所有客户端或模式。"
+    },
+    {
+      "id": "disco-elysium-active-checks-devlog",
+      "title": "ON ACTIVE SKILL CHECKS — Disco Elysium 开发日志",
+      "url": "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+      "publisher": "ZA/UM",
+      "checkedAt": "2026-10-31",
+      "publishedAt": "2016-10-06",
+      "type": "developer",
+      "claimScope": "开发期日志解释主动检定：角色属性、技能、物品与思想效果面对任务难度，随机掷骰参与结果。与发行后的官方 FAQ 交叉确认机制存在，不把开发期全部细则或数值视为现行版本保证。",
+      "verificationNote": "2026-10-31 实际读取官方开发日志正文；页面署名栏没有可读作者，未补写个人作者。未安装试玩。"
+    },
+    {
+      "id": "disco-elysium-official-faq",
+      "title": "Disco Elysium - FAQ — 官方置顶常见问题",
+      "url": "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/",
+      "publisher": "ZA/UM",
+      "author": "Dani_ZAUM",
+      "checkedAt": "2026-10-31",
+      "publishedAt": "2019-10-14",
+      "type": "developer",
+      "claimScope": "发行后的官方置顶 FAQ 确认耐力等白色检定会失败；提升对应技能或发现修饰条件可重新尝试。只核验技能参与尝试判定与再尝试条件，不引入未列明的成功率或完整计算公式。",
+      "verificationNote": "2026-10-31 实际读取 Steam 置顶 FAQ；页面显示 Dani_ZAUM 发布，最后编辑于 2022-04-01，正文含 The Final Cut 说明。未安装试玩。"
     }
   ],
   "games": [
@@ -5518,7 +5541,9 @@
         "官方介绍与社区资料的覆盖范围不同；未核验的参数、模式与补丁例外保持未知。"
       ],
       "sourceIds": [
-        "disco-elysium-official"
+        "disco-elysium-official",
+        "disco-elysium-active-checks-devlog",
+        "disco-elysium-official-faq"
       ],
       "defaultScopeId": "disco-elysium:standard",
       "genreIds": [
@@ -16439,6 +16464,19 @@
       "evidenceKind": "official_description",
       "rationale": "拉克丝四个技能均列出cooldown数组；如光之束缚各技能等级为10秒。只记录该英雄在此静态数据版本的技能冷却。",
       "scopeNote": "拉克丝，Data Dragon 16.21.1"
+    },
+    {
+      "id": "disco-elysium:evidence:ability-check",
+      "mechanicId": "ability-check",
+      "scopeId": "disco-elysium:standard",
+      "status": "present",
+      "sourceIds": [
+        "disco-elysium-active-checks-devlog",
+        "disco-elysium-official-faq"
+      ],
+      "evidenceKind": "developer_description",
+      "rationale": "主动检定让角色技能等能力条件面对任务难度，掷骰参与结果。官方发行后 FAQ 确认耐力等白色检定可能失败，提升对应技能或取得修饰条件后可重新尝试。",
+      "scopeNote": "基础主流程中的主动技能检定；开发日志解释设计，发行后 FAQ 确认实际机制。未核验所有检定的数值、剧情例外或补丁变化。"
     }
   ]
 }

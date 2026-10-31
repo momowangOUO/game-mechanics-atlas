@@ -13,7 +13,8 @@ import {
 import Link from "next/link";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { usePathname } from "next/navigation";
-import { games, genres, mechanics, recipes } from "@/lib/knowledge";
+import { dimensions, games, genres, mechanics, recipes } from "@/lib/knowledge";
+import { taxonomyGroups } from "@/data/taxonomy-reference";
 import { SearchDataProvider } from "./SearchDataProvider";
 import { matchesCatalog } from "@/lib/catalog-search";
 
@@ -180,6 +181,28 @@ export function AppProviders({ children }: { children: ReactNode }) {
   const matches = (name: string, id: string, extra = "") =>
     `${name} ${id} ${extra}`.toLocaleLowerCase().includes(normalized);
   const results = [
+    ...dimensions
+      .filter((dimension) =>
+        matches(dimension.name, dimension.id, dimension.description),
+      )
+      .slice(0, 2)
+      .map((dimension) => ({
+        name: dimension.name,
+        kind: "一级维度",
+        meta: dimension.description,
+        href: `/taxonomy?dimension=${dimension.id}`,
+      })),
+    ...taxonomyGroups
+      .filter((group) =>
+        matches(group.name, group.id, `${group.explanation} ${group.function}`),
+      )
+      .slice(0, 3)
+      .map((group) => ({
+        name: group.name,
+        kind: "二级分组",
+        meta: group.explanation,
+        href: `/taxonomy?group=${group.id}`,
+      })),
     ...mechanics
       .filter((m) => matchesCatalog(m, query, m.definition))
       .slice(0, 5)
@@ -239,7 +262,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
                 autoComplete="off"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="机制、游戏、类型或组合…"
+                placeholder="分类、机制、游戏、类型或组合…"
                 aria-label="搜索全部档案"
               />
               <span className="keycap">ESC</span>
@@ -276,11 +299,11 @@ export function AppProviders({ children }: { children: ReactNode }) {
                   <h3>没有找到匹配的档案</h3>
                   <p>换一个关键词试试，也可从九个分类维度浏览。</p>
                   <Link
-                    href="/mechanics"
+                    href="/taxonomy"
                     className="button primary"
                     onClick={() => setSearch(false)}
                   >
-                    浏览机制档案 →
+                    逐层浏览分类 →
                   </Link>
                 </div>
               )}

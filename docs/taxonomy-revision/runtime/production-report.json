@@ -1,0 +1,139 @@
+{
+  "buildId": "MketLyqvTTFu3DVZ6uvTm",
+  "basePath": "/game-mechanics-atlas",
+  "screenshots": [
+    {
+      "name": "home-desktop",
+      "path": "/",
+      "width": 1440,
+      "height": 960,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 2881
+    },
+    {
+      "name": "home-small",
+      "path": "/",
+      "width": 320,
+      "height": 640,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 0
+    },
+    {
+      "name": "taxonomy-desktop",
+      "path": "/taxonomy/",
+      "width": 1440,
+      "height": 960,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 257
+    },
+    {
+      "name": "taxonomy-mobile",
+      "path": "/taxonomy/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 0
+    },
+    {
+      "name": "taxonomy-small",
+      "path": "/taxonomy/",
+      "width": 320,
+      "height": 640,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 0
+    },
+    {
+      "name": "taxonomy-reading",
+      "path": "/taxonomy/?mechanic=in-run-deck-growth",
+      "width": 320,
+      "height": 640,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 0
+    },
+    {
+      "name": "taxonomy-condition",
+      "path": "/taxonomy/?mechanic=permadeath",
+      "width": 320,
+      "height": 640,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 0
+    },
+    {
+      "name": "types",
+      "path": "/types/",
+      "width": 1440,
+      "height": 960,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 743
+    },
+    {
+      "name": "type-deckbuilder",
+      "path": "/types/deckbuilder/",
+      "width": 1440,
+      "height": 960,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 1991
+    },
+    {
+      "name": "type-party",
+      "path": "/types/party-cooperation/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 2269
+    },
+    {
+      "name": "heat-desktop",
+      "path": "/heat/",
+      "width": 1440,
+      "height": 960,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 627
+    },
+    {
+      "name": "heat-mobile",
+      "path": "/heat/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 1329
+    },
+    {
+      "name": "method-mobile",
+      "path": "/method/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "errors": [],
+      "overflowX": 0,
+      "rootScroll": 3862
+    }
+  ],
+  "routes": 247,
+  "routeFailures": [],
+  "publishedSyntheticFixtureFiles": []
+}

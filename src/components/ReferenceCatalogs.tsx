@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { sources, genres } from "@/lib/knowledge";
+import { sources, genres, games } from "@/lib/knowledge";
+import { getTypeReference } from "@/data/type-reference";
 import { EmptyState } from "./Primitives";
 
 const sourceLabels: Record<string, string> = {
@@ -115,7 +116,7 @@ export function TypeCatalog() {
   const [query, setQuery] = useState(""),
     [page, setPage] = useState(1);
   const rows = genres.filter((g) =>
-    `${g.id} ${g.name} ${g.definition}`
+    `${g.id} ${g.name} ${g.definition} ${getTypeReference(g.id)?.playerTask ?? ""}`
       .toLowerCase()
       .includes(query.trim().toLowerCase()),
   );
@@ -145,9 +146,20 @@ export function TypeCatalog() {
             key={g.id}
             href={`/types/${g.id}`}
           >
-            <span className="eyebrow">TYPE / 类型配方</span>
+            <span className="eyebrow">TYPE / 复合类型</span>
             <h2>{g.name}</h2>
             <p>{g.definition}</p>
+            <p style={{ marginTop: 12, color: "#dfbd77" }}>
+              主要在做：{getTypeReference(g.id)?.playerTask}
+            </p>
+            <p style={{ marginTop: 8 }}>
+              游戏参照：
+              {games
+                .filter((game) => game.genreIds.includes(g.id))
+                .slice(0, 3)
+                .map((game) => game.name)
+                .join(" · ") || "本库暂未收录对应案例"}
+            </p>
             <div className="card-bottom">
               <span className="chip">复合类型 / 编辑画像</span>
               <span>→</span>
