@@ -5,26 +5,10 @@ import { useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { ArtImage, MaidPortrait } from "./Art";
 import { useUI } from "./Providers";
-import { chapters, chapterArt, type MaidState } from "@/lib/art";
+import { chapters, chapterArt } from "@/lib/art";
+import { rinHomeDialogue } from "@/data/rin-dialogue";
 
-const messages: { state: MaidState; text: string }[] = [
-  {
-    state: "welcome",
-    text: "欢迎来到研究室，我是 RIN。想查玩法，可以先翻分类参考；想找设计思路，就从熟悉的游戏看起。",
-  },
-  {
-    state: "explain",
-    text: "先选一款熟悉的游戏，对照它的核心循环和规则。遇到不同模式，记得分开看。",
-  },
-  {
-    state: "think",
-    text: "实验室可以把机制组合整理成研究提示词。先选核心机制，再补充想验证的问题。",
-  },
-  {
-    state: "surprise",
-    text: "图谱记录了机制之间的配合与冲突。点开节点，就能查看相关规则和游戏案例。",
-  },
-];
+const messages = rinHomeDialogue;
 export default function HomeStage() {
   const { openSearch, effects } = useUI();
   const [query, setQuery] = useState("");

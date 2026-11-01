@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Assistant, GameCard, PageHead } from "@/components/Primitives";
+import { rinDialogue } from "@/data/rin-dialogue";
 import {
   genres,
   games,
@@ -60,7 +61,7 @@ export default async function TypePage({
       </PageHead>
       <div className="two-col">
         <aside>
-          <Assistant message="先查看这个类型的机制组成，再到游戏案例中核对具体规则和适用范围。类型标签本身不能作为机制证据。" />
+          <Assistant message={rinDialogue.genre} />
         </aside>
         <article>
           <div className="paper">

@@ -2433,3 +2433,15 @@ html[data-effects="reduced"] .trend-line {
   color: #573b60;
   text-decoration: underline;
 }
+.case-relation-scroll {
+  max-width: 100%;
+  overflow: auto;
+  max-height: 460px;
+  margin: 12px 0;
+}
+@media (max-width: 700px) {
+  .case-relation-scroll .case-relation-graph {
+    width: 760px;
+    max-width: none;
+  }
+}

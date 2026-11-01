@@ -59,7 +59,7 @@ test("case relations expose a focal selector only in their own view", async ({
   await expect(page.getByLabel("查看机制")).toBeVisible();
   const count = await page.locator(".case-relation-graph rect").count();
   expect(count).toBeGreaterThan(0);
-  expect(count).toBeLessThanOrEqual(7);
+  expect(count).toBe(10);
   await page.setViewportSize({ width: 390, height: 844 });
   expect(
     await page.evaluate(

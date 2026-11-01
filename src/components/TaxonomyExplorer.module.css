@@ -501,7 +501,7 @@
 }
 .readingTabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid #65566f;
 }
 .readingTabs button {
@@ -523,6 +523,16 @@
   color: #d5c5df;
   font-size: 12px;
   line-height: 1.9;
+}
+.comicContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 8px;
+}
+.comicContent > .pager {
+  flex-shrink: 0;
+  margin-top: 0;
 }
 .readingContent h3 {
   color: #ddc5ef;
@@ -1348,5 +1358,41 @@
   .mechanicList button:hover {
     border-color: #c4aff0;
     background: #3a2c48;
+  }
+}
+@media (max-width: 700px) {
+  .readingHead[data-reading="comic"] .stamp {
+    display: none;
+  }
+  .readingHead[data-reading="comic"] {
+    padding: 8px 11px;
+  }
+  .readingHead[data-reading="comic"] h2 {
+    margin: 0;
+  }
+}
+.comicDialog {
+  width: min(1100px, calc(100vw - 24px)) !important;
+  max-height: calc(100dvh - 24px) !important;
+}
+.comicDialog > section {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+@media (max-width: 700px) {
+  .comicDialog > section > header {
+    padding: 6px;
+    gap: 4px;
+  }
+  .comicDialog > section > header > div:first-child > span {
+    display: none;
+  }
+  .comicDialog > section > header h2 {
+    font-size: 18px;
+  }
+  .comicDialog > section > header h2 > span {
+    width: 30px !important;
+    height: 30px !important;
   }
 }

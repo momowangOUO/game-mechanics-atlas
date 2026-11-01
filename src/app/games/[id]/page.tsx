@@ -65,6 +65,9 @@ export default async function GamePage({
       >
         <div className="detail-header-tools">
           <span className="chip">真实案例</span>
+          <Link className="button" href={`/graph?game=${game.id}`}>
+            游戏机制总览 ↗
+          </Link>
           <Link className="button" href={`/compare?left=${game.id}`}>
             加入游戏对比 ⇄
           </Link>

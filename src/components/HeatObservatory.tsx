@@ -17,6 +17,7 @@ import { Dialog, useUI } from "./Providers";
 import { useSearchData } from "./SearchDataProvider";
 import { CountUp, EmptyState, PageHead, SeedBadge, Window } from "./Primitives";
 import RealSearchDemand from "./RealSearchDemand";
+import { rinDialogue } from "@/data/rin-dialogue";
 import {
   formatAmount,
   ScatterChart,
@@ -510,30 +511,8 @@ function CountObservatory({
                 <span className="observation-code">
                   RIN'S OBSERVATION ／ 研究便签
                 </span>
-                <h2>
-                  先看搜索，
-                  <br />
-                  再查竞品。
-                </h2>
-                <p>
-                  搜索记录能提供研究方向，具体玩法还要查竞品。本站样本有限，适合用作调查起点。
-                </p>
-                <div>
-                  <strong>玩家在搜什么？</strong>
-                  <p>
-                    排行依据归因到主题的搜索次数，方便比较当前数据中的关注方向。
-                  </p>
-                </div>
-                <div>
-                  <strong>有哪些相关游戏？</strong>
-                  <p>
-                    这里只列本站样本；需要特定条件或尚未核实的游戏另行统计。
-                  </p>
-                </div>
-                <div>
-                  <strong>值得继续查什么？</strong>
-                  <p>打开案例，核对规则用在哪个模式，再决定原型要验证什么。</p>
-                </div>
+                <h2>{rinDialogue.heatTitle}</h2>
+                <p>{rinDialogue.heat}</p>
                 <span className="observation-stamp">搜索关注 / 游戏样本</span>
               </aside>
             </div>

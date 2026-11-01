@@ -39,6 +39,7 @@ export function GraphQuery() {
       key={key}
       initialFocus={one("focus") ?? ""}
       initialGame={one("game") ?? ""}
+      initialScope={one("scope") ?? ""}
     />
   );
 }

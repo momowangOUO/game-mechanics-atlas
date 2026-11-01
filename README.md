@@ -6,7 +6,7 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 
 [在线网站 / Website](https://momowangouo.github.io/game-mechanics-atlas/) · [分类参考 / Taxonomy](https://momowangouo.github.io/game-mechanics-atlas/taxonomy/) · [GitHub 点星支持 / Star](https://github.com/momowangOUO/game-mechanics-atlas) · [AI / Agent 资料入口](https://momowangouo.github.io/game-mechanics-atlas/for-agents/)
 
-![首页桌面页面](docs/mechanic-visuals/runtime/home-desktop.png)
+![首页桌面页面](docs/reader-overview/runtime/rin-1440.png)
 
 ![直接移动三格漫画](docs/mechanic-visuals/runtime/direct-movement-desktop.png)
 
@@ -25,6 +25,8 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 | [搜索趋势](https://momowangouo.github.io/game-mechanics-atlas/heat/)        | 附时间与来源的 Google 官方历史快照，以及本地数据导入         |
 
 122 项机制均配有独立图标、图像模型生成的三格漫画、规则示意图和真实游戏范例。支持 Ctrl/Cmd K 全局搜索、手机分步浏览和减少动态偏好。每次整页打开或刷新会展示品牌 Logo；站内切换不重复播放。
+
+分类阅读卡默认显示漫画，手机支持逐格阅读与放大。游戏机制总览按维度列出全部已收录机制，并保留不同模式与成立条件；聚焦机制不会隐藏其他方向。[本轮更新](docs/reader-overview/README.md)
 
 分类实例带有游戏、模式、系统或章节等范围，并区分存在、不存在、不适用、未知和有条件成立。编辑分析与来源事实分别标记。搜索页默认使用 Google Year in Search 2025 的历史资料，当前类别需求未取得时保持为空。[分类说明](docs/data-contract.md) · [搜索口径](docs/heat-method.md) · [资料来源](docs/real-search-demand.md)
 

@@ -298,7 +298,7 @@ export default function HybridLab({
               <p className={styles.note}>
                 {step === 1
                   ? "配合机制影响决策与结算；结构决定回合推进、成长保留，以及玩家怎样协作或竞争。"
-                  : "选择这次研究最重要的机制，也可以先套用已有配方。"}
+                  : "选择本次研究的起点，也可以先套用配方。其他交互机制仍能加入组合。"}
               </p>
               {step !== 1 && (
                 <label className={styles.field}>

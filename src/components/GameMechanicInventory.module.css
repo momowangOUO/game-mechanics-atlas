@@ -1,0 +1,144 @@
+.inventory {
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid #88709b;
+  background: #231e31;
+  color: #e9dff1;
+}
+.inventory > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.inventory h2 {
+  font-size: 21px;
+  margin: 0;
+  color: #efdfc5;
+}
+.inventory > header > span {
+  font-size: 12px;
+  color: #b5a1c6;
+}
+.note {
+  font-size: 12px;
+  line-height: 1.85;
+  color: #c6b7d0;
+  margin: 10px 0 14px;
+}
+.interactions {
+  padding: 12px;
+  background: #353044;
+  border-left: 3px solid #8fb7d6;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.interactions > strong,
+.interactions > small {
+  display: block;
+}
+.interactions > small {
+  color: #bcadca;
+  font-size: 11px;
+}
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.group {
+  border: 1px solid;
+  padding: 10px;
+  min-width: 0;
+  background: #1c1928;
+}
+.group h3 {
+  margin: 0 0 7px;
+  font-size: 12px;
+  color: #d5c0e9;
+}
+.group ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.group li + li {
+  border-top: 1px solid #51435f;
+  margin-top: 6px;
+  padding-top: 6px;
+}
+.group button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px;
+  color: #ede1f7;
+  background: transparent;
+  border: 1px solid transparent;
+  text-align: left;
+}
+.group button[aria-pressed="true"],
+.group button:hover,
+.group button:focus-visible {
+  background: #473450;
+  border-color: #c4aff0;
+}
+.group button strong {
+  flex: 1;
+  font-size: 13px;
+}
+.group details {
+  font-size: 11px;
+  line-height: 1.75;
+  color: #baa9c7;
+  padding: 0 7px 5px;
+}
+.group summary {
+  cursor: pointer;
+}
+.record {
+  padding: 7px 0;
+}
+.record small {
+  display: block;
+  margin: 4px 0;
+}
+.record p {
+  margin: 5px 0;
+}
+.condition {
+  color: #e5c88c;
+}
+@media (max-width: 700px) {
+  .inventory {
+    padding: 12px;
+  }
+  .inventory h2 {
+    font-size: 18px;
+  }
+  .groups {
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  .group {
+    padding: 7px;
+  }
+  .group button {
+    padding: 5px 0;
+    gap: 4px;
+  }
+  .group button strong {
+    font-size: 12px;
+  }
+  .group button > span:first-child {
+    width: 23px !important;
+    height: 23px !important;
+  }
+  .group details {
+    padding-left: 0;
+    font-size: 10px;
+  }
+}

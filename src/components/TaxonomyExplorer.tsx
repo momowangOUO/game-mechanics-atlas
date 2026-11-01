@@ -14,11 +14,16 @@ import {
   type TaxonomyExample,
 } from "@/data/taxonomy-reference";
 import { DimensionIcon, MaidPortrait, GameThumbnail } from "./Art";
-import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
+import {
+  MechanicIcon,
+  MechanicExamples,
+  MechanicStoryboard,
+} from "./MechanicVisuals";
 import styles from "./TaxonomyExplorer.module.css";
+import { Dialog } from "./Providers";
 
 type Stage = 0 | 1 | 2 | 3;
-type Reading = "purpose" | "examples" | "boundary";
+type Reading = "comic" | "purpose" | "examples" | "boundary";
 
 function subscribeViewport(callback: () => void) {
   window.addEventListener("resize", callback);
@@ -148,8 +153,10 @@ function Explorer({
   const [stage, setStage] = useState<Stage>(
     linkedMechanic ? 3 : linkedGroup ? 2 : params.has("dimension") ? 1 : 0,
   );
-  const [reading, setReading] = useState<Reading>("purpose");
+  const [reading, setReading] = useState<Reading>("comic");
   const [readingPage, setReadingPage] = useState(0);
+  const [comicOpen, setComicOpen] = useState(false);
+  const [expandedPanel, setExpandedPanel] = useState(0);
   const [query, setQuery] = useState(params.get("q") ?? "");
   const [dimensionPage, setDimensionPage] = useState(
     dimensions.findIndex((item) => item.id === initialDimension.id),
@@ -263,7 +270,7 @@ function Explorer({
     setGroupPage(0);
     setMechanicPage(0);
     setExamplePage(0);
-    setReading("purpose");
+    setReading("comic");
     setReadingPage(0);
     setStage(1);
   }
@@ -283,7 +290,7 @@ function Explorer({
     setMechanicId(next.mechanicIds[0]);
     setMechanicPage(0);
     setExamplePage(0);
-    setReading("purpose");
+    setReading("comic");
     setReadingPage(0);
     setStage(2);
   }
@@ -303,7 +310,7 @@ function Explorer({
     setMechanicId(id);
     setMechanicPage(next.mechanicIds.indexOf(id));
     setExamplePage(0);
-    setReading("purpose");
+    setReading("comic");
     setReadingPage(0);
     setStage(3);
   }
@@ -700,6 +707,7 @@ function Explorer({
               >
                 {(
                   [
+                    ["comic", "图解"],
                     ["purpose", "有什么用"],
                     ["examples", "典型游戏"],
                     ["boundary", "怎么区分"],
@@ -724,8 +732,19 @@ function Explorer({
                 id="taxonomy-reading-content"
                 role="tabpanel"
                 aria-labelledby={`taxonomy-tab-${reading}`}
-                className={styles.readingContent}
+                className={`${styles.readingContent} ${reading === "comic" ? styles.comicContent : ""}`}
               >
+                {reading === "comic" && (
+                  <MechanicStoryboard
+                    key={mechanic.id}
+                    id={mechanic.id}
+                    compact
+                    onExpand={(panel) => {
+                      setExpandedPanel(panel);
+                      setComicOpen(true);
+                    }}
+                  />
+                )}
                 {reading === "purpose" && (
                   <>
                     <h3>
@@ -811,6 +830,14 @@ function Explorer({
           </div>
         </>
       )}
+      <Dialog
+        open={comicOpen}
+        onClose={() => setComicOpen(false)}
+        title={`${mechanic.name} · 完整漫画`}
+        className={styles.comicDialog}
+      >
+        <MechanicStoryboard id={mechanic.id} initialPanel={expandedPanel} />
+      </Dialog>
     </div>
   );
 }

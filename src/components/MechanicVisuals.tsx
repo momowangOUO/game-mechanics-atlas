@@ -34,13 +34,17 @@ export function MechanicIcon({
 export function MechanicStoryboard({
   id,
   compact = false,
+  initialPanel = 0,
+  onExpand,
 }: {
   id: string;
   compact?: boolean;
+  initialPanel?: number;
+  onExpand?: (panel: number) => void;
 }) {
   const scene = mechanicScenes[id],
     mechanic = getMechanic(id);
-  const [panel, setPanel] = useState(0),
+  const [panel, setPanel] = useState(initialPanel),
     [mode, setMode] = useState<"comic" | "diagram">("comic");
   const uid = useId().replace(/:/g, "");
   if (!scene || !mechanic) return null;
@@ -50,15 +54,17 @@ export function MechanicStoryboard({
       aria-label={`${mechanic.name}图解`}
     >
       <header className={styles.storyHead}>
-        <div>
-          <span className={styles.kicker}>
-            MECHANIC IN ACTION / 原创教学漫画
-          </span>
-          <h2>
-            <MechanicIcon id={id} size={44} />
-            {mechanic.name}图解
-          </h2>
-        </div>
+        {!compact && (
+          <div>
+            <span className={styles.kicker}>
+              MECHANIC IN ACTION / 原创教学漫画
+            </span>
+            <h2>
+              <MechanicIcon id={id} size={44} />
+              {mechanic.name}图解
+            </h2>
+          </div>
+        )}
         <div className={styles.modeSwitch} role="group" aria-label="图解形式">
           <button
             aria-pressed={mode === "comic"}
@@ -73,6 +79,15 @@ export function MechanicStoryboard({
             规则示意
           </button>
         </div>
+        {compact && onExpand && (
+          <button
+            className={styles.expandComic}
+            type="button"
+            onClick={() => onExpand(panel)}
+          >
+            放大漫画 ↗
+          </button>
+        )}
       </header>
       {mode === "comic" ? (
         <>
@@ -144,9 +159,10 @@ export function MechanicStoryboard({
               <button
                 key={i}
                 aria-pressed={panel === i}
+                aria-label={`${i + 1}. ${label}`}
                 onClick={() => setPanel(i)}
               >
-                {i + 1}. {label}
+                {compact ? i + 1 : `${i + 1}. ${label}`}
               </button>
             ))}
           </nav>

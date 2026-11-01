@@ -26,6 +26,8 @@ import {
 import { HeatProfileMini } from "./HeatCharts";
 import { listGameScopes } from "@/lib/graph-layout";
 import { evidenceLabels } from "@/lib/evidence-labels";
+import { gameMechanicOverview } from "@/lib/game-mechanic-overview";
+import GameMechanicInventory from "./GameMechanicInventory";
 
 type GameView = "mechanics" | "loop" | "relations" | "heat";
 export default function GameViews({ game }: { game: Game }) {
@@ -56,7 +58,7 @@ function ScopedGameViews({
     [view, setView] = useState<GameView>("mechanics"),
     [showUnknown, setShowUnknown] = useState(false);
   const [relationFocus, setRelationFocus] = useState("");
-  const [relationPage, setRelationPage] = useState(0);
+  const overview = gameMechanicOverview(game.id, scopeId);
   const availableScopes = listGameScopes(scopes, game.id, game.defaultScopeId);
   const currentScope = scopes.find((s) => s.id === scopeId)!;
   const observations = getInstances(game.id, scopeId),
@@ -73,32 +75,15 @@ function ScopedGameViews({
   const activeFocus =
     positive.find((o) => o.mechanicId === relationFocus)?.mechanicId ??
     positive[0]?.mechanicId;
-  const neighbors = new Set(
-    localRelations
-      .filter((r) => r.from === activeFocus || r.to === activeFocus)
-      .flatMap((r) => [r.from, r.to]),
-  );
-  const peers = positive.filter(
-    (o) =>
-      o.mechanicId !== activeFocus &&
-      (neighbors.size === 0 || neighbors.has(o.mechanicId)),
-  );
-  const peerPages = Math.max(1, Math.ceil(peers.length / 6));
-  const safeRelationPage = Math.min(relationPage, peerPages - 1);
-  const displayed = positive.length
-    ? [
-        positive.find((o) => o.mechanicId === activeFocus)!,
-        ...peers.slice(safeRelationPage * 6, safeRelationPage * 6 + 6),
-      ]
-    : [];
+  const displayed = positive;
   const displayedIds = new Set(displayed.map((o) => o.mechanicId));
   const displayedRelations = localRelations.filter(
     (r) => displayedIds.has(r.from) && displayedIds.has(r.to),
   );
   const positions = displayed.map((observation, index) => ({
     id: observation.mechanicId,
-    x: index === 0 ? 380 : 140 + ((index - 1) % 3) * 240,
-    y: index === 0 ? 48 : 150 + Math.floor((index - 1) / 3) * 110,
+    x: 125 + (index % 3) * 250,
+    y: 60 + Math.floor(index / 3) * 100,
     observation,
   }));
   return (
@@ -137,7 +122,6 @@ function ScopedGameViews({
           onChange={(event) => {
             setScopeId(event.target.value);
             setShowUnknown(false);
-            setRelationPage(0);
           }}
         >
           {availableScopes.map((scope) => (
@@ -165,6 +149,21 @@ function ScopedGameViews({
                 {currentScope.label}
                 ：下列记录只介绍这个范围。未列出的机制仍需查证；“条件成立”要连同具体条件查看。
               </p>
+              <div className="scope-box" aria-label="核心交互概览">
+                <strong>核心交互可以有多种</strong>
+                <p>
+                  移动、跳跃、攻击可以在同一款游戏中并存。这个维度用来区分操作方式，不是给游戏选出唯一的核心玩法。
+                </p>
+                {overview.interactionIds.length > 0 && (
+                  <p>
+                    当前已收录：
+                    {overview.interactionIds
+                      .map((id) => getMechanic(id)?.name)
+                      .join(" / ")}
+                    。
+                  </p>
+                )}
+              </div>
               {observations.length ? (
                 <div className="observation-cards">
                   {observations.map((observation) => {
@@ -337,6 +336,11 @@ function ScopedGameViews({
               </p>
               {positive.length ? (
                 <>
+                  <GameMechanicInventory
+                    entries={overview.entries}
+                    selected={activeFocus}
+                    onSelect={setRelationFocus}
+                  />
                   <label
                     className="field-label"
                     htmlFor={`relation-focus-${game.id}`}
@@ -348,7 +352,6 @@ function ScopedGameViews({
                     value={activeFocus}
                     onChange={(event) => {
                       setRelationFocus(event.target.value);
-                      setRelationPage(0);
                     }}
                   >
                     {positive.map((o) => (
@@ -358,94 +361,86 @@ function ScopedGameViews({
                     ))}
                   </select>
                   <p className="tiny muted">
-                    显示所选机制及最多六个相关机制。没有关系记录时，展示同一范围的其他机制。
+                    图中列出当前范围的全部已收录机制。选择机制只改变高亮，不会隐藏其他方向。
                   </p>
-                  <svg
-                    className="case-relation-graph"
-                    viewBox="0 0 760 330"
-                    role="img"
-                    aria-label={`${game.name}当前范围的机制关系`}
+                  <div
+                    className="case-relation-scroll"
+                    role="region"
+                    aria-label="完整机制关系图，可横向查看"
                   >
-                    <g fill="none" stroke="#ac8ac7" strokeWidth="1.5">
-                      {displayedRelations.map((relation) => {
-                        const from = positions.find(
-                            (p) => p.id === relation.from,
-                          )!,
-                          to = positions.find((p) => p.id === relation.to)!;
+                    <svg
+                      className="case-relation-graph"
+                      viewBox={`0 0 760 ${Math.max(180, Math.ceil(positions.length / 3) * 100 + 30)}`}
+                      role="img"
+                      aria-label={`${game.name}当前范围的机制关系`}
+                    >
+                      <g fill="none" stroke="#ac8ac7" strokeWidth="1.5">
+                        {displayedRelations.map((relation) => {
+                          const from = positions.find(
+                              (p) => p.id === relation.from,
+                            )!,
+                            to = positions.find((p) => p.id === relation.to)!;
+                          return (
+                            <g key={relation.id}>
+                              <path
+                                className="flow-path"
+                                strokeDasharray="5 7"
+                                d={`M${from.x} ${from.y} Q380 160 ${to.x} ${to.y}`}
+                              />
+                              <title>
+                                {relation.context}：{relation.rationale}
+                              </title>
+                            </g>
+                          );
+                        })}
+                      </g>
+                      {positions.map((position) => {
+                        const mechanic = getMechanic(position.id)!;
+                        const dimension = dimensions.find(
+                          (d) => d.id === mechanic.dimension,
+                        )!;
                         return (
-                          <g key={relation.id}>
-                            <path
-                              className="flow-path"
-                              strokeDasharray="5 7"
-                              d={`M${from.x} ${from.y} Q380 160 ${to.x} ${to.y}`}
+                          <Link
+                            href={`/mechanics/${position.id}`}
+                            key={position.id}
+                          >
+                            <rect
+                              x={position.x - 85}
+                              y={position.y - 28}
+                              width="170"
+                              height="56"
+                              fill={
+                                position.id === activeFocus
+                                  ? "#51405e"
+                                  : "#31273f"
+                              }
+                              strokeWidth={position.id === activeFocus ? 3 : 1}
+                              stroke={dimension.color}
                             />
-                            <title>
-                              {relation.context}：{relation.rationale}
-                            </title>
-                          </g>
+                            <text
+                              x={position.x}
+                              y={position.y - 3}
+                              textAnchor="middle"
+                              fill="#d9c3e9"
+                              fontSize="13"
+                            >
+                              {mechanic.name}
+                            </text>
+                            <text
+                              x={position.x}
+                              y={position.y + 16}
+                              textAnchor="middle"
+                              fill="#a698b5"
+                              fontSize="9"
+                            >
+                              {dimension.name} /{" "}
+                              {stateLabels[position.observation.status]}
+                            </text>
+                          </Link>
                         );
                       })}
-                    </g>
-                    {positions.map((position) => {
-                      const mechanic = getMechanic(position.id)!;
-                      const dimension = dimensions.find(
-                        (d) => d.id === mechanic.dimension,
-                      )!;
-                      return (
-                        <Link
-                          href={`/mechanics/${position.id}`}
-                          key={position.id}
-                        >
-                          <rect
-                            x={position.x - 85}
-                            y={position.y - 28}
-                            width="170"
-                            height="56"
-                            fill="#31273f"
-                            stroke={dimension.color}
-                          />
-                          <text
-                            x={position.x}
-                            y={position.y - 3}
-                            textAnchor="middle"
-                            fill="#d9c3e9"
-                            fontSize="13"
-                          >
-                            {mechanic.name}
-                          </text>
-                          <text
-                            x={position.x}
-                            y={position.y + 16}
-                            textAnchor="middle"
-                            fill="#a698b5"
-                            fontSize="9"
-                          >
-                            {dimension.name} /{" "}
-                            {stateLabels[position.observation.status]}
-                          </text>
-                        </Link>
-                      );
-                    })}
-                  </svg>
-                  {peerPages > 1 && (
-                    <nav className="pagination" aria-label="相邻机制分页">
-                      <button
-                        disabled={safeRelationPage === 0}
-                        onClick={() => setRelationPage(safeRelationPage - 1)}
-                      >
-                        ← 上一页
-                      </button>
-                      <span>
-                        {safeRelationPage + 1} / {peerPages}
-                      </span>
-                      <button
-                        disabled={safeRelationPage + 1 >= peerPages}
-                        onClick={() => setRelationPage(safeRelationPage + 1)}
-                      >
-                        下一页 →
-                      </button>
-                    </nav>
-                  )}
+                    </svg>
+                  </div>
                   {displayedRelations.length ? (
                     <ul className="content-list">
                       {displayedRelations.map((relation) => (
@@ -464,7 +459,10 @@ function ScopedGameViews({
                       这些机制的关系还未整理，暂不绘制连线。
                     </p>
                   )}
-                  <Link className="button" href={`/graph?game=${game.id}`}>
+                  <Link
+                    className="button"
+                    href={`/graph?game=${game.id}&scope=${encodeURIComponent(scopeId)}`}
+                  >
                     在完整交互图谱中查看 ↗
                   </Link>
                 </>

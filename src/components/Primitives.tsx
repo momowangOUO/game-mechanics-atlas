@@ -9,6 +9,7 @@ import type { Game, MechanicStatus } from "@/lib/model";
 import { ArtImage, MaidPortrait } from "./Art";
 import { chapterArt, gameArt, type ChapterId, type MaidState } from "@/lib/art";
 import gameArtSourceData from "@/data/game-art-sources.json";
+import { rinDialogue } from "@/data/rin-dialogue";
 const gameArtSources: Record<
   string,
   { kind: string; sourceUrl: string; publisher: string }
@@ -170,7 +171,7 @@ export function CountUp({
 }
 
 export function Assistant({
-  message = "同一机制在不同游戏里可能有不同作用。先看规则，再对照具体案例。",
+  message = rinDialogue.mechanic,
   compact = false,
   state = "explain",
 }: {

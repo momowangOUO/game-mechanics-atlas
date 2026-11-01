@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { DimensionIcon } from "./Art";
 import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import {
@@ -21,7 +20,6 @@ import {
   dimensions,
   games,
   getGame,
-  getInstances,
   getMechanic,
   getMechanicSupply,
   getRelatedGames,
@@ -30,8 +28,10 @@ import {
   relationships,
   scopes,
 } from "@/lib/knowledge";
-import { EmptyState, PageHead, Window } from "./Primitives";
+import { EmptyState, PageHead, Window, StateBadge } from "./Primitives";
 import { useUI } from "./Providers";
+import { gameMechanicOverview } from "@/lib/game-mechanic-overview";
+import GameMechanicInventory from "./GameMechanicInventory";
 import {
   dimensionGrid,
   neighborhoodGrid,
@@ -110,7 +110,7 @@ function GraphCanvas({
             dimensions.map((d) => d.id),
             (id) => getMechanic(id)!.dimension,
           )
-        : neighborhoodGrid(ids, focused);
+        : neighborhoodGrid(ids, mode === "game" ? "" : focused);
     return ids.map((id) => {
       const mechanic = getMechanic(id)!;
       const dimension = dimensions.find((d) => d.id === mechanic.dimension)!;
@@ -173,17 +173,26 @@ function GraphCanvas({
 export default function AtlasGraph({
   initialFocus = "",
   initialGame = "",
+  initialScope = "",
 }: {
   initialFocus?: string;
   initialGame?: string;
+  initialScope?: string;
 }) {
+  const linkedGame = getGame(initialGame);
+  const openingOverview = gameMechanicOverview(
+    linkedGame?.id ?? games[0].id,
+    initialScope,
+  );
   const [focus, setFocus] = useState(
-    getMechanic(initialFocus)
-      ? initialFocus
-      : getGame(initialGame)
-        ? getInstances(initialGame, getGame(initialGame)!.defaultScopeId).find(
-            (i) => i.status === "present" || i.status === "conditional",
-          )?.mechanicId || "score-threshold"
+    linkedGame
+      ? openingOverview.entries.some(
+          (entry) => entry.mechanic.id === initialFocus,
+        )
+        ? initialFocus
+        : (openingOverview.entries[0]?.mechanic.id ?? "score-threshold")
+      : getMechanic(initialFocus)
+        ? initialFocus
         : "score-threshold",
   );
   const [mode, setMode] = useState<"neighbors" | "all" | "game">(
@@ -192,9 +201,7 @@ export default function AtlasGraph({
   const [gameId, setGameId] = useState(
     getGame(initialGame) ? initialGame : games[0].id,
   );
-  const [scopeId, setScopeId] = useState(
-    getGame(initialGame)?.defaultScopeId || games[0].defaultScopeId,
-  );
+  const [scopeId, setScopeId] = useState(openingOverview.scopeId);
   const [selectedDimensions, setSelectedDimensions] = useState(
     dimensions.map((d) => d.id),
   );
@@ -214,10 +221,12 @@ export default function AtlasGraph({
       .filter((r) => r.from === focus || r.to === focus)
       .flatMap((r) => [r.from, r.to]),
   ]);
+  const overview = useMemo(
+    () => gameMechanicOverview(gameId, scopeId),
+    [gameId, scopeId],
+  );
   const gameMechanics = new Set(
-    getInstances(gameId, scopeId)
-      .filter((i) => i.status === "present" || i.status === "conditional")
-      .map((i) => i.mechanicId),
+    overview.entries.map((entry) => entry.mechanic.id),
   );
   const visible = mechanics
     .filter(
@@ -230,7 +239,12 @@ export default function AtlasGraph({
     .map((m) => m.id);
   const visibleSet = new Set(visible);
   const edges: Edge[] = relationships
-    .filter((r) => visibleSet.has(r.from) && visibleSet.has(r.to))
+    .filter(
+      (r) =>
+        visibleSet.has(r.from) &&
+        visibleSet.has(r.to) &&
+        (mode !== "game" || overview.relationshipIds.includes(r.id)),
+    )
     .map((relation) => ({
       id: relation.id,
       source: relation.from,
@@ -297,6 +311,8 @@ export default function AtlasGraph({
               aria-pressed={mode === id}
               onClick={() => {
                 setMode(id);
+                if (id === "game")
+                  setSelectedDimensions(dimensions.map((d) => d.id));
                 if (id === "game" && !gameMechanics.has(focus))
                   selectNode([...gameMechanics][0] || focus);
               }}
@@ -332,11 +348,11 @@ export default function AtlasGraph({
               onChange={(event) => {
                 const game = getGame(event.target.value)!;
                 setGameId(game.id);
-                setScopeId(game.defaultScopeId);
+                setScopeId("all");
+                setSelectedDimensions(dimensions.map((d) => d.id));
                 selectNode(
-                  getInstances(game.id, game.defaultScopeId).find(
-                    (i) => i.status === "present" || i.status === "conditional",
-                  )?.mechanicId || focus,
+                  gameMechanicOverview(game.id).entries[0]?.mechanic.id ||
+                    focus,
                 );
               }}
             >
@@ -351,13 +367,14 @@ export default function AtlasGraph({
               value={scopeId}
               onChange={(event) => {
                 setScopeId(event.target.value);
+                setSelectedDimensions(dimensions.map((d) => d.id));
                 selectNode(
-                  getInstances(gameId, event.target.value).find(
-                    (i) => i.status === "present" || i.status === "conditional",
-                  )?.mechanicId || focus,
+                  gameMechanicOverview(gameId, event.target.value).entries[0]
+                    ?.mechanic.id || focus,
                 );
               }}
             >
+              <option value="all">全部已收录范围 · 分模式标注</option>
               {listGameScopes(
                 scopes,
                 gameId,
@@ -371,6 +388,19 @@ export default function AtlasGraph({
           </>
         )}
       </div>
+      {mode === "game" && (
+        <GameMechanicInventory
+          entries={overview.entries}
+          selected={focus}
+          allScopes={scopeId === "all"}
+          onSelect={(id) => {
+            selectNode(id);
+            setSelectedDimensions((previous) => [
+              ...new Set([...previous, getMechanic(id)!.dimension]),
+            ]);
+          }}
+        />
+      )}
       <div className="graph-dimensions" aria-label="按维度过滤图谱">
         {dimensions.map((d) => (
           <label key={d.id}>
@@ -441,7 +471,33 @@ export default function AtlasGraph({
               </span>
               <h2 className="serif">{current.name}</h2>
               <p className="graph-definition">{current.definition}</p>
-              <MechanicExamples id={focus} limit={1} small />
+              {mode === "game" ? (
+                <div className="scope-box" aria-label="当前游戏中的机制用法">
+                  <strong>{getGame(gameId)?.name}中的用法</strong>
+                  {overview.entries
+                    .find((entry) => entry.mechanic.id === focus)
+                    ?.records.map((record) => (
+                      <div key={record.id}>
+                        <StateBadge status={record.status} />
+                        <p>
+                          {
+                            scopes.find((scope) => scope.id === record.scopeId)
+                              ?.label
+                          }
+                          ：{record.rationale}
+                        </p>
+                        {record.condition && <p>条件：{record.condition}</p>}
+                        <Link
+                          href={`/games/${gameId}?scope=${encodeURIComponent(record.scopeId)}`}
+                        >
+                          查看这个范围的记录 ↗
+                        </Link>
+                      </div>
+                    ))}
+                </div>
+              ) : (
+                <MechanicExamples id={focus} limit={1} small />
+              )}
               <div className="segmented-buttons inspector-tabs">
                 {(
                   [

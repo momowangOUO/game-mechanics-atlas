@@ -225,6 +225,7 @@ test("compact phone reads long scoped evidence and its condition without overlap
   );
   await gotoApp(page, "/taxonomy?mechanic=automatic-resolution");
   const risk = page.getByRole("region", { name: "机制阅读卡", exact: true });
+  await risk.getByRole("tab", { name: "有什么用", exact: true }).click();
   await risk
     .getByRole("button", { name: "作用与风险下一页", exact: true })
     .click();
