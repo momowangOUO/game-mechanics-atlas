@@ -109,7 +109,7 @@ for (const entry of ["home preview", "case relations"] as const) {
     ).toHaveText("123");
     const downloadReady = page.waitForEvent("download");
     await page
-      .getByRole("button", { name: "导出当前JSON", exact: true })
+      .getByRole("button", { name: "导出当前 JSON", exact: true })
       .click();
     const download = await downloadReady;
     expect(
@@ -177,6 +177,6 @@ test("complete measured zeros display zero and flat trend in case and Compare", 
       `a[href="${appHref("/heat?topic=game%3Aslay-the-spire")}"]`,
     ),
   });
-  await expect(missing).toContainText("尚未取得这个主题的直接搜索记录");
+  await expect(missing).toContainText("还没有这个主题的直接搜索记录");
   await expect(missing.locator(".mini-profile-numbers")).toHaveCount(0);
 });

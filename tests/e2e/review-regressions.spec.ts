@@ -53,7 +53,9 @@ async function openCounts(page: Page) {
 }
 async function exportRecords(page: Page) {
   const ready = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出当前JSON", exact: true }).click();
+  await page
+    .getByRole("button", { name: "导出当前 JSON", exact: true })
+    .click();
   const download = await ready;
   return JSON.parse(await readFile((await download.path())!, "utf8"));
 }
@@ -103,7 +105,7 @@ test("imported working data survives case navigation and invalid or synthetic re
     "本地导入 · 来源见数据说明",
   );
   await expect(page.locator(".heat-mini")).toContainText(
-    "尚未取得这个主题的直接搜索记录",
+    "还没有这个主题的直接搜索记录",
   );
   await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
   await hydrated(page);
@@ -238,7 +240,8 @@ test("mixed declared sources remain qualified in Compare while home keeps offici
   );
   await expect(balatro.locator(".seed")).toContainText("混合来源");
   await expect(balatro).not.toContainText("合成示例");
-  const qualification = balatro.getByText(/请分别核验各数据集的范围与真实性/);
+  const qualification =
+    balatro.getByText(/不同来源的数据需要分别核对采集方式与范围/);
   for (const width of [768, 390]) {
     await page.setViewportSize({ width, height: 900 });
     await expect(qualification).toBeVisible();

@@ -1,3 +1,5 @@
+import { GameStructuredData } from "@/components/StructuredData";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -29,7 +31,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  return { title: getGame(id)?.name || "未收录游戏" };
+  const item = getGame(id);
+  if (!item) notFound();
+  return pageMetadata(
+    `${item.name}：游戏机制与案例分析`,
+    item.summary,
+    `/games/${id}`,
+  );
 }
 export default async function GamePage({
   params,
@@ -45,6 +53,7 @@ export default async function GamePage({
   );
   return (
     <>
+      <GameStructuredData game={game} />
       <div className="breadcrumb">
         <Link href="/">研究室</Link> / <Link href="/games">游戏案例</Link> /{" "}
         {game.name}
@@ -90,7 +99,7 @@ export default async function GamePage({
               <strong>{game.studio}</strong>
             </div>
             <div>
-              <small>年份 / 口径见来源</small>
+              <small>年份 / 说明见来源</small>
               <strong>{game.year}</strong>
             </div>
             <div>
@@ -100,7 +109,7 @@ export default async function GamePage({
               </strong>
             </div>
             <div>
-              <small>传统类型 / 编辑检索标签</small>
+              <small>类型标签 / 便于检索</small>
               <strong>
                 {linkedGenres.map((g) => g.name).join(" / ") || "暂未归纳"}
               </strong>
@@ -115,7 +124,7 @@ export default async function GamePage({
           </div>
         </div>
       </div>
-      <SectionHead number="EVIDENCE" title="事实、来源与研究边界" />
+      <SectionHead number="EVIDENCE" title="资料来源与适用范围" />
       <div className="generic-grid">
         <section className="paper">
           <h2>已核实的来源信息</h2>
@@ -125,7 +134,7 @@ export default async function GamePage({
             ))}
           </ul>
           <p className="tiny" style={{ marginTop: 15 }}>
-            年份口径：{game.yearBasis}
+            年份说明：{game.yearBasis}
           </p>
         </section>
         <section className="small-card">
@@ -160,7 +169,7 @@ export default async function GamePage({
       </div>
       {relatedRecipes.length > 0 && (
         <>
-          <SectionHead number="FORMULA" title="以此为参照，继续研究组合" />
+          <SectionHead number="FORMULA" title="用这个案例继续研究组合" />
           <p className="catalog-note">
             下列配方是设计假设；此游戏仅提供部分机制或流程参照，不能据此认定整组机制已经验证。
           </p>
@@ -177,7 +186,7 @@ export default async function GamePage({
                 <p className="filter-note">
                   设计假设；本案例只提供部分机制或流程参照。
                 </p>
-                <span className="tiny gold">查看分工与风险 →</span>
+                <span className="tiny gold">编写研究提示词 →</span>
               </Link>
             ))}
           </div>

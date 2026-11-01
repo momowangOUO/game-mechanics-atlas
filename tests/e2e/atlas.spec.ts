@@ -73,7 +73,7 @@ test("mechanics filter by canonical dimension, core tag and keyword", async ({
   );
   await page.getByRole("textbox", { name: "搜索机制" }).fill("不存在的机制987");
   await expect(
-    page.getByRole("heading", { name: "没有找到匹配档案" }),
+    page.getByRole("heading", { name: "没有找到匹配的档案" }),
   ).toBeVisible();
   await page
     .locator(".catalog-sidebar")
@@ -105,7 +105,7 @@ test("game scopes keep creative absence separate from survival unknown", async (
   await expect(page.locator(".loop-step").first()).toBeVisible();
   await page.getByRole("tab", { name: "热度标签" }).click();
   await expect(
-    page.getByText("尚未取得这个主题的直接搜索记录。", {
+    page.getByText("还没有这个主题的直接搜索记录，", {
       exact: false,
     }),
   ).toBeVisible();
@@ -205,10 +205,10 @@ test("count rankings preserve imported ratios and withhold unsupported market sc
   await expect(rows.first()).toContainText("1,000 万");
   await expect(rows.nth(1)).toContainText("10 万");
   await page.getByRole("tab", { name: "蓝海线索", exact: true }).click();
-  await expect(page.getByLabel("线索分比较组")).toHaveValue("combination");
+  await expect(page.getByLabel("主题比较范围")).toHaveValue("combination");
   await expect(rows).toHaveCount(0);
   await page.getByRole("tab", { name: "红海观察", exact: true }).click();
-  await page.getByLabel("线索分比较组").selectOption("genre");
+  await page.getByLabel("主题比较范围").selectOption("genre");
   await expect(rows).toHaveCount(0);
   await page.getByLabel("热度时间窗口").selectOption("7");
   await expect(page.locator(".heat-window-note")).toContainText("2026-10-24");
@@ -294,7 +294,7 @@ test("compare swaps the selected scopes and exposes unknown observations", async
   );
   await page.getByRole("button", { name: /循环与构筑/ }).click();
   await expect(
-    page.getByText("你已切换到其他研究范围。", { exact: false }),
+    page.getByText("当前选择与默认范围不同。", { exact: false }),
   ).toBeVisible();
 });
 
@@ -315,6 +315,8 @@ test("reduced motion and dialog escape restore keyboard focus", async ({
 test("mobile tools use drawers and have no document overflow", async ({
   page,
 }) => {
+  // Twelve full document loads each include the required three-second intro.
+  test.setTimeout(90_000);
   await page.setViewportSize({ width: 320, height: 740 });
   for (const path of [
     "/",
@@ -348,7 +350,7 @@ test("mobile tools use drawers and have no document overflow", async ({
   await page.getByRole("button", { name: "打开导航菜单" }).click();
   await page
     .getByRole("dialog")
-    .getByRole("link", { name: /混合实验室/ })
+    .getByRole("link", { name: /研究提示词/ })
     .click();
   await expect(page).toHaveURL(/\/lab\/?$/);
 });
@@ -362,44 +364,41 @@ test("invalid archive route has a usable not-found page", async ({ page }) => {
   ).toBeVisible();
 });
 
-test("lab keeps analyzed snapshots and explains a timing conflict", async ({
+test("lab composes three research templates and copies the editable request", async ({
   page,
 }) => {
   await visit(page, "/lab?recipe=aimed-buildcraft");
-  await expect(page.getByLabel("组合配方")).toHaveValue("aimed-buildcraft");
-  await page.getByRole("button", { name: /^分析当前组合/ }).click();
-  await expect(
-    page.getByRole("tab", { name: "循环与分工", exact: true }),
-  ).toBeVisible();
-  await page
-    .getByRole("navigation", { name: "实验步骤", exact: true })
-    .getByRole("button", { name: /核心/ })
-    .click();
-  await page
-    .getByRole("combobox", { name: "核心机制", exact: true })
-    .selectOption("real-time-update");
-  await expect(page.getByText("组合已修改，以下仍是上次分析。")).toBeVisible();
-  await page
-    .getByRole("navigation", { name: "实验步骤", exact: true })
-    .getByRole("button", { name: /配料/ })
-    .click();
-  await page.getByRole("button", { name: "流程与结构", exact: true }).click();
-  await page
-    .getByRole("searchbox", { name: "搜索机制" })
-    .fill("sequential-turns");
-  await page.getByRole("checkbox", { name: /轮流行动/ }).check();
-  await page.getByRole("button", { name: /^重新分析当前组合/ }).click();
-  await page.getByRole("tab", { name: "协同与冲突", exact: true }).click();
-  await expect(page.getByRole("tabpanel")).toContainText("冲突与张力 · 1 条");
-  await expect(page.getByRole("tabpanel")).toContainText("轮流");
-  await page.getByRole("tab", { name: "调整与边界", exact: true }).click();
-  await expect(page.getByRole("tabpanel")).toContainText("不同阶段");
+  await expect(page.getByLabel("起点配方")).toHaveValue("aimed-buildcraft");
+  const steps = page.getByRole("navigation", { name: "提示词编写步骤" });
+  for (const name of ["组合研究", "机制对照", "Demo 验证"]) {
+    await steps.getByRole("button", { name: /研究要求/ }).click();
+    await page.getByRole("button", { name: new RegExp(`^${name}`) }).click();
+    await page.getByRole("button", { name: /^(重新)?生成提示词/ }).click();
+    expect(await page.locator("#research-prompt").inputValue()).toContain(
+      `# ${name}请求`,
+    );
+  }
+  await page.locator("#research-prompt").fill("补充后的研究请求");
+  await page.evaluate(() =>
+    Object.defineProperty(navigator, "clipboard", {
+      configurable: true,
+      value: {
+        writeText: async (text: string) => {
+          (window as Window & { copied?: string }).copied = text;
+        },
+      },
+    }),
+  );
+  await page.getByRole("button", { name: "复制提示词", exact: true }).click();
+  expect(
+    await page.evaluate(() => (window as Window & { copied?: string }).copied),
+  ).toBe("补充后的研究请求");
+  await expect(page.getByText("提示词已复制。", { exact: true })).toBeVisible();
   await visit(page, "/lab?recipe=missing-recipe");
   await expect(
     page.getByText("链接中的配方未收录，已恢复默认组合。", { exact: false }),
   ).toBeVisible();
 });
-
 test("full motion can be selected while system reduction takes priority", async ({
   browser,
   baseURL,

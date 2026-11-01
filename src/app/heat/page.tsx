@@ -1,8 +1,9 @@
+import { indexPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { HeatQuery } from "@/components/QueryEntrypoints";
 
-export const metadata: Metadata = { title: "搜索趋势与真实来源" };
+export const metadata: Metadata = indexPageMetadata["/heat"];
 
 export default function Page() {
   return (

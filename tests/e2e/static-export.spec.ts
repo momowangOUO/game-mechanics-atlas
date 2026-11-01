@@ -21,6 +21,8 @@ test("static catalog queries survive direct loads, refresh, query-only navigatio
   const search = page.getByRole("textbox", { name: "搜索机制" });
   await expect(search).toHaveValue("计分");
   await page.reload();
+  await expect(page.getByTestId("brand-intro")).toBeVisible();
+  await expect(page.getByTestId("brand-intro")).toHaveCount(0);
   await expect(search).toHaveValue("计分");
   await changeQuery(page, "/mechanics?q=计分&dimension=");
   await expect(search).toHaveValue("计分");
@@ -82,7 +84,7 @@ test("lab keeps recipe, duplicate and illegal add query behavior", async ({
 }) => {
   await gotoApp(page, "/lab?recipe=aimed-buildcraft&add=piece-rotation");
   await hydrated(page);
-  await expect(page.getByLabel("组合配方")).toHaveValue("aimed-buildcraft");
+  await expect(page.getByLabel("起点配方")).toHaveValue("aimed-buildcraft");
   await changeQuery(
     page,
     "/lab?recipe=missing&add=piece-rotation&add=score-threshold",
@@ -151,7 +153,7 @@ test("raw artwork, favicon and CSS scenery respect the deployment mount", async 
     .evaluateAll((images) =>
       images.map((image) => image.getAttribute("src")),
     )) {
-    expect(src).toMatch(new RegExp(`^${appPath("/art/")}`));
+    expect(src).toMatch(new RegExp(`^${appPath("/")}(art|brand)/`));
   }
   const background = await page
     .locator(".assistant-small")

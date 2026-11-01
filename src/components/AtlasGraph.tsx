@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { DimensionIcon } from "./Art";
+import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import {
   Background,
@@ -79,7 +80,7 @@ const MechanicNode = memo(function MechanicNode({
       <span className="tiny" style={{ color: data.color }}>
         {data.dimension}
       </span>
-      <DimensionIcon id={getMechanic(id)!.dimension} />
+      <MechanicIcon id={id} size={38} />
       <strong>{data.label}</strong>
       <span className="node-detail">点选查看详情 →</span>
       <Handle type="source" position={Position.Right} isConnectable={false} />
@@ -273,9 +274,9 @@ export default function AtlasGraph({
         <Link href="/">研究室</Link> / 机制图谱
       </div>
       <PageHead
-        eyebrow="RELATION ATLAS / 分类独立，关系相连"
-        title="顺着关系，找到下一份档案。"
-        description="点选机制，查看相关规则、共同出现的游戏案例与编辑分析。关系另行记录，机制所属维度保持不变。"
+        eyebrow="RELATION ATLAS / 机制之间的关系"
+        title="机制关系图"
+        description="选择一个机制，查看相关规则、游戏案例，以及可能的配合与冲突。连线是本站整理的设计分析。"
       >
         <span className="chip">
           {mechanics.length} 节点 / {relationships.length} 条编辑关系
@@ -285,7 +286,7 @@ export default function AtlasGraph({
         <div className="segmented-buttons" aria-label="图谱范围">
           {(
             [
-              ["neighbors", "相邻研究"],
+              ["neighbors", "相关机制"],
               ["all", "全部机制"],
               ["game", "游戏范围"],
             ] as const
@@ -429,7 +430,7 @@ export default function AtlasGraph({
             条关系。
           </p>
           <div className="scope-box">
-            连线表示编辑分析，成立条件见机制档案。游戏范围只显示“已确认存在”和“条件成立”的机制，未确认项保持未知。尚无关系记录的节点会单独显示。
+            连线的含义与适用情况见机制档案。按游戏查看时，只展示已确认或有条件出现的机制；没有关系记录的机制会单独显示。
           </div>
         </section>
         <aside className="graph-inspector">
@@ -440,6 +441,7 @@ export default function AtlasGraph({
               </span>
               <h2 className="serif">{current.name}</h2>
               <p className="graph-definition">{current.definition}</p>
+              <MechanicExamples id={focus} limit={1} small />
               <div className="segmented-buttons inspector-tabs">
                 {(
                   [
@@ -470,14 +472,14 @@ export default function AtlasGraph({
                     阅读完整机制档案 →
                   </Link>
                   <Link className="button" href={`/lab?add=${focus}`}>
-                    加入实验室 ＋
+                    编写研究提示词 ＋
                   </Link>
                 </>
               )}
               {panel === "combinations" && (
                 <>
                   <p className="filter-note">
-                    以下统计收录游戏中，在同一兼容范围内共同出现的机制。搜索次数请到热度观察查看。
+                    以下机制在本站收录游戏的同一模式或范围中共同出现。搜索次数请到“热度观察”查看。
                   </p>
                   {cooccurrences.length ? (
                     cooccurrences.map(({ mechanic, supply }) => (
@@ -498,7 +500,7 @@ export default function AtlasGraph({
                     ))
                   ) : (
                     <p className="scope-box">
-                      当前没有足够的已确认共现，不能据此判定组合无效。
+                      暂未收录这些机制共同出现的游戏。可以选择下方配方，继续整理研究提示词。
                     </p>
                   )}
                   <h3 className="tiny gold" style={{ marginTop: 20 }}>
@@ -545,7 +547,7 @@ export default function AtlasGraph({
                     ))
                   ) : (
                     <p className="scope-box">
-                      没有已确认的同范围案例；条件匹配与未知并不等于不存在。
+                      还没有确认这些机制在同一模式中出现的案例，可继续核对有条件或资料待补的游戏。
                     </p>
                   )}
                 </>

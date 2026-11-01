@@ -6,6 +6,7 @@ import { ArtImage, DimensionIcon } from "./Art";
 import { recipeArt } from "@/lib/art";
 import styles from "./Home.module.css";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
+import { AuthorSection } from "./Author";
 
 import { CountUp, GameCard, Reveal, SectionHead, Window } from "./Primitives";
 import RelationPreview from "./RelationPreview";
@@ -31,7 +32,7 @@ export default function Home() {
           [mechanics.length, "原子机制", "按九个维度分类"],
           [games.length, "真实游戏", "来源与分析分开"],
           [genres.length, "复合类型", "类型与机制分别记录"],
-          [recipes.length, "组合研究", "理解协同与冲突"],
+          [recipes.length, "组合研究", "整理研究与验证问题"],
         ].map(([n, a, b]) => (
           <div className="metric" key={String(a)}>
             <strong>
@@ -46,7 +47,7 @@ export default function Home() {
         ))}
       </section>
       <Reveal className="home-research-section">
-        <SectionHead number="01" title="每一层有哪些类别？">
+        <SectionHead number="01" title="按分类查机制">
           <Link href="/taxonomy">打开完整分类参考 →</Link>
         </SectionHead>
         <div className="dashboard-row">
@@ -82,7 +83,7 @@ export default function Home() {
           <Window title="READING GUIDE / 沿着分类找参考">
             <div className={styles.guide}>
               <span className="eyebrow">维度 → 分组 → 机制 → 游戏实例</span>
-              <h3>先知道有哪些选择，再看它们怎样运作。</h3>
+              <h3>从玩法问题出发，找到对应规则。</h3>
               <ol>
                 <li>
                   <strong>选观察维度</strong>
@@ -90,13 +91,11 @@ export default function Home() {
                 </li>
                 <li>
                   <strong>看分组和边界</strong>
-                  <p>区分卡组变化、空间配置、局前选择等不同问题。</p>
+                  <p>分清卡组变化、空间配置和出战配置的区别。</p>
                 </li>
                 <li>
                   <strong>对照具体游戏</strong>
-                  <p>
-                    查看规则、发生范围、成立条件和来源，再决定可以借鉴什么。
-                  </p>
+                  <p>查看规则用在哪个模式、何时生效，再核对来源。</p>
                 </li>
               </ol>
               <Link className="button primary" href="/taxonomy">
@@ -110,7 +109,7 @@ export default function Home() {
         </div>
       </Reveal>
       <Reveal className="home-research-section">
-        <SectionHead number="02" title="把熟悉的游戏拆开看">
+        <SectionHead number="02" title="游戏范例">
           <Link href="/games">{games.length} 款真实案例 →</Link>
         </SectionHead>
         <div className="case-grid">
@@ -120,10 +119,10 @@ export default function Home() {
         </div>
       </Reveal>
       <Reveal className="home-research-section">
-        <SectionHead number="03" title="机制之间，发生了什么？">
+        <SectionHead number="03" title="机制关系图">
           <Link href="/graph">打开交互图谱 ↗</Link>
         </SectionHead>
-        <Window title="RELATION GRAPH / 分类独立，关系相连">
+        <Window title="RELATION GRAPH / 查看机制之间的关系">
           <RelationPreview />
           <p className="tiny muted">
             机制关系示意 · 可在交互图谱中缩放、拖动、查看相邻机制与游戏案例
@@ -131,8 +130,8 @@ export default function Home() {
         </Window>
       </Reveal>
       <Reveal className="home-research-section">
-        <SectionHead number="04" title="下一次实验，先从哪里开始？">
-          <Link href="/lab">进入混合实验室 ↗</Link>
+        <SectionHead number="04" title="机制组合研究">
+          <Link href="/lab">编写研究提示词 ↗</Link>
         </SectionHead>
         <div className="recipe-grid">
           {recipes.slice(0, 4).map((recipe, i) => (
@@ -156,17 +155,18 @@ export default function Home() {
                   .filter(Boolean)
                   .join(" ＋ ")}
               </p>
-              <span className="tiny gold">查看机制分工与验证问题 →</span>
+              <span className="tiny gold">编写这组机制的研究提示词 →</span>
             </Link>
           ))}
         </div>
       </Reveal>
       <Reveal className="home-research-section">
-        <SectionHead number="05" title="搜索趋势，先看来源与时间">
+        <SectionHead number="05" title="搜索趋势">
           <Link href="/heat">查看完整热度观察 ↗</Link>
         </SectionHead>
         <HomeHeatHighlights />
       </Reveal>
+      <AuthorSection />
     </div>
   );
 }

@@ -59,7 +59,7 @@ export const chapters = [
   {
     id: "lab",
     href: "/lab",
-    name: "混合实验室",
+    name: "研究提示词",
     subtitle: "组合机制，提出设计假设",
     number: "05",
   },

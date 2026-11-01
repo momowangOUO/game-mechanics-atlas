@@ -1,8 +1,9 @@
+import { indexPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { CompareQuery } from "@/components/QueryEntrypoints";
 
-export const metadata: Metadata = { title: "游戏对比" };
+export const metadata: Metadata = indexPageMetadata["/compare"];
 
 export default function Page() {
   return (

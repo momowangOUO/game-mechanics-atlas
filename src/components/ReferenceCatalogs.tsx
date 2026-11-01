@@ -105,7 +105,7 @@ export function SourceCatalog() {
       {!rows.length && (
         <EmptyState
           title="没有匹配的来源"
-          description="可以换一个关键词，或选择全部来源类别。"
+          description="换个关键词，或将来源类别改为“全部来源”。"
         />
       )}
       <Pager page={current} total={total} onPage={setPage} />
@@ -150,7 +150,7 @@ export function TypeCatalog() {
             <h2>{g.name}</h2>
             <p>{g.definition}</p>
             <p style={{ marginTop: 12, color: "#dfbd77" }}>
-              主要在做：{getTypeReference(g.id)?.playerTask}
+              玩家主要在做：{getTypeReference(g.id)?.playerTask}
             </p>
             <p style={{ marginTop: 8 }}>
               游戏参照：
@@ -161,7 +161,7 @@ export function TypeCatalog() {
                 .join(" · ") || "本库暂未收录对应案例"}
             </p>
             <div className="card-bottom">
-              <span className="chip">复合类型 / 编辑画像</span>
+              <span className="chip">复合类型 / 编辑整理</span>
               <span>→</span>
             </div>
           </Link>
@@ -170,7 +170,7 @@ export function TypeCatalog() {
       {!rows.length && (
         <EmptyState
           title="没有匹配的类型"
-          description="可以试试中文名、英文名或更短的关键词。"
+          description="试试中文名、英文名，或缩短关键词。"
         />
       )}
       <Pager page={current} total={total} onPage={setPage} />

@@ -201,7 +201,7 @@ export const typeReferences: TypeReference[] = [
       "失败能否提供可学习的信息？资源恢复与重试距离如何影响玩家愿意尝试的策略？",
     compareId: "action-rpg",
     difference:
-      "类魂并无单一普遍认可的机制清单；动作 RPG 更宽泛。不能因为战斗困难、能够翻滚或存在复活点就直接判为类魂。",
+      "类魂通常还要结合战斗节奏、探索与失败代价来理解；动作 RPG 的范围更广。高难度、翻滚或复活点只是其中的线索。",
   },
   {
     id: "immersive-sim",
@@ -210,13 +210,13 @@ export const typeReferences: TypeReference[] = [
     loop: [
       "观察空间、目标和可交互系统",
       "选择工具、路径或系统组合解决障碍",
-      "承受系统反馈，并利用新的局面继续行动",
+      "观察尝试的结果，再利用新的局面继续行动",
     ],
     designQuestion:
       "不同解法是否来自一致规则的组合，而非只在预设位置出现的选择按钮？",
     compareId: "logic-puzzle",
     difference:
-      "逻辑解谜可以围绕单一确定规则求解；沉浸式模拟更强调多系统响应和目标导向的多解空间。两者都不能仅凭自由度宣传词判定。",
+      "逻辑解谜可以围绕一套明确规则寻找答案；沉浸式模拟更强调多个系统互相影响，让玩家用不同办法完成同一目标。",
   },
   {
     id: "survival-craft",
@@ -278,7 +278,7 @@ export const typeReferences: TypeReference[] = [
       "经营一个持续扩张的势力，在探索、开发、外交和对抗之间选择发展路线。",
     loop: [
       "探索可用空间与其他势力",
-      "配置扩张、经济和技术方向",
+      "安排扩张、经济发展和技术研究",
       "处理势力关系与竞争，推进长期胜利目标",
     ],
     designQuestion:
@@ -313,7 +313,7 @@ export const typeReferences: TypeReference[] = [
       "个体需求与整体效率发生冲突时，玩家是否有足够信息决定优先级？",
     compareId: "city-builder",
     difference:
-      "殖民地模拟常把具体个体及工作状态放在前景；城市建设更常关注区域、网络和服务覆盖。两者存在重叠，应观察实际决策尺度。",
+      "殖民地模拟常要求玩家照顾具体居民、安排他们的工作；城市建设更常让玩家规划区域、交通和服务覆盖，两者也会交叉。",
   },
   {
     id: "city-builder",
@@ -328,7 +328,7 @@ export const typeReferences: TypeReference[] = [
       "局部建设怎样影响全城网络？玩家能否追踪拥堵、短缺和成本的原因？",
     compareId: "colony-simulation",
     difference:
-      "城市建设可在抽象人口层面运行；殖民地模拟常追踪具体居民。不能仅因能造建筑就归入同一种设计问题。",
+      "城市建设可以主要围绕人口、区域和服务规划展开；殖民地模拟则常追踪具体居民的需求与工作。两者对建筑的关注点也因此不同。",
   },
   {
     id: "logic-puzzle",
@@ -402,7 +402,7 @@ export const typeReferences: TypeReference[] = [
   },
   {
     id: "vehicle-sport",
-    playerTask: "通过载具操控和空间判断，在竞速或体育目标中与他人竞争。",
+    playerTask: "驾驶载具参加竞速或体育对抗，判断路线、速度和对手的位置。",
     loop: [
       "判断速度、位置与目标方向",
       "控制转向、加速和接触时机",

@@ -1,8 +1,9 @@
+import { indexPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { GraphQuery } from "@/components/QueryEntrypoints";
 
-export const metadata: Metadata = { title: "交互机制图谱" };
+export const metadata: Metadata = indexPageMetadata["/graph"];
 
 export default function Page() {
   return (

@@ -62,56 +62,56 @@ function TopicDetails({
           <strong>{measured ? formatAmount(profile.demand) : "未记录"}</strong>
         </div>
         <div>
-          <small>收录确认供给</small>
+          <small>相关游戏样本</small>
           <strong>
             {profile.supply}
             <span> 款</span>
           </strong>
         </div>
         <div>
-          <small>蓝海线索分</small>
+          <small>蓝海分（暂停）</small>
           <strong className="cyan">
             {profile.blue === null ? "—" : profile.blue.toFixed(1)}
           </strong>
         </div>
         <div>
-          <small>红海线索分</small>
+          <small>红海分（暂停）</small>
           <strong className="gold">
             {profile.red === null ? "—" : profile.red.toFixed(1)}
           </strong>
         </div>
       </div>
       <p className="filter-note">
-        有该主题记录的日期：{profile.measuredDays} / {profile.expectedDays}{" "}
-        日。此处仅统计有记录的日期，不能据此判断市场采样是否完整。
+        有搜索记录的日期：{profile.measuredDays} / {profile.expectedDays}{" "}
+        日。这里只统计已记录的日期，不表示市场数据已收集完整。
       </p>
       {measured ? (
         <p className="filter-note">
           直接归因 {formatAmount(profile.directDemand)} 次 · 代理归因{" "}
           {formatAmount(profile.proxyDemand)} 次。
           <br />
-          趋势：{trendLabel(profile)}，需前后两期同口径可比。
+          趋势：{trendLabel(profile)}，仅比较采集方式一致的前后两期。
         </p>
       ) : (
         <div className="signal warn">
-          这个主题本期没有搜索记录，搜索次数和线索分暂不计算。
+          这个主题本期没有搜索记录，暂不显示次数和趋势。
         </div>
       )}
       {profile.scoreStatus === "insufficient_supply" && (
         <div className="signal warn">
-          本站尚未确认供给，可先补充竞品样本。搜索数据仍可查看，线索分暂不计算。
+          还没有确认相关游戏样本。搜索记录仍可查看，可继续补充竞品资料。
         </div>
       )}
       {measured && profile.supply > 0 && profile.supply <= 2 && (
         <div className="signal warn">
-          样本有限：确认供给仅 {profile.supply} 款，不能据此证明市场空白。
+          样本有限：本站仅确认 {profile.supply} 款，不能据此证明市场空白。
         </div>
       )}
       <p className="scope-box">
         条件匹配 {profile.conditionalSupply} 款 · 尚未确认{" "}
         {profile.unknownSupply} 款。
         <br />
-        供给统计只反映本站收录样本；机制组合要求在同一兼容范围共存。
+        游戏数只统计本站样本；组合中的机制必须出现在同一模式或范围。
       </p>
       {topic.mechanicIds && (
         <div className="type-chips">
@@ -123,7 +123,7 @@ function TopicDetails({
         </div>
       )}
       <h3 className="tiny purple" style={{ marginTop: 20 }}>
-        已确认供给中的案例
+        已收录的相关游戏
       </h3>
       {profile.gameIds.length ? (
         <div className="topic-case-list">
@@ -134,15 +134,13 @@ function TopicDetails({
           ))}
         </div>
       ) : (
-        <p className="filter-note">
-          暂无可列出的确认案例。没有记录不等于该方向不存在。
-        </p>
+        <p className="filter-note">还没有确认相关游戏，可继续补充资料。</p>
       )}
       <Link className="button" href={topicDestination(profile.topicId)}>
         {topic.kind === "combination" ? "在图谱中继续研究" : "阅读相关档案"} →
       </Link>
       <p className="tiny muted" style={{ marginTop: 16 }}>
-        分析版本 {result.formulaVersion}
+        计算版本 {result.formulaVersion}
         <br />
         {result.dateStart} — {result.dateEnd}
       </p>
@@ -198,7 +196,9 @@ function CountObservatory({
       return {
         result: null,
         error:
-          error instanceof Error ? error.message : "分析失败，请核对数据。",
+          error instanceof Error
+            ? error.message
+            : "无法分析这份记录，请检查文件内容。",
       };
     }
   }, [scopedStats, days]);
@@ -268,7 +268,7 @@ function CountObservatory({
       setPage(1);
       setImportErrors([]);
       setImportOpen(false);
-      announce("数据格式校验通过，已替换当前记录。来源真实性需另行核验。");
+      announce("已导入并替换当前记录。请继续核对原始来源。");
     } catch (error) {
       setImportErrors([
         error instanceof SyntaxError
@@ -378,7 +378,7 @@ function CountObservatory({
             导入数据 ⇧
           </button>
           <button className="text-button" onClick={exportData}>
-            导出当前JSON
+            导出当前 JSON
           </button>
           {isImported && (
             <button className="text-button" onClick={resetSeed}>
@@ -416,7 +416,7 @@ function CountObservatory({
                     "未记录"
                   )}
                 </strong>
-                <span>原始搜索总次数 · 每条记录计一次</span>
+                <span>原始记录中的搜索总次数</span>
               </div>
               <div className="metric">
                 <span>MEASURED TOPICS</span>
@@ -441,7 +441,7 @@ function CountObservatory({
                   {days}
                   <span className="metric-unit"> 日</span>
                 </strong>
-                <span>趋势需同口径的前一等长区间</span>
+                <span>与此前等长区间比较，采集方式须一致</span>
               </div>
             </div>
             <div className="heat-chart-tabs mobile-only">
@@ -455,7 +455,7 @@ function CountObservatory({
                 aria-pressed={chart === "scatter"}
                 onClick={() => setChart("scatter")}
               >
-                需求 × 供给
+                搜索 × 样本
               </button>
               <button onClick={() => setInspectOpen(true)}>当前主题 ↗</button>
             </div>
@@ -496,7 +496,7 @@ function CountObservatory({
                 <div
                   className={`chart-pane ${chart === "scatter" ? "mobile-chart-active" : ""}`}
                 >
-                  <Window title="DEMAND × SUPPLY / 需求供给散点">
+                  <Window title="SEARCH × SAMPLE / 搜索与游戏样本">
                     <ScatterChart
                       profiles={cohortProfiles}
                       selected={selectedProfile?.topicId || ""}
@@ -516,7 +516,7 @@ function CountObservatory({
                   再查竞品。
                 </h2>
                 <p>
-                  想研究一个方向，可以先看搜索关注，再核对竞品。收录样本少，还需要进一步调查。
+                  搜索记录能提供研究方向，具体玩法还要查竞品。本站样本有限，适合用作调查起点。
                 </p>
                 <div>
                   <strong>玩家在搜什么？</strong>
@@ -525,18 +525,16 @@ function CountObservatory({
                   </p>
                 </div>
                 <div>
-                  <strong>同类供给有多少？</strong>
+                  <strong>有哪些相关游戏？</strong>
                   <p>
-                    这里只统计本站已确认的样本，条件匹配与尚未确认的样本另列。
+                    这里只列本站样本；需要特定条件或尚未核实的游戏另行统计。
                   </p>
                 </div>
                 <div>
                   <strong>值得继续查什么？</strong>
-                  <p>
-                    可以打开相关案例，核对规则与范围，再用原型检验玩家的选择。
-                  </p>
+                  <p>打开案例，核对规则用在哪个模式，再决定原型要验证什么。</p>
                 </div>
-                <span className="observation-stamp">搜索关注 / 样本供给</span>
+                <span className="observation-stamp">搜索关注 / 游戏样本</span>
               </aside>
             </div>
             <div
@@ -586,7 +584,7 @@ function CountObservatory({
                   </label>
                   {(view === "blue" || view === "red") && (
                     <select
-                      aria-label="线索分比较组"
+                      aria-label="主题比较范围"
                       value={scoreKind}
                       onChange={(event) => {
                         setScoreKind(
@@ -603,8 +601,8 @@ function CountObservatory({
                 </div>
                 <p className="ranking-note">
                   {view === "blue" || view === "red"
-                    ? "当前暂停市场机会评估：本站收录样本不能代表完整市场供给，实际导入数据不计算蓝海、红海分。"
-                    : "按原始归因搜索次数排序，不按游戏数或线索分排序。"}{" "}
+                    ? "暂不评估市场机会：本站游戏样本不覆盖整个市场，导入记录也不计算蓝海或红海分。"
+                    : "按分配到各主题的搜索次数排序，不按游戏数量排序。"}{" "}
                   关键词只筛选榜单，不改变比较基准。
                 </p>
                 <Window
@@ -618,7 +616,7 @@ function CountObservatory({
                             <th scope="col">#</th>
                             <th scope="col">研究主题</th>
                             <th scope="col">搜索次数</th>
-                            <th scope="col">确认供给</th>
+                            <th scope="col">相关游戏</th>
                             <th scope="col">
                               {view === "blue"
                                 ? "蓝海分"
@@ -654,7 +652,7 @@ function CountObservatory({
                                   </button>
                                   {profile.supply === 0 && (
                                     <span className="ranking-status">
-                                      待补供给样本
+                                      待补游戏样本
                                     </span>
                                   )}
                                   {profile.measurementStatus === "partial" && (
@@ -699,8 +697,8 @@ function CountObservatory({
                       title="当前没有可列出的主题"
                       description={
                         view === "blue" || view === "red"
-                          ? "市场需求与供给范围尚不足以支持机会判断，当前不发布蓝海、红海排名。"
-                          : "请检查关键词、数据来源与时间窗口；未取得的需求保持为空。"
+                          ? "现有搜索记录和游戏样本不足以判断市场机会，暂不发布蓝海或红海排名。"
+                          : "可更换关键词、来源或日期范围；没有记录的主题暂不显示次数。"
                       }
                     >
                       <button className="button" onClick={() => setQuery("")}>
@@ -710,18 +708,18 @@ function CountObservatory({
                   )}
                 </Window>
                 <details className="method-details">
-                  <summary>查看公式、来源限制与分析提示</summary>
+                  <summary>查看统计方法与数据说明</summary>
                   <div className="paper">
-                    <h2>搜索与供给的范围</h2>
+                    <h2>这些数字能说明什么？</h2>
                     <p>
-                      导入的搜索次数与本站收录规模不能共同证明市场机会。实际记录不计算蓝海或红海分，供给只用于查看相关案例。
+                      这些搜索记录和本站游戏样本不足以判断市场机会，因此不计算蓝海或红海分。相关游戏数只帮助查找案例。
                     </p>
                     <ul>
                       {result.warnings.map((warning) => (
                         <li key={warning}>{warning}</li>
                       ))}
                     </ul>
-                    <Link href="/method#heat">完整口径与适用范围 ↗</Link>
+                    <Link href="/method#heat">完整统计方法与适用范围 ↗</Link>
                     <p className="tiny">{FORMULA_VERSION}</p>
                   </div>
                 </details>
@@ -758,9 +756,9 @@ function CountObservatory({
         <div className="window-body">
           <h2 className="dialog-heading">替换一套搜索记录</h2>
           <p className="filter-note">
-            文件只在当前浏览器中分析，不会上传；刷新页面后清空本地记录。请使用带
+            文件只在当前浏览器中分析，不会上传；刷新后清除。请使用包含
             schemaVersion:1 和 records 数组的
-            JSON，可先导出示例查看格式。校验检查数据格式与一致性，来源标签原样保留，真实性需另行核验。
+            JSON，可先导出文件查看格式。导入时会检查格式与一致性，来源内容仍需自行核对。
           </p>
           <input
             ref={fileRef}
@@ -772,7 +770,7 @@ function CountObservatory({
               if (!file) return;
               if (file.size > 5 * 1024 * 1024) {
                 setImportErrors([
-                  "文件超过 5 MB，请拆成较小且统计口径一致的数据集。",
+                  "文件超过 5 MB，请按相同的采集方式和范围拆成较小文件。",
                 ]);
                 return;
               }
@@ -801,8 +799,7 @@ function CountObservatory({
               </ul>
               {importErrors.length > 6 && (
                 <p>
-                  另有 {importErrors.length - 6}{" "}
-                  处错误，请按所列字段路径逐项核对。
+                  另有 {importErrors.length - 6} 处错误，请按提示检查对应字段。
                 </p>
               )}
             </div>

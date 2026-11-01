@@ -54,9 +54,9 @@ test("case relations expose a focal selector only in their own view", async ({
 }) => {
   await gotoApp(page, "/games/balatro");
   await page.getByRole("tab", { name: "循环视图", exact: true }).click();
-  await expect(page.getByLabel("关系焦点")).toHaveCount(0);
+  await expect(page.getByLabel("查看机制")).toHaveCount(0);
   await page.getByRole("tab", { name: "关系视图", exact: true }).click();
-  await expect(page.getByLabel("关系焦点")).toBeVisible();
+  await expect(page.getByLabel("查看机制")).toBeVisible();
   const count = await page.locator(".case-relation-graph rect").count();
   expect(count).toBeGreaterThan(0);
   expect(count).toBeLessThanOrEqual(7);

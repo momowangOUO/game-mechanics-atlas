@@ -117,3 +117,14 @@ export function DimensionIcon({
     />
   );
 }
+
+export function GameThumbnail({ gameId }: { gameId: string }) {
+  return (
+    <ArtImage
+      src={`/art/games/${gameId}.webp`}
+      alt=""
+      width={160}
+      height={90}
+    />
+  );
+}

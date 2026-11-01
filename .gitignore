@@ -7,6 +7,9 @@ dist/
 !.env.example
 .build/
 test-results/
+test-results-*/
+docs/copy-review/game-copy-first40.json
+docs/copy-review/game-copy-last40.json
 playwright-report/
 *.tsbuildinfo
 .superpowers/
@@ -17,3 +20,19 @@ playwright-report/
 .design-scout/.start.lock
 .design-scout/*.tmp
 .design-scout/*.bak
+# Deterministic machine-reading resources, rebuilt before every export.
+public/llms.txt
+public/index.md
+public/data/v1/
+public/for-agents/
+public/copyright/
+public/taxonomy/
+public/mechanics/
+public/games/
+public/types/
+public/lab/
+public/graph/
+public/compare/
+public/heat/
+public/method/
+public/sources/

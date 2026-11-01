@@ -32,7 +32,7 @@ test("type guide explains play, nearby boundaries and scoped game observations",
   const references = page.locator(".case-grid > article");
   await expect(references.first()).toContainText("观察范围：");
   await expect(
-    references.first().getByRole("link", { name: "打开该范围的完整证据 →" }),
+    references.first().getByRole("link", { name: "查看这个范围的机制记录 →" }),
   ).toHaveAttribute("href", /\?scope=/);
   await page.getByRole("link", { name: "对照数字卡牌对战 →" }).click();
   await expect(page).toHaveURL(/\/types\/digital-card-duel\/?$/);
@@ -47,7 +47,7 @@ test("type reference can expose a conditional cooperative scope instead of inven
   });
   await expect(deepRock).toContainText("条件成立");
   await expect(deepRock).toContainText("成立条件：");
-  const link = deepRock.getByRole("link", { name: "打开该范围的完整证据 →" });
+  const link = deepRock.getByRole("link", { name: "查看这个范围的机制记录 →" });
   const href = await link.getAttribute("href");
   const scope = new URL(href!, "http://localhost").searchParams.get("scope");
   await link.click();

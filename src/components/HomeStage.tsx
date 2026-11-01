@@ -10,19 +10,19 @@ import { chapters, chapterArt, type MaidState } from "@/lib/art";
 const messages: { state: MaidState; text: string }[] = [
   {
     state: "welcome",
-    text: "欢迎来到研究室，我是 RIN。先打开分类参考吧：每一类负责什么、有哪些机制、哪些游戏值得看，都整理在里面。",
+    text: "欢迎来到研究室，我是 RIN。想查玩法，可以先翻分类参考；想找设计思路，就从熟悉的游戏看起。",
   },
   {
     state: "explain",
-    text: "先挑一款熟悉的游戏吧。我会陪你看它的核心循环，再找出影响玩家选择的规则。",
+    text: "先选一款熟悉的游戏，对照它的核心循环和规则。遇到不同模式，记得分开看。",
   },
   {
     state: "think",
-    text: "想试试机制组合吗？选一个核心，再加一项配合机制，看看玩家的选择会怎样变化。",
+    text: "实验室可以把机制组合整理成研究提示词。先选核心机制，再补充想验证的问题。",
   },
   {
     state: "surprise",
-    text: "图谱里还有机制之间的关系。点开一个感兴趣的节点，我陪你看看相关的游戏案例。",
+    text: "图谱记录了机制之间的配合与冲突。点开节点，就能查看相关规则和游戏案例。",
   },
 ];
 export default function HomeStage() {
@@ -74,9 +74,9 @@ export default function HomeStage() {
             发现<em>新玩法。</em>
           </h1>
           <p className="vn-description">
-            每一类是什么，怎样改变玩法？
+            不同规则怎样影响玩家的选择？
             <br />
-            逐层查分类，对照游戏找设计参考。
+            按分类查机制，对照游戏找参考。
           </p>
           <form
             className="search-window vn-search"
@@ -109,7 +109,7 @@ export default function HomeStage() {
               逐层查分类 →
             </Link>
             <Link className="button" href="/lab">
-              试验一种新组合 ↗
+              编写组合研究提示词 ↗
             </Link>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function HomeStage() {
           <span className="vn-continue" aria-hidden="true">
             ▾
           </span>
-          <span className="sr-only">点击查看下一条建议。</span>
+          <span className="sr-only">点击查看下一条。</span>
         </button>
       </section>
       <nav className="chapter-links" aria-label="研究室章节">
@@ -187,7 +187,7 @@ export default function HomeStage() {
           <strong>
             游戏对比<b aria-hidden="true">↗</b>
           </strong>
-          <span className="chapter-link-subtitle">并排比较，看清不同选择</span>
+          <span className="chapter-link-subtitle">并排查看规则与玩法差异</span>
         </Link>
       </nav>
     </>

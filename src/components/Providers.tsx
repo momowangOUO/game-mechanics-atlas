@@ -17,6 +17,7 @@ import { dimensions, games, genres, mechanics, recipes } from "@/lib/knowledge";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
 import { SearchDataProvider } from "./SearchDataProvider";
 import { matchesCatalog } from "@/lib/catalog-search";
+import { MechanicIcon } from "./MechanicVisuals";
 
 type MotionPreference = "auto" | "full" | "reduced";
 type UIState = {
@@ -236,7 +237,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
       .map((r) => ({
         name: r.name,
         kind: "组合配方",
-        meta: r.synergies[0] || "打开组合研究",
+        meta: r.synergies[0] || "编写组合研究提示词",
         href: `/lab?recipe=${r.id}`,
       })),
   ];
@@ -269,8 +270,8 @@ export function AppProviders({ children }: { children: ReactNode }) {
             </div>
             <p className="search-help">
               {normalized
-                ? "按名称、ID 或已有说明匹配，结果来自当前知识库。"
-                : "试着搜索：卡组、Balatro、重开、撤离。"}
+                ? "按名称、ID 和说明查找本站档案。"
+                : "例如：卡组、Balatro、重开、撤离。"}
               <span aria-live="polite">{results.length} 项</span>
             </p>
             <motion.div layout className="search-results">
@@ -284,6 +285,12 @@ export function AppProviders({ children }: { children: ReactNode }) {
                     transition={{ delay: Math.min(i * 0.025, 0.2) }}
                   >
                     <Link href={result.href} onClick={() => setSearch(false)}>
+                      {result.href.startsWith("/mechanics/") && (
+                        <MechanicIcon
+                          id={result.href.split("/")[2]}
+                          size={40}
+                        />
+                      )}
                       <span className="chip">{result.kind}</span>
                       <strong>{result.name}</strong>
                       <p>{result.meta}</p>
@@ -297,7 +304,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
                 <div className="empty-state">
                   <span aria-hidden="true">◇</span>
                   <h3>没有找到匹配的档案</h3>
-                  <p>换一个关键词试试，也可从九个分类维度浏览。</p>
+                  <p>换个关键词，或打开分类参考逐层查找。</p>
                   <Link
                     href="/taxonomy"
                     className="button primary"

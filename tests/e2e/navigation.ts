@@ -1,4 +1,4 @@
-import type { Page } from "@playwright/test";
+import { expect, type Page } from "@playwright/test";
 
 export const testBasePath = (process.env.PAGES_BASE_PATH ?? "").replace(
   /\/$/,
@@ -10,8 +10,20 @@ export function appPath(value: string) {
   return `${testBasePath}${value}`;
 }
 
-export function gotoApp(page: Page, value: string) {
-  return page.goto(appPath(value));
+export async function gotoApp(
+  page: Page,
+  value: string,
+  { waitForIntro = true }: { waitForIntro?: boolean } = {},
+) {
+  const response = await page.goto(appPath(value));
+  if (waitForIntro) {
+    // The intro mounts after hydration. An initial hidden check races that mount.
+    const intro = page.getByTestId("brand-intro");
+    await expect(intro).toBeVisible();
+    await expect(intro).toBeHidden();
+    await expect(page.locator('[hidden][id^="S:"]')).toHaveCount(0);
+  }
+  return response;
 }
 
 /** Next's trailingSlash also applies before a URL query string. */

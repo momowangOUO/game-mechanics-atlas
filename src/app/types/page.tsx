@@ -1,8 +1,9 @@
+import { indexPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHead } from "@/components/Primitives";
 import { TypeCatalog } from "@/components/ReferenceCatalogs";
-export const metadata: Metadata = { title: "复合类型与类型配方" };
+export const metadata: Metadata = indexPageMetadata["/types"];
 export default function TypesPage() {
   return (
     <>

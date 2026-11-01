@@ -1,0 +1,601 @@
+{
+  "tool": "built-in image_gen",
+  "style": "Create ONE single game-mechanic pictogram for a retro Japanese game design reference website. Thick crisp BLACK ink outer contours, flat 2-level cel shading, limited muted purple #b59bdc, cyan #70b8b2, cream #fff7df, little yellow #ddb969. A compact simple object/action silhouette, recognizable at 48px, original drawn game manual icon. Square composition, transparent background, generous margin. NO letters, NO text, NO labels, NO watermark, NO decorative frame, NO gradients, NO lighting glow, NO 3D rendering, NO collage or icon grid. Only one coherent icon; concrete objects must specifically communicate the following rule: ",
+  "jobs": [
+    {
+      "id": "aimed-launch",
+      "name": "瞄准发射",
+      "definition": "玩家先指定方向或目标，再发射按该选择运动的对象。"
+    },
+    {
+      "id": "dodge-move",
+      "name": "闪避位移",
+      "definition": "玩家主动触发短时移动，以改变位置并避开威胁。"
+    },
+    {
+      "id": "piece-rotation",
+      "name": "物件旋转",
+      "definition": "玩家改变可操作物件的朝向，以适应当前空间或规则。"
+    },
+    {
+      "id": "drag-placement",
+      "name": "拖放布置",
+      "definition": "玩家拖动物件，并在允许的位置释放以提交放置。"
+    },
+    {
+      "id": "score-threshold",
+      "name": "分数达标",
+      "definition": "在指定结算范围内，累计分数达到目标会触发通过或奖励。"
+    },
+    {
+      "id": "line-completion-clear",
+      "name": "满行消除",
+      "definition": "物件填满规定横行且没有空隙后，系统清除该行的组成部分。"
+    },
+    {
+      "id": "automatic-resolution",
+      "name": "自动战斗结算",
+      "definition": "进入战斗执行阶段后，主要战斗行为由预设规则自动推进。"
+    },
+    {
+      "id": "stacking-effects",
+      "name": "效果叠加",
+      "definition": "多个有效效果按明确的组合规则共同改变同一结果或状态。"
+    },
+    {
+      "id": "rule-modifier",
+      "name": "规则修饰器",
+      "definition": "特定有效效果改变既有结算的条件、作用对象或计算方式。"
+    },
+    {
+      "id": "run-reset",
+      "name": "单局重开",
+      "definition": "一次尝试结束后，系统清除其中指定的局面状态，并从起点建立新的尝试。"
+    },
+    {
+      "id": "sequential-turns",
+      "name": "轮流行动",
+      "definition": "参与者按照规则规定的回合顺序依次获得行动权限。"
+    },
+    {
+      "id": "real-time-update",
+      "name": "实时推进",
+      "definition": "即使玩家暂时不输入，指定范围内的世界状态仍按时钟持续变化。"
+    },
+    {
+      "id": "action-cooldown",
+      "name": "行动冷却",
+      "definition": "某行动使用后必须等待规定时间，才能再次合法使用。"
+    },
+    {
+      "id": "planning-timer",
+      "name": "规划时限",
+      "definition": "决策阶段有截止时刻，超时会结束、锁定或按规则代选。"
+    },
+    {
+      "id": "pause-planning",
+      "name": "暂停规划",
+      "definition": "世界时钟停止时，玩家仍能作出选择，影响时间恢复推进后的局势。"
+    },
+    {
+      "id": "in-run-deck-growth",
+      "name": "局内扩充卡组",
+      "definition": "玩家在一次尝试进行期间，取得新卡并将其纳入当前可使用卡组。"
+    },
+    {
+      "id": "loadout-selection",
+      "name": "出战配置",
+      "definition": "玩家在遭遇开始前，选择本次携带或启用的能力与物品组合。"
+    },
+    {
+      "id": "spatial-loadout",
+      "name": "空间装备配置",
+      "definition": "构筑组件占用空间，形状或位置影响可用配置或组件效果。"
+    },
+    {
+      "id": "respec",
+      "name": "成长重配",
+      "definition": "玩家可以撤回已分配的成长资源或选项，再按规则重新配置。"
+    },
+    {
+      "id": "persistent-stat-upgrade",
+      "name": "跨局数值强化",
+      "definition": "数值增强在明确的重开边界之后仍然保留，并影响后续尝试。"
+    },
+    {
+      "id": "persistent-unlock",
+      "name": "持久内容解锁",
+      "definition": "玩家满足条件后解锁内容，其使用权限在后续会话或尝试中继续保留。"
+    },
+    {
+      "id": "skill-experience",
+      "name": "技能经验成长",
+      "definition": "指定行为或奖励累积技能经验，并在达到条件时改变该技能等级。"
+    },
+    {
+      "id": "relationship-progression",
+      "name": "关系发展",
+      "definition": "玩家与角色的互动累积为关系状态变化，并影响后续互动或内容。"
+    },
+    {
+      "id": "permadeath",
+      "name": "角色永久死亡",
+      "definition": "在指定存档或挑战范围内，角色实例死亡后不能通过常规玩法恢复其原有生存状态。"
+    },
+    {
+      "id": "recipe-crafting",
+      "name": "配方制作",
+      "definition": "按规定的输入组合，将材料或组件转化为指定输出。"
+    },
+    {
+      "id": "resource-gathering",
+      "name": "资源采集",
+      "definition": "玩家从环境对象或资源节点取得可储存或可使用的资源。"
+    },
+    {
+      "id": "resource-scarcity",
+      "name": "资源稀缺",
+      "definition": "在指定范围内，资源可用量不足以同时满足所有有意义的用途，因而构成取舍。"
+    },
+    {
+      "id": "production-investment",
+      "name": "生产投资",
+      "definition": "玩家消耗当前资源，换取未来持续或重复产生资源的能力。"
+    },
+    {
+      "id": "base-construction",
+      "name": "基地建设",
+      "definition": "玩家把资源投入可保留的基地设施，以改变后续可用功能或产出。"
+    },
+    {
+      "id": "shared-resource-pool",
+      "name": "团队共享资源",
+      "definition": "多个行动者按权限从同一资源池支取或补充资源。"
+    },
+    {
+      "id": "intent-preview",
+      "name": "行动意图预告",
+      "definition": "行动执行之前，系统向玩家展示某行动者即将采取行动的相关信息。"
+    },
+    {
+      "id": "next-piece-preview",
+      "name": "后续对象预览",
+      "definition": "玩家作出当前决策前，可以看到之后将出现的一个或多个对象。"
+    },
+    {
+      "id": "hidden-hand",
+      "name": "隐藏手牌",
+      "definition": "某参与者持有的手牌身份，在指定阶段对至少另一方不可见。"
+    },
+    {
+      "id": "fog-of-war",
+      "name": "战争迷雾",
+      "definition": "区域及其中对象的信息，受探索、侦察或视野权限限制。"
+    },
+    {
+      "id": "environmental-clues",
+      "name": "环境线索",
+      "definition": "玩家通过场景中的可读信息，推断行动条件、规则或解谜方法。"
+    },
+    {
+      "id": "cooperative-play",
+      "name": "玩家合作",
+      "definition": "多位玩家通过各自行动，共同推进共享或相容的目标。"
+    },
+    {
+      "id": "pvp-opposition",
+      "name": "玩家竞争",
+      "definition": "玩家的行动能够影响其他玩家的胜负或竞争资源，从而形成直接对抗。"
+    },
+    {
+      "id": "asynchronous-opponent",
+      "name": "异步对手",
+      "definition": "对手提供的状态或行动记录，在双方不必同时在线的条件下参与当前对抗结算。"
+    },
+    {
+      "id": "synchronous-session",
+      "name": "同步会话",
+      "definition": "多位玩家在同一会话时间窗口内，共同影响当前对局的状态或结果。"
+    },
+    {
+      "id": "random-upgrade-offer",
+      "name": "随机强化候选",
+      "definition": "系统通过随机过程生成一组可供玩家选择的强化选项。"
+    },
+    {
+      "id": "random-draw",
+      "name": "随机抽取",
+      "definition": "对象或其出现顺序由规定的随机过程决定。"
+    },
+    {
+      "id": "dice-roll",
+      "name": "掷骰取样",
+      "definition": "掷骰结果作为规则输入，参与决定移动、效果或其他状态变化。"
+    },
+    {
+      "id": "generated-layout",
+      "name": "布局生成",
+      "definition": "系统按生成规则建立关卡或空间布局，而不只是挑选一个完整预制场景。"
+    },
+    {
+      "id": "seeded-replay",
+      "name": "种子重现",
+      "definition": "在规定的规则版本和输入条件下，相同种子能够重现约定范围的随机过程。"
+    },
+    {
+      "id": "route-branching",
+      "name": "路线分支",
+      "definition": "玩家在流程节点选择后续路径，使一次流程沿不同的分支继续推进。"
+    },
+    {
+      "id": "encounter-placement",
+      "name": "遭遇布置",
+      "definition": "玩家通过放置或配置组件，决定敌人或事件在流程中的出现位置。"
+    },
+    {
+      "id": "optional-endless-loop",
+      "name": "可选延长流程",
+      "definition": "玩家在通常可结束的流程节点，选择继续循环而不立即结算退出。"
+    },
+    {
+      "id": "toll-payment",
+      "name": "过路支付",
+      "definition": "参与者满足经过或停留位置的条件时，向该位置的拥有者支付资源。"
+    },
+    {
+      "id": "randomized-encounters",
+      "name": "遭遇变化",
+      "definition": "系统通过随机过程决定后续敌人或事件的组成、出现位置或顺序。"
+    },
+    {
+      "id": "objective-unlock",
+      "name": "目标条件解锁",
+      "definition": "完成明确目标后，系统开放此前不可用的内容、功能或权限。"
+    },
+    {
+      "id": "wall-climb",
+      "name": "攀爬",
+      "definition": "玩家沿可攀附表面主动改变高度或位置。"
+    },
+    {
+      "id": "parry",
+      "name": "时机招架",
+      "definition": "在攻击命中的特定窗口执行防御输入，改变此次攻击的结算。"
+    },
+    {
+      "id": "melee-attack",
+      "name": "近身攻击",
+      "definition": "玩家主动触发近距离伤害或打击判定。"
+    },
+    {
+      "id": "grappling",
+      "name": "抓钩位移",
+      "definition": "向可附着目标发射连接物，并借连接关系改变自身位置。"
+    },
+    {
+      "id": "traversal-portal",
+      "name": "传送门连接",
+      "definition": "通过成对入口把空间中原本分离的位置直接连通。"
+    },
+    {
+      "id": "block-pushing",
+      "name": "推箱移物",
+      "definition": "通过接触和方向输入推动离散物件，改变可走空间或对象排列。"
+    },
+    {
+      "id": "rhythmic-input",
+      "name": "节奏输入",
+      "definition": "系统依据输入时刻相对节拍或音符目标的偏差进行判定。"
+    },
+    {
+      "id": "vehicle-steering",
+      "name": "载具操纵",
+      "definition": "玩家通过转向、加速或姿态输入控制载具运动。"
+    },
+    {
+      "id": "destructible-terrain",
+      "name": "地形破坏",
+      "definition": "玩家行为移除或改变地形实体，形成新的空间状态。"
+    },
+    {
+      "id": "physics-manipulation",
+      "name": "物理对象操纵",
+      "definition": "玩家利用对象的受力、质量或动量改变可交互世界状态。"
+    },
+    {
+      "id": "stealth-detection",
+      "name": "潜行侦测",
+      "definition": "敌方根据可见性、声音或其他感知线索改变发现玩家的状态。"
+    },
+    {
+      "id": "damage-health",
+      "name": "伤害与生命",
+      "definition": "攻击或环境事件改变生命量，并在规则阈值触发失能或死亡。"
+    },
+    {
+      "id": "posture-break",
+      "name": "姿态击破",
+      "definition": "累积姿态压力达到阈值后触发破防或处决机会。"
+    },
+    {
+      "id": "elemental-reaction",
+      "name": "元素反应",
+      "definition": "不同元素状态相遇时按组合规则产生额外结果。"
+    },
+    {
+      "id": "status-effect",
+      "name": "状态效果",
+      "definition": "对象获得持续一段时间或直到条件解除的规则状态。"
+    },
+    {
+      "id": "area-control",
+      "name": "区域控制",
+      "definition": "规则依据玩家对指定空间的占有状态发放收益或判定胜负。"
+    },
+    {
+      "id": "victory-points",
+      "name": "终局胜利点",
+      "definition": "在结束条件触发后，依据积累的胜利点比较胜负。"
+    },
+    {
+      "id": "risk-staking",
+      "name": "风险加注",
+      "definition": "参与者主动提高当前竞争中可获得或失去的赌注。"
+    },
+    {
+      "id": "identity-voting",
+      "name": "身份投票",
+      "definition": "参与者通过集体投票决定其他角色的处置或归属判断。"
+    },
+    {
+      "id": "ability-check",
+      "name": "能力检定",
+      "definition": "系统将角色能力与要求值及可选随机因素结合，判定尝试结果。"
+    },
+    {
+      "id": "recipe-discovery",
+      "name": "实验发现配方",
+      "definition": "通过试配、观察结果或推理，获得此前未知的转换规则。"
+    },
+    {
+      "id": "checkpoint-respawn",
+      "name": "检查点复活",
+      "definition": "失败后回到先前保存的局部进度节点继续尝试。"
+    },
+    {
+      "id": "timed-loop",
+      "name": "定时世界循环",
+      "definition": "世界在固定时间边界或等价循环条件下返回先前状态。"
+    },
+    {
+      "id": "day-night-cycle",
+      "name": "昼夜周期",
+      "definition": "环境在日夜状态间循环并改变可用行动或系统条件。"
+    },
+    {
+      "id": "season-weather",
+      "name": "天气与季节",
+      "definition": "环境按时间阶段进入不同天气或季节，并改变资源、行动或生存条件。"
+    },
+    {
+      "id": "round-phases",
+      "name": "回合分阶段",
+      "definition": "一个完整回合包含按规则切换、权限不同的行动阶段。"
+    },
+    {
+      "id": "skill-tree",
+      "name": "技能分支选择",
+      "definition": "玩家沿有前置关系的能力网络分配成长选择。"
+    },
+    {
+      "id": "modular-ability",
+      "name": "模块化能力",
+      "definition": "玩家将功能模块组合成一个可执行能力或装备行为。"
+    },
+    {
+      "id": "equipment-upgrade",
+      "name": "装备强化",
+      "definition": "投入资源或选择升级，使已有装备的属性或功能发生变化。"
+    },
+    {
+      "id": "unit-drafting",
+      "name": "单位招募",
+      "definition": "从可获得的单位候选中选择并加入可用阵容。"
+    },
+    {
+      "id": "public-market",
+      "name": "公共供给市场",
+      "definition": "多名参与者从共享且可能被消耗的供给中购买或取得内容。"
+    },
+    {
+      "id": "team-composition",
+      "name": "队伍配置",
+      "definition": "玩家在可用角色或单位中组织有互补功能的队伍。"
+    },
+    {
+      "id": "adjacency-bonus",
+      "name": "邻接加成",
+      "definition": "对象的效果随相邻位置或空间连接关系改变。"
+    },
+    {
+      "id": "blueprint-replication",
+      "name": "蓝图复制",
+      "definition": "保存一组配置并在满足材料或空间条件时重复部署。"
+    },
+    {
+      "id": "technology-research",
+      "name": "科技研究",
+      "definition": "投入时间、资源或目标进度，解锁一组新的技术能力。"
+    },
+    {
+      "id": "knowledge-gating",
+      "name": "知识门槛",
+      "definition": "玩家理解特定信息或规律后能使用此前已存在的行动条件推进。"
+    },
+    {
+      "id": "ability-gating",
+      "name": "能力门槛",
+      "definition": "获得新的行动能力后，原本不可通过的空间或交互变得可达。"
+    },
+    {
+      "id": "quest-progression",
+      "name": "任务推进",
+      "definition": "完成明确目标后更新任务状态，并开放后续目标或奖励。"
+    },
+    {
+      "id": "collectible-catalog",
+      "name": "收集图鉴",
+      "definition": "发现或获得不同对象后，持久记录其收集状态与资料。"
+    },
+    {
+      "id": "loot-drop",
+      "name": "战利品获取",
+      "definition": "击败目标或开启奖励对象后获得可持有的物品或资源。"
+    },
+    {
+      "id": "barter-trade",
+      "name": "物品交易",
+      "definition": "按价格、交换或协商规则在主体之间转移物品和支付物。"
+    },
+    {
+      "id": "upkeep-needs",
+      "name": "生存需求维持",
+      "definition": "角色持续产生需要以资源或服务满足的生存需求。"
+    },
+    {
+      "id": "inventory-capacity",
+      "name": "携带容量",
+      "definition": "可携带物品受到格数、重量或其他容量上限约束。"
+    },
+    {
+      "id": "transport-network",
+      "name": "运输网络",
+      "definition": "通过连接线路、载具或节点持续转移资源。"
+    },
+    {
+      "id": "production-chain",
+      "name": "生产链转换",
+      "definition": "多个生产步骤把前序产物转为后续投入。"
+    },
+    {
+      "id": "energy-network",
+      "name": "能源供给",
+      "definition": "生产或分配能源，以维持设施或装备的工作。"
+    },
+    {
+      "id": "thermal-regulation",
+      "name": "温度调节",
+      "definition": "通过产热、散热或隔热控制温度，以影响生存或生产。"
+    },
+    {
+      "id": "fluid-network",
+      "name": "流体网络",
+      "definition": "管路或空间流动持续输送、分离或储存气体与液体。"
+    },
+    {
+      "id": "agriculture-husbandry",
+      "name": "种植与养殖",
+      "definition": "通过培育、照料或繁殖周期获得持续资源产出。"
+    },
+    {
+      "id": "workforce-assignment",
+      "name": "劳动力分配",
+      "definition": "将不同人员分配给岗位、作业或职业，以改变生产与服务。"
+    },
+    {
+      "id": "territory-policy",
+      "name": "区域政策",
+      "definition": "对指定领土或区域施加统一规则，改变当地活动。"
+    },
+    {
+      "id": "combat-resource-conversion",
+      "name": "战斗资源转换",
+      "definition": "特定攻击或击杀方式定向产生生命、弹药等战斗资源。"
+    },
+    {
+      "id": "deduction-validation",
+      "name": "推理验证",
+      "definition": "玩家提交关于对象关系或事件的判断，系统按事实结构验证。"
+    },
+    {
+      "id": "language-decoding",
+      "name": "语言解码",
+      "definition": "通过语境比较推断未知符号或语言单位的含义。"
+    },
+    {
+      "id": "clue-journal",
+      "name": "线索记录",
+      "definition": "系统或玩家在可回访的记录中组织已发现线索。"
+    },
+    {
+      "id": "document-check",
+      "name": "文件核验",
+      "definition": "对照规则和多个文件字段，识别信息是否一致或合规。"
+    },
+    {
+      "id": "scouting-tracking",
+      "name": "痕迹追踪",
+      "definition": "通过痕迹或传感结果逐步定位尚未直接看见的目标。"
+    },
+    {
+      "id": "sound-information",
+      "name": "声音定位",
+      "definition": "玩家利用声音的方向、距离或类型判断未直接看到的事件。"
+    },
+    {
+      "id": "map-navigation",
+      "name": "地图导航",
+      "definition": "玩家借地图、方位或标记规划并校准空间移动。"
+    },
+    {
+      "id": "hidden-role",
+      "name": "隐藏身份",
+      "definition": "部分参与者的阵营或职责对其他参与者保密，并影响目标。"
+    },
+    {
+      "id": "role-asymmetry",
+      "name": "角色职责差异",
+      "definition": "不同参与者拥有不同能力或任务职责，并在同一规则中互动。"
+    },
+    {
+      "id": "social-diplomacy",
+      "name": "外交关系",
+      "definition": "主体通过谈判、结盟或声望改变相互关系和可用行动。"
+    },
+    {
+      "id": "shared-objective",
+      "name": "共同目标",
+      "definition": "多个行动者共同改变同一项可观察的目标进度或目标状态，并按该共享状态判断任务是否完成。"
+    },
+    {
+      "id": "world-simulation",
+      "name": "世界状态模拟",
+      "definition": "多个持久状态通过规则相互作用，产生未逐项脚本编排的结果。"
+    },
+    {
+      "id": "event-director",
+      "name": "事件调度",
+      "definition": "系统根据局势或节奏策略选择何时投放事件。"
+    },
+    {
+      "id": "mutable-environment",
+      "name": "动态环境状态",
+      "definition": "场景装置或局部介质在明确触发下切换可操作状态，改变通路、遮挡或可交互表面。"
+    },
+    {
+      "id": "randomized-market",
+      "name": "随机商店供给",
+      "definition": "商店候选由随机过程生成或刷新。"
+    },
+    {
+      "id": "hold-input",
+      "name": "持续按住输入",
+      "definition": "玩家持续保持按键或接触状态，直到指定持续时间或跟随条件满足才完成行动。"
+    },
+    {
+      "id": "combo-chain",
+      "name": "连续成功计数",
+      "definition": "连续完成合格行动会累积连击计数；指定失误会中断或降低计数，并影响奖励或评分。"
+    }
+  ]
+}

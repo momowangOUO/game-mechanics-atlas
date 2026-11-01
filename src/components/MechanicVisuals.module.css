@@ -1,0 +1,438 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 0 #15132055);
+}
+.icon > img,
+.icon > span {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  aspect-ratio: 1;
+  padding: 0;
+}
+.story {
+  margin: 24px 0;
+  border: 2px solid #a292b8;
+  background: #f2ead8;
+  color: #302b3e;
+  box-shadow: 5px 5px 0 #13111e;
+  position: relative;
+  isolation: isolate;
+}
+.storyHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 20px;
+  background: #ded4e8;
+  border-bottom: 2px solid #40384d;
+}
+.kicker {
+  font: 10px/1.5 monospace;
+  letter-spacing: 2px;
+  color: #6d567f;
+}
+.storyHead h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  margin: 2px 0 0 !important;
+  color: #302b3e;
+}
+.modeSwitch {
+  display: flex;
+  border: 1px solid #665575;
+  flex-shrink: 0;
+}
+.modeSwitch button {
+  padding: 9px 12px;
+  color: #4c3d5d;
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+  min-height: 40px;
+}
+.modeSwitch button[aria-pressed="true"] {
+  background: #534162;
+  color: #fff5dd;
+}
+.modeSwitch button:focus-visible,
+.framePager button:focus-visible {
+  outline: 3px solid #2c7f81;
+  outline-offset: 2px;
+}
+.frames {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  padding: 14px;
+  background-image: radial-gradient(#8a749522 0.8px, transparent 0.8px);
+  background-size: 5px 5px;
+}
+.frame {
+  margin: 0;
+  border: 2px solid #3d3449;
+  background: #fff7e5;
+  overflow: hidden;
+  box-shadow: 2px 3px 0 #78678333;
+  min-width: 0;
+}
+.panelNumber {
+  font: 14px monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #312c40;
+  color: #f8efd8;
+}
+.panelNumber span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #cbb5e9;
+}
+.drawing {
+  height: 210px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  background:
+    linear-gradient(0deg, #dddbc6 0 18%, transparent 18%),
+    repeating-linear-gradient(45deg, #c3b1cc0d 0 2px, transparent 2px 5px);
+}
+.drawing > svg {
+  width: 100%;
+  height: 145px;
+  margin-top: 8px;
+  z-index: 1;
+}
+.chibi {
+  position: absolute;
+  left: -13px;
+  bottom: -10px;
+  width: 90px;
+  height: 137px;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(2px 2px 0 #4c405f50);
+}
+.frame:nth-child(2) .chibi {
+  left: auto;
+  right: -10px;
+  transform: scaleX(-1);
+}
+.frame:nth-child(3) .chibi {
+  width: 100px;
+  height: 153px;
+}
+.objectLabel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #fdf5de;
+  color: #453650;
+  box-shadow: 2px 2px 0 #2a223a;
+  border: 1px solid #493e55;
+  font-size: 12px;
+  padding: 5px 9px;
+  max-width: calc(100% - 85px);
+  z-index: 3;
+}
+.frame:nth-child(2) .objectLabel {
+  right: auto;
+  left: 9px;
+}
+.frame figcaption {
+  padding: 12px 12px 14px;
+  font-size: 13px;
+  line-height: 1.8;
+  border-top: 1px solid #b9a7b9;
+  min-height: 76px;
+}
+.frame figcaption > strong {
+  font-size: 12px;
+  color: #685474;
+  display: block;
+  margin-bottom: 4px;
+}
+.frame figcaption > p {
+  margin: 0;
+  line-height: 1.85;
+}
+.comicDrawing {
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+  background: #e5d9c0;
+}
+.comicDrawing .comicStrip {
+  display: block;
+  width: 300%;
+  height: 100%;
+  max-width: none;
+  object-fit: fill;
+}
+.comicDrawing[data-panel="1"] .comicStrip {
+  transform: translateX(-33.333333%);
+}
+.comicDrawing[data-panel="2"] .comicStrip {
+  transform: translateX(-66.666667%);
+}
+.diagramSteps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 20px 20px;
+  background: #fff7e5;
+}
+.diagramSteps button {
+  background: #ded4e8;
+  border: 1px solid #8a759b;
+  min-height: 42px;
+  padding: 8px 12px;
+  color: #3f334e;
+  cursor: pointer;
+}
+.diagramSteps button[aria-pressed="true"] {
+  background: #534162;
+  color: #fff5dd;
+}
+.framePager {
+  display: none;
+}
+.ruleDiagram {
+  margin: 0;
+  padding: 22px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: #fff7e5;
+}
+.ruleDiagram svg {
+  width: 45%;
+  max-width: 360px;
+  flex-shrink: 0;
+}
+.ruleDiagram figcaption {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.ruleDiagram p {
+  margin: 8px 0 0;
+}
+.examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.example {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #ede2d0;
+  color: #322c40;
+  border: 1px solid #b6a4b4;
+  text-decoration: none !important;
+  min-width: 0;
+  align-items: flex-start;
+  transition:
+    background 0.16s,
+    transform 0.16s;
+}
+.example:hover,
+.example:focus-visible {
+  background: #fff0d9;
+  transform: translateY(-2px);
+  outline: 2px solid #b49bd4;
+  outline-offset: 2px;
+}
+.example > :first-child {
+  width: 82px !important;
+  height: 65px !important;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #8b788f;
+}
+.example > div {
+  min-width: 0;
+}
+.example strong {
+  font-size: 14px;
+  display: block;
+  line-height: 1.5;
+  color: #3b2e50;
+}
+.example strong span {
+  color: #73598a;
+}
+.example p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 5px 0 !important;
+  color: #4e4555 !important;
+}
+.example small {
+  font-size: 10px;
+  color: #766176;
+}
+.smallExamples {
+  grid-template-columns: 1fr;
+  margin: 8px 0 0;
+  gap: 5px;
+}
+.smallExamples .example {
+  padding: 7px;
+  background: #f0e5d6;
+  border-color: #b6a4b466;
+  gap: 9px;
+}
+.smallExamples .example > :first-child {
+  width: 60px !important;
+  height: 43px !important;
+}
+.smallExamples .example strong {
+  font-size: 12px;
+}
+.smallExamples .example p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.emptyExamples {
+  font-size: 12px;
+  color: #a79caf;
+}
+.compact .storyHead {
+  padding: 10px;
+}
+.compact .storyHead h2 {
+  font-size: 18px;
+}
+.compact .drawing {
+  height: 170px;
+}
+.compact .drawing > svg {
+  height: 110px;
+}
+.compact .chibi {
+  width: 76px;
+  height: 116px;
+}
+.compact .frame figcaption {
+  font-size: 12px;
+}
+.compact .frames {
+  gap: 5px;
+  padding: 7px;
+}
+@media (max-width: 900px) {
+  .drawing {
+    height: 175px;
+  }
+  .drawing > svg {
+    height: 120px;
+  }
+  .chibi {
+    width: 76px;
+    height: 116px;
+  }
+  .frame:nth-child(3) .chibi {
+    width: 80px;
+    height: 122px;
+  }
+  .examples {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .storyHead {
+    padding: 12px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .storyHead h2 {
+    font-size: 20px;
+  }
+  .frames,
+  .compact .frames {
+    display: block;
+    padding: 10px;
+  }
+  .frame {
+    display: none;
+  }
+  .activeFrame {
+    display: block;
+  }
+  .drawing,
+  .compact .drawing {
+    height: 205px;
+  }
+  .drawing > svg,
+  .compact .drawing > svg {
+    height: 145px;
+  }
+  .chibi,
+  .compact .chibi {
+    height: 153px;
+    width: 100px;
+  }
+  .frame figcaption {
+    font-size: 14px;
+    min-height: 74px;
+  }
+  .framePager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 12px;
+    font: 12px monospace;
+  }
+  .framePager button {
+    background: #ded4e8;
+    border: 1px solid #8a759b;
+    padding: 10px;
+    min-height: 42px;
+    color: #3f334e;
+  }
+  .framePager button:disabled {
+    opacity: 0.4;
+  }
+  .ruleDiagram {
+    display: block;
+    padding: 14px;
+  }
+  .ruleDiagram svg {
+    width: 100%;
+    max-width: none;
+    height: 160px;
+  }
+  .ruleDiagram figcaption {
+    font-size: 13px;
+  }
+  .examples {
+    gap: 8px;
+  }
+  .smallExamples .example p {
+    -webkit-line-clamp: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .example {
+    transition: none;
+  }
+}

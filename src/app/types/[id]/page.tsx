@@ -1,3 +1,5 @@
+import { GenreStructuredData } from "@/components/StructuredData";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -23,7 +25,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  return { title: genres.find((g) => g.id === id)?.name || "未收录类型" };
+  const item = genres.find((row) => row.id === id);
+  if (!item) notFound();
+  return pageMetadata(
+    `${item.name}：类型特征与机制组成`,
+    item.definition,
+    `/types/${id}`,
+  );
 }
 export default async function TypePage({
   params,
@@ -38,12 +46,13 @@ export default async function TypePage({
   const comparison = genres.find((item) => item.id === guide?.compareId);
   return (
     <>
+      <GenreStructuredData genre={genre} />
       <div className="breadcrumb">
         <Link href="/">研究室</Link> / <Link href="/types">复合类型</Link> /{" "}
         {genre.name}
       </div>
       <PageHead
-        eyebrow="COMPOSITE TYPE / 传统分类与编辑画像"
+        eyebrow="COMPOSITE TYPE / 类型参考"
         title={genre.name}
         description={genre.definition}
       >
@@ -55,10 +64,10 @@ export default async function TypePage({
         </aside>
         <article>
           <div className="paper">
-            <h2>本库采用的画像</h2>
+            <h2>本站采用的类型定义</h2>
             <p>{genre.definition}</p>
             <p style={{ marginTop: 13 }}>
-              这是本平台用于研究和检索的编辑归纳，不是对全部历史作品的统一判类标准。
+              以下是本站为研究和检索整理的定义，不是所有作品必须遵循的分类标准。
             </p>
           </div>
           {guide && (
@@ -87,9 +96,9 @@ export default async function TypePage({
             </>
           )}
           {[
-            ["本画像的核心组成", genre.requiredMechanics],
+            ["核心组成", genre.requiredMechanics],
             ["常见组成", genre.commonMechanics],
-            ["可选的扩展组成", genre.optionalMechanics],
+            ["可选组成", genre.optionalMechanics],
           ].map(([title, ids]) => (
             <section className="detail-section" key={String(title)}>
               <h2>{String(title)}</h2>
@@ -190,14 +199,14 @@ export default async function TypePage({
                       ))
                     ) : (
                       <p>
-                        当前尚无本画像所列机制的可展示记录；类型标签不用于补齐未知项。
+                        还没有收录这个类型所列机制的对应记录，不能仅凭类型标签认定游戏包含它们。
                       </p>
                     )}
                     <Link
                       className="button"
                       href={`/games/${game.id}?scope=${encodeURIComponent(scope.id)}`}
                     >
-                      打开该范围的完整证据 →
+                      查看这个范围的机制记录 →
                     </Link>
                   </div>
                 </article>

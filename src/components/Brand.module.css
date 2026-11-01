@@ -1,0 +1,133 @@
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 36px;
+  padding: 5px 8px;
+  border: 1px solid #665e79;
+  color: #dfbd77;
+  font:
+    11px Consolas,
+    sans-serif;
+  white-space: nowrap;
+}
+.authorSection {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.7fr) minmax(0, 1.8fr);
+  align-items: center;
+  gap: 36px;
+  margin-top: 48px;
+  padding: 32px;
+  border-top: 3px solid #c4aff0;
+  border-bottom: 1px solid #665e79;
+  background: #202338;
+}
+.authorLogo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.authorCopy {
+  display: grid;
+  gap: 12px;
+}
+.authorCopy h2 {
+  font-size: 26px;
+  color: #dfbd77;
+}
+.authorCopy p {
+  color: #c6bfd0;
+}
+.authorCopy small {
+  color: #b3a8c4;
+}
+.authorLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+.authorLinks > a:not(:first-child) {
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer {
+  gap: 24px;
+  align-items: center;
+  font-size: 11px;
+}
+/* The former mobile title-screen layout hid the home footer entirely. */
+:global(body):has(:global(.illustrated-home)) .footer.footer {
+  display: flex;
+}
+.footer .footerAuthor {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  white-space: normal;
+}
+.footerAuthor img {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+.footerAuthor p {
+  color: #bbb2c9;
+  line-height: 1.8;
+}
+.footer .footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  justify-content: flex-end;
+  white-space: normal;
+}
+.copyright {
+  display: grid;
+  gap: 28px;
+  padding: 28px 0;
+  max-width: 900px;
+  font-size: 15px;
+}
+.copyright section {
+  display: grid;
+  gap: 10px;
+}
+.copyright h2 {
+  color: #dfbd77;
+  font-size: 22px;
+}
+.copyright a {
+  color: #c4aff0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 1100px) {
+  .githubLink {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+@media (max-width: 700px) {
+  .authorSection {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+  .authorLogo {
+    max-width: 220px;
+  }
+  .authorCopy h2 {
+    font-size: 24px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 11px;
+  }
+  .footer .footerLinks {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}

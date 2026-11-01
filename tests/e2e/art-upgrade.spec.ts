@@ -71,7 +71,7 @@ test("RIN advice advances real pose without losing the search draft", async ({
   );
 });
 
-test("phone title scene keeps every chapter reachable without document scrolling", async ({
+test("phone title scene keeps chapters in the first viewport and author details reachable below", async ({
   page,
 }) => {
   for (const viewport of [
@@ -87,7 +87,7 @@ test("phone title scene keeps every chapter reachable without document scrolling
       "游戏案例",
       "机制图谱",
       "热度观察",
-      "混合实验室",
+      "研究提示词",
       "游戏对比",
     ]) {
       const link = directory.getByRole("link").filter({ hasText: name });
@@ -96,10 +96,14 @@ test("phone title scene keeps every chapter reachable without document scrolling
       expect(box!.y + box!.height).toBeLessThanOrEqual(viewport.height - 60);
     }
     expect(
-      await page.evaluate(() =>
-        Math.max(0, document.documentElement.scrollHeight - innerHeight),
-      ),
-    ).toBe(0);
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(viewport.width);
+    const author = page.getByRole("region", { name: "由魔魔王架设" });
+    await author.scrollIntoViewIfNeeded();
+    await expect(author).toBeInViewport();
+    await expect(
+      author.getByRole("link", { name: /GitHub 点星支持/ }),
+    ).toBeVisible();
   }
 });
 

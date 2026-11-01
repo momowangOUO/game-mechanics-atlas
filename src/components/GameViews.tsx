@@ -163,7 +163,7 @@ function ScopedGameViews({
             <>
               <p className="scope-notice">
                 {currentScope.label}
-                ：下列观察仅适用于标注范围。未收录的机制保持未知；“条件成立”需连同条件说明阅读。
+                ：下列记录只介绍这个范围。未列出的机制仍需查证；“条件成立”要连同具体条件查看。
               </p>
               {observations.length ? (
                 <div className="observation-cards">
@@ -185,7 +185,8 @@ function ScopedGameViews({
                         </span>
                         <p>{observation.rationale}</p>
                         <span className="scope-label">
-                          原观察：{observation.scopeNote || currentScope.label}
+                          记录范围：
+                          {observation.scopeNote || currentScope.label}
                         </span>
                         {observation.condition && (
                           <p className="condition-note">
@@ -196,7 +197,7 @@ function ScopedGameViews({
                           {evidenceLabels[observation.evidenceKind]}
                         </p>
                         <details>
-                          <summary>查看资料依据</summary>
+                          <summary>查看来源</summary>
                           <ul className="content-list">
                             {observation.sourceIds
                               .map((id) =>
@@ -226,8 +227,8 @@ function ScopedGameViews({
                 </div>
               ) : (
                 <EmptyState
-                  title="这个范围尚无足够观察"
-                  description="这个范围尚未收录足够资料，机制状态保留为未知。可切换范围查看已有记录。"
+                  title="这个范围还没有机制记录"
+                  description="资料仍待补充。切换游戏模式或范围，可以查看其他已收录的记录。"
                 />
               )}
               <div className="state-legend">
@@ -262,14 +263,16 @@ function ScopedGameViews({
                 </div>
               )}
               <div className="detail-section generic-grid">
-                <Window title="RESOURCES / 资源与约束">
-                  <p className="analysis-label">默认研究范围的编辑归纳</p>
-                  <ul className="content-list">
-                    {game.resourceNotes.map((text) => (
-                      <li key={text}>{text}</li>
-                    ))}
-                  </ul>
-                </Window>
+                {game.resourceNotes.length > 0 && (
+                  <Window title="RESOURCES / 资源与约束">
+                    <p className="analysis-label">默认研究范围的编辑归纳</p>
+                    <ul className="content-list">
+                      {game.resourceNotes.map((text) => (
+                        <li key={text}>{text}</li>
+                      ))}
+                    </ul>
+                  </Window>
+                )}
                 <Window title="PROGRESSION / 成长与保留">
                   <p className="analysis-label">默认研究范围的编辑归纳</p>
                   <ul className="content-list">
@@ -287,8 +290,7 @@ function ScopedGameViews({
                 <>
                   <Window title="CORE LOOP / 编辑归纳">
                     <p className="scope-notice">
-                      以下为 {currentScope.label}{" "}
-                      的流程概括，不代替完整规则手册。
+                      以下为 {currentScope.label} 的主要玩法步骤。
                     </p>
                     <LoopDiagram steps={game.coreLoop} />
                   </Window>
@@ -301,20 +303,22 @@ function ScopedGameViews({
                         ))}
                       </ul>
                     </div>
-                    <div className="small-card">
-                      <h3 className="gold">这份归纳的边界</h3>
-                      <ul className="content-list">
-                        {game.caveats.map((text) => (
-                          <li key={text}>{text}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    {game.caveats.length > 0 && (
+                      <div className="small-card">
+                        <h3 className="gold">阅读时需要注意</h3>
+                        <ul className="content-list">
+                          {game.caveats.map((text) => (
+                            <li key={text}>{text}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </>
               ) : (
                 <EmptyState
-                  title="此模式的完整循环尚未整理"
-                  description="目前仅整理了默认范围的循环，可返回查看。"
+                  title="这个模式的循环还未整理"
+                  description="目前只整理了默认范围的核心循环，可切换后查看。"
                 >
                   <button
                     className="button primary"
@@ -327,9 +331,9 @@ function ScopedGameViews({
             </>
           )}
           {view === "relations" && (
-            <Window title="RELATION VIEW / 当前范围的机制与编辑关系">
+            <Window title="RELATION VIEW / 当前范围的机制关系">
               <p className="scope-notice">
-                仅显示当前范围中“已确认存在”或“条件成立”的机制。连线来自编辑分析，需连同具体情境阅读，相关玩法细则尚未全部核验。
+                图中只展示这个范围内已确认出现或有条件出现的机制。连线是设计分析，具体用法请查看说明和来源。
               </p>
               {positive.length ? (
                 <>
@@ -337,7 +341,7 @@ function ScopedGameViews({
                     className="field-label"
                     htmlFor={`relation-focus-${game.id}`}
                   >
-                    关系焦点
+                    查看机制
                   </label>
                   <select
                     id={`relation-focus-${game.id}`}
@@ -354,7 +358,7 @@ function ScopedGameViews({
                     ))}
                   </select>
                   <p className="tiny muted">
-                    当前显示焦点及最多六个相邻机制；没有已收录连线时展示同范围机制供查阅。
+                    显示所选机制及最多六个相关机制。没有关系记录时，展示同一范围的其他机制。
                   </p>
                   <svg
                     className="case-relation-graph"
@@ -457,7 +461,7 @@ function ScopedGameViews({
                     </ul>
                   ) : (
                     <p className="evidence-note">
-                      这些机制之间尚未收录关系说明，图中暂不连线。
+                      这些机制的关系还未整理，暂不绘制连线。
                     </p>
                   )}
                   <Link className="button" href={`/graph?game=${game.id}`}>
@@ -467,15 +471,15 @@ function ScopedGameViews({
               ) : (
                 <EmptyState
                   title="当前范围暂无可展示的机制"
-                  description="这里展示已确认存在或条件成立的机制。可切换范围，或返回机制视图查看全部记录状态。"
+                  description="可切换模式或范围，或返回“机制视图”查看全部记录。"
                 />
               )}
             </Window>
           )}
           {view === "heat" && (
-            <Window title="SEARCH CONTEXT / 搜索关注的研究口径">
+            <Window title="SEARCH CONTEXT / 搜索资料">
               <p className="scope-notice">
-                游戏名称的搜索可作为相关类型与机制的间接线索，但无法确认玩家具体关注哪项机制。
+                搜索游戏名的人可能在找攻略、新闻或其他资料，不能据此判断他们关注哪项机制。
               </p>
               <div className="type-chips">
                 {game.genreIds.map((id) => (
@@ -489,7 +493,7 @@ function ScopedGameViews({
                 ))}
               </div>
               <div className="signal warn">
-                默认搜索数据为合成示例。导入后的来源见下方标签。搜索次数不等于独立人数，游戏收录数量也不代表搜索热度。
+                搜索资料的来源、时间和指标见下方标签。搜索次数与游戏收录数量分别展示。
               </div>
               <HeatProfileMini topicId={`game:${game.id}`} />
             </Window>

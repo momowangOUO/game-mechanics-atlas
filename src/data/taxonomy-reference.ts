@@ -49,7 +49,7 @@ export const classificationLevels = [
     name: "二级：机制分组",
     question: "这一维里有哪些相近的做法？",
     explanation:
-      "为了查找和比较，把同一维度内作用接近的机制归在一起。分组是本目录的编辑导航，不是行业统一分类，也不增加新的机制断言。",
+      "把同一维度内作用相近的机制放在一起，方便查找和比较。分组由本站编辑整理，不代表行业统一分类，也不改变机制是否成立的判断。",
     example:
       "资源与经济 → 生产与设施投资，包含生产投资、基地建设、种植与养殖、劳动力分配。",
   },
@@ -59,14 +59,14 @@ export const classificationLevels = [
     question: "哪条可独立判断的规则成立？",
     explanation:
       "用定义、纳入条件和排除条件识别一个具体规则。它可以出现在不同游戏类型中，不能因为游戏有某个类型标签就直接判定存在。",
-    example: "撤离兑现：达到退出条件，才把本次指定收益转为可保留资源。",
+    example: "撤离兑现：满足退出条件后，才能把本次尚未结算的收益带走。",
   },
   {
     id: "instance",
     name: "实例：游戏中的实际用法",
     question: "哪款游戏、哪个范围有依据？",
     explanation:
-      "把原子机制落实到游戏、模式、系统、角色或版本，并记录来源与成立条件。这里的示例只从已记录的存在或条件成立实例中选取。",
+      "记录某项机制在具体游戏、模式、系统、角色或版本中的用法，附上来源与成立条件。这里的范例只选用已记录为存在或有条件成立的实例。",
     example: "同款游戏不同模式可以采用不同规则；条件实例必须连同条件阅读。",
   },
   {
@@ -83,7 +83,7 @@ export const classificationLevels = [
     name: "设计入口：组合配方",
     question: "这些机制放在一起值得试什么？",
     explanation:
-      "配方描述机制分工、可能的协同与冲突，并给出原型验证问题。参考游戏支持相关切面，不意味着整套配方已在其中验证成功。",
+      "配方说明各机制可以怎样分工、配合或产生冲突，并列出原型需要验证的问题。参考游戏只用于对照其中的相关用法，不代表整套配方已经在该游戏中验证。",
     example: "路线分支 × 局内扩充卡组：测试玩家能否根据当前卡组解释选路。",
   },
   {
@@ -102,7 +102,7 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
     question: "玩家亲手做什么，直接改变哪个对象？",
     explanation:
       "从一次输入到对象变化，描述移动、攻击、放置、操纵和节奏操作。相同输入方式可以服务不同类型，重点是操作直接造成的变化。",
-    use: "拆控制方案、动作集合与操作难度，比较同一目标可以由哪些输入完成。",
+    use: "比较不同控制方式、可用动作和操作难度，判断同一目标可以怎样完成。",
     boundary:
       "命中后造成多少伤害归规则与结算；行动何时可再次使用归时间与流程。",
   },
@@ -111,7 +111,7 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
     question: "动作与状态如何被判定、组合和结算？",
     explanation:
       "规定输入之后如何算结果，包括伤害、计分、状态叠加、控制权与胜负。这里解释条件与结果的对应关系。",
-    use: "拆结算顺序、反馈内容和反制方式，找出玩家是否能理解一次结果。",
+    use: "梳理结算顺序、反馈与反制方式，检查玩家能否理解一次结果。",
     boundary: "主动按键的方式归核心交互；结果是否跨局保留归成长与延续。",
   },
   {
@@ -130,14 +130,14 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
       "描述卡组、装备、技能、阵容和部署方案的配置。核心是玩家能改变什么组合，以及组合受到哪些结构约束。",
     use: "比较构筑自由度、配置时机、试错成本和组合是否容易理解。",
     boundary:
-      "获得成长权限归成长；合成材料的输入输出归资源；配置改变后的效果仍需单独核验。",
+      "获得成长权限归成长；制作时材料怎样转换归资源；配置改变后的效果仍需单独核验。",
   },
   {
     dimensionId: "progression",
     question: "过程之后，哪些能力、权限与记录发生改变？",
     explanation:
       "关注能力增长、内容解锁、任务关系和持久记录，也包含不可恢复的角色损失。成长可以发生在一局内，也可以跨越多次尝试。",
-    use: "设计长期目标、访问门槛和失败后仍有意义的进展。",
+    use: "安排长期目标、进入条件，以及失败后仍能保留的进展。",
     boundary:
       "配置已有能力归构筑；清除当前尝试归流程。持久解锁不代表立即拥有或数值更强。",
   },
@@ -146,7 +146,7 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
     question: "资源从哪里来，怎样变成别的东西，又被谁花掉？",
     explanation:
       "把获取、容量、消耗、加工、生产设施、运输和归属连起来。资源不只指货币，也可能是弹药、工时、温度控制所需能源或团队余额。",
-    use: "拆资源流向、瓶颈与取舍，检查投入是否产生新的选择。",
+    use: "梳理资源流向与瓶颈，检查投入之后是否多了值得选择的方案。",
     boundary:
       "拥有数值不证明资源稀缺；共享余额是经济规则，合作关系另归参与者关系。",
   },
@@ -164,7 +164,7 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
     question: "哪些行动者一起玩，他们怎样互相影响？",
     explanation:
       "描述合作、竞争、角色职责、外交与在线时间关系。多人只是人数条件，具体目标、权限与同步方式仍需分别判断。",
-    use: "拆团队依赖、对抗关系、沟通需求和异步参与方式。",
+    use: "梳理团队如何互相依赖、对抗、沟通，以及能否错开时间参与。",
     boundary: "共享目标不自动意味着共享资源；自动战斗不自动意味着异步对手。",
   },
   {
@@ -172,7 +172,7 @@ export const taxonomyDimensions: TaxonomyDimension[] = [
     question: "每次局面为何不同，哪些变化能够重现？",
     explanation:
       "区分随机取样、候选供给、地图生成、遭遇调度与状态模拟。并非所有变化都随机，也并非所有程序生成内容都无法重现。",
-    use: "安排重复游玩的变化来源，比较可控性、可解释性与复现需求。",
+    use: "为重复游玩安排变化，并考虑玩家能否控制、理解和重现这些变化。",
     boundary:
       "玩家主动换装备属于配置；随机换商店候选属于变化。完整预制地图的随机抽选不等同布局生成。",
   },
@@ -247,7 +247,8 @@ const groupDrafts: GroupDraft[] = [
     name: "特殊位移与空间连接",
     explanation:
       "用冲刺、抓钩或传送入口改变移动方式，突破普通步行的距离、路径或连接限制。",
-    function: "扩展躲避、接近与跨区域移动的办法，形成不同的空间判断题。",
+    function:
+      "让玩家用不同办法躲避威胁、接近目标或跨越区域，并判断距离、路径与连接关系。",
     boundary:
       "闪避位移不自动保证无敌；存在传送门也不代表玩家可以自由放置入口。",
     mechanicIds: ["dodge-move", "grappling", "traversal-portal"],
@@ -263,7 +264,7 @@ const groupDrafts: GroupDraft[] = [
     name: "攻击与招架操作",
     explanation:
       "选择方向或目标发动攻击，或在敌方攻击窗口主动防御。操作时机和空间关系直接影响结果。",
-    function: "建立瞄准、距离控制与攻防读招的技术差异。",
+    function: "让瞄准、距离控制和识别攻击预兆成为需要练习的技巧。",
     boundary:
       "这里记录玩家如何触发动作；伤害量、生命阈值与姿态击破由结算机制定义。",
     mechanicIds: ["aimed-launch", "melee-attack", "parry"],
@@ -295,7 +296,7 @@ const groupDrafts: GroupDraft[] = [
     name: "物理操纵与环境改造",
     explanation:
       "通过转向、施力或破坏，改变载具、物理对象与地形的运动或实体状态。",
-    function: "让惯性、受力和可改造地形成解决问题的手段。",
+    function: "让玩家利用惯性、受力和可改造的地形解决问题。",
     boundary:
       "地形破坏是一种行动；世界模拟描述多个状态继续相互作用，不从破坏画面推断完整物理模拟。",
     mechanicIds: [
@@ -343,7 +344,7 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "rules",
     name: "生命、姿态与状态",
     explanation:
-      "根据攻击和事件更新生命、姿态压力与持续状态，并在达到条件时触发失能或机会。",
+      "根据攻击和事件更新生命、姿态压力与持续状态，达到条件后触发失能，或开放破防、处决等机会。",
     function: "区分消耗、压制与暂时控制，安排战斗中的恢复、爆发与反制。",
     boundary:
       "持续状态不一定造成伤害；有生命量不代表另有姿态条。每种状态分别取证。",
@@ -359,7 +360,7 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "rules",
     name: "效果组合与规则改写",
     explanation: "让多个效果共同参与计算，或通过特殊组合改变原有结算方式。",
-    function: "产生可组合的策略与例外规则，支持玩家围绕效果关系构筑。",
+    function: "让玩家围绕效果之间的配合与例外规则安排构筑。",
     boundary:
       "叠加描述效果共同生效；修饰器改动规则；元素反应要求具体元素组合，不能互相替代。",
     mechanicIds: ["stacking-effects", "rule-modifier", "elemental-reaction"],
@@ -418,7 +419,8 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "rules",
     name: "自动执行结算",
     explanation: "配置完成后，战斗执行阶段的主要行为依预设规则推进。",
-    function: "把注意力放在准备、观察结果与下一轮调整，降低逐次动作输入需求。",
+    function:
+      "让玩家着重准备、观察结果和调整下一轮配置，减少逐次下达动作指令的需要。",
     boundary:
       "自动战斗不自动包含离线进展、异步对手或随机商店；这些机制分别核验。",
     mechanicIds: ["automatic-resolution"],
@@ -544,7 +546,8 @@ const groupDrafts: GroupDraft[] = [
     name: "局内卡组发展",
     explanation:
       "在一次尝试中取得新卡并加入可用卡组，使之后可抽取或使用的牌发生改变。",
-    function: "让当前选择改变后续行动供给，支持围绕已有卡牌调整构筑。",
+    function:
+      "让这次选卡影响之后能抽到或使用哪些牌，玩家也能围绕已有卡牌调整构筑。",
     boundary: "局外收藏、开局选卡和单纯随机抽牌都不自动满足局内扩充卡组。",
     mechanicIds: ["in-run-deck-growth"],
     examplePairs: [
@@ -582,7 +585,7 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "buildcraft",
     name: "配置保存与复制",
     explanation: "把一组配置保存为蓝图，在材料和空间允许时再次部署。",
-    function: "把重复建设转为方案复用，让注意力转向布局改进与规模扩展。",
+    function: "减少重复建设的操作，让玩家更专注于改进布局和扩展规模。",
     boundary:
       "蓝图不保证免费建成，也不等于游戏存档；实际部署仍受资源与位置约束。",
     mechanicIds: ["blueprint-replication"],
@@ -626,7 +629,7 @@ const groupDrafts: GroupDraft[] = [
     name: "目标、知识与能力门槛",
     explanation:
       "用完成目标、理解规律或获得行动能力，决定玩家能否继续进入某段内容。",
-    function: "安排探索顺序，让学习和新能力重新解释此前遇到的障碍。",
+    function: "安排探索顺序，让玩家用新知识和新能力解决之前遇到的障碍。",
     boundary:
       "知识门槛可能不改变角色数值；能力门槛需要新行动能力；普通岔路不是解锁。",
     mechanicIds: ["objective-unlock", "knowledge-gating", "ability-gating"],
@@ -704,7 +707,7 @@ const groupDrafts: GroupDraft[] = [
     id: "resource-conversion",
     dimensionId: "economy",
     name: "配方与生产链",
-    explanation: "按规则把输入转为输出，并将多个加工步骤连接成前后依赖。",
+    explanation: "按规则加工材料或组件，再把上一道工序的产物用于下一道工序。",
     function: "让原料、半成品与最终产物相互依赖，产生配比和瓶颈问题。",
     boundary: "知道配方如何转换属于资源规则；通过实验才发现配方的过程归信息。",
     mechanicIds: ["recipe-crafting", "production-chain"],
@@ -719,8 +722,7 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "economy",
     name: "生产与设施投资",
     explanation: "投入资源、土地、设施和人员，换取持续产出或新的生产服务能力。",
-    function:
-      "组织当前投入与未来收益的取舍，让设施、人员与培育周期形成发展路线。",
+    function: "让玩家权衡眼前投入与后续收益，并安排设施、人员和培育周期。",
     boundary:
       "基地建设不必自动生产；种植与养殖有具体培育周期；劳动力分配关注岗位投入。",
     mechanicIds: [
@@ -756,7 +758,7 @@ const groupDrafts: GroupDraft[] = [
     name: "温度管理",
     explanation: "利用产热、散热和隔热维持合适温度，以满足生存或生产条件。",
     function:
-      "把环境条件转为需要投入和维护的系统，安排区域与设施之间的热量取舍。",
+      "让玩家为维持环境温度投入资源、安排维护，并调整区域和设施的热量分布。",
     boundary:
       "寒冷题材或天气变化不证明能调节温度；必须存在改变温度的实际规则。",
     mechanicIds: ["thermal-regulation"],
@@ -770,7 +772,8 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "economy",
     name: "交易与市场分配",
     explanation: "按交换、价格、位置支付或公共供给规则，把资源转移给其他主体。",
-    function: "形成购买、争抢供给与经营位置的选择，使资源价值依交易情境变化。",
+    function:
+      "让玩家选择何时购买、是否争取有限供给，以及如何利用位置获得收益。",
     boundary:
       "公共市场需要多人使用同一供给；随机商店只描述候选生成，不保证共享。",
     mechanicIds: ["barter-trade", "toll-payment", "public-market"],
@@ -784,10 +787,9 @@ const groupDrafts: GroupDraft[] = [
     id: "resource-ownership",
     dimensionId: "economy",
     name: "收益归属与共同余额",
-    explanation:
-      "规定收益在何时成为可保留资源，以及多个行动者是否使用同一余额。",
+    explanation: "规定收益要到何时才能保留，以及多个行动者是否共用同一份资源。",
     function:
-      "明确带出前的风险与团队支出的相互影响，帮助规划何时结算和由谁花费。",
+      "让玩家看清带出收益前的风险，以及团队成员花费资源时会怎样相互影响。",
     boundary:
       "撤离兑现需要写清哪些收益被带出；团队共享余额不代表所有物品都共享。",
     mechanicIds: ["extraction-bank", "shared-resource-pool"],
@@ -803,7 +805,7 @@ const groupDrafts: GroupDraft[] = [
     explanation: "在当前决策之前提供即将发生的行动或后续对象信息。",
     function: "让玩家根据已知的后续风险和机会规划，而不是只能等待结果出现。",
     boundary:
-      "行动意图与后续对象是不同信息；本库尚未收录后续对象预览的已核验游戏实例。",
+      "行动意图预告说明对方接下来做什么；后续对象预览说明之后会出现什么，二者分别核验。",
     mechanicIds: ["intent-preview", "next-piece-preview"],
     examplePairs: [["into-the-breach", "intent-preview"]],
   },
@@ -976,7 +978,8 @@ const groupDrafts: GroupDraft[] = [
     dimensionId: "variability",
     name: "随机过程重现",
     explanation: "在明确版本和输入条件下，用种子重现约定范围内的随机过程。",
-    function: "支持复盘、共同挑战和比较策略，让变化保留可重复研究的入口。",
+    function:
+      "方便复盘、共同挑战和比较策略，让不同方案可以在相同的随机条件下研究。",
     boundary:
       "相同种子不保证跨版本一致，也不保证玩家不同操作之后所有后续结果仍相同。",
     mechanicIds: ["seeded-replay"],
@@ -989,7 +992,8 @@ const groupDrafts: GroupDraft[] = [
     id: "world-state-change",
     dimensionId: "variability",
     name: "世界模拟与事件调度",
-    explanation: "由持久状态互动、节奏策略或明确触发条件改变事件与环境。",
+    explanation:
+      "世界状态可以相互影响；系统也可以根据节奏策略或明确条件安排事件、改变环境。",
     function:
       "让局面回应已经发生的行为，产生动态障碍、连锁变化或新的事件时机。",
     boundary:

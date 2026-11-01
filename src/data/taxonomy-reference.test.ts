@@ -116,7 +116,13 @@ describe("taxonomy navigation integrity", () => {
         .filter(([, rows]) => rows.length === 0)
         .map(([id]) => id)
         .sort(),
-    ).toEqual(["next-piece-preview"]);
+    ).toEqual([]);
+    expect(mechanicExamples["next-piece-preview"][0]).toMatchObject({
+      gameId: "tetris",
+      scopeId: "tetris:basicfun-09686-marathon",
+      evidenceKind: "manual",
+      sourceIds: ["tetris-basicfun-09686-manual"],
+    });
     expect(mechanicExamples["ability-check"][0]).toMatchObject({
       gameId: "disco-elysium",
       scopeId: "disco-elysium:standard",

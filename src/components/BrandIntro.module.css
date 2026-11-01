@@ -1,0 +1,63 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: #171927;
+  color: #f4eddf;
+  opacity: 1;
+  transition: opacity 320ms ease;
+}
+.leaving {
+  opacity: 0;
+}
+.content {
+  width: min(560px, 100%);
+  text-align: center;
+}
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.logo[hidden] {
+  display: none;
+}
+.title {
+  margin-top: 28px;
+  font:
+    26px "Noto Serif SC",
+    SimSun,
+    serif;
+  letter-spacing: 0.28em;
+}
+.subtitle {
+  display: block;
+  margin-top: 12px;
+  font:
+    11px Consolas,
+    monospace;
+  letter-spacing: 0.18em;
+  color: #c4aff0;
+}
+.fallback {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 640 / 332;
+  font:
+    64px SimSun,
+    serif;
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 22px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    transition: none;
+  }
+}

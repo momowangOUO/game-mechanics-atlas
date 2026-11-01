@@ -1,292 +1,146 @@
 import { gotoApp } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
-
-async function openLab(page: Page, path = "/lab?recipe=aimed-buildcraft") {
-  await gotoApp(page, path);
-  await expect(page.locator("html")).toHaveAttribute(
-    "data-effects",
-    /full|reduced/,
-  );
-  await expect(page.locator('[hidden][id^="S:"]')).toHaveCount(0);
-}
 async function stage(page: Page, name: string) {
   await page
-    .getByRole("navigation", { name: "实验步骤", exact: true })
+    .getByRole("navigation", { name: "提示词编写步骤" })
     .getByRole("button", { name: new RegExp(name) })
     .click();
 }
-async function fitsTaskViewport(page: Page) {
-  const bounds = await page.evaluate(() => {
-    const controls = document
-      .querySelector('nav[aria-label="移动端实验步骤控制"]')!
-      .getBoundingClientRect().top;
-    const panels = [...document.querySelectorAll("main section.window")].filter(
-      (node) => node.getBoundingClientRect().height > 0,
-    );
-    return {
-      root: document.documentElement.scrollHeight,
-      height: innerHeight,
-      bottom: Math.max(
-        ...panels.map((node) => node.getBoundingClientRect().bottom),
-      ),
-      controls,
-    };
-  });
-  expect(bounds.root).toBeLessThanOrEqual(bounds.height + 1);
-  expect(bounds.bottom).toBeLessThanOrEqual(bounds.controls + 1);
-}
-
-test("analysis is immediate, highlights only the clock pair and preserves its rule boundary", async ({
+test("changed settings preserve the previous prompt until explicitly regenerated", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 1050 });
-  await openLab(page, "/lab?recipe=aimed-buildcraft&add=sequential-turns");
+  await gotoApp(page, "/lab?recipe=aimed-buildcraft&add=sequential-turns");
+  await page.getByRole("button", { name: /^生成提示词/ }).click();
+  const editor = page.locator("#research-prompt");
+  const original = await editor.inputValue();
+  await stage(page, "核心机制");
   await page
-    .getByRole("combobox", { name: "核心机制", exact: true })
-    .selectOption("real-time-update");
-  await page.getByRole("button", { name: /^分析当前组合/ }).click();
+    .getByRole("searchbox", { name: "查找机制" })
+    .fill("real-time-update");
+  await page.getByRole("button", { name: /^实时推进/ }).click();
   await expect(
-    page.getByRole("heading", { name: "实时推进组合实验" }),
+    page.getByText("研究设置已更改", { exact: false }),
   ).toBeVisible();
-  await expect(page.locator('[data-maid-state="conflict"]')).toBeVisible();
-  await expect(page.locator("[data-mechanic-id][data-conflict]")).toHaveCount(
-    2,
+  await expect(editor).toHaveValue(original);
+  await page.getByRole("button", { name: /^重新生成提示词/ }).click();
+  await expect(editor).not.toHaveValue(original);
+  expect(await editor.inputValue()).toContain("核心机制：实时推进");
+  expect(await editor.inputValue()).toContain("结构约束：轮流行动");
+  await expect(page.getByText("研究设置已更改", { exact: false })).toHaveCount(
+    0,
   );
-  await expect(
-    page.locator('[data-mechanic-id="real-time-update"]'),
-  ).toHaveAttribute("data-conflict", "true");
-  await expect(
-    page.locator('[data-mechanic-id="sequential-turns"]'),
-  ).toHaveAttribute("data-conflict", "true");
-  await page.getByRole("tab", { name: "协同与冲突", exact: true }).click();
-  await expect(page.getByRole("tabpanel")).toContainText("不同阶段可以组合");
-  await page.getByRole("tab", { name: "调整与边界", exact: true }).click();
-  await expect(page.getByRole("tabpanel")).toContainText("不同阶段");
+  await expect(page.getByRole("button", { name: /^分析当前组合/ })).toHaveCount(
+    0,
+  );
 });
-
-test("rapid analysis and changed selections cannot revive old presentation or snapshots", async ({
+test("candidate paging and dimension filtering preserve independent selections", async ({
   page,
 }) => {
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.emulateMedia({ reducedMotion: "no-preference" });
-  await openLab(page);
-  await page.evaluate(() => localStorage.setItem("atlas.motion", "full"));
-  await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-effects", "full");
-  await page.getByRole("button", { name: /^分析当前组合/ }).click();
-  const repeat = page.getByRole("button", { name: /^重新分析当前组合/ });
-  await repeat.dblclick();
+  await gotoApp(page, "/lab?recipe=aimed-buildcraft");
+  const candidatePager = page.getByRole("navigation", { name: "机制候选分页" });
   await expect(
-    page.getByRole("heading", { name: "瞄准发射组合实验" }),
-  ).toBeVisible();
-  await stage(page, "核心");
+    candidatePager.getByRole("button", { name: "← 上一页" }),
+  ).toBeDisabled();
+  await candidatePager.getByRole("button", { name: "下一页 →" }).click();
+  await expect(
+    candidatePager.getByRole("button", { name: "← 上一页" }),
+  ).toBeEnabled();
+  await stage(page, "配合与结构");
   await page
-    .getByRole("combobox", { name: "核心机制", exact: true })
-    .selectOption("piece-rotation");
-  await expect(
-    page.getByText("组合已修改，以下仍是上次分析。", { exact: true }),
-  ).toBeVisible();
-  await expect(page.locator('[data-analysis-state="stale"]')).toHaveCount(1);
-  await expect(page.locator('[data-maid-state="think"]')).toHaveCount(0);
-  await expect(
-    page.getByRole("heading", { name: "瞄准发射组合实验" }),
-  ).toBeVisible();
-  await page.getByRole("button", { name: "更新分析 ↻", exact: true }).click();
-  await expect(
-    page.getByRole("heading", { name: "物件旋转组合实验" }),
-  ).toBeVisible();
-  await expect(
-    page.getByText("组合已修改，以下仍是上次分析。", { exact: true }),
-  ).toHaveCount(0);
-  await expect(page.getByRole("dialog")).toHaveCount(0);
-  await page.getByRole("tab", { name: "循环与分工", exact: true }).focus();
-  await page.keyboard.press("End");
-  await expect(
-    page.getByRole("tab", { name: "调整与边界", exact: true }),
-  ).toBeFocused();
-  await page.keyboard.press("Home");
-  await expect(
-    page.getByRole("tab", { name: "循环与分工", exact: true }),
-  ).toBeFocused();
+    .getByRole("searchbox", { name: "查找机制" })
+    .fill("piece-rotation");
+  const rotation = page.getByRole("button", { name: /^物件旋转/ });
+  await rotation.click();
+  await expect(rotation).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "结构约束", exact: true }).click();
+  await page
+    .getByRole("searchbox", { name: "查找机制" })
+    .fill("planning-timer");
+  const timer = page.getByRole("button", { name: /^规划时限/ });
+  await timer.click();
+  await expect(timer).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: /^生成提示词/ }).click();
+  const value = await page.locator("#research-prompt").inputValue();
+  expect(value).toContain("配合机制：物件旋转");
+  expect(value).toContain("结构约束：规划时限");
+  await stage(page, "核心机制");
+  await page.getByRole("button", { name: "移除物件旋转", exact: true }).click();
+  await page.getByRole("button", { name: /^重新生成提示词/ }).click();
+  expect(await page.locator("#research-prompt").inputValue()).not.toContain(
+    "配合机制：物件旋转",
+  );
 });
-
 for (const [width, height] of [
   [390, 844],
   [320, 844],
   [360, 780],
   [320, 640],
 ]) {
-  test(`mobile ${width}x${height} separates stages and report sections without nested reading scroll`, async ({
+  test(`mobile ${width}x${height} separates selection, requirements and editable prompt`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height });
-    await openLab(page);
-    await fitsTaskViewport(page);
+    await gotoApp(page, "/lab?recipe=aimed-buildcraft");
+    await expect(page.locator("#research-prompt")).toBeHidden();
+    await expect(page.locator('[class*="candidates"] > button')).toHaveCount(2);
+    await stage(page, "配合与结构");
     await page
-      .getByRole("navigation", { name: "核心选择分区" })
-      .getByRole("button", { name: "核心机制", exact: true })
-      .click();
-    await expect(
-      page.getByRole("combobox", { name: "核心机制", exact: true }),
-    ).toBeVisible();
-    await fitsTaskViewport(page);
-    await stage(page, "配料");
-    await fitsTaskViewport(page);
-    await page
-      .getByRole("searchbox", { name: "搜索机制" })
+      .getByRole("searchbox", { name: "查找机制" })
       .fill("piece-rotation");
-    await page.getByRole("checkbox", { name: /物件旋转/ }).check();
-    await expect(
-      page.getByRole("checkbox", { name: /物件旋转/ }),
-    ).toBeChecked();
-    await stage(page, "目标");
-    await fitsTaskViewport(page);
+    await page.getByRole("button", { name: /^物件旋转/ }).click();
+    await stage(page, "研究要求");
     await expect(page.getByRole("checkbox", { name: /易上手/ })).toBeVisible();
-    await page.getByRole("button", { name: "分析组合 →", exact: true }).click();
-    await expect(page.getByRole("tabpanel")).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "瞄准发射组合实验", exact: true }),
+      page.getByRole("searchbox", { name: "查找机制" }),
+    ).toBeHidden();
+    await page
+      .getByRole("navigation", { name: "切换编写步骤" })
+      .getByRole("button", { name: "生成提示词 ↗" })
+      .click();
+    await expect(page.locator("#research-prompt")).toBeVisible();
+    expect(await page.locator("#research-prompt").inputValue()).toContain(
+      "配合机制：物件旋转",
+    );
+    await expect(
+      page.getByRole("heading", { name: "交给 AI 的研究请求" }),
     ).toBeFocused();
-    await fitsTaskViewport(page);
     await page
-      .getByRole("navigation", { name: "报告视图" })
-      .getByRole("button", { name: "概况与边界", exact: true })
-      .click();
-    await expect(page.locator("[data-maid-state]")).toBeVisible();
-    await fitsTaskViewport(page);
-    await page
-      .getByRole("navigation", { name: "报告视图" })
-      .getByRole("button", { name: "研究内容", exact: true })
-      .click();
-    await expect(page.locator('[data-maid-state="think"]')).toHaveCount(0);
-    await page
-      .getByRole("navigation", { name: "报告分区" })
-      .getByRole("button", { name: "机制分工", exact: true })
-      .click();
-    await expect(page.getByRole("tabpanel")).toContainText("机制分工");
-    await page.getByRole("tab", { name: "风险与 Demo", exact: true }).click();
-    await page
-      .getByRole("navigation", { name: "报告分区" })
-      .getByRole("button", { name: "Demo 问题", exact: true })
-      .click();
+      .getByRole("button", { name: "下载 .md", exact: true })
+      .scrollIntoViewIfNeeded();
     await expect(
-      page.getByRole("heading", { name: "首个 Demo，先验证什么？" }),
-    ).toBeVisible();
-    await page.getByRole("tab", { name: "调整与边界", exact: true }).click();
-    await page
-      .getByRole("navigation", { name: "报告分区" })
-      .getByRole("button", { name: "阅读边界", exact: true })
-      .click();
-    await expect(page.getByRole("tabpanel")).toContainText("尚未经过原型验证");
-    await fitsTaskViewport(page);
-    const panel = page.getByRole("tabpanel");
-    expect(
-      await panel.evaluate((node) => ({
-        overflow: getComputedStyle(node).overflowY,
-        width: node.scrollWidth > node.clientWidth + 1,
-      })),
-    ).toEqual({ overflow: "visible", width: false });
+      page.getByRole("button", { name: "下载 .md", exact: true }),
+    ).toBeInViewport();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     ).toBe(true);
+    await stage(page, "配合与结构");
     await expect(
-      page
-        .getByRole("navigation", { name: "移动端实验步骤控制" })
-        .getByRole("button", { name: "调整核心 ↗" }),
-    ).toBeInViewport();
+      page.getByRole("button", { name: "移除物件旋转" }),
+    ).toBeVisible();
   });
 }
-
-test("short keyboard viewport keeps mechanism search and dismissal usable", async ({
+test("short keyboard viewport keeps search and candidate interaction reachable", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 320, height: 640 });
-  await openLab(page);
-  await stage(page, "配料");
-  const search = page.getByRole("searchbox", { name: "搜索机制" });
-  await search.focus();
+  await gotoApp(page, "/lab?recipe=aimed-buildcraft");
+  await stage(page, "配合与结构");
   await page.setViewportSize({ width: 320, height: 400 });
+  const search = page.getByRole("searchbox", { name: "查找机制" });
   await search.fill("piece-rotation");
+  await search.scrollIntoViewIfNeeded();
   await expect(search).toBeInViewport();
-  await expect(
-    page.getByRole("checkbox", { name: /物件旋转/ }),
-  ).toBeInViewport();
-  await fitsTaskViewport(page);
-  await search.press("Enter");
-  await expect(search).not.toBeFocused();
-  await page.setViewportSize({ width: 320, height: 640 });
-  await page.getByRole("checkbox", { name: /物件旋转/ }).check();
-  await expect(page.getByRole("checkbox", { name: /物件旋转/ })).toBeChecked();
-  await fitsTaskViewport(page);
-});
-
-test("compact stale reports preserve every result section and the update action above navigation", async ({
-  page,
-}) => {
-  await page.setViewportSize({ width: 1440, height: 1050 });
-  await openLab(page, "/lab");
-  await page.getByRole("button", { name: /^分析当前组合/ }).click();
-  await page.setViewportSize({ width: 320, height: 640 });
-  await stage(page, "核心");
-  await page
-    .getByRole("navigation", { name: "核心选择分区" })
-    .getByRole("button", { name: "核心机制", exact: true })
-    .click();
-  await page
-    .getByRole("combobox", { name: "核心机制", exact: true })
-    .selectOption("piece-rotation");
-  await stage(page, "结果");
-  await expect(
-    page.getByText("组合已修改，以下仍是上次分析。", { exact: true }),
-  ).toBeVisible();
-  for (const name of [
-    "循环与分工",
-    "协同与冲突",
-    "风险与 Demo",
-    "相似参照",
-    "调整与边界",
-  ]) {
-    await page.getByRole("tab", { name, exact: true }).click();
-    if (name === "相似参照") {
-      await expect(
-        page.getByRole("navigation", { name: "报告分区" }).getByRole("button"),
-      ).toHaveText(["参照案例", "匹配机制", "未匹配项", "口径说明"]);
-    }
-    await fitsTaskViewport(page);
-    const sections = page
-      .getByRole("navigation", { name: "报告分区" })
-      .getByRole("button");
-    for (let index = 0; index < (await sections.count()); index++) {
-      await sections.nth(index).click();
-      await fitsTaskViewport(page);
-      const next = page
-        .getByRole("tabpanel")
-        .getByRole("button", { name: "下一页", exact: true });
-      while ((await next.count()) && (await next.isEnabled())) {
-        await next.click();
-        await fitsTaskViewport(page);
-      }
-    }
-    if (name === "相似参照") {
-      const next = page
-        .getByRole("tabpanel")
-        .getByRole("button", { name: "下一页", exact: true });
-      while ((await next.count()) && (await next.isEnabled())) {
-        await next.click();
-        await fitsTaskViewport(page);
-      }
-    }
-  }
-  const update = page.getByRole("button", { name: "更新分析 ↻", exact: true });
-  await expect(update).toBeInViewport();
-  await update.click();
-  await expect(
-    page.getByText("组合已修改，以下仍是上次分析。", { exact: true }),
-  ).toHaveCount(0);
-  await expect(
-    page.getByRole("heading", { name: "物件旋转组合实验", exact: true }),
-  ).toBeFocused();
-  await fitsTaskViewport(page);
+  const choice = page.getByRole("button", { name: /^物件旋转/ });
+  await choice.scrollIntoViewIfNeeded();
+  await choice.focus();
+  await page.keyboard.press("Enter");
+  await expect(choice).toHaveAttribute("aria-pressed", "true");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
 });

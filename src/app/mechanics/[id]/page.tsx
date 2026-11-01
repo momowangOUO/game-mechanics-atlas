@@ -1,8 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMechanicTaxonomy } from "@/data/taxonomy-reference";
 import taxonomyStyles from "@/components/TaxonomyExplorer.module.css";
+import {
+  MechanicStoryboard,
+  MechanicExamples,
+  MechanicIcon,
+} from "@/components/MechanicVisuals";
+import { MechanicStructuredData } from "@/components/StructuredData";
 import {
   Assistant,
   GameCard,
@@ -30,7 +37,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  return { title: getMechanic(id)?.name || "未收录机制" };
+  const item = getMechanic(id);
+  if (!item) notFound();
+  return pageMetadata(
+    `${item.name}：机制定义、边界与游戏用法`,
+    item.definition,
+    `/mechanics/${id}`,
+  );
 }
 export default async function MechanicPage({
   params,
@@ -57,15 +70,13 @@ export default async function MechanicPage({
   ];
   return (
     <>
+      <MechanicStructuredData mechanic={mechanic} />
       <div className="breadcrumb">
         <Link href="/">研究室</Link> / <Link href="/mechanics">机制档案</Link> /{" "}
-        <Link href={`/taxonomy?dimension=${dimension.id}`}>
-          {dimension.name}
-        </Link>{" "}
-        /{" "}
+        <Link href={`/taxonomy/${dimension.id}/`}>{dimension.name}</Link> /{" "}
         {taxonomy && (
           <>
-            <Link href={`/taxonomy?group=${taxonomy.group.id}`}>
+            <Link href={`/taxonomy/${dimension.id}/${taxonomy.group.id}/`}>
               {taxonomy.group.name}
             </Link>{" "}
             /{" "}
@@ -83,10 +94,12 @@ export default async function MechanicPage({
             在图谱中查看 ⌘
           </Link>
           <Link className="button primary" href={`/lab?add=${id}`}>
-            加入组合实验 ＋
+            组合研究提示词 ＋
           </Link>
         </div>
       </PageHead>
+      <MechanicStoryboard id={id} />
+      <MechanicExamples id={id} limit={2} />
       {taxonomy && (
         <section
           className={taxonomyStyles.detailContext}
@@ -188,7 +201,7 @@ export default async function MechanicPage({
             <h2>设计价值与代价</h2>
             <div className="generic-grid">
               <div className="small-card">
-                <p className="analysis-label">设计归纳 / 可以带来什么</p>
+                <p className="analysis-label">设计作用 · 编辑分析</p>
                 <ul className="content-list">
                   {mechanic.designValue.map((text) => (
                     <li key={text}>{text}</li>
@@ -196,7 +209,7 @@ export default async function MechanicPage({
                 </ul>
               </div>
               <div className="small-card">
-                <p className="analysis-label gold">需要观察的风险</p>
+                <p className="analysis-label gold">常见设计问题</p>
                 <ul className="content-list">
                   {mechanic.risks.map((text) => (
                     <li key={text}>{text}</li>
@@ -234,7 +247,7 @@ export default async function MechanicPage({
             </div>
           </section>
           <section id="examples" className="detail-section">
-            <h2>把定义放回真实游戏</h2>
+            <h2>游戏范例</h2>
             {observations.length ? (
               <div className="related-game-list">
                 {observations.map(({ game, observation }) => (
@@ -257,7 +270,7 @@ export default async function MechanicPage({
               </div>
             ) : (
               <div className="scope-box">
-                本条已有定义与设计说明，但已核验的官方资料尚不足以支持直接实例。目前没有关联游戏案例，不能据此认定机制不存在。
+                游戏范例正在补充，机制定义与分类说明见上方。
               </div>
             )}
             <div className="state-legend" aria-label="实例状态说明">
@@ -277,7 +290,7 @@ export default async function MechanicPage({
           <section id="combinations" className="detail-section">
             <h2>常见组合与相关机制</h2>
             <p className="article-copy">
-              以下是可继续验证的设计配方；参照游戏不代表已验证整组机制。
+              选择配方可编写研究提示词，进一步比较机制搭配与游戏范例。
             </p>
             <div className="recipe-grid detail-recipe-grid">
               {combinations.slice(0, 4).map((recipe) => (
@@ -289,7 +302,7 @@ export default async function MechanicPage({
                   <span className="eyebrow">HYBRID FORMULA</span>
                   <h3>{recipe.name}</h3>
                   <p>{recipe.roles[id] || recipe.synergies[0]}</p>
-                  <span className="tiny gold">在实验室中继续 →</span>
+                  <span className="tiny gold">编写研究提示词 →</span>
                 </Link>
               ))}
             </div>
@@ -302,14 +315,14 @@ export default async function MechanicPage({
             </div>
             {!combinations.length && (
               <p className="scope-box">
-                尚未收录包含此机制的完整配方，可以将它加入实验室，研究新的组合。
+                尚未收录相关配方，可以将此机制加入研究提示词。
               </p>
             )}
           </section>
           <section id="evidence" className="detail-section">
             <h2>来源与判定范围</h2>
             <p className="scope-box">
-              机制定义、价值、风险、适配建议与关联由本站编辑整理。游戏案例中的每条观察都有对应范围与来源。未知不等于不存在；有条件成立的机制，也不能推广为整个游戏中无条件存在。
+              机制分类与设计分析由本站编辑整理。各游戏实例分别记录模式、版本、成立条件和来源；资料不足的部分标为“尚未确认”。
             </p>
             <div className="source-list">
               {sources

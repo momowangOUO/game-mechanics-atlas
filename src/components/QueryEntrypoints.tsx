@@ -59,7 +59,7 @@ export function LabQuery() {
   const notes: string[] = [];
   const recipe = recipes.find((item) => item.id === one("recipe"));
   if (query.has("recipe") && !recipe)
-    notes.push("链接中的配方未收录，已恢复默认组合。你可以重新选择配方。");
+    notes.push("链接中的配方未收录，已恢复默认组合。可在下方重新选择。");
   const ids = recipe?.mechanicIds ?? [
     "aimed-launch",
     "rule-modifier",

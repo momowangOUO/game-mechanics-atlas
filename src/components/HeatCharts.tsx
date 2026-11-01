@@ -247,7 +247,7 @@ export function ScatterChart({
       <svg
         viewBox={`0 0 ${width} ${height}`}
         role="img"
-        aria-label="需求指数与收录样本供给散点图，空心点表示尚无确认供给"
+        aria-label="主题搜索指数与相关游戏数散点图，空心点表示本站还没有确认相关游戏"
       >
         <rect
           x={left}
@@ -265,13 +265,13 @@ export function ScatterChart({
         </g>
         <g className="chart-label">
           <text x="3" y="15">
-            需求指数 ↑
+            主题搜索指数 ↑
           </text>
           <text x={left + 8} y={top + 16} fill="#88cdc5">
             搜索较多 / 收录较少
           </text>
           <text x={width - 17} y={height - 11} textAnchor="end">
-            收录供给（款）→
+            相关游戏（款）→
           </text>
           <text x={left - 10} y={y(100) + 4} textAnchor="end">
             100
@@ -297,7 +297,7 @@ export function ScatterChart({
               className={`scatter-point ${active ? "selected" : ""}`}
               key={profile.topicId}
               role="button"
-              aria-label={`${profile.name}，搜索${formatAmount(profile.demand)}次，确认供给${profile.supply}款`}
+              aria-label={`${profile.name}，搜索${formatAmount(profile.demand)}次，相关游戏${profile.supply}款`}
               tabIndex={0}
               onClick={() => onSelect(profile.topicId)}
               onKeyDown={(event) => {
@@ -328,7 +328,7 @@ export function ScatterChart({
                 }
                 strokeWidth={active ? 2 : 1}
               />
-              <title>{`${profile.name}：${formatAmount(profile.demand)}次 / 已确认供给${profile.supply}；${profile.scoreStatus === "insufficient_supply" ? "样本不足，未计算机会分" : "指数为同类主题内比较"}`}</title>
+              <title>{`${profile.name}：${formatAmount(profile.demand)}次 / 相关游戏${profile.supply}；${profile.scoreStatus === "insufficient_supply" ? "尚未收录相关游戏" : "指数只在同类主题中比较"}`}</title>
             </g>
           );
         })}
@@ -345,7 +345,7 @@ export function ScatterChart({
         )}
       </svg>
       <p className="chart-caption">
-        空心点表示本站尚未确认供给，需补充竞品调查。点击圆点查看主题与案例。
+        空心点表示本站还没有确认相关游戏。点击圆点查看主题，再补充竞品调查。
       </p>
     </div>
   );
@@ -373,7 +373,7 @@ function SearchProvenance({ sourceKinds }: Pick<HeatAnalysis, "sourceKinds">) {
       {mixed && (
         <p className="filter-note">
           来源：{sourceKinds.map((kind) => labels[kind] || kind).join("、")}。
-          请分别核验各数据集的范围与真实性，不能将混合结果直接视为真实市场的完整表现。
+          不同来源的数据需要分别核对采集方式与范围，合并后也不代表整个市场。
         </p>
       )}
     </>
@@ -400,18 +400,18 @@ export function HeatProfileMini({ topicId }: { topicId: string }) {
               </strong>
             </div>
             <div>
-              <small>趋势 / 同口径</small>
+              <small>搜索变化</small>
               <strong>{trendLabel(profile)}</strong>
             </div>
           </div>
           <p className="filter-note">
             直接归因 {formatAmount(profile.directDemand)} · 代理归因{" "}
-            {formatAmount(profile.proxyDemand)}。游戏搜索不证明特定机制偏好。
+            {formatAmount(profile.proxyDemand)}。不能据此判断玩家喜欢哪项机制。
           </p>
         </>
       ) : (
         <p className="scope-box">
-          尚未取得这个主题的直接搜索记录。此项保留为“未采集”，搜索次数和趋势均暂不计算。
+          还没有这个主题的直接搜索记录，暂不显示次数和趋势。
         </p>
       )}
       <Link
@@ -430,7 +430,7 @@ export function HomeHeatHighlights() {
       <div className="small-card">
         <p className="eyebrow">GOOGLE YEAR IN SEARCH / 2025 · 全球</p>
         <h3 className="serif" style={{ fontSize: 23, margin: "10px 0" }}>
-          游戏搜索飙升资料
+          2025 年游戏搜索飙升榜
         </h3>
         <ol className="home-heat-ranking">
           {annualSearchSnapshot.entries.slice(0, 5).map((entry) => (
@@ -447,11 +447,11 @@ export function HomeHeatHighlights() {
           对比上年同期。名次反映增长，不代表搜索总量或当前需求。
         </p>
         <Link className="button" href="/heat">
-          核对真实来源与数据范围 →
+          查看榜单来源与统计范围 →
         </Link>
       </div>
       <p className="catalog-note">
-        类型、机制和机制组合的直接搜索需求尚未取得；暂不生成相关热门或市场机会榜。
+        目前还没有类型、机制和组合的直接搜索数据，暂不发布相关排行或市场机会榜。
       </p>
     </>
   );

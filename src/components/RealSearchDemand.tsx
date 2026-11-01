@@ -120,7 +120,7 @@ export default function RealSearchDemand({
       <PageHead
         eyebrow="SEARCH EVIDENCE / 来源与时间范围"
         title="玩家在搜什么？"
-        description="查看有出处的搜索资料，分别保留年度飙升名次、相对搜索指数和实际搜索次数的统计口径。"
+        description="查看有来源的搜索资料，分清年度飙升名次、相对搜索指数和实际搜索次数。"
       >
         <span className="seed">真实来源 · 历史快照</span>
       </PageHead>
@@ -149,7 +149,7 @@ export default function RealSearchDemand({
       {topic && (
         <p className="scope-box">
           正在研究「{topic.name}
-          」。年度榜单没有该主题的直接需求测量，保留为未采集。
+          」。年度榜单没有这个主题的直接搜索数据，暂时无法比较。
           <Link href={topicDestination(topic.id)}>继续查看主题资料 →</Link>
         </p>
       )}
@@ -162,7 +162,7 @@ export default function RealSearchDemand({
             <div className="selected-topic-heading">
               <h2>类型与机制需求待采集</h2>
               <p>
-                本次尝试在同一次 Google Trends
+                本次采集尝试在同一次 Google Trends
                 请求中比较五组类型搜索词，时间和地区保持一致。
               </p>
             </div>
@@ -241,7 +241,7 @@ export default function RealSearchDemand({
               const file = event.target.files?.[0];
               if (!file) return;
               if (file.size > 5 * 1024 * 1024) {
-                setImportError("文件超过 5 MB。");
+                setImportError("文件超过 5 MB，请缩小文件后重新选择。");
                 return;
               }
               setImportText(await file.text());
@@ -259,7 +259,7 @@ export default function RealSearchDemand({
                       parsed.error.issues
                         .map(
                           (issue) =>
-                            `${issue.path.join(".") || "导入文件"}：${issue.code === "custom" ? issue.message : "字段格式或取值不符合相对指数契约，请核对必需字段与统计范围。"}`,
+                            `${issue.path.join(".") || "导入文件"}：${issue.code === "custom" ? issue.message : "字段格式或取值不正确，请按格式说明检查内容与统计范围。"}`,
                         )
                         .join("；"),
                     );
@@ -269,7 +269,9 @@ export default function RealSearchDemand({
                   setSelectedQuery("");
                   setImportError("");
                 } catch {
-                  setImportError("JSON 语法不正确，原有资料保持不变。");
+                  setImportError(
+                    "JSON 格式有误，尚未替换原记录。请检查引号、逗号和括号。",
+                  );
                 }
               }}
             >
@@ -287,7 +289,7 @@ export default function RealSearchDemand({
             </p>
           )}
           <p className="filter-note">
-            文件只在本浏览器分析，刷新后清除。请保留原始下载文件，先核对同组搜索词、日期与地区，再导入每日指数。
+            文件只在当前浏览器中分析，刷新后清除。请保留原始文件，确认搜索词、日期和地区一致后再导入。
           </p>
           <details>
             <summary>查看 JSON 必需字段</summary>

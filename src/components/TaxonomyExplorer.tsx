@@ -13,7 +13,8 @@ import {
   mechanicExamples,
   type TaxonomyExample,
 } from "@/data/taxonomy-reference";
-import { DimensionIcon, MaidPortrait } from "./Art";
+import { DimensionIcon, MaidPortrait, GameThumbnail } from "./Art";
+import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
 import styles from "./TaxonomyExplorer.module.css";
 
 type Stage = 0 | 1 | 2 | 3;
@@ -75,6 +76,7 @@ function Example({
   const scope = scopes.find((item) => item.id === example.scopeId);
   return (
     <article className={styles.example}>
+      {game && !conditionOnly && <GameThumbnail gameId={game.id} />}
       <div>
         <Link href={`/games/${example.gameId}?scope=${example.scopeId}`}>
           {game?.name} ↗
@@ -321,9 +323,9 @@ function Explorer({
       <header className={styles.heading}>
         <div>
           <p className="eyebrow">TAXONOMY ATLAS / 玩法分类图鉴</p>
-          <h1>从分类，读懂玩法。</h1>
+          <h1>游戏机制分类</h1>
           <p className={styles.intro}>
-            看每一层在分什么、解决什么问题，再把具体机制放回真实游戏。
+            查看九个维度的分类、分组和机制定义，并对照真实游戏的具体用法。
           </p>
         </div>
         <div className={styles.headingAside}>
@@ -649,18 +651,21 @@ function Explorer({
                     safeMechanicPage * pageSize + pageSize,
                   )
                   .map((m) => (
-                    <button
-                      key={m.id}
-                      className={mechanicId === m.id ? styles.selected : ""}
-                      aria-pressed={mechanicId === m.id}
-                      onClick={() => selectMechanic(m.id)}
-                    >
-                      <div>
-                        <strong>{m.name}</strong>
-                        <span>阅读 →</span>
-                      </div>
-                      <p>{m.definition}</p>
-                    </button>
+                    <div key={m.id} className={styles.mechanicTile}>
+                      <button
+                        className={mechanicId === m.id ? styles.selected : ""}
+                        aria-pressed={mechanicId === m.id}
+                        onClick={() => selectMechanic(m.id)}
+                      >
+                        <div>
+                          <MechanicIcon id={m.id} size={48} />
+                          <strong>{m.name}</strong>
+                          <span>阅读 →</span>
+                        </div>
+                        <p>{m.definition}</p>
+                      </button>
+                      <MechanicExamples id={m.id} limit={1} small />
+                    </div>
                   ))}
               </div>
               <Pager
@@ -684,7 +689,9 @@ function Explorer({
               </div>
               <header className={styles.readingHead} data-reading={reading}>
                 <span className={styles.stamp}>原子机制 / 编辑定义</span>
-                <h2>{mechanic.name}</h2>
+                <h2>
+                  <MechanicIcon id={mechanic.id} size={40} /> {mechanic.name}
+                </h2>
               </header>
               <div
                 className={styles.readingTabs}
@@ -722,7 +729,7 @@ function Explorer({
                 {reading === "purpose" && (
                   <>
                     <h3>
-                      {["标准定义", "设计作用", "需要观察的风险"][readingPage]}
+                      {["标准定义", "设计作用", "常见设计问题"][readingPage]}
                     </h3>
                     {readingPage === 0 ? (
                       <p>{mechanic.definition}</p>
@@ -735,9 +742,6 @@ function Explorer({
                           <li key={text}>{text}</li>
                         ))}
                       </ul>
-                    )}
-                    {readingPage === 0 && (
-                      <small>以上为编辑归纳，实际效果取决于规则与内容。</small>
                     )}
                     <Pager
                       page={readingPage}
@@ -802,7 +806,7 @@ function Explorer({
           </div>
           <div className={styles.atlasNote}>
             <span>编辑分类 · 基于现有目录整理</span>
-            <Link href="/types">复合类型不是原子机制 · 查看类型 →</Link>
+            <Link href="/types">查看复合类型 →</Link>
             <Link href="/method">阅读分类方法 ↗</Link>
           </div>
         </>

@@ -1,3 +1,4 @@
+import { indexPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -15,7 +16,7 @@ import {
 import { annualSearchSnapshot } from "@/lib/search-demand";
 import { PageHead, StateBadge, Window } from "@/components/Primitives";
 
-export const metadata: Metadata = { title: "分类、证据与搜索数据" };
+export const metadata: Metadata = indexPageMetadata["/method"];
 export default function MethodPage() {
   return (
     <>
@@ -25,7 +26,7 @@ export default function MethodPage() {
       <PageHead
         eyebrow="RESEARCH PROTOCOL / 查阅依据"
         title="分类怎样读，数据怎样用？"
-        description="先分清分类的不同层次，再查看游戏中的范围和证据。搜索资料分别保留原始的时间、地区与指标，不用游戏收录数量代替玩家需求。"
+        description="了解分类如何组织、游戏记录怎样核对，以及搜索资料能说明什么。"
       />
       <div className="method-page">
         <div className="type-chips">
@@ -33,7 +34,7 @@ export default function MethodPage() {
             分类层次
           </Link>
           <Link className="chip" href="#evidence">
-            状态与范围
+            机制记录与适用范围
           </Link>
           <Link className="chip" href="#heat">
             真实搜索资料
@@ -62,7 +63,7 @@ export default function MethodPage() {
           <table className="dimension-table">
             <thead>
               <tr>
-                <th>层次或实体</th>
+                <th>分类层次</th>
                 <th>回答的问题</th>
                 <th>如何理解</th>
               </tr>
@@ -117,11 +118,11 @@ export default function MethodPage() {
               ))}
             </tbody>
           </table>
-          <h3>分类身份不随案例漂移</h3>
+          <h3>同一机制在不同游戏里仍用同一定义</h3>
           <p>
-            “局次重置”描述尝试如何组织，归时间与流程；“永久死亡”描述状态怎样丢失，归成长与延续。“拖放”是输入动作，“空间装备配置”是能力配置，“邻接加成”是结算规则。它们可以共同出现在一款游戏里，关联紧密也不需要合并或改变分类。
+            “单局重开”说明一次尝试如何结束并重新开始，归入时间与流程；“角色永久死亡”说明死亡后能否恢复原角色，归入成长与延续。“拖放”是输入动作，“空间装备配置”是配置方式，“邻接加成”是结算规则。它们可以同时出现在一款游戏里，仍分别记录。
           </p>
-          <h3>复合类型、配方与元数据各有用途</h3>
+          <h3>类型、配方和检索标签怎样使用</h3>
           <p>
             <Link className="cyan" href="/types">
               {genres.length} 个复合类型
@@ -133,12 +134,12 @@ export default function MethodPage() {
             <Link className="cyan" href="/lab">
               {recipes.length} 组组合配方
             </Link>
-            用于提出设计假设，说明机制分工、潜在协同与风险。题材、画风、叙事、平台和世界观作为元数据辅助检索，不混入机制九维。所有目录均可扩展，当前收录并不代表游戏设计只有这些可能。
+            用于组织研究问题。在实验室选择配方后，可以生成包含机制定义、游戏参照和验证要求的提示词。题材、画风、平台等标签用于检索，不放进九个机制维度；目录也会继续补充。
           </p>
         </section>
         <section id="evidence">
-          <h2>看典型游戏时，一并看范围与状态</h2>
-          <Window title="FIVE STATES / 五种实例状态">
+          <h2>核对机制时，先选游戏模式与范围</h2>
+          <Window title="FIVE STATES / 五种记录结果">
             <div className="state-legend">
               {(
                 [
@@ -154,20 +155,22 @@ export default function MethodPage() {
             </div>
             <ul>
               <li>
-                <strong>存在：</strong>已有记录说明机制在所选范围成立。
+                <strong>存在：</strong>已有资料说明游戏在这个范围内包含该机制。
               </li>
               <li>
-                <strong>不存在：</strong>有明确否定依据，只约束当前范围。
+                <strong>不存在：</strong>已有明确依据说明这个范围内没有该机制。
               </li>
               <li>
-                <strong>不适用：</strong>当前范围没有适用对象，需要说明理由。
+                <strong>不适用：</strong>
+                这个范围没有对应的适用对象，记录中会说明原因。
               </li>
               <li>
-                <strong>未知：</strong>尚未核验；未填写的实例也按未知查询。
+                <strong>未知：</strong>
+                还没有足够资料；没有填写的机制也按未知处理。
               </li>
               <li>
                 <strong>条件存在：</strong>
-                需要满足记录中的角色、阶段或其他条件。
+                只在记录所列的角色、阶段或其他情况下出现。
               </li>
             </ul>
           </Window>
@@ -178,16 +181,16 @@ export default function MethodPage() {
           <h3>事实、规则归纳与设计判断分开</h3>
           <p>
             当前 {games.length} 款游戏有 {instances.length}{" "}
-            条机制实例。分类参考中的游戏说明引用这些实例，保留原范围、状态和来源；游戏名不是自动判类的证据。官方介绍、手册、社区资料与编辑分析分别标识，本轮没有安装全部游戏实测。机制定义、分组、设计价值和类型阅读指引是本站编辑归纳。
+            条机制记录。分类参考引用这些记录，保留对应模式、适用条件和来源，不能只凭游戏名认定它包含某项机制。官方介绍、手册、社区资料与设计分析分别标明，并非所有条目都经过游戏内实测。机制定义、分组和类型说明由本站整理。
           </p>
           <p>
-            部分机制尚未收录可核验的游戏实例，页面会明确说明。复杂度、实现难点和实验室输出是定性分析，不是精确工期、成功率或已验证的协同效果。
+            机制页列出已收录的游戏参照。复杂度与实现难点是设计参考，不能直接换算成工期或成功率；实验室只生成研究提示词，不在站内得出分析结论。
           </p>
         </section>
         <section id="heat">
-          <h2>热门结果必须有真实来源</h2>
+          <h2>搜索资料只展示有来源的数据</h2>
           <p>
-            网站已撤下默认合成热门榜。没有真实搜索记录的类别、机制与组合保留“未取得”或“未采集”，不补造次数、趋势或市场机会。
+            默认展示有来源的真实搜索资料。没有直接搜索数据的类别、机制与组合标为“未取得”或“未采集”，不补造次数、趋势或市场机会。
           </p>
           <h3>已取得：Google 官方年度搜索趋势</h3>
           <p>
@@ -237,7 +240,7 @@ export default function MethodPage() {
           </p>
         </section>
         <section id="import">
-          <h2>本地分析保留来源边界</h2>
+          <h2>导入记录只在当前浏览器中分析</h2>
           <p>
             搜索观察页提供两种独立入口：同组 Google Trends
             相对指数，以及自行取得的搜索次数。整批格式校验通过后才替换当前记录，失败时保留原数据。格式通过不代表来源真实性已经核验。
@@ -247,7 +250,7 @@ export default function MethodPage() {
             1；同一词的历史归因规则须一致。缺失日期不视为零，趋势需要前后等长区间及稳定的采样口径。
           </p>
           <p>
-            正式工具拒绝合成搜索记录。开发测试中的数值只用于验证计算，不进入热门结果。导入文件仅在浏览器会话中使用，不上传服务端；刷新后清除，离开前可导出。当前没有自动研究、定时更新或后台抓取服务。
+            导入工具只接收实际取得的搜索记录。文件不上传，刷新页面后清除；离开前可导出保存。本站不会自动抓取或定时更新这些记录。
           </p>
         </section>
       </div>

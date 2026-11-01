@@ -232,7 +232,7 @@ test("compact phone reads long scoped evidence and its condition without overlap
     .getByRole("button", { name: "作用与风险下一页", exact: true })
     .click();
   await expect(
-    risk.getByRole("heading", { name: "需要观察的风险", exact: true }),
+    risk.getByRole("heading", { name: "常见设计问题", exact: true }),
   ).toBeVisible();
   expect(
     await risk

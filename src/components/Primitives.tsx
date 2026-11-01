@@ -170,7 +170,7 @@ export function CountUp({
 }
 
 export function Assistant({
-  message = "同一机制可以在不同游戏里发挥不同作用。先看定义，再对照案例，会更容易分清它们的关系。",
+  message = "同一机制在不同游戏里可能有不同作用。先看规则，再对照具体案例。",
   compact = false,
   state = "explain",
 }: {
@@ -309,7 +309,7 @@ export function GameArtCredit({ gameId }: { gameId: string }) {
   );
 }
 export function EmptyState({
-  title = "没有找到匹配档案",
+  title = "没有找到匹配的档案",
   description = "试试更短的关键词，或清除筛选条件。",
   children,
 }: {

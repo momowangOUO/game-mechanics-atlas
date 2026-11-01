@@ -1,0 +1,114 @@
+[
+  {
+    "name": "home",
+    "route": "/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "taxonomy",
+    "route": "/taxonomy/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "extraction-page",
+    "route": "/mechanics/extraction-bank/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "game",
+    "route": "/games/balatro/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "graph",
+    "route": "/graph/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "lab",
+    "route": "/lab/?recipe=aimed-buildcraft",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "agents",
+    "route": "/for-agents/",
+    "width": 1440,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "home",
+    "route": "/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "taxonomy",
+    "route": "/taxonomy/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "extraction-page",
+    "route": "/mechanics/extraction-bank/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "game",
+    "route": "/games/balatro/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "graph",
+    "route": "/graph/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "lab",
+    "route": "/lab/?recipe=aimed-buildcraft",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "name": "agents",
+    "route": "/for-agents/",
+    "width": 390,
+    "status": 200,
+    "overflow": 0,
+    "errors": []
+  }
+]

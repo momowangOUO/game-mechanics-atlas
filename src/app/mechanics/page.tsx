@@ -1,8 +1,9 @@
+import { indexPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { MechanicsQuery } from "@/components/QueryEntrypoints";
 
-export const metadata: Metadata = { title: "机制档案" };
+export const metadata: Metadata = indexPageMetadata["/mechanics"];
 
 export default function Page() {
   return (

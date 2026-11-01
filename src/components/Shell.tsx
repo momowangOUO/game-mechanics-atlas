@@ -5,6 +5,9 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Dialog, useUI } from "./Providers";
 import { mechanics, games } from "@/lib/knowledge";
+import { publicAssetPath } from "@/lib/paths";
+import { repositoryUrl } from "./Author";
+import brandStyles from "./Brand.module.css";
 
 const routes = [
   ["/taxonomy", "分类参考", "▤"],
@@ -12,7 +15,7 @@ const routes = [
   ["/graph", "机制图谱", "⌘"],
   ["/heat", "热度观察", "⌁"],
   ["/compare", "游戏对比", "⇄"],
-  ["/lab", "混合实验室", "⚗"],
+  ["/lab", "研究提示词", "⚗"],
 ] as const;
 export function Header() {
   const pathname = usePathname();
@@ -47,6 +50,15 @@ export function Header() {
           ))}
         </nav>
         <div className="header-tools">
+          <a
+            className={`${brandStyles.githubLink} desktop-only`}
+            href={repositoryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="在 GitHub 查看项目并点星支持"
+          >
+            ☆ GitHub ↗
+          </a>
           <button
             className="icon-button desktop-only"
             onClick={() => openSearch()}
@@ -104,6 +116,17 @@ export function Header() {
           <Link href="/method" onClick={() => setMenu(false)}>
             ？　分类与热度方法
           </Link>
+          <Link href="/for-agents" onClick={() => setMenu(false)}>
+            ▧　AI / Agent 资料入口
+          </Link>
+          <a
+            href={repositoryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenu(false)}
+          >
+            ☆　GitHub 点星支持 ↗
+          </a>
           <button
             className="button primary"
             onClick={() => {
@@ -121,7 +144,7 @@ export function Header() {
         title="DISPLAY / 动效与性能"
       >
         <div className="window-body">
-          <h2 className="dialog-heading">按设备选择动态强度</h2>
+          <h2 className="dialog-heading">选择动效模式</h2>
           <p className="muted">
             系统的“减弱动态”偏好始终优先。自动模式会为手机和低性能设备减少环境动画。
           </p>
@@ -156,13 +179,27 @@ export function Header() {
 }
 export function Footer() {
   return (
-    <footer className="footer">
-      <span>GAME MECHANICS ATLAS　/　为游戏设计师整理机制与研究线索</span>
-      <div>
+    <footer className={`footer ${brandStyles.footer}`}>
+      <div className={brandStyles.footerAuthor}>
+        <img
+          src={publicAssetPath("/brand/logo-still.webp")}
+          alt="魔魔王"
+          width={100}
+          height={52}
+        />
+        <p>
+          由魔魔王架设
+          <br />© 2026 魔魔王 · 机制研究室
+        </p>
+      </div>
+      <div className={brandStyles.footerLinks}>
         <Link href="/method">分类与热度方法</Link>
-        <span> · </span>
         <Link href="/sources">来源与素材</Link>
-        <span>　© 2026</span>
+        <Link href="/copyright">版权与署名</Link>
+        <Link href="/for-agents">AI / Agent 资料入口</Link>
+        <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
+          ☆ GitHub 点星支持 ↗
+        </a>
       </div>
     </footer>
   );
@@ -174,7 +211,7 @@ export function MobileNavigation() {
     ["/taxonomy", "分类", "▤"],
     ["/games", "案例", "♧"],
     ["/heat", "热度", "⌁"],
-    ["/lab", "实验室", "⚗"],
+    ["/lab", "提示词", "⚗"],
   ];
   return (
     <nav className="mobile-nav" aria-label="底部导航">

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { DimensionIcon } from "./Art";
+import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
 import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { dimensions, games, genres, mechanics } from "@/lib/knowledge";
@@ -137,7 +138,7 @@ export function MechanicCatalog({
         ))}
       </select>
       <p className="filter-note">
-        玩法适配标签来自编辑归纳，机制仍按原有维度分类。游戏中尚无记录的机制标为“尚未确认”。
+        玩法标签方便筛选，机制仍按九个维度分类。游戏是否包含某项机制，要到案例中核对。
       </p>
     </>
   );
@@ -147,9 +148,9 @@ export function MechanicCatalog({
         <Link href="/">研究室</Link> / 机制档案
       </div>
       <PageHead
-        eyebrow="MECHANICS ARCHIVE / 固定九维"
-        title="给每条规则一个清楚的位置。"
-        description="查定义、看边界、找反例。先分清机制是什么，再研究它在不同游戏中如何起作用。"
+        eyebrow="MECHANICS ARCHIVE / 机制索引"
+        title="查机制，找设计参考。"
+        description="查看规则定义、适用情况和容易混淆的用法，再对照具体游戏研究。"
       >
         <span className="chip cyan">{mechanics.length} 条原子机制</span>
       </PageHead>
@@ -158,7 +159,7 @@ export function MechanicCatalog({
         href={dimension ? `/taxonomy?dimension=${dimension}` : "/taxonomy"}
       >
         <div>
-          <strong>先从玩法分类图鉴看起</strong>
+          <strong>按玩法问题查分类</strong>
           <p>
             9 个维度 → {taxonomyGroups.length} 个分组 → {mechanics.length}{" "}
             条机制；逐层看用途、边界与典型游戏。
@@ -227,7 +228,7 @@ export function MechanicCatalog({
                                 "0",
                               )}
                             </span>
-                            <DimensionIcon id={mechanic.dimension} />
+                            <MechanicIcon id={mechanic.id} size={64} />
                           </div>
                           <h2>{mechanic.name}</h2>
                           <p>{mechanic.definition}</p>
@@ -246,6 +247,7 @@ export function MechanicCatalog({
                             </span>
                           </div>
                         </Link>
+                        <MechanicExamples id={mechanic.id} small />
                       </Reveal>
                     );
                   })}
@@ -314,8 +316,8 @@ export function GameCatalog() {
       </div>
       <PageHead
         eyebrow="CASE STUDIES / 真实案例"
-        title="把熟悉的游戏拆开看。"
-        description="查看核心循环、机制组合与资源结构。事实注明来源，设计分析单独展示；涉及模式或版本差异时，按对应范围阅读。"
+        title="游戏案例"
+        description="查看游戏的核心循环、机制组合和资源设计。每条记录标明来源与适用模式，设计分析另作说明。"
       >
         <Link className="button" href="/compare">
           选择游戏对比 ⇄
@@ -371,9 +373,7 @@ export function GameCatalog() {
       </div>
       <p className="catalog-note">
         <span aria-live="polite">{filtered.length} 款案例</span>
-        <span>
-          类型标签方便检索。游戏是否包含某项机制，需查看对应范围的观察记录。
-        </span>
+        <span>类型标签用于检索；具体规则请查看游戏对应模式的机制记录。</span>
       </p>
       {filtered.length ? (
         <>
