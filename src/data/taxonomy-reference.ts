@@ -59,7 +59,8 @@ export const classificationLevels = [
     question: "哪条可独立判断的规则成立？",
     explanation:
       "用定义、纳入条件和排除条件识别一个具体规则。它可以出现在不同游戏类型中，不能因为游戏有某个类型标签就直接判定存在。",
-    example: "撤离兑现：满足退出条件后，才能把本次尚未结算的收益带走。",
+    example:
+      "撤离兑现：这趟取得的部分物品或奖励，需要成功撤离后才能带出并保留。",
   },
   {
     id: "instance",
@@ -314,7 +315,8 @@ const groupDrafts: GroupDraft[] = [
     id: "timed-input",
     dimensionId: "interaction",
     name: "节奏与持续输入",
-    explanation: "要求输入落在合适的时间，或维持按住和跟随状态直到条件满足。",
+    explanation:
+      "有的操作要求按准时机，有的需要持续按住按键，或让输入一直跟上目标。",
     function: "形成时机判断、持续控制与动作配合的挑战。",
     boundary:
       "连续成功计数是输入结果的奖励规则，不能用连击数代替节奏或长按本身。",

@@ -153,7 +153,7 @@ export default async function MechanicPage({
             </Link>
             <br />
             <br />
-            本条是本库的操作定义。
+            本条说明这一机制的判断条件。
             <br />
             与其他机制的关系不改变主分类。
           </div>
@@ -258,8 +258,15 @@ export default async function MechanicPage({
                     </h3>
                     <p>
                       {scopes.find((s) => s.id === observation.scopeId)?.label}
-                      <br />
-                      {observation.scopeNote}
+                      {observation.scopeNote &&
+                        observation.scopeNote !==
+                          scopes.find((s) => s.id === observation.scopeId)
+                            ?.label && (
+                          <>
+                            <br />
+                            {observation.scopeNote}
+                          </>
+                        )}
                     </p>
                     {observation.condition && (
                       <p className="gold">成立条件：{observation.condition}</p>

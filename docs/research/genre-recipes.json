@@ -757,7 +757,7 @@
       "roles": {
         "resource-gathering": "提供继续留在场景中的即时收益机会。",
         "resource-scarcity": "限制携带、投入或保障行动安全的资源。",
-        "extraction-bank": "把成功退出设为本次部分收益的兑现条件。"
+        "extraction-bank": "让玩家选择继续搜集，还是带着现有收获撤离。"
       },
       "synergies": [
         "拿到战利品后，玩家会更在意这次能否安全离开。",
