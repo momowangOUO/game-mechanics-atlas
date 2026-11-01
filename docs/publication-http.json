@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-11-01T07:29:18.881Z",
+  "base": "https://momowangouo.github.io/game-mechanics-atlas/",
+  "routes": [
+    {
+      "path": "",
+      "status": 200,
+      "title": "机制研究室 · Game Mechanics Atlas"
+    },
+    {
+      "path": "taxonomy/",
+      "status": 200,
+      "title": "玩法分类图鉴 · 机制研究室"
+    },
+    {
+      "path": "mechanics/in-run-deck-growth/",
+      "status": 200,
+      "title": "局内扩充卡组 · 机制研究室"
+    },
+    {
+      "path": "games/balatro/",
+      "status": 200,
+      "title": "Balatro · 机制研究室"
+    },
+    {
+      "path": "types/deckbuilder/",
+      "status": 200,
+      "title": "卡组构筑 · 机制研究室"
+    },
+    {
+      "path": "graph/",
+      "status": 200,
+      "title": "交互机制图谱 · 机制研究室"
+    },
+    {
+      "path": "lab/",
+      "status": 200,
+      "title": "混合实验室 · 机制研究室"
+    },
+    {
+      "path": "heat/",
+      "status": 200,
+      "title": "搜索趋势与真实来源 · 机制研究室"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/room-dusk.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/maid-welcome.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/css/bf911378afa0d682.css",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/css/2b64d50713895a76.css",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/css/c8e16d8731084669.css",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/webpack-e59cc90d61f3287b.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/794-a569b42db118921f.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/main-app-5c731778af0cdafb.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/417-8fa271ee0823c2c5.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/868-0aac0dd113498c43.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/app/layout-ae2570a55ee36baa.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/app/error-68e58539a48ae49f.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/838-3aaa4e91e50b21c0.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/258-3234001485d78593.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/app/not-found-a3963618a0dda3a1.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/839-8a15b43572b4a007.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/app/page-10690c16c46e1a3e.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/icon.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/desk-foreground.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/chapters/mechanics.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/chapters/games.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/chapters/graph.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/chapters/heat.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/chapters/lab.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/interaction.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/rules.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/temporal.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/buildcraft.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/progression.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/economy.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/information.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/participants.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/ui/variability.svg",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/games/balatro.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/games/slay-the-spire.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/games/hades.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/recipes/amplified-scoring.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/recipes/aimed-buildcraft.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/recipes/route-deck-planning.webp",
+      "status": 200
+    },
+    {
+      "url": "https://momowangouo.github.io/game-mechanics-atlas/art/recipes/retry-relationships.webp",
+      "status": 200
+    }
+  ],
+  "failures": []
+}

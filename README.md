@@ -2,11 +2,11 @@
 
 面向游戏设计师的机制知识库、真实游戏案例、组合实验室与搜索需求观察平台。本地数据驱动，无需数据库、模型 API 或账号即可运行。
 
-当前重点是逐层分类参考：9 个维度、50 个机制分组、122 条机制，以及 32 个复合类型的玩法说明和游戏用法。80 款游戏卡面使用官方代表图。默认合成热门榜已撤下，搜索观察改为注明时间与指标的 Google 官方历史快照；当前类别需求未取得时保留为空。GitHub Pages 因当前账号套餐不支持私有仓库而尚未上线。
+当前重点是逐层分类参考：9 个维度、50 个机制分组、122 条机制，以及 32 个复合类型的玩法说明和游戏用法。80 款游戏卡面使用官方代表图。默认合成热门榜已撤下，搜索观察改为注明时间与指标的 Google 官方历史快照；当前类别需求未取得时保留为空。2026-11-01 已按用户要求公开仓库，并发布 GitHub Pages 静态网站。
 
 [本次分类与数据修订](docs/taxonomy-revision/implementation.md) · [真实搜索资料与来源](docs/real-search-demand.md)
 
-[GitHub私有仓库](https://github.com/momowangOUO/game-mechanics-atlas) · [本次验收记录](docs/taxonomy-revision/verification.md)
+[在线网站](https://momowangouo.github.io/game-mechanics-atlas/) · [直接查分类](https://momowangouo.github.io/game-mechanics-atlas/taxonomy/) · [GitHub公开仓库](https://github.com/momowangOUO/game-mechanics-atlas) · [发布验收](docs/publication.md)
 
 ![首页桌面实际页面](docs/taxonomy-revision/runtime/home-desktop.png)
 
@@ -38,7 +38,7 @@ npm start
 
 ## GitHub Pages 静态版
 
-**本轮尚未上线：GitHub 实际返回当前套餐不支持此私有仓库的 Pages。源码继续保持私有；本地静态产物和发布工作流已完成。** [本轮完整验收](docs/static-expansion/verification.md)
+**已上线：** https://momowangouo.github.io/game-mechanics-atlas/ 。仓库已改为公开，原先私有仓库的 Pages 套餐限制已解除。云端构建与部署均成功，公网页面、资源及手机交互已验证。[发布记录](docs/publication.md) · [分类版验收](docs/taxonomy-revision/verification.md)
 
 网站已改为纯静态导出，部署内容位于 `out/`，无需 Node 服务或数据库。开发命令仍使用 Next；生产预览仅托管静态文件。
 
@@ -51,7 +51,7 @@ npm run preview:pages
 
 [静态化实施说明](docs/static-pages-implementation.md) · [资料独立抽审](docs/static-expansion/content-review.md) · [图像与来源清单](src/data/game-art-sources.json)
 
-源码仓库保持私有。Pages 工作流只发布 `out/`，由 `main` 推送或手动触发，没有定时研究或自动补资料任务。实际发布结果以本轮验收记录为准。
+源码仓库现为公开。Pages 工作流只发布 `out/`，由 `main` 推送或手动触发，没有定时研究或自动补资料任务。正式网址使用 HTTPS；发布结果见发布记录。
 
 ## 功能
 

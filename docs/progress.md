@@ -1,8 +1,10 @@
 # 项目进度
 
+2026-11-01 发布完成：已按用户明确要求将原仓库改为 PUBLIC，启用并部署 GitHub Pages。正式网址为 https://momowangouo.github.io/game-mechanics-atlas/ ，云端构建与部署成功，公网交互检查通过，见 [发布验收](publication.md)。以下私有仓库与套餐限制说明均为历史阶段记录。
+
 2026-10-31 最新修订：分类参考已成为主要入口，新增 50 个分组和 32 个类型阅读指引；默认合成热榜撤下，改为真实官方历史搜索资料，当前类别需求仍因 429 未取得。最终本地构建、55 项浏览器回归与全机制手机阅读检查通过，详见 [本次验收](taxonomy-revision/verification.md)。下方保留前序阶段记录。
 
-最新阶段：静态改造及资料扩充已实现并通过本地验收，实际 Pages 创建请求因私有仓库套餐限制返回 422，尚未上线。当前状态以[静态版验收](static-expansion/verification.md)为准；下面保留此前已交付阶段的记录。
+上一阶段（历史记录）：静态改造及资料扩充已实现并通过本地验收，当时 Pages 创建请求因私有仓库套餐限制返回 422，尚未上线。阶段验收见[静态版验收](static-expansion/verification.md)。
 
 网站文字已按 clear-natural-writing 重新审校，当前操作录屏已导出为 MP4 并更新播放器。完整范围、测试及播放结果见[本轮记录](copy-review/summary.md)。
 
