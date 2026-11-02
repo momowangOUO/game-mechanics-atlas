@@ -10,6 +10,7 @@ import {
 } from "@/data/play-styles";
 import { matchesCatalog } from "@/lib/catalog-search";
 import { getCoverageMatches } from "@/lib/catalog-coverage";
+import { matchesReleaseEra, releaseEras } from "@/lib/release-era";
 import { GameCard, PageHead, EmptyState } from "./Primitives";
 
 function Catalog() {
@@ -69,9 +70,7 @@ function Catalog() {
     if (genre && !game.genreIds.includes(genre)) return false;
     if (play && !game.playStyleIds?.includes(play)) return false;
     if (platform && !game.platforms?.includes(platform)) return false;
-    const year = game.originalReleaseYear ?? game.year;
-    if ((era === "classic" && year > 2010) || (era === "recent" && year < 2020))
-      return false;
+    if (!matchesReleaseEra(game, era)) return false;
     if (legacyCore && !legacyPlayAliases[legacyCore]) {
       const positive = getInstances(game.id).filter(
         (row) => row.status === "present" || row.status === "conditional",
@@ -152,7 +151,14 @@ function Catalog() {
         <Link className="button" href="/compare">
           选择游戏对比 ⇄
         </Link>
+        <Link className="button" href="/games/discovery">
+          直播与传播案例 ↗
+        </Link>
       </PageHead>
+      <p className="scope-box">
+        已收录 {games.length} 款游戏，其中 {games.filter(game => game.referenceOnly).length} 款为参考条目，已注明待补资料。
+        <Link className="cyan" href="/method#admission">查看收录标准 →</Link>
+      </p>
       <div className="game-catalog-controls">
         <label className="inline-search">
           <span aria-hidden="true">⌕</span>
@@ -235,8 +241,7 @@ function Catalog() {
             }}
           >
             <option value="">全部年代</option>
-            <option value="classic">2010 年及以前</option>
-            <option value="recent">2020 年及以后</option>
+            {releaseEras.map(era => <option key={era.id} value={era.id}>{era.label}</option>)}
           </select>
         </label>
       </div>
@@ -254,7 +259,7 @@ function Catalog() {
         </p>
       )}
       {filtered.length ? (
-        <div className="case-grid catalog-games">
+        <div className="case-grid continuous-cases catalog-games">
           {filtered.map((game) => (
             <GameCard
               key={game.id}

@@ -178,6 +178,13 @@ const definitions = [
       "通过波次、关卡或首领挑战",
     ],
   ],
+  [
+    "battle-royale", "大逃杀",
+    "多名玩家或队伍进入同一场对局，在逐步淘汰中争取成为最后的胜者。",
+    "extraction-shooter",
+    "大逃杀围绕淘汰至最后胜者；撤离射击允许玩家带着战利品提前撤离，不必消灭全场。安全区收缩和射击都不是所有大逃杀改编作的必要条件。",
+    ["进入本场比赛并判断局势", "获取优势、通过挑战并避免被淘汰", "争取存活至最后个人或队伍"],
+  ],
 ] as const;
 export const expandedGenres: CompositeGenre[] = definitions.map(
   ([id, name, definition]) => ({
@@ -194,6 +201,7 @@ export const expandedGenres: CompositeGenre[] = definitions.map(
   }),
 );
 const designQuestions: Record<string, string> = {
+  "battle-royale": "玩家被淘汰前是否有足够信息判断风险，落后的玩家又能通过哪些选择争取逆转？",
   action: "动作的输入、碰撞和反馈能否让玩家判断自己为什么成功或失误？",
   adventure: "场景中的线索能否让玩家知道下一步可以尝试什么？",
   shooter: "武器、距离与敌人动作怎样共同影响瞄准和交战决策？",

@@ -1,0 +1,5389 @@
+{
+  "asOf": "2026-11-02",
+  "purpose": "对现有全库进行受众/商业证据风险筛查，不自动删除案例。",
+  "decisionDefinitions": {
+    "retain": "有明确商业、发行或传播证据，用户明确指定，或历史经典例外；用户指定与历史例外均不自动代表商业成功。",
+    "hold": "现有证据不足以判断规模或属于待核实的 GameJam 项；不是断言一定不达门槛。"
+  },
+  "coverage": {
+    "catalogRecords": 513,
+    "uniqueIds": 513,
+    "files": {
+      "docs/research/game-evidence.json": 82,
+      "docs/research/expansion/classics.json": 85,
+      "docs/research/expansion/mobile.json": 105,
+      "docs/research/expansion/modern.json": 90,
+      "docs/research/expansion/classic-gaps.json": 20,
+      "docs/research/expansion/other-gaps.json": 21,
+      "docs/research/expansion/modern-gaps.json": 47,
+      "docs/research/expansion/final-gaps.json": 9,
+      "docs/research/expansion/popular-mobile-2026.json": 13,
+      "docs/research/expansion/stream-popular-2026.json": 14,
+      "docs/research/expansion/battle-royale-followup-2026.json": 6,
+      "docs/research/expansion/popular-modern-2026.json": 21
+    },
+    "steamCachedMatchedCases": 195,
+    "selectionNote": "扫描全部目录元数据与缓存索引；仅对风险候选和反例逐条记录，不代表所有作品均重新联网核验。",
+    "indexOnlyCases": 459,
+    "candidateRecordedCases": 54,
+    "indexNote": "index_only 表示仅列出目录身份与来源，不代表已验证商业规模，也不代表建议保留或剔除。",
+    "snapshotStage": "目录身份索引为扩充中期、暂缓22项之前的513条快照；之后另补17款并暂缓22款。当前目录也为513款，但组成不同，以 catalog-expansion.json 与运行时原始条目为准。"
+  },
+  "limitations": [
+    "Steam appdetails recommendations.total 不是销量或去重玩家数；免费游戏的购买来源筛选尤其容易使该字段远低于全量评价。",
+    "尝试 15 个 Steam appreviews 全语言接口时返回 Steam 首页 HTML，未获得 query_summary；不将其算作有效复核或声称原因。",
+    "Google Play 下载档位代表安装次数而非去重玩家、实际销量或全平台数字。",
+    "历史停服与从未正式发行不同；历史受众达到规模且曾发行的作品可保留并注明停运。",
+    "语言跟进六项已由父级移入 docs/research/archive/language-candidates-not-admitted-2026.json，不再计入当前新收录数组。"
+  ],
+  "candidates": [
+    {
+      "id": "out-of-hands",
+      "name": "万手一体 / Out Of Hands",
+      "decision": "retain",
+      "reason": "用户此前明确指定该作品应保留；发行方 2025 年公告确认正式发行。现有资料没有证实其商业规模达到或低于任何门槛，不将用户指定解释为商业成功。",
+      "evidenceType": "insufficient",
+      "urls": [
+        "https://www.gamespress.com/pl/Surreal-Card-RPG-Out-of-Hands-Now-Available-on-Steam",
+        "https://store.steampowered.com/api/appdetails?appids=1839810&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1334,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "decisionBasis": "user_directive"
+    },
+    {
+      "id": "cogmind",
+      "name": "机心 / Cogmind",
+      "decision": "hold",
+      "reason": "开发者回顾称登陆 Steam 前已有超过 4000 人购买；这是 2017 年的早期子集，不代表后续累计销量。未找到本作明确的足够规模里程碑或可靠商业榜单，暂待更多证据。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=722730&l=english&cc=us",
+        "https://www.indiedb.com/games/cogmind/news/data-and-thoughts-from-a-month-on-steam"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1584,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        },
+        {
+          "name": "Steam 上线前销量",
+          "value": 4000,
+          "unit": "份以上",
+          "dateOrPeriod": "2017 年 Steam 上线前",
+          "scope": "开发者自述的早期子集，不是此后总销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "jupiter-hell",
+      "name": "木星地狱 / Jupiter Hell",
+      "decision": "hold",
+      "reason": "本轮未找到可核验的单作商业销量、实际销量榜或持续直播成绩；Steam 推荐数仅是检索线索，不能证明受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=811320&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1808,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "golden-krone-hotel",
+      "name": "金色皇冠旅馆 / Golden Krone Hotel",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播记录；现有 Steam 推荐数不能证明受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=497800&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 318,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "rift-wizard",
+      "name": "裂隙巫师 / Rift Wizard",
+      "decision": "hold",
+      "reason": "尚未找到可独立核验的销量、商业榜或持续直播成绩；不将按评价推算的销量当作实际销量。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1271280&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1011,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "rift-wizard-2",
+      "name": "裂隙巫师2 / Rift Wizard 2",
+      "decision": "hold",
+      "reason": "尚未找到可独立核验的销量、商业榜或持续直播成绩；商店动态列表和按评价推算的销量不足以作为依据。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=2058570&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 748,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "approaching-infinity",
+      "name": "逼近无穷 / Approaching Infinity",
+      "decision": "hold",
+      "reason": "本轮未找到可核验的单作销量、商业榜或持续直播记录；Steam 推荐数不能证明实际受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=551620&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 734,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "rogue-empire",
+      "name": "游侠帝国 / Rogue Empire: Dungeon Crawler RPG",
+      "decision": "hold",
+      "reason": "现有资料尚未提供可核验的单作商业销量或持续直播成绩；开发者页面提到的 IndieDB 2018 榜单不是销量榜。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=650940&l=english&cc=us",
+        "https://www.roguempire.com/"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 357,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "army-of-ruin",
+      "name": "毁灭之军 / Army of Ruin",
+      "decision": "hold",
+      "reason": "本轮未找到可独立核验的销量、商业榜或持续直播成绩；不把由评论推算的第三方数字当作实际销量。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1918040&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 2444,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "wylde-flowers",
+      "name": "怀尔德之花 / Wylde Flowers",
+      "decision": "hold",
+      "reason": "Apple 授予 2022 年 Apple Arcade 年度游戏，说明有平台级认可；该奖项不包含玩家或销量规模，暂未找到满足本轮商业/传播要求的数据。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1896700&l=english&cc=us",
+        "https://www.apple.com/cf/newsroom/2022/11/app-store-awards-celebrate-the-best-apps-and-games-of-2022/"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 2350,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "ooblets",
+      "name": "欧布精灵 / Ooblets",
+      "decision": "hold",
+      "reason": "Steam 数据不覆盖作品的全部发行平台；本轮仍未找到可复核的单作销量、商业榜或持续直播成绩。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=593150&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1394,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "ctrl-alt-ego",
+      "name": "Ctrl Alt Ego / Ctrl Alt Ego",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数只是辅助线索，不能证明受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1571940&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 747,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "throne-of-lies",
+      "name": "谎言王座 / Throne of Lies®: Medieval Politics",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数只是辅助线索，不能证明受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=595280&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1922,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "distant-worlds-2",
+      "name": "遥远的世界2 / Distant Worlds 2",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；同时在线峰值不能代替累计玩家数。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1531540&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 2675,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "heavens-vault",
+      "name": "天堂之穹 / Heaven's Vault",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；单一平台的推荐数不能代表跨平台受众。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=774201&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1975,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "grapple-dog",
+      "name": "抓钩狗 / Grapple Dog",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；单一平台的推荐数不能代表跨平台受众。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1345860&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 719,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "despots-game",
+      "name": "暴君的游戏 / Despot’s Game",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1227280&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 2890,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "astronarch",
+      "name": "Astronarch",
+      "decision": "hold",
+      "reason": "开发者 2022 年曾称售出数千份，但该说法没有给出截至 2026 年的累计数；Steam 缓存仅提供评价线索，暂无法确认单作是否达到要求。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1234940&l=english&cc=us",
+        "https://gamemaker.io/en/blog/game-making-on-a-budget-how-i-made-astronarch"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 821,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        },
+        {
+          "name": "开发者当时描述",
+          "value": null,
+          "unit": "数千份（未提供具体数）",
+          "dateOrPeriod": "2022-04-15",
+          "scope": "开发者自述该时点销量，不可推断后续累计销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "the-last-flame",
+      "name": "将熄之焰 / The Last Flame",
+      "decision": "retain",
+      "reason": "开发者公告原文明确表示售出超过 5 万份；未用评论反推销量。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://steampeaks.com/news/4124805866320036895",
+        "https://store.steampowered.com/news/app/1830970/view/4124805866320036895"
+      ],
+      "metrics": [
+        {
+          "name": "销量",
+          "value": 50000,
+          "unit": "份以上",
+          "dateOrPeriod": "2024-03-09",
+          "scope": "开发者公告，Steam 新闻镜像"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 2758,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "hadean-tactics",
+      "name": "Hadean Tactics",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1260590&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1732,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "just-king",
+      "name": "吾王保卫战 / Just King",
+      "decision": "retain",
+      "reason": "gamescom latam 2026 开发商项目页直接写明 Just King 在 Steam 售出超过 13 万份；该数字来自展商自报，不用评价数推算。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://b2b.latam.gamescom.global/companies/3510/projects/3483/?permanent_intro_close=true",
+        "https://b2b.latam.gamescom.global/companies/3510?only_users_in_event=1",
+        "https://store.steampowered.com/api/appdetails?appids=1059980&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "Steam 销量",
+          "value": 130000,
+          "unit": "份以上",
+          "dateOrPeriod": "gamescom latam 2026 展商页",
+          "scope": "VISH GAME STUDIO 项目页自报的本作 Steam 累计销量"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1364,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "smite",
+      "name": "神之浩劫 / SMITE",
+      "decision": "retain",
+      "reason": "任天堂官方页面引用超过 3000 万玩家；不能根据 Steam 购买来源评价推断免费游戏规模。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.nintendo.com/en-gb/News/2019/November/Play-for-free-with-this-selection-of-free-to-play-games--1681536.html"
+      ],
+      "metrics": [
+        {
+          "name": "玩家",
+          "value": 30000000,
+          "unit": "人以上",
+          "dateOrPeriod": "2019-11-13",
+          "scope": "任天堂引用的 SMITE 玩家数"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1385,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "eternal-card-game",
+      "name": "永恒卡牌 / Eternal Card Game",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.direwolfdigital.Phoenix"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 190,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "faeria",
+      "name": "Faeria",
+      "decision": "retain",
+      "reason": "发行商和开发者的 2020 年新闻稿明确称 PC 版已有 100 万玩家；这是累计玩家，不能解释成销量。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.gamespress.com/zh-CN/Faeria-digital-collectible-card-and-turn-based-strategy-game-O-Abrakam",
+        "https://store.steampowered.com/api/appdetails?appids=397060&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "PC 玩家",
+          "value": 1000000,
+          "unit": "人",
+          "dateOrPeriod": "2020-11-03 新闻稿",
+          "scope": "Versus Evil 与 Abrakam 对 PC 版玩家规模的表述"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1525,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "moving-out",
+      "name": "胡闹搬家 / Moving Out",
+      "decision": "retain",
+      "reason": "发行方 Steam 公告明确超过 50 万数字版销量；本轮 Steam 样本评论并不代表全平台销量。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://store.steampowered.com/oldnews/?appgroupname=Moving+Out&appids=996770&enddate=1641024000&feed=steam_community_announcements",
+        "https://www.gameshub.com/news/news/moving-out-game-million-milestone-17927/"
+      ],
+      "metrics": [
+        {
+          "name": "数字版销量",
+          "value": 500000,
+          "unit": "份以上",
+          "dateOrPeriod": "2021 年底前",
+          "scope": "Team17 Steam 公告"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1835,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "decision": "retain",
+      "reason": "发行商 2024 年资料不同位置分别写超过 500 万与 2000 万玩家，口径存在冲突；采用更保守的 500 万下限，仍明显超过规模门槛。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.bohemia.net/pdf/Bohemia%20Interactive_brochure_08_2024.pdf"
+      ],
+      "metrics": [
+        {
+          "name": "玩家",
+          "value": 500000,
+          "unit": "人以上",
+          "dateOrPeriod": "2024-08",
+          "scope": "Bohemia 官方手册两处存在 500 万/2000 万不一致；采用较低者"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1281,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern-gaps.json"
+    },
+    {
+      "id": "the-cycle-frontier",
+      "name": "风暴奇侠 / The Cycle: Frontier",
+      "decision": "retain",
+      "reason": "发行方采访记录约 250 万玩家，属于历史大热；服务器已于 2023 年关闭，保留时应明确停运，不再说可正常游玩。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.levelinfinite.com/news/yager-on-the-cycle-frontier-season-2-the-impact-of-a-vocal-supportive-player-base/",
+        "https://store.steampowered.com/oldnews/?appids=868270&feed=steam_community_announcements"
+      ],
+      "metrics": [
+        {
+          "name": "累计玩家",
+          "value": 2500000,
+          "unit": "人",
+          "dateOrPeriod": "2022 年第二赛季前",
+          "scope": "发行方采访所述全球玩家数"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 337,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern-gaps.json"
+    },
+    {
+      "id": "lost-rift",
+      "name": "Lost Rift",
+      "decision": "hold",
+      "reason": "官方 FAQ 确认作品已发行抢先体验版本；本轮未找到可复核的单作销量、商业榜或持续直播成绩，暂待补证。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
+        "https://lostrift.com/support/faq/"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1483,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern-gaps.json"
+    },
+    {
+      "id": "desynced",
+      "name": "Desynced",
+      "decision": "hold",
+      "reason": "2024 年分析文章将本作列入模拟游戏销售分析榜，但数字来自分析机构推算，无法确认是否依赖评价量；不把估算转换成官方销量。暂待可核实的销量榜、玩家或传播资料。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
+        "https://wnhub.io/news/stores-and-publishing/item-44009"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1915,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern-gaps.json"
+    },
+    {
+      "id": "noble-fates",
+      "name": "贵族命运 / Noble Fates",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 1416,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern-gaps.json"
+    },
+    {
+      "id": "eville",
+      "name": "恶灵村 / Eville",
+      "decision": "hold",
+      "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+      "evidenceType": "review_signal",
+      "urls": [
+        "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "recommendations.total",
+          "value": 432,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/final-gaps.json"
+    },
+    {
+      "id": "apex-legends",
+      "name": "Apex Legends",
+      "decision": "retain",
+      "reason": "发行方明确公布累计独立玩家超过 1 亿；少量 Steam 购买来源评价不能代表免费跨平台受众。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.ea.com/ea-play/news/algs-championship-prize-pool"
+      ],
+      "metrics": [
+        {
+          "name": "累计独立玩家",
+          "value": 100000000,
+          "unit": "人以上",
+          "dateOrPeriod": "2021-05",
+          "scope": "EA 所述累计独立玩家"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 1587,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json"
+    },
+    {
+      "id": "the-finals",
+      "name": "THE FINALS",
+      "decision": "retain",
+      "reason": "发行方公布累计注册玩家超过 3000 万；免费作品的 Steam 购买来源过滤不是总受众。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.nexon.co.jp/en/news/detail/?id=20261005-91465e68"
+      ],
+      "metrics": [
+        {
+          "name": "注册玩家",
+          "value": 30000000,
+          "unit": "人以上",
+          "dateOrPeriod": "2026-10-05",
+          "scope": "发行方累计注册口径"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 141,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json"
+    },
+    {
+      "id": "overwatch-2",
+      "name": "守望先锋 2 / Overwatch 2",
+      "decision": "retain",
+      "reason": "媒体转述暴雪在上线前十天公布超过 2500 万玩家；不是 Steam 首发年份或评价量。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.pcgamer.com/overwatch-2-reaches-25-million-players-tripling-overwatch-1-daily-peaks/"
+      ],
+      "metrics": [
+        {
+          "name": "上线首十天玩家",
+          "value": 25000000,
+          "unit": "人以上",
+          "dateOrPeriod": "2022-10",
+          "scope": "暴雪公布、媒体转述的上线前十天玩家数"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 292,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json"
+    },
+    {
+      "id": "gloomwood",
+      "name": "幽暗森林 / Gloomwood",
+      "decision": "retain",
+      "reason": "媒体转述发行商公告，称该作当时是发行商旗下首发销售最快的作品，超过 DUSK、AMID EVIL 与 ULTRAKILL 的同期表现；原始 Steam 公告当前仅返回图片，具体销量和平台总榜名次未公布。",
+      "evidenceType": "chart",
+      "urls": [
+        "https://doope.jp/2022/09130167.html",
+        "https://store.steampowered.com/api/appdetails?appids=1150760&l=english&cc=us",
+        "https://steamcommunity.com/games/1150760/announcements/detail/3418817792727336448"
+      ],
+      "metrics": [
+        {
+          "name": "发行商内部上市速度排名",
+          "value": 1,
+          "unit": "名",
+          "dateOrPeriod": "2022-09-19",
+          "scope": "New Blood 自有发行作品首发速度比较；未公布份数"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 7591,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "book-of-hours",
+      "name": "司辰之书 / BOOK OF HOURS",
+      "decision": "retain",
+      "reason": "Linux Game Consortium 2024 年文章明确报道本作 Steam 首月销量超过 4.4 万份，另称累计超过 10 万；这是媒体报道，文章未注明原始销量数据出处，不称为官方数字。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://linuxgameconsortium.com/book-of-hours-dlc-adds-novel-content/amp/",
+        "https://store.steampowered.com/api/appdetails?appids=1028310&l=english&cc=us"
+      ],
+      "metrics": [
+        {
+          "name": "媒体报道的 Steam 首月销量",
+          "value": 44000,
+          "unit": "份以上",
+          "dateOrPeriod": "2023 年发售首月；报道发表于 2024-09-30",
+          "scope": "Linux Game Consortium 报道；文章未明确原始数据来源"
+        },
+        {
+          "name": "媒体报道的首月销量，未独立核实",
+          "value": 44000,
+          "unit": "份以上",
+          "dateOrPeriod": "2023 年 8 月首月，2024 年媒体回顾",
+          "scope": "媒体报道的 Steam 销量；原始数据出处未明确"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 4870,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；非销量或人数"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/modern.json"
+    },
+    {
+      "id": "mechabellum",
+      "name": "钢铁指挥官 / Mechabellum",
+      "decision": "retain",
+      "reason": "发行方 2.0 公告明确报告 Steam 销量超过 70 万份，已证实商业规模。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.gamespress.com/uk-UA/Mechabellum-20-Launches-September-22-with-Star-Expedition-New-Centurio"
+      ],
+      "metrics": [
+        {
+          "name": "销量",
+          "value": 700000,
+          "unit": "份以上",
+          "dateOrPeriod": "2026-09-21",
+          "scope": "发行方公布的 Steam 售出份数"
+        },
+        {
+          "name": "recommendations.total",
+          "value": 18336,
+          "unit": "Steam API 字段",
+          "dateOrPeriod": "2026-11-02 缓存",
+          "scope": "购买来源和筛选口径未确认；仅供索引，不能反推人数或销量"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/other-gaps.json"
+    },
+    {
+      "id": "card-thief",
+      "name": "Card Thief",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.tinytouchtales.cardthief"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "dawncaster",
+      "name": "破晓施法者 / Dawncaster",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details/?hl=en-US&id=games.WanderlostInteractive.Dawncaster"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "meteorfall-journeys",
+      "name": "陨石坠落：旅程 / Meteorfall: Journey",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=com.slothwerks.meteorfall"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "idle-mastermind",
+      "name": "放置大反派 / Idle Mastermind",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=com.grumpyrhinogames.idlemastermind"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "uniwar",
+      "name": "UniWar",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en_US&id=android.uniwar"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "solitairica",
+      "name": "纸牌勇者 / Solitairica",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.RighteousHammerGames.Solitairica"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "pirates-outlaws",
+      "name": "航海奇闻 / Pirates Outlaws",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en-US&id=com.piratesoutlaws.fabledgame"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 500000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "card-crawl",
+      "name": "Card Crawl",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=com.tinytouchtales.cardcrawl"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "80-days",
+      "name": "80 Days",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.inkle.eightydays"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "sorcery",
+      "name": "Sorcery!",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en-US&id=com.inkle.sorcery1"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 100000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "infinitode-2",
+      "name": "无尽塔防 2 / Infinitode 2",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=com.prineside.tdi2"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "night-of-the-full-moon",
+      "name": "月圆之夜 / Night of the Full Moon",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?hl=en-US&id=com.ztgame.yyzy"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "orna",
+      "name": "Orna：GPS RPG",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=playorna.com.orna"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "super-auto-pets",
+      "name": "超级自动宠物 / Super Auto Pets",
+      "decision": "retain",
+      "reason": "Google Play 的该作下载档位已达到可观规模；这是安装次数档位，不等同去重玩家、付费销量或全平台总数。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://play.google.com/store/apps/details?id=com.teamwood.spacewood.unity"
+      ],
+      "metrics": [
+        {
+          "name": "下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2026-11-02 页面记录",
+          "scope": "Google Play 该应用展示档位"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "buriedbornes",
+      "name": "埋葬之子 / Buriedbornes",
+      "decision": "retain",
+      "reason": "第三方档案保留原 Android 包曾显示 100 万+ 下载；新版包仅 1 万+ 的数据不能替代旧包。档案并非开发者销量报告，安装次数也不是去重玩家。",
+      "evidenceType": "milestone",
+      "urls": [
+        "https://www.appbrain.com/app/buriedbornes-hardcore-rpg/com.Nussygame.Buriedbornes",
+        "https://play.google.com/store/apps/details?hl=en-US&id=com.Nussygame.bbrpg1"
+      ],
+      "metrics": [
+        {
+          "name": "旧包历史下载档位",
+          "value": 1000000,
+          "unit": "次以上",
+          "dateOrPeriod": "2025 年下架前档案",
+          "scope": "AppBrain 保存的原包 com.Nussygame.Buriedbornes"
+        }
+      ],
+      "sourceBatch": "docs/research/expansion/mobile.json"
+    },
+    {
+      "id": "rogue-1980",
+      "name": "Rogue",
+      "decision": "retain",
+      "reason": "历史起源作品，商业/玩家数字尚未单独核实；依用户明确允许的历史经典例外保留，不以现代 Steam 评价判断。",
+      "evidenceType": "insufficient",
+      "urls": [
+        "https://en.wikipedia.org/wiki/Rogue_(video_game)?useskin=vector"
+      ],
+      "metrics": [],
+      "sourceBatch": "docs/research/expansion/classics.json"
+    },
+    {
+      "id": "nethack",
+      "name": "NetHack",
+      "decision": "retain",
+      "reason": "长期流传的经典免费作品，缺现代 Steam 评价并不能证明其受众规模；按历史经典例外保留，不虚构人数。",
+      "evidenceType": "insufficient",
+      "urls": [
+        "https://nethack.org/v366/Guidebook.html",
+        "https://en.wikipedia.org/wiki/NetHack?useskin=vector"
+      ],
+      "metrics": [],
+      "sourceBatch": "docs/research/expansion/classics.json"
+    }
+  ],
+  "archivedLanguageCandidates": {
+    "path": "docs/research/archive/language-candidates-not-admitted-2026.json",
+    "count": 6,
+    "note": "该组已由父级移出当前收录；其中两项证据是 GameJam 提交，是否另有独立正式发行尚未核实。"
+  },
+  "catalogIndex": [
+    {
+      "id": "balatro",
+      "name": "Balatro",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2379780"
+      ]
+    },
+    {
+      "id": "peglin",
+      "name": "Peglin",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1296610"
+      ]
+    },
+    {
+      "id": "slay-the-spire",
+      "name": "Slay the Spire",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "646570"
+      ]
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1145360"
+      ]
+    },
+    {
+      "id": "cult-of-the-lamb",
+      "name": "Cult of the Lamb",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1313140"
+      ]
+    },
+    {
+      "id": "backpack-battles",
+      "name": "Backpack Battles",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2427700"
+      ]
+    },
+    {
+      "id": "loop-hero",
+      "name": "Loop Hero",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1282730"
+      ]
+    },
+    {
+      "id": "vampire-survivors",
+      "name": "Vampire Survivors",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1794680"
+      ]
+    },
+    {
+      "id": "risk-of-rain-2",
+      "name": "Risk of Rain 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "632360"
+      ]
+    },
+    {
+      "id": "inscryption",
+      "name": "Inscryption",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1092790"
+      ]
+    },
+    {
+      "id": "stardew-valley",
+      "name": "Stardew Valley",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "413150"
+      ]
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tetris",
+      "name": "Tetris",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cookie-clicker",
+      "name": "Cookie Clicker",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1454400"
+      ]
+    },
+    {
+      "id": "dead-cells",
+      "name": "Dead Cells",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "588650"
+      ]
+    },
+    {
+      "id": "escape-from-tarkov",
+      "name": "Escape from Tarkov",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3932890"
+      ]
+    },
+    {
+      "id": "game-of-dice",
+      "name": "Game of Dice",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "shape-of-dreams",
+      "name": "梦之形 / Shape of Dreams",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2444750"
+      ]
+    },
+    {
+      "id": "hollow-knight",
+      "name": "空洞骑士 / Hollow Knight",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "367520"
+      ]
+    },
+    {
+      "id": "celeste",
+      "name": "蔚蓝 / Celeste",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "504230"
+      ]
+    },
+    {
+      "id": "sekiro",
+      "name": "只狼 / Sekiro",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "814380"
+      ]
+    },
+    {
+      "id": "dark-souls-3",
+      "name": "黑暗之魂 III / Dark Souls III",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "374320"
+      ]
+    },
+    {
+      "id": "monster-hunter-world",
+      "name": "怪物猎人：世界 / Monster Hunter: World",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "582010"
+      ]
+    },
+    {
+      "id": "genshin-impact",
+      "name": "原神 / Genshin Impact",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "doom-eternal",
+      "name": "DOOM Eternal",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "782330"
+      ]
+    },
+    {
+      "id": "world-of-warcraft",
+      "name": "魔兽世界 / World of Warcraft",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "into-the-breach",
+      "name": "陷阵之志 / Into the Breach",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "590380"
+      ]
+    },
+    {
+      "id": "ftl",
+      "name": "超越光速 / FTL",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "212680"
+      ]
+    },
+    {
+      "id": "xcom-2",
+      "name": "幽浮 2 / XCOM 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "268500"
+      ]
+    },
+    {
+      "id": "civilization-6",
+      "name": "文明 VI / Civilization VI",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "289070"
+      ]
+    },
+    {
+      "id": "starcraft-2",
+      "name": "星际争霸 II / StarCraft II",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "age-of-empires-2",
+      "name": "帝国时代 II：决定版 / Age of Empires II: Definitive Edition",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "813780"
+      ]
+    },
+    {
+      "id": "against-the-storm",
+      "name": "风暴之城 / Against the Storm",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1336490"
+      ]
+    },
+    {
+      "id": "frostpunk",
+      "name": "冰汽时代 / Frostpunk",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "323190"
+      ]
+    },
+    {
+      "id": "factorio",
+      "name": "异星工厂 / Factorio",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "427520"
+      ]
+    },
+    {
+      "id": "satisfactory",
+      "name": "幸福工厂 / Satisfactory",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "526870"
+      ]
+    },
+    {
+      "id": "dyson-sphere-program",
+      "name": "戴森球计划 / Dyson Sphere Program",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1366540"
+      ]
+    },
+    {
+      "id": "oxygen-not-included",
+      "name": "缺氧 / Oxygen Not Included",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "457140"
+      ]
+    },
+    {
+      "id": "rimworld",
+      "name": "环世界 / RimWorld",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "294100"
+      ]
+    },
+    {
+      "id": "dwarf-fortress",
+      "name": "矮人要塞 / Dwarf Fortress",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "975370"
+      ]
+    },
+    {
+      "id": "cities-skylines",
+      "name": "城市：天际线 / Cities: Skylines",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "255710"
+      ]
+    },
+    {
+      "id": "potion-craft",
+      "name": "药剂工艺 / Potion Craft",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1210320"
+      ]
+    },
+    {
+      "id": "baba-is-you",
+      "name": "Baba Is You",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "736260"
+      ]
+    },
+    {
+      "id": "portal-2",
+      "name": "传送门 2 / Portal 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "620"
+      ]
+    },
+    {
+      "id": "outer-wilds",
+      "name": "星际拓荒 / Outer Wilds",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "753640"
+      ]
+    },
+    {
+      "id": "return-of-the-obra-dinn",
+      "name": "奥伯拉丁的回归 / Return of the Obra Dinn",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "653530"
+      ]
+    },
+    {
+      "id": "the-witness",
+      "name": "见证者 / The Witness",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "210970"
+      ]
+    },
+    {
+      "id": "chants-of-sennaar",
+      "name": "巴别塔圣歌 / Chants of Sennaar",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1931770"
+      ]
+    },
+    {
+      "id": "papers-please",
+      "name": "请出示文件 / Papers, Please",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "239030"
+      ]
+    },
+    {
+      "id": "dishonored-2",
+      "name": "耻辱 2 / Dishonored 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "403640"
+      ]
+    },
+    {
+      "id": "dominion",
+      "name": "领土 / Dominion",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1131620"
+      ]
+    },
+    {
+      "id": "hearthstone",
+      "name": "炉石传说 / Hearthstone",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "marvel-snap",
+      "name": "漫威终极逆转 / MARVEL SNAP",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1997040"
+      ]
+    },
+    {
+      "id": "teamfight-tactics",
+      "name": "云顶之弈 / Teamfight Tactics",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "luck-be-a-landlord",
+      "name": "幸运房东 / Luck be a Landlord",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1404850"
+      ]
+    },
+    {
+      "id": "monster-train",
+      "name": "怪物火车 / Monster Train",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1102190"
+      ]
+    },
+    {
+      "id": "league-of-legends",
+      "name": "英雄联盟 / League of Legends",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dota-2",
+      "name": "Dota 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "570"
+      ]
+    },
+    {
+      "id": "counter-strike-2",
+      "name": "Counter-Strike 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "730"
+      ]
+    },
+    {
+      "id": "valorant",
+      "name": "无畏契约 / VALORANT",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "rocket-league",
+      "name": "火箭联盟 / Rocket League",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "splatoon-3",
+      "name": "斯普拉遁 3 / Splatoon 3",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "deep-rock-galactic",
+      "name": "深岩银河 / Deep Rock Galactic",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "548430"
+      ]
+    },
+    {
+      "id": "overcooked-2",
+      "name": "胡闹厨房 2 / Overcooked! 2",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "728880"
+      ]
+    },
+    {
+      "id": "dont-starve-together",
+      "name": "饥荒联机版 / Don't Starve Together",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "322330"
+      ]
+    },
+    {
+      "id": "subnautica",
+      "name": "深海迷航 / Subnautica",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "264710"
+      ]
+    },
+    {
+      "id": "valheim",
+      "name": "英灵神殿 / Valheim",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "892970"
+      ]
+    },
+    {
+      "id": "project-zomboid",
+      "name": "僵尸毁灭工程 / Project Zomboid",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "108600"
+      ]
+    },
+    {
+      "id": "lethal-company",
+      "name": "致命公司 / Lethal Company",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1966720"
+      ]
+    },
+    {
+      "id": "hunt-showdown-1896",
+      "name": "猎杀：对决 1896 / Hunt: Showdown 1896",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "594650"
+      ]
+    },
+    {
+      "id": "animal-crossing-new-horizons",
+      "name": "集合啦！动物森友会 / Animal Crossing: New Horizons",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "among-us",
+      "name": "Among Us",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "945360"
+      ]
+    },
+    {
+      "id": "osu",
+      "name": "osu!",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "beat-saber",
+      "name": "节奏光剑 / Beat Saber",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "620980"
+      ]
+    },
+    {
+      "id": "mario-kart-8-deluxe",
+      "name": "马力欧卡丁车 8 豪华版 / Mario Kart 8 Deluxe",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "path-of-exile",
+      "name": "流放之路 / Path of Exile",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "238960"
+      ]
+    },
+    {
+      "id": "disco-elysium",
+      "name": "极乐迪斯科 / Disco Elysium",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "632470"
+      ]
+    },
+    {
+      "id": "binding-of-isaac-rebirth",
+      "name": "以撒的结合：重生 / The Binding of Isaac: Rebirth",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "250900"
+      ]
+    },
+    {
+      "id": "noita",
+      "name": "Noita",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "881100"
+      ]
+    },
+    {
+      "id": "caves-of-qud",
+      "name": "卡德洞窟 / Caves of Qud",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "333640"
+      ]
+    },
+    {
+      "id": "phantom-blade-zero",
+      "name": "影之刃零",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "4115450"
+      ]
+    },
+    {
+      "id": "monster-hunter-outlanders",
+      "name": "魔物猎人旅人",
+      "sourceBatch": "docs/research/game-evidence.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "azure-dreams",
+      "name": "Azure Dreams",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "civilization-iv",
+      "name": "文明 IV / Civilization IV",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ancient-domains-of-mystery",
+      "name": "Ancient Domains of Mystery",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "total-annihilation",
+      "name": "横扫千军 / Total Annihilation",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "the-settlers-ii",
+      "name": "工人物语 II / The Settlers II",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "anno-1602",
+      "name": "纪元 1602 / Anno 1602",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pharaoh-1999",
+      "name": "法老王 / Pharaoh",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "starcraft-1998",
+      "name": "星际争霸 / StarCraft",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "command-and-conquer-red-alert",
+      "name": "命令与征服：红色警戒 / Command & Conquer: Red Alert",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "chrono-trigger",
+      "name": "超时空之轮 / Chrono Trigger",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "halo-combat-evolved",
+      "name": "光环：战斗进化 / Halo: Combat Evolved",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tony-hawks-pro-skater-2",
+      "name": "Tony Hawk’s Pro Skater 2",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "contra-1987",
+      "name": "魂斗罗 / Contra",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "kirbys-dream-land",
+      "name": "星之卡比 / Kirby’s Dream Land",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "bioshock",
+      "name": "生化奇兵 / BioShock",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "baldurs-gate-1998",
+      "name": "博德之门 / Baldur’s Gate",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "prince-of-persia-1989",
+      "name": "波斯王子 / Prince of Persia",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "master-of-orion-ii",
+      "name": "猎户座之王 II / Master of Orion II: Battle at Antares",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "quake-1996",
+      "name": "雷神之锤 / Quake",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "spelunky-classic",
+      "name": "洞穴探险 / Spelunky",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "transport-tycoon",
+      "name": "运输大亨 / Transport Tycoon",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "need-for-speed-iii-hot-pursuit",
+      "name": "极品飞车 III：热力追踪 / Need for Speed III: Hot Pursuit",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "nethack",
+      "name": "NetHack",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "rogue-1980",
+      "name": "Rogue",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "moria-1983",
+      "name": "The Dungeons of Moria",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "harvest-moon-back-to-nature",
+      "name": "牧场物语：回归自然 / Harvest Moon: Back to Nature",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "super-mario-bros-1985",
+      "name": "超级马力欧兄弟 / Super Mario Bros.",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sonic-the-hedgehog-1991",
+      "name": "刺猬索尼克 / Sonic the Hedgehog",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "super-metroid",
+      "name": "超级密特罗德 / Super Metroid",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "doom-1993",
+      "name": "毁灭战士 / Doom",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "descent-1995",
+      "name": "Descent",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "half-life-1998",
+      "name": "半条命 / Half-Life",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pokemon-red-blue",
+      "name": "宝可梦 红／绿／蓝 / Pokémon Red and Blue",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "final-fantasy-vi",
+      "name": "最终幻想 VI / Final Fantasy VI",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "earthbound",
+      "name": "地球冒险 2 / EarthBound",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "persona-3-2006",
+      "name": "女神异闻录 3 / Persona 3",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "warcraft-iii-reign-of-chaos",
+      "name": "魔兽争霸 III：混乱之治 / Warcraft III: Reign of Chaos",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "homeworld-1999",
+      "name": "家园 / Homeworld",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "theme-hospital",
+      "name": "主题医院 / Theme Hospital",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dungeon-keeper-1997",
+      "name": "地下城守护者 / Dungeon Keeper",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "deus-ex-2000",
+      "name": "杀出重围 / Deus Ex",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "thief-the-dark-project",
+      "name": "神偷：暗黑计划 / Thief: The Dark Project",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "system-shock-2",
+      "name": "网络奇兵 2 / System Shock 2",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "street-fighter-ii",
+      "name": "街头霸王 II / Street Fighter II: The World Warrior",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "f-zero-1990",
+      "name": "F-Zero",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "shiren-the-wanderer-1995",
+      "name": "风来的西林 / Mystery Dungeon: Shiren the Wanderer",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "fallout-1997",
+      "name": "辐射 / Fallout",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "planescape-torment",
+      "name": "异域镇魂曲 / Planescape: Torment",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dungeon-crawl-stone-soup",
+      "name": "Dungeon Crawl Stone Soup",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "castlevania-symphony-of-the-night",
+      "name": "恶魔城：月下夜想曲 / Castlevania: Symphony of the Night",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "guilty-gear-x2",
+      "name": "罪恶装备 XX / Guilty Gear X2",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "nba-jam-1993",
+      "name": "NBA Jam",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ssx-tricky",
+      "name": "SSX Tricky",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "angband",
+      "name": "Angband",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "heroes-of-might-and-magic-iii",
+      "name": "英雄无敌 III / Heroes of Might and Magic III",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "rollercoaster-tycoon-1999",
+      "name": "过山车大亨 / RollerCoaster Tycoon",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sensible-soccer-1992",
+      "name": "Sensible Soccer: European Champions",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "phoenix-wright-ace-attorney",
+      "name": "逆转裁判 / Phoenix Wright: Ace Attorney",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ghost-trick-phantom-detective",
+      "name": "幽灵诡计 / Ghost Trick: Phantom Detective",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "professor-layton-curious-village",
+      "name": "雷顿教授与不可思议的小镇 / Professor Layton and the Curious Village",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dragon-quest-v",
+      "name": "勇者斗恶龙 V：天空的新娘 / Dragon Quest V",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "arx-fatalis",
+      "name": "地城英雄志 / Arx Fatalis",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "metal-slug-1996",
+      "name": "合金弹头 / Metal Slug",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ikaruga",
+      "name": "斑鸠 / Ikaruga",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "unreal-tournament-1999",
+      "name": "虚幻竞技场 / Unreal Tournament",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "simcity-2000",
+      "name": "模拟城市 2000 / SimCity 2000",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "the-sims-2000",
+      "name": "模拟人生 / The Sims",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tekken-3",
+      "name": "铁拳 3 / Tekken 3",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "virtua-fighter-2",
+      "name": "VR 战士 2 / Virtua Fighter 2",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "soulcalibur-1998",
+      "name": "Soulcalibur",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "super-smash-bros-melee",
+      "name": "Super Smash Bros. Melee",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "donkey-kong-country",
+      "name": "超级大金刚 / Donkey Kong Country",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "drl-doom-roguelike",
+      "name": "DRL / DoomRL",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "mega-man-2",
+      "name": "洛克人 2 / Mega Man 2",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "braid-2008",
+      "name": "时空幻境 / Braid",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "gran-turismo-1997",
+      "name": "GT 赛车 / Gran Turismo",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "trackmania-2003",
+      "name": "赛道狂飙 / TrackMania",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "wii-sports",
+      "name": "Wii Sports",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cave-story",
+      "name": "洞窟物语 / Cave Story",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "portal-2007",
+      "name": "传送门 / Portal",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "diablo-ii-2000",
+      "name": "暗黑破坏神 II / Diablo II",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "x-com-ufo-defense",
+      "name": "幽浮：未知敌人 / X-COM: UFO Defense",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sid-meiers-alpha-centauri",
+      "name": "半人马座阿尔法星 / Sid Meier’s Alpha Centauri",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "zelda-a-link-to-the-past",
+      "name": "塞尔达传说：众神的三角力量 / The Legend of Zelda: A Link to the Past",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "brogue-2009",
+      "name": "Brogue",
+      "sourceBatch": "docs/research/expansion/classics.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "clash-of-clans",
+      "name": "部落冲突 / Clash of Clans",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "hay-day",
+      "name": "卡通农场 / Hay Day",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "rise-of-kingdoms",
+      "name": "万国觉醒 / Rise of Kingdoms",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "lords-mobile",
+      "name": "王国纪元 / Lords Mobile",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "the-battle-of-polytopia",
+      "name": "多边形文明 / The Battle of Polytopia",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "874390"
+      ]
+    },
+    {
+      "id": "farmville-3",
+      "name": "梦幻农场 3 / FarmVille 3",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idle-apocalypse",
+      "name": "末日放置 / Idle Apocalypse",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "summoners-war",
+      "name": "魔灵召唤：天空之役 / Summoners War: Sky Arena",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "clash-royale",
+      "name": "皇室战争 / Clash Royale",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "brawl-stars",
+      "name": "荒野乱斗 / Brawl Stars",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "arknights",
+      "name": "明日方舟 / Arknights",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "blue-archive",
+      "name": "蔚蓝档案 / Blue Archive",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cookie-run-kingdom",
+      "name": "冲呀！饼干人：王国 / Cookie Run: Kingdom",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "guardian-tales",
+      "name": "坎公骑冠剑 / Guardian Tales",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "fate-grand-order",
+      "name": "命运-冠位指定 / Fate/Grand Order",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "archero",
+      "name": "弓箭传说 / Archero",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cards-universe-everything",
+      "name": "万物卡牌 / Cards, the Universe and Everything",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "bloons-td-6",
+      "name": "气球塔防 6 / Bloons TD 6",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "buriedbornes",
+      "name": "埋葬之子 / Buriedbornes",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pokemon-unite",
+      "name": "宝可梦大集结 / Pokémon UNITE",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "family-island",
+      "name": "家庭岛 / Family Island",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "the-tower-idle-tower-defense",
+      "name": "The Tower：放置塔防 / The Tower - Idle Tower Defense",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "boom-beach",
+      "name": "海岛奇兵 / Boom Beach",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pirates-outlaws",
+      "name": "航海奇闻 / Pirates Outlaws",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1046300"
+      ]
+    },
+    {
+      "id": "kingdom-rush",
+      "name": "王国保卫战 / Kingdom Rush",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "epic-seven",
+      "name": "第七史诗 / Epic Seven",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "afk-arena",
+      "name": "剑与远征 / AFK Arena",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "uniwar",
+      "name": "UniWar",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "meteorfall-journeys",
+      "name": "陨石坠落：旅程 / Meteorfall: Journey",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "infinitode-2",
+      "name": "无尽塔防 2 / Infinitode 2",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tap-titans-2",
+      "name": "点杀泰坦 2 / Tap Titans 2",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pokemon-go",
+      "name": "宝可梦 GO / Pokémon Go",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sky-children-of-the-light",
+      "name": "光·遇 / Sky: Children of the Light",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "mobile-legends-bang-bang",
+      "name": "无尽对决 / Mobile Legends: Bang Bang",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "monster-hunter-now",
+      "name": "Monster Hunter Now",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "candy-crush-saga",
+      "name": "糖果传奇 / Candy Crush Saga",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "royal-match",
+      "name": "皇家消消乐 / Royal Match",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cytus-ii",
+      "name": "Cytus II",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "yu-gi-oh-duel-links",
+      "name": "游戏王：决斗链接 / Yu-Gi-Oh! Duel Links",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "card-crawl",
+      "name": "Card Crawl",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "card-thief",
+      "name": "Card Thief",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "the-battle-cats",
+      "name": "猫咪大战争 / The Battle Cats",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "egg-inc",
+      "name": "鸡蛋公司 / Egg, Inc.",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idle-miner-tycoon",
+      "name": "放置矿工大亨 / Idle Miner Tycoon",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idle-slayer",
+      "name": "Idle Slayer",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "80-days",
+      "name": "80 Days",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sorcery",
+      "name": "Sorcery!",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "reigns",
+      "name": "王权 / Reigns",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "plants-vs-zombies-2",
+      "name": "植物大战僵尸 2 / Plants vs. Zombies 2",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "iron-marines",
+      "name": "钢铁战队 / Iron Marines",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "stormbound",
+      "name": "风暴对决 / Stormbound",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "path-to-nowhere",
+      "name": "无期迷途 / Path to Nowhere",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pokemon-tcg-pocket",
+      "name": "宝可梦集换式卡牌游戏 Pocket / Pokémon TCG Pocket",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "last-day-on-earth",
+      "name": "地球末日：生存 / Last Day on Earth: Survival",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "state-of-survival",
+      "name": "生存之州 / State of Survival",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "last-war-survival",
+      "name": "最后的战争：生存 / Last War: Survival",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "diablo-immortal",
+      "name": "暗黑破坏神：不朽 / Diablo Immortal",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "legends-of-idleon",
+      "name": "放置传奇 / Legends of IdleOn",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pocket-city",
+      "name": "口袋城市 / Pocket City",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dream-house-days",
+      "name": "住宅梦物语 / Dream House Days",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "township",
+      "name": "梦想城镇 / Township",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idle-supermarket-tycoon",
+      "name": "放置超市大亨 / Idle Supermarket Tycoon",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "subway-surfers",
+      "name": "地铁跑酷 / Subway Surfers",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "orna",
+      "name": "Orna：GPS RPG",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ingress",
+      "name": "Ingress",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "night-of-the-full-moon",
+      "name": "月圆之夜 / Night of the Full Moon",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dawncaster",
+      "name": "破晓施法者 / Dawncaster",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idle-mastermind",
+      "name": "放置大反派 / Idle Mastermind",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "cats-and-soup",
+      "name": "猫和汤 / Cats & Soup",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "asphalt-9-legends",
+      "name": "狂野飙车 9：竞速传奇 / Asphalt 9: Legends",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "legends-of-runeterra",
+      "name": "符文之地传说 / Legends of Runeterra",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "solitairica",
+      "name": "纸牌勇者 / Solitairica",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "463980"
+      ]
+    },
+    {
+      "id": "wuthering-waves",
+      "name": "鸣潮 / Wuthering Waves",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "onmyoji-arena",
+      "name": "决战！平安京 / Onmyoji Arena",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "runescape",
+      "name": "RuneScape",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "honor-of-kings",
+      "name": "王者荣耀 / Honor of Kings",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tsuki-odyssey",
+      "name": "月兔奥德赛 / Tsuki’s Odyssey",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "motorsport-manager-mobile-3",
+      "name": "赛车经理 3 / Motorsport Manager Mobile 3",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "league-of-legends-wild-rift",
+      "name": "英雄联盟手游 / League of Legends: Wild Rift",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "resortopia",
+      "name": "乌冬的旅店 / Resortopia",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "homescapes",
+      "name": "梦幻家园 / Homescapes",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "project-sekai",
+      "name": "世界计划 缤纷舞台！ feat. 初音未来 / Project SEKAI: Colorful Stage!",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "arcaea",
+      "name": "Arcaea",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "puzzle-and-dragons",
+      "name": "智龙迷城 / Puzzle & Dragons",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "bang-dream-girls-band-party",
+      "name": "BanG Dream! 少女乐团派对",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "d4dj-groovy-mix",
+      "name": "D4DJ Groovy Mix",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "empires-and-puzzles",
+      "name": "帝国与谜题 / Empires & Puzzles",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "marvel-puzzle-quest",
+      "name": "漫威益智之谜 / Marvel Puzzle Quest",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "idolmaster-cinderella-girls-starlight-stage",
+      "name": "偶像大师 灰姑娘女孩 星光舞台",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ensemble-stars-music",
+      "name": "偶像梦幻祭！！Music / Ensemble Stars!! Music",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "harry-potter-puzzles-and-spells",
+      "name": "哈利·波特：拼图与魔法 / Harry Potter: Puzzles & Spells",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "lanota",
+      "name": "Lanota",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "puzzles-and-survival",
+      "name": "末日喧嚣 / Puzzles & Survival",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "puzzle-combat",
+      "name": "Puzzle Combat",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "voez",
+      "name": "兰空 VOEZ",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "superstar-smtown",
+      "name": "SuperStar SMTOWN",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "gems-of-war",
+      "name": "战争宝石 / Gems of War",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "329110"
+      ]
+    },
+    {
+      "id": "magic-puzzle-quest",
+      "name": "万智牌：解谜任务 / Magic: Puzzle Quest",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "puzzle-quest-3",
+      "name": "Puzzle Quest 3",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "call-of-antia",
+      "name": "安提亚的呼唤 / Call of Antia",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "auto-chess-mobile",
+      "name": "多多自走棋 / Auto Chess",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "super-auto-pets",
+      "name": "超级自动宠物 / Super Auto Pets",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "vainglory",
+      "name": "虚荣 / Vainglory",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "ulala-idle-adventure",
+      "name": "不休的乌拉拉 / Ulala: Idle Adventure",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "almost-a-hero",
+      "name": "差不多英雄 / Almost a Hero",
+      "sourceBatch": "docs/research/expansion/mobile.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sultans-game",
+      "name": "苏丹的游戏 / Sultan's Game",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3117820"
+      ]
+    },
+    {
+      "id": "world-of-horror",
+      "name": "恐怖的世界 / WORLD OF HORROR",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "913740"
+      ]
+    },
+    {
+      "id": "lobotomy-corporation",
+      "name": "脑叶公司 / Lobotomy Corporation | Monster Management Simulation",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "568220"
+      ]
+    },
+    {
+      "id": "out-of-hands",
+      "name": "万手一体 / Out Of Hands",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1839810"
+      ]
+    },
+    {
+      "id": "miside",
+      "name": "米塔 / MiSide",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2527500"
+      ]
+    },
+    {
+      "id": "no-im-not-a-human",
+      "name": "不，我不是人类 / No, I'm not a Human",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3180070"
+      ]
+    },
+    {
+      "id": "thats-not-my-neighbor",
+      "name": "这不是我的邻居 / That's not my Neighbor",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3431040"
+      ]
+    },
+    {
+      "id": "cogmind",
+      "name": "机心 / Cogmind",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "722730"
+      ]
+    },
+    {
+      "id": "jupiter-hell",
+      "name": "木星地狱 / Jupiter Hell",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "811320"
+      ]
+    },
+    {
+      "id": "golden-krone-hotel",
+      "name": "金色皇冠旅馆 / Golden Krone Hotel",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "497800"
+      ]
+    },
+    {
+      "id": "rift-wizard",
+      "name": "裂隙巫师 / Rift Wizard",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1271280"
+      ]
+    },
+    {
+      "id": "rift-wizard-2",
+      "name": "裂隙巫师2 / Rift Wizard 2",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "2058570"
+      ]
+    },
+    {
+      "id": "approaching-infinity",
+      "name": "逼近无穷 / Approaching Infinity",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "551620"
+      ]
+    },
+    {
+      "id": "stoneshard",
+      "name": "石质碎片 / Stoneshard",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "625960"
+      ]
+    },
+    {
+      "id": "dungeons-of-dredmor",
+      "name": "德雷德莫地牢 / Dungeons of Dredmor",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "98800"
+      ]
+    },
+    {
+      "id": "rogue-empire",
+      "name": "游侠帝国 / Rogue Empire: Dungeon Crawler RPG",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "650940"
+      ]
+    },
+    {
+      "id": "brotato",
+      "name": "土豆兄弟 / Brotato",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1942280"
+      ]
+    },
+    {
+      "id": "20-minutes-till-dawn",
+      "name": "黎明前20分钟 / 20 Minutes Till Dawn",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1966900"
+      ]
+    },
+    {
+      "id": "halls-of-torment",
+      "name": "苦痛殿堂 / Halls of Torment",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2218750"
+      ]
+    },
+    {
+      "id": "soulstone-survivors",
+      "name": "灵魂石幸存者 / Soulstone Survivors",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2066020"
+      ]
+    },
+    {
+      "id": "death-must-die",
+      "name": "死亡必须死 / Death Must Die",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2334730"
+      ]
+    },
+    {
+      "id": "boneraiser-minions",
+      "name": "死灵仆从 / Boneraiser Minions",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1944570"
+      ]
+    },
+    {
+      "id": "army-of-ruin",
+      "name": "毁灭之军 / Army of Ruin",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1918040"
+      ]
+    },
+    {
+      "id": "nordic-ashes",
+      "name": "北欧之烬 / Nordic Ashes: Survivors of Ragnarok",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2068280"
+      ]
+    },
+    {
+      "id": "yet-another-zombie-survivors",
+      "name": "又一个僵尸幸存者 / Yet Another Zombie Survivors",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2163330"
+      ]
+    },
+    {
+      "id": "deep-rock-galactic-survivor",
+      "name": "深岩银河：幸存者 / Deep Rock Galactic: Survivor",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2321470"
+      ]
+    },
+    {
+      "id": "sun-haven",
+      "name": "太阳港 / Sun Haven",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1432860"
+      ]
+    },
+    {
+      "id": "roots-of-pacha",
+      "name": "帕夏时代 / Roots of Pacha",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1245560"
+      ]
+    },
+    {
+      "id": "coral-island",
+      "name": "珊瑚岛 / Coral Island",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1158160"
+      ]
+    },
+    {
+      "id": "fields-of-mistria",
+      "name": "米斯特里亚的田野 / Fields of Mistria",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2142790"
+      ]
+    },
+    {
+      "id": "my-time-at-portia",
+      "name": "波西亚时光 / My Time at Portia",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "666140"
+      ]
+    },
+    {
+      "id": "my-time-at-sandrock",
+      "name": "沙石镇时光 / My Time at Sandrock",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1084600"
+      ]
+    },
+    {
+      "id": "graveyard-keeper",
+      "name": "守墓人 / Graveyard Keeper",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "599140"
+      ]
+    },
+    {
+      "id": "wylde-flowers",
+      "name": "怀尔德之花 / Wylde Flowers",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1896700"
+      ]
+    },
+    {
+      "id": "ooblets",
+      "name": "欧布精灵 / Ooblets",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "593150"
+      ]
+    },
+    {
+      "id": "littlewood",
+      "name": "小木镇 / Littlewood",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "894940"
+      ]
+    },
+    {
+      "id": "prey-2017",
+      "name": "掠食 / Prey",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "480490"
+      ]
+    },
+    {
+      "id": "dishonored",
+      "name": "耻辱 / Dishonored",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "205100"
+      ]
+    },
+    {
+      "id": "deus-ex-human-revolution",
+      "name": "杀出重围：人类革命 / Deus Ex: Human Revolution - Director's Cut",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "238010"
+      ]
+    },
+    {
+      "id": "deus-ex-mankind-divided",
+      "name": "杀出重围：人类分裂 / Deus Ex: Mankind Divided",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "337000"
+      ]
+    },
+    {
+      "id": "gloomwood",
+      "name": "幽暗森林 / Gloomwood",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1150760"
+      ]
+    },
+    {
+      "id": "streets-of-rogue",
+      "name": "地痞街区 / Streets of Rogue",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "512900"
+      ]
+    },
+    {
+      "id": "ctrl-alt-ego",
+      "name": "Ctrl Alt Ego / Ctrl Alt Ego",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1571940"
+      ]
+    },
+    {
+      "id": "shadows-of-doubt",
+      "name": "Shadows of Doubt",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "986130"
+      ]
+    },
+    {
+      "id": "weird-west",
+      "name": "诡野西部 / Weird West: Definitive Edition",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1097350"
+      ]
+    },
+    {
+      "id": "cruelty-squad",
+      "name": "残酷小队 / Cruelty Squad",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1388770"
+      ]
+    },
+    {
+      "id": "town-of-salem",
+      "name": "塞勒姆镇 / Town of Salem",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "334230"
+      ]
+    },
+    {
+      "id": "town-of-salem-2",
+      "name": "塞勒姆镇2 / Town of Salem 2",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2140510"
+      ]
+    },
+    {
+      "id": "throne-of-lies",
+      "name": "谎言王座 / Throne of Lies®: Medieval Politics",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "595280"
+      ]
+    },
+    {
+      "id": "goose-goose-duck",
+      "name": "鹅鸭杀 / Goose Goose Duck",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1568590"
+      ]
+    },
+    {
+      "id": "first-class-trouble",
+      "name": "头等舱危机 / First Class Trouble",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "953880"
+      ]
+    },
+    {
+      "id": "project-winter",
+      "name": "冬日计划 / Project Winter",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "774861"
+      ]
+    },
+    {
+      "id": "endless-legend",
+      "name": "无尽传奇 / ENDLESS Legend™",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "289130"
+      ]
+    },
+    {
+      "id": "endless-space-2",
+      "name": "无尽空间2 / ENDLESS Space™ 2",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "392110"
+      ]
+    },
+    {
+      "id": "stellaris",
+      "name": "群星 / Stellaris",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "281990"
+      ]
+    },
+    {
+      "id": "age-of-wonders-planetfall",
+      "name": "奇迹时代：星陨 / Age of Wonders: Planetfall",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "718850"
+      ]
+    },
+    {
+      "id": "old-world",
+      "name": "旧世界 / Old World",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "597180"
+      ]
+    },
+    {
+      "id": "humankind",
+      "name": "人类 / HUMANKIND™",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1124300"
+      ]
+    },
+    {
+      "id": "age-of-wonders-3",
+      "name": "奇迹时代3 / Age of Wonders III",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "226840"
+      ]
+    },
+    {
+      "id": "age-of-wonders-4",
+      "name": "奇迹时代4 / Age of Wonders 4",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1669000"
+      ]
+    },
+    {
+      "id": "galactic-civilizations-3",
+      "name": "银河文明3 / Galactic Civilizations III",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "226860"
+      ]
+    },
+    {
+      "id": "distant-worlds-2",
+      "name": "遥远的世界2 / Distant Worlds 2",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1531540"
+      ]
+    },
+    {
+      "id": "heavens-vault",
+      "name": "天堂之穹 / Heaven's Vault",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "774201"
+      ]
+    },
+    {
+      "id": "tunic",
+      "name": "TUNIC / TUNIC",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "553420"
+      ]
+    },
+    {
+      "id": "7-days-to-end-with-you",
+      "name": "与你共度的七日 / 7 Days to End with You",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1859280",
+        "7"
+      ]
+    },
+    {
+      "id": "the-roottrees-are-dead",
+      "name": "鲁特里家族死了 / The Roottrees are Dead",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2754380"
+      ]
+    },
+    {
+      "id": "the-case-of-the-golden-idol",
+      "name": "黄金偶像案 / The Case of the Golden Idol",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1677770"
+      ]
+    },
+    {
+      "id": "the-rise-of-the-golden-idol",
+      "name": "黄金偶像崛起 / The Rise of the Golden Idol",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2716400"
+      ]
+    },
+    {
+      "id": "strange-horticulture",
+      "name": "奇异园艺 / Strange Horticulture",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1574580"
+      ]
+    },
+    {
+      "id": "book-of-hours",
+      "name": "司辰之书 / BOOK OF HOURS",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1028310"
+      ]
+    },
+    {
+      "id": "cultist-simulator",
+      "name": "密教模拟器 / Cultist Simulator",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "718670"
+      ]
+    },
+    {
+      "id": "elden-ring",
+      "name": "艾尔登法环 / ELDEN RING",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1245620"
+      ]
+    },
+    {
+      "id": "lies-of-p",
+      "name": "匹诺曹的谎言 / Lies of P",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1627720"
+      ]
+    },
+    {
+      "id": "nioh",
+      "name": "仁王 / Nioh: Complete Edition",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "485510"
+      ]
+    },
+    {
+      "id": "nioh-2",
+      "name": "仁王2 / Nioh 2 – The Complete Edition",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1325200"
+      ]
+    },
+    {
+      "id": "the-surge",
+      "name": "迸发 / The Surge",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "378540"
+      ]
+    },
+    {
+      "id": "the-surge-2",
+      "name": "迸发2 / The Surge 2",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "644830"
+      ]
+    },
+    {
+      "id": "mortal-shell",
+      "name": "致命躯壳 / Mortal Shell",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1110910"
+      ]
+    },
+    {
+      "id": "another-crabs-treasure",
+      "name": "蟹蟹寻宝奇遇 / Another Crab's Treasure",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1887840"
+      ]
+    },
+    {
+      "id": "salt-and-sanctuary",
+      "name": "盐与避难所 / Salt and Sanctuary",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "283640"
+      ]
+    },
+    {
+      "id": "blasphemous",
+      "name": "渎神 / Blasphemous",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "774361"
+      ]
+    },
+    {
+      "id": "neon-white",
+      "name": "霓虹白客 / Neon White",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1533420"
+      ]
+    },
+    {
+      "id": "grapple-dog",
+      "name": "抓钩狗 / Grapple Dog",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1345860"
+      ]
+    },
+    {
+      "id": "pizza-tower",
+      "name": "披萨塔 / Pizza Tower",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2231450"
+      ]
+    },
+    {
+      "id": "sanabi",
+      "name": "SANABI",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1562700"
+      ]
+    },
+    {
+      "id": "ghostrunner",
+      "name": "幽灵行者 / Ghostrunner",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1139900"
+      ]
+    },
+    {
+      "id": "ori-and-the-blind-forest",
+      "name": "奥日与黑暗森林 / Ori and the Blind Forest",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "261570"
+      ]
+    },
+    {
+      "id": "ori-and-the-will-of-the-wisps",
+      "name": "奥日与萤火意志 / Ori and the Will of the Wisps",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1057090"
+      ]
+    },
+    {
+      "id": "axiom-verge",
+      "name": "公理边缘 / Axiom Verge",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "332200"
+      ]
+    },
+    {
+      "id": "the-messenger",
+      "name": "信使 / The Messenger",
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "764790"
+      ]
+    },
+    {
+      "id": "mortal-kombat-1992",
+      "name": "真人快打 / Mortal Kombat",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "marvel-vs-capcom-2",
+      "name": "漫威对卡普空 2 / Marvel vs. Capcom 2",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "killer-instinct-1994",
+      "name": "杀手本能 / Killer Instinct",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "punch-out-nes-1987",
+      "name": "拳无虚发 / Punch-Out!!",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "mario-kart-64",
+      "name": "马力欧卡丁车 64 / Mario Kart 64",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "burnout-3-takedown",
+      "name": "火爆狂飙 3：撞击 / Burnout 3: Takedown",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "dodonpachi",
+      "name": "怒首领蜂 / DoDonPachi",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "touhou-6-embodiment-of-scarlet-devil",
+      "name": "东方红魔乡 / Embodiment of Scarlet Devil",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "einhander",
+      "name": "独臂擎天 / Einhänder",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "star-fox-64",
+      "name": "星际火狐 64 / Star Fox 64",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "geometry-wars-retro-evolved",
+      "name": "几何战争：复古进化 / Geometry Wars: Retro Evolved",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "radiant-silvergun",
+      "name": "银枪 / Radiant Silvergun",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "raiden-1990",
+      "name": "雷电 / Raiden",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "1942-1984",
+      "name": "1942",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "nhl-94",
+      "name": "NHL ’94",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "nba-2k11",
+      "name": "NBA 2K11",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "fifa-road-to-world-cup-98",
+      "name": "FIFA 98：世界杯之路 / FIFA: Road to World Cup 98",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "samurai-shodown-1993",
+      "name": "侍魂 / Samurai Shodown",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "battle-garegga",
+      "name": "战斗加雷加 / Battle Garegga",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "wipeout-1995",
+      "name": "反重力赛车 / Wipeout",
+      "sourceBatch": "docs/research/expansion/classic-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "mechabellum",
+      "name": "钢铁指挥官 / Mechabellum",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "669330"
+      ]
+    },
+    {
+      "id": "despots-game",
+      "name": "暴君的游戏 / Despot’s Game",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1227280"
+      ]
+    },
+    {
+      "id": "astronarch",
+      "name": "Astronarch",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1234940"
+      ]
+    },
+    {
+      "id": "the-last-flame",
+      "name": "将熄之焰 / The Last Flame",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1830970"
+      ]
+    },
+    {
+      "id": "hadean-tactics",
+      "name": "Hadean Tactics",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1260590"
+      ]
+    },
+    {
+      "id": "just-king",
+      "name": "吾王保卫战 / Just King",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1059980"
+      ]
+    },
+    {
+      "id": "smite",
+      "name": "神之浩劫 / SMITE",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "386360"
+      ]
+    },
+    {
+      "id": "eternal-card-game",
+      "name": "永恒卡牌 / Eternal Card Game",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "531640"
+      ]
+    },
+    {
+      "id": "faeria",
+      "name": "Faeria",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "397060"
+      ]
+    },
+    {
+      "id": "mythgard",
+      "name": "Mythgard",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "839910"
+      ]
+    },
+    {
+      "id": "heroes-of-the-storm",
+      "name": "风暴英雄 / Heroes of the Storm",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "it-takes-two",
+      "name": "双人成行 / It Takes Two",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1426210"
+      ]
+    },
+    {
+      "id": "a-way-out",
+      "name": "逃出生天 / A Way Out",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1222700"
+      ]
+    },
+    {
+      "id": "moving-out",
+      "name": "胡闹搬家 / Moving Out",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "996770"
+      ]
+    },
+    {
+      "id": "keep-talking-and-nobody-explodes",
+      "name": "Keep Talking and Nobody Explodes",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "341800"
+      ]
+    },
+    {
+      "id": "plateup",
+      "name": "PlateUp!",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1599600"
+      ]
+    },
+    {
+      "id": "unrailed",
+      "name": "一起开火车 / Unrailed!",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1016920"
+      ]
+    },
+    {
+      "id": "lovers-in-a-dangerous-spacetime",
+      "name": "危险时空的恋人 / Lovers in a Dangerous Spacetime",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "252110"
+      ]
+    },
+    {
+      "id": "troubleshooter-abandoned-children",
+      "name": "纷争终结者：被遗弃的孩子们 / TROUBLESHOOTER: Abandoned Children",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "470310"
+      ]
+    },
+    {
+      "id": "wartales",
+      "name": "战争传说 / Wartales",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1527950"
+      ]
+    },
+    {
+      "id": "expeditions-rome",
+      "name": "远征军：罗马 / Expeditions: Rome",
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "987840"
+      ]
+    },
+    {
+      "id": "wildfrost",
+      "name": "雪居之地 / Wildfrost",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1811990"
+      ]
+    },
+    {
+      "id": "griftlands",
+      "name": "欺诈之地 / Griftlands",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "601840"
+      ]
+    },
+    {
+      "id": "roguebook",
+      "name": "Roguebook",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1076200"
+      ]
+    },
+    {
+      "id": "chrono-ark",
+      "name": "超时空方舟 / Chrono Ark",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1188930"
+      ]
+    },
+    {
+      "id": "library-of-ruina",
+      "name": "废墟图书馆 / Library Of Ruina",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1256670"
+      ]
+    },
+    {
+      "id": "across-the-obelisk",
+      "name": "横跨方尖碑 / Across the Obelisk",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1385380"
+      ]
+    },
+    {
+      "id": "marauders",
+      "name": "掠夺者 / Marauders",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1789480"
+      ]
+    },
+    {
+      "id": "gray-zone-warfare",
+      "name": "灰区战争 / Gray Zone Warfare",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2479810"
+      ]
+    },
+    {
+      "id": "ghosts-of-tabor",
+      "name": "塔博尔幽灵 / Ghosts of Tabor",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1957780"
+      ]
+    },
+    {
+      "id": "arc-raiders",
+      "name": "ARC突袭者 / ARC Raiders",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1808500"
+      ]
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "2818260"
+      ]
+    },
+    {
+      "id": "the-cycle-frontier",
+      "name": "风暴奇侠 / The Cycle: Frontier",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "868270"
+      ]
+    },
+    {
+      "id": "lost-rift",
+      "name": "Lost Rift",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "3494520"
+      ]
+    },
+    {
+      "id": "zero-sievert",
+      "name": "零希沃特 / ZERO Sievert",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1782120"
+      ]
+    },
+    {
+      "id": "terraria",
+      "name": "泰拉瑞亚 / Terraria",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "105600"
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "腐蚀 / Rust",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "252490"
+      ]
+    },
+    {
+      "id": "ark-survival-evolved",
+      "name": "方舟：生存进化 / ARK: Survival Evolved",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "346110"
+      ]
+    },
+    {
+      "id": "7-days-to-die",
+      "name": "七日杀 / 7 Days to Die",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "251570"
+      ]
+    },
+    {
+      "id": "grounded",
+      "name": "禁闭求生 / Grounded",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "962130"
+      ]
+    },
+    {
+      "id": "raft",
+      "name": "木筏求生 / Raft",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "648800"
+      ]
+    },
+    {
+      "id": "core-keeper",
+      "name": "护核纪元 / Core Keeper",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1621690"
+      ]
+    },
+    {
+      "id": "no-mans-sky",
+      "name": "无人深空 / No Man's Sky",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "275850"
+      ]
+    },
+    {
+      "id": "mindustry",
+      "name": "像素工厂 / Mindustry",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1127400"
+      ]
+    },
+    {
+      "id": "shapez",
+      "name": "异形工厂 / shapez",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1318690"
+      ]
+    },
+    {
+      "id": "shapez-2",
+      "name": "异形工厂2 / shapez 2 - Factory",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2162800"
+      ]
+    },
+    {
+      "id": "techtonica",
+      "name": "地心工业 / Techtonica",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1457320"
+      ]
+    },
+    {
+      "id": "factory-town",
+      "name": "工厂小镇 / Factory Town",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "860890"
+      ]
+    },
+    {
+      "id": "autonauts",
+      "name": "Autonauts",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "979120"
+      ]
+    },
+    {
+      "id": "desynced",
+      "name": "Desynced",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1450900"
+      ]
+    },
+    {
+      "id": "surviving-mars",
+      "name": "火星求生 / Surviving Mars",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "464920"
+      ]
+    },
+    {
+      "id": "space-haven",
+      "name": "太空避难所 / Space Haven",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "979110"
+      ]
+    },
+    {
+      "id": "going-medieval",
+      "name": "前往中世纪 / Going Medieval",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1029780"
+      ]
+    },
+    {
+      "id": "clanfolk",
+      "name": "氏族人 / Clanfolk",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1700870"
+      ]
+    },
+    {
+      "id": "stranded-alien-dawn",
+      "name": "搁浅：异星黎明 / Stranded: Alien Dawn",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1324130"
+      ]
+    },
+    {
+      "id": "noble-fates",
+      "name": "贵族命运 / Noble Fates",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1769420"
+      ]
+    },
+    {
+      "id": "timberborn",
+      "name": "海狸浮生记 / Timberborn",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1062090"
+      ]
+    },
+    {
+      "id": "danganronpa-2",
+      "name": "超级弹丸论破2：再见绝望学园 / Danganronpa 2: Goodbye Despair",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "413420"
+      ]
+    },
+    {
+      "id": "danganronpa-v3",
+      "name": "新弹丸论破V3：大家的自相残杀新学期 / Danganronpa V3: Killing Harmony",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "567640"
+      ]
+    },
+    {
+      "id": "ai-the-somnium-files",
+      "name": "AI：梦境档案 / AI: The Somnium Files",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "948740"
+      ]
+    },
+    {
+      "id": "ai-nirvana-initiative",
+      "name": "AI：梦境档案 涅槃肇始 / AI: THE SOMNIUM FILES - nirvanA Initiative",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1449200"
+      ]
+    },
+    {
+      "id": "zero-time-dilemma",
+      "name": "极限脱出：零时困境 / Zero Escape: Zero Time Dilemma",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "311240"
+      ]
+    },
+    {
+      "id": "raging-loop",
+      "name": "人狼村之谜 / Raging Loop",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "648100"
+      ]
+    },
+    {
+      "id": "i-was-a-teenage-exocolonist",
+      "name": "我曾是青少年太空殖民者 / I Was a Teenage Exocolonist",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1148760"
+      ]
+    },
+    {
+      "id": "gnosia",
+      "name": "古诺希亚 / GNOSIA",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1608290"
+      ]
+    },
+    {
+      "id": "paranormasight-seven-mysteries",
+      "name": "灵视异闻 FILE23 本所七大不可思议 / PARANORMASIGHT: The Seven Mysteries of Honjo",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2106840"
+      ]
+    },
+    {
+      "id": "scarlet-hollow",
+      "name": "猩红山谷 / Scarlet Hollow",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1609230",
+        "1406040"
+      ]
+    },
+    {
+      "id": "homicipher",
+      "name": "文字化化 / Homicipher",
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2302660"
+      ]
+    },
+    {
+      "id": "squad",
+      "name": "战术小队 / Squad",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "393380"
+      ]
+    },
+    {
+      "id": "rainbow-six-siege",
+      "name": "彩虹六号：围攻 / Tom Clancy's Rainbow Six Siege",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "359550"
+      ]
+    },
+    {
+      "id": "insurgency-sandstorm",
+      "name": "叛乱：沙漠风暴 / Insurgency: Sandstorm",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "581320"
+      ]
+    },
+    {
+      "id": "hell-let-loose",
+      "name": "人间地狱 / Hell Let Loose",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "686810"
+      ]
+    },
+    {
+      "id": "wreckfest",
+      "name": "撞车嘉年华 / Wreckfest",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "228380"
+      ]
+    },
+    {
+      "id": "burnout-paradise",
+      "name": "火爆狂飙：天堂 / Burnout Paradise",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1238080"
+      ]
+    },
+    {
+      "id": "eville",
+      "name": "恶灵村 / Eville",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1220170"
+      ]
+    },
+    {
+      "id": "untrusted",
+      "name": "Untrusted",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1502660"
+      ]
+    },
+    {
+      "id": "dungeon-defenders",
+      "name": "地牢守护者 / Dungeon Defenders",
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "65800"
+      ]
+    },
+    {
+      "id": "honkai-star-rail",
+      "name": "崩坏：星穹铁道 / Honkai: Star Rail",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "zenless-zone-zero",
+      "name": "绝区零 / Zenless Zone Zero",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "arknights-endfield",
+      "name": "明日方舟：终末地 / Arknights: Endfield",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "infinity-nikki",
+      "name": "无限暖暖 / Infinity Nikki",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "love-and-deepspace",
+      "name": "恋与深空 / Love and Deepspace",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "goddess-of-victory-nikke",
+      "name": "胜利女神：妮姬 / GODDESS OF VICTORY: NIKKE",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "reverse-1999",
+      "name": "重返未来：1999 / Reverse: 1999",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "afk-journey",
+      "name": "剑与远征：启程 / AFK Journey",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "where-winds-meet",
+      "name": "燕云十六声 / Where Winds Meet",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "umamusume-pretty-derby",
+      "name": "赛马娘 Pretty Derby / Umamusume: Pretty Derby",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "solo-leveling-arise",
+      "name": "我独自升级：起立 / Solo Leveling:ARISE",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "sword-of-convallaria",
+      "name": "铃兰之剑 / Sword of Convallaria",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "delta-force-2024",
+      "name": "三角洲行动 / Delta Force",
+      "sourceBatch": "docs/research/expansion/popular-mobile-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "pubg-battlegrounds",
+      "name": "绝地求生 / PUBG: BATTLEGROUNDS",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "578080"
+      ]
+    },
+    {
+      "id": "apex-legends",
+      "name": "Apex Legends",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "1172470"
+      ]
+    },
+    {
+      "id": "the-finals",
+      "name": "THE FINALS",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "2073850"
+      ]
+    },
+    {
+      "id": "overwatch-2",
+      "name": "守望先锋 2 / Overwatch 2",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "candidate_recorded",
+      "sourceSteamAppIds": [
+        "2357570"
+      ]
+    },
+    {
+      "id": "marvel-rivals",
+      "name": "漫威争锋 / Marvel Rivals",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2767030"
+      ]
+    },
+    {
+      "id": "fall-guys",
+      "name": "Fall Guys",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1097150"
+      ]
+    },
+    {
+      "id": "fortnite",
+      "name": "堡垒之夜 / Fortnite",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "phasmophobia",
+      "name": "Phasmophobia",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "739630"
+      ]
+    },
+    {
+      "id": "content-warning",
+      "name": "Content Warning",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2881650"
+      ]
+    },
+    {
+      "id": "chained-together",
+      "name": "Chained Together",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2567870"
+      ]
+    },
+    {
+      "id": "buckshot-roulette",
+      "name": "Buckshot Roulette",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2835570"
+      ]
+    },
+    {
+      "id": "poppy-playtime",
+      "name": "Poppy Playtime",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1721470"
+      ]
+    },
+    {
+      "id": "dead-by-daylight",
+      "name": "黎明杀机 / Dead by Daylight",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "381210"
+      ]
+    },
+    {
+      "id": "garena-free-fire",
+      "name": "Free Fire",
+      "sourceBatch": "docs/research/expansion/stream-popular-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "naraka-bladepoint",
+      "name": "永劫无间 / NARAKA: BLADEPOINT",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1203220"
+      ]
+    },
+    {
+      "id": "call-of-duty-warzone",
+      "name": "使命召唤：战区 / Call of Duty: Warzone",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1962663"
+      ]
+    },
+    {
+      "id": "call-of-duty-mobile",
+      "name": "使命召唤手游 / Call of Duty: Mobile",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "tetris-99",
+      "name": "俄罗斯方块 99 / Tetris 99",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": []
+    },
+    {
+      "id": "farlight-84",
+      "name": "Farlight 84",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1928420"
+      ]
+    },
+    {
+      "id": "super-animal-royale",
+      "name": "Super Animal Royale",
+      "sourceBatch": "docs/research/expansion/battle-royale-followup-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "843380"
+      ]
+    },
+    {
+      "id": "clair-obscur-expedition-33",
+      "name": "光与影：33号远征队 / Clair Obscur: Expedition 33",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1903340"
+      ]
+    },
+    {
+      "id": "split-fiction",
+      "name": "双影奇境 / Split Fiction",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2001120"
+      ]
+    },
+    {
+      "id": "death-stranding-2-on-the-beach",
+      "name": "死亡搁浅2：冥滩之上 / DEATH STRANDING 2: ON THE BEACH",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3280350"
+      ]
+    },
+    {
+      "id": "kingdom-come-deliverance-2",
+      "name": "天国：拯救2 / Kingdom Come: Deliverance II",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1771300"
+      ]
+    },
+    {
+      "id": "monster-hunter-wilds",
+      "name": "怪物猎人：荒野 / Monster Hunter Wilds",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2246340"
+      ]
+    },
+    {
+      "id": "metaphor-refantazio",
+      "name": "暗喻幻想 / Metaphor: ReFantazio",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2679460"
+      ]
+    },
+    {
+      "id": "persona-3-reload-2024",
+      "name": "女神异闻录3 Reload（2024重制版） / Persona 3 Reload",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2161700"
+      ]
+    },
+    {
+      "id": "final-fantasy-7-rebirth",
+      "name": "最终幻想VII 重生 / FINAL FANTASY VII REBIRTH",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2909400"
+      ]
+    },
+    {
+      "id": "final-fantasy-16",
+      "name": "最终幻想XVI / FINAL FANTASY XVI",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2515020"
+      ]
+    },
+    {
+      "id": "armored-core-6-fires-of-rubicon",
+      "name": "装甲核心VI：境界天火 / ARMORED CORE™ VI FIRES OF RUBICON™",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1888160"
+      ]
+    },
+    {
+      "id": "stellar-blade",
+      "name": "剑星 / Stellar Blade™",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3489700"
+      ]
+    },
+    {
+      "id": "helldivers-2",
+      "name": "绝地潜兵2 / HELLDIVERS™ 2",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "553850"
+      ]
+    },
+    {
+      "id": "palworld",
+      "name": "幻兽帕鲁 / Palworld",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1623730"
+      ]
+    },
+    {
+      "id": "repo",
+      "name": "R.E.P.O.",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3241660"
+      ]
+    },
+    {
+      "id": "peak",
+      "name": "PEAK",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3527290"
+      ]
+    },
+    {
+      "id": "blue-prince",
+      "name": "蓝途王子 / Blue Prince",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1569580"
+      ]
+    },
+    {
+      "id": "dispatch",
+      "name": "Dispatch",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "2592160"
+      ]
+    },
+    {
+      "id": "schedule-1",
+      "name": "Schedule I",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "3164500"
+      ]
+    },
+    {
+      "id": "hades-2",
+      "name": "哈迪斯II / Hades II",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1145350"
+      ]
+    },
+    {
+      "id": "animal-well",
+      "name": "动物井 / ANIMAL WELL",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "813230"
+      ]
+    },
+    {
+      "id": "pacific-drive",
+      "name": "超自然车旅 / Pacific Drive",
+      "sourceBatch": "docs/research/expansion/popular-modern-2026.json",
+      "screeningState": "index_only",
+      "sourceSteamAppIds": [
+        "1458140"
+      ]
+    }
+  ]
+}

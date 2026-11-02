@@ -1,0 +1,1584 @@
+[
+  {
+    "id": "baldurs-gate-3",
+    "name": "博德之门3 / Baldur’s Gate 3",
+    "studio": "Larian Studios",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "turn-based-rpg",
+      "tactical-turn-based"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "buildcrafting",
+      "exploration",
+      "dialogue-choice",
+      "turn-based-combat"
+    ],
+    "summary": "组织冒险小队探索被遗忘的国度，用职业能力、骰子检定和队伍回合行动处理战斗、对话与任务中的选择。",
+    "analysis": "职业与属性既参与战斗，也改变交谈和环境行动的成功机会；一次构筑因而会持续影响玩家能够采用哪些解决办法。",
+    "loop": [
+      "建立角色、招募同伴并探索任务区域",
+      "以对话检定或队伍回合行动处理冲突",
+      "取得经验、发展职业与关系，再进入下一段旅程"
+    ],
+    "learning": [
+      "让同一组角色能力参与战斗、交涉和环境行动，可以使构筑持续改变任务解法，而不只改变伤害。"
+    ],
+    "caveats": [
+      "多人合作与玩家模组不在此范围。"
+    ],
+    "resources": [
+      "回合中的动作、附赠动作与移动距离分开限制",
+      "生命与法术位通过休息恢复",
+      "职业、法术和装备共同组织队伍方案"
+    ],
+    "progression": [
+      "经验提升角色等级，开放职业能力与专长",
+      "任务选择、同伴关系和兼职业发展持续影响后续流程"
+    ],
+    "scopeLabel": "正式版本体单人队伍冒险",
+    "scopeNotes": "2020年开放抢先体验，2023年正式发行。范围为正式版及后续本体更新中的单人队伍冒险。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1086940&l=english&cc=us",
+        "title": "Baldur's Gate 3",
+        "publisher": "Steam / Larian Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数760479作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Baldur's_Gate_3?useskin=vector",
+        "title": "Baldur's Gate 3 — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "dice-roll",
+        "note": "攻击与部分对话结果由骰子决定，优势或劣势可取两次结果中的较好或较差者",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "ability-check",
+        "note": "开锁与交谈等行动把属性或技能修正加入检定，与要求值比较",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "进入战斗后按先攻组织角色回合",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "同一回合内在不同攻击、法术与机动用途间分配有限行动预算",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择种族、职业和法术，组织角色与同伴队伍方案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "探索、战斗和解决问题可获得经验，提升等级并开放职业能力",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "对话中可以说服、威吓、欺骗或选择引发战斗",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "respec",
+        "note": "营地中的守墓人可重设角色发展",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "同伴根据旅途选择作出反应，关系可继续发展",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1086940&l=english&cc=us"
+    },
+    "aliases": [
+      "Baldur's Gate 3"
+    ]
+  },
+  {
+    "id": "red-dead-redemption-2",
+    "name": "荒野大镖客：救赎2 / Red Dead Redemption 2",
+    "studio": "Rockstar Games",
+    "year": 2018,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "vehicle-driving",
+      "exploration",
+      "collection-training"
+    ],
+    "summary": "以亚瑟·摩根在美国边境执行帮派任务，骑马探索与狩猎，照料自身和坐骑，在枪战、目击者和追捕之间寻找生存空间。",
+    "analysis": "任务之外的食物、衣着、枪械维护与马匹关系会带回下一场行动；自由探索因而持续影响角色的准备状态。",
+    "loop": [
+      "骑马探索并接受帮派或路人任务",
+      "交火、狩猎或处理偶发事件",
+      "补充食物、维护枪械和坐骑，再准备后续行动"
+    ],
+    "learning": [
+      "照料坐骑、补充食物和维护枪械会改变下一场任务的准备状态，使自由探索中的行动持续发挥作用。"
+    ],
+    "caveats": [
+      "不含Red Dead Online、尾声约翰的操控流程及桌面娱乐等支线小游戏。"
+    ],
+    "resources": [
+      "生命与体力核心影响恢复效率",
+      "食物、休息和合适衣物帮助维持状态",
+      "枪械与坐骑需要长期维护"
+    ],
+    "progression": [
+      "马匹关系在反复照料与骑行中发展",
+      "任务推进故事，荣誉与行为影响人物反应"
+    ],
+    "scopeLabel": "亚瑟篇主线与自由探索",
+    "scopeNotes": "原作于2018年发行，PC版于2019年推出。范围为亚瑟篇的任务、骑行、狩猎与自由探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1174180&l=english&cc=us",
+        "title": "Red Dead Redemption 2",
+        "publisher": "Steam / Rockstar Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数859443作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Red_Dead_Redemption_2?useskin=vector",
+        "title": "Red Dead Redemption 2 — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "使用枪械或弓瞄准人物与动物的不同部位",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "直接驾驭坐骑，也可接管马车或火车作为交通手段",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "反复牵引、抚摸、清洁与喂养坐骑，发展马匹纽带并获得骑乘优势",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "进食和睡眠恢复核心状态，核心又影响生命与体力的恢复",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "thermal-regulation",
+        "note": "过冷或过热会加快核心消耗，穿着适应天气的衣物可减轻影响",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击杀目标后可搜刮尸体，狩猎所得肉与皮可用于收入和制作",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "犯罪目击者可能报警，逃离后还要避开执法者视线或藏身以摆脱追捕",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "通过有明确目标的帮派任务推进亚瑟的故事",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1174180&l=english&cc=us"
+    },
+    "aliases": [
+      "Red Dead Redemption 2"
+    ]
+  },
+  {
+    "id": "the-witcher-3",
+    "name": "巫师3：狂猎 / The Witcher 3: Wild Hunt",
+    "studio": "CD PROJEKT RED",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "summary": "操纵杰洛特接受猎魔委托，调查和探索目标地点，以双剑、法印与炼金物品应对敌人，并通过对话和任务选择改变后续事件。",
+    "analysis": "敌人准备、能力发展与人物抉择构成不同层次的选择；战斗前的工具用途和任务中的立场都能影响旅途结果。",
+    "loop": [
+      "查看委托、交谈并探索相关地点",
+      "选择剑术、法印和炼金工具处理敌人",
+      "完成任务取得经验材料，发展能力并承担选择的后果"
+    ],
+    "learning": [
+      "叙事分支与角色构筑可以同时重要；不必把玩家选择都压缩成战斗强弱这一条轴。"
+    ],
+    "caveats": [
+      "不含两项剧情扩展、希里操控段落和昆特牌对局。"
+    ],
+    "resources": [
+      "法印消耗有限体力",
+      "材料可用于药剂、炸弹、武器与护甲制作",
+      "剑需要维修以维持状态"
+    ],
+    "progression": [
+      "任务经验提高角色等级并提供能力点",
+      "战斗、法印、炼金及通用技能树发展不同专长"
+    ],
+    "scopeLabel": "2015本体杰洛特主线",
+    "scopeNotes": "范围为2015年本体中杰洛特的主线、猎魔委托与探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=292030&l=english&cc=us",
+        "title": "The Witcher 3: Wild Hunt — Remastered",
+        "publisher": "Steam / CD PROJEKT RED",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "该官方API玩法正文为空，仅使用已读取的开发商、平台及官方封面元数据；机制不引用此源。 同时核对API公开推荐记录数851788作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt?useskin=vector",
+        "title": "The Witcher 3: Wild Hunt — Remastered — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "使用轻重剑击，钢剑主要对人、银剑更适合怪物",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "通过翻滚或闪避避开来袭攻击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "法印可让目标燃烧、减速或混乱，也能为自身提供暂时护盾",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "用收集材料制作药剂与炸弹，也可委托铁匠打造装备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "把能力点投入战斗、法印、炼金和通用四类技能树",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "完成任务获得经验，达到条件后提升等级并得到能力点",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "在人物交谈中选择不同回应",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "重要决定改变人物命运、世界状态及结局",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/e8afc4252e3fee8ed2525ab2fd7675cca39aa38d/header_alt_assets_1.jpg?t=1790845156",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=292030&l=english&cc=us"
+    },
+    "aliases": [
+      "The Witcher 3: Wild Hunt — Remastered"
+    ]
+  },
+  {
+    "id": "grand-theft-auto-5",
+    "name": "侠盗猎车手V / Grand Theft Auto V",
+    "studio": "Rockstar North",
+    "year": 2013,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "vehicle-driving",
+      "exploration"
+    ],
+    "summary": "在洛圣都的单人故事中切换迈克尔、富兰克林和崔佛，准备并执行抢劫，以枪战和驾驶处理任务与追捕。",
+    "analysis": "三位主角把同一片城市接入不同任务位置，抢劫筹划又让人员能力与分成成为长期取舍；自由驾驶与任务交火反复相互衔接。",
+    "loop": [
+      "选择主角并准备故事任务或抢劫方案",
+      "驾驶、射击并在任务要求下切换角色",
+      "处理追捕，利用收入和熟练度发展后续准备"
+    ],
+    "learning": [
+      "三位主角在战斗、驾驶等方面各有优势，让角色切换的价值取决于当前任务和所处位置。"
+    ],
+    "caveats": [
+      "迈克尔的战斗慢时、富兰克林的驾驶慢时和崔佛的攻防强化分别属于对应主角；GTA Online不在此范围。"
+    ],
+    "resources": [
+      "资金用于武器、车辆和资产",
+      "各主角分别维护技能与装备状态",
+      "抢劫同伙的能力和分成需要权衡"
+    ],
+    "progression": [
+      "射击、驾驶等技能随实际使用提高",
+      "故事与抢劫进展开放后续内容"
+    ],
+    "scopeLabel": "本体单人故事与抢劫",
+    "scopeNotes": "范围为2013年本体中三位主角的单人故事、自由探索与抢劫流程。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=271590&l=english&cc=us",
+        "title": "Grand Theft Auto V Legacy",
+        "publisher": "Steam / Rockstar North",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数1899800作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V?useskin=vector",
+        "title": "Grand Theft Auto V Legacy — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "使用枪械和爆炸物在任务与追捕中作战",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "驾驶地面车辆及飞行器穿越城市与郊野",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "受伤减少生命，非致命状态可逐渐恢复到部分上限",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "生命耗尽后在医院重新出现并继续游戏",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "警方按视线和通缉等级搜索，离开搜索区并隐蔽一段时间可消除通缉",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "可强化各主角已有的武器与车辆，改变后续行动准备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "较大抢劫需要选择有不同技能的AI同伙，并承担其分成",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "部分抢劫可选择隐蔽实施或公开强攻等不同方案",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=271590&l=english&cc=us"
+    },
+    "aliases": [
+      "Grand Theft Auto V Legacy"
+    ]
+  },
+  {
+    "id": "hogwarts-legacy",
+    "name": "霍格沃茨之遗 / Hogwarts Legacy",
+    "studio": "Avalanche Software",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "作为霍格沃茨学生学习法术、完成任务并探索校内外，在战斗与调查中发展才能，用有求必应屋种植植物和制作药剂。",
+    "analysis": "课堂、探索与准备设施形成互相支持的成长：任务开放新行动，探索提供装备和材料，植物与药剂再帮助后续交战。",
+    "loop": [
+      "上课与承接任务，学习新手段",
+      "探索校内外，使用法术寻找秘密并应对敌人",
+      "投入才能，利用有求必应屋准备下一阶段"
+    ],
+    "learning": [
+      "让学习任务开放新行动，再给准备设施与探索奖励明确用途，能够把校园身份落到实际循环中。"
+    ],
+    "caveats": [
+      "后来加入的霍格莫德店铺任务不在此范围。"
+    ],
+    "resources": [
+      "药剂与战斗植物提供不同辅助",
+      "经验和才能节点发展角色能力",
+      "有求必应屋容纳种植与酿制设施"
+    ],
+    "progression": [
+      "完成课程与主线里程碑开放机制",
+      "任务挑战带来经验，才能树扩展战斗手段"
+    ],
+    "scopeLabel": "2023本体主线与有求必应屋",
+    "scopeNotes": "范围为学生主线中的课程、探索、战斗，以及有求必应屋的准备活动。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=990080&l=english&cc=us",
+        "title": "Hogwarts Legacy",
+        "publisher": "Steam / Avalanche Software",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数278097作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hogwarts_Legacy?useskin=vector",
+        "title": "Hogwarts Legacy — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "recipe-crafting",
+        "note": "通过材料与配方酿制药剂",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "任务与挑战提供角色经验，支持整体等级发展",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "在才能树中选择增强法术与能力的节点",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成课程和主线里程碑后开放飞行等新机制",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在有求必应屋用咒语布置、修改或删除设备和物件",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "通过种植盆培养植物，部分植物可投入战斗",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "scouting-tracking",
+        "note": "原形立现作为扫描工具帮助发现环境秘密",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成课程、主线及同伴相关任务推进旅程",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=990080&l=english&cc=us"
+    },
+    "aliases": [
+      "Hogwarts Legacy"
+    ]
+  },
+  {
+    "id": "god-of-war-2018",
+    "name": "战神（2018）/ God of War",
+    "studio": "Santa Monica Studio、Jetpack Interactive",
+    "year": 2018,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration",
+      "puzzle-solving"
+    ],
+    "summary": "操纵奎托斯用斧、盾与拳头交战，指示阿特柔斯支援，把可投掷回收的利维坦斧用于敌人和环境机关。",
+    "analysis": "同一把斧在手里和留在机关上分别具有价值，回收时机因此影响战斗与空间解题；儿子的支援则补充玩家当前无法兼顾的目标。",
+    "loop": [
+      "探索北欧区域与机关道路",
+      "投掷回收战斧、格挡与近战，呼叫儿子支援",
+      "取得材料并配置护甲和符文，继续主线与支线"
+    ],
+    "learning": [
+      "把武器在战斗和机关中的作用统一起来，可以让探索与交战使用同一套容易理解的操作词汇。"
+    ],
+    "caveats": [
+      "阿特柔斯由AI控制，玩家可下达有限支援指令；跳跃只在指定地点进行。"
+    ],
+    "resources": [
+      "银片和制作材料用于装备发展",
+      "符文技能使用后需要等待冷却",
+      "怒气与生命由战斗及环境恢复物补充"
+    ],
+    "progression": [
+      "消耗经验学习新的战斗技能",
+      "装备、符文与剧情取得的新武器扩展行动方式"
+    ],
+    "scopeLabel": "2018本体奎托斯主线",
+    "scopeNotes": "范围为2018年本体中的战斧战斗、环境机关与父子配合。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1593500&l=english&cc=us",
+        "title": "God of War",
+        "publisher": "Steam / Santa Monica Studio、Jetpack Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数130995作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)?useskin=vector",
+        "title": "God of War — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "战斧、徒手和剧情后取得的混沌之刃提供近身攻击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "瞄准投出利维坦斧，并可主动将其召回",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "mutable-environment",
+        "note": "把斧留在目标处可冻结或改变机关，召回后再继续处理",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "轻重符文攻击各有冷却时间",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "利用资源和银片制作新的护甲装备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "强化已有护甲与武器以发展属性和效果",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "累积敌方眩晕槽，槽满后开放抓取处决机会",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "战斗中累积怒气，再发动斯巴达之怒以徒手进行强力攻击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1593500&l=english&cc=us"
+    },
+    "aliases": [
+      "God of War"
+    ]
+  },
+  {
+    "id": "ghost-of-tsushima",
+    "name": "对马岛之魂 / Ghost of Tsushima",
+    "studio": "Sucker Punch Productions、Nixxes Software",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "以境井仁探索对马岛，在正面对峙和潜行袭击之间选择，用不同架势应对敌人，寻找护符和装备重夺据点。",
+    "analysis": "架势、潜行工具与护符让“如何接敌”比单纯提高伤害更重要；风向、鸟与狐狸又把探索目标放进环境本身。",
+    "loop": [
+      "顺风与环境指引探索地点，承接传说任务",
+      "选择架势正面交战，或用潜行工具处理敌人",
+      "解放据点并取得材料、护符与新招式"
+    ],
+    "learning": [
+      "风向、鸟和狐狸把目的地线索融入环境；敌人的防线与警觉则让正面作战和潜行各有用途。"
+    ],
+    "caveats": [
+      "壹岐岛扩展和多人模式“奇谭”不在此范围。"
+    ],
+    "resources": [
+      "决意用于恢复生命或特殊招式",
+      "材料用于强化护甲衣物",
+      "护符槽与护甲特性共同影响行动方案"
+    ],
+    "progression": [
+      "观察或击杀首领开放新架势",
+      "传说任务开放装备和战斗技巧，探索增加成长选择"
+    ],
+    "scopeLabel": "2020本体对马岛主线",
+    "scopeNotes": "范围为境井仁在对马岛本体中的战斗、潜行与探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2215430&l=english&cc=us",
+        "title": "Ghost of Tsushima DIRECTOR'S CUT",
+        "publisher": "Steam / Sucker Punch Productions、Nixxes Software",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数65882作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ghost_of_Tsushima?useskin=vector",
+        "title": "Ghost of Tsushima DIRECTOR'S CUT — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "用太刀与不同架势应对持剑、盾、长枪及重型敌人",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "准确招架敌方攻击以打开防线",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "使用弓和不同箭种进行远程攻击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "以潜行、暗杀、风铃和烟雾等工具处理敌方警觉",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "暗杀、招架等技巧行动积累决意，决意再用于恢复或特殊招式",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "grappling",
+        "note": "使用钩绳抵达难以到达的探索地点",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择不同护甲与护符来改变战斗、发现速度或恢复等效果",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "收集世界材料强化已有护甲与衣物",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2215430&l=english&cc=us"
+    },
+    "aliases": [
+      "Ghost of Tsushima DIRECTOR'S CUT"
+    ]
+  },
+  {
+    "id": "nier-automata",
+    "name": "尼尔：自动人形 / NieR:Automata",
+    "studio": "Square Enix、PlatinumGames Inc.",
+    "year": 2017,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "shoot-em-up"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "以2B在机械生命体占据的地表执行任务，用轻重武器与辅助机远程火力交战，并在芯片容量内配置自己的能力。",
+    "analysis": "辅助机火力与近战可以并行，芯片又让能力配置与信息显示争用同一容量；构筑的代价因此不只体现在攻击面板。",
+    "loop": [
+      "接受地表任务并探索相连地区",
+      "结合近战、回避和辅助机射击处理敌人",
+      "取得经验、武器和芯片，调整配置继续推进"
+    ],
+    "learning": [
+      "如果系统功能和战斗强化共用容量，配置选择就会影响玩家如何观察世界，而不只是如何造成伤害。"
+    ],
+    "caveats": [
+      "9S的黑客和A2的耗血狂战属于后续角色路线，不在此范围。"
+    ],
+    "resources": [
+      "芯片安装受总容量限制",
+      "辅助机可选择不同远程功能",
+      "物品与商店支持生命恢复和装备准备"
+    ],
+    "progression": [
+      "战斗经验提升角色等级与基础数值",
+      "武器与辅助机强化扩展战斗方式"
+    ],
+    "scopeLabel": "路线A的2B战斗与探索",
+    "scopeNotes": "范围为路线A中2B的地表探索、近战、辅助机射击与飞行战斗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=524220&l=english&cc=us",
+        "title": "NieR:Automata™",
+        "publisher": "Steam / Square Enix、PlatinumGames Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数116060作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Nier:_Automata?useskin=vector",
+        "title": "NieR:Automata™ — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "组合轻重攻击，并在不同武器之间切换",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "辅助机可用手动或锁定模式进行远程攻击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "以快速回避穿过敌方攻击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "配置改变属性、能力或HUD的芯片，并在武器之间组织战斗方案",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "芯片安装总容量有限，不同能力与显示功能需要取舍",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "战斗中获得经验并提升角色等级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "辅助机可以强化并取得新的攻击方法",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "世界中的NPC与据点提供支线任务，主线任务继续推进2B行动",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/524220/header.jpg?t=1785182957",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=524220&l=english&cc=us"
+    },
+    "aliases": [
+      "NieR:Automata™"
+    ]
+  },
+  {
+    "id": "skyrim",
+    "name": "上古卷轴V：天际 / The Elder Scrolls V: Skyrim",
+    "studio": "Bethesda Game Studios",
+    "year": 2011,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "summary": "在天际省自由探索与加入派系，用实际使用提升战斗、魔法和潜行技能，通过双手装备与专长组织自己的角色。",
+    "analysis": "技能成长追随玩家已做过的行动，专长选择再把这些习惯转成更稳定的能力方向；任务、犯罪与NPC反应使探索仍有行为后果。",
+    "loop": [
+      "探索城镇、洞穴与荒野，选择任务或派系",
+      "用武器、魔法或潜行处理遭遇",
+      "提升相应技能，分配专长并继续发展角色"
+    ],
+    "learning": [
+      "使用成长和节点选择是两层规则：前者回应玩家做过什么，后者决定接下来更擅长什么。"
+    ],
+    "caveats": [
+      "不含Dawnguard、Hearthfire、Dragonborn、Creation内容及生存模式。"
+    ],
+    "resources": [
+      "生命、魔法与体力分别支持生存、施法和强力行动",
+      "双手位置限制当前武器、盾与法术组合",
+      "专长点需要在技能分支中选择"
+    ],
+    "progression": [
+      "18项技能按对应行动积累经验",
+      "技能成长带动角色升级，提供属性和专长发展"
+    ],
+    "scopeLabel": "2011本体标准流程",
+    "scopeNotes": "范围为2011年本体中的探索、任务、技能成长与角色配置。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=489830&l=english&cc=us",
+        "title": "The Elder Scrolls V: Skyrim Special Edition",
+        "publisher": "Steam / Bethesda Game Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数223177作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim?useskin=vector",
+        "title": "The Elder Scrolls V: Skyrim Special Edition — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "skill-experience",
+        "note": "锻造、弓术等技能分别随对应制作或使用行为积累经验并提升等级",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "角色取得专长点后在技能对应的能力节点中选择发展",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "分别给双手配置武器、盾牌或魔法，部分装备会占用双手",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "使用刀剑钝器、盾击和消耗体力的强力攻击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "以弓或远程法术打击敌人",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "进入潜行状态可扒窃或对未察觉的目标发动偷袭，目击犯罪也会触发守卫反应",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "龙吼使用后有恢复时间限制再次施放",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "选择派系任务线与NPC委托，推进不同冒险目标",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=489830&l=english&cc=us"
+    },
+    "aliases": [
+      "The Elder Scrolls V: Skyrim Special Edition"
+    ]
+  },
+  {
+    "id": "resident-evil-2-2019",
+    "name": "生化危机2（2019重制版）/ Resident Evil 2",
+    "studio": "CAPCOM Co., Ltd.",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox",
+      "switch",
+      "ios"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "puzzle-solving",
+      "gathering-survival"
+    ],
+    "summary": "以里昂在警察局等相连区域寻找钥匙与补给，利用有限背包安排弹药和治疗，在解谜回访中避开难以消灭的追踪者。",
+    "analysis": "敌人未必值得彻底击杀，背包也不能带走所有有用物；战斗、物资与回访路线因此需要一起计划。",
+    "loop": [
+      "探索房间并取得钥匙、线索与补给",
+      "选择绕开敌人或消耗弹药清出通路",
+      "回到安全房间整理物品与保存，再解开下一条路线"
+    ],
+    "learning": [
+      "地图回访可以持续产生新取舍：原先走过的路在背包变化、补给减少或追踪者出现后，不再拥有相同成本。"
+    ],
+    "caveats": [
+      "克莱尔路线、艾达与雪莉的操控段落，以及额外生还者模式不在此范围。Hardcore难度的墨带保存限制不适用于标准难度。"
+    ],
+    "resources": [
+      "初始背包槽位有限，可用腰包扩充",
+      "弹药、火药与草药各有不同用途",
+      "存储箱保存暂时不需携带的物品"
+    ],
+    "progression": [
+      "关键物品与谜题推进开放后续区域",
+      "保存点记录失败后的重试位置"
+    ],
+    "scopeLabel": "2019重制版里昂主线／标准难度",
+    "scopeNotes": "范围为2019重制版里昂主线中的探索、射击与解谜，采用标准难度。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=883710&l=english&cc=us",
+        "title": "Resident Evil 2",
+        "publisher": "Steam / CAPCOM Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数160195作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Resident_Evil_2_(2019_video_game)?useskin=vector",
+        "title": "Resident Evil 2 — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "里昂可自由控制移动方向、行走与冲刺，也可边移动边射击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "用枪械瞄准敌人，站定瞄准可收紧准星以提高射击表现",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "背包槽位有限，腰包可增加可携带空间",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "组合火药制作弹药，或混合草药获得更有效的治疗物",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "敌方攻击降低生命，可用治疗物恢复，耗尽生命会死亡",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "死亡后从先前保存点重新尝试",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "检查关键物品的三维外观以发现用途或谜题提示",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "暴君会跨区域追踪，玩家需要隐蔽或绕行以继续寻找钥匙与谜题物件",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg?t=1779433152",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=883710&l=english&cc=us"
+    },
+    "aliases": [
+      "Resident Evil 2"
+    ]
+  },
+  {
+    "id": "resident-evil-4-2023",
+    "name": "生化危机4（2023重制版）/ Resident Evil 4",
+    "studio": "CAPCOM Co., Ltd.",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox",
+      "switch",
+      "ios"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat",
+      "exploration",
+      "puzzle-solving",
+      "gathering-survival"
+    ],
+    "summary": "以里昂寻找并保护阿什莉，在移动射击、近战与刀刃招架间应对围攻，用收集材料制作弹药，并从商人处调整装备准备。",
+    "analysis": "射击与近战之间加入会磨损的刀，使防守也占用需要补充的装备预算；商人和制作系统再把一次交战的消耗接回后续准备。",
+    "loop": [
+      "探索村落和设施，解开推进道路的谜题",
+      "移动射击、近战与招架，保护同行的阿什莉",
+      "收集材料、完成商人请求并维修强化装备"
+    ],
+    "learning": [
+      "刀的耐久把招架消耗接入维修与补给，让一次战斗中的防守选择影响后续准备。"
+    ],
+    "caveats": [
+      "Separate Ways中艾达的抓钩和I.R.I.S不在此范围。阿什莉由AI控制，玩家可调整她的跟随距离。"
+    ],
+    "resources": [
+      "弹药可由材料制作",
+      "刀有耐久度，需要维修或强化",
+      "现金和物品可用于商人买卖与装备发展"
+    ],
+    "progression": [
+      "主线推进救援与新区域",
+      "商人任务和装备强化提供持续准备"
+    ],
+    "scopeLabel": "2023重制版里昂主线",
+    "scopeNotes": "范围为2023重制版里昂主线中的射击、招架、解谜与装备准备。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2050650&l=english&cc=us",
+        "title": "Resident Evil 4",
+        "publisher": "Steam / CAPCOM Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数193858作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Resident_Evil_4_(2023_video_game)?useskin=vector",
+        "title": "Resident Evil 4 — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "以枪械瞄准敌人，可在移动中射击和装填",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "近战踢击等手段可伤害敌人并推开包围",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "用刀在来袭攻击时进行招架和反击",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "使用收集的资源制作物品与弹药",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "在商人处强化已有装备，也可提高刀的耐久表现",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与商人购买、出售或交换物品，并安排后续准备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择不同属性的刀及其他可携装备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "主线救援过程中可完成商人给出的额外请求",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2050650&l=english&cc=us"
+    },
+    "aliases": [
+      "Resident Evil 4"
+    ]
+  },
+  {
+    "id": "dead-space-2023",
+    "name": "死亡空间（2023重制版）/ Dead Space",
+    "studio": "Motive",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "gathering-survival"
+    ],
+    "summary": "以工程师艾萨克探索石村号，用工具精确切断尸变体肢体，管理弹药与升级节点，在失重区域和供电选择中恢复飞船设施。",
+    "analysis": "弱点切割把瞄准位置转为弹药效率，供电切换又让推进任务伴随环境代价；回访中的升级材料使旧区域仍有价值。",
+    "loop": [
+      "探索船舱并修复任务设施",
+      "切割敌人肢体，用静滞与工程工具争取空间",
+      "搜集节点和部件，强化装备并回访新权限区域"
+    ],
+    "learning": [
+      "让推进路线同时改变光照或氧气等环境条件，可以使开门供电成为有代价的选择，而不只是找到开关。"
+    ],
+    "caveats": [
+      "失重区域可使用推进器自由移动；安全权限用于开放部分门和容器。"
+    ],
+    "resources": [
+      "弹药、背包空间与节点需要安排",
+      "局部供电可能在照明、氧气与任务设备间取舍",
+      "新部件扩展已有武器的强化路径"
+    ],
+    "progression": [
+      "主线推进开放更多船舱与武器",
+      "安全权限和强化部件让回访获得新用途"
+    ],
+    "scopeLabel": "2023重制版石村号流程",
+    "scopeNotes": "范围为2023重制版石村号中的探索、工程工具战斗、供电切换与装备发展。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1693980&l=english&cc=us",
+        "title": "Dead Space",
+        "publisher": "Steam / Motive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取缓存中的官方游戏说明、开发商、桌面平台与图像链接；未安装或试玩。 同时核对API公开推荐记录数64296作为受众反馈规模参考，不将其等同销量或独立玩家数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dead_Space_(2023_video_game)?useskin=vector",
+        "title": "Dead Space — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已逐项读取缓存中的Gameplay段落及原始网页发行信息框；社区资料按community_documentation记录，不伪称官方描述，未安装或试玩。"
+      },
+      {
+        "url": "https://www.frostbite.com/able/resources/dead-space/dead-space/ps5/controls",
+        "title": "Dead Space Control Settings for PS5",
+        "publisher": "Electronic Arts",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已访问并读取重制版控制说明中的瞄准、射击、次级开火、Kinesis Grab和失重控制；未安装或试玩。"
+      },
+      {
+        "url": "https://blog.playstation.com/2022/10/14/dead-space-hands-on-details-upgraded-and-expanded-horror-gameplay/",
+        "title": "Dead Space hands-on details — Upgraded and expanded horror gameplay",
+        "publisher": "Tim Turi / Sony Interactive Entertainment",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已阅读公开体验报道对前三章供电取舍、静滞、RIG实时界面和武器节点的说明；其作者体验不冒充本站试玩，按editorial_analysis记录。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "通过瞄准、射击及次级开火控制工程武器",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "在指定失重区域用推进器自由调整位置",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "把能量节点投入防护服与武器，找到部件后开放更多强化路径",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "主线与安全权限推进开放后续区域、门和容器",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "为任务设施供电时，可能需要在照明和氧气等用途之间断开一项供给",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "静滞可暂时大幅放慢敌人，为处理其他目标创造机会",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "打开RIG投影物品界面时世界仍继续运行",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "使用Kinesis Grab抓取环境中的可作用物件",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1693980/header.jpg?t=1777396576",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1693980&l=english&cc=us"
+    },
+    "aliases": [
+      "Dead Space"
+    ]
+  }
+]

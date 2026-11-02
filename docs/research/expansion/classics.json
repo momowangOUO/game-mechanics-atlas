@@ -16,7 +16,8 @@
     "playStyleIds": [
       "exploration",
       "collection-training",
-      "management-production"
+      "management-production",
+      "turn-based-combat"
     ],
     "summary": "进入随机生成的怪物塔，收集道具和怪物蛋，再将所得带回镇上发展。",
     "analysis": "塔内等级重置，但孵化的使魔与装备可以保留；每趟冒险因此同时是对当前损失和长期准备的权衡。",
@@ -218,8 +219,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "action-combat",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "创建不同种族和职业的角色，探索安卡迪亚并尝试阻止混沌入侵。",
     "analysis": "腐化可能带来能力也可能带来负担，而耗时强化装备又会增加暴露风险，使准备本身成为取舍。",
@@ -931,7 +932,7 @@
     ],
     "playStyleIds": [
       "exploration",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "带领同伴穿越多个时代，在探索和战斗中推进故事。",
     "analysis": "角色技能可以组合，敌人位置又会改变技能覆盖效果，因此战斗选择同时涉及队伍配合和时机。",
@@ -1031,7 +1032,6 @@
     ],
     "playStyleIds": [
       "aiming-shooting",
-      "action-combat",
       "vehicle-driving"
     ],
     "summary": "在步行与载具战斗中使用枪械、手雷和近战攻击，穿越外星设施。",
@@ -1758,7 +1758,8 @@
       "tactical-command",
       "management-production",
       "exploration",
-      "social-negotiation"
+      "social-negotiation",
+      "turn-based-combat"
     ],
     "summary": "发展星际殖民地、研发技术并以军事或外交方式争取胜利。",
     "analysis": "殖民人口可以在农业、工业和科研之间调配；调整一项产出时，其他发展速度也随之改变。",
@@ -1955,10 +1956,7 @@
     "studio": "Mossmouth",
     "year": 2008,
     "platforms": [
-      "pc",
-      "xbox",
-      "playstation",
-      "switch"
+      "pc"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -1991,7 +1989,7 @@
       "失去全部生命或遭遇致命陷阱后从头开始。"
     ],
     "scopeLabel": "2008 年 Windows 原版",
-    "scopeNotes": "平台列表还包含后来正式发行的重制版本。",
+    "scopeNotes": "平台列表还包含后来正式发行的重制版本。 此处的平台仅指 2008 年 Windows 免费原版；2012 年起的重制版及民间移植不计。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Spelunky?useskin=vector",
@@ -2060,9 +2058,7 @@
     "platforms": [
       "pc",
       "mac",
-      "playstation",
-      "ios",
-      "android"
+      "playstation"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -2093,7 +2089,7 @@
       "运输网络和公司财务在当前对局中持续；车辆老化后需要替换。"
     ],
     "scopeLabel": "原版运输公司经营",
-    "scopeNotes": "原版地图随机生成，支持两名玩家连接对抗。",
+    "scopeNotes": "原版地图随机生成，支持两名玩家连接对抗。 2013 年移动版为后续改版，不计入原版平台。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Transport_Tycoon?useskin=vector",
@@ -2270,7 +2266,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "turn-based-combat"
     ],
     "summary": "创建角色探索随机地牢，取得护符后设法返回并献给所信奉的神。",
     "analysis": "物品身份会在新游戏中重新分配，玩家需要在有限补给和未知效果之间判断是否尝试。",
@@ -2379,7 +2376,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "turn-based-combat"
     ],
     "summary": "探索随机生成的地牢，寻找护符并设法回到地表。",
     "analysis": "每局地牢与遭遇变化，而角色死亡通常意味着重新开始；玩家需要用已有信息应对未知区域。",
@@ -2478,7 +2476,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "turn-based-combat"
     ],
     "summary": "从城镇准备装备后深入随机地牢，寻找并击败炎魔。",
     "analysis": "地牢楼层离开后会重新生成，城镇则保留，为每趟探索提供稳定的补给地点。",
@@ -2578,8 +2577,7 @@
     ],
     "playStyleIds": [
       "life-simulation",
-      "management-production",
-      "gathering-survival"
+      "management-production"
     ],
     "summary": "修复荒废农场，种植作物、饲养牲畜并与镇民建立关系。",
     "analysis": "农业劳动、社交和体力共用每日时间；农具升级能提高效率，但需要先投入资源。",
@@ -2778,8 +2776,7 @@
       "platformer"
     ],
     "playStyleIds": [
-      "platforming",
-      "action-combat"
+      "platforming"
     ],
     "summary": "高速穿行关卡，收集金环并击败蛋头博士的机械部队。",
     "analysis": "金环既能积累又能抵挡一次伤害，促使玩家权衡高速通过和保持已有收获。",
@@ -3094,8 +3091,7 @@
     ],
     "mobileOrigin": false,
     "genreIds": [
-      "shooter",
-      "shoot-em-up"
+      "shooter"
     ],
     "playStyleIds": [
       "aiming-shooting",
@@ -3309,7 +3305,7 @@
     "playStyleIds": [
       "exploration",
       "collection-training",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "捕捉并培养宝可梦，挑战训练家并填写宝可梦图鉴。",
     "analysis": "捕捉成功率受到目标生命和状态影响，因此战斗不仅是击败对手，也能用于创造捕捉机会。",
@@ -3421,8 +3417,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "tactical-command",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "带领拥有不同能力的角色探索世界，在即时行动条战斗中推进故事。",
     "analysis": "魔石既能提供召唤，又能让角色逐步学会法术，使角色独有能力与可培养能力形成组合。",
@@ -3527,7 +3523,7 @@
     ],
     "playStyleIds": [
       "exploration",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "带领四人队伍穿行城镇与地下城，在战斗和探索中推进故事。",
     "analysis": "生命值逐渐滚动下降，让致命伤害与角色倒下之间留下短暂的救援机会。",
@@ -3623,11 +3619,7 @@
     "studio": "Atlus",
     "year": 2006,
     "platforms": [
-      "playstation",
-      "handheld",
-      "pc",
-      "xbox",
-      "switch"
+      "playstation"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -3635,10 +3627,10 @@
       "rpg"
     ],
     "playStyleIds": [
-      "tactical-command",
       "collection-training",
       "life-simulation",
-      "dialogue-choice"
+      "dialogue-choice",
+      "turn-based-combat"
     ],
     "summary": "在学校生活、人际关系和夜间迷宫探索之间分配时间。",
     "analysis": "社群关系会影响同类人格面具合成时的经验奖励，使白天社交与夜间战斗成长相互关联。",
@@ -3661,7 +3653,7 @@
       "社群与人格面具在当前流程持续，日程随日期推进。"
     ],
     "scopeLabel": "PS2 原版主线",
-    "scopeNotes": "队友操作规则不混同于 Portable。",
+    "scopeNotes": "队友操作规则不混同于 Portable。 其他平台上的 Portable 是经改动的后续版本，不能直接视为 PS2 原版。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Persona_3?useskin=vector",
@@ -4276,7 +4268,6 @@
     ],
     "playStyleIds": [
       "exploration",
-      "action-combat",
       "aiming-shooting"
     ],
     "summary": "潜入巡逻区域，利用阴影、声音和工具完成盗窃目标。",
@@ -4375,10 +4366,7 @@
     "platforms": [
       "pc",
       "mac",
-      "linux",
-      "switch",
-      "playstation",
-      "xbox"
+      "linux"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -4412,7 +4400,7 @@
       "完成目标获得模块，可在升级装置处永久强化技能。"
     ],
     "scopeLabel": "Windows 原版单人流程",
-    "scopeNotes": "没有激活当地复活设施时，死亡后需要读取存档。",
+    "scopeNotes": "没有激活当地复活设施时，死亡后需要读取存档。 主机版为 2025 年 25 周年重制版，不计入此处原版平台。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/System_Shock_2?useskin=vector",
@@ -4688,7 +4676,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "turn-based-combat"
     ],
     "summary": "穿越随机地牢，在有限背包内平衡食物、装备和恢复道具。",
     "analysis": "行走既会恢复生命又会消耗饱腹度，让看似安全的等待和移动也产生补给成本。",
@@ -4795,8 +4784,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "tactical-command",
-      "dialogue-choice"
+      "dialogue-choice",
+      "turn-based-combat"
     ],
     "summary": "在废土中寻找水源芯片，通过交涉、探索和回合战斗完成任务。",
     "analysis": "行动点让移动、攻击和装填共用一项预算，而任务结果又会改变声誉与后续机会。",
@@ -5011,7 +5000,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "创建角色深入地牢，收集符文并带着 Zot 宝珠逃离。",
     "analysis": "种族决定技能适性，背景主要决定起始条件，使初始选择影响成长速度但不完全锁死发展方向。",
@@ -5530,7 +5520,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "turn-based-combat"
     ],
     "summary": "从城镇采购补给，深入随机地牢并尝试击败魔苟斯。",
     "analysis": "稳定的城镇补给与有限背包，使玩家需要决定何时继续深入、何时带着收获返回。",
@@ -5637,9 +5628,7 @@
     "platforms": [
       "pc",
       "mac",
-      "linux",
-      "ios",
-      "android"
+      "linux"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -5649,7 +5638,8 @@
     "playStyleIds": [
       "tactical-command",
       "exploration",
-      "management-production"
+      "management-production",
+      "turn-based-combat"
     ],
     "summary": "指挥英雄探索地图、招募生物并在六角战场上战斗。",
     "analysis": "地图中的矿场持续提供资源，而城镇建设和军队招募都要消耗这些资源，扩张与战斗准备因此相互影响。",
@@ -5672,7 +5662,7 @@
       "同一场景中英雄、城镇与军队状态持续；战役由不同场景组成。"
     ],
     "scopeLabel": "1999 年原版场景",
-    "scopeNotes": "后续 HD 版移植到移动平台。",
+    "scopeNotes": "后续 HD 版移植到移动平台。 移动平台对应 2015 年高清版，不计入此处 1999 年原版平台。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Heroes_of_Might_and_Magic_III?useskin=vector",
@@ -6070,19 +6060,13 @@
     "platforms": [
       "handheld",
       "ios",
-      "android",
-      "switch",
-      "playstation",
-      "pc",
-      "xbox"
+      "android"
     ],
     "mobileOrigin": false,
     "genreIds": [
-      "investigation-adventure",
       "puzzle"
     ],
     "playStyleIds": [
-      "investigation-deduction",
       "puzzle-solving"
     ],
     "summary": "操控幽灵附身物件并回到死亡前四分钟，改变事件以拯救他人。",
@@ -6106,7 +6090,7 @@
       "成功改变事件会推进故事；部分救援过程中可建立时间线检查点。"
     ],
     "scopeLabel": "Nintendo DS 原版主线",
-    "scopeNotes": "部分章节会加入具有不同能力的另一幽灵。",
+    "scopeNotes": "部分章节会加入具有不同能力的另一幽灵。 2012 年 Android 原移植和 iOS 移植保留；PC、Switch、PlayStation、Xbox 对应 2023 年重制版，不计入原作平台。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Ghost_Trick:_Phantom_Detective?useskin=vector",
@@ -6179,11 +6163,9 @@
     ],
     "mobileOrigin": false,
     "genreIds": [
-      "logic-puzzle",
-      "investigation-adventure"
+      "logic-puzzle"
     ],
     "playStyleIds": [
-      "investigation-deduction",
       "puzzle-solving"
     ],
     "summary": "调查小镇居民和场景，在寻找黄金苹果的过程中解决各类谜题。",
@@ -6286,8 +6268,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "tactical-command",
-      "collection-training"
+      "collection-training",
+      "turn-based-combat"
     ],
     "summary": "带领人类与怪物同伴展开冒险，在回合战斗中培养队伍。",
     "analysis": "怪物也能加入并成长，让每次遭遇除了提供战斗经验，还可能改变后续队伍组成。",
@@ -6944,7 +6926,6 @@
     ],
     "playStyleIds": [
       "life-simulation",
-      "management-production",
       "spatial-planning"
     ],
     "summary": "安排模拟市民的生活、职业与社交，同时建设和布置住宅。",
@@ -7487,8 +7468,7 @@
       "platformer"
     ],
     "playStyleIds": [
-      "platforming",
-      "action-combat"
+      "platforming"
     ],
     "summary": "控制大金刚与迪迪穿越岛屿关卡，寻找被抢走的香蕉。",
     "analysis": "两名角色的移动与攻击特点不同；受到攻击会失去当前角色，直到找到木桶才能救回同伴。",
@@ -7597,7 +7577,8 @@
     "playStyleIds": [
       "exploration",
       "aiming-shooting",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "以回合方式探索基地，管理弹药、装备与角色特质并对抗怪物。",
     "analysis": "远程射击、有限背包和跑动后的疲劳状态，使射手也要为移动与补给留出余地。",
@@ -8011,7 +7992,8 @@
     ],
     "playStyleIds": [
       "vehicle-driving",
-      "spatial-planning"
+      "spatial-planning",
+      "puzzle-solving"
     ],
     "summary": "驾驶不同环境的车辆竞速，并用轨道模块搭建自己的赛道。",
     "analysis": "比赛赚取的货币可以购买赛道模块，使驾驶挑战与赛道创作形成前后关联。",
@@ -8051,6 +8033,14 @@
         "type": "editorial",
         "checkedAt": "2026-11-02",
         "verificationNote": "查阅对原版赛道编辑器可旋转模块的介绍；未安装试玩。"
+      },
+      {
+        "url": "https://www.mobygames.com/game/12151/trackmania/",
+        "title": "TrackMania (2003)",
+        "publisher": "MobyGames",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅初代 Puzzle Tracks：用有限模块补全赛道并竞速。"
       }
     ],
     "mechanics": [
@@ -8545,7 +8535,8 @@
     ],
     "playStyleIds": [
       "tactical-command",
-      "management-production"
+      "management-production",
+      "turn-based-combat"
     ],
     "summary": "在全球战略界面经营基地、研发装备，并在回合战场上指挥小队。",
     "analysis": "基地研发和战场回收互相支撑，而士兵永久死亡让每次行动的损失会影响后续任务。",
@@ -8852,7 +8843,8 @@
     "playStyleIds": [
       "exploration",
       "gathering-survival",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "深入随机地牢寻找护符，在食物有限的情况下选择装备和应对怪物。",
     "analysis": "附魔可以改善一件装备的能力和使用门槛，而未知诅咒可能让装备无法卸下，因此试用与长期投入都需要判断。",

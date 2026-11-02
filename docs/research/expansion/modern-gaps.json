@@ -14,8 +14,7 @@
     ],
     "playStyleIds": [
       "card-play",
-      "buildcrafting",
-      "tactical-command"
+      "buildcrafting"
     ],
     "summary": "挑选领队并沿分支道路救出伙伴，用卡牌调整双方的攻击倒计数，在雪原中组建能活到终点的队伍。",
     "analysis": "攻击不会在每回合同时发生；倒计数让控场、加速和救援伙伴的先后次序成为构筑的一部分。",
@@ -356,8 +355,7 @@
     ],
     "playStyleIds": [
       "card-play",
-      "buildcrafting",
-      "tactical-command"
+      "buildcrafting"
     ],
     "summary": "招募调查员组成至多四人的队伍，把各人的技能卡汇入战斗方案，在扭曲之地收集时光碎片。",
     "analysis": "构筑的基本单位既是卡牌也是队员；加入一名调查员，会同时改变技能供给和队伍的协同空间。",
@@ -474,8 +472,7 @@
     ],
     "playStyleIds": [
       "card-play",
-      "buildcrafting",
-      "tactical-command"
+      "buildcrafting"
     ],
     "summary": "用收藏的书邀请宾客，让司书以卡牌和骰子对抗他们，再把胜者取得的新书投入下一场接待。",
     "analysis": "情感提高会加剧战斗，也可能带来更稀有的书；胜利收益与战中风险通过同一套状态增长相连。",
@@ -587,8 +584,7 @@
     ],
     "playStyleIds": [
       "card-play",
-      "buildcrafting",
-      "tactical-command"
+      "buildcrafting"
     ],
     "summary": "带领四名英雄沿分支旅程构筑各自牌组，在事件选择和战术战斗中完成四幕营救。",
     "analysis": "每名队员独立构筑又需要互相配合，使一次奖励选择既要照顾个人强度，也要维持全队职责。",
@@ -1421,123 +1417,6 @@
     "aliases": [
       "风暴奇侠"
     ]
-  },
-  {
-    "id": "lost-rift",
-    "name": "Lost Rift",
-    "studio": "People Can Fly",
-    "year": 2025,
-    "platforms": [
-      "pc"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "extraction-shooter",
-      "survival-craft"
-    ],
-    "playStyleIds": [
-      "aiming-shooting",
-      "gathering-survival",
-      "spatial-planning"
-    ],
-    "summary": "在自己的PvE岛屿采集、搭营与制作装备，再前往其他不稳定岛屿执行高风险撤离远征。",
-    "analysis": "建造岛与远征岛承担不同压力，营地提供长期准备，外出搜刮则引入时限和玩家竞争。",
-    "loop": [
-      "采集并扩建个人营地",
-      "接任务、制作装具准备远征",
-      "前往不稳定岛屿搜刮，在时限内带出物资"
-    ],
-    "learning": [
-      "通过相连的安全建设区与危险远征区，可以让营地投入产生清晰的外出用途。"
-    ],
-    "caveats": [
-      "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。"
-    ],
-    "resources": [
-      "木石等材料用于营地设施和装备",
-      "远征高价值物资支持进一步建设"
-    ],
-    "progression": [
-      "营地设施持续保留",
-      "任务和可招募幸存者揭示群岛秘密"
-    ],
-    "scopeLabel": "公开抢先体验的营地与远征",
-    "scopeNotes": "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
-        "title": "Lost Rift",
-        "publisher": "Steam / People Can Fly",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
-      },
-      {
-        "url": "https://store.steampowered.com/app/3494520/?l=english",
-        "title": "Lost Rift on Steam",
-        "publisher": "Steam / People Can Fly",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "resource-gathering",
-        "note": "从个人岛屿环境采集建营和制作所需材料",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "base-construction",
-        "note": "用材料建造工作台、烹饪设施和模块化庇护所",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "recipe-crafting",
-        "note": "在营地制作远征所需装备与生存设施",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "extraction-bank",
-        "note": "去其他不稳定岛屿搜刮，须成功撤离带回高价值资源",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "quest-progression",
-        "note": "完成任务并招募幸存者，逐步揭开登岛原因",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "season-weather",
-        "note": "飓风、火灾、雷击和浓雾威胁岛上行动与营地",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "pvp-opposition",
-        "note": "PvPvE远征允许其他队伍争抢物资并交火",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "conditional",
-        "condition": "选择PvPvE远征模式"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3494520/b67ab35e39bbd079b27215814b729af569993126/header.jpg?t=1774014823",
-      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us"
-    },
-    "aliases": []
   },
   {
     "id": "zero-sievert",
@@ -2538,8 +2417,7 @@
     "playStyleIds": [
       "exploration",
       "gathering-survival",
-      "vehicle-driving",
-      "buildcrafting"
+      "vehicle-driving"
     ],
     "summary": "驾驶飞船在生成的星系与星球间探索，采集与交易资源，升级飞船、武器和防护服以走向更危险区域。",
     "analysis": "移动距离、货运收益和环境耐受对应不同升级需求，让同一份资源随玩家当前旅行目的改变价值。",
@@ -3329,121 +3207,6 @@
     "aliases": []
   },
   {
-    "id": "desynced",
-    "name": "Desynced",
-    "studio": "Stage Games Inc.",
-    "year": 2023,
-    "platforms": [
-      "pc"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "factory-automation"
-    ],
-    "playStyleIds": [
-      "management-production",
-      "spatial-planning",
-      "buildcrafting"
-    ],
-    "summary": "用可改装的无人机承担采矿与运输，建设不依赖传送带的工业网络，再编排其行为以修复受损飞船。",
-    "analysis": "无人机同时是运输工具和可配置作业单元，网络扩张需要考虑设备用途与调度，而不只是铺路。",
-    "loop": [
-      "派无人机建立采矿与设施",
-      "连接物流网络并配置机器行为",
-      "研究技术、扩张工业以支持修复目标"
-    ],
-    "learning": [
-      "用可改装运输单元替代固定运输带，会把物流优化转向能力配置与调度。"
-    ],
-    "caveats": [
-      "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。"
-    ],
-    "resources": [
-      "矿物与加工材料进入生产链",
-      "能源储存和发电维持设施与机器人"
-    ],
-    "progression": [
-      "科技树开放先进无人机和建筑",
-      "组件与脚本可按问题重新安排"
-    ],
-    "scopeLabel": "正式版普通自动化流程",
-    "scopeNotes": "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
-        "title": "Desynced",
-        "publisher": "Steam / Stage Games Inc.",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
-      },
-      {
-        "url": "https://store.steampowered.com/app/1450900/?l=english",
-        "title": "Save 30% on Desynced on Steam",
-        "publisher": "Steam / Stage Games Inc.",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "production-chain",
-        "note": "以矿物和多级加工设施建立工业转换链",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "transport-network",
-        "note": "连接网络的无人机会自动接受并搬运物资订单",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "energy-network",
-        "note": "管理发电与储能，支撑基地工作",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "technology-research",
-        "note": "研究科技树开放高级单位与设施",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "loadout-selection",
-        "note": "为无人机装上适合其工作用途的工具",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "workforce-assignment",
-        "note": "给机器人和设施设置参数或拖放脚本，安排具体行为",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "base-construction",
-        "note": "在行星建设采矿、加工与飞船修复所需设施",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1450900/917f1af87f61fdc2aa66407223bbb802b842fdcc/header.jpg?t=1789395759",
-      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us"
-    },
-    "aliases": []
-  },
-  {
     "id": "surviving-mars",
     "name": "火星求生 / Surviving Mars",
     "studio": "Haemimont Games、Abstraction",
@@ -4050,123 +3813,6 @@
     },
     "aliases": [
       "搁浅：异星黎明"
-    ]
-  },
-  {
-    "id": "noble-fates",
-    "name": "贵族命运 / Noble Fates",
-    "studio": "Xobermon, LLC",
-    "year": 2021,
-    "platforms": [
-      "pc"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "colony-simulation"
-    ],
-    "playStyleIds": [
-      "management-production",
-      "spatial-planning",
-      "social-negotiation"
-    ],
-    "summary": "建设并统治会记住恩怨的幻想王国，分配住房与战利品、处理邻国关系，在继承和战争中维持臣民忠诚。",
-    "analysis": "物资分配不是单纯的效率指令；角色对信仰、待遇和过去行为的记忆，会转成效忠、背叛和外交后果。",
-    "loop": [
-      "建设城堡并组织生产",
-      "照顾臣民、分配财物与处理来客",
-      "应对邻国、袭击与继承，延续王国"
-    ],
-    "learning": [
-      "让角色记住分配与待遇，可以把经营决策转成后续可理解的人际结果。"
-    ],
-    "caveats": [
-      "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。"
-    ],
-    "resources": [
-      "粮食与财富维持臣民和领地",
-      "住房和战利品分配影响效忠"
-    ],
-    "progression": [
-      "臣民保留观念与记忆",
-      "统治者死亡后可由继承者继续王国，关系随新统治者变化"
-    ],
-    "scopeLabel": "普通幻想王国模拟",
-    "scopeNotes": "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us",
-        "title": "Noble Fates",
-        "publisher": "Steam / Xobermon, LLC",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
-      },
-      {
-        "url": "https://store.steampowered.com/app/1769420/?l=english",
-        "title": "Noble Fates on Steam",
-        "publisher": "Steam / Xobermon, LLC",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "base-construction",
-        "note": "逐砖建城或挖掘山中要塞，并给贵族分配住房",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "workforce-assignment",
-        "note": "命令臣民建设、耕种、狩猎、制作和战斗",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "agriculture-husbandry",
-        "note": "耕地和饲养牲畜维持王国食品供应",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "relationship-progression",
-        "note": "待遇、信仰与记忆累积改变忠诚，可能导致逃离或背叛",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "social-diplomacy",
-        "note": "以信仰、结盟、谈判及过去行为改变邻国关系",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "barter-trade",
-        "note": "与容许来往的王国和访客交易，出售物品或出租房间",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "world-simulation",
-        "note": "人物的记忆、观念和继承关系持续相互影响，产生新的冲突",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1769420/9f8ce562f54c87f169f25d9cf80ebcf0b3bd91c6/header.jpg?t=1792510725",
-      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us"
-    },
-    "aliases": [
-      "贵族命运"
     ]
   },
   {
@@ -4806,8 +4452,7 @@
     ],
     "playStyleIds": [
       "puzzle-solving",
-      "dialogue-choice",
-      "investigation-deduction"
+      "dialogue-choice"
     ],
     "summary": "从三个小组的片段中选择体验顺序，在密室搜寻工具解谜，作出生死决定，再把碎片拼回时间线。",
     "analysis": "角色会忘记片段之间的经历，玩家却在流程图上积累全局信息；选择体验的顺序也参与了悬念组织。",
@@ -4919,8 +4564,7 @@
       "visual-novel"
     ],
     "playStyleIds": [
-      "dialogue-choice",
-      "investigation-deduction"
+      "dialogue-choice"
     ],
     "summary": "在封闭村落的宴会中选择行动，经历死亡与时间回返，把前次得到的钥匙用于打开新的故事路线。",
     "analysis": "坏结局提供的信息能成为后续选项的实际前提，死亡因而兼有失败和揭露新证据两种作用。",
@@ -5516,8 +5160,7 @@
     ],
     "playStyleIds": [
       "puzzle-solving",
-      "dialogue-choice",
-      "investigation-deduction"
+      "dialogue-choice"
     ],
     "summary": "通过异界人物的表情、手势和指物推测词义，把解释填入自己的词典，在行动分支中寻找逃离的方法。",
     "analysis": "词典允许保留暂时不准确的解释，旧场景又可重看；理解不是一次答对的问题，而是不断用新语境修正的过程。",

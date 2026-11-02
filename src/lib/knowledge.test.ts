@@ -2,6 +2,7 @@ import {describe,expect,it} from 'vitest';
 import {DimensionIdSchema,MechanicInstanceSchema,MechanicSchema,MechanicStatusSchema} from './model';
 import {createKnowledgeBase,dataset,dimensions,games,genres,instances,mechanics,recipes,relationships,sources,getGame,getInstanceStatus,getInstances,getMechanic,validateKnowledge} from './knowledge';
 import {assertion,scopeFixture} from './fixtures/knowledge-fixture';
+import {minimumSupportedMechanics} from './case-completeness';
 describe('canonical catalog',()=>{
   it('keeps nine dimensions and normalized references',()=>{
     expect(dimensions).toHaveLength(9);expect(new Set(dimensions.map(d=>d.id)).size).toBe(9);
@@ -10,7 +11,7 @@ describe('canonical catalog',()=>{
     for(const rows of [games,genres,recipes]){expect(rows.length).toBeGreaterThan(0);expect(new Set(rows.map(row=>row.id)).size).toBe(rows.length);}
     expect(relationships.length).toBeGreaterThanOrEqual(120);expect(instances.filter(i=>['present','conditional'].includes(i.status)).length).toBeGreaterThanOrEqual(600);
     expect(new Set(sources.map(s=>s.url)).size).toBeGreaterThanOrEqual(120);expect(validateKnowledge()).toEqual([]);
-    for(const game of games){expect(getInstances(game.id).filter(i=>['present','conditional'].includes(i.status)).length,game.id).toBeGreaterThanOrEqual(6);expect(game.coreLoop.length).toBeGreaterThanOrEqual(3);expect(game.coreLoop.length).toBeLessThanOrEqual(6);}
+    for(const game of games){expect(getInstances(game.id).filter(i=>['present','conditional'].includes(i.status)).length,game.id).toBeGreaterThanOrEqual(minimumSupportedMechanics(game));expect(game.coreLoop.length).toBeGreaterThanOrEqual(3);expect(game.coreLoop.length).toBeLessThanOrEqual(6);}
   });
   it('preserves original mechanic identity and separates genres',()=>{
     for(const[id,dimension]of Object.entries({'run-reset':'temporal','rule-modifier':'rules','recipe-crafting':'economy',respec:'buildcraft','shared-resource-pool':'economy',permadeath:'progression'}))expect(getMechanic(id)?.dimension).toBe(dimension);

@@ -36,6 +36,7 @@ export default function MethodPage() {
           <Link className="chip" href="#evidence">
             机制记录与适用范围
           </Link>
+          <Link className="chip" href="#admission">收录标准</Link>
           <Link className="chip" href="#heat">
             真实搜索资料
           </Link>
@@ -242,6 +243,13 @@ export default function MethodPage() {
           <p>
             年度名次与相对指数缺少可用的绝对需求，当前游戏样本也不覆盖市场，因此网站暂停给出蓝海、红海分与机会排名。导入真实站内搜索次数仍然不足以补齐市场供给；站内结果仅反映该站用户。取得可比的需求与供给范围后，才能另外建立并验证市场分析模型。
           </p>
+        </section>
+        <section id="admission">
+          <h2>优先收录有代表性和受众基础的游戏</h2>
+          <p>收录范围不限平台与年代，包括手游、经典老游戏和正式开放的抢先体验作品。优先选择有公开销量、玩家里程碑、明确商业榜单或持续直播传播记录的作品。未实际发行的 Game Jam 作品、过度小众的候选、纯赌博和传统棋牌不收录。</p>
+          <p>没有公开销量时，可以结合商业与传播证据判断。下载量、观看时长、同时在线人数和评价数各有口径，不换算成销量或累计玩家人数。商业表现用于选择研究案例，不作为机制分类依据。</p>
+          <p>机制资料尚未补齐的作品标为“参考条目”，并列出已核实内容与资料缺口。证据不足的候选先暂缓收录；分类里的空缺会继续补查，不用牵强的标签或冷门作品填满数量。</p>
+          <p><Link className="cyan" href="/games/discovery">查看直播与传播案例及来源 →</Link></p>
         </section>
         <section id="import">
           <h2>导入记录只在当前浏览器中分析</h2>

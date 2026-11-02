@@ -109,219 +109,6 @@
     "aliases": []
   },
   {
-    "id": "despots-game",
-    "name": "暴君的游戏 / Despot’s Game",
-    "studio": "Konfa Games",
-    "year": 2021,
-    "platforms": [
-      "pc",
-      "mac",
-      "linux"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "auto-battler",
-      "roguelite",
-      "strategy"
-    ],
-    "playStyleIds": [
-      "buildcrafting",
-      "tactical-command",
-      "exploration"
-    ],
-    "summary": "为一群人类选择装备和职业，在随机迷宫中组织自动战斗。",
-    "analysis": "装备决定队员的战斗角色，迷宫内的损失和阵容构筑共同影响能否走到最后。",
-    "loop": [
-      "选择战利品并改造队员",
-      "探索生成的迷宫并应对遭遇",
-      "让队伍自动交战，继续调整阵容"
-    ],
-    "learning": [
-      "让同一个装备选择同时改变单位职责与队伍协同。"
-    ],
-    "caveats": [
-      "后期玩家阵容对抗属于通关后的模式；2021 年首次抢先体验。"
-    ],
-    "resources": [
-      "装备：赋予人类不同职业和能力",
-      "队员：战斗中可能失去"
-    ],
-    "progression": [
-      "迷宫及当前队伍随新一局重新生成"
-    ],
-    "scopeLabel": "单人迷宫与通关后对抗",
-    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/app/1227280/",
-        "title": "Despot's Game: Dystopian Battle Simulator on Steam",
-        "publisher": "tinyBuild",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
-      },
-      {
-        "url": "https://www.ps4blog.net/2023/06/nintendo-switch-despots-game-review/",
-        "title": "Despot’s Game Review",
-        "publisher": "PS4Blog",
-        "type": "editorial",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "generated-layout",
-        "note": "每次尝试重新生成迷宫布局。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "team-composition",
-        "note": "组合巫师、忍者等不同职责的队员。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "loadout-selection",
-        "note": "为人类选择装备，使其转变为不同职业。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "automatic-resolution",
-        "note": "布置好队员后由他们自动战斗。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "upkeep-needs",
-        "note": "队员需要食物；补给不足会使队伍在迷宫中面临饥饿风险。",
-        "source": 1,
-        "evidenceKind": "editorial_analysis",
-        "status": "present"
-      },
-      {
-        "id": "pvp-opposition",
-        "note": "通过迷宫后可与其他玩家的最终阵容对抗。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "conditional",
-        "condition": "通关后的玩家阵容对抗"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1227280/header.jpg?t=1781522438",
-      "sourceUrl": "https://store.steampowered.com/app/1227280/"
-    },
-    "aliases": []
-  },
-  {
-    "id": "astronarch",
-    "name": "Astronarch",
-    "studio": "Dale Turner",
-    "year": 2020,
-    "platforms": [
-      "pc"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "auto-battler",
-      "roguelite",
-      "strategy"
-    ],
-    "playStyleIds": [
-      "buildcrafting",
-      "tactical-command",
-      "exploration"
-    ],
-    "summary": "招募英雄、安排站位与装备，在随机路径中自动战斗。",
-    "analysis": "队伍技能、装备分配和路线风险互相作用，前排保护和输出位置需要结合遭遇判断。",
-    "loop": [
-      "挑选英雄并分配装备",
-      "在不同区域间选择路线",
-      "应对自动战斗并继续收集物品"
-    ],
-    "learning": [
-      "让路线选择和队伍配置共同决定遭遇难度。"
-    ],
-    "caveats": [
-      "腐化等级和外观光环在首次胜利后才出现；2020 年抢先体验。"
-    ],
-    "resources": [
-      "英雄：提供不同技能",
-      "装备：改变队伍属性及能力"
-    ],
-    "progression": [
-      "英雄解锁和通关后的难度选项跨尝试保留"
-    ],
-    "scopeLabel": "单人自动战斗冒险",
-    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/app/1234940/",
-        "title": "Astronarch on Steam",
-        "publisher": "Dale Turner",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "team-composition",
-        "note": "从不同英雄中选择成员并安排队伍。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "automatic-resolution",
-        "note": "英雄在战斗中自动施展技能并攻击。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "spatial-loadout",
-        "note": "在战斗前安排英雄站位，决定前排与后排配置。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "route-branching",
-        "note": "每个章节可在不同区域之间选择行进路线。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "loot-drop",
-        "note": "获得古代与魔法装备，改变英雄属性和能力。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "objective-unlock",
-        "note": "首次胜利后开放额外腐化难度。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1234940/header.jpg?t=1774346350",
-      "sourceUrl": "https://store.steampowered.com/app/1234940/"
-    },
-    "aliases": []
-  },
-  {
     "id": "the-last-flame",
     "name": "将熄之焰 / The Last Flame",
     "studio": "Hotloop",
@@ -431,125 +218,6 @@
     "aliases": []
   },
   {
-    "id": "hadean-tactics",
-    "name": "Hadean Tactics",
-    "studio": "Emberfish Games",
-    "year": 2021,
-    "platforms": [
-      "pc",
-      "mac",
-      "linux"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "auto-battler",
-      "deckbuilder",
-      "roguelite",
-      "strategy"
-    ],
-    "playStyleIds": [
-      "buildcrafting",
-      "card-play",
-      "tactical-command"
-    ],
-    "summary": "招募自动作战的灵魂，使用卡牌影响战局并探索不断变化的地狱。",
-    "analysis": "自动部队和手动卡牌共同参与战斗，卡牌、遗物和单位联盟可以围绕同一策略组合。",
-    "loop": [
-      "招募单位并构建牌组",
-      "沿生成的地图选择路线",
-      "自动战斗中打出卡牌干预"
-    ],
-    "learning": [
-      "让玩家在自动战斗中保留直接干预队伍的手段。"
-    ],
-    "caveats": [
-      "自定义英雄和卡组可选；2021 年首次抢先体验。"
-    ],
-    "resources": [
-      "卡牌：提供战斗中主动效果",
-      "单位与遗物：构成阵容和被动组合"
-    ],
-    "progression": [
-      "每次冒险的卡牌和路线重新生成"
-    ],
-    "scopeLabel": "单人牌组与自动战斗",
-    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/app/1260590/",
-        "title": "Hadean Tactics on Steam",
-        "publisher": "Emberfish Games",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
-      },
-      {
-        "url": "https://www.4gamer.net/games/701/G070190/20240219014/",
-        "title": "Hadean Tactics 自动战斗介绍",
-        "publisher": "4Gamer",
-        "type": "editorial",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "team-composition",
-        "note": "招募不同灵魂并结合其技能与联盟。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "automatic-resolution",
-        "note": "受招募单位会自动为英雄作战。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "in-run-deck-growth",
-        "note": "在冒险过程中获得卡牌，用来影响战斗。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "generated-layout",
-        "note": "每次冒险生成新的地图路径。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "route-branching",
-        "note": "选择前往不同区域、事件和首领的路线。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "loadout-selection",
-        "note": "开始前可选择自定义英雄与起始牌组。",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "pause-planning",
-        "note": "可暂停自动战斗，在剩余能量允许时出牌或调整攻击目标。",
-        "source": 1,
-        "evidenceKind": "editorial_analysis",
-        "status": "present"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1260590/d4498733d941656ba78d67c82eddd1e62d55840f/header.jpg?t=1793551274",
-      "sourceUrl": "https://store.steampowered.com/app/1260590/"
-    },
-    "aliases": []
-  },
-  {
     "id": "just-king",
     "name": "吾王保卫战 / Just King",
     "studio": "VISH",
@@ -565,7 +233,7 @@
     ],
     "playStyleIds": [
       "buildcrafting",
-      "action-combat"
+      "platforming"
     ],
     "summary": "操纵国王移动，围绕国王编排自动作战的四名英雄。",
     "analysis": "自动攻击与玩家控制队伍位置并存，英雄羁绊和装备决定面对敌群时的打法。",
@@ -681,7 +349,7 @@
     ],
     "playStyleIds": [
       "action-combat",
-      "tactical-command"
+      "aiming-shooting"
     ],
     "summary": "操纵神话角色参加第三人称 MOBA 战斗，推进兵线并摧毁敌方泰坦。",
     "analysis": "第三人称视角让瞄准与视野判断直接参与传统三路地图的团队决策。",
@@ -1165,7 +833,7 @@
     ],
     "playStyleIds": [
       "action-combat",
-      "tactical-command"
+      "buildcrafting"
     ],
     "summary": "选择暴雪世界的英雄，与队友争夺地图目标并摧毁对方核心。",
     "analysis": "团队共享经验让每条兵线的贡献影响全队，而不同战场目标要求队伍在推进和集结之间转换。",
@@ -1400,7 +1068,8 @@
     ],
     "playStyleIds": [
       "exploration",
-      "action-combat"
+      "action-combat",
+      "puzzle-solving"
     ],
     "summary": "两名玩家分别扮演利奥和文森特，合作越狱并继续逃亡。",
     "analysis": "分屏让玩家同时处理不同任务，一方制造掩护时另一方可以推进共同计划。",
@@ -1516,8 +1185,9 @@
       "action"
     ],
     "playStyleIds": [
-      "action-combat",
-      "puzzle-solving"
+      "platforming",
+      "puzzle-solving",
+      "spatial-planning"
     ],
     "summary": "独自或与朋友搬运家具，将物品从复杂房屋装进搬家卡车。",
     "analysis": "物体大小、惯性和场景障碍让玩家需要协商路线与抛接，而非只决定搬运顺序。",
@@ -1625,8 +1295,7 @@
       "logic-puzzle"
     ],
     "playStyleIds": [
-      "puzzle-solving",
-      "investigation-deduction"
+      "puzzle-solving"
     ],
     "summary": "一名玩家观察炸弹并操作模块，其他玩家查阅手册、通过交流指导拆解。",
     "analysis": "观察者和手册持有者掌握不同信息，正确拆解依赖双方用准确描述对齐条件。",
@@ -1720,7 +1389,7 @@
   },
   {
     "id": "plateup",
-    "name": "餐瘾地城 / PlateUp!",
+    "name": "PlateUp!",
     "studio": "It's happening",
     "year": 2022,
     "platforms": [
@@ -1734,7 +1403,7 @@
     ],
     "playStyleIds": [
       "management-production",
-      "life-simulation"
+      "spatial-planning"
     ],
     "summary": "多人共同经营餐厅，布置厨房、烹饪并在营业日满足顾客。",
     "analysis": "营业中的紧张协作与打烊后的设备选择交替，餐厅布局直接影响服务效率。",
@@ -1968,7 +1637,7 @@
       "shoot-em-up"
     ],
     "playStyleIds": [
-      "action-combat",
+      "aiming-shooting",
       "vehicle-driving",
       "exploration"
     ],
@@ -2077,7 +1746,8 @@
     ],
     "playStyleIds": [
       "tactical-command",
-      "buildcrafting"
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "带领调查员执行回合战术任务，通过职业、专精与队伍组合应对不同敌人。",
     "analysis": "角色职业和专精组合改变可用战术，招募新成员还会开放对应的非战斗功能。",
@@ -2194,7 +1864,9 @@
     "playStyleIds": [
       "tactical-command",
       "exploration",
-      "gathering-survival"
+      "gathering-survival",
+      "buildcrafting",
+      "turn-based-combat"
     ],
     "summary": "带领佣兵探索开放世界，接受委托，管理营地并进行回合战术战斗。",
     "analysis": "角色专长、装备和队伍维持成本连接战斗与旅行，扩充队伍也会提高后勤压力。",
@@ -2319,7 +1991,8 @@
     "playStyleIds": [
       "tactical-command",
       "exploration",
-      "dialogue-choice"
+      "dialogue-choice",
+      "turn-based-combat"
     ],
     "summary": "指挥罗马军团与同伴，在回合战术战斗和政治抉择中推进远征。",
     "analysis": "武器提供不同攻击动作，人物技能与军团层面的营地和地域管理形成两种决策尺度。",

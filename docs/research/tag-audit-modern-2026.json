@@ -1,0 +1,4770 @@
+{
+  "checkedAt": "2026-11-02",
+  "method": "逐款核对本例主要循环、摘要、机制实例及已保存并读取的商店／官网／规则资料。按注册方向与类型定义判定；没有安装或试玩。回合单角色用turn-based-combat，多单位部署才用tactical-command；卡牌对战不因回合重复叠加。",
+  "count": 167,
+  "changedCount": 56,
+  "records": [
+    {
+      "id": "sultans-game",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "rpg",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "rpg",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "management-production",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "management-production",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "每周命令、人物与工具卡、盟友分派和关系分支构成角色扮演与策略管理；不是实时动作。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=3117820&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "world-of-horror",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "roguelite",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "roguelite",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "turn-based-combat",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "怪谈以地点事件与角色回合战斗推进，调查题材本身不构成证据交叉验证；以回合战斗替换泛战术指挥，移除调查推理。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=913740&l=english&cc=us",
+        "https://wohgame.com/",
+        "https://store.steampowered.com/app/913740/?l=english",
+        "https://en.wikipedia.org/wiki/World_of_Horror"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "lobotomy-corporation",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "simulation-management"
+      ],
+      "newGenreIds": [
+        "simulation-management"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "tactical-command",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "tactical-command"
+      ],
+      "changed": true,
+      "reason": "员工分派、收容和镇压是多单位管理；试错学习异想体禁忌不等于案件证据推理，移除调查方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=568220&l=english&cc=us",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=568220&enddate=1483228800&count=10&maxlength=0&format=json"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "out-of-hands",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "adventure"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "adventure"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "本例限定主线梦境，卡组、手与五官组合及探索均有依据；不借后来rogue模式补roguelite。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1839810&l=english&cc=us",
+        "https://www.ucg.cn/newsinfo/8270588.html",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1839810&enddate=1768608000&count=5&maxlength=0&format=json"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "miside",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "adventure"
+      ],
+      "newGenreIds": [
+        "adventure"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "第一人称房间探索、物品交互和谜题推动故事；剧情表现不作为视觉小说依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2527500&l=english&cc=us",
+        "https://yourgibs.com/guides/miside"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "no-im-not-a-human",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "检查访客征兆并选择盘问、接纳或处置，核心确实需要从表现推断身份。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=3180070&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/No%2C_I%27m_Not_a_Human"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "thats-not-my-neighbor",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure",
+        "simulation-management"
+      ],
+      "newGenreIds": [
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "changed": true,
+      "reason": "核对证件与住户资料、辨认伪人是核心；职业场景没有持续生产与经营系统，移除模拟经营类型。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=3431040&l=english&cc=us",
+        "https://nachogames.itch.io/thats-not-my-neighbor/comments?before=21",
+        "https://nachogames.itch.io/thats-not-my-neighbor/devlog/687204/new-little-patch"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "cogmind",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "turn-based-combat",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "单个机器人在格位回合中行动，以零件组合重构机体；保留构筑与探索，将指挥改为回合战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=722730&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Cogmind"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "jupiter-hell",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "turn-based-combat",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "按回合移动射击、角色特性与装备配置支撑单角色地牢战斗；不因回合制泛称单位指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=811320&l=english&cc=us",
+        "https://jupiterhell.com/?news=53",
+        "https://jupiterhell.com/faq",
+        "https://store.steampowered.com/app/811320/?l=english",
+        "https://en.wikipedia.org/wiki/Jupiter_Hell"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "golden-krone-hotel",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "turn-based-combat",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "光影与人类／吸血鬼形态是逐回合位置取舍；官网明确无背包且自动装备，不把开局伪装选择扩写成持续构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=497800&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "rift-wizard",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "法术、技能与升级的协同构筑很明确；玩家操纵单个法师逐回合战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1271280&l=english&cc=us",
+        "https://store.steampowered.com/app/1271280/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "rift-wizard-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "法术、装备和祭坛改变法师组合，仍是单角色回合地牢，不是多单位战术指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2058570&l=english&cc=us",
+        "https://store.steampowered.com/app/2058570/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "approaching-infinity",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "tactical-command",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "turn-based-combat",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "星系与行星探索、飞船配置及逐回合危险处理支持原有混合类型；回合战斗取代泛指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=551620&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "stoneshard",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "turn-based-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "受伤、装备与技能成长围绕单角色逐回合探索；保持传统RL与RPG，将操作方向写成回合战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=625960&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "dungeons-of-dredmor",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "turn-based-combat",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "技能组与装备协同、格位回合战斗及地牢探索均为核心；回合战斗取代指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=98800&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "rogue-empire",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "traditional-roguelike",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "turn-based-combat",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "职业、种族、技能与装备组合支撑角色成长，随机地牢中操纵单角色回合行动。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=650940&l=english&cc=us",
+        "https://itch.io/t/148268/rogue-empire-early-access-a-roguelike-tactical-rpg"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "brotato",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "六武器与道具组合是构筑；默认自动攻击时玩家主要选择走位，不将自动火力计为即时攻防。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1942280&l=english&cc=us",
+        "https://store.steampowered.com/app/1942280/?l=english",
+        "https://en.wikipedia.org/wiki/Brotato"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "20-minutes-till-dawn",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "直接瞄准射击与升级协同同时重要；没有因为幸存者类型而抹去手动射击差别。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1966900&l=english&cc=us",
+        "https://store.steampowered.com/app/1966900/?l=english",
+        "https://en.wikipedia.org/wiki/20_Minutes_Till_Dawn"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "halls-of-torment",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "装备回收、特质协同和地下地图搜索有官方依据；以走位方向表达敌潮中的直接移动，避免把自动攻击概括成主动攻防。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2218750&l=english&cc=us",
+        "https://store.steampowered.com/app/2218750/?l=english",
+        "https://en.wikipedia.org/wiki/Halls_of_Torment"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "soulstone-survivors",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "常规角色的主动冲刺与首领攻击应对同技能协同并存，官方公告直接说明冲刺冷却；保留即时攻防并补走位。Death Knight没有冲刺是角色例外。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2066020&l=english&cc=us",
+        "https://store.steampowered.com/app/2066020/?l=english",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2066020&count=100&maxlength=0"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "death-must-die",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "英雄装备、神赐组合和冥界探索是主要循环；直接移动与闪避有操作意义，保留攻防并补移动方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2334730&l=english&cc=us",
+        "https://steamcommunity.com/app/2334730/discussions/0/3954784199576545356/?ctp=2"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "boneraiser-minions",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite",
+        "auto-battler"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite",
+        "auto-battler"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "亡灵队伍自动作战，玩家主要移动避险并搭配召唤物；改用走位，保留真实自动战斗与构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1944570&l=english&cc=us",
+        "https://store.steampowered.com/app/1944570/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "army-of-ruin",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "自动武器输出与遗物组合是核心；玩家走位避险，不以自动攻击充当主动攻防。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1918040&l=english&cc=us",
+        "https://store.steampowered.com/app/1918040/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "nordic-ashes",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "星座与遗物形成组合，角色移动避开包围是持续操作；主标签改用走位，避免由宣传中的action推定攻击输入。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2068280&l=english&cc=us",
+        "https://store.steampowered.com/app/2068280/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "yet-another-zombie-survivors",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "队员自动瞄准攻击，玩家移动队伍并配置协同；将即时攻防替换为走位。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2163330&l=english&cc=us",
+        "https://store.steampowered.com/app/2163330/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "deep-rock-galactic-survivor",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "survivor-like",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "buildcrafting",
+        "exploration",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "挖矿开路、采集与自动武器构筑有别于纯站桩输出；补充直接走位方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2321470&l=english&cc=us",
+        "https://store.steampowered.com/app/2321470/?l=english",
+        "https://en.wikipedia.org/wiki/Deep_Rock_Galactic%3A_Survivor"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "sun-haven",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "gathering-survival",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "action-combat"
+      ],
+      "changed": true,
+      "reason": "农场、居民关系、施法与战斗成长支持生活模拟和RPG；日常资源采集不另算持续生存玩法。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1432860&l=english&cc=us",
+        "https://store.steampowered.com/app/1432860/?l=english",
+        "https://en.wikipedia.org/wiki/Sun_Haven"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "roots-of-pacha",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim"
+      ],
+      "newGenreIds": [
+        "farming-life-sim"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "gathering-survival"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production"
+      ],
+      "changed": true,
+      "reason": "驯化作物、村落发展和关系是农场生活；采集生产材料不自动构成环境生存方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1245560&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "coral-island",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim"
+      ],
+      "newGenreIds": [
+        "farming-life-sim"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "gathering-survival"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production"
+      ],
+      "changed": true,
+      "reason": "耕作、居民关系和岛屿修复为核心；保留经营与生活，去掉仅由采矿捕鱼推定的生存标签。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1158160&l=english&cc=us",
+        "https://store.steampowered.com/app/1158160/?l=english",
+        "https://en.wikipedia.org/wiki/Coral_Island_%28video_game%29"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "fields-of-mistria",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "gathering-survival",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "action-combat"
+      ],
+      "changed": true,
+      "reason": "农耕生活与矿洞战斗成长共同构成混合玩法；普通砍树采矿不是独立生存循环。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2142790&l=english&cc=us",
+        "https://store.steampowered.com/app/2142790/?l=english",
+        "https://en.wikipedia.org/wiki/Fields_of_Mistria"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "my-time-at-portia",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "life-simulation",
+        "gathering-survival",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "life-simulation",
+        "action-combat"
+      ],
+      "changed": true,
+      "reason": "工坊订单、加工、居民生活和直接战斗均重要；材料收集服务工坊生产，移除泛生存方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=666140&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/My_Time_at_Portia"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "my-time-at-sandrock",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "farming-life-sim",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "life-simulation",
+        "gathering-survival",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "life-simulation",
+        "action-combat"
+      ],
+      "changed": true,
+      "reason": "工坊加工与委托、城镇关系及战斗支撑混合标签；不把工作体力和采集单独等同生存类型。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1084600&l=english&cc=us",
+        "https://store.steampowered.com/app/1084600/?l=english",
+        "https://en.wikipedia.org/wiki/My_Time_at_Sandrock"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "graveyard-keeper",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "simulation-management"
+      ],
+      "newGenreIds": [
+        "simulation-management"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "gathering-survival",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "墓园、加工与任务探索构成经营；主要角色资源为工作预算，移除泛采集生存方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=599140&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Graveyard_Keeper"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "wylde-flowers",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim"
+      ],
+      "newGenreIds": [
+        "farming-life-sim"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "农场生活、居民关系和巫术探索均为主要玩法；不是因有故事便标视觉小说。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1896700&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Wylde_Flowers",
+        "https://wyldeflowersgame.com/help.html"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ooblets",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim"
+      ],
+      "newGenreIds": [
+        "farming-life-sim"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "collection-training"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "management-production",
+        "collection-training",
+        "card-play"
+      ],
+      "changed": true,
+      "reason": "农耕、生活与生物培养成立；补读舞蹈对战规则，实际按手牌与有限beats出牌，补card-play。舞蹈题材不等于节奏输入。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=593150&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Ooblets",
+        "https://ooblets.fandom.com/wiki/Dance_Battle"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "littlewood",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "farming-life-sim",
+        "simulation-management"
+      ],
+      "newGenreIds": [
+        "farming-life-sim",
+        "simulation-management"
+      ],
+      "oldPlayStyleIds": [
+        "life-simulation",
+        "spatial-planning",
+        "management-production",
+        "gathering-survival"
+      ],
+      "newPlayStyleIds": [
+        "life-simulation",
+        "spatial-planning",
+        "management-production"
+      ],
+      "changed": true,
+      "reason": "重建城镇、安排设施与居民日常为核心；采集是建设投入，移除泛生存方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=894940&l=english&cc=us",
+        "https://store.steampowered.com/app/894940/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "prey-2017",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "空间探索、枪械与神经调整能力配置可组合解决障碍，支持沉浸模拟及动作RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=480490&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "dishonored",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "action"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "潜行探索、刀剑和远程工具及异能配置都影响关卡解法；不因能力升级自动补RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=205100&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "deus-ex-human-revolution",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "增强能力、装备、射击及对话解法共同组织任务，支持动作RPG与沉浸模拟。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=238010&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Deus_Ex%3A_Human_Revolution"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "deus-ex-mankind-divided",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "增强配置、任务探索、射击和对话分支均为实质系统，保留混合方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=337000&l=english&cc=us",
+        "https://www.feralinteractive.com/en/manuals/deusexmd/latest/linux/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "gloomwood",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "shooter"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "shooter"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "action-combat"
+      ],
+      "changed": false,
+      "reason": "潜入探索、枪械、近战与声音暴露管理组成求生路线；没有由剧情补视觉小说。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1150760&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "streets-of-rogue",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "角色特性与多种工具改变任务解法，近战射击和探索都可持续使用，保留真实混合。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=512900&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Streets_of_Rogue"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ctrl-alt-ego",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "puzzle"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "puzzle-solving",
+        "aiming-shooting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "puzzle-solving",
+        "aiming-shooting"
+      ],
+      "changed": false,
+      "reason": "控制和转移自我、物理环境解题及机械体工具射击为核心；谜题不额外当作案件推理。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1571940&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "shadows-of-doubt",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "在城市调查现场、搜集记录并提交嫌疑人结论；调查与空间探索有明确操作依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=986130&l=english&cc=us",
+        "https://store.steampowered.com/app/986130/?l=english",
+        "https://en.wikipedia.org/wiki/Shadows_of_Doubt"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "weird-west",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "aiming-shooting",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "枪械、角色能力和装备配置及开放任务路径共同构成动作RPG与沉浸模拟。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1097350&l=english&cc=us",
+        "https://steamcommunity.com/app/1097350/announcements/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "cruelty-squad",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "immersive-sim",
+        "shooter"
+      ],
+      "newGenreIds": [
+        "immersive-sim",
+        "shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "枪械交战、植入体配置与可探索关卡路径共同决定刺杀解法，保留射击与构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1388770&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "town-of-salem",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "隐藏身份、职业夜间信息和白天发言投票要求交叉核对陈述，社交推理两方向都有依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=334230&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "town-of-salem-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "不同职业技能和遗嘱信息影响白天判断，身份谈判与证据核对同时成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2140510&l=english&cc=us",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=2140510&enddate=1751068800&count=5&maxlength=0&format=json"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "throne-of-lies",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "职业夜间行动、阵营隐藏与投票构成社交推理，而非仅有多人合作。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=595280&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "goose-goose-duck",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "隐藏阵营与职业、发言投票和行为观察组成身份判断，保留社交及推理方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1568590&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "first-class-trouble",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction",
+        "party-cooperation"
+      ],
+      "newGenreIds": [
+        "social-deduction",
+        "party-cooperation"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "身份欺骗与合作开路相互牵制，场景探索和身份判断均参与主要胜负。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=953880&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "project-winter",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "social-deduction",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "social-deduction",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "gathering-survival",
+        "management-production"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "gathering-survival",
+        "management-production"
+      ],
+      "changed": false,
+      "reason": "野外生存采集、设施修复生产与内鬼欺骗共同影响撤离，保留三项核心方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=774861&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "endless-legend",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "探索、城市资源发展与多部队征战构成完整4X；指挥有实际单位与部署对象。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=289130&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "endless-space-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "星系探查、殖民经济与舰队组织同时重要；保留4X和多单位指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=392110&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Endless_Space_2"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "stellaris",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "星系调查、殖民生产与舰队控制贯穿帝国发展，实时推进不影响其4X规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=281990&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "age-of-wonders-planetfall",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "战略经营与多单位回合战场都是主线层级，保留4X和回合战术。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=718850&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "old-world",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "social-negotiation"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "social-negotiation"
+      ],
+      "changed": false,
+      "reason": "城市与命令预算、军队控制及家族外交共同驱动国家发展，保留外交交涉方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=597180&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Old_World_%28video_game%29"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "humankind",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "领土探索、城市生产及多单位战场共同构成文明4X。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1124300&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "age-of-wonders-3",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "世界地图经营与独立多单位回合战场并存，战术指挥有实际部队控制依据。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=226840&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "age-of-wonders-4",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "tactical-turn-based"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "社会与军队发展、区域探索和多单位回合战斗同属主要范围。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1669000&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "galactic-civilizations-3",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "殖民探索、经济生产与舰队部署支撑太空4X，不由回合制单独推定标签。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=226860&l=english&cc=us",
+        "https://store.steampowered.com/oldnews/12739?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "distant-worlds-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "four-x",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "舰队、殖民、物流和经济模拟构成实时4X，实际控制多单位故保留指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1531540&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "heavens-vault",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "language-puzzle",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "language-puzzle",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "exploration",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "exploration",
+        "dialogue-choice",
+        "puzzle-solving"
+      ],
+      "changed": true,
+      "reason": "遗址证据与人物调查成立，同时古语言翻译本身是规则解题，补解谜方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=774201&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "tunic",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "metroidvania",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "metroidvania",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "puzzle-solving"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "puzzle-solving"
+      ],
+      "changed": false,
+      "reason": "近战、装备能力与互联区域探索构成动作RPG及类银河城；手册谜题重要，但不据隐藏文字谜题泛标语言解谜。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=553420&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "7-days-to-end-with-you",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "language-puzzle",
+        "adventure"
+      ],
+      "newGenreIds": [
+        "language-puzzle",
+        "adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "puzzle-solving",
+        "dialogue-choice",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "核心是从物件、动作与对白推测词义；用规则解谜替换案件调查，保留回应选择与房间探索。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1859280&l=english&cc=us",
+        "https://gameline.jp/7days/faq/",
+        "https://zh.wikipedia.org/wiki/7_Days_to_End_with_You",
+        "https://apps.apple.com/jp/app/7-days-to-end-with-you/id1602772289",
+        "https://play.google.com/store/apps/details?hl=en_US&id=com.Lizardry.Youllbedeadin7days"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-roottrees-are-dead",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "检索资料、交叉核对人物关系并填写家谱，调查与逻辑解题均为明确验证循环。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2754380&l=english&cc=us",
+        "https://www.pcgamer.com/games/puzzle/the-roottrees-are-dead-review/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-case-of-the-golden-idol",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "搜集场景词条并填写事件判断，人物事件关系有系统验证，保留调查和逻辑类型。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1677770&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/The_Case_of_the_Golden_Idol",
+        "https://adventuregamehotspot.com/review/119/the-case-of-the-golden-idol"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-rise-of-the-golden-idol",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "跨案件证据关联与填词验证是核心，不是仅凭悬疑题材归调查。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2716400&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/The_Rise_of_the_Golden_Idol",
+        "https://www.gamespew.com/2024/11/the-rise-of-the-golden-idol-walkthrough/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "strange-horticulture",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "investigation-adventure",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "用图鉴描述和外观辨植物、核对顾客线索及地图地点，调查与逻辑题有真实规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1574580&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Strange_Horticulture"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "book-of-hours",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "rpg",
+        "simulation-management"
+      ],
+      "newGenreIds": [
+        "rpg",
+        "simulation-management"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "职业技能、魂质和工具组合影响书籍学习与制作，经营之外有实际角色能力配置。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1028310&l=english&cc=us",
+        "https://youarelowonhealth.com/book-of-hours/guide/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "cultist-simulator",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "simulation-management",
+        "adventure"
+      ],
+      "newGenreIds": [
+        "simulation-management",
+        "adventure"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "management-production",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "management-production",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "卡片投入行动槽、资源生产与秘密探索为核心；卡片存在不自动等于战斗卡组构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=718670&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "elden-ring",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "直接攻防、开放世界探索与武器属性能力组合均贯穿主要流程，保留魂系动作RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1245620&l=english&cc=us",
+        "https://en.bandainamcoent.eu/elden-ring/news/elden-ring-starter-guide-tips-know-playing-the-game"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "lies-of-p",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "时机格挡与闪避、武器刃柄及能力搭配、谎言分支都具有实际作用。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1627720&l=english&cc=us",
+        "https://samurai-gamers.com/lies-of-p/combat-control-guide/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "nioh",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "aiming-shooting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "aiming-shooting"
+      ],
+      "changed": false,
+      "reason": "架势与近战时机、远程武器及装备技能组合支持动作RPG；不是单靠数值升级标构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=485510&l=english&cc=us",
+        "https://cdn.cloudflare.steamstatic.com/steam/apps/485510/manuals/Nioh_steam_EN.pdf?t=1661762202"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "nioh-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "aiming-shooting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "aiming-shooting"
+      ],
+      "changed": false,
+      "reason": "武器架势、妖怪能力与装备组合及远程攻击共同构成战斗方案。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1325200&l=english&cc=us",
+        "https://www.gamecity.ne.jp/manual/t2wNiSht/steam/bri/4000.html",
+        "https://en.wikipedia.org/wiki/Nioh_2"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-surge",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "肢体瞄准拆件、装备配置与区域探索相互支持，保留魂系动作RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=378540&l=english&cc=us",
+        "https://achievementguides.com/guides/the-surge"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-surge-2",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "方向格挡、部件收集与植入体配置共同组织探索和即时战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=644830&l=english&cc=us",
+        "https://www.focus-entmt.com/en/news/learn-how-to-survive-with-the-new-essential-tips-trailer",
+        "https://en.wikipedia.org/wiki/The_Surge_2"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "mortal-shell",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "躯壳能力和武器选择影响硬化、闪避与近战应对，配置和探索均为主要内容。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1110910&l=english&cc=us",
+        "https://www.pcgamer.com/mortal-shell-guide-tips/",
+        "https://en.wikipedia.org/wiki/Mortal_Shell"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "another-crabs-treasure",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "壳的防护和能力选择参与战斗策略，探索获得新动作与装备，混合类型有依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1887840&l=english&cc=us",
+        "https://progameguides.com/another-crabs-treasure/how-to-unlock-umami-skills-on-the-skill-tree-in-another-crabs-treasure/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "salt-and-sanctuary",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "metroidvania",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "metroidvania",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "横向互联区域、能力门槛、职业装备和实时攻防共同支撑类银河城魂系RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=283640&l=english&cc=us",
+        "https://gamerch.com/saltandsanctuary/536674"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "blasphemous",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "soulslike",
+        "metroidvania"
+      ],
+      "newGenreIds": [
+        "soulslike",
+        "metroidvania"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "互联地图和直接近战、念珠祷文配置成立；不因升级就补RPG类型。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=774361&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "neon-white",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "precision-platformer",
+        "shooter"
+      ],
+      "newGenreIds": [
+        "precision-platformer",
+        "shooter"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "aiming-shooting",
+        "card-play"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "aiming-shooting",
+        "card-play"
+      ],
+      "changed": false,
+      "reason": "枪卡既用于射击也可弃牌发动移动能力，手牌取舍实际影响跑跳路线。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1533420&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Neon_White"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "grapple-dog",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "precision-platformer",
+        "platformer"
+      ],
+      "newGenreIds": [
+        "precision-platformer",
+        "platformer"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "抓钩与跳跃、隐藏收集路径构成平台挑战，未把碰触敌人泛算即时战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1345860&l=english&cc=us",
+        "https://www.gamesradar.com/have-you-tried-having-a-swinging-riotous-platforming-good-time-with-grapple-dog/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "pizza-tower",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "precision-platformer",
+        "platformer"
+      ],
+      "newGenreIds": [
+        "precision-platformer",
+        "platformer"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "高速跑跳、攻击与变身路线和关卡搜索均为持续操作，不是纯观赏动画。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2231450&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Pizza_Tower"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "sanabi",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "precision-platformer",
+        "action"
+      ],
+      "newGenreIds": [
+        "precision-platformer",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "机械臂抓钩、冲刺与战斗穿越关卡，直接移动和攻防均为核心。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1562700&l=english&cc=us",
+        "https://gemelog.jp/en/games/sanabi/basics/",
+        "https://store.steampowered.com/app/1562700/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ghostrunner",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "precision-platformer",
+        "action"
+      ],
+      "newGenreIds": [
+        "precision-platformer",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "跑墙抓钩、刀剑攻防与网格升级模块组合有明确规则，保留精确平台与构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1139900&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Ghostrunner"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ori-and-the-blind-forest",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "newGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "exploration",
+        "puzzle-solving"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "exploration",
+        "puzzle-solving"
+      ],
+      "changed": false,
+      "reason": "移动能力门槛、平台路线和环境解题是原版核心；未混入终极版新增动作。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=261570&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Ori_and_the_Blind_Forest"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ori-and-the-will-of-the-wisps",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "newGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "移动探索、更多直接战斗及可配置碎片协同构成续作核心，不照搬初代魂链规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1057090&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Ori_and_the_Will_of_the_Wisps"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "axiom-verge",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "metroidvania"
+      ],
+      "newGenreIds": [
+        "metroidvania"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "aiming-shooting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "aiming-shooting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "互联地图能力回访、跳跃和多种枪械为主；科幻故事不另标视觉小说。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=332200&l=english&cc=us",
+        "https://cdn.akamai.steamstatic.com/steam/apps/332200/manuals/QuickStartManual.pdf?t=1431621906",
+        "https://en.wikipedia.org/wiki/Axiom_Verge"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-messenger",
+      "file": "docs/research/expansion/modern.json",
+      "oldGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "newGenreIds": [
+        "metroidvania",
+        "precision-platformer"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "action-combat",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "前段线性跑跳战斗与后段跨时代互联探索共同组成本体流程。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=764790&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/The_Messenger_(2018_video_game)"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "wildfrost",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "卡牌部署和同伴协同围绕出牌决策展开；去掉与card-play重复的泛战术指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1811990&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "griftlands",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "roguelite",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "roguelite",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "战斗与协商各自卡组、人物关系和对白分支共同组成RPG牌组历程。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=601840&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Griftlands"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "roguebook",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "双英雄卡牌协同与消耗墨水开图是核心，牌组构筑和地图探索均成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1076200&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "chrono-ark",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "roguelite",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "roguelite",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "队员技能构成卡组，主要输入为出牌；保留角色成长，去掉重复的泛战术指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1188930&l=english&cc=us",
+        "https://store.steampowered.com/app/1188930/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "library-of-ruina",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "作战书页、速度骰与卡牌配装组成团队牌战；不因回合或多角色重复叠加指挥方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1256670&l=english&cc=us",
+        "https://store.steampowered.com/app/1256670/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "across-the-obelisk",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "deckbuilder",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "四人职业与卡牌协同通过出牌操作实现，去掉与卡牌方向重复的泛指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1385380&l=english&cc=us",
+        "https://store.steampowered.com/app/1385380/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "marauders",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "vehicle-driving",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "vehicle-driving",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "装备风险、太空飞船驾驶、突入搜刮与撤离同属一次行动，保留撤离和载具混合。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1789480&l=english&cc=us",
+        "https://store.steampowered.com/app/1789480/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "gray-zone-warfare",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "装备携入、开放区域搜刮任务与安全撤离贯穿循环，枪械改装是实际配装。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2479810&l=english&cc=us",
+        "https://www.grayzonewarfare.com/news/rogue-ops-out-now-changelog",
+        "https://www.shacknews.com/article/139752/helicopter-transport-gray-zone-warfare",
+        "https://store.steampowered.com/app/2479810/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ghosts-of-tabor",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter",
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "VR射击、负重搜刮与装备携入风险构成撤离射击；配装有武器工具选择依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1957780&l=english&cc=us",
+        "https://store.steampowered.com/app/1957780/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "arc-raiders",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "地表搜刮对抗与带回资源、装备配置是主要循环，不把局外升级另算RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1808500&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "vigor",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "物资携入和撤离、掩体发展与武器选择支撑撤离射击；未把普通死亡当每局角色重生。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2818260&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Vigor_%28video_game%29"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-cycle-frontier",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter"
+      ],
+      "newGenreIds": [
+        "extraction-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "限定停服前第三赛季：枪械、星球搜刮与撤离损失成立；保留历史范围。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=868270&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "lost-rift",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "extraction-shooter",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "gathering-survival",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "gathering-survival",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "据点生产建设与异区枪战撤离同属重要循环，生存制作混合有实际资源管理依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
+        "https://store.steampowered.com/app/3494520/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "zero-sievert",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "extraction-shooter",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "extraction-shooter",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "exploration",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "单人射击、区域搜刮与撤离风险及角色装备成长均重要，保留撤离RPG混合。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1782120&l=english&cc=us",
+        "https://store.steampowered.com/app/1782120/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "terraria",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "可改造世界的挖掘制作、建造探索和直接战斗构成沙盒生存，不只是建筑装饰。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=105600&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "rust",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "spatial-planning",
+        "aiming-shooting"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "spatial-planning",
+        "aiming-shooting"
+      ],
+      "changed": false,
+      "reason": "持续补给、采集制作、据点和玩家射击威胁共同形成生存循环。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=252490&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Rust_%28video_game%29"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ark-survival-evolved",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "collection-training",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "collection-training",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "采集制作、据点与生物驯化培养相互依赖，收集培养有实际生物系统依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=346110&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Ark%3A_Survival_Evolved"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "7-days-to-die",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "aiming-shooting",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "aiming-shooting",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "饥渴、资源制作、据点结构与周期尸潮枪战共同驱动持续生存。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=251570&l=english&cc=us",
+        "https://store.steampowered.com/app/251570/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "grounded",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "微观环境生存、材料制作及武器护甲能力组合影响战斗，构筑不是单纯升级。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=962130&l=english&cc=us",
+        "https://store.steampowered.com/app/962130/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "raft",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "海上采集、扩筏和岛屿探索在持续饥渴及威胁下进行，生存方向明确。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=648800&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Raft_%28video_game%29"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "core-keeper",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "gathering-survival",
+        "exploration",
+        "action-combat",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "采矿制作和基地布局、地下探索及直接首领战共同组成沙盒生存。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1621690&l=english&cc=us",
+        "https://store.steampowered.com/app/1621690/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "no-mans-sky",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "newGenreIds": [
+        "sandbox-survival",
+        "survival-craft"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "gathering-survival",
+        "vehicle-driving",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "gathering-survival",
+        "vehicle-driving"
+      ],
+      "changed": true,
+      "reason": "星际驾驶、资源采集与环境防护压力成立；本例来源仅列装备升级，未证明组合协同，移除构筑方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=275850&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "mindustry",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation",
+        "tower-defense",
+        "real-time-strategy"
+      ],
+      "newGenreIds": [
+        "factory-automation",
+        "tower-defense",
+        "real-time-strategy"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "多步骤物资生产、物流布局与单位及防御控制组成工厂RTS塔防混合。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1127400&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Mindustry"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "shapez",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "factory-automation",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "切割、旋转、着色与输送布局构成形状加工约束题，工厂和逻辑类型均成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1318690&l=english&cc=us",
+        "https://store.steampowered.com/app/1318690/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "shapez-2",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "factory-automation",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "多层加工平台、输送与目标形状约束组成自动化及空间解题；非只有经营数值。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2162800&l=english&cc=us",
+        "https://store.steampowered.com/app/2162800/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "techtonica",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation"
+      ],
+      "newGenreIds": [
+        "factory-automation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "地下探查、资源开采与分级机器物流布局贯穿工厂发展。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1457320&l=english&cc=us",
+        "https://store.steampowered.com/app/1457320/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "factory-town",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation",
+        "city-builder"
+      ],
+      "newGenreIds": [
+        "factory-automation",
+        "city-builder"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "运输网络与多级产业链支持城镇发展，空间布局与生产管理均为核心。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=860890&l=english&cc=us",
+        "https://store.steampowered.com/app/860890/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "autonauts",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation",
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "factory-automation",
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "机器人示教自动化服务殖民者需求，生产布局和殖民管理具有实际规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=979120&l=english&cc=us",
+        "https://denki.itch.io/autonauts"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "desynced",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "factory-automation"
+      ],
+      "newGenreIds": [
+        "factory-automation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "模块化机器人配置及行为脚本改变单位功能，是真实组合构筑而非单一等级提升。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
+        "https://store.steampowered.com/app/1450900/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "surviving-mars",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation",
+        "city-builder"
+      ],
+      "newGenreIds": [
+        "colony-simulation",
+        "city-builder"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "殖民者需求、穹顶生命支持与火星生产物流持续相连，殖民和城市管理成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=464920&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "space-haven",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "飞船舱室生命支持、船员分工及登舰多单位战斗都重要。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=979110&l=english&cc=us",
+        "https://store.steampowered.com/app/979110/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "going-medieval",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "垂直建筑与生产、殖民者需求和多人防御战共同构成殖民管理。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1029780&l=english&cc=us",
+        "https://store.steampowered.com/app/1029780/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "clanfolk",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "家庭成员的日常需求、工作与过冬物资持续约束聚落布局，殖民模拟成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1700870&l=english&cc=us",
+        "https://store.steampowered.com/app/1700870/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "stranded-alien-dawn",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "幸存者分工、基地生产与手动组织多人防守同属核心，不只是单角色生存。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1324130&l=english&cc=us",
+        "https://store.steampowered.com/app/1324130/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "noble-fates",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation"
+      ],
+      "newGenreIds": [
+        "colony-simulation"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "social-negotiation"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning",
+        "social-negotiation"
+      ],
+      "changed": false,
+      "reason": "臣民需求、生产建设和基于性格的关系交涉影响王国持续运转。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us",
+        "https://store.steampowered.com/app/1769420/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "timberborn",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "colony-simulation",
+        "city-builder"
+      ],
+      "newGenreIds": [
+        "colony-simulation",
+        "city-builder"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "河流、水库与生产、干旱和人口需求形成殖民城市系统，布局直接改变供水。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1062090&l=english&cc=us",
+        "https://store.steampowered.com/app/1062090/?l=english"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "danganronpa-2",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "场景证据、证言矛盾和学级裁判验证为核心，视觉小说与调查混合成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=413420&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Danganronpa_2:_Goodbye_Despair"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "danganronpa-v3",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "调查搜证与裁判论证有明确操作，保留调查；不由任何故事自动推定视觉小说。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=567640&l=english&cc=us",
+        "https://www.danganronpa.com/pages/v3/system/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ai-the-somnium-files",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "现实搜证对话与梦境规则、行动预算解题并存，调查和解谜各有依据。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=948740&l=english&cc=us",
+        "https://www.spike-chunsoft.com/games/ai-the-somnium-files/",
+        "https://en.wikipedia.org/wiki/AI:_The_Somnium_Files"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "ai-nirvana-initiative",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "现实调查与梦境限时行动解题及多路线故事构成续作主要流程。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1449200&l=english&cc=us",
+        "https://www.spike-chunsoft.com/news/ai-the-somnium-files-nirvana-initiative-new-characters-investigative-elements-and-story-details-revealed/",
+        "https://www.spike-chunsoft.com/news/new-game-system-details-for-ai-the-somnium-files-nirvana-initiative/",
+        "https://www.spike-chunsoft.com/news/ai2-somnium-new-characters/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "zero-time-dilemma",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "puzzle-solving",
+        "dialogue-choice",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "changed": true,
+      "reason": "三组片段、生死选择和密室规则解题构成主线；叙事谜团本身不另算证据调查。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=311240&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Zero_Time_Dilemma"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "raging-loop",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel"
+      ],
+      "newGenreIds": [
+        "visual-novel"
+      ],
+      "oldPlayStyleIds": [
+        "dialogue-choice",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "dialogue-choice"
+      ],
+      "changed": true,
+      "reason": "主要交互是剧情选项、钥匙解锁与流程图回返；狼人宴会题材不构成实际多人社交推理或独立搜证操作。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=648100&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Raging_Loop"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "i-was-a-teenage-exocolonist",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "dialogue-choice",
+        "card-play",
+        "life-simulation"
+      ],
+      "newPlayStyleIds": [
+        "dialogue-choice",
+        "card-play",
+        "life-simulation"
+      ],
+      "changed": false,
+      "reason": "成长日程、人物关系与牌组挑战实际影响人生分支，角色扮演和生活安排均成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1148760&l=english&cc=us",
+        "https://www.gamedeveloper.com/business/-i-was-a-teenage-exocolonist-turns-life-experiences-into-a-card-game"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "gnosia",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "social-deduction",
+        "rpg"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "social-deduction",
+        "rpg"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction",
+        "dialogue-choice"
+      ],
+      "changed": false,
+      "reason": "重复会议中的隐藏身份讨论、职业能力与角色数值成长都是核心，保留社交推理及RPG。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1608290&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Gnosia"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "paranormasight-seven-mysteries",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice",
+        "puzzle-solving"
+      ],
+      "newPlayStyleIds": [
+        "investigation-deduction",
+        "dialogue-choice",
+        "puzzle-solving"
+      ],
+      "changed": false,
+      "reason": "地点人物调查、视点切换、诅咒条件及故事分支解题实际参与推进。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2106840&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Paranormasight:_The_Seven_Mysteries_of_Honjo",
+        "https://gameplay.tips/guides/paranormasight-the-seven-mysteries-of-honjo-100-walkthrough-with-all-achievements.html"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "scarlet-hollow",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "newGenreIds": [
+        "visual-novel",
+        "investigation-adventure"
+      ],
+      "oldPlayStyleIds": [
+        "dialogue-choice",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "dialogue-choice",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "视觉小说中的双特质选择、能力检定、关系与主动调查共同改变分支，保留真实混合。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1609230&l=english&cc=us",
+        "https://blacktabbygames.medium.com/designing-scarlet-hollows-trait-based-roleplaying-system-24f2b4f4906",
+        "https://store.steampowered.com/app/1406040/Scarlet_Hollow/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "homicipher",
+      "file": "docs/research/expansion/modern-gaps.json",
+      "oldGenreIds": [
+        "language-puzzle",
+        "visual-novel"
+      ],
+      "newGenreIds": [
+        "language-puzzle",
+        "visual-novel"
+      ],
+      "oldPlayStyleIds": [
+        "puzzle-solving",
+        "dialogue-choice",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "puzzle-solving",
+        "dialogue-choice"
+      ],
+      "changed": true,
+      "reason": "词典与语境推断是语言规则解题，选项推进人物路线；不再把语言解码重复归为案件调查。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=2302660&l=english&cc=us",
+        "https://www.gamespress.com/Homicipher---A-Unique-Language-Interpretation-Horror-Adventure-Now-Ava",
+        "https://317.zashiki.com/mozibake/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "mechabellum",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "部队部署、阵形预测与科技协同决定自动交战，有真实多单位战术指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/669330/",
+        "https://www.paradoxinteractive.com/media/press-releases/paradox-interactive/mechabellum-launches-into-early-access-today"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "despots-game",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "职业装备组合与队伍站位、随机迷宫路线选择共同支撑自动战斗。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1227280/",
+        "https://www.ps4blog.net/2023/06/nintendo-switch-despots-game-review/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "astronarch",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "英雄装备与站位影响自动战斗，区域路线选择使探索有实际风险收益。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1234940/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "the-last-flame",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "tactical-command",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "英雄、起源、装备协同与多单位布阵在自动战斗之间组织，保留构筑和指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1830970/",
+        "https://gamerhour.net/reviews/the-last-flame-complete-game-review/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "hadean-tactics",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "deckbuilder",
+        "roguelite",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "deckbuilder",
+        "roguelite",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "card-play",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "card-play",
+        "tactical-command"
+      ],
+      "changed": false,
+      "reason": "卡牌直接改变自动交战单位行为，部队部署与卡牌协同都有明确独立作用。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1260590/",
+        "https://www.4gamer.net/games/701/G070190/20240219014/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "just-king",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "action"
+      ],
+      "newGenreIds": [
+        "auto-battler",
+        "roguelite",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "buildcrafting",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "buildcrafting",
+        "platforming"
+      ],
+      "changed": true,
+      "reason": "官方明确英雄自行作战、玩家控制整队位置；以移动走位替换主动攻防，保留英雄协同构筑。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1059980/",
+        "https://steamcommunity.com/id/Morimorimori/recommended/1059980",
+        "https://www.pcgamer.com/for-dollar3-this-fantasy-autobattler-will-consume-your-entire-week/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "smite",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "moba",
+        "action",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "moba",
+        "action",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "aiming-shooting"
+      ],
+      "changed": true,
+      "reason": "直接操纵单个神明近战、技能与瞄准射击；团队协作不等于玩家指挥多单位，移除泛指挥。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/386360/",
+        "https://news.xbox.com/en-us/2015/08/22/games-smite-beginners-guide/",
+        "https://www.pcgamesn.com/smite/smite-beginners-guide",
+        "https://www.gamespot.com/articles/smite-release-date-announced/1100-6416403/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "eternal-card-game",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "选牌、费用与反制组织数字卡牌对战，构筑和出牌有直接规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/531640/",
+        "https://d19y2ttatozxjp.cloudfront.net/pdfs/EternalAdvancedRules.pdf",
+        "https://en.wikipedia.org/wiki/Eternal_(video_game)"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "faeria",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "牌组对战同时改造地块和争夺井位，战场空间规划是实际规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/397060/",
+        "https://en.wikipedia.org/wiki/Faeria",
+        "https://www.faeria.com/news/announcements/4-faeria-is-now-in-early-access"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "mythgard",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "digital-card-duel",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "card-play",
+        "buildcrafting",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "燃牌费用、七路单位及附魔位置共同影响出牌，空间配置与构筑均成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/839910/",
+        "https://as.com/meristation/2019/10/07/analisis/1570469415_131687.html",
+        "https://www.pocketgamer.com/mythgard/mythgard-rhino-games-ccg-is-available-in-open-beta-now-for-ios-and-android/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "heroes-of-the-storm",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "moba",
+        "action",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "moba",
+        "action",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "buildcrafting"
+      ],
+      "changed": true,
+      "reason": "玩家直接控制单个英雄，团队合作不等于单位指挥；官方新手指南明确按队伍与战场选择协同天赋，因此补真实构筑方向。",
+      "sourceUrls": [
+        "https://news.blizzard.com/en-us/article/20131412/a-year-in-the-storm",
+        "https://news.blizzard.com/en-us/article/24242866/five-tips-for-beginners",
+        "https://blizzardwatch.com/2015/05/18/heroes-of-the-storm-guide-newbies/",
+        "https://espnpressroom.com/us/files/2019/04/4404_2019_ESPNE_Esports_MediaGuide_FINAL.pdf"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "it-takes-two",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "platformer",
+        "adventure"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "platformer",
+        "adventure"
+      ],
+      "oldPlayStyleIds": [
+        "platforming",
+        "puzzle-solving",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "puzzle-solving",
+        "action-combat"
+      ],
+      "changed": false,
+      "reason": "两人互补能力贯穿平台穿越、合作解题与动作挑战，保留主要混合方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1426210/",
+        "https://arstechnica.com/gaming/2021/03/it-takes-two-hands-on-legitimately-good-co-op-fun-if-you-mute-the-story/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "a-way-out",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "adventure",
+        "action"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "adventure",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "exploration",
+        "action-combat"
+      ],
+      "newPlayStyleIds": [
+        "exploration",
+        "action-combat",
+        "puzzle-solving"
+      ],
+      "changed": true,
+      "reason": "共同越狱与逃亡包含实际打斗和场景解题；补官方明确的合作解谜，不以长篇剧情推定视觉小说。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1222700/",
+        "https://en.wikipedia.org/wiki/A_Way_Out",
+        "https://epiloguegaming.com/collaboration-cooperation-and-contention-in-a-way-out/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "moving-out",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "action"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "puzzle-solving"
+      ],
+      "newPlayStyleIds": [
+        "platforming",
+        "puzzle-solving",
+        "spatial-planning"
+      ],
+      "changed": true,
+      "reason": "核心为直接移动、搬运抛掷与安排装车，搬家具不是攻防；改为移动、空间布置及路径解题。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/996770/",
+        "https://en.wikipedia.org/wiki/Moving_Out_(video_game)"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "keep-talking-and-nobody-explodes",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "logic-puzzle"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "logic-puzzle"
+      ],
+      "oldPlayStyleIds": [
+        "puzzle-solving",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "puzzle-solving"
+      ],
+      "changed": true,
+      "reason": "信息分工服务手册规则解题，没有人物事件证据调查；去掉泛推理方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/341800/",
+        "https://cdn.cloudflare.steamstatic.com/steam/apps/341800/manuals/KeepTalkingAndNobodyExplodes-BombDefusalManual-v1.pdf"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "plateup",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "simulation-management",
+        "roguelite"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "simulation-management",
+        "roguelite"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "life-simulation"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "spatial-planning"
+      ],
+      "changed": true,
+      "reason": "营业、烹饪生产与厨房设备布局为核心，不能把餐厅经营标成生活模拟；原中文名属于另一游戏，改回英文。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1599600/"
+      ],
+      "metadataChanges": {
+        "oldName": "餐瘾地城 / PlateUp!",
+        "newName": "PlateUp!"
+      }
+    },
+    {
+      "id": "unrailed",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "action"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "action"
+      ],
+      "oldPlayStyleIds": [
+        "management-production",
+        "gathering-survival",
+        "spatial-planning"
+      ],
+      "newPlayStyleIds": [
+        "management-production",
+        "gathering-survival",
+        "spatial-planning"
+      ],
+      "changed": false,
+      "reason": "采集服务不断前进列车的轨道生产与空间铺设，持续脱轨压力支持协作生存方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1016920/",
+        "https://www.nintendoworldreport.com/review/55152/unrailed-switch-review",
+        "https://www.lenetronportfolio.com/_files/ugd/5957ca_44c885c4a9324e42a29d87ec89699683.pdf",
+        "https://www.daedalicsupport.com/en/games/unrailed%21/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "lovers-in-a-dangerous-spacetime",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "party-cooperation",
+        "action",
+        "shoot-em-up"
+      ],
+      "newGenreIds": [
+        "party-cooperation",
+        "action",
+        "shoot-em-up"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "vehicle-driving",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "vehicle-driving",
+        "exploration"
+      ],
+      "changed": true,
+      "reason": "玩家轮换引擎、护盾与炮台，核心战斗输入为瞄准射击，另有飞船驾驶与随机地图探索。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/252110/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "troubleshooter-abandoned-children",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "buildcrafting",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "多角色回合战场、职业和专精组合是真实战术RPG，指挥对象明确。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/470310/",
+        "https://wiki-origin.giantbomb.com/wiki/Games/Troubleshooter_Abandoned_Children",
+        "https://store.steampowered.com/news/posts/?appids=470310&enddate=1663224824&feed=steam_community_announcements"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "wartales",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "gathering-survival"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "gathering-survival",
+        "buildcrafting",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "佣兵多单位回合战斗、营地补给和世界探索成立；官方明确角色、装备与战术组合，补构筑。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1527950/",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=2846784226",
+        "https://store.steampowered.com/news/posts/?enddate=1638371978&feed=steam_community_announcements"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "expeditions-rome",
+      "file": "docs/research/expansion/other-gaps.json",
+      "oldGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "newGenreIds": [
+        "tactical-turn-based",
+        "turn-based-rpg",
+        "strategy"
+      ],
+      "oldPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "dialogue-choice"
+      ],
+      "newPlayStyleIds": [
+        "tactical-command",
+        "exploration",
+        "dialogue-choice",
+        "turn-based-combat"
+      ],
+      "changed": true,
+      "reason": "多位同伴战术回合、角色技能装备与政治选择共同推动远征，指挥与对白选择有依据。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/987840/",
+        "https://rpgamer.com/review/expeditions-rome-review/",
+        "https://www.gameskinny.com/tips/expeditions-rome-crafting-and-upgrades-guide/",
+        "https://nichegamer.com/reviews/expeditions-rome-review/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "squad",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "vehicle-driving"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "vehicle-driving"
+      ],
+      "changed": false,
+      "reason": "步兵枪战、可驾驶车辆与小队长／指挥官职能共同重要，指挥非仅泛称合作。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=393380&l=english&cc=us",
+        "https://www.joinsquad.com/archive/squad-update-6-0-release-notes-eb2b4",
+        "https://cdn.akamai.steamstatic.com/steam/apps/393380/manuals/Squad_EA-Manual_1_0.pdf",
+        "https://en.wikipedia.org/wiki/Squad_(video_game)"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "rainbow-six-siege",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "spatial-planning"
+      ],
+      "changed": true,
+      "reason": "单个干员直接射击，队伍合作侦察不等于多单位指挥；墙体加固、陷阱布置真实影响防线，补空间布置。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=359550&l=english&cc=us",
+        "https://staticctf.ubisoft.com/177v1kh0db6l/1XNmcTeiAklhke8ZakXGQP/175376ab02833893e1cee4d770f4f82b/Rainbow_Six_Siege_Rulebook_2025.pdf"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "insurgency-sandstorm",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "枪械配装、射击与指挥官呼叫火力支援的职责均有明确依据，保留相应方向。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=581320&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Insurgency:_Sandstorm"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "hell-let-loose",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "tactical-shooter"
+      ],
+      "newGenreIds": [
+        "tactical-shooter"
+      ],
+      "oldPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "vehicle-driving"
+      ],
+      "newPlayStyleIds": [
+        "aiming-shooting",
+        "tactical-command",
+        "vehicle-driving"
+      ],
+      "changed": false,
+      "reason": "枪战之外有指挥官资源、军官据点及坦克岗位，保留实际指挥和驾驶。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=686810&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Hell_Let_Loose"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "wreckfest",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "vehicle-sport",
+        "racing"
+      ],
+      "newGenreIds": [
+        "vehicle-sport",
+        "racing"
+      ],
+      "oldPlayStyleIds": [
+        "vehicle-driving",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "vehicle-driving",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "竞速和撞击拆车均参与赛事胜负，载具竞技符合定义；装甲重量与动力配置有实际取舍。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=228380&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Wreckfest"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "burnout-paradise",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "vehicle-sport",
+        "racing"
+      ],
+      "newGenreIds": [
+        "vehicle-sport",
+        "racing"
+      ],
+      "oldPlayStyleIds": [
+        "vehicle-driving",
+        "exploration"
+      ],
+      "newPlayStyleIds": [
+        "vehicle-driving",
+        "exploration"
+      ],
+      "changed": false,
+      "reason": "开放路网探索及竞速、撞击和特技赛事并存，载具竞技有真实对抗规则。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1238080&l=english&cc=us",
+        "https://eaassets-a.akamaihd.net/eahelp/manuals/bpr-pc-en.pdf",
+        "https://en.wikipedia.org/wiki/Burnout_Paradise"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "eville",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": false,
+      "reason": "隐藏阵营、夜间职业技能与白天讨论投票共同组成身份判断，社交推理成立。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "untrusted",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "social-deduction"
+      ],
+      "newGenreIds": [
+        "social-deduction"
+      ],
+      "oldPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction",
+        "tactical-command"
+      ],
+      "newPlayStyleIds": [
+        "social-negotiation",
+        "investigation-deduction"
+      ],
+      "changed": true,
+      "reason": "节点日志交叉核对、隐藏身份与个人职业行动构成社交推理；选择自己一项行动不等于指挥多单位。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=1502660&l=english&cc=us",
+        "https://www.playuntrusted.com/manual/basic-rules/",
+        "https://www.playuntrusted.com/manual/factions/"
+      ],
+      "metadataChanges": {}
+    },
+    {
+      "id": "dungeon-defenders",
+      "file": "docs/research/expansion/final-gaps.json",
+      "oldGenreIds": [
+        "tower-defense",
+        "action-rpg"
+      ],
+      "newGenreIds": [
+        "tower-defense",
+        "action-rpg"
+      ],
+      "oldPlayStyleIds": [
+        "action-combat",
+        "aiming-shooting",
+        "spatial-planning",
+        "buildcrafting"
+      ],
+      "newPlayStyleIds": [
+        "action-combat",
+        "aiming-shooting",
+        "spatial-planning",
+        "buildcrafting"
+      ],
+      "changed": false,
+      "reason": "英雄直接战斗、枪械法术、塔位布置及装备技能成长并存，塔防与动作RPG均为主要层。",
+      "sourceUrls": [
+        "https://store.steampowered.com/api/appdetails?appids=65800&l=english&cc=us",
+        "https://en.wikipedia.org/wiki/Dungeon_Defenders"
+      ],
+      "metadataChanges": {}
+    }
+  ]
+}

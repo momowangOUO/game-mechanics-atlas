@@ -4267,5 +4267,765 @@
     "sourceSha256": "cfb3f1882adbb6539fac3f74e1e4b9d8b55b6fc142665827aa54a19cc30234e4",
     "outputSha256": "a714ee70d02a6b3f56e17462ed5eebdf01d6794e94592dd7635017ec5943e1b1",
     "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "mewgenics": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=686060&l=english&cc=us",
+    "publisher": "Steam / Edmund McMillen、Tyler Glaiel",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686060/aa8075d11165fef4d4d0d09c156f0da0623b5da1/header.jpg?t=1788661023",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "bc3253c8ceb68ebcdbb9cbc91baacb107193657f36c8cd16ca36d8cfdbe810af",
+    "outputSha256": "6fdd83193188a11be5bcac4ddba27973038966e4d6839caf98dd8b1496dc4ec8",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "marathon-2026": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3065800&l=english&cc=us",
+    "publisher": "Steam / Bungie",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3065800/c3093fec19fed6eb0750a87261c53743a5757827/header.jpg?t=1786061300",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "da1ab6fcb5fc441c884424dfc7f035e7e6646d670fb57d8151d1dbe0a511b268",
+    "outputSha256": "c1335fb35700a9f6091d7dfa57249dc1d28d7a084f8b7c2de79a6392d74fc5cb",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "crimson-desert": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3321460&l=english&cc=us",
+    "publisher": "Steam / Pearl Abyss",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1792637341",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "89dcf01b0604abe588aacea4e5ae343c3a9ef3e90d041957fb710148d6820367",
+    "outputSha256": "3cd0ac0c96e64a701d1556b0a6243c4471fcce64cd548dcd33034bac361cb728",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "slay-the-spire-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2868840&l=english&cc=us",
+    "publisher": "Steam / Mega Crit",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "168223b1450462c8f270c6dc80c5f6d11329a7c7ebf8163da0a52f906febbc53",
+    "outputSha256": "6b0462d8106ba52a938bb273137f0d0ec0c164cbab43b16cd91def483809c09d",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "nioh-3": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3681010&l=english&cc=us",
+    "publisher": "Steam / KOEI TECMO GAMES CO., LTD.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3681010/a21264e9fd476dcb2901c2432b598107d024c5a8/header.jpg?t=1772090941",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "f99651bf108ca14d7fcced7249e55bac51f45af76e4fb5df14923609f00ce50d",
+    "outputSha256": "643d4e62f626fd42e8b3acf950950707758bd00bbdc1427a0395f8690ffe6763",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "naraka-bladepoint": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/",
+    "publisher": "NetEase Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203220/60bfed22c5f44d8b18a28648add05ea65ef5de56/capsule_616x353.jpg?t=1792651021",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "5169b056238870b4b52d64f8e55209ada60af458f896955d4cfd2530179c0c76",
+    "outputSha256": "76e81c60277d7dfe7cccb424323ceeb3a53e37467517846904d7ddca929b2020",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "call-of-duty-warzone": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/",
+    "publisher": "Activision",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/0d79f08428df3a85284e48e001da8693f854134c/capsule_616x353_alt_assets_20.jpg?t=1789748005",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "3fbc8275b02ba71a919eda23a96244f9b41586f2fcff473b1c88b5a4dd00c38b",
+    "outputSha256": "033a399fb2b6c623aa3175e83d329972e35f11f435d523fa2b28cfecbfaf3c7e",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "super-animal-royale": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/843380/Super_Animal_Royale/",
+    "publisher": "Pixile Studios",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/843380/62a7d5938342d50dc333fc2e338dca5ab9cbeb6e/capsule_616x353_alt_assets_23.jpg?t=1793221475",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "392fd9d774970d0aa6bce518e65c59367ec3261a8737484d62d9527f9ed7eebd",
+    "outputSha256": "018914ee1faabec0177826e7ab8cf00ee2cccf61ee7acd3880c137bc06467a09",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "farlight-84": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/app/1928420/Farlight_84/",
+    "publisher": "Farlight Games",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1928420/ee3882a9c17b5df1294b9d3211cd3037c6fea879/capsule_616x353.jpg?t=1776926334",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "30a8085d3dbdbfe862c85cef900e5c996df696317bdaa2d369461ba9aad844b0",
+    "outputSha256": "8d773091027c5942c3e11e147ef86dd38c97896343ad87e567567c54f90f1546",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "call-of-duty-mobile": {
+    "kind": "official",
+    "sourceUrl": "https://www.callofduty.com/en/store/games/mobile",
+    "publisher": "Call of Duty",
+    "imageUrl": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/mobile/bo6-season-3/store-codm-hero-carousel.webp",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "b4ddb9ac753ec4b818506aafe889ee596b1abc74b868e7f0626e683389de7665",
+    "outputSha256": "9fe1efbaa79dddf1c304574c695418344b7964250dee43904df474f87afa4d24",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "tetris-99": {
+    "kind": "official",
+    "sourceUrl": "https://www.nintendo.com/us/store/products/tetris-99-switch/",
+    "publisher": "Nintendo",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000018547/2aaa58fe27cdc4784f54ee9f4e7dffd43ad1fd1fffabfd86029889696220d33b",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "d174215c28d2f2e9b6ba0dad5f9d6dcbe30fc096716bf1f4f5228d25eb8251a2",
+    "outputSha256": "059a8d0acfe69489d02c59eb9bcb774f6e6bbeda5df038884ff217f1ebcf2a8f",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "hollow-knight-silksong": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1030300&l=english&cc=us",
+    "publisher": "Team Cherry",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "28eafbb11718c4905cb6a253471dcb5f909bbec1fd7589725bb903a9c1406918",
+    "outputSha256": "fed2366169c8a9523d12ebdf03aedc1ae960eaf424de87d151d3e3f92aa860e4",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "black-myth-wukong": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2358720&l=english&cc=us",
+    "publisher": "Game Science",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "a3f9a6b85e2e7e03d979823a99e47f8f8ee038f287f59097e7556e0b9afd6f16",
+    "outputSha256": "e047ffe3ab06e73acbe91ad1ad0854e2b4c34ac676f86ae28243860134bcfce5",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "cyberpunk-2077": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1091500&l=english&cc=us",
+    "publisher": "CD PROJEKT RED",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/48a93d6445a67520ea49833c93dae8f2e68fc540/header_alt_assets_9.jpg?t=1792682505",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "7ad6e0ee4f23e26416f5663146f3e97b1c85bbfb157781027e2aa615a4be68cf",
+    "outputSha256": "7158cc9a84018c3d599a17e1765b4a5b24a4e4e3521eb8142f95d56e60faf1f9",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "crypt-of-the-necrodancer": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=247080&l=english&cc=us",
+    "publisher": "Brace Yourself Games / Klei Entertainment",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/247080/d82a7663aad7a678370462212071264cbee7fb47/header.jpg?t=1791916929",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "92fa571368f67b52e0eece8a3bcc89408cc29124ef34b5ee1a0cd2fa24e22587",
+    "outputSha256": "1a616bd8ab9dfe2bfd4d097504905d99e675d49cb8173cf4fd863db2296faf44",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "hi-fi-rush": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1817230&l=english&cc=us",
+    "publisher": "KRAFTON, Inc.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817230/header.jpg?t=1764916407",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "662c1b3e96af7a845129f7a0020de65812811497b57b697ae91fb78e4c5d15f5",
+    "outputSha256": "99edf92d383b5981256de38fdf0326cf3a98ec2c077954813af3260b0ab4bc34",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "arknights-endfield": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6752642477&country=us",
+    "publisher": "Apple / GRYPH FRONTIER PTE.LTD.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/a4/53/5ea453a8-f819-f42e-aae4-28f21b8c7166/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "c48f43f31dd0c083ce0ca0fbb01eac621121625b6e7c1ad142ea663183377a80",
+    "outputSha256": "97c041b48d2bafc6253195ead218c0450dba7056407194f993365f2c42c76235",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "zenless-zone-zero": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1606356401&country=us",
+    "publisher": "Apple / COGNOSPHERE PTE. LTD.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/64/6a/43646a64-9712-9da1-4c8a-14f95be9e413/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "9e75c916a32a11107839506e945484aa3d27e15727653d69fa42d32bfb3aa849",
+    "outputSha256": "d68a436414ff6d9bd254f5a9b53a3d33d8e193a38a59714f9dee837e2de55f6b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "honkai-star-rail": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1599719154&country=us",
+    "publisher": "Apple / COGNOSPHERE PTE. LTD.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/65/dc/fd65dc18-c4b6-7b64-8266-a423f3f113e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "bd9f20e81a427f46c5c4cce0b674c87e4e750be2be4ba1ad70b709b291929d9f",
+    "outputSha256": "3dc1c3a42183adb72f7532ee99841fcc2e70bd5de7b3df471807164347101a53",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "reverse-1999": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1672933190&country=us",
+    "publisher": "Apple / Bluepoch Co.,Ltd.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/61/94/1c619430-4d7c-80cd-c7b4-feaec9d113ff/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "148ba8cb312033cf04a218eabb8b8528506fc3b1ad446526a020f04c938fd5cb",
+    "outputSha256": "0a086cd4950b39a081cd271e9a588cd6d4ba836e6e00da7d85f87ff1da8195fb",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "love-and-deepspace": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6443467666&country=us",
+    "publisher": "Apple / INFOLD PTE. LTD.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/e4/79/66e47995-431d-2771-f0a8-3e0dcb0df438/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "33517f6f53c524bbc65226aa0480956c1f68875efc57c5bf5ef87123de4fb0fe",
+    "outputSha256": "7b7c4f8ba17405b1418486f8eee7cfdc049d02242d7314fb31747f49247eca28",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "afk-journey": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1628970855&country=us",
+    "publisher": "Apple / Farlight Games",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/90/d2/2190d26d-73b6-74eb-9986-0eec5d7371bd/AppIcon-Global-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "051b5f80a7450f24b0db3a9f53592c76bf188f91a93ce35c78ba6d4840c14f0d",
+    "outputSha256": "ad85c0f06bb163f522992ecde202a1dffb9feeb7f3a4bbc0bd5f91182971fde3",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "goddess-of-victory-nikke": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1585915174&country=us",
+    "publisher": "Apple / Level Infinite",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/76/62/f376627d-7f96-b269-c635-34ddb704ec48/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "99d20a06fba7de686da6577af751b8664622888fce669aff677a041992f39d09",
+    "outputSha256": "994025a06bfcc76d315d9b64e67031e6c077e61d8431bd2570c50e355f329ae0",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "where-winds-meet": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6472396866&country=us",
+    "publisher": "Apple / NETEASE INTERACTIVE ENTERTAINMENT PTE. LTD",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/b4/16/21b4168f-3af1-5eb5-a4ca-1009b0d08588/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "90041e58e73c4fa42fb709879313f765ba49e664788d81ef6088fe3ea990ddb8",
+    "outputSha256": "4406727ff7fc9fc1b9737a2f2286d538c936f134287a3e57d42d812595c87640",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "infinity-nikki": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6502622570&country=us",
+    "publisher": "Apple / INFOLD PTE. LTD.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/db/73/9fdb7374-823a-a5e8-a9fd-2bd7cee2dd34/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "2ade18b4800ad0e7d3625710ed3927e8243b53e235cf57828ff24da4f1a4346a",
+    "outputSha256": "6d90996ce8df940cc0edceb60631103ec671b964bf61ba424b610a71663ae976",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "umamusume-pretty-derby": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6480433538&country=us",
+    "publisher": "Apple / Cygames, Inc.",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/34/5e/6f345e3d-0ed8-96bb-510f-bc96163537b7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "ee5071363e948247541fd78f97dd8f45c153823387bb4f6df94d05fed12937ca",
+    "outputSha256": "6125dcd2a02b15adeaa71adbbce7525e882348150ca666ca4a339c06f95fa162",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "sword-of-convallaria": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=6451019582&country=us",
+    "publisher": "Apple / XD Entertainment Pte Ltd",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/d3/47/1dd34725-b946-1b9c-15ef-8b2600bf82ff/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "55d5e15f4a4590ccd65a7c7bd2cccce3ac06fb656aa044537e8ea61f6877bcc6",
+    "outputSha256": "cd3ade54e7ad1f782f1398d7ac7ef1bd0617828f179c5dfb4ba86d23397eea75",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "solo-leveling-arise": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1662742277&country=us",
+    "publisher": "Apple / Netmarble Corporation",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/28/93/752893bc-afc9-7797-8b45-160f9fd4f25c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "cad274149fce00d1262d2b20f1cc8c5d4a0061897222735af6cc8e0dc7a56741",
+    "outputSha256": "e4d9361e4bdc74970ad80931c18dfc2aeaa5116716e6f8d7260cb530890b5cfe",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "delta-force-2024": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1642894547&country=cn",
+    "publisher": "Apple / Tencent",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/10/34/0e/10340e62-72a3-4a99-0b4a-3199680f248c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "08025227992c307592acd3e035ed7f7c6c3c480ba932acdd90c3bb45daf4fbf9",
+    "outputSha256": "cd9ce9bd191e6cfd45c092b6e36c3a9598b0701cd47bf1258e0c69d87fbc43d3",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "clair-obscur-expedition-33": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1903340&l=english&cc=us",
+    "publisher": "Steam / Sandfall Interactive",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/be3305b02d4db0dffa3458537118423bf2792d7e/header.jpg?t=1782830877",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "46d1f4ff44db8766a752a19088103299d8312badd59f51b63dbc00e9a3c7993d",
+    "outputSha256": "6259881086afcfc68999534ae85746fc876c1dfc26acd56257a6c33de061e02a",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "death-stranding-2-on-the-beach": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3280350&l=english&cc=us",
+    "publisher": "Steam / KOJIMA PRODUCTIONS、Nixxes Software ",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/6270c77b0729e2df0a17d660286eeddfd9169386/header.jpg?t=1774022345",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "67e58d180d41a99c1d8916dcae8037c40fb135e35b7e7b59e2a5ce9c1c74d128",
+    "outputSha256": "a7e272970b539d73e413920dd8d2bd6aea6280a2477166bdb690dc2fc3799c9b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "kingdom-come-deliverance-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1771300&l=english&cc=us",
+    "publisher": "Steam / Warhorse Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1777975568",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "dde4c2135930817a3fb26508a1a03ac65a06d3c6a92fa1b97510adf2f86dea19",
+    "outputSha256": "d57151c2498427173aa9383384ebd4247c904a1737b8843cf13704892f2a78fb",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "split-fiction": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2001120&l=english&cc=us",
+    "publisher": "Steam / Hazelight Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "011dbe23fdb3bb9905ebfb6d5d9658924826a526ec64770b829b7b556909fa85",
+    "outputSha256": "d51fb891aa78a9740dfbe87bcb150cb1b14deb2f91748854b8990f93e18f7cc2",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "monster-hunter-wilds": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2246340&l=english&cc=us",
+    "publisher": "Steam / CAPCOM Co., Ltd.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1787549555",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "426e2badf49d59700faa57e6612cfe8b430553476f94d768dcdb329e481b1bd3",
+    "outputSha256": "7703470a4fccbb06c9137a1ee74543d9090e2531020109d48c4deae865a191c1",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "metaphor-refantazio": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2679460&l=english&cc=us",
+    "publisher": "Steam / ATLUS",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2679460/header.jpg?t=1764776325",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "41824bb05dd277560297727481e4e7608873e5ac76174e4ce6ac4de175baae94",
+    "outputSha256": "5c6ea35c1001f38cc14d1a995ffddee5eb3abcac4aa52e4134faa67a5409a4de",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "final-fantasy-7-rebirth": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2909400&l=english&cc=us",
+    "publisher": "Steam / Square Enix",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1789446799",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "671bb137ad88035e3c48dfd9247f506e2815723ac371dfad4b930748158169ce",
+    "outputSha256": "9c8a7316c5f9e613aa7be9365650e0fa5b53f9d9da768b22a7dd43f46ef415f5",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "final-fantasy-16": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2515020&l=english&cc=us",
+    "publisher": "Steam / Square Enix",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/header.jpg?t=1773294537",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "4b918e9efc14a9eb672bb9553a272d1f39600dace46dfeb632920b86607ebd62",
+    "outputSha256": "fa3e15ae6630e09d463410458f7e2ed273d1ee68df545e3cc002d6772ebda6bf",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "persona-3-reload-2024": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2161700&l=english&cc=us",
+    "publisher": "Steam / ATLUS",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "3de53e4065607641183888e7c291af90c7be8e90ace694f9215c5e567df5b208",
+    "outputSha256": "2940dc3bd8d2b41075486b169b9a231043346d3475e424519220f8e0db636a9b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "armored-core-6-fires-of-rubicon": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1888160&l=english&cc=us",
+    "publisher": "Steam / FromSoftware, Inc.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1748630736",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "265c2e2e00b542a65dadd577a24ef8f994cbe600b6ce51325020ba7780b64e65",
+    "outputSha256": "5f27e279e0dd6079cfc5da006b3f5e6b4f9483f35cb7c8c08a5e304f024b2ee2",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "stellar-blade": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3489700&l=english&cc=us",
+    "publisher": "Steam / SHIFT UP Corporation",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3489700/header.jpg?t=1776466244",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "209db9ea7546d49ff589701ffb5493f92f0c8e07272b65441c07a1e81b2d1d52",
+    "outputSha256": "b74bebbab3f465aa19e2c72d32eec6831dcf616ddf3452c1a395bfdd1343b7c2",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "helldivers-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=553850&l=english&cc=us",
+    "publisher": "Steam / Arrowhead Game Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/850e2f9e5bb15c5706bb9a1edc832f4f782e8be5/header.jpg?t=1793395133",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "101eb36e36b5c2cc09c41e13c881c729869b94e3eb4da1e2c6d5ea00c2ad43d0",
+    "outputSha256": "42d376e22dfcad65a38ab567010198ca369e554e30084fe23c1dc557bb90cc76",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "palworld": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1623730&l=english&cc=us",
+    "publisher": "Steam / Pocketpair",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "d12dab06e7e5f0a518293a38e630416fb51fb0a296c5f49a3f9c2e406b04fbfb",
+    "outputSha256": "e90f0c008ce70f672ba3f4c7547b14002f37f4c14cc9c7236dddaf331a610ab0",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "repo": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3241660&l=english&cc=us",
+    "publisher": "Steam / semiwork",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/62177765c05399116f0453fe1177b00ceed698c4/header_alt_assets_3.jpg?t=1793278962",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "144cdc7e97cf4f718bc36797776aa6c6ba4697d4302899b4986349278b35ab47",
+    "outputSha256": "56e4d774b56e8acfa0f8f413f7a51779712e7784ce86106a0df5038b9857865d",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "dispatch": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2592160&l=english&cc=us",
+    "publisher": "Steam / AdHoc Studio",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2592160/header.jpg?t=1792683942",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "c34a9a66bbe31474e631be9b9c8cd8dad572b9b5646e6abdb32fec4eff383ec3",
+    "outputSha256": "65372ebbbf3d43adfd7fe6ba5651a2518bbf27b07f2275ddb274aac37cb691f2",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "peak": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3527290&l=english&cc=us",
+    "publisher": "Steam / Team PEAK",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1792684718",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "30f2047266f77dbb0e8be0f17bc1048a65603fc18f47cb953f843f425ff26abd",
+    "outputSha256": "af03a50c62f36eb1ddeced72d8d05ffd7e1659b6f18171aa5836b751c4ae5154",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "blue-prince": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1569580&l=english&cc=us",
+    "publisher": "Steam / Dogubomb",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1569580/879ac248a3b548a6bbc32771b950756378e7e922/header.jpg?t=1793379538",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "1a6b20ecec4246e6552068af2202ea9a4dd3f695c43692c00d2781e998351c20",
+    "outputSha256": "8a3b1460860dd0f579a03ab753b6bf035119b2dd0929a8fdd9af9be6eabcc1a7",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "schedule-1": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3164500&l=english&cc=us",
+    "publisher": "Steam / TVGS",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1785744977",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "742480b915747224736172b5dd249a266329e97a9687b02a4f0cba6ba83cfbc8",
+    "outputSha256": "1438fd2733cc9ad52e2c37063465dc0ee344063c88c8ab3e432e121bee299887",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "hades-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1145350&l=english&cc=us",
+    "publisher": "Steam / Supergiant Games",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "9dde3b52db16a73d52d83352a5353fc145eba58e5a466977755e733ee8977efe",
+    "outputSha256": "05ca85c4829b1af4a1f9b15c7d0075162c2053660c789de8ddfd260066d64c44",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "animal-well": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=813230&l=english&cc=us",
+    "publisher": "Steam / Billy Basso",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg?t=1788379439",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "24c8d61aca57514263cd1290036881a55684762d898028d5d439185c795ee18f",
+    "outputSha256": "36552ced6142218b875dd250a2241091eed278bf10f76c576a24a3134f44611b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "pacific-drive": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1458140&l=english&cc=us",
+    "publisher": "Steam / Ironwood Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1458140/3a5fa1e845c13b48f9e2ed042f4538ac62bd16ed/header.jpg?t=1792430302",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "496c0afccf8617046af147314e6322211d413fdf4ce758bf0045dbacf412d4ad",
+    "outputSha256": "af4721627ce04f2bc665b9468d685af9536e7ea81711aab4f93d5cfae285eac2",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "pubg-battlegrounds": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=578080&cc=us&l=english",
+    "publisher": "Valve / PUBG Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1792718193",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "acd549290767b2fc76a7efb7d7881e73530ab5432061b14e6d1095b5c5bd0892",
+    "outputSha256": "f1c67847bc3876f06fc0dc829f10e00fb4c6836d9f8921ffe1a8d03f79fedc18",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "apex-legends": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1172470&cc=us&l=english",
+    "publisher": "Valve / Respawn Entertainment",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6cf04767652d703b6050da84b82cfb1194258d7d/header.jpg?t=1790164440",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "076313b77e3eaa0f4ff415a3fbcf939d3bb47bce8469d63cda4c7284da183985",
+    "outputSha256": "f38189923a327e0ee0feaf4de26cf9348e342c1233036a39651f1199205bcbe3",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "the-finals": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2073850&cc=us&l=english",
+    "publisher": "Valve / Embark Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/4b0efa1275c8cedc030209eb174af726a5ca1776/header.jpg?t=1792501373",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "e71fb8f4125d84e7adaee2c7097a67dc4b64d78eedafc09113bab9d966b3f52e",
+    "outputSha256": "78f6585060f82b50bc72921a35a54493d5dca889cc72a6b09b5417d74e6e78b9",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "overwatch-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2357570&cc=us&l=english",
+    "publisher": "Valve / Blizzard Entertainment",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/5c208b2699cd38ed6125d039be388fa744db54a4/header_alt_assets_23.jpg?t=1791576843",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "d1e0b2b20dd9ca6735c9f1a3b574db0768e199eb8c84eddea873b5dbcbb3deaa",
+    "outputSha256": "5532d68f67d1a2f15a02ccc717a9821b5d61a9eb3c29d9c7b874406f1086b443",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "marvel-rivals": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2767030&cc=us&l=english",
+    "publisher": "Valve / NetEase Games",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "10229444243408575f4d33b3336fa868b89c22d3d74887a16abdf74ae18acfa5",
+    "outputSha256": "aecfa2bb3ba40d7ba53e9251789569faddc118ca55460f3263fff47b0bfd282b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "fall-guys": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1097150&cc=us&l=english",
+    "publisher": "Valve / Mediatonic",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1097150/header.jpg?t=1698763175",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "c413601546e208cb737e77f0667ca86f2d20dc6730a5c9361668c7e7a0ed4a10",
+    "outputSha256": "e7e72b22a9b0ed2e8ff466841ed41243feb737e03dd388e849f5fa67e8080ad8",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "phasmophobia": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=739630&cc=us&l=english",
+    "publisher": "Valve / Kinetic Games",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1793615120",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "a8b55a3f72bc3aa87b110fdb3b28ddda5baf72e051204d702df2f0f60b118127",
+    "outputSha256": "c17b876a674027f7aff74f6d5469835c4dea1882ee3d0029ea9073891fa72a87",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "content-warning": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2881650&cc=us&l=english",
+    "publisher": "Valve / Landfall / Zorro 等",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg?t=1785137321",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "eb579f2dca7761cb25aff03d707dd85f13574f5897ce6cf8c9bb1202553f6cc9",
+    "outputSha256": "9f4a68d11990d29a454264607168a78dde7e67cb5fd1b8b7d797ce3e58b19781",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "chained-together": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2567870&cc=us&l=english",
+    "publisher": "Valve / Anegar Games",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/ff16ff5057fa8e0a3a2cb9f4665a59a255c831cb/header_alt_assets_1.jpg?t=1793107565",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "7578319e72a02dc8d9e342e8cc4066f1d255e7709aa8d124eb8dad36cd42d1ab",
+    "outputSha256": "21826ecafd39397bfb16004691acb0d37cf999ed5d5f9681d90d52eafbb26628",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "buckshot-roulette": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2835570&cc=us&l=english",
+    "publisher": "Valve / Mike Klubnika",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg?t=1783085442",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "2ad89ff8e40a8a35dd550413143b6b303bde13da5d8049868d576eb462a77fc5",
+    "outputSha256": "0a89663031cede6aa503c345d66533b222e508a7d3a7380cc8474ae81a2f5fcd",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "poppy-playtime": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1721470&cc=us&l=english",
+    "publisher": "Valve / Mob Entertainment",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1721470/00ca34a0c863a8d86c6582904249216d6aa263bd/header.jpg?t=1791907814",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "4f19639e860e5996248e41ca8d7619e72946ef1a37ae84637bb33bc52ac8b0f4",
+    "outputSha256": "93b521eb441afc60d8a0fac785dfa8074fea1285bf8a74b717cf337084dfed26",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "dead-by-daylight": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=381210&cc=us&l=english",
+    "publisher": "Valve / Behaviour Interactive",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1793202236",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "07c16d378b8a126fc84635d5a1d9de42d90776a3dab1a2f4250f90987301e2fe",
+    "outputSha256": "22f91a57997c496b27b13a8da4486bc79fdf0043ecd9b4acd00e803753ea69d4",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "garena-free-fire": {
+    "kind": "official",
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1300146617&country=us",
+    "publisher": "Apple / Garena",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/16/6b/ef166bba-1d69-85f5-ed84-6b7c6e73b55c/AppIcon-1788350393-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "f055cc2b8b4bd70b12d6b3c04a3bbb771125026c88d83be425ecbd6d8bb2549c",
+    "outputSha256": "c71dcec8a8e22e2401d6772ee000b11e2f00e0ec695564b6056057bd3569ac68",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "fortnite": {
+    "kind": "official",
+    "sourceUrl": "https://store.epicgames.com/p/fortnite",
+    "publisher": "Epic Games",
+    "imageUrl": "https://cdn1.epicgames.com/spt-assets/prod-fn/FNBR_43-00_MSEE_Logo_Xbox_Launcher_Superhero_1920x1080-bhb16.png",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "b70af04516839233f00f400b3423a72055d39a9348076c42141081fb3507b2e7",
+    "outputSha256": "a2508bfeefa74a31310df202d673110e95897bf6aba071d3d11cb6ad3bc30b0e",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "hogwarts-legacy": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=990080&l=english&cc=us",
+    "publisher": "Steam / Avalanche Software",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "5d406f44f7725e2249ddb63a40c15d05531bbf504837c4374bb2586fe3c07b79",
+    "outputSha256": "86a933d41e4b7cf6d0b761514578004f5d66f45c6337482b783bb1f4069b6c6d",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "the-witcher-3": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=292030&l=english&cc=us",
+    "publisher": "Steam / CD PROJEKT RED",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/e8afc4252e3fee8ed2525ab2fd7675cca39aa38d/header_alt_assets_1.jpg?t=1790845156",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "572a97138980ded27bc2d953458bb4c2801860975dd0a6501641d34fa601d821",
+    "outputSha256": "57c1ee2523d799670cc2e5bcbc8bc57209ac98dfe40cb306dd1e2e14dcde3f1e",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "baldurs-gate-3": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1086940&l=english&cc=us",
+    "publisher": "Steam / Larian Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "70f099749ece31e4ff2d017cbfafc47fd8cbe52e23eb26daec8dde4549576ccb",
+    "outputSha256": "001e9fe4689dcbc10eaf15483e6525ed467264acbc138be35baa3ee5f085faa8",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "red-dead-redemption-2": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1174180&l=english&cc=us",
+    "publisher": "Steam / Rockstar Games",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "27aa89c336b381083a1b3e8de84ffbcb842219dabca97aabfcf707b1dd8c135c",
+    "outputSha256": "59d97e139727cd1a7d56c41d5d36d58c522123982dd3780aa1d4b11a81be4c5b",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "grand-theft-auto-5": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=271590&l=english&cc=us",
+    "publisher": "Steam / Rockstar North",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "e1ee8ed03ef2926d224e331a1bc61711822bbe7261cf847624089c1e95207a9a",
+    "outputSha256": "3ab39bf43136bf317bc30cc75eaa81a2f2c3fbbb409789025dc85d6c48680126",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "god-of-war-2018": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1593500&l=english&cc=us",
+    "publisher": "Steam / Santa Monica Studio、Jetpack Interactive",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "cef450471bbaf6058991c841c30539069f436a92ba5e91994bf12d12657e3b80",
+    "outputSha256": "260a812bfe0e38466015e8c14ed1fe42eba5b0dbc870d17d1e627a53cd1baa5c",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "ghost-of-tsushima": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2215430&l=english&cc=us",
+    "publisher": "Steam / Sucker Punch Productions、Nixxes Software",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "fe1bf015452d5e52a6a9fb9b7e535996a5b8f950fd5b4fd958636095ac02f39a",
+    "outputSha256": "707ff62263bfb277a4a6d7fe475a9ba3476e477579cd6a190c78e418263b0e85",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "skyrim": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=489830&l=english&cc=us",
+    "publisher": "Steam / Bethesda Game Studios",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "160aaf40eddb413b83b1da78c846b4d66b5123eee1d7e43e287bcfa0bf3584d9",
+    "outputSha256": "e4b387af41aaf07af2552b885f94fb74f28e16e95d85f34169726d0322a3384e",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "nier-automata": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=524220&l=english&cc=us",
+    "publisher": "Steam / Square Enix、PlatinumGames Inc.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/524220/header.jpg?t=1785182957",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "c154a39268eea027f9b578e82d5303351f09f49418ed43a9a60d452869378878",
+    "outputSha256": "eb135f2277bce0e4284c8be59691838af0d943c93e147f362380508c0a8d3ddd",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "resident-evil-2-2019": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=883710&l=english&cc=us",
+    "publisher": "Steam / CAPCOM Co., Ltd.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg?t=1779433152",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "f9927dc9b656d7e181baa1da6d311470230dfa82c16dc6c5bd72b39c2d99ffeb",
+    "outputSha256": "264cd7c48843bb0021ff47319aead164db4f6ce282bed7539b38dbef6197dd28",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "resident-evil-4-2023": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2050650&l=english&cc=us",
+    "publisher": "Steam / CAPCOM Co., Ltd.",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "33c8dcd2a189dec8c053773e10df4fef2d68cb1db73ab4401de5c078b8650e4b",
+    "outputSha256": "bb54f02852191ba3ba4cd8470ef421e575530b5e43a454e2b6b7676924c66a30",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
+  },
+  "dead-space-2023": {
+    "kind": "official",
+    "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1693980&l=english&cc=us",
+    "publisher": "Steam / Motive",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1693980/header.jpg?t=1777396576",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "879235d904d0733f28e0031ef5f609d8a98acf7d6adc9e50abe5bc5d0240f769",
+    "outputSha256": "95f928ee93439472eb8d886f905999feb7aa5a67d35fe34797606021c96aaded",
+    "preparation": "采用已有游戏图像，等比缩小并转为WebP，未生成或重绘。"
   }
 }

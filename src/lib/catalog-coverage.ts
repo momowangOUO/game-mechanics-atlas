@@ -2,6 +2,7 @@ import { games, genres, scopes } from "./knowledge";
 import type { Game } from "./model";
 import { playStyles } from "../data/play-styles";
 import { expandGenreIds } from "../data/genre-relations";
+import { matchesReleaseEra } from "./release-era";
 import reviewData from "../../docs/research/coverage-reviews.json";
 export type CoverageReview = {
   genreId: string;
@@ -28,12 +29,7 @@ export type CoverageMatch = {
 function inFilter(game: Game, filters: CoverageFilters) {
   if (filters.platform && !game.platforms?.includes(filters.platform))
     return false;
-  const year = game.originalReleaseYear ?? game.year;
-  return filters.era === "classic"
-    ? year <= 2010
-    : filters.era === "recent"
-      ? year >= 2020
-      : true;
+  return matchesReleaseEra(game, filters.era);
 }
 function relatedScopes(
   gameId: string,
@@ -142,6 +138,8 @@ function calculateSummary() {
   );
   return {
     games: games.length,
+    detailedCases: games.filter(game => !game.referenceOnly).length,
+    referenceCases: games.filter(game => game.referenceOnly).length,
     mobile: games.filter((game) =>
       game.platforms?.some(
         (platform) => platform === "ios" || platform === "android",

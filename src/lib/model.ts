@@ -36,9 +36,12 @@ export const GameSchema = z.object({
   metadataNote:text,accent:text.optional(),symbol:text.optional(),aliases:texts.optional(),
   platforms:texts.optional(),originalReleaseYear:z.number().int().min(1950).max(2100).optional(),mobileOrigin:z.boolean().optional(),
   playStyleIds:texts.optional(),
+  referenceOnly:z.boolean().optional(),coverageNote:text.optional(),
   genreAssignments:z.array(z.object({genreId:text,scopeId:text,sourceIds:texts,rationale:text}).strict()).optional(),
   playStyleAssignments:z.array(z.object({playStyleId:text,scopeId:text,role:z.enum(['primary','supporting']),sourceIds:texts,rationale:text}).strict()).optional(),
-}).strict();
+}).strict().superRefine((game,ctx)=>{
+  if(game.referenceOnly&&!game.coverageNote)ctx.addIssue({code:'custom',message:'Reference entries must describe their research gap',path:['coverageNote']});
+});
 export type Game = z.infer<typeof GameSchema>;
 export const MechanicInstanceSchema = z.object({
   id:text,mechanicId:text,scopeId:text,status:MechanicStatusSchema,condition:text.optional(),

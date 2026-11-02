@@ -286,6 +286,7 @@ export function GameCard({ game, scopeId }: { game: Game; scopeId?: string }) {
       <GameCover game={game} />
       <div className="case-body">
         <h3>{game.name}</h3>
+        {game.referenceOnly && <span className="chip">参考条目 · 机制资料待补</span>}
         <p>{game.summary}</p>
         <div className="row">
           {game.corePlayTags.map((tag) => (

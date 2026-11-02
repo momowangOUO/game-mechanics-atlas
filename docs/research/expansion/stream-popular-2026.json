@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "pubg-battlegrounds",
+    "name": "绝地求生 / PUBG: BATTLEGROUNDS",
+    "studio": "PUBG Studios",
+    "year": 2017,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "battle-royale"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration"
+    ],
+    "summary": "跳伞进入战场，搜集武器装备，在不断缩小的安全区中生存到最后。",
+    "analysis": "落点决定早期资源与遭遇风险；缩圈让避战、补给与向安全区移动始终需要权衡。",
+    "loop": [
+      "选择落点并搜索建筑",
+      "装备武器、补给与配件并避开蓝圈",
+      "与其他玩家交战，争取成为最后幸存者"
+    ],
+    "learning": [
+      "让可选落点与后续收缩区域形成持续变化的风险取舍。"
+    ],
+    "caveats": [
+      "仅描述标准大逃杀，不将 PUBG Mobile 当成本条的手机移植。"
+    ],
+    "resources": [
+      "枪械与弹药：用于战斗",
+      "治疗与护甲：维持生存",
+      "安全区：限定可持续停留的范围"
+    ],
+    "progression": [
+      "每局重新降落和搜集；对局外外观与账号进度另行保存。"
+    ],
+    "scopeLabel": "标准大逃杀",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=578080&cc=us&l=english",
+        "title": "PUBG: BATTLEGROUNDS — Steam 商店资料",
+        "publisher": "Valve / PUBG Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/PUBG:_Battlegrounds",
+        "title": "绝地求生 / PUBG: BATTLEGROUNDS — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制角色在战场上移动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "瞄准并使用枪械攻击其他玩家。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "搜索建筑和补给箱获得武器及装备。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "蓝圈随时间收缩，即使玩家不操作也继续变化。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家之间互相对抗，争取最后生存。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "多名玩家同时处于一场对局并改变彼此处境。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "蓝圈和敌人攻击会减少角色生命。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1792718193",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=578080&cc=us&l=english"
+    },
+    "aliases": [
+      "PUBG: BATTLEGROUNDS"
+    ]
+  },
+  {
+    "id": "apex-legends",
+    "name": "Apex Legends",
+    "studio": "Respawn Entertainment",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "battle-royale"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "summary": "选择拥有独特能力的传奇，与队友搜集装备并争取大逃杀胜利。",
+    "analysis": "不同传奇提供各自技能，分工与地图拾取相结合，使交战前的英雄选择和局内协同都影响结果。",
+    "loop": [
+      "选择传奇并随队伍降落",
+      "搜集枪械与装备，使用能力支援队友",
+      "在收缩区域中对抗其他小队"
+    ],
+    "learning": [
+      "给每个可选角色清晰的能力边界，使小队成员能够互补。"
+    ],
+    "caveats": [
+      "分析端游及主机标准大逃杀；已停运的独立手游不计入平台。"
+    ],
+    "resources": [
+      "武器及配件：改变射击手段",
+      "传奇技能：提供角色专属行动"
+    ],
+    "progression": [
+      "对局物资随比赛重置；账号解锁与外观跨局保留。"
+    ],
+    "scopeLabel": "传奇小队大逃杀",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1172470&cc=us&l=english",
+        "title": "Apex Legends™ — Steam 商店资料",
+        "publisher": "Valve / Respawn Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Apex_Legends",
+        "title": "Apex Legends — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "role-asymmetry",
+        "note": "队友选择的传奇拥有不同能力和职责。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家瞄准并使用搜集的枪械交战。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队友在同一小队内合作争取胜利。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "不同队伍彼此竞争最后的存活位置。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "小队和对手在同一对局时间内共同影响战况。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "比赛中的安全区随时间变化。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6cf04767652d703b6050da84b82cfb1194258d7d/header.jpg?t=1790164440",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1172470&cc=us&l=english"
+    },
+    "aliases": [
+      "Apex Legends"
+    ]
+  },
+  {
+    "id": "the-finals",
+    "name": "THE FINALS",
+    "studio": "Embark Studios",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "action"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat",
+      "buildcrafting"
+    ],
+    "summary": "组成参赛小队，打开金库并争夺兑现点，同时利用可破坏的场景交战。",
+    "analysis": "现金必须经过兑现阶段，多队争夺同一目标；墙壁和楼层可被破坏，防守路线因此会随行动改变。",
+    "loop": [
+      "选择体型、武器和专长",
+      "开启金库并把现金带到兑现站",
+      "防守或抢夺兑现，争取更高收益"
+    ],
+    "learning": [
+      "让目标状态与可破坏空间相互作用，产生临场攻防机会。"
+    ],
+    "caveats": [
+      "以 Cashout 兑现模式为范围；死亡竞赛等模式不沿用此目标。"
+    ],
+    "resources": [
+      "金库和现金：需要运送并兑现的目标",
+      "武器与装备：按体型配置"
+    ],
+    "progression": [
+      "单场现金和场景破坏在赛后结束；账号解锁独立保存。"
+    ],
+    "scopeLabel": "Cashout 兑现模式",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2073850&cc=us&l=english",
+        "title": "THE FINALS — Steam 商店资料",
+        "publisher": "Valve / Embark Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Finals",
+        "title": "THE FINALS — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "参赛者选择轻、中、重体型及可用装备。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "爆炸可破坏墙壁、楼层并改变建筑通路。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "队友围绕同一笔现金和兑现站共同争夺进度。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "多支队伍可以攻击对方并抢夺兑现。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "多个小队同时参与同一场竞技。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家瞄准并使用枪械对抗敌人。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "轻、中、重体型具有不同速度、工具和承受能力。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/4b0efa1275c8cedc030209eb174af726a5ca1776/header.jpg?t=1792501373",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2073850&cc=us&l=english"
+    },
+    "aliases": [
+      "THE FINALS"
+    ]
+  },
+  {
+    "id": "overwatch-2",
+    "name": "守望先锋 2 / Overwatch 2",
+    "studio": "Blizzard Entertainment",
+    "year": 2022,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "action"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "summary": "选择不同职责的英雄，与队友争夺目标并阻止对手完成推进。",
+    "analysis": "坦克、输出与支援拥有不同技能和职责；争夺同一目标迫使玩家把技能时机与队友行动协调。",
+    "loop": [
+      "选择英雄和团队职责",
+      "移动、射击并使用英雄技能",
+      "围绕目标协作攻防，完成本局"
+    ],
+    "learning": [
+      "用差异化职责与共同目标鼓励玩家围绕队友安排技能。"
+    ],
+    "caveats": [
+      "仅按《守望先锋 2》常规团队目标模式描述，不将初代和其他特殊模式混为一谈。"
+    ],
+    "resources": [
+      "英雄技能：按角色提供攻击或支援",
+      "目标状态：决定推进或争夺结果"
+    ],
+    "progression": [
+      "对局胜负和目标进度在本局结算；账号与外观另行保存。"
+    ],
+    "scopeLabel": "常规团队目标模式",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2357570&cc=us&l=english",
+        "title": "Overwatch® — Steam 商店资料",
+        "publisher": "Valve / Blizzard Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Overwatch_2",
+        "title": "守望先锋 2 / Overwatch 2 — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/",
+        "title": "Overwatch — Patch Notes",
+        "publisher": "Blizzard Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取常规 5v5 英雄技能冷却时间及调整说明；具体数值随版本变化。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "role-asymmetry",
+        "note": "坦克、输出和支援英雄具有不同职责。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家控制英雄瞄准并使用远程武器。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "部分英雄技能使用后需等待冷却，才能再次使用。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队友合作完成攻击、防守和支援。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两队玩家围绕目标直接对抗。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "双方玩家在同一实时对局中行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "推进模式双方争夺同一个推动路障的机器人。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/5c208b2699cd38ed6125d039be388fa744db54a4/header_alt_assets_23.jpg?t=1791576843",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2357570&cc=us&l=english"
+    },
+    "aliases": [
+      "Overwatch 2"
+    ]
+  },
+  {
+    "id": "marvel-rivals",
+    "name": "漫威争锋 / Marvel Rivals",
+    "studio": "NetEase Games",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "action"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "summary": "选择漫威英雄与队友合作，通过技能配合争夺或护送战场目标。",
+    "analysis": "英雄的联动技能与可破坏场景同时影响推进路线，让队友组合和现场地形都能改变攻防方式。",
+    "loop": [
+      "选择英雄并与队友组成阵容",
+      "使用武器和技能争夺目标",
+      "配合联动技能和地形变化完成护送或防守"
+    ],
+    "learning": [
+      "让角色组合产生明确协同，同时使环境破坏改变队伍路线。"
+    ],
+    "caveats": [
+      "以常规团队目标玩法为范围；不同模式胜利条件不同。"
+    ],
+    "resources": [
+      "英雄技能：承担攻击、防御或支援",
+      "目标进度：决定护送与占领结果"
+    ],
+    "progression": [
+      "英雄和地图持续更新；单场目标进度结束后重新开始。"
+    ],
+    "scopeLabel": "常规团队目标模式",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2767030&cc=us&l=english",
+        "title": "Marvel Rivals — Steam 商店资料",
+        "publisher": "Valve / NetEase Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Marvel_Rivals",
+        "title": "漫威争锋 / Marvel Rivals — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "role-asymmetry",
+        "note": "不同英雄拥有不同能力和队伍职责。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两队玩家相互对抗，争夺地图目标。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队友协同技能完成共同目标。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "玩家可破坏场景并改变地形和掩护。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "护送模式中双方围绕同一载具的推进状态攻防。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "两支队伍同时在同一场战斗中行动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家操控英雄向目标发射攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2767030&cc=us&l=english"
+    },
+    "aliases": [
+      "Marvel Rivals"
+    ]
+  },
+  {
+    "id": "fall-guys",
+    "name": "Fall Guys",
+    "studio": "Mediatonic",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "platformer",
+      "battle-royale"
+    ],
+    "playStyleIds": [
+      "platforming"
+    ],
+    "summary": "操纵豆形选手跳跃和扑跳，穿过随机选出的关卡并在淘汰赛中争取晋级。",
+    "analysis": "多轮竞赛把拥挤环境与不同过关条件连接起来，单轮失误可能终结整次尝试。",
+    "loop": [
+      "进入随机选出的关卡",
+      "跳跃、扑跳并躲避障碍",
+      "通过资格线后进入下一轮，直至决出胜者"
+    ],
+    "learning": [
+      "用轮次淘汰把不同空间挑战串成紧凑的比赛。"
+    ],
+    "caveats": [
+      "分析个人淘汰赛；合作关卡和创意编辑器不代表每局都有。"
+    ],
+    "resources": [
+      "可用时间与晋级名额：限制过关机会"
+    ],
+    "progression": [
+      "被淘汰后本次比赛结束；外观收藏独立于单场比赛。"
+    ],
+    "scopeLabel": "个人淘汰赛",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1097150&cc=us&l=english",
+        "title": "Fall Guys — Steam 商店资料",
+        "publisher": "Valve / Mediatonic",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Fall_Guys",
+        "title": "Fall Guys — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家直接控制选手在三维场地内移动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "玩家跳跃通过平台和障碍。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "选手争夺有限晋级名额与最终胜利。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "多名选手同时在同一关卡中移动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "比赛依次抽选不同小游戏及其变体。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "淘汰结束当前比赛，新比赛重新从首轮开始。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1097150/header.jpg?t=1698763175",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1097150&cc=us&l=english"
+    },
+    "aliases": [
+      "Fall Guys"
+    ]
+  },
+  {
+    "id": "fortnite",
+    "name": "堡垒之夜 / Fortnite",
+    "studio": "Epic Games",
+    "year": 2017,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "battle-royale"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "spatial-planning"
+    ],
+    "summary": "在传统大逃杀中搜索装备、收集材料并搭建掩体，争取成为最后的幸存者。",
+    "analysis": "即时建造让掩体与路线由玩家临时改变；资源采集、枪战和风暴收圈共同决定何时停留或转移。",
+    "loop": [
+      "跳伞选点，搜索武器和补给",
+      "采集材料并按交战需要搭建墙面或坡道",
+      "随风暴转移，与其他玩家竞争最后胜利"
+    ],
+    "learning": [
+      "让玩家创建的临时地形参与攻防，但清楚标明它只存在于当前对局。"
+    ],
+    "caveats": [
+      "仅分析允许建造的标准大逃杀；零建造模式不提供同一套建造规则。"
+    ],
+    "resources": [
+      "木材、石材与金属：用于局内建造",
+      "武器和治疗物品：用于战斗与恢复"
+    ],
+    "progression": [
+      "材料、建筑和物资在对局结束后不作为局外基地保留。"
+    ],
+    "scopeLabel": "Battle Royale 标准建造模式",
+    "scopeNotes": "不混入 Zero Build、创意岛或拯救世界的专属规则。",
+    "sources": [
+      {
+        "url": "https://store.epicgames.com/p/fortnite",
+        "title": "Fortnite — Epic Games Store",
+        "publisher": "Epic Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取标准建造大逃杀和零建造的官方区别及官方代表图。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Fortnite_Battle_Royale",
+        "title": "Fortnite Battle Royale — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取物资、建造与收圈玩法；未安装试玩。"
+      },
+      {
+        "url": "https://www.fortnite.com/@epic/battle-royale?lang=en-US",
+        "title": "Battle Royale by Epic",
+        "publisher": "Epic Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方大逃杀与零建造的模式说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制角色在岛上移动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "瞄准并使用枪械对抗其他玩家。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "采集木材、石材和金属作为建造材料。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "打开宝箱可获得武器与补给。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "风暴与安全区随时间持续变化。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家或小队竞争最后的生存名次。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "多名玩家在同一场比赛中同时行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://cdn1.epicgames.com/spt-assets/prod-fn/FNBR_43-00_MSEE_Logo_Xbox_Launcher_Superhero_1920x1080-bhb16.png",
+      "sourceUrl": "https://store.epicgames.com/p/fortnite"
+    },
+    "aliases": [
+      "Fortnite",
+      "Fortnite Battle Royale",
+      "堡垒之夜"
+    ]
+  },
+  {
+    "id": "phasmophobia",
+    "name": "Phasmophobia",
+    "studio": "Kinetic Games",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "investigation-adventure",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "exploration"
+    ],
+    "summary": "携带探测工具调查闹鬼地点，收集证据并判断鬼魂种类。",
+    "analysis": "队伍可以分头使用不同仪器，但理智持续降低会提高调查风险，因此搜证深度与撤离时机互相牵制。",
+    "loop": [
+      "选择地点与调查工具",
+      "进入建筑，使用不同设备寻找证据",
+      "确认鬼魂类型并返回车辆，领取调查报酬"
+    ],
+    "learning": [
+      "让不同工具提供可相互印证的线索，同时保留继续调查的风险。"
+    ],
+    "caveats": [
+      "以标准调查合同为范围；自定义难度可以关闭追猎或改变证据规则。"
+    ],
+    "resources": [
+      "调查工具：提供不同类型线索",
+      "理智：影响鬼魂发动追猎的条件"
+    ],
+    "progression": [
+      "完成合同获得金钱与经验，可购买或升级调查工具。"
+    ],
+    "scopeLabel": "标准调查合同",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=739630&cc=us&l=english",
+        "title": "Phasmophobia — Steam 商店资料",
+        "publisher": "Valve / Kinetic Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Phasmophobia_(video_game)",
+        "title": "Phasmophobia — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "出发前购买并选择装入调查车辆的工具。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "每次合同会随机指定一种鬼魂。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "玩家根据证据选择鬼魂类型，完成合同后结算判断。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四人共同调查同一地点。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "队友在同一调查时段里共同搜证。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "进入调查地点后理智随时间下降并影响追猎。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "使用合同所得金钱与经验开放工具升级。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1793615120",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=739630&cc=us&l=english"
+    },
+    "aliases": [
+      "Phasmophobia"
+    ]
+  },
+  {
+    "id": "content-warning",
+    "name": "Content Warning",
+    "studio": "Zorro、Wilnyl、Philip、thePetHen、Skog",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "adventure",
+      "party-cooperation"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "gathering-survival"
+    ],
+    "summary": "与朋友进入旧世界拍摄危险场面，带回录像并争取在三天内达到观看目标。",
+    "analysis": "拍摄越危险的遭遇可能吸引越多观看，但氧气和队友生存限制停留时间，促使团队决定何时返回。",
+    "loop": [
+      "购买装备并乘潜水钟进入旧世界",
+      "拍摄怪物和队友，留意氧气与电池",
+      "返回地面上传影片，用收入购买装备"
+    ],
+    "learning": [
+      "让得分目标直接依赖团队承担的拍摄风险与撤离选择。"
+    ],
+    "caveats": [
+      "录像能否带回取决于队伍和摄像机的实际状态；游戏内观看数并非真实平台热度。"
+    ],
+    "resources": [
+      "氧气和摄影机电量：限制单次探索",
+      "广告收入：用于购买工具"
+    ],
+    "progression": [
+      "三日内未达到观看目标会结束本轮并清除规定的设备与资金。"
+    ],
+    "scopeLabel": "普通三日拍摄周期",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2881650&cc=us&l=english",
+        "title": "Content Warning — Steam 商店资料",
+        "publisher": "Valve / Landfall / Zorro 等",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Content_Warning_(video_game)",
+        "title": "Content Warning — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "二至四名玩家组队拍摄并返回地面。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "地下设施包含程序生成的房间布局。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "探索期间氧气会随时间下降。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "摄影机电量和氧气限制拍摄及返回的余量。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "score-threshold",
+        "note": "三天内观看数达到规定目标后才能继续职业流程。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "未达到观看目标会结束职业并重置规定的资金与装备。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "使用影片收入在商店购买照明、医疗及其他装备。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg?t=1785137321",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2881650&cc=us&l=english"
+    },
+    "aliases": [
+      "Content Warning"
+    ]
+  },
+  {
+    "id": "chained-together",
+    "name": "Chained Together",
+    "studio": "Anegar Games",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "platformer",
+      "party-cooperation"
+    ],
+    "playStyleIds": [
+      "platforming"
+    ],
+    "summary": "与队友被同一根锁链连接，在高空平台间协调跳跃并向上攀登。",
+    "analysis": "锁链会拉扯队友并绕过平台，使一人的移动直接改变全队的空间处境。",
+    "loop": [
+      "与队友保持锁链连接",
+      "协调方向和跳跃跨越平台",
+      "跌落后重新寻找路线，继续向高处攀登"
+    ],
+    "learning": [
+      "让合作的空间约束直接来自双方动作，而不是只用同步按钮。"
+    ],
+    "caveats": [
+      "普通模式没有初学者模式的检查点；不同难度不能视为同一规则。"
+    ],
+    "resources": [
+      "锁链：连接玩家并受平台物理碰撞影响"
+    ],
+    "progression": [
+      "初学者模式可使用检查点；普通模式以当前位置继续攀爬。"
+    ],
+    "scopeLabel": "多人攀登与初学者难度",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2567870&cc=us&l=english",
+        "title": "Chained Together — Steam 商店资料",
+        "publisher": "Valve / Anegar Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Chained_Together",
+        "title": "Chained Together — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制各自角色沿平台移动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "通过跳跃跨越高低不一的平台。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "连接队友的锁链会模拟物理并绕过平台。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四人相连并合作向上攀登。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "初学者难度提供检查点，帮助跌落后继续挑战。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "仅初学者模式使用检查点。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/ff16ff5057fa8e0a3a2cb9f4665a59a255c831cb/header_alt_assets_1.jpg?t=1793107565",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2567870&cc=us&l=english"
+    },
+    "aliases": [
+      "Chained Together"
+    ],
+    "referenceOnly": true,
+    "coverageNote": "已核实联机牵引、跳跃与难度差异；其余可归入现有机制的细节仍待补充。"
+  },
+  {
+    "id": "buckshot-roulette",
+    "name": "Buckshot Roulette",
+    "studio": "Mike Klubnika",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "strategy"
+    ],
+    "playStyleIds": [
+      "turn-based-combat"
+    ],
+    "summary": "与庄家轮流选择枪口目标，在已知实弹与空包弹数量的条件下使用道具求生。",
+    "analysis": "射向自己且遇空包弹可继续行动；弹药顺序未知、生命次数有限，道具使概率判断变得更具体。",
+    "loop": [
+      "观察本轮实弹与空包弹数量",
+      "使用可用道具并选择朝自己或庄家开枪",
+      "根据剩余弹药与生命继续应对，完成三轮"
+    ],
+    "learning": [
+      "让有限信息、目标选择和消耗道具共同改变风险，而不是只展示随机结果。"
+    ],
+    "caveats": [
+      "仅记录单人三轮对决；不将后续 Double or Nothing 押注规则写入基础模式。"
+    ],
+    "resources": [
+      "实弹与空包弹：影响开枪结果",
+      "除颤器次数：代表可承受的伤害",
+      "消耗道具：改变信息或行动"
+    ],
+    "progression": [
+      "基础模式失败后需要重新挑战；附加模式另有规则。"
+    ],
+    "scopeLabel": "基础单人三轮对决",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2835570&cc=us&l=english",
+        "title": "Buckshot Roulette — Steam 商店资料",
+        "publisher": "Valve / Mike Klubnika",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Buckshot_Roulette",
+        "title": "Buckshot Roulette — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3218902482",
+        "title": "Ultimate Guide to Buckshot Roulette [v.1.2.1]",
+        "publisher": "Steam Community",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取放大镜和手铐改变弹药信息与行动顺序的说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "玩家与庄家依规则轮流行动，朝自己射出空包弹可继续行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "已知数量的实弹与空包弹按随机顺序装入枪中。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "实弹命中使目标损失一次除颤器电量。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "有限生命、弹药和消耗道具需要按当前局势取舍。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "next-piece-preview",
+        "note": "使用放大镜可查看接下来的一发弹药。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "使用手铐可令庄家跳过一次行动。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg?t=1783085442",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2835570&cc=us&l=english"
+    },
+    "aliases": [
+      "Buckshot Roulette"
+    ]
+  },
+  {
+    "id": "poppy-playtime",
+    "name": "Poppy Playtime",
+    "studio": "Mob Entertainment",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "ios",
+      "android",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "adventure",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "puzzle-solving"
+    ],
+    "summary": "调查废弃玩具工厂，用远程抓手取得物品、接通机关并逃离危险玩具。",
+    "analysis": "抓手把远处取物和电路连接合为一套交互；入口密码要求玩家把环境中看到的顺序用于开门。",
+    "loop": [
+      "探索工厂并观察环境线索",
+      "使用 GrabPack 操作远处物件与机关",
+      "解锁通路，躲避玩具并继续调查"
+    ],
+    "learning": [
+      "让同一个工具在取物和解谜中产生不同用途，并让线索存在于实际场景。"
+    ],
+    "caveats": [
+      "仅分析第一章；后续章节是独立付费内容，不把后续工具视为初始能力。"
+    ],
+    "resources": [
+      "GrabPack 抓手：远距离取物和连接电路",
+      "环境中的颜色顺序：用于开启密码门"
+    ],
+    "progression": [
+      "通关第一章推进章节故事；不同章节内容单独发行。"
+    ],
+    "scopeLabel": "第一章 A Tight Squeeze",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1721470&cc=us&l=english",
+        "title": "Poppy Playtime — Steam 商店资料",
+        "publisher": "Valve / Mob Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Poppy_Playtime",
+        "title": "Poppy Playtime — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3214693381&l=japanese",
+        "title": "Poppy Playtime Chapter 1 All Puzzles Solution",
+        "publisher": "Steam Community",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取第一章列车颜色密码和蓝手开门步骤；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家直接在废弃工厂中移动和探索。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "向远处目标发射 GrabPack 的手并抓取物件。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "抓手可拉动较重的对象，改变其位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "观察玩具列车的颜色顺序以推断入口密码。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "输入对应颜色顺序后安全室的门会打开。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "ability-gating",
+        "note": "取得蓝手后才可通过蓝手开关开启通路。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1721470/00ca34a0c863a8d86c6582904249216d6aa263bd/header.jpg?t=1791907814",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1721470&cc=us&l=english"
+    },
+    "aliases": [
+      "Poppy Playtime"
+    ]
+  },
+  {
+    "id": "dead-by-daylight",
+    "name": "黎明杀机 / Dead by Daylight",
+    "studio": "Behaviour Interactive",
+    "year": 2016,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "party-cooperation"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "summary": "一名杀手追猎四名幸存者；幸存者合作修复发电机并打开出口逃离。",
+    "analysis": "双方目标和信息能力不对称：幸存者分配修理与救援，杀手则通过追踪和击倒打断进度。",
+    "loop": [
+      "选择杀手或幸存者及技能配置",
+      "幸存者修理发电机，杀手寻找并追猎目标",
+      "出口通电后争夺逃生机会"
+    ],
+    "learning": [
+      "让双方目标围绕同一局势相互牵制，同时确保各自有不同的信息和职责。"
+    ],
+    "caveats": [
+      "仅描述标准一对四试炼；特殊活动人数与规则可能不同。"
+    ],
+    "resources": [
+      "发电机进度：决定出口是否通电",
+      "技能和道具：影响追猎、救援或逃生"
+    ],
+    "progression": [
+      "单场发电机及逃生进度在试炼结束时结算；账号解锁另行保存。"
+    ],
+    "scopeLabel": "标准一对四试炼",
+    "scopeNotes": "按引用资料中的指定模式分析；赛季调整和其他模式另有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=381210&cc=us&l=english",
+        "title": "Dead by Daylight — Steam 商店资料",
+        "publisher": "Valve / Behaviour Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者的玩法介绍及代表图；商店上架日期不自动视为作品首发日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dead_by_Daylight",
+        "title": "黎明杀机 / Dead by Daylight — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行平台及指定模式的玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://deadbydaylight.com/game/",
+        "title": "Dead by Daylight: The Game",
+        "publisher": "Behaviour Interactive",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取杀手与幸存者职责、修理发电机及打开出口说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "role-asymmetry",
+        "note": "一名杀手追猎，四名幸存者协作修理和逃生。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "幸存者共同修理发电机，推动出口通电。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "幸存者分工修理、治疗及救援队友。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "杀手与幸存者的追猎和逃生目标直接对立。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "五名玩家同时处于一场试炼中。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "进入试炼前可以配置角色的能力和道具。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "修复发电机后出口通电，幸存者可尝试打开大门。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1793202236",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=381210&cc=us&l=english"
+    },
+    "aliases": [
+      "Dead by Daylight"
+    ]
+  },
+  {
+    "id": "garena-free-fire",
+    "name": "Free Fire",
+    "studio": "Garena",
+    "year": 2017,
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "shooter",
+      "battle-royale"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "summary": "跳伞进入移动端战场，搜索装备并在不断缩小的区域中争取生存。",
+    "analysis": "短局大逃杀把落点、搜集和安全区转移压缩到同一段流程；临时胶墙为暴露在外的交战提供短时掩护。",
+    "loop": [
+      "选择落点并降落",
+      "搜索武器与补给，利用胶墙掩护",
+      "向安全区转移并争取最后生存"
+    ],
+    "learning": [
+      "在紧凑战场里，让可迅速部署的掩护与移动路线共同影响交战。"
+    ],
+    "caveats": [
+      "以原版 Free Fire 的标准大逃杀为范围；MAX 是同一作品的增强客户端，不单独建档。"
+    ],
+    "resources": [
+      "枪械和补给：用于交战与恢复",
+      "胶墙：提供临时防护"
+    ],
+    "progression": [
+      "单场战利品和临时掩护在对局结束后清除；账号内容独立保存。"
+    ],
+    "scopeLabel": "原版标准大逃杀",
+    "scopeNotes": "不同地图、角色和赛季道具可能改变细节；不把其他模式规则当作标准规则。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1300146617&country=us",
+        "title": "Free Fire x NARUTO SHIPPUDEN — Apple App Store API",
+        "publisher": "Apple / Garena",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店介绍和图标；未安装试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Free_Fire_(video_game)",
+        "title": "Free Fire — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取原版大逃杀、胶墙与移动发行玩法。"
+      },
+      {
+        "url": "https://ff.garena.com/en/article/7/",
+        "title": "Official Launch",
+        "publisher": "Garena",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 2017 年正式上线及小队模式公告。"
+      },
+      {
+        "url": "https://ff.garena.com/en/article/1170/",
+        "title": "Patch Notes",
+        "publisher": "Garena",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取大逃杀安全区与胶墙规则的官方更新说明。"
+      },
+      {
+        "url": "https://ff.garena.com/en/article/1260/",
+        "title": "BR Economy Adjustments",
+        "publisher": "Garena",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取大逃杀击败敌人后开启战利品箱的说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家操控角色移动、跳跃、匍匐或卧倒。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家使用射击按钮对敌人发射武器。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家在大逃杀中争夺最后的生存胜利。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "多名玩家在同一场对局内同时行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败敌人后可搜索其战利品箱取得物资。",
+        "source": 4,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "安全区随比赛推进而收缩。",
+        "source": 3,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "小队模式允许玩家协作争夺胜利。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "仅双人或小队模式成立。"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ef/16/6b/ef166bba-1d69-85f5-ed84-6b7c6e73b55c/AppIcon-1788350393-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1300146617&country=us"
+    },
+    "aliases": [
+      "Garena Free Fire",
+      "Free Fire"
+    ]
+  }
+]

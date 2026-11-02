@@ -3,6 +3,7 @@ import { playStyles, legacyPlayAliases } from "../data/play-styles";
 import {
   originalPlayDirections,
   originalGenreAdditions,
+  originalGenreCorrections,
 } from "../data/catalog-overrides";
 import { expandGenreIds } from "../data/genre-relations";
 import {
@@ -21,6 +22,8 @@ export type AuthoredCase = {
   year: number;
   platforms: string[];
   mobileOrigin?: boolean;
+  referenceOnly?: boolean;
+  coverageNote?: string;
   genreIds: string[];
   playStyleIds: string[];
   summary: string;
@@ -121,7 +124,7 @@ export function expandCatalog(
     ];
     return classify(game, ids, [
       ...new Set([
-        ...game.genreIds,
+        ...(originalGenreCorrections[game.id] ?? game.genreIds),
         ...(originalGenreAdditions[game.id] ?? []),
       ]),
     ]);
@@ -165,6 +168,8 @@ export function expandCatalog(
       corePlayTags: [],
       platforms: row.platforms,
       mobileOrigin: row.mobileOrigin ?? false,
+      referenceOnly: row.referenceOnly,
+      coverageNote: row.coverageNote,
       resourceNotes: row.resources,
       progressionNotes: row.progression,
       metadataNote: row.scopeLabel,

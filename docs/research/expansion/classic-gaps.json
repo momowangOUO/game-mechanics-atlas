@@ -697,9 +697,7 @@
     "studio": "Team Shanghai Alice",
     "year": 2002,
     "platforms": [
-      "pc",
-      "switch",
-      "playstation"
+      "pc"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -729,7 +727,7 @@
       "达到指定分数可增加生命；首领符卡记录可在菜单查看。"
     ],
     "scopeLabel": "Windows原版",
-    "scopeNotes": "使用炸弹会影响部分符卡的无失误奖励。",
+    "scopeNotes": "使用炸弹会影响部分符卡的无失误奖励。 此处为 2002 年 Windows 原作，不把后续重制版平台计入。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/Embodiment_of_Scarlet_Devil?useskin=vector",
@@ -1411,9 +1409,7 @@
     "platforms": [
       "other",
       "nintendo-legacy",
-      "pc",
-      "playstation",
-      "xbox"
+      "pc"
     ],
     "mobileOrigin": false,
     "genreIds": [
@@ -1442,7 +1438,7 @@
       "可保存玩家和比赛记录；季后赛按赛程推进。"
     ],
     "scopeLabel": "Genesis原版",
-    "scopeNotes": "守门员可手动控制。",
+    "scopeNotes": "守门员可手动控制。 PS4／Xbox One 的 NHL 94 Rewind 更新了球队名单，属于后续版本。",
     "sources": [
       {
         "url": "https://en.wikipedia.org/wiki/NHL_94?useskin=vector",
@@ -1528,8 +1524,7 @@
       "sports"
     ],
     "playStyleIds": [
-      "sports-control",
-      "management-production"
+      "sports-control"
     ],
     "summary": "控制球队进行篮球比赛，或经营球队与创建球员的职业生涯。",
     "analysis": "球队经营与球员生涯采用不同进度尺度：一边调整组织阵容，一边逐场提升个人能力。",
@@ -1637,8 +1632,7 @@
       "sports"
     ],
     "playStyleIds": [
-      "sports-control",
-      "management-production"
+      "sports-control"
     ],
     "summary": "选择足球队，通过资格赛和正赛争夺世界杯冠军。",
     "analysis": "球队阵型与场上射门控制分别作用于长期准备和即时执行，让赛前选择与比赛过程相互配合。",

@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import "./register-typescript.mjs";
 const {dataset}=await import("../src/lib/knowledge.ts");
+const {minimumSupportedMechanics}=await import("../src/lib/case-completeness.ts");
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (name) =>
   JSON.parse(fs.readFileSync(path.join(root, "docs/research", name), "utf8"));
@@ -53,8 +54,8 @@ for (const g of evidence.games) {
     `${g.id}: missing learning/caveat notes`,
   );
   check(
-    positive.filter((i) => scopesByGame.get(g.id).has(i.scopeId)).length >= 6,
-    `${g.id}: fewer than 6 supported observations`,
+    positive.filter((i) => scopesByGame.get(g.id).has(i.scopeId)).length >= minimumSupportedMechanics(g),
+    `${g.id}: fewer than required supported observations`,
   );
   for (const id of g.sourceIds)
     check(sourceIds.has(id), `${g.id}: missing source ${id}`);
@@ -75,7 +76,7 @@ for (const m of dossier.mechanisms)
   for (const id of m.evidenceRefs)
     check(gameIds.has(id), `${m.id}: missing game evidence`);
 const urlCount = new Set(evidence.sources.map((s) => s.url)).size;
-check(evidence.games.length >= 320, "expected at least 320 complete games");
+check(evidence.games.filter(game => !game.referenceOnly).length >= 320, "expected at least 320 detailed cases");
 check(dossier.mechanisms.length >= 120, "expected at least 120 mechanics");
 check(mix.compositeTypes.length >= 32, "expected at least the original 32 genres");
 check(mix.recipes.length === 32, "expected 32 recipes");
@@ -93,6 +94,8 @@ const verification = read("source-verification.json");
 const checked = new Set(verification.sources.map((s) => s.sourceId));
 const report = {
   games: evidence.games.length,
+  detailedCases: evidence.games.filter(game => !game.referenceOnly).length,
+  referenceCases: evidence.games.filter(game => game.referenceOnly).length,
   mechanics: dossier.mechanisms.length,
   dimensions: new Set(dossier.mechanisms.map((m) => m.dimension)).size,
   genres: mix.compositeTypes.length,

@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { games, genres } from "@/lib/knowledge";
 import { playStyles, platformLabels } from "@/data/play-styles";
+import { releaseEras } from "@/lib/release-era";
 import {
   getCoverageCell,
   catalogCoverageSummary,
@@ -61,6 +62,7 @@ export default function CatalogCoverage() {
       />
       <div className={styles.stats}>
         <span>{summary.games} 款游戏</span>
+        <span>{summary.detailedCases} 款详细案例 · {summary.referenceCases} 款参考条目</span>
         <span>{summary.mobile} 款手机发行</span>
         <span>{summary.mobileOrigin} 款手机原生／先发</span>
         <span>{summary.classics} 款经典作品</span>
@@ -101,8 +103,7 @@ export default function CatalogCoverage() {
           原作年代
           <select value={era} onChange={(e) => setEra(e.target.value)}>
             <option value="">全部年代</option>
-            <option value="classic">2010 年及以前</option>
-            <option value="recent">2020 年及以后</option>
+            {releaseEras.map(era => <option key={era.id} value={era.id}>{era.label}</option>)}
           </select>
         </label>
         <label className={styles.check}>

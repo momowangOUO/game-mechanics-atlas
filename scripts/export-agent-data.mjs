@@ -21,6 +21,7 @@ import { mechanicScenes } from "../src/data/mechanic-scenes.ts";
 import { taxonomyGroupVisuals } from "../src/data/taxonomy-group-visuals.ts";
 import { currentTrends } from "../src/lib/current-trends.ts";
 import { playStyles } from "../src/data/play-styles.ts";
+import { streamDiscovery } from "../src/data/stream-discovery.ts";
 import {
   catalogCoverageSummary,
   getCoverageCell,
@@ -210,7 +211,7 @@ export function createAgentDocuments() {
     markdown(
       path,
       game.name,
-      `${game.summary}\n\n开发者 / 原作者：${game.studio}\n\n年份：${game.year}；口径：${game.yearBasis}\n${section("来源事实", game.factNotes)}${section("适用范围", game.scopeNotes)}${section("核心循环", game.coreLoop)}${section("设计分析（编辑归纳）", [game.analysis, ...game.learning, ...game.caveats])}${section(
+      `${game.summary}\n\n开发者 / 原作者：${game.studio}\n\n年份：${game.year}；口径：${game.yearBasis}\n${game.referenceOnly ? section("参考条目 · 资料进度", game.coverageNote) : ""}${section("来源事实", game.factNotes)}${section("适用范围", game.scopeNotes)}${section("核心循环", game.coreLoop)}${section("设计分析（编辑归纳）", [game.analysis, ...game.learning, ...game.caveats])}${section(
         "研究范围记录",
         scopes.map(
           (scope) =>
@@ -430,6 +431,11 @@ export function createAgentDocuments() {
           (row) => `${link(row.name, `/types/${row.id}`)}：${row.count} 款`,
         ),
       ]);
+    if (path === "/games/discovery")
+      body += section("直播与传播观察", [
+        "观看时长、全球榜、地区榜与主播个例分别注明范围；它们不是搜索需求或累计玩家人数。",
+        ...streamDiscovery.map(row => `${row.name}：${row.observation}${row.scopeNote ? ` ${row.scopeNote}` : ""} 观察期：${row.source.period}；口径：${row.source.metric}；[来源](${row.source.url})${row.gameId && dataset.games.some(game => game.id === row.gameId) ? `；${link("游戏案例", `/games/${row.gameId}`)}` : "；案例资料待补"}`),
+      ]);
     if (path === "/copyright")
       body +=
         section(
@@ -463,6 +469,8 @@ export function createAgentDocuments() {
       groups: taxonomyGroups.length,
       mechanics: dataset.mechanics.length,
       games: dataset.games.length,
+      detailedCases: dataset.games.filter(game => !game.referenceOnly).length,
+      referenceCases: dataset.games.filter(game => game.referenceOnly).length,
       types: dataset.genres.length,
       recipes: dataset.recipes.length,
       instances: dataset.instances.length,
@@ -480,6 +488,7 @@ export function createAgentDocuments() {
     taxonomyGroups,
     classificationLevels,
     playStyles,
+    streamDiscovery,
     mechanicIllustrations: Object.fromEntries(
       dataset.mechanics.map(({ id }) => [id, mechanicIllustration(id)]),
     ),
@@ -508,6 +517,8 @@ export function createAgentDocuments() {
         "编辑图解；含 diagramKind、三格 frames、对象 objects 和原创插画地址，不是游戏事实证据",
     },
     evidenceFields: {
+      referenceOnly: "参考条目：仅记录已核实的机制，不补齐未确认规则",
+      coverageNote: "参考条目的已核实内容与资料缺口",
       scopeId: "研究范围 ID，连接 scopes",
       parentScopeId: "仅沿明确的父子关系继承",
       sourceIds: "连接 sources；每条来源有 url、type、checkedAt、claimScope",

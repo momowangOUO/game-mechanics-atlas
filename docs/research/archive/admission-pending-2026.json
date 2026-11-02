@@ -1,0 +1,3018 @@
+{
+  "asOf": "2026-11-02",
+  "note": "暂缓发布，待补商业或受众证据。不代表已证明销量或玩家人数低于门槛。保留规则研究和来源，补证后可重新评估。",
+  "entries": [
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "cogmind",
+        "name": "机心 / Cogmind",
+        "decision": "hold",
+        "reason": "开发者回顾称登陆 Steam 前已有超过 4000 人购买；这是 2017 年的早期子集，不代表后续累计销量。未找到本作明确的足够规模里程碑或可靠商业榜单，暂待更多证据。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=722730&l=english&cc=us",
+          "https://www.indiedb.com/games/cogmind/news/data-and-thoughts-from-a-month-on-steam"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1584,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          },
+          {
+            "name": "Steam 上线前销量",
+            "value": 4000,
+            "unit": "份以上",
+            "dateOrPeriod": "2017 年 Steam 上线前",
+            "scope": "开发者自述的早期子集，不是此后总销量"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "cogmind",
+        "name": "机心 / Cogmind",
+        "studio": "Grid Sage Games",
+        "year": 2015,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike",
+          "rpg"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "turn-based-combat",
+          "exploration"
+        ],
+        "summary": "把打捞来的电源、推进器、工具和武器装到机器人身上，在部件持续损坏的地牢中更换生存方案。",
+        "analysis": "装备既是职业也是会损坏的消耗品，玩家需要保留转型余地，而不是只追求一套永久毕业装备。",
+        "loop": [
+          "探索机器人设施",
+          "战斗、潜行或黑入以取得部件",
+          "替换损坏部件，选择继续深入的路线"
+        ],
+        "learning": [
+          "装备会大量损坏时，也要给玩家足够的转型资源。"
+        ],
+        "caveats": [
+          "可选难度和挑战模式另有规则；不将所有机器人都视为敌人。"
+        ],
+        "resources": [
+          "电源、推进器和武器共同决定机器人性能",
+          "敌方残骸提供替换部件"
+        ],
+        "progression": [
+          "没有经验刷级，成长主要来自装备与到达新区",
+          "永久死亡结束本次机器人经历"
+        ],
+        "scopeLabel": "标准探索流程",
+        "scopeNotes": "可选难度和挑战模式另有规则；不将所有机器人都视为敌人。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=722730&l=english&cc=us",
+            "title": "Cogmind",
+            "publisher": "Steam / Grid Sage Games",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Cogmind",
+            "title": "Cogmind",
+            "publisher": "Wikipedia contributors",
+            "type": "community",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取发行资料和开发段，核对原作／抢先体验年份及后续平台版本；不把旧版技术状态当现行玩法。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "sequential-turns",
+            "note": "行动与战斗按回合推进",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "程序生成区域与手工地点结合",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "permadeath",
+            "note": "传统模式以永久死亡终止尝试",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "安装电源、推进器、工具与武器形成当前机体",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loot-drop",
+            "note": "从敌人残骸和探索中取得部件",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "destructible-terrain",
+            "note": "设施环境可以被破坏",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "stealth-detection",
+            "note": "可用潜行、黑入与信息战绕开正面对抗",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/722730/header.jpg?t=1767235574",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=722730&l=english&cc=us"
+        },
+        "aliases": [
+          "机心"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "jupiter-hell",
+        "name": "木星地狱 / Jupiter Hell",
+        "decision": "hold",
+        "reason": "本轮未找到可核验的单作商业销量、实际销量榜或持续直播成绩；Steam 推荐数仅是检索线索，不能证明受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=811320&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1808,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "jupiter-hell",
+        "name": "木星地狱 / Jupiter Hell",
+        "studio": "ChaosForge",
+        "year": 2019,
+        "platforms": [
+          "pc",
+          "linux"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike"
+        ],
+        "playStyleIds": [
+          "turn-based-combat",
+          "buildcrafting"
+        ],
+        "summary": "在程序生成的木星基地里逐格行动，用枪械与近战武器处理恶魔，死亡后从头开始。",
+        "analysis": "动画速度接近动作游戏，但敌我推进依赖行动回合，允许玩家在危险出现后停下来判断位置与攻击顺序。",
+        "loop": [
+          "观察周围敌人与可走格",
+          "移动或攻击，触发敌方行动",
+          "取得武器继续深入，死亡后再挑战"
+        ],
+        "learning": [
+          "动作般的演出仍可与完全可停下思考的回合规则结合。"
+        ],
+        "caveats": [
+          "不是《Jupiter Hell Classic》；不能把快动画当成实时战斗。"
+        ],
+        "resources": [
+          "枪械弹药限制持续交火",
+          "生命值决定本次尝试的存续"
+        ],
+        "progression": [
+          "程序关卡重新生成",
+          "永久死亡清除这次角色推进"
+        ],
+        "scopeLabel": "标准回合制挑战",
+        "scopeNotes": "不是《Jupiter Hell Classic》；不能把快动画当成实时战斗。 年份记最早公开抢先体验；玩法按当前所列范围分析。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=811320&l=english&cc=us",
+            "title": "Jupiter Hell",
+            "publisher": "Steam / ChaosForge",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://jupiterhell.com/?news=53",
+            "title": "Jupiter Hell",
+            "publisher": "ChaosForge",
+            "type": "official_site",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官网True Roguelike段中的格子回合、程序环境与永久死亡说明。"
+          },
+          {
+            "url": "https://jupiterhell.com/faq",
+            "title": "FAQ - Jupiter Hell",
+            "publisher": "ChaosForge",
+            "type": "developer",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取不采用斜向移动、朝向不影响规则及武器弹药交互的设计解释。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/811320/?l=english",
+            "title": "Jupiter Hell on Steam",
+            "publisher": "Steam",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取页面的Early Access Release Date字段，核对最早抢先体验年份；当前机制以本例scopeLabel版本为准。"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Jupiter_Hell",
+            "title": "Jupiter Hell",
+            "publisher": "Wikipedia contributors",
+            "type": "community",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取发行资料和开发段，核对原作／抢先体验年份及后续平台版本；不把旧版技术状态当现行玩法。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "sequential-turns",
+            "note": "玩家行动时敌人随之行动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "permadeath",
+            "note": "死亡后本次角色结束",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "melee-attack",
+            "note": "可以用链锯对抗近处敌人",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "damage-health",
+            "note": "恶魔和玩家的交战决定生死",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "基地关卡按程序生成",
+            "source": 1,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "direct-movement",
+            "note": "以四个正交方向在格子地图上移动",
+            "source": 2,
+            "evidenceKind": "developer_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/811320/header.jpg?t=1783611381",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=811320&l=english&cc=us"
+        },
+        "aliases": [
+          "木星地狱"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "golden-krone-hotel",
+        "name": "金色皇冠旅馆 / Golden Krone Hotel",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播记录；现有 Steam 推荐数不能证明受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=497800&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 318,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "golden-krone-hotel",
+        "name": "金色皇冠旅馆 / Golden Krone Hotel",
+        "studio": "Vulgat",
+        "year": 2017,
+        "platforms": [
+          "pc",
+          "mac",
+          "linux"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike"
+        ],
+        "playStyleIds": [
+          "turn-based-combat",
+          "exploration"
+        ],
+        "summary": "在旅馆地牢里交替扮演人类与吸血鬼，利用日光、阴影和药水应对不同敌人。",
+        "analysis": "形态切换让同一光照条件同时成为武器和威胁，简化物品管理后，判断重心转向局面与变身时机。",
+        "loop": [
+          "挑选开局伪装",
+          "探索楼层，利用光照并辨认药水",
+          "以当前形态作战，选择分支继续深入"
+        ],
+        "learning": [
+          "形态差异可以把一处环境同时变成武器和危险。"
+        ],
+        "caveats": [
+          "无传统背包管理，物品会自动拾取和装备；无尽冥界为可选分支。"
+        ],
+        "resources": [
+          "药水与法术提供不同战术",
+          "人类与吸血鬼拥有不同强弱项"
+        ],
+        "progression": [
+          "永久死亡要求重新开始",
+          "可选分支扩大单次探索范围"
+        ],
+        "scopeLabel": "普通地牢流程",
+        "scopeNotes": "无传统背包管理，物品会自动拾取和装备；无尽冥界为可选分支。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=497800&l=english&cc=us",
+            "title": "Golden Krone Hotel",
+            "publisher": "Steam / Vulgat",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "sequential-turns",
+            "note": "战斗按回合进行",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "permadeath",
+            "note": "死亡结束本次地牢冒险",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "从多种伪装中选择开局配置",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "mutable-environment",
+            "note": "可熄灭火把改变可见与藏身条件",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "stealth-detection",
+            "note": "变成吸血鬼后可借阴影潜行",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "主楼层连接多条可选择的分支",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "rule-modifier",
+            "note": "人类与吸血鬼形态改变战斗能力和对光照的应对",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/497800/header.jpg?t=1673709340",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=497800&l=english&cc=us"
+        },
+        "aliases": [
+          "金色皇冠旅馆"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "rift-wizard",
+        "name": "裂隙巫师 / Rift Wizard",
+        "decision": "hold",
+        "reason": "尚未找到可独立核验的销量、商业榜或持续直播成绩；不将按评价推算的销量当作实际销量。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1271280&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1011,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "rift-wizard",
+        "name": "裂隙巫师 / Rift Wizard",
+        "studio": "Dylan White",
+        "year": 2020,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "turn-based-combat"
+        ],
+        "summary": "在25个随机战场中规划法术与被动能力，用有限资源建立能处理不同怪物的法术书。",
+        "analysis": "构筑成长必须为当前战场服务；过早集中于一种组合，可能在核心协同成形前就失去过关手段。",
+        "loop": [
+          "查看本层敌人与地形",
+          "选择法术、被动与施法顺序",
+          "清场后构建下一阶段的法术方案"
+        ],
+        "learning": [
+          "构筑的中途战力和最终协同一样值得设计。"
+        ],
+        "caveats": [
+          "本例不引用续作的装备系统；作品重点是战斗构筑，非大量剧情探索。"
+        ],
+        "resources": [
+          "有限施法与成长资源约束方案",
+          "法术库和被动能力构成组合空间"
+        ],
+        "progression": [
+          "法术书在本次旅程中成长",
+          "永久死亡重置本次构筑"
+        ],
+        "scopeLabel": "初代标准25层流程",
+        "scopeNotes": "本例不引用续作的装备系统；作品重点是战斗构筑，非大量剧情探索。 年份记最早公开抢先体验；玩法按当前所列范围分析。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1271280&l=english&cc=us",
+            "title": "Rift Wizard",
+            "publisher": "Steam / Dylan White",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/1271280/?l=english",
+            "title": "Rift Wizard on Steam",
+            "publisher": "Steam",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取页面的Early Access Release Date字段，核对最早抢先体验年份；当前机制以本例scopeLabel版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "generated-layout",
+            "note": "25层各自生成不同战场",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "randomized-encounters",
+            "note": "程序挑战改变面对的怪物组合",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "从大型法术与被动技能库组织法术书",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "stacking-effects",
+            "note": "法术与被动之间可形成叠加和协同",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "resource-scarcity",
+            "note": "有限资源限制施法与成长规划",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "permadeath",
+            "note": "失败结束当前巫师挑战",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1271280/header.jpg?t=1729056034",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1271280&l=english&cc=us"
+        },
+        "aliases": [
+          "裂隙巫师"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "rift-wizard-2",
+        "name": "裂隙巫师2 / Rift Wizard 2",
+        "decision": "hold",
+        "reason": "尚未找到可独立核验的销量、商业榜或持续直播成绩；商店动态列表和按评价推算的销量不足以作为依据。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=2058570&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 748,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "rift-wizard-2",
+        "name": "裂隙巫师2 / Rift Wizard 2",
+        "studio": "Dylan White",
+        "year": 2024,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "turn-based-combat"
+        ],
+        "summary": "选择传送目的地、落点与法术成长，利用随机装备改变伤害转换和法术之间的协同。",
+        "analysis": "随机装备改变的不只是强度，还会打开原本无意义的法术组合；路线选择给玩家机会回避构筑暂时无法处理的威胁。",
+        "loop": [
+          "查看传送目标和敌人",
+          "选择落点与法术应对，清空本层",
+          "用技能点及装备调整法术书，进入下一层"
+        ],
+        "learning": [
+          "随机装备可以开放新组合，不必只提高既有数值。"
+        ],
+        "caveats": [
+          "不套用初代的恢复规则；每个法术只选一项升级的限制以续作正文为准。"
+        ],
+        "resources": [
+          "技能点决定法术和升级取舍",
+          "生命与法术次数在过层后恢复",
+          "稀少药水提供紧急补救"
+        ],
+        "progression": [
+          "法术、被动和装备在本轮累积",
+          "死亡后重新生成一轮挑战"
+        ],
+        "scopeLabel": "续作标准挑战",
+        "scopeNotes": "不套用初代的恢复规则；每个法术只选一项升级的限制以续作正文为准。 年份记最早公开抢先体验；玩法按当前所列范围分析。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=2058570&l=english&cc=us",
+            "title": "Rift Wizard 2",
+            "publisher": "Steam / Dylan White",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/2058570/?l=english",
+            "title": "Rift Wizard 2 on Steam",
+            "publisher": "Steam",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取页面的Early Access Release Date字段，核对最早抢先体验年份；当前机制以本例scopeLabel版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "generated-layout",
+            "note": "关卡按程序生成",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "选择进入哪个关卡以及起始位置",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "组合不同法术、被动技能和装备",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "rule-modifier",
+            "note": "装备可将冰伤转为毒伤或将火伤转为免费施法",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "resource-scarcity",
+            "note": "早期技能点和药水较少，需要分配",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "randomized-encounters",
+            "note": "程序生成变体怪物改变挑战",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058570/header.jpg?t=1738380236",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2058570&l=english&cc=us"
+        },
+        "aliases": [
+          "裂隙巫师2"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "approaching-infinity",
+        "name": "逼近无穷 / Approaching Infinity",
+        "decision": "hold",
+        "reason": "本轮未找到可核验的单作销量、商业榜或持续直播记录；Steam 推荐数不能证明实际受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=551620&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 734,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "approaching-infinity",
+        "name": "逼近无穷 / Approaching Infinity",
+        "studio": "IBOL",
+        "year": 2015,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike",
+          "rpg"
+        ],
+        "playStyleIds": [
+          "exploration",
+          "turn-based-combat",
+          "buildcrafting"
+        ],
+        "summary": "驾驶飞船探索程序宇宙，带队登陆星球与残骸，通过贸易、任务或战斗选择自己的星际生涯。",
+        "analysis": "太空与地表共用回合结构，职业自由又受飞船、军官和派系关系约束，使探索路线能从贸易转向战争或考古。",
+        "loop": [
+          "调查星区和登陆地点",
+          "探索、战斗、交易或完成派系任务",
+          "升级飞船与军官，再选择新星区"
+        ],
+        "learning": [
+          "跨尺度探索可以共用回合操作，同时保留各处不同风险。"
+        ],
+        "caveats": [
+          "官方正文说明2015年已有商业发行；2025年是Steam正式版日期，冒险模式与永久死亡范围分开。"
+        ],
+        "resources": [
+          "商品与战利品用于交易和换装",
+          "船只、军官与装备决定远征能力"
+        ],
+        "progression": [
+          "升级船只和军官，可追求不同派系胜利",
+          "冒险模式减轻死亡惩罚，不能与标准模式混写"
+        ],
+        "scopeLabel": "当前2.x星际探索",
+        "scopeNotes": "官方正文说明2015年已有商业发行；2025年是Steam正式版日期，冒险模式与永久死亡范围分开。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=551620&l=english&cc=us",
+            "title": "Approaching Infinity",
+            "publisher": "Steam / IBOL",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "sequential-turns",
+            "note": "太空与地表移动都以回合计时",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "星区、行星、洞穴与物品广泛使用程序生成",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "unit-drafting",
+            "note": "可招募不同专业军官补足队伍",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "team-composition",
+            "note": "船员职业组合改变远征能力",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "多个外星派系提供独立任务链与胜利方向",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "barter-trade",
+            "note": "买卖商品、处理战利品并可从事走私",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "world-simulation",
+            "note": "火势受大气影响，破坏加压残骸墙壁会引发空气流失",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/551620/header.jpg?t=1792249353",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=551620&l=english&cc=us"
+        },
+        "aliases": [
+          "逼近无穷"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "rogue-empire",
+        "name": "游侠帝国 / Rogue Empire: Dungeon Crawler RPG",
+        "decision": "hold",
+        "reason": "现有资料尚未提供可核验的单作商业销量或持续直播成绩；开发者页面提到的 IndieDB 2018 榜单不是销量榜。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=650940&l=english&cc=us",
+          "https://www.roguempire.com/"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 357,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "rogue-empire",
+        "name": "游侠帝国 / Rogue Empire: Dungeon Crawler RPG",
+        "studio": "Portal Entertainment",
+        "year": 2017,
+        "platforms": [
+          "pc",
+          "mac",
+          "linux"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "traditional-roguelike",
+          "rpg"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "turn-based-combat",
+          "exploration"
+        ],
+        "summary": "以种族和职业建立角色，在格子回合战斗中组合天赋、法术、战利品与位置优势。",
+        "analysis": "开局身份给出方向，后续天赋候选和稀有装备再改变路线；固定职业与临场转型并行。",
+        "loop": [
+          "选择种族、职业和难度",
+          "探索地牢与世界地图并处理回合战斗",
+          "取得天赋与装备，推进任务或更深挑战"
+        ],
+        "learning": [
+          "固定职业与变化的成长候选可以共同支撑角色差异。"
+        ],
+        "caveats": [
+          "特殊深层模式另有风险，不能把它们全部当作战役必要流程。"
+        ],
+        "resources": [
+          "装备、法术和陷阱提供应敌手段",
+          "有限资源制约每次战斗的消耗"
+        ],
+        "progression": [
+          "角色在本次探索中成长",
+          "死亡后仍可解锁新的跨局福利与故事路径"
+        ],
+        "scopeLabel": "基础战役与角色成长",
+        "scopeNotes": "特殊深层模式另有风险，不能把它们全部当作战役必要流程。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=650940&l=english&cc=us",
+            "title": "Rogue Empire: Dungeon Crawler RPG",
+            "publisher": "Steam / Portal Entertainment",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://itch.io/t/148268/rogue-empire-early-access-a-roguelike-tactical-rpg",
+            "title": "Rogue Empire Early Access: a RogueLike / Tactical RPG",
+            "publisher": "Portal Entertainment / itch.io",
+            "type": "developer",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取开发者2017-10-02发帖，明确宣布完整作品的抢先体验已发行；Steam正式版是2019年。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "sequential-turns",
+            "note": "使用格子回合战斗安排位置与行动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "程序生成地牢带来不同探索内容",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "种族、职业与难度共同设定开局",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "random-upgrade-offer",
+            "note": "成长包含变化的天赋候选",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loot-drop",
+            "note": "取得传奇物品并凑出装备套装",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "战役、支线和世界兴趣点推进不同任务",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "persistent-unlock",
+            "note": "失败后仍可开启新的福利和故事路线",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650940/d22876fc2f6a3623ee8e7c246cb61caa1f301284/header.jpg?t=1792600204",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=650940&l=english&cc=us"
+        },
+        "aliases": [
+          "游侠帝国"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "army-of-ruin",
+        "name": "毁灭之军 / Army of Ruin",
+        "decision": "hold",
+        "reason": "本轮未找到可独立核验的销量、商业榜或持续直播成绩；不把由评论推算的第三方数字当作实际销量。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1918040&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 2444,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "army-of-ruin",
+        "name": "毁灭之军 / Army of Ruin",
+        "studio": "Milkstone Studios",
+        "year": 2022,
+        "platforms": [
+          "pc",
+          "mac"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "survivor-like",
+          "roguelite"
+        ],
+        "playStyleIds": [
+          "platforming",
+          "buildcrafting"
+        ],
+        "summary": "带领英雄自动射击敌潮，组合饰品和武器的进化条件，任务间再强化能力和扩充装备。",
+        "analysis": "武器成长不仅依靠单件数值，还要求饰品与装备的组合；任务奖励把尝试新的搭配变成持续目标。",
+        "loop": [
+          "选择英雄和装备方向",
+          "自动射击中应对敌潮并组合强化",
+          "击败将军或完成挑战，投资后续能力"
+        ],
+        "learning": [
+          "进化配方应让玩家知道自己为什么保留某件饰品。"
+        ],
+        "caveats": [
+          "角色技能需要玩家使用，但自动射击不等于所有战斗决策都自动完成。"
+        ],
+        "resources": [
+          "武器与饰品组成进化方案",
+          "任务奖励支持局外强化"
+        ],
+        "progression": [
+          "任务间技能可升级",
+          "新装备逐步解锁"
+        ],
+        "scopeLabel": "标准任务与装备进化",
+        "scopeNotes": "角色技能需要玩家使用，但自动射击不等于所有战斗决策都自动完成。 年份记最早公开抢先体验；玩法按当前所列范围分析。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1918040&l=english&cc=us",
+            "title": "Army of Ruin",
+            "publisher": "Steam / Milkstone Studios",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/1918040/?l=english",
+            "title": "Army of Ruin on Steam",
+            "publisher": "Steam",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取页面的Early Access Release Date字段，核对最早抢先体验年份；当前机制以本例scopeLabel版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "loadout-selection",
+            "note": "不同英雄和装备提供不同起点",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "stacking-effects",
+            "note": "饰品与装备组合产生更强协同",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "equipment-upgrade",
+            "note": "组合强化可使武器进化",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "persistent-stat-upgrade",
+            "note": "任务之间升级技能改善后续实力",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "persistent-unlock",
+            "note": "通过奖励解锁新装备",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "完成持续增加难度的挑战与任务",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1918040/f73bb29305c5928bf94029b4e2e1feacdd5c3c44/header.jpg?t=1791990944",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1918040&l=english&cc=us"
+        },
+        "aliases": [
+          "毁灭之军"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "wylde-flowers",
+        "name": "怀尔德之花 / Wylde Flowers",
+        "decision": "hold",
+        "reason": "Apple 授予 2022 年 Apple Arcade 年度游戏，说明有平台级认可；该奖项不包含玩家或销量规模，暂未找到满足本轮商业/传播要求的数据。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1896700&l=english&cc=us",
+          "https://www.apple.com/cf/newsroom/2022/11/app-store-awards-celebrate-the-best-apps-and-games-of-2022/"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 2350,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "wylde-flowers",
+        "name": "怀尔德之花 / Wylde Flowers",
+        "studio": "Studio Drydock Pty Ltd",
+        "year": 2022,
+        "platforms": [
+          "pc",
+          "ios"
+        ],
+        "mobileOrigin": true,
+        "genreIds": [
+          "farming-life-sim"
+        ],
+        "playStyleIds": [
+          "life-simulation",
+          "management-production",
+          "exploration"
+        ],
+        "summary": "白天帮助祖母经营农场，夜间学习巫术，以种植、制作和魔法逐步融入岛上社区。",
+        "analysis": "季节与天气不只是背景，还能成为巫术可改变的条件；固定主角使成长更集中于她与社区的关系。",
+        "loop": [
+          "安排白日农务与拜访",
+          "制作食物、药水并学习巫术",
+          "利用魔法与关系推进故事和新日程"
+        ],
+        "learning": [
+          "让季节成为可干预条件时，要说明变化带来的生活影响。"
+        ],
+        "caveats": [
+          "本作最早发布在Apple Arcade，本文机制读取PC商店说明；不把可改变季节理解为自然季节随现实日历同步。"
+        ],
+        "resources": [
+          "作物、动物产物和捕鱼所得用于生活与制作",
+          "药水和法术扩展可用行动"
+        ],
+        "progression": [
+          "农业与魔法技艺共同发展",
+          "友谊和恋情随故事持续变化"
+        ],
+        "scopeLabel": "Tara的常规故事与农场生活",
+        "scopeNotes": "本作最早发布在Apple Arcade，本文机制读取PC商店说明；不把可改变季节理解为自然季节随现实日历同步。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1896700&l=english&cc=us",
+            "title": "Wylde Flowers",
+            "publisher": "Steam / Studio Drydock Pty Ltd",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Wylde_Flowers",
+            "title": "Wylde Flowers",
+            "publisher": "Wikipedia contributors",
+            "type": "community",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取发行资料和开发段，核对原作／抢先体验年份及后续平台版本；不把旧版技术状态当现行玩法。"
+          },
+          {
+            "url": "https://wyldeflowersgame.com/help.html",
+            "title": "Help — Wylde Flowers",
+            "publisher": "Studio Drydock",
+            "type": "official_site",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官网Where to play列出的Apple Arcade设备，明确含iPhone和iPad；本条用于正式iOS平台核验。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "agriculture-husbandry",
+            "note": "照料作物与农场动物",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "resource-gathering",
+            "note": "捕鱼和取得生活材料",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "recipe-crafting",
+            "note": "烹饪并调制巫术药水",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "relationship-progression",
+            "note": "结识居民并与可恋爱角色发展关系",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "season-weather",
+            "note": "使用巫术控制天气与季节",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "persistent-unlock",
+            "note": "学习骑扫帚与变猫等新魔法行动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1896700/241af42c2fcaaa5f08327acd1cd079aee359f5ca/header.jpg?t=1765310909",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1896700&l=english&cc=us"
+        },
+        "aliases": [
+          "怀尔德之花"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "ooblets",
+        "name": "欧布精灵 / Ooblets",
+        "decision": "hold",
+        "reason": "Steam 数据不覆盖作品的全部发行平台；本轮仍未找到可复核的单作销量、商业榜或持续直播成绩。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=593150&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1394,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "ooblets",
+        "name": "欧布精灵 / Ooblets",
+        "studio": "Glumberland",
+        "year": 2020,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "farming-life-sim"
+        ],
+        "playStyleIds": [
+          "life-simulation",
+          "management-production",
+          "collection-training",
+          "card-play"
+        ],
+        "summary": "种植作物和欧布种子，组织欧布参加舞蹈对战，再用收获、任务和商店经营改善小镇生活。",
+        "analysis": "伙伴既参与舞蹈对抗，也能回农场工作，收集和生产因而不必成为两套互不相干的奖励。",
+        "loop": [
+          "经营农场并结识居民",
+          "组织欧布队伍完成舞蹈挑战",
+          "获得种子、配方与地区进展，回农场培育"
+        ],
+        "learning": [
+          "伙伴在对抗和生产中都能发挥作用，收集价值才更连续。"
+        ],
+        "caveats": [
+          "舞蹈按指令与队伍能力解决挑战，不能因题材是跳舞就标成节奏输入。"
+        ],
+        "resources": [
+          "欧布种子用于培育新伙伴",
+          "农产可加工、烹饪或出售",
+          "伙伴可协助农务"
+        ],
+        "progression": [
+          "伙伴舞步和农场设施逐步扩充",
+          "地区任务推动主线，故事结束后仍可生活"
+        ],
+        "scopeLabel": "农场与舞蹈主线",
+        "scopeNotes": "舞蹈按指令与队伍能力解决挑战，不能因题材是跳舞就标成节奏输入。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=593150&l=english&cc=us",
+            "title": "Ooblets",
+            "publisher": "Steam / Glumberland",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ooblets",
+            "title": "Ooblets",
+            "publisher": "Wikipedia contributors",
+            "type": "community",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取发行资料和开发段，核对原作／抢先体验年份及后续平台版本；不把旧版技术状态当现行玩法。"
+          },
+          {
+            "url": "https://ooblets.fandom.com/wiki/Dance_Battle",
+            "title": "Dance Battle — Cards, Beats, & Points",
+            "publisher": "Ooblets Wiki contributors",
+            "type": "community",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取搜索服务返回的规则正文：每回合抽舞步卡、消耗beats并竞争目标分数；直接页面访问受限，不声称本机试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "agriculture-husbandry",
+            "note": "种植农产并以种子培育欧布",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "team-composition",
+            "note": "根据不同欧布的舞步组织对战队伍",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "persistent-unlock",
+            "note": "每只欧布可以解锁自身舞步",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "workforce-assignment",
+            "note": "欧布可在升级后的农舍设施中协助农务",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "relationship-progression",
+            "note": "对话、礼物与请求发展居民友谊",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "barter-trade",
+            "note": "经营玩家商店销售种植与制造的产物",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/593150/header.jpg?t=1696517972",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=593150&l=english&cc=us"
+        },
+        "aliases": [
+          "欧布精灵"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "ctrl-alt-ego",
+        "name": "Ctrl Alt Ego / Ctrl Alt Ego",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数只是辅助线索，不能证明受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1571940&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 747,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "ctrl-alt-ego",
+        "name": "Ctrl Alt Ego / Ctrl Alt Ego",
+        "studio": "MindThunk",
+        "year": 2022,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "immersive-sim",
+          "puzzle"
+        ],
+        "playStyleIds": [
+          "exploration",
+          "puzzle-solving",
+          "aiming-shooting"
+        ],
+        "summary": "以无形意识在机器人与设备间转移，利用不同机器的能力解决开放问题，并把已控制机器人留下继续使用。",
+        "analysis": "身体成为可替换工具，失败首先意味着失去一个宿主；环境中的机器人既是路线节点，也是可持续配置的行动资产。",
+        "loop": [
+          "观察设备和机器人连接",
+          "转移意识，操纵宿主探索或解决问题",
+          "保留可用机器人，重组队伍继续前进"
+        ],
+        "learning": [
+          "可替换身体能重新定义失败成本和工具配置。"
+        ],
+        "caveats": [
+          "本作没有常规物品背包，也没有传统玩家死亡；不能因此套入携带容量或永久死亡。"
+        ],
+        "resources": [
+          "环境对象充当随处可用的工具",
+          "已控制机器人可以持续利用"
+        ],
+        "progression": [
+          "已控制机器人归玩家保留",
+          "宿主毁坏不会杀死无形意识"
+        ],
+        "scopeLabel": "完整主线意识转移",
+        "scopeNotes": "本作没有常规物品背包，也没有传统玩家死亡；不能因此套入携带容量或永久死亡。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1571940&l=english&cc=us",
+            "title": "Ctrl Alt Ego",
+            "publisher": "Steam / MindThunk",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "direct-movement",
+            "note": "可直接操纵机器人在区域中移动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "互联非线性空间允许不同解决路线",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "stealth-detection",
+            "note": "可以潜行解决问题而不直接交火",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "aimed-launch",
+            "note": "可选择借机器人射击对抗敌方",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "team-composition",
+            "note": "保留多台已控制机器人并带着它们前进",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "damage-health",
+            "note": "当前宿主可被毁坏，意识可转往另一宿主",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1571940/header.jpg?t=1755533047",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1571940&l=english&cc=us"
+        },
+        "aliases": [
+          "Ctrl Alt Ego"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "throne-of-lies",
+        "name": "谎言王座 / Throne of Lies®: Medieval Politics",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数只是辅助线索，不能证明受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=595280&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1922,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "throne-of-lies",
+        "name": "谎言王座 / Throne of Lies®: Medieval Politics",
+        "studio": "PT.farm Inc.、Imperium42®, LLC",
+        "year": 2017,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "social-deduction"
+        ],
+        "playStyleIds": [
+          "social-negotiation",
+          "investigation-deduction"
+        ],
+        "summary": "在宫廷中秘密执行职责，白天讨论和审判，夜晚调查、杀人或转化他人，并留下可能作假的日志。",
+        "analysis": "阵营能够改变，过去可信的证人未必一直可靠；死后公开日志使记录既能留下线索，也能成为误导工具。",
+        "loop": [
+          "获得角色与阵营",
+          "夜间调查、杀人或转化，白天交换情报",
+          "提名审判并投处决或赦免，继续判断阵营"
+        ],
+        "learning": [
+          "可变阵营需要让过去证词仍有用途，却不永远可靠。"
+        ],
+        "caveats": [
+          "六人快速模式没有转化，本例转化机制只适用于经典范围。"
+        ],
+        "resources": [
+          "角色技能决定可获取的信息",
+          "日志和私聊承载真假证词"
+        ],
+        "progression": [
+          "角色在局中可转化阵营",
+          "每场重新随机分配身份"
+        ],
+        "scopeLabel": "经典8至16人模式",
+        "scopeNotes": "六人快速模式没有转化，本例转化机制只适用于经典范围。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=595280&l=english&cc=us",
+            "title": "Throne of Lies®: Medieval Politics",
+            "publisher": "Steam / PT.farm Inc.、Imperium42®, LLC",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "hidden-role",
+            "note": "角色阵营对其他参与者保密",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "role-asymmetry",
+            "note": "不同职责在夜间拥有不同能力",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "random-draw",
+            "note": "开局随机分配角色",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "round-phases",
+            "note": "白天、审判和夜晚分阶段进行",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "identity-voting",
+            "note": "第二日起可提名并投票处决或赦免",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "clue-journal",
+            "note": "日志记载调查结果，死亡后会向全场公开",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "rule-modifier",
+            "note": "转化可使原本善方角色加入敌对阵营",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/595280/header.jpg?t=1730186391",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=595280&l=english&cc=us"
+        },
+        "aliases": [
+          "谎言王座"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "distant-worlds-2",
+        "name": "遥远的世界2 / Distant Worlds 2",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；同时在线峰值不能代替累计玩家数。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1531540&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 2675,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "distant-worlds-2",
+        "name": "遥远的世界2 / Distant Worlds 2",
+        "studio": "CodeForce",
+        "year": 2022,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "four-x",
+          "strategy"
+        ],
+        "playStyleIds": [
+          "tactical-command",
+          "management-production",
+          "exploration"
+        ],
+        "summary": "在可暂停的实时银河中探索、采矿与扩张，自行决定管理一艘船、某个系统还是整个帝国。",
+        "analysis": "自动化权限让玩家把注意力投入自己关心的尺度，帝国复杂度因此不必对应同等数量的手动指令。",
+        "loop": [
+          "设定文明与管理权限",
+          "派船探索、采矿并与他国交往",
+          "暂停调整战略，再让帝国实时运行"
+        ],
+        "learning": [
+          "自动化权限应按玩家想管理的尺度分别开放。"
+        ],
+        "caveats": [
+          "这不是MMO；商店的大规模类比不表示有同规模真人在线。"
+        ],
+        "resources": [
+          "矿产支持帝国发展",
+          "舰船和顾问承担不同管理工作"
+        ],
+        "progression": [
+          "同一银河中的帝国持续扩张",
+          "新局按设定重生星系和活动主体"
+        ],
+        "scopeLabel": "基础七派系银河流程",
+        "scopeNotes": "这不是MMO；商店的大规模类比不表示有同规模真人在线。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1531540&l=english&cc=us",
+            "title": "Distant Worlds 2",
+            "publisher": "Steam / CodeForce",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "real-time-update",
+            "note": "银河在实时中运行",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "pause-planning",
+            "note": "可暂停处理复杂战略决定",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "程序生成星系与宇宙分布",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "resource-gathering",
+            "note": "可开采银河中的资源",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "social-diplomacy",
+            "note": "通过外交与其他帝国及独立殖民地交往",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "可沿派系故事和银河遗迹线索推进",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "开局选择不同基础派系与银河条件",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1531540/header.jpg?t=1791550575",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1531540&l=english&cc=us"
+        },
+        "aliases": [
+          "遥远的世界2"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "heavens-vault",
+        "name": "天堂之穹 / Heaven's Vault",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；单一平台的推荐数不能代表跨平台受众。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=774201&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1975,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "heavens-vault",
+        "name": "天堂之穹 / Heaven's Vault",
+        "studio": "inkle Ltd",
+        "year": 2019,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "language-puzzle",
+          "investigation-adventure"
+        ],
+        "playStyleIds": [
+          "investigation-deduction",
+          "exploration",
+          "dialogue-choice",
+          "puzzle-solving"
+        ],
+        "summary": "沿星河追查失踪者，在遗迹和文物中推测古代文字，让翻译、对话和考古发现共同改变故事。",
+        "analysis": "错误翻译会成为角色理解世界的依据，而非立刻弹出失败；语言推理因此与叙事选择共用后果。",
+        "loop": [
+          "发现遗迹和文物铭文",
+          "结合上下文提出翻译并与人物交流",
+          "依据新理解选择探索地点，修正对历史的判断"
+        ],
+        "learning": [
+          "错误解释若能推动故事，也应留有重新理解的线索。"
+        ],
+        "caveats": [
+          "不是每次错误翻译都会立即阻止推进；剧情可沿不同顺序适应玩家行为。"
+        ],
+        "resources": [
+          "文物和铭文提供语言样本",
+          "角色记住的言行影响后续交往"
+        ],
+        "progression": [
+          "词汇理解和考古发现持续累积",
+          "故事记住路线、发现与对话选择"
+        ],
+        "scopeLabel": "完整考古调查",
+        "scopeNotes": "不是每次错误翻译都会立即阻止推进；剧情可沿不同顺序适应玩家行为。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=774201&l=english&cc=us",
+            "title": "Heaven's Vault",
+            "publisher": "Steam / inkle Ltd",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "language-decoding",
+            "note": "逐步解读完整的古代象形文字语言",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "environmental-clues",
+            "note": "从遗迹和文物铭文获取历史线索",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "玩家可选择不同探索顺序，故事会相应调整",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "relationship-progression",
+            "note": "角色记住所说所做，并改变对主角的态度",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "dialogue-choice",
+            "note": "选择如何回应角色，影响后续对话与信任",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "以寻找失踪机械学者为起点推进考古发现",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774201/header.jpg?t=1736524066",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=774201&l=english&cc=us"
+        },
+        "aliases": [
+          "天堂之穹"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern.json",
+      "review": {
+        "id": "grapple-dog",
+        "name": "抓钩狗 / Grapple Dog",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；单一平台的推荐数不能代表跨平台受众。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1345860&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 719,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern.json"
+      },
+      "case": {
+        "id": "grapple-dog",
+        "name": "抓钩狗 / Grapple Dog",
+        "studio": "Medallion Games",
+        "year": 2022,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "precision-platformer",
+          "platformer"
+        ],
+        "playStyleIds": [
+          "platforming",
+          "exploration"
+        ],
+        "summary": "操控Pablo用抓钩摆荡穿过关卡，寻找宝石与秘密，再回关卡挑战更顺畅的计时路线。",
+        "analysis": "摆荡的起点和松钩时机决定能保留多少速度；初次探索和计时重跑因此对同一空间提出不同要求。",
+        "loop": [
+          "跳跃并抓住锚点摆荡",
+          "搜寻宝石、隐藏区与奖励关",
+          "击败首领进入新世界，或回关卡计时重试"
+        ],
+        "learning": [
+          "计时重跑与初次探索需要各自清楚的目标与反馈。"
+        ],
+        "caveats": [
+          "辅助选项可以放宽动作限制；驾驶地图小船不另计为主要驾驶玩法。"
+        ],
+        "resources": [
+          "宝石与隐藏收集物提供探索目标",
+          "抓钩锚点决定可利用的空间连接"
+        ],
+        "progression": [
+          "已完成关卡可重访",
+          "收集与计时成绩分别推动完成度"
+        ],
+        "scopeLabel": "基础六世界主线与可选计时",
+        "scopeNotes": "辅助选项可以放宽动作限制；驾驶地图小船不另计为主要驾驶玩法。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1345860&l=english&cc=us",
+            "title": "Grapple Dog",
+            "publisher": "Steam / Medallion Games",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://www.gamesradar.com/have-you-tried-having-a-swinging-riotous-platforming-good-time-with-grapple-dog/",
+            "title": "Have you tried… having a swinging, riotous platforming good time with Grapple Dog?",
+            "publisher": "GamesRadar+",
+            "type": "editorial",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取弹跳设施、可击碎方块、隐藏紫宝石和计时重试说明；未将媒体试玩归为本站结果。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "direct-movement",
+            "note": "操控Pablo在关卡内移动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "jump",
+            "note": "通过跳跃连接平台与摆荡起点",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "grappling",
+            "note": "以抓钩连接锚点并摆荡",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "collectible-catalog",
+            "note": "关卡记录可寻找的隐藏宝石等收集物",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "秘密区域和奖励关提供主路之外的探索",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "destructible-terrain",
+            "note": "关卡含可击碎方块，需要配合移动穿越",
+            "source": 1,
+            "evidenceKind": "editorial_analysis",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1345860/header.jpg?t=1785153186",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1345860&l=english&cc=us"
+        },
+        "aliases": [
+          "抓钩狗"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "review": {
+        "id": "despots-game",
+        "name": "暴君的游戏 / Despot’s Game",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1227280&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 2890,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/other-gaps.json"
+      },
+      "case": {
+        "id": "despots-game",
+        "name": "暴君的游戏 / Despot’s Game",
+        "studio": "Konfa Games",
+        "year": 2021,
+        "platforms": [
+          "pc",
+          "mac",
+          "linux"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "auto-battler",
+          "roguelite",
+          "strategy"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "tactical-command",
+          "exploration"
+        ],
+        "summary": "为一群人类选择装备和职业，在随机迷宫中组织自动战斗。",
+        "analysis": "装备决定队员的战斗角色，迷宫内的损失和阵容构筑共同影响能否走到最后。",
+        "loop": [
+          "选择战利品并改造队员",
+          "探索生成的迷宫并应对遭遇",
+          "让队伍自动交战，继续调整阵容"
+        ],
+        "learning": [
+          "让同一个装备选择同时改变单位职责与队伍协同。"
+        ],
+        "caveats": [
+          "后期玩家阵容对抗属于通关后的模式；2021 年首次抢先体验。"
+        ],
+        "resources": [
+          "装备：赋予人类不同职业和能力",
+          "队员：战斗中可能失去"
+        ],
+        "progression": [
+          "迷宫及当前队伍随新一局重新生成"
+        ],
+        "scopeLabel": "单人迷宫与通关后对抗",
+        "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/app/1227280/",
+            "title": "Despot's Game: Dystopian Battle Simulator on Steam",
+            "publisher": "tinyBuild",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+          },
+          {
+            "url": "https://www.ps4blog.net/2023/06/nintendo-switch-despots-game-review/",
+            "title": "Despot’s Game Review",
+            "publisher": "PS4Blog",
+            "type": "editorial",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "generated-layout",
+            "note": "每次尝试重新生成迷宫布局。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "team-composition",
+            "note": "组合巫师、忍者等不同职责的队员。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "为人类选择装备，使其转变为不同职业。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "automatic-resolution",
+            "note": "布置好队员后由他们自动战斗。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "upkeep-needs",
+            "note": "队员需要食物；补给不足会使队伍在迷宫中面临饥饿风险。",
+            "source": 1,
+            "evidenceKind": "editorial_analysis",
+            "status": "present"
+          },
+          {
+            "id": "pvp-opposition",
+            "note": "通过迷宫后可与其他玩家的最终阵容对抗。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "conditional",
+            "condition": "通关后的玩家阵容对抗"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1227280/header.jpg?t=1781522438",
+          "sourceUrl": "https://store.steampowered.com/app/1227280/"
+        },
+        "aliases": []
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "review": {
+        "id": "astronarch",
+        "name": "Astronarch",
+        "decision": "hold",
+        "reason": "开发者 2022 年曾称售出数千份，但该说法没有给出截至 2026 年的累计数；Steam 缓存仅提供评价线索，暂无法确认单作是否达到要求。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1234940&l=english&cc=us",
+          "https://gamemaker.io/en/blog/game-making-on-a-budget-how-i-made-astronarch"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 821,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          },
+          {
+            "name": "开发者当时描述",
+            "value": null,
+            "unit": "数千份（未提供具体数）",
+            "dateOrPeriod": "2022-04-15",
+            "scope": "开发者自述该时点销量，不可推断后续累计销量"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/other-gaps.json"
+      },
+      "case": {
+        "id": "astronarch",
+        "name": "Astronarch",
+        "studio": "Dale Turner",
+        "year": 2020,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "auto-battler",
+          "roguelite",
+          "strategy"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "tactical-command",
+          "exploration"
+        ],
+        "summary": "招募英雄、安排站位与装备，在随机路径中自动战斗。",
+        "analysis": "队伍技能、装备分配和路线风险互相作用，前排保护和输出位置需要结合遭遇判断。",
+        "loop": [
+          "挑选英雄并分配装备",
+          "在不同区域间选择路线",
+          "应对自动战斗并继续收集物品"
+        ],
+        "learning": [
+          "让路线选择和队伍配置共同决定遭遇难度。"
+        ],
+        "caveats": [
+          "腐化等级和外观光环在首次胜利后才出现；2020 年抢先体验。"
+        ],
+        "resources": [
+          "英雄：提供不同技能",
+          "装备：改变队伍属性及能力"
+        ],
+        "progression": [
+          "英雄解锁和通关后的难度选项跨尝试保留"
+        ],
+        "scopeLabel": "单人自动战斗冒险",
+        "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/app/1234940/",
+            "title": "Astronarch on Steam",
+            "publisher": "Dale Turner",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "team-composition",
+            "note": "从不同英雄中选择成员并安排队伍。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "automatic-resolution",
+            "note": "英雄在战斗中自动施展技能并攻击。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "spatial-loadout",
+            "note": "在战斗前安排英雄站位，决定前排与后排配置。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "每个章节可在不同区域之间选择行进路线。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loot-drop",
+            "note": "获得古代与魔法装备，改变英雄属性和能力。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "objective-unlock",
+            "note": "首次胜利后开放额外腐化难度。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1234940/header.jpg?t=1774346350",
+          "sourceUrl": "https://store.steampowered.com/app/1234940/"
+        },
+        "aliases": []
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/other-gaps.json",
+      "review": {
+        "id": "hadean-tactics",
+        "name": "Hadean Tactics",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1260590&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1732,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/other-gaps.json"
+      },
+      "case": {
+        "id": "hadean-tactics",
+        "name": "Hadean Tactics",
+        "studio": "Emberfish Games",
+        "year": 2021,
+        "platforms": [
+          "pc",
+          "mac",
+          "linux"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "auto-battler",
+          "deckbuilder",
+          "roguelite",
+          "strategy"
+        ],
+        "playStyleIds": [
+          "buildcrafting",
+          "card-play",
+          "tactical-command"
+        ],
+        "summary": "招募自动作战的灵魂，使用卡牌影响战局并探索不断变化的地狱。",
+        "analysis": "自动部队和手动卡牌共同参与战斗，卡牌、遗物和单位联盟可以围绕同一策略组合。",
+        "loop": [
+          "招募单位并构建牌组",
+          "沿生成的地图选择路线",
+          "自动战斗中打出卡牌干预"
+        ],
+        "learning": [
+          "让玩家在自动战斗中保留直接干预队伍的手段。"
+        ],
+        "caveats": [
+          "自定义英雄和卡组可选；2021 年首次抢先体验。"
+        ],
+        "resources": [
+          "卡牌：提供战斗中主动效果",
+          "单位与遗物：构成阵容和被动组合"
+        ],
+        "progression": [
+          "每次冒险的卡牌和路线重新生成"
+        ],
+        "scopeLabel": "单人牌组与自动战斗",
+        "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/app/1260590/",
+            "title": "Hadean Tactics on Steam",
+            "publisher": "Emberfish Games",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+          },
+          {
+            "url": "https://www.4gamer.net/games/701/G070190/20240219014/",
+            "title": "Hadean Tactics 自动战斗介绍",
+            "publisher": "4Gamer",
+            "type": "editorial",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "team-composition",
+            "note": "招募不同灵魂并结合其技能与联盟。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "automatic-resolution",
+            "note": "受招募单位会自动为英雄作战。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "in-run-deck-growth",
+            "note": "在冒险过程中获得卡牌，用来影响战斗。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "generated-layout",
+            "note": "每次冒险生成新的地图路径。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "route-branching",
+            "note": "选择前往不同区域、事件和首领的路线。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "开始前可选择自定义英雄与起始牌组。",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "pause-planning",
+            "note": "可暂停自动战斗，在剩余能量允许时出牌或调整攻击目标。",
+            "source": 1,
+            "evidenceKind": "editorial_analysis",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1260590/d4498733d941656ba78d67c82eddd1e62d55840f/header.jpg?t=1793551274",
+          "sourceUrl": "https://store.steampowered.com/app/1260590/"
+        },
+        "aliases": []
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "review": {
+        "id": "lost-rift",
+        "name": "Lost Rift",
+        "decision": "hold",
+        "reason": "官方 FAQ 确认作品已发行抢先体验版本；本轮未找到可复核的单作销量、商业榜或持续直播成绩，暂待补证。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
+          "https://lostrift.com/support/faq/"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1483,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern-gaps.json"
+      },
+      "case": {
+        "id": "lost-rift",
+        "name": "Lost Rift",
+        "studio": "People Can Fly",
+        "year": 2025,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "extraction-shooter",
+          "survival-craft"
+        ],
+        "playStyleIds": [
+          "aiming-shooting",
+          "gathering-survival",
+          "spatial-planning"
+        ],
+        "summary": "在自己的PvE岛屿采集、搭营与制作装备，再前往其他不稳定岛屿执行高风险撤离远征。",
+        "analysis": "建造岛与远征岛承担不同压力，营地提供长期准备，外出搜刮则引入时限和玩家竞争。",
+        "loop": [
+          "采集并扩建个人营地",
+          "接任务、制作装具准备远征",
+          "前往不稳定岛屿搜刮，在时限内带出物资"
+        ],
+        "learning": [
+          "通过相连的安全建设区与危险远征区，可以让营地投入产生清晰的外出用途。"
+        ],
+        "caveats": [
+          "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。"
+        ],
+        "resources": [
+          "木石等材料用于营地设施和装备",
+          "远征高价值物资支持进一步建设"
+        ],
+        "progression": [
+          "营地设施持续保留",
+          "任务和可招募幸存者揭示群岛秘密"
+        ],
+        "scopeLabel": "公开抢先体验的营地与远征",
+        "scopeNotes": "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
+            "title": "Lost Rift",
+            "publisher": "Steam / People Can Fly",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/3494520/?l=english",
+            "title": "Lost Rift on Steam",
+            "publisher": "Steam / People Can Fly",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "resource-gathering",
+            "note": "从个人岛屿环境采集建营和制作所需材料",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "base-construction",
+            "note": "用材料建造工作台、烹饪设施和模块化庇护所",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "recipe-crafting",
+            "note": "在营地制作远征所需装备与生存设施",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "extraction-bank",
+            "note": "去其他不稳定岛屿搜刮，须成功撤离带回高价值资源",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "quest-progression",
+            "note": "完成任务并招募幸存者，逐步揭开登岛原因",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "season-weather",
+            "note": "飓风、火灾、雷击和浓雾威胁岛上行动与营地",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "pvp-opposition",
+            "note": "PvPvE远征允许其他队伍争抢物资并交火",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "conditional",
+            "condition": "选择PvPvE远征模式"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3494520/b67ab35e39bbd079b27215814b729af569993126/header.jpg?t=1774014823",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us"
+        },
+        "aliases": []
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "review": {
+        "id": "desynced",
+        "name": "Desynced",
+        "decision": "hold",
+        "reason": "2024 年分析文章将本作列入模拟游戏销售分析榜，但数字来自分析机构推算，无法确认是否依赖评价量；不把估算转换成官方销量。暂待可核实的销量榜、玩家或传播资料。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
+          "https://wnhub.io/news/stores-and-publishing/item-44009"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1915,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern-gaps.json"
+      },
+      "case": {
+        "id": "desynced",
+        "name": "Desynced",
+        "studio": "Stage Games Inc.",
+        "year": 2023,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "factory-automation"
+        ],
+        "playStyleIds": [
+          "management-production",
+          "spatial-planning",
+          "buildcrafting"
+        ],
+        "summary": "用可改装的无人机承担采矿与运输，建设不依赖传送带的工业网络，再编排其行为以修复受损飞船。",
+        "analysis": "无人机同时是运输工具和可配置作业单元，网络扩张需要考虑设备用途与调度，而不只是铺路。",
+        "loop": [
+          "派无人机建立采矿与设施",
+          "连接物流网络并配置机器行为",
+          "研究技术、扩张工业以支持修复目标"
+        ],
+        "learning": [
+          "用可改装运输单元替代固定运输带，会把物流优化转向能力配置与调度。"
+        ],
+        "caveats": [
+          "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。"
+        ],
+        "resources": [
+          "矿物与加工材料进入生产链",
+          "能源储存和发电维持设施与机器人"
+        ],
+        "progression": [
+          "科技树开放先进无人机和建筑",
+          "组件与脚本可按问题重新安排"
+        ],
+        "scopeLabel": "正式版普通自动化流程",
+        "scopeNotes": "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
+            "title": "Desynced",
+            "publisher": "Steam / Stage Games Inc.",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/1450900/?l=english",
+            "title": "Save 30% on Desynced on Steam",
+            "publisher": "Steam / Stage Games Inc.",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "production-chain",
+            "note": "以矿物和多级加工设施建立工业转换链",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "transport-network",
+            "note": "连接网络的无人机会自动接受并搬运物资订单",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "energy-network",
+            "note": "管理发电与储能，支撑基地工作",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "technology-research",
+            "note": "研究科技树开放高级单位与设施",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "loadout-selection",
+            "note": "为无人机装上适合其工作用途的工具",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "workforce-assignment",
+            "note": "给机器人和设施设置参数或拖放脚本，安排具体行为",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "base-construction",
+            "note": "在行星建设采矿、加工与飞船修复所需设施",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1450900/917f1af87f61fdc2aa66407223bbb802b842fdcc/header.jpg?t=1789395759",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us"
+        },
+        "aliases": []
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/modern-gaps.json",
+      "review": {
+        "id": "noble-fates",
+        "name": "贵族命运 / Noble Fates",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 1416,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/modern-gaps.json"
+      },
+      "case": {
+        "id": "noble-fates",
+        "name": "贵族命运 / Noble Fates",
+        "studio": "Xobermon, LLC",
+        "year": 2021,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "colony-simulation"
+        ],
+        "playStyleIds": [
+          "management-production",
+          "spatial-planning",
+          "social-negotiation"
+        ],
+        "summary": "建设并统治会记住恩怨的幻想王国，分配住房与战利品、处理邻国关系，在继承和战争中维持臣民忠诚。",
+        "analysis": "物资分配不是单纯的效率指令；角色对信仰、待遇和过去行为的记忆，会转成效忠、背叛和外交后果。",
+        "loop": [
+          "建设城堡并组织生产",
+          "照顾臣民、分配财物与处理来客",
+          "应对邻国、袭击与继承，延续王国"
+        ],
+        "learning": [
+          "让角色记住分配与待遇，可以把经营决策转成后续可理解的人际结果。"
+        ],
+        "caveats": [
+          "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。"
+        ],
+        "resources": [
+          "粮食与财富维持臣民和领地",
+          "住房和战利品分配影响效忠"
+        ],
+        "progression": [
+          "臣民保留观念与记忆",
+          "统治者死亡后可由继承者继续王国，关系随新统治者变化"
+        ],
+        "scopeLabel": "普通幻想王国模拟",
+        "scopeNotes": "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us",
+            "title": "Noble Fates",
+            "publisher": "Steam / Xobermon, LLC",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          },
+          {
+            "url": "https://store.steampowered.com/app/1769420/?l=english",
+            "title": "Noble Fates on Steam",
+            "publisher": "Steam / Xobermon, LLC",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "base-construction",
+            "note": "逐砖建城或挖掘山中要塞，并给贵族分配住房",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "workforce-assignment",
+            "note": "命令臣民建设、耕种、狩猎、制作和战斗",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "agriculture-husbandry",
+            "note": "耕地和饲养牲畜维持王国食品供应",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "relationship-progression",
+            "note": "待遇、信仰与记忆累积改变忠诚，可能导致逃离或背叛",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "social-diplomacy",
+            "note": "以信仰、结盟、谈判及过去行为改变邻国关系",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "barter-trade",
+            "note": "与容许来往的王国和访客交易，出售物品或出租房间",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "world-simulation",
+            "note": "人物的记忆、观念和继承关系持续相互影响，产生新的冲突",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1769420/9f8ce562f54c87f169f25d9cf80ebcf0b3bd91c6/header.jpg?t=1792510725",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us"
+        },
+        "aliases": [
+          "贵族命运"
+        ]
+      }
+    },
+    {
+      "sourceBatch": "docs/research/expansion/final-gaps.json",
+      "review": {
+        "id": "eville",
+        "name": "恶灵村 / Eville",
+        "decision": "hold",
+        "reason": "本轮未找到可复核的单作销量、商业榜或持续直播成绩；Steam 推荐数不能证明实际受众低于门槛。",
+        "evidenceType": "review_signal",
+        "urls": [
+          "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
+        ],
+        "metrics": [
+          {
+            "name": "recommendations.total",
+            "value": 432,
+            "unit": "Steam API 字段",
+            "dateOrPeriod": "2026-11-02 缓存",
+            "scope": "购买来源和筛选口径未确认；不是销量、玩家总数或全平台评价"
+          }
+        ],
+        "sourceBatch": "docs/research/expansion/final-gaps.json"
+      },
+      "case": {
+        "id": "eville",
+        "name": "恶灵村 / Eville",
+        "studio": "VestGames",
+        "year": 2022,
+        "platforms": [
+          "pc"
+        ],
+        "mobileOrigin": false,
+        "genreIds": [
+          "social-deduction"
+        ],
+        "playStyleIds": [
+          "social-negotiation",
+          "investigation-deduction"
+        ],
+        "summary": "在村落昼夜里以随机职责调查或制造谋杀，用角色技能、物品和证词判断同伴，再通过投票处置嫌疑人。",
+        "analysis": "调查手段能留下具体可争辩的信息，凶手又能夜间移动、偷窃和诅咒，使交流围绕实际行动的后果展开。",
+        "loop": [
+          "获得秘密职责与阵营",
+          "白天调查、交易和讨论，夜间使用角色能力行动",
+          "投票处置嫌疑人，按阵营条件争取胜利"
+        ],
+        "learning": [
+          "社交推理若提供可追溯的行动工具，可以让发言争论有明确的信息来源。"
+        ],
+        "caveats": [
+          "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。"
+        ],
+        "resources": [
+          "药剂可保护、治疗或毒害角色",
+          "商店物品用于自保、规避陷阱和收集情报"
+        ],
+        "progression": [
+          "每次会话重新随机分配职责",
+          "死亡后可成为幽灵，以新的能力影响仍活着的玩家"
+        ],
+        "scopeLabel": "普通村民与共谋者会话",
+        "scopeNotes": "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。",
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us",
+            "title": "Eville",
+            "publisher": "Steam / VestGames",
+            "type": "official_store",
+            "checkedAt": "2026-11-02",
+            "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+          }
+        ],
+        "mechanics": [
+          {
+            "id": "hidden-role",
+            "note": "村民与共谋者的阵营不向所有玩家公开，双方需要判断谁可信",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "identity-voting",
+            "note": "白天可召开会议并投票处决被怀疑的玩家",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "role-asymmetry",
+            "note": "侦探、陷阱师、先知与灵媒等职责具有不同调查或行动能力",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "random-draw",
+            "note": "每场按人数分配随机职责，不能固定记住某人的身份",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "day-night-cycle",
+            "note": "白天讨论和判断嫌疑，夜晚允许共谋者潜入住处等职责行动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "barter-trade",
+            "note": "向商贩或黑市购买情报与保护类物品",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "present"
+          },
+          {
+            "id": "scouting-tracking",
+            "note": "特定职责可以看脚印、放置观察结界等，定位其他玩家的行动",
+            "source": 0,
+            "evidenceKind": "official_description",
+            "status": "conditional",
+            "condition": "本场职责提供脚印或观察结界等调查能力"
+          }
+        ],
+        "cover": {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/header.jpg?t=1773308897",
+          "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
+        },
+        "aliases": [
+          "恶灵村"
+        ]
+      }
+    }
+  ]
+}

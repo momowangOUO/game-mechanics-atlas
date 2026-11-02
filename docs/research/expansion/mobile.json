@@ -428,7 +428,8 @@
     "playStyleIds": [
       "tactical-command",
       "exploration",
-      "management-production"
+      "management-production",
+      "turn-based-combat"
     ],
     "summary": "率领部落在回合制地图上探索、发展科技并与其他部落竞争。",
     "analysis": "程序生成地图和不同部落让同一套回合制文明发展规则面对变化的空间条件。",
@@ -755,7 +756,7 @@
     ],
     "playStyleIds": [
       "collection-training",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "收集培养魔灵、搭配符文并参与副本与玩家对战。",
     "analysis": "魔灵组合、符文效果和不同战斗模式提供多层构筑：合作首领战的站位需求与竞技场选禁需求并不相同。",
@@ -1320,8 +1321,7 @@
     ],
     "playStyleIds": [
       "management-production",
-      "collection-training",
-      "tactical-command"
+      "collection-training"
     ],
     "summary": "建设饼干王国，生产材料并编组饼干角色挑战关卡与竞技场。",
     "analysis": "王国生产、角色收集与战斗队伍各自提供成长目标，玩家可以在经营和挑战之间切换。",
@@ -1553,7 +1553,8 @@
     ],
     "playStyleIds": [
       "card-play",
-      "collection-training"
+      "collection-training",
+      "turn-based-combat"
     ],
     "summary": "召唤英灵并编队，在回合中选择指令卡发动攻击。",
     "analysis": "每回合从随机发到的指令卡中选择三张，同色连携和同一英灵连携让短期手牌决策与队伍组成相互关联。",
@@ -1986,9 +1987,9 @@
       "turn-based-rpg"
     ],
     "playStyleIds": [
-      "tactical-command",
       "exploration",
-      "collection-training"
+      "collection-training",
+      "turn-based-combat"
     ],
     "summary": "选择职业探索地牢，在回合战斗中更换技能与装备并尽量深入。",
     "analysis": "角色死亡导致其装备一并丢失，而魂石可用于开启后续职业，使单次冒险和长期解锁形成不同的风险尺度。",
@@ -2111,8 +2112,7 @@
       "moba"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "操纵宝可梦进行五对五对战，收集能量并在敌方得分区得分。",
     "analysis": "击败野生宝可梦只是取得待提交的能量，队伍还要协作创造安全得分窗口。",
@@ -2346,8 +2346,7 @@
       "incremental-idle"
     ],
     "playStyleIds": [
-      "incremental-management",
-      "tactical-command"
+      "incremental-management"
     ],
     "summary": "强化一座防御塔，抵御一波波敌人并用长期升级推进下一轮。",
     "analysis": "局内现金强化会重置，而金币购买的工坊强化保留，因而每次失败都可转化为下一次的起点。",
@@ -2812,7 +2811,7 @@
     ],
     "playStyleIds": [
       "collection-training",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "培养英雄并搭配装备，在回合制战斗中管理技能与灵魂。",
     "analysis": "行动顺序可见，而技能冷却与共享灵魂共同限制爆发时机，使玩家需要在当前敌人和后续遭遇之间取舍。",
@@ -3079,7 +3078,8 @@
       "strategy"
     ],
     "playStyleIds": [
-      "tactical-command"
+      "tactical-command",
+      "turn-based-combat"
     ],
     "summary": "率领不同阵营的单位进行六角格回合战，争夺对方基地。",
     "analysis": "基地既是胜利目标又提供制造单位的经济来源，进攻路线需要同时考虑补给和地形。",
@@ -3424,7 +3424,6 @@
     ],
     "mobileOrigin": true,
     "genreIds": [
-      "action",
       "incremental-idle"
     ],
     "playStyleIds": [
@@ -3805,8 +3804,7 @@
       "moba"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "选择英雄参与五对五对战，沿三条路线推进并摧毁敌方基地。",
     "analysis": "坦克、射手和辅助等职责在三条兵线上互相牵制；团队需要在争夺野区收益和保护兵线之间协调。",
@@ -4262,7 +4260,6 @@
     ],
     "mobileOrigin": true,
     "genreIds": [
-      "action",
       "rhythm-game"
     ],
     "playStyleIds": [
@@ -5430,8 +5427,7 @@
       "strategy"
     ],
     "playStyleIds": [
-      "dialogue-choice",
-      "management-production"
+      "dialogue-choice"
     ],
     "summary": "左右滑动回应臣民请求，在王朝更替中维持四方势力的平衡。",
     "analysis": "每项二选一可能同时改变不同势力，单个君主的死亡又把已完成目标和事件延续给后继者。",
@@ -7236,7 +7232,7 @@
       "action"
     ],
     "playStyleIds": [
-      "action-combat"
+      "platforming"
     ],
     "summary": "在地铁轨道上滑动换道、跳跃并收集金币，尽可能延长奔跑距离。",
     "analysis": "障碍规避决定单次奔跑的生存时间，任务和道具升级则让多次奔跑共同推进长期目标。",
@@ -7369,7 +7365,7 @@
     "playStyleIds": [
       "exploration",
       "collection-training",
-      "tactical-command"
+      "turn-based-combat"
     ],
     "summary": "以现实位置探索地图，在回合战斗中成长并挑战地下城与首领。",
     "analysis": "现实移动决定附近可遇到的地点和怪物；已解锁职业与技能可以组合，装备强化则提供长期成长。",
@@ -7506,8 +7502,7 @@
       "strategy"
     ],
     "playStyleIds": [
-      "exploration",
-      "tactical-command"
+      "exploration"
     ],
     "summary": "在现实地点占领并连接传送门，为所属阵营建立控制区域。",
     "analysis": "门的位置、阵营归属和连线限制共同决定控制场范围，维护能量又让既有领地需要持续照料。",
@@ -8284,8 +8279,7 @@
       "digital-card-duel"
     ],
     "playStyleIds": [
-      "card-play",
-      "tactical-command"
+      "card-play"
     ],
     "summary": "构筑卡组并召唤英雄和随从，与对手交替行动争夺战场。",
     "analysis": "法术法力允许把部分未用资源留到后续回合，但只能支付法术费用，改变出牌节奏与防守预留的选择。",
@@ -8425,7 +8419,7 @@
     ],
     "playStyleIds": [
       "card-play",
-      "tactical-command"
+      "puzzle-solving"
     ],
     "summary": "用接龙式消牌积累能量，施放法术并击败拥有不同能力的敌人。",
     "analysis": "每次抽新牌都会给敌人行动机会，而清除不同颜色牌可积累对应能量，使牌序与施法时机相互牵制。",
@@ -8690,8 +8684,7 @@
       "moba"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "操纵式神与队友参与五对五对战，推进防线并摧毁敌方大营。",
     "analysis": "式神职责、战前阴阳术和局内发育相互影响，打野玩家还要在争夺资源与支援队友间安排时间。",
@@ -8819,12 +8812,10 @@
     ],
     "mobileOrigin": false,
     "genreIds": [
-      "adventure",
-      "simulation-management"
+      "adventure"
     ],
     "playStyleIds": [
       "exploration",
-      "gathering-survival",
       "collection-training"
     ],
     "summary": "在吉利诺尔探索、完成任务并通过采集和制作提升各项技能。",
@@ -8956,8 +8947,7 @@
       "moba"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "与队友各自操纵英雄，争夺兵线和野区资源，推倒对方水晶。",
     "analysis": "局内击败兵线与野怪既提升英雄等级又提供购买装备的金币，队伍必须在发育和集体推进之间协调。",
@@ -9343,8 +9333,7 @@
       "moba"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "与队友选择英雄，在移动端地图中争夺野区目标并摧毁敌方枢纽。",
     "analysis": "为手机重制的地图缩短了推进距离，同时保留分路、野区目标和战前符文选择。",
@@ -9607,8 +9596,7 @@
       "puzzle"
     ],
     "playStyleIds": [
-      "matching-clearing",
-      "management-production"
+      "matching-clearing"
     ],
     "summary": "完成三消关卡获取星星，帮助管家奥斯汀修复家中的各个区域。",
     "analysis": "消除关卡提供修复任务所需的星星，特殊道具则让玩家在有限步数内针对障碍选择清除方式。",
@@ -9736,7 +9724,6 @@
     ],
     "mobileOrigin": true,
     "genreIds": [
-      "action",
       "rhythm-game"
     ],
     "playStyleIds": [
@@ -10464,7 +10451,8 @@
     ],
     "playStyleIds": [
       "matching-clearing",
-      "collection-training"
+      "collection-training",
+      "turn-based-combat"
     ],
     "summary": "组建漫威角色小队，在回合制三消战斗中积攒能量并使用英雄能力。",
     "analysis": "不同颜色的消除同时造成伤害和积累相应行动点，使角色阵容和棋盘优先级互相影响。",
@@ -10985,12 +10973,10 @@
     ],
     "mobileOrigin": true,
     "genreIds": [
-      "rhythm-game",
-      "adventure"
+      "rhythm-game"
     ],
     "playStyleIds": [
-      "rhythm-play",
-      "exploration"
+      "rhythm-play"
     ],
     "summary": "在会移动的圆形判定盘上演奏音乐，完成挑战并推进绘本故事。",
     "analysis": "圆盘的旋转与缩放改变音符出现的位置，歌曲挑战和难度解锁则提供反复演奏的具体目标。",
@@ -11595,8 +11581,7 @@
     ],
     "playStyleIds": [
       "matching-clearing",
-      "collection-training",
-      "tactical-command"
+      "collection-training"
     ],
     "summary": "组建部队并通过三消积累魔力，在战役和玩家对抗中施放技能。",
     "analysis": "颜色匹配为部队供能，王国旗帜又改变对应颜色的魔力收益，使队伍与棋盘相互配合。",
@@ -12399,8 +12384,7 @@
       "action"
     ],
     "playStyleIds": [
-      "action-combat",
-      "tactical-command"
+      "action-combat"
     ],
     "summary": "在移动端 MOBA 地图上操纵英雄，与队友推进兵线并摧毁对方基地。",
     "analysis": "早期三对三地图把一条主兵线与野区资源连接，队伍需要在推进、支援和争夺中立目标之间分配人手。",
@@ -12538,8 +12522,7 @@
     ],
     "playStyleIds": [
       "incremental-management",
-      "collection-training",
-      "tactical-command"
+      "collection-training"
     ],
     "summary": "与其他玩家组队自动狩猎，调整技能与宠物，挑战首领并推进地图。",
     "analysis": "离线狩猎持续提供成长材料，首领则要求队伍根据技能和属性重新配置。",

@@ -1,0 +1,261 @@
+{
+  "checkedAt": "2026-11-02",
+  "selection": "补近年商业发行热门作品，不收仅内部GameJam企划；首发、EA、正式版和移植不重复计数。",
+  "records": [
+    {
+      "id": "clair-obscur-expedition-33",
+      "name": "光与影：33号远征队 / Clair Obscur: Expedition 33",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1903340&l=english&cc=us",
+      "steamRecommendationsTotal": 183991,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "split-fiction",
+      "name": "双影奇境 / Split Fiction",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2001120&l=english&cc=us",
+      "steamRecommendationsTotal": 79579,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "death-stranding-2-on-the-beach",
+      "name": "死亡搁浅2：冥滩之上 / DEATH STRANDING 2: ON THE BEACH",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3280350&l=english&cc=us",
+      "steamRecommendationsTotal": 16060,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "kingdom-come-deliverance-2",
+      "name": "天国：拯救2 / Kingdom Come: Deliverance II",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1771300&l=english&cc=us",
+      "steamRecommendationsTotal": 147822,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "monster-hunter-wilds",
+      "name": "怪物猎人：荒野 / Monster Hunter Wilds",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2246340&l=english&cc=us",
+      "steamRecommendationsTotal": 203850,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "metaphor-refantazio",
+      "name": "暗喻幻想 / Metaphor: ReFantazio",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2679460&l=english&cc=us",
+      "steamRecommendationsTotal": 25734,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "persona-3-reload-2024",
+      "name": "女神异闻录3 Reload（2024重制版） / Persona 3 Reload",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2161700&l=english&cc=us",
+      "steamRecommendationsTotal": 45738,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "final-fantasy-7-rebirth",
+      "name": "最终幻想VII 重生 / FINAL FANTASY VII REBIRTH",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2909400&l=english&cc=us",
+      "steamRecommendationsTotal": 26802,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "final-fantasy-16",
+      "name": "最终幻想XVI / FINAL FANTASY XVI",
+      "releasedVerified": true,
+      "earliestYear": 2023,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2515020&l=english&cc=us",
+      "steamRecommendationsTotal": 24661,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "armored-core-6-fires-of-rubicon",
+      "name": "装甲核心VI：境界天火 / ARMORED CORE™ VI FIRES OF RUBICON™",
+      "releasedVerified": true,
+      "earliestYear": 2023,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1888160&l=english&cc=us",
+      "steamRecommendationsTotal": 67355,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "stellar-blade",
+      "name": "剑星 / Stellar Blade™",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3489700&l=english&cc=us",
+      "steamRecommendationsTotal": 62404,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "helldivers-2",
+      "name": "绝地潜兵2 / HELLDIVERS™ 2",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=553850&l=english&cc=us",
+      "steamRecommendationsTotal": 850867,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "palworld",
+      "name": "幻兽帕鲁 / Palworld",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1623730&l=english&cc=us",
+      "steamRecommendationsTotal": 417455,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "repo",
+      "name": "R.E.P.O.",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3241660&l=english&cc=us",
+      "steamRecommendationsTotal": 348179,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "peak",
+      "name": "PEAK",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3527290&l=english&cc=us",
+      "steamRecommendationsTotal": 311433,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "blue-prince",
+      "name": "蓝途王子 / Blue Prince",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1569580&l=english&cc=us",
+      "steamRecommendationsTotal": 17930,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "dispatch",
+      "name": "Dispatch",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2592160&l=english&cc=us",
+      "steamRecommendationsTotal": 176863,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "schedule-1",
+      "name": "Schedule I",
+      "releasedVerified": true,
+      "earliestYear": 2025,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3164500&l=english&cc=us",
+      "steamRecommendationsTotal": 293834,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "hades-2",
+      "name": "哈迪斯II / Hades II",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1145350&l=english&cc=us",
+      "steamRecommendationsTotal": 115643,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "animal-well",
+      "name": "动物井 / ANIMAL WELL",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=813230&l=english&cc=us",
+      "steamRecommendationsTotal": 23038,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "pacific-drive",
+      "name": "超自然车旅 / Pacific Drive",
+      "releasedVerified": true,
+      "earliestYear": 2024,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1458140&l=english&cc=us",
+      "steamRecommendationsTotal": 21824,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "mewgenics",
+      "name": "Mewgenics",
+      "releasedVerified": true,
+      "earliestYear": 2026,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=686060&l=english&cc=us",
+      "steamRecommendationsTotal": 51347,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "slay-the-spire-2",
+      "name": "杀戮尖塔2 / Slay the Spire 2",
+      "releasedVerified": true,
+      "earliestYear": 2026,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2868840&l=english&cc=us",
+      "steamRecommendationsTotal": 214830,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "marathon-2026",
+      "name": "Marathon",
+      "releasedVerified": true,
+      "earliestYear": 2026,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3065800&l=english&cc=us",
+      "steamRecommendationsTotal": 45498,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "crimson-desert",
+      "name": "红色沙漠 / Crimson Desert Enhanced",
+      "releasedVerified": true,
+      "earliestYear": 2026,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3321460&l=english&cc=us",
+      "steamRecommendationsTotal": 118403,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    },
+    {
+      "id": "nioh-3",
+      "name": "仁王3 / Nioh 3",
+      "releasedVerified": true,
+      "earliestYear": 2026,
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3681010&l=english&cc=us",
+      "steamRecommendationsTotal": 12053,
+      "scaleEvidenceNote": "该数值为已读取Steam API的recommendations.total字段，不等于销量或独立玩家人数；类型归属依据玩法正文。"
+    }
+  ],
+  "explicitScaleEvidence": [
+    {
+      "id": "palworld",
+      "claim": "官方公司介绍称2024年1月EA发行后一个月总玩家超过2500万；这是官方总玩家口径，不是付费销量。",
+      "sourceUrl": "https://www.palworld.co.jp/en/?target=company"
+    }
+  ],
+  "notAddedInThisBatch": [
+    {
+      "name": "Resident Evil Requiem",
+      "reason": "已确认2026实际发行与Grace/Leon不同玩法，但本批未完成分主角范围的六项机制资料，不将两人的权限混写。"
+    },
+    {
+      "name": "PRAGMATA",
+      "reason": "已确认2026实际发行；本批未完成同步黑客与枪战系统的六项精确机制补源。"
+    },
+    {
+      "name": "REANIMAL",
+      "reason": "已确认2026实际发行；本批未完成合作穿越与生存动作的细节补源。"
+    }
+  ]
+}

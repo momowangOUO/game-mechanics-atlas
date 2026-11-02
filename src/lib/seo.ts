@@ -58,6 +58,7 @@ export function pageMetadata(
 }
 
 export const indexPageMetadata: Record<string, Metadata> = {
+  "/games/discovery": pageMetadata("直播与传播案例：热门游戏收录线索", "从直播平台报告与传播记录查找代表游戏，核对观察时期、指标和已收录案例。", "/games/discovery"),
   "/games/coverage": pageMetadata("类型与核心玩法组合：游戏案例覆盖","按类型、玩法、平台和年代查找具体游戏，查看收录数量及组合核对记录。","/games/coverage"),
   "/play-styles": pageMetadata("核心玩法方向与游戏案例","了解玩家主要在做什么，并查找相应的完整游戏案例。","/play-styles"),
   "/": pageMetadata("游戏机制分类与案例参考", SITE_DESCRIPTION, "/"),

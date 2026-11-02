@@ -1,0 +1,1607 @@
+[
+  {
+    "id": "honkai-star-rail",
+    "name": "崩坏：星穹铁道 / Honkai: Star Rail",
+    "studio": "HoYoverse",
+    "year": 2023,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "turn-based-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "summary": "搭乘列车探索不同世界，编组角色进行回合战斗并培养装备。",
+    "analysis": "角色的命途、战斗属性与光锥共同决定队伍分工；分区探索则把宝箱和解谜穿插在战斗之间。",
+    "loop": [
+      "探索世界并寻找任务与宝箱",
+      "搭配角色、光锥与遗器",
+      "轮流使用技能，领取奖励并培养队伍"
+    ],
+    "learning": [
+      "让角色职责与装备条件相互关联，增加编队取舍。"
+    ],
+    "caveats": [
+      "自动战斗是可选功能；本案例不把回合指令当作实时动作。"
+    ],
+    "resources": [
+      "角色、光锥与遗器：搭配战斗职责",
+      "星琼和车票：用于跃迁"
+    ],
+    "progression": [
+      "角色和装备可持续培养；不同区域随任务推进开放。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1599719154&country=us",
+        "title": "Honkai: Star Rail — Apple App Store API",
+        "publisher": "Apple / COGNOSPHERE PTE. LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Honkai:_Star_Rail",
+        "title": "崩坏：星穹铁道 / Honkai: Star Rail — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "编组最多四名拥有不同命途和战斗职责的角色。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "角色与敌人在回合战斗中按行动次序执行指令。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "战斗前为角色配置光锥和遗器。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "使用跃迁获取随机角色或光锥。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "玩家可开启自动战斗，由系统执行战斗行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "探索分区时可开启宝箱获得物品。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/65/dc/fd65dc18-c4b6-7b64-8266-a423f3f113e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1599719154&country=us"
+    },
+    "aliases": [
+      "Honkai: Star Rail"
+    ]
+  },
+  {
+    "id": "zenless-zone-zero",
+    "name": "绝区零 / Zenless Zone Zero",
+    "studio": "HoYoverse",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training",
+      "buildcrafting"
+    ],
+    "summary": "组成代理人小队，在空洞内切换角色并利用闪避和支援对抗敌人。",
+    "analysis": "三人各有战斗特长，切换时机和失衡积累让队伍搭配直接影响连携攻击。",
+    "loop": [
+      "选择代理人、音擎与驱动盘",
+      "操作角色进攻、闪避并切换支援",
+      "完成委托，获取材料并培养代理人"
+    ],
+    "learning": [
+      "让防御时机同时成为切换角色与发动反击的机会。"
+    ],
+    "caveats": [
+      "分析常驻动作战斗；早期空洞棋盘并非全部版本的通用流程。"
+    ],
+    "resources": [
+      "音擎与驱动盘：改变角色能力",
+      "失衡值：触发敌人短暂失衡"
+    ],
+    "progression": [
+      "代理人和装备可持续培养；新内容随版本开放。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1606356401&country=us",
+        "title": "Zenless Zone Zero — Apple App Store API",
+        "publisher": "Apple / COGNOSPHERE PTE. LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Zenless_Zone_Zero",
+        "title": "绝区零 / Zenless Zone Zero — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "队伍可配置三名代理人及一名邦布。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "部分代理人以近身攻击打击敌人。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "战斗中主动闪避敌人攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "通过防护支援在合适时机切换角色格挡来袭攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "积累失衡值后敌人暂时失衡并承受更高伤害。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "通过随机招募获得代理人及音擎。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "战前配置角色音擎和驱动盘。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/64/6a/43646a64-9712-9da1-4c8a-14f95be9e413/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1606356401&country=us"
+    },
+    "aliases": [
+      "Zenless Zone Zero"
+    ]
+  },
+  {
+    "id": "arknights-endfield",
+    "name": "明日方舟：终末地 / Arknights: Endfield",
+    "studio": "Hypergryph",
+    "year": 2026,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "action",
+      "strategy",
+      "simulation-management",
+      "factory-automation"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration",
+      "management-production",
+      "spatial-planning",
+      "collection-training"
+    ],
+    "summary": "带领干员探索塔卫二，同时建设自动化设施加工和运输资源。",
+    "analysis": "野外战斗与工厂生产共享长期发展目标：探索获得原料，产线又为队伍提供成长物资。",
+    "loop": [
+      "探索区域并采集原料",
+      "建设电力、机器和传输线加工物资",
+      "切换干员战斗，获得资源继续扩建"
+    ],
+    "learning": [
+      "让自动化生产与探索产物互相供给，同时保留各自的决策空间。"
+    ],
+    "caveats": [
+      "原作《明日方舟》为塔防；本作按战斗与工厂分析，不继承其塔防标签。"
+    ],
+    "resources": [
+      "矿石：加工材料",
+      "电力与传输线：维持并连接产线",
+      "共享战技点：队伍战斗技能使用"
+    ],
+    "progression": [
+      "产线与干员成长持续保留；2026 年 1 月 22 日正式发行。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6752642477&country=us",
+        "title": "Arknights: Endfield — Apple App Store API",
+        "publisher": "Apple / GRYPH FRONTIER PTE.LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Arknights:_Endfield",
+        "title": "明日方舟：终末地 / Arknights: Endfield — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      },
+      {
+        "url": "https://www.gamespress.com/ja-JP/Arknights-Endfield-is-Out-Now-on-PC-PlayStation5-and-Mobile",
+        "title": "Arknights: Endfield is Out Now on PC, PlayStation 5, and Mobile",
+        "publisher": "GRYPHLINE / Games Press",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行方 2026 年 1 月 22 日正式上线公告及平台信息。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "组成四名干员的队伍，各自拥有不同技能。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "shared-resource-pool",
+        "note": "全队共享战技点，干员施放战技消耗同一储量。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "积累敌人失衡值后可制造失衡与处决机会。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "从野外矿点采集生产所需原料。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "在不同机器中加工原料，产物进入后续制作环节。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "通过传输带连接机器并转移生产物资。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "工厂需要安排电力供给与分配。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/a4/53/5ea453a8-f819-f42e-aae4-28f21b8c7166/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6752642477&country=us"
+    },
+    "aliases": [
+      "Arknights: Endfield"
+    ]
+  },
+  {
+    "id": "infinity-nikki",
+    "name": "无限暖暖 / Infinity Nikki",
+    "studio": "Infold Games",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation",
+      "mac"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "adventure",
+      "platformer"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "platforming",
+      "collection-training",
+      "life-simulation"
+    ],
+    "summary": "在开放世界收集搭配服装，使用不同能力探索、采集并完成造型挑战。",
+    "analysis": "服装既有造型属性，也能赋予滑翔等探索能力，使搭配收集与空间到达条件相连。",
+    "loop": [
+      "探索奇想大陆并寻找材料",
+      "搭配或获取服装，使用能力抵达新区域",
+      "参加造型挑战并继续收集服装"
+    ],
+    "learning": [
+      "让外观系统同时服务表达、挑战评价和探索能力。"
+    ],
+    "caveats": [
+      "以服装与开放世界玩法为主；多人合作是后续版本加入的功能。"
+    ],
+    "resources": [
+      "服装部件：组成造型及能力套装",
+      "采集材料：用于获取与制作服饰"
+    ],
+    "progression": [
+      "收集的服装及开放的地区在后续游戏中保留。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6502622570&country=us",
+        "title": "Infinity Nikki — Apple App Store API",
+        "publisher": "Apple / INFOLD PTE. LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Infinity_Nikki",
+        "title": "无限暖暖 / Infinity Nikki — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      },
+      {
+        "url": "https://www.pcgamesn.com/infinity-nikki/upgrade-outfit-level",
+        "title": "How to upgrade outfits in Infinity Nikki",
+        "publisher": "PCGamesN",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取服装强化材料、属性与造型挑战评分说明；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "根据甜美、清新等属性选择搭配参加造型对决。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "ability-gating",
+        "note": "滑翔或缩小等能力服装使部分原本难以到达的位置可达。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "能力服装用于钓鱼、捕虫与清理动物等采集活动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "使用游戏货币通过随机机制获得服装和饰品。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "通过跳跃和服装能力穿行开放世界的空间挑战。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "消耗材料提升服装部件属性，使造型挑战得分提高。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/db/73/9fdb7374-823a-a5e8-a9fd-2bd7cee2dd34/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6502622570&country=us"
+    },
+    "aliases": [
+      "Infinity Nikki"
+    ]
+  },
+  {
+    "id": "love-and-deepspace",
+    "name": "恋与深空 / Love and Deepspace",
+    "studio": "Papergames",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "action",
+      "visual-novel"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "dialogue-choice",
+      "collection-training",
+      "life-simulation"
+    ],
+    "summary": "作为深空猎人与同伴并肩作战，也通过故事和日常互动发展关系。",
+    "analysis": "战斗中的思念配置和故事中的互动关系使用同一批角色，让收集既影响战斗选择，也开启人物内容。",
+    "loop": [
+      "阅读故事并与同伴交流",
+      "配置思念并与同伴对抗敌人",
+      "获得培养材料，提升关系并解锁更多故事"
+    ],
+    "learning": [
+      "为角色收集设计战斗和叙事两种可辨认的用途。"
+    ],
+    "caveats": [
+      "以主线战斗和角色互动为范围，约会小游戏规则不推广到整个作品。"
+    ],
+    "resources": [
+      "思念卡：提供战斗配置并开启故事",
+      "培养材料：强化思念"
+    ],
+    "progression": [
+      "思念、亲密度和解锁的角色故事持续保留。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6443467666&country=us",
+        "title": "Love and Deepspace — Apple App Store API",
+        "publisher": "Apple / INFOLD PTE. LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Love_and_Deepspace",
+        "title": "恋与深空 / Love and Deepspace — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      },
+      {
+        "url": "https://www.pocketgamer.com/love-and-deepspace/combat-tips/",
+        "title": "Love and Deepspace combat tips and tricks",
+        "publisher": "Pocket Gamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取闪避与技能使用说明；未安装试玩。"
+      },
+      {
+        "url": "https://thefilibusterblog.com/complete-rafayels-first-bond-date-in-love-and-deepspace-a-guide-to-nightly-stroll/",
+        "title": "Nightly Stroll bond date dialogue guide",
+        "publisher": "The Filibuster",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "通过网页检索工具读取角色约会中的回复选项与不同反应；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "random-draw",
+        "note": "通过许愿随机获得不同角色的思念卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "阅读故事、互动消息和培养思念可提升与同伴的亲密度。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "战斗前根据颜色条件配置同伴的思念卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "战斗可获得用于培养思念的材料。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "获得特定思念后可开放相应角色故事。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "观察敌人攻击提示并主动朝选定方向闪避。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "约会故事中选择不同回应，会改变后续对话内容。",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/e4/79/66e47995-431d-2771-f0a8-3e0dcb0df438/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6443467666&country=us"
+    },
+    "aliases": [
+      "Love and Deepspace"
+    ]
+  },
+  {
+    "id": "goddess-of-victory-nikke",
+    "name": "胜利女神：妮姬 / GODDESS OF VICTORY: NIKKE",
+    "studio": "SHIFT UP",
+    "year": 2022,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "shooter",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "collection-training",
+      "buildcrafting"
+    ],
+    "summary": "编组妮姬并瞄准射击，在掩体和技能爆发之间配合应对敌人。",
+    "analysis": "射击积累爆发能量，而不同角色的爆发阶段决定连锁顺序，把操作与队伍配置连接起来。",
+    "loop": [
+      "组建妮姬小队并配置装备",
+      "瞄准敌人，利用掩体换弹",
+      "安排爆发技能顺序，获取材料强化角色"
+    ],
+    "learning": [
+      "让即时操作产生的资源与队伍技能顺序形成明确配合。"
+    ],
+    "caveats": [
+      "主体是固定阵地射击；不把角色掩体视为自由空间移动。"
+    ],
+    "resources": [
+      "弹药：射击和换弹的限制",
+      "爆发能量：用于启动阶段技能"
+    ],
+    "progression": [
+      "角色等级、技能和装备可持续提升。"
+    ],
+    "scopeLabel": "标准射击关卡与合作挑战",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1585915174&country=us",
+        "title": "GODDESS OF VICTORY: NIKKE — Apple App Store API",
+        "publisher": "Apple / Level Infinite",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Goddess_of_Victory:_Nikke",
+        "title": "胜利女神：妮姬 / GODDESS OF VICTORY: NIKKE — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "玩家用准星瞄准敌人并发射枪械。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "队伍最多由五名持不同武器及技能的妮姬组成。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "造成伤害积累爆发资源，用于启动爆发技能。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多五名玩家可共同挑战合作关卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "仅在合作挑战中成立。"
+      },
+      {
+        "id": "random-draw",
+        "note": "通过随机招募获得新角色。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "依次触发爆发技能进入 Full Burst，暂时提高全队攻击力。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/76/62/f376627d-7f96-b269-c635-34ddb704ec48/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1585915174&country=us"
+    },
+    "aliases": [
+      "GODDESS OF VICTORY: NIKKE"
+    ]
+  },
+  {
+    "id": "reverse-1999",
+    "name": "重返未来：1999 / Reverse: 1999",
+    "studio": "Bluepoch",
+    "year": 2023,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "summary": "招募神秘学家组成队伍，按回合选择和合并咒语卡对抗敌人。",
+    "analysis": "每回合可出的卡受在场角色数量约束，相同咒语合并后的效果与激情积累会改变后续选择。",
+    "loop": [
+      "编组神秘学家并配置心相",
+      "选择手牌施放咒语并合并同类卡",
+      "积累激情使用至终仪式，获得材料培养角色"
+    ],
+    "learning": [
+      "让手牌数量、合并机会和角色技能相互影响，形成短期行动排序。"
+    ],
+    "caveats": [
+      "分析常规回合战斗与荒原，不将活动规则视为通用规则。"
+    ],
+    "resources": [
+      "咒语卡：决定回合行动",
+      "激情：积累后开放角色至终仪式"
+    ],
+    "progression": [
+      "角色、心相和荒原设施可持续发展。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1672933190&country=us",
+        "title": "Reverse: 1999 — Apple App Store API",
+        "publisher": "Apple / Bluepoch Co.,Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Reverse:_1999",
+        "title": "重返未来：1999 / Reverse: 1999 — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "最多选择四名神秘学家进入战斗。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "玩家与敌方轮流执行各自的行动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "回合结束后从角色共同牌堆随机补充咒语卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "单回合可用卡牌行动次数受场上角色数量限制。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "合并同类咒语卡会提高等级，并可能增加额外效果。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在荒原摆放不同地块，形成提供培养资源的基地。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/61/94/1c619430-4d7c-80cd-c7b4-feaec9d113ff/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1672933190&country=us"
+    },
+    "aliases": [
+      "Reverse: 1999"
+    ]
+  },
+  {
+    "id": "afk-journey",
+    "name": "剑与远征：启程 / AFK Journey",
+    "studio": "Farlight Games / Lilith Games",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "strategy",
+      "incremental-idle",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "incremental-management",
+      "exploration",
+      "collection-training"
+    ],
+    "summary": "探索伊索米亚并安排英雄站位，以自动战斗和离线收益推进队伍成长。",
+    "analysis": "离线产出与战役进度挂钩，战前阵容和站位则让玩家在领取收益之外持续调整打法。",
+    "loop": [
+      "探索地图并完成任务",
+      "布置不同职业英雄，挑战自动战斗",
+      "领取放置资源并强化队伍"
+    ],
+    "learning": [
+      "将离线产出速度与玩家主动突破的关卡联系起来。"
+    ],
+    "caveats": [
+      "自动战斗发生在预先编成的队伍中，不按随机商店式自走棋分类。"
+    ],
+    "resources": [
+      "放置资源：提升队伍进度",
+      "英雄：提供不同职业与技能"
+    ],
+    "progression": [
+      "英雄成长和战役进度持续保留。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1628970855&country=us",
+        "title": "AFK Journey — Apple App Store API",
+        "publisher": "Apple / Farlight Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/AFK_Journey",
+        "title": "剑与远征：启程 / AFK Journey — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "选择不同职业英雄组成队伍。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "spatial-loadout",
+        "note": "战斗开始前在格状场地安排英雄站位。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "普通战斗行动按规则自动进行，也可设置自动施放技能。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "离线时仍随时间积累资源。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "消耗游戏货币随机招募英雄。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "队伍可以利用阵营加成改变战斗效果。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "traversal-portal",
+        "note": "开放传送点后可在已开放地点间快速移动。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/90/d2/2190d26d-73b6-74eb-9986-0eec5d7371bd/AppIcon-Global-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1628970855&country=us"
+    },
+    "aliases": [
+      "AFK Journey"
+    ]
+  },
+  {
+    "id": "where-winds-meet",
+    "name": "燕云十六声 / Where Winds Meet",
+    "studio": "Everstone Studio",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "扮演游侠探索开放江湖，组合武器和武学应对不同敌人。",
+    "analysis": "每种武器对应不同武学，防御提示又要求判断攻击能否格挡或卸势，使配置与临场反应互相影响。",
+    "loop": [
+      "探索地区并接受见闻任务",
+      "配置武器与武学，使用闪避或卸势作战",
+      "完成目标并继续开放江湖内容"
+    ],
+    "learning": [
+      "让装备选择影响可用招式，同时用清晰提示区分防御条件。"
+    ],
+    "caveats": [
+      "中国 PC 版先于移动版开放；本条按同一作品合并，不把地域版本重复建档。"
+    ],
+    "resources": [
+      "武器与武学：决定战斗招式",
+      "任务线索：引导探索和人物故事"
+    ],
+    "progression": [
+      "已获得武学与任务进度可用于后续探索。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6472396866&country=us",
+        "title": "Where Winds Meet — Apple App Store API",
+        "publisher": "Apple / NETEASE INTERACTIVE ENTERTAINMENT PTE. LTD",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Where_Winds_Meet",
+        "title": "燕云十六声 / Where Winds Meet — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "角色可同时装备两件武器并选择不同武学。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "使用剑、枪等武器发动轻重攻击和武学招式。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "玩家通过闪避改变位置以规避来袭攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "在合适时机卸势，改变部分敌方攻击的结果。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "intent-preview",
+        "note": "敌方攻击以不同颜色提示是否可被格挡或卸势。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成主线、见闻和探索等任务以推进对应目标。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "可与其他玩家组队参加合作活动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/b4/16/21b4168f-3af1-5eb5-a4ca-1009b0d08588/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6472396866&country=us"
+    },
+    "aliases": [
+      "Where Winds Meet"
+    ]
+  },
+  {
+    "id": "umamusume-pretty-derby",
+    "name": "赛马娘 Pretty Derby / Umamusume: Pretty Derby",
+    "studio": "Cygames",
+    "year": 2021,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "sports",
+      "simulation-management"
+    ],
+    "playStyleIds": [
+      "collection-training",
+      "buildcrafting"
+    ],
+    "summary": "作为训练员安排赛马娘的训练、休息与赛事，培养适合比赛的选手。",
+    "analysis": "每次行动消耗日程，训练收益又受体力、状态和支援卡影响，使长期目标与短期恢复形成权衡。",
+    "loop": [
+      "选择育成角色和支援卡",
+      "在有限日程内安排训练、休息与比赛",
+      "完成育成，用继承能力支持下一次培养"
+    ],
+    "learning": [
+      "把有限训练回合与体力恢复放在同一决策中，让计划具有机会成本。"
+    ],
+    "caveats": [
+      "以育成模式为范围；比赛按养成结果结算，不标为玩家直接体育操作。"
+    ],
+    "resources": [
+      "体力和训练回合：决定可安排的行动",
+      "支援卡：提供训练加成和技能"
+    ],
+    "progression": [
+      "培养结束后可继承部分能力；角色和支援卡继续保留。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6480433538&country=us",
+        "title": "Umamusume: Pretty Derby — Apple App Store API",
+        "publisher": "Apple / Cygames, Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Umamusume_Pretty_Derby",
+        "title": "赛马娘 Pretty Derby / Umamusume: Pretty Derby — gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取玩法与发行段落；规则随版本可能变化，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "开始育成前选择育成角色、剧本及支援卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "选手心情会改变训练效果和比赛表现。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "有限回合需要在训练、休息和比赛之间分配。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "育成期间随机事件可能改变属性、技能和状态。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "通过随机招募取得育成角色或支援卡。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "persistent-stat-upgrade",
+        "note": "育成结束获得的继承因子可强化后续育成角色。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "选手的状态和心情会影响训练及比赛表现。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/34/5e/6f345e3d-0ed8-96bb-510f-bc96163537b7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6480433538&country=us"
+    },
+    "aliases": [
+      "Umamusume: Pretty Derby"
+    ]
+  },
+  {
+    "id": "solo-leveling-arise",
+    "name": "我独自升级：起立 / Solo Leveling:ARISE",
+    "studio": "Netmarble Neo",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "action"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "collection-training",
+      "buildcrafting"
+    ],
+    "summary": "操纵主角或猎人挑战地下城，通过闪避、技能和队伍搭配击败首领。",
+    "analysis": "敌人攻击为极限闪避和连携创造时机；武器、技能与猎人队伍则影响不同挑战的应对方式。",
+    "loop": [
+      "选择猎人、武器和技能",
+      "在地下城中主动攻击并闪避",
+      "领取奖励，强化配置并挑战更强首领"
+    ],
+    "learning": [
+      "为动作时机提供可感知的后续收益，同时让战前配置服务不同敌人。"
+    ],
+    "caveats": [
+      "以地下城和猎人战斗为范围，不把限时活动奖励视为恒定规则。"
+    ],
+    "resources": [
+      "武器与技能：决定战斗手段",
+      "猎人：组成具有不同能力的队伍"
+    ],
+    "progression": [
+      "武器、猎人与技能可持续培养。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1662742277&country=us",
+        "title": "Solo Leveling:Arise — Apple App Store API",
+        "publisher": "Apple / Netmarble Corporation",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://guide.netmarble.com/sololv/84",
+        "title": "Solo Leveling:ARISE — Weapons",
+        "publisher": "Netmarble",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取武器强化与突破说明；指南标注基于测试版本，规则以游戏版本为准。"
+      },
+      {
+        "url": "https://ch.netmarble.com/Eng/Newsroom/Detail?bbs_code=1020&post_seq=4808",
+        "title": "Netmarble launches Solo Leveling: ARISE worldwide on mobile and PC",
+        "publisher": "Netmarble",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行商关于 2024 年移动及 PC 版正式上线的公告。"
+      },
+      {
+        "url": "https://sololeveling.netmarble.com/sc/game",
+        "title": "我独自升级:起立 — 官方网站",
+        "publisher": "Netmarble",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对官方简体中文名称；网页检索结果可读。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "战前选择武器、技能和猎人配置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "使用极限闪避躲避来袭攻击。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "组合不同猎人和能力形成队伍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "通关地下城和击败首领可获得奖励。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "使用武器强化材料提升已有武器，并可突破等级上限。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "unit-drafting",
+        "note": "可将击败怪物的影子招募为影子士兵。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/28/93/752893bc-afc9-7797-8b45-160f9fd4f25c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1662742277&country=us"
+    },
+    "aliases": [
+      "我独自升级：起立",
+      "Solo Leveling:ARISE"
+    ]
+  },
+  {
+    "id": "sword-of-convallaria",
+    "name": "铃兰之剑 / Sword of Convallaria",
+    "studio": "XD",
+    "year": 2023,
+    "platforms": [
+      "ios",
+      "android",
+      "pc"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "collection-training",
+      "dialogue-choice",
+      "turn-based-combat"
+    ],
+    "summary": "率领佣兵在格状地图轮流行动，并通过选择影响城镇与故事。",
+    "analysis": "单位速度、站位和地形高差共同影响战斗，关卡目标的差异也改变队伍配置。",
+    "loop": [
+      "选择佣兵与战前站位",
+      "依行动顺序移动和使用技能",
+      "完成关卡并依据故事选择发展城镇"
+    ],
+    "learning": [
+      "把地形和关卡目标放进同一套部署判断，而不是只比较角色数值。"
+    ],
+    "caveats": [
+      "原作 2023 年先在港台发行；国际商店 2024 年日期不是原作首发年。"
+    ],
+    "resources": [
+      "佣兵和技能：决定可用战术",
+      "地形高差与障碍：改变移动和攻击机会"
+    ],
+    "progression": [
+      "角色培养、故事选择和城镇发展随流程推进。"
+    ],
+    "scopeLabel": "主线与常驻基础玩法",
+    "scopeNotes": "以所引资料记录的该玩法为准；活动、版本及地区内容可能不同。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=6451019582&country=us",
+        "title": "Sword of Convallaria — Apple App Store API",
+        "publisher": "Apple / XD Entertainment Pte Ltd",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者提供的商店介绍和图标；商店预下载日期不作为实际发行日期。"
+      },
+      {
+        "url": "https://gamewith.net/sword-of-convallaria/69373",
+        "title": "Sword of Convallaria: Battle System and UI Guide",
+        "publisher": "GameWith",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取行动顺序、部署、地形和状态说明；未安装试玩。"
+      },
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0830/2024083000281.pdf",
+        "title": "XD Inc. 2024 interim report",
+        "publisher": "Hong Kong Exchanges and Clearing",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行商报告所列 2023 年港台及中国大陆发行时间。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "角色按速度决定行动次序，轮流移动及行动。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "根据关卡选择可部署的不同角色。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "spatial-loadout",
+        "note": "开战前安排角色在战场上的站位。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "攻击改变生命值，受伤程度还会影响伤害表现。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "燃烧和冻结地格分别对经过的单位产生持续伤害或移动影响。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "叙事选择会影响城镇发展和故事走向。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "战斗界面提供手动与自动战斗切换。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/d3/47/1dd34725-b946-1b9c-15ef-8b2600bf82ff/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=6451019582&country=us"
+    },
+    "aliases": [
+      "Sword of Convallaria"
+    ]
+  },
+  {
+    "id": "delta-force-2024",
+    "name": "三角洲行动 / Delta Force",
+    "studio": "Team Jade / TiMi Studio Group",
+    "year": 2024,
+    "platforms": [
+      "ios",
+      "android",
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "shooter",
+      "extraction-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "在烽火地带配置干员与装备，进入地图搜集物资并设法安全撤离。",
+    "analysis": "携带装备与搜到的战利品都面临撤离失败的风险；有限背包、安全箱和撤离点条件让每次深入都有取舍。",
+    "loop": [
+      "挑选干员、武器及弹药进入地图",
+      "搜索容器、应对敌人并整理背包",
+      "抵达可用撤离点，把成功带出的物资存入仓库"
+    ],
+    "learning": [
+      "让带入装备、可携容量和撤离条件共同形成可理解的风险决策。"
+    ],
+    "caveats": [
+      "仅分析烽火地带／Operations 撤离模式；不混入全面战场的载具与据点规则。"
+    ],
+    "resources": [
+      "弹药和护甲：影响战斗能力",
+      "背包和安全箱：限制携带与失败时的保留",
+      "仓库：保存撤离所得与局外装备"
+    ],
+    "progression": [
+      "成功撤离的物资可带回仓库；阵亡时安全箱之外的携带物品会损失。"
+    ],
+    "scopeLabel": "烽火地带／Operations 标准撤离",
+    "scopeNotes": "以官方 2026 年新手指南介绍的撤离流程为准；地图及装备随赛季变化。",
+    "sources": [
+      {
+        "url": "https://itunes.apple.com/lookup?id=1642894547&country=cn",
+        "title": "三角洲行动 — Apple App Store API",
+        "publisher": "Apple / Tencent",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取中国区商店资料及官方图标；未安装试玩。"
+      },
+      {
+        "url": "https://deltaforce.garena.com/en/news/system/RMDWVM",
+        "title": "Operations Mode 101",
+        "publisher": "Garena Delta Force",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方新手指南的装备、仓库、声音、零号大坝及撤离说明；未安装试玩。"
+      },
+      {
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0327/2025032702485.pdf",
+        "title": "2024 annual report — Delta Force release",
+        "publisher": "Hong Kong Exchanges and Clearing",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取发行相关公司年报的中国 PC 与手机 2024 年上线说明。"
+      },
+      {
+        "url": "https://news.xbox.com/en-us/2025/06/30/free-to-play-delta-force-coming-to-xbox-august-19/",
+        "title": "Free-to-Play Extraction Shooter Delta Force Coming to Xbox",
+        "publisher": "Xbox Wire / Team Jade",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发方关于 Xbox 上线及撤离玩法的说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "出发前选择头盔、护甲、武器、弹药和医疗物品。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "成功抵达撤离点后才能将本局携带物资带出。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "搜索地图物资或击败敌人后取得可携带物品。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "命中会影响生命值，护甲与弹药等级改变伤害结算。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "sound-information",
+        "note": "手机界面的方向和声波提示可用于判断枪声或脚步。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成部门任务并提升部门等级后开放更多补给站物品。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "可在补给站购买或交换下一局需要的装备。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/10/34/0e/10340e62-72a3-4a99-0b4a-3199680f248c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1642894547&country=cn"
+    },
+    "aliases": [
+      "三角洲行动",
+      "Delta Force"
+    ]
+  }
+]

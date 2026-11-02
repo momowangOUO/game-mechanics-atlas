@@ -1,0 +1,198 @@
+[
+  {
+    "id": "fortnite",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/content-warnings-twitchs-top-games",
+        "title": "Streams Charts — Twitch 观看时长排行",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 观看时长排行",
+        "period": "2024-04-01 至 2024-04-04",
+        "finding": "同期 Fortnite 第 5，约 629 万观看小时。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "pubg-battlegrounds",
+    "discoverySources": [
+      {
+        "url": "https://hatchet.gg/blog/the-7th-anniversary-of-pubg-a-streaming-retrospective/",
+        "title": "Stream Hatchet — 跨直播平台观看时长",
+        "publisher": "Stream Hatchet",
+        "metric": "跨直播平台观看时长",
+        "period": "2024 年 3 月",
+        "finding": "PUBG 约 1160 万观看小时、排名第 14；该段与文中单独讨论的手游主播数据区分。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "apex-legends",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/apex-legends-season-19-release-stats",
+        "title": "Streams Charts — Twitch 观看时长",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 观看时长",
+        "period": "2023 年第 19 赛季上线后的三天",
+        "finding": "约 413 万观看小时，期间 Twitch 观看时长第 7。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "the-finals",
+    "discoverySources": [
+      {
+        "url": "https://esports.gg/news/the-finals/shroud-dominates-the-finals-viewership-in-games-first-month/",
+        "title": "Esports.gg — 单频道 Twitch 观看时长",
+        "publisher": "Esports.gg",
+        "metric": "单频道 Twitch 观看时长",
+        "period": "2023 年 12 月",
+        "finding": "报道 Shroud 在 The Finals 分类约 128 万观看小时；这是单频道数据。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "overwatch-2",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/overwatch-2-twitch-season-9-viewership",
+        "title": "Streams Charts — Twitch 分类观看时长排行",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 分类观看时长排行",
+        "period": "2024-02-14",
+        "finding": "第 9 赛季上线次日，该分类进入观看时长前 7。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "marvel-rivals",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/marvel-rivals-twitch-7-days",
+        "title": "Streams Charts — Twitch 分类观看时长",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 分类观看时长",
+        "period": "2024 年 12 月全球上线后的首周",
+        "finding": "超过 1600 万观看小时，当周排名第 4。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "fall-guys",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/fall-guys-season-4-launch-stats",
+        "title": "Streams Charts — Twitch 同时观看峰值",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 同时观看峰值",
+        "period": "2020 年 8 月",
+        "finding": "报道回顾其 2020 年 8 月约 70 万同时观看峰值。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "phasmophobia",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/top-5-horror-games-twitch-2020",
+        "title": "Streams Charts — Twitch 恐怖游戏观看时长排行",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 恐怖游戏观看时长排行",
+        "period": "2020 年上线后的当年统计",
+        "finding": "报道将该作列为恐怖游戏观看时长第 2。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "content-warning",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/content-warnings-twitchs-top-games",
+        "title": "Streams Charts — Twitch 观看时长排行",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 观看时长排行",
+        "period": "2024-04-01 至 2024-04-04",
+        "finding": "约 290.8 万观看小时，期间第 11。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "chained-together",
+    "discoverySources": [
+      {
+        "url": "https://streamscharts.com/news/chained-together-one-week-twitch-recap",
+        "title": "Streams Charts — Twitch 游戏直播及峰值观众",
+        "publisher": "Streams Charts",
+        "metric": "Twitch 分类观看时长及排名",
+        "period": "2024-06-19 至 2024-06-25",
+        "finding": "报道上线后首周约 640 万观看小时、观看时长第 9；统计的是观看时间。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "buckshot-roulette",
+    "discoverySources": [
+      {
+        "url": "https://www.youtube.com/watch?v=j9vV-4mbrkI",
+        "title": "Ray Narvaez Jr / YouTube — Twitch 直播录像",
+        "publisher": "Ray Narvaez Jr / YouTube",
+        "metric": "Twitch 直播录像",
+        "period": "2024-11-07 录制，2024-11-09 发布",
+        "finding": "主播多人游玩的直播录像；只证明当时有直播传播，不据此声称榜单排名。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "poppy-playtime",
+    "discoverySources": [
+      {
+        "url": "https://knowyourmeme.com/memes/subcultures/poppy-playtime",
+        "title": "Know Your Meme — YouTube 单视频观看量",
+        "publisher": "Know Your Meme",
+        "metric": "YouTube 单视频观看量",
+        "period": "2021-10-13 发布后两个月",
+        "finding": "报道 CoryxKenshin 的第一章实况两个月超过 2300 万观看；不是直播平台总量。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "dead-by-daylight",
+    "discoverySources": [
+      {
+        "url": "https://hatchet.gg/blog/halloween-fuels-horror-games-on-live-streaming/",
+        "title": "Stream Hatchet — 跨直播平台恐怖游戏观看时长",
+        "publisher": "Stream Hatchet",
+        "metric": "跨直播平台恐怖游戏观看时长",
+        "period": "截至 2024 年 10 月的前 12 个月",
+        "finding": "报道该作在前 12 个月约 2.38 亿观看小时；该数字属于观看时间而非人数或搜索量。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  },
+  {
+    "id": "garena-free-fire",
+    "discoverySources": [
+      {
+        "url": "https://hatchet.gg/resources/guides/mobile-trends-report/",
+        "title": "Stream Hatchet — 移动游戏跨平台直播观看时长",
+        "publisher": "Stream Hatchet",
+        "metric": "移动游戏跨平台直播观看时长",
+        "period": "2024 年上半年",
+        "finding": "约 2.29 亿观看小时；不把该时长解释为搜索次数。",
+        "checkedAt": "2026-11-02"
+      }
+    ]
+  }
+]

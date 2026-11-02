@@ -1,0 +1,510 @@
+[
+  {
+    "id": "sethian",
+    "name": "Sethian",
+    "studio": "Duang! Games, LLC",
+    "year": 2016,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving"
+    ],
+    "summary": "借助笔记与词典，学习失落语言并与古老计算机交流。",
+    "analysis": "计算机只使用陌生语言；玩家既要理解回复，也要用已掌握的词句组织下一次提问。",
+    "loop": [
+      "阅读笔记并观察计算机回复",
+      "推断词语和句法，组合问题",
+      "参照新信息继续对话"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "笔记与词典用于回看语言和背景资料"
+    ],
+    "progression": [
+      "特定提问后可使用词典；游戏存在多个结局。"
+    ],
+    "scopeLabel": "2016 年发行版语言交互",
+    "scopeNotes": "本条聚焦语言推断；不假设全部问题都得到自由回答。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/432370/Sethian/",
+        "title": "Sethian on Steam",
+        "publisher": "Duang! Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对发行信息、语言、笔记和结局；未安装或试玩。"
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=813203639",
+        "title": "Sethian Walkthrough",
+        "publisher": "Steam Community",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取问答顺序、词典开放条件；攻略页链接至 Steam app 432370，与发行页为同一作品；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "根据笔记和计算机回复理解自成体系的语言，再组织提问。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "手写笔记与词典记录语言和世界资料，供后续查询。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "提出有关居民去向的问题后，词典开放供玩家使用。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/432370/capsule_616x353.jpg?t=1478711120",
+      "sourceUrl": "https://store.steampowered.com/app/432370/Sethian/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实语言、笔记和词典开放条件；未穷尽对话与结局分支。"
+  },
+  {
+    "id": "epigraph",
+    "name": "Epigraph",
+    "studio": "Matthew Brown",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving"
+    ],
+    "summary": "比较七件遗物上的铭文和已知材料，尝试翻译失落语言。",
+    "analysis": "有限的已知材料让玩家在多件遗物之间交叉比对，逐步缩小对符号含义的猜测。",
+    "loop": [
+      "阅读已给材料和遗物铭文",
+      "比较符号与图像的重复用法",
+      "输入自己的翻译并利用推断继续研究"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "七件遗物、已提供的参考资料和翻译输入"
+    ],
+    "progression": [
+      "现有资料未确认跨次进度保存规则。"
+    ],
+    "scopeLabel": "Windows 版铭文破译",
+    "scopeNotes": "只记录已公开描述的七件遗物和翻译过程。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/2789770/Epigraph/",
+        "title": "Epigraph on Steam",
+        "publisher": "Matthew Brown",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对发行信息、七件遗物、比对与输入翻译；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "比较多件遗物上的图像与符号，推断语言单位的含义。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "结合遗物铭文与给定信息，推断可用于翻译的线索。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2789770/capsule_616x353.jpg?t=1708365067",
+      "sourceUrl": "https://store.steampowered.com/app/2789770/Epigraph/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实遗物、线索比对与翻译输入；未确认全部谜题及系统反馈，故不写自动判定。"
+  },
+  {
+    "id": "the-gostak",
+    "name": "The Gostak",
+    "studio": "Carl Muckenhoupt",
+    "year": 2001,
+    "platforms": [
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving"
+    ],
+    "summary": "在充满陌生词汇的文字冒险中，依据句法和上下文理解世界并输入行动。",
+    "analysis": "熟悉的句法提供起点，但玩家必须从物体、动作和回应的关系中逐步理解生造词。",
+    "loop": [
+      "阅读陌生词构成的场景描述",
+      "比较句法与行动反馈，推测词义",
+      "输入行动并利用新反馈修正理解"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "文字场景与解析器的回应"
+    ],
+    "progression": [
+      "未核实存档与全部结局规则。"
+    ],
+    "scopeLabel": "2001 年 Inform 文字冒险",
+    "scopeNotes": "原作为 Z-code 文件，需解释器；在线解释器不记为原作网页平台。",
+    "sources": [
+      {
+        "url": "https://www.ifwiki.org/The_Gostak",
+        "title": "The Gostak",
+        "publisher": "IFWiki",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对作者、2001 年、解析器及语言形式；未安装或试玩。"
+      },
+      {
+        "url": "https://ifarchive.org/if-archive/books/IFTheoryBook.pdf",
+        "title": "IF Theory Reader",
+        "publisher": "Transcript On Press",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读对本作陌生词汇与通过理解语言操作解谜的说明；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "从类似英语的句法和陌生词汇在不同语境中的使用推断含义。",
+        "source": 0,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "knowledge-gating",
+        "note": "理解陌生动作与对象后，才能更有依据地输入命令并解决场景难题。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://ifdb.org/coverart?id=w5s3sv43s3p98v45&version=14",
+      "sourceUrl": "https://ifdb.org/viewgame?id=w5s3sv43s3p98v45"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实生造词、解析器与语言解谜；未核实完整物品系统和全部谜题。"
+  },
+  {
+    "id": "tork-language-game",
+    "name": "Tork",
+    "studio": "Nectarine",
+    "year": 2002,
+    "platforms": [
+      "web"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "puzzle-solving"
+    ],
+    "summary": "观察外星居民使用符号的情境，学习沟通以寻找修理飞船的办法。",
+    "analysis": "符号同时承担语言和界面操作：看懂居民怎样表达，才能把同一符号用于自己的行动。",
+    "loop": [
+      "观察居民交流和场景中的符号",
+      "记录并推测符号含义",
+      "组合符号与居民或物件互动"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "符号库和可回顾的对话记录"
+    ],
+    "progression": [
+      "资料描述支持本地保存；未核实全部谜题顺序。"
+    ],
+    "scopeLabel": "ABC GameOn 网页 Flash 原作",
+    "scopeNotes": "本作与 Xbox 平台游戏 Tork: Prehistoric Punk 无关。",
+    "sources": [
+      {
+        "url": "https://www.nectarine.com.au/samplework/tork/",
+        "title": "Tork game by Nectarine",
+        "publisher": "Nectarine",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "确认创作者和 ABC GameOn 项目；未安装或试玩。"
+      },
+      {
+        "url": "https://games.jayisgames.com/review/tork.php",
+        "title": "Tork - Walkthrough, Tips, Review",
+        "publisher": "Jay is games",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2002 年、网页 Flash 平台、方向键移动和沟通；未安装或试玩。"
+      },
+      {
+        "url": "https://freewaregenius.com/tork-learn-an-alien-language-in-this-online-action-adventure-flash-game/",
+        "title": "Tork: learn an alien language in this online action adventure flash game",
+        "publisher": "Freewaregenius",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读符号观察、注记及 Tork Tracker 回看功能；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "观察居民在交流与操作物件时使用的符号，推断其含义。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "玩家可为符号写下猜测，并通过 Tork Tracker 回看先前交流。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "玩家使用方向键移动角色，寻找居民和可交互地点。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://freewaregenius.com/wp-content/uploads/2008/12/tork-screenshot31.jpg",
+      "sourceUrl": "https://freewaregenius.com/tork-learn-an-alien-language-in-this-online-action-adventure-flash-game/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实原作、语言、记录和移动；未完整核对各符号含义、谜题及结局。"
+  },
+  {
+    "id": "tower-of-babel-playful-crow",
+    "name": "Tower of Babel",
+    "studio": "Playful Crow",
+    "year": 2025,
+    "platforms": [
+      "web"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving",
+      "management-production"
+    ],
+    "summary": "一边推断工人和商人使用的陌生语言，一边购买并分配建筑材料。",
+    "analysis": "交易结果既改变库存，也提供理解数字与物资名称的线索；翻译因而直接服务于施工。",
+    "loop": [
+      "观察商人的报价并购买材料",
+      "根据成交结果记录词义",
+      "辨认工人需求并分配物资"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "金币、四类材料和可编辑的词典"
+    ],
+    "progression": [
+      "游戏过程中会出现更多语言；未核实完整胜负条件。"
+    ],
+    "scopeLabel": "Coco Code GameJam #2 网页版",
+    "scopeNotes": "本条为 Playful Crow 的 2025 年游戏，与其他同名作品无关。",
+    "sources": [
+      {
+        "url": "https://playful-crow.itch.io/tower-of-babel",
+        "title": "Tower of Babel by Playful Crow",
+        "publisher": "Playful Crow",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读作者的市场、翻译和材料分配说明；未安装或试玩。"
+      },
+      {
+        "url": "https://itch.io/jam/coco-code-gamejam-2",
+        "title": "Coco Code GameJam #2",
+        "publisher": "itch.io",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对比赛时间为 2025 年及此作品属于参赛作品；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "从交易所得材料和数量推断陌生词汇，再理解工人的请求。",
+        "source": 0,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "玩家可以在游戏内词典记录并修改对外语词汇的猜测。",
+        "source": 0,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "市场提供多项报价；玩家花费金币购买材料。",
+        "source": 0,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://img.itch.zone/aW1nLzIxNDUzMjQwLnBuZw==/original/kwPT9m.png",
+      "sourceUrl": "https://playful-crow.itch.io/tower-of-babel"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实作者说明中的词义推断、词典及材料分配；未实测完整经济平衡与结局。"
+  },
+  {
+    "id": "exolinguist-4efk",
+    "name": "Exolinguist",
+    "studio": "4efk",
+    "year": 2024,
+    "platforms": [
+      "web",
+      "pc",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving"
+    ],
+    "summary": "对照语言样本推断外星信息，输入译文并提交检查。",
+    "analysis": "玩家先利用已给出的部分符号含义建立假设，再用待翻译信息检验对其余内容的理解。",
+    "loop": [
+      "阅读待翻译的信息与语言样本",
+      "推断其余符号并填写译文",
+      "提交译文检查结果"
+    ],
+    "learning": [
+      "观察语言在不同语境中的用法，再决定如何行动。"
+    ],
+    "caveats": [
+      "参考条目仅覆盖下列已核实规则，其他机制尚未完整核查。"
+    ],
+    "resources": [
+      "语言样本和待翻译文本"
+    ],
+    "progression": [
+      "资料提及误判可能造成严重后果；完整结局条件未核实。"
+    ],
+    "scopeLabel": "Mini Jam 149 发行版",
+    "scopeNotes": "仅讨论作者提供的网页与 Windows、Linux 下载版说明。",
+    "sources": [
+      {
+        "url": "https://4efk.itch.io/exolinguist",
+        "title": "Exolinguist by 4efk",
+        "publisher": "4efk",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对作者、发行平台、语言样本、译文输入和检查；未安装或试玩。"
+      },
+      {
+        "url": "https://itch.io/jam/mini-jam-149-ancient",
+        "title": "Mini Jam 149: Ancient",
+        "publisher": "itch.io",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对游戏制作比赛日期为 2024 年；未安装或试玩。"
+      },
+      {
+        "url": "https://itch.io/jam/mini-jam-149-ancient/rate/2459100",
+        "title": "Exolinguist for Mini Jam 149: Ancient",
+        "publisher": "itch.io",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "确认作品由 4efk 参赛且以翻译外星语言为核心；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "根据样本给出的部分符号含义，推断待译文本中的其余内容。",
+        "source": 0,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "输入或选择译文后，按确认键提交系统检查。",
+        "source": 0,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://img.itch.zone/aW1nLzE0NTg0MDc0LnBuZw==/original/kOm413.png",
+      "sourceUrl": "https://4efk.itch.io/exolinguist"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实语言样本与译文提交检查；未核对全部语言结构、关卡和结局。"
+  }
+]

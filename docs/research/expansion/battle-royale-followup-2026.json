@@ -1,0 +1,580 @@
+[
+  {
+    "id": "naraka-bladepoint",
+    "name": "永劫无间 / NARAKA: BLADEPOINT",
+    "studio": "24 Entertainment",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "xbox",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "battle-royale",
+      "action"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "summary": "运用近战招式、英雄能力和钩索，与其他玩家争取最后胜利。",
+    "analysis": "钩索把接近、撤离和占据高处纳入同一套战斗位置选择。",
+    "loop": [
+      "选择英雄并进入对局",
+      "寻找装备，以钩索调整位置",
+      "运用近战招式与对手交锋"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "对局中寻找的武器与装备"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "标准大逃杀模式",
+    "scopeNotes": "2021 年 PC 发售；不将其他独立玩法计入本例。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/",
+        "title": "NARAKA: BLADEPOINT on Steam",
+        "publisher": "NetEase Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对发行、英雄能力及近战大逃杀；未安装或试玩。"
+      },
+      {
+        "url": "https://news.xbox.com/en-us/2022/06/23/getting-started-with-naraka-bladepoint/",
+        "title": "Getting Started with Naraka: Bladepoint",
+        "publisher": "Xbox Wire",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读近战及移动介绍；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "角色使用近距离武器与对手交锋。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "grappling",
+        "note": "钩索让角色向目标移动，改变战斗位置。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "多名玩家直接对抗，争夺大逃杀胜利。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1203220/60bfed22c5f44d8b18a28648add05ea65ef5de56/capsule_616x353.jpg?t=1792651021",
+      "sourceUrl": "https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实近战、钩索和玩家对抗；未逐项核实各赛季装备与复活规则。"
+  },
+  {
+    "id": "call-of-duty-warzone",
+    "name": "使命召唤：战区 / Call of Duty: Warzone",
+    "studio": "Infinity Ward / Raven Software",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "battle-royale",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration"
+    ],
+    "summary": "在大地图搜集武器和护甲，与其他队伍交战并争取成为最后生还队伍。",
+    "analysis": "在 Black Ops Royale 中，玩家从简单装备起步，必须在地图上寻找补给和升级组件。",
+    "loop": [
+      "选择落点并进入 Avalon",
+      "搜集武器、护甲和配件",
+      "协同队伍穿越收缩区域并对抗其他队伍"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "对局内取得的武器、护甲及用于升级的配件套件"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "2026 年 3 月 Black Ops Royale 规则",
+    "scopeNotes": "Warzone 起源于 2020 年；这里专述 2026 年 Black Ops Royale，不把其他大逃杀模式的商店或古拉格规则套入。活动是否在当前轮换中未核实。 2020 年原作后称 Warzone Caldera，已于 2023 年 9 月 21 日停服；本例为后续独立体验中的 2026 年模式。",
+    "sources": [
+      {
+        "url": "https://www.callofduty.com/blog/2026/03/black-ops-7-black-ops-royale-battle-royale-deep-dive",
+        "title": "Announcing Black Ops Royale: A Deep Dive",
+        "publisher": "Call of Duty",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读 2026 年模式、装备升级、圈缩与胜利规则；未安装或试玩。"
+      },
+      {
+        "url": "https://blog.activision.com/call-of-duty/2020-03/Free-to-Play-Call-of-Duty-Warzone-is-Live-and-Available-for-Everyone-to-Download-Now",
+        "title": "Call of Duty: Warzone Is Live",
+        "publisher": "Activision",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2020 年原作发售；未安装或试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/",
+        "title": "Call of Duty: Warzone on Steam",
+        "publisher": "Activision",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 Steam 作品页面及作品图；未安装或试玩。"
+      },
+      {
+        "url": "https://support.activision.com/no/articles/warzone-caldera-sunset",
+        "title": "Call of Duty: Warzone Caldera Sunset FAQ",
+        "publisher": "Activision Support",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读原 Warzone Caldera 停服日期及其与后续 Warzone 的区别；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "pvp-opposition",
+        "note": "25 支四人队伍相互对抗，争取成为最后的队伍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "收集配件套件提升武器稀有度并解锁预设配件。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "模式提供陆、海、空载具供玩家驾驶。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "搜寻装备并通过打开保险箱等活动获得补给。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/0d79f08428df3a85284e48e001da8693f854134c/capsule_616x353_alt_assets_20.jpg?t=1789748005",
+      "sourceUrl": "https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实 2026 年 3 月具体模式；当前轮换、后续平衡及其他模式未穷尽。"
+  },
+  {
+    "id": "call-of-duty-mobile",
+    "name": "使命召唤手游 / Call of Duty: Mobile",
+    "studio": "TiMi Studio Group",
+    "year": 2019,
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "battle-royale",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "vehicle-driving"
+    ],
+    "summary": "在手游的大逃杀模式中选择职业、空降搜集装备并与对手争取生存。",
+    "analysis": "职业能力与落点选择影响队伍前期获得的信息和移动方式。",
+    "loop": [
+      "选择大逃杀模式和职业",
+      "空降后搜集装备并前往安全区",
+      "与对手交战，必要时救援队友"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "大逃杀地图上的枪械、治疗物资、弹药与护甲"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "2019 年官方指南所述大逃杀模式",
+    "scopeNotes": "仅讨论官方 2019 年模式指南，不把团队竞技及后来赛季变更混入。",
+    "sources": [
+      {
+        "url": "https://blog.activision.com/call-of-duty/2019-10/Call-of-Duty-Mobile-Boot-Camp-Part-3",
+        "title": "Call of Duty: Mobile Boot Camp Part 3",
+        "publisher": "Activision",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读 2019 年职业、搜集、载具和大逃杀对抗；未安装或试玩。"
+      },
+      {
+        "url": "https://www.callofduty.com/en/store/games/mobile",
+        "title": "Call of Duty Store: Mobile",
+        "publisher": "Call of Duty",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对手游平台和百人大逃杀模式；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "进入对局前选择一种职业，决定可用装备和能力。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家通过屏幕射击按钮使用枪械攻击对手。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "地图内提供全地形车与轻型直升机等载具。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "单人、双人或四人队伍互相竞争最后的生存位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/mobile/bo6-season-3/store-codm-hero-carousel.webp",
+      "sourceUrl": "https://www.callofduty.com/en/store/games/mobile"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实 2019 年大逃杀指南；未逐项复核 2026 年职业、地图及复活规则。"
+  },
+  {
+    "id": "tetris-99",
+    "name": "俄罗斯方块 99 / Tetris 99",
+    "studio": "ARIKA",
+    "year": 2019,
+    "platforms": [
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "battle-royale",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "matching-clearing"
+    ],
+    "summary": "与最多 98 名对手同时消行，通过选择攻击目标争取最后胜利。",
+    "analysis": "消行既要维持自己的盘面，也会影响其他玩家；目标选择与徽章改变攻击压力。",
+    "loop": [
+      "旋转并摆放方块完成消行",
+      "选择目标向对手发送干扰",
+      "处理来袭并争取留到最后"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "对局中取得的徽章会提高发送干扰行的攻击力"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "Nintendo Switch 在线 Tetris 99",
+    "scopeNotes": "标准在线对战；离线 DLC 和团队模式不作同规则处理。",
+    "sources": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/tetris-99-switch/",
+        "title": "Tetris 99 for Nintendo Switch",
+        "publisher": "Nintendo",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读 99 人对战、目标选择和徽章；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "line-completion-clear",
+        "note": "方块填满横行后消除该行。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家消行攻击其他对手，最终争夺最后存活位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "获得更多徽章会提高发送干扰行的攻击力。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch/70010000018547/2aaa58fe27cdc4784f54ee9f4e7dffd43ad1fd1fffabfd86029889696220d33b",
+      "sourceUrl": "https://www.nintendo.com/us/store/products/tetris-99-switch/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实标准在线对战、攻击对象和徽章；未核实完整积分和所有赛季活动。"
+  },
+  {
+    "id": "farlight-84",
+    "name": "Farlight 84",
+    "studio": "Lilith Games",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "battle-royale",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "vehicle-driving"
+    ],
+    "summary": "选择不同能力的英雄，在大逃杀战场使用枪械和载具作战。",
+    "analysis": "英雄能力与载具提供不同的接敌和撤退手段；重制后的版本规则需要单独界定。",
+    "loop": [
+      "选择英雄进入战场",
+      "搜集装备并与对手交锋",
+      "借助英雄能力和载具调整位置"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "战场中的枪械、英雄能力和载具"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "官方页面所述英雄大逃杀",
+    "scopeNotes": "2021 年曾有早期移动版本；2023 年全球发行，后续版本曾重启更新。不同版本复活规则不可互套。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1928420/Farlight_84/",
+        "title": "Farlight 84 on Steam",
+        "publisher": "Farlight Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 PC 作品和官方玩法介绍；未安装或试玩。"
+      },
+      {
+        "url": "https://www.farlightgames.com/games/",
+        "title": "Farlight Games: Games",
+        "publisher": "Farlight Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对开发商、2023 全球发行与英雄大逃杀定位；未安装或试玩。"
+      },
+      {
+        "url": "https://farlight84-official.farlightgames.com/",
+        "title": "Farlight 84",
+        "publisher": "Farlight Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读官方列出的武器和载具；未安装或试玩。"
+      },
+      {
+        "url": "https://gamefaqs.gamespot.com/android/404440-farlight-84/data",
+        "title": "Farlight 84 Release Information for Android",
+        "publisher": "GameFAQs",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2021 年 Android 早期发行记录；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "pvp-opposition",
+        "note": "玩家在英雄大逃杀中与其他玩家竞争。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "官方列出可用于战场移动的摩托、悬浮载具等。",
+        "source": 2,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家使用枪械向对手射击。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1928420/ee3882a9c17b5df1294b9d3211cd3037c6fea879/capsule_616x353.jpg?t=1776926334",
+      "sourceUrl": "https://store.steampowered.com/app/1928420/Farlight_84/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实英雄对抗、枪械和官方列示的载具；未确认每种载具在当前赛季的可用性。"
+  },
+  {
+    "id": "super-animal-royale",
+    "name": "Super Animal Royale",
+    "studio": "Pixile Studios",
+    "year": 2018,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "battle-royale",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration"
+    ],
+    "summary": "控制动物角色从俯视角搜寻装备并射击，与其他玩家争取生存。",
+    "analysis": "俯视视角下，移动路线和遮蔽信息共同影响交战与寻找装备。",
+    "loop": [
+      "空降地图并寻找武器",
+      "移动并应对其他动物玩家",
+      "争取成为最后的生还者"
+    ],
+    "learning": [
+      "在明确版本和模式边界后，再比较对局中的风险与行动。"
+    ],
+    "caveats": [
+      "网络模式及活动可能随赛季调整；此条仅描述注明版本的公开资料。"
+    ],
+    "resources": [
+      "地图中寻找的枪械及其他装备"
+    ],
+    "progression": [
+      "未完整核查跨赛季或账号成长。"
+    ],
+    "scopeLabel": "常规 64 人大逃杀",
+    "scopeNotes": "2018 年进入 Steam 抢先体验，2021 年正式版登陆多平台；不包含后续社交玩法。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/843380/Super_Animal_Royale/",
+        "title": "Super Animal Royale on Steam",
+        "publisher": "Pixile Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对俯视大逃杀、地图及作品图；未安装或试玩。"
+      },
+      {
+        "url": "https://blog.playstation.com/2021/05/06/super-animal-royale-brings-bonkers-action-to-ps4-and-ps5-later-this-year/",
+        "title": "Super Animal Royale brings bonkers action to PS4 and PS5",
+        "publisher": "PlayStation Blog",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 64 人俯视射击和仓鼠球；未安装或试玩。"
+      },
+      {
+        "url": "https://mp1st.com/interviews/pixile-talks-super-animal-royale-idea-behind-the-game-competition-and-more",
+        "title": "Pixile Talks Super Animal Royale",
+        "publisher": "MP1st",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取开发者对 2018 年进入抢先体验的说明；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "pvp-opposition",
+        "note": "最多 64 名动物角色争夺最后生存者。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家使用枪械向对手射击。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "玩家在俯视地图中移动，寻找武器和位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/843380/62a7d5938342d50dc333fc2e338dca5ab9cbeb6e/capsule_616x353_alt_assets_23.jpg?t=1793221475",
+      "sourceUrl": "https://store.steampowered.com/app/843380/Super_Animal_Royale/"
+    },
+    "aliases": [],
+    "referenceOnly": true,
+    "coverageNote": "已核实原作抢先体验年份及大逃杀基本规则；未逐项核实地图、装备和赛季变化。"
+  }
+]

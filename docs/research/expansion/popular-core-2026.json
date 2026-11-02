@@ -1,0 +1,593 @@
+[
+  {
+    "id": "hollow-knight-silksong",
+    "name": "空洞骑士：丝之歌 / Hollow Knight: Silksong",
+    "studio": "Team Cherry",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "metroidvania",
+      "platformer",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "platforming",
+      "action-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "操纵黄蜂穿越纺络，使用骨钉、丝线技能与工具作战，获得新能力后探索更多通路。",
+    "analysis": "攻击得到的丝线同时供治疗和技能使用，工具又受徽章配置约束；玩家需要在眼前的生存和进攻机会之间分配同一份战斗资源。",
+    "loop": [
+      "探索区域、寻找通路与愿望任务",
+      "利用移动、骨钉和工具应对敌人与首领",
+      "回到长椅调整工具，凭新能力继续探索"
+    ],
+    "learning": [
+      "让治疗与技能争用丝线，可以让主动进攻、及时治疗与保留技能各有代价。"
+    ],
+    "caveats": [
+      "钢铁之魂是另一个模式，失败后果与普通流程不同。",
+      "攀附与钩索等能力需要解锁后才能使用。"
+    ],
+    "resources": [
+      "丝线：治疗及丝线技能共用",
+      "贝壳碎片：在长椅补充红色工具的次数"
+    ],
+    "progression": [
+      "移动能力与已取得工具随主流程保留",
+      "徽章改变工具配置及攻击特点"
+    ],
+    "scopeLabel": "标准单人主流程",
+    "scopeNotes": "普通单人主流程。攀附与钩索等移动能力需要随流程取得；钢铁之魂另有永久死亡规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1030300&l=english&cc=us",
+        "title": "Hollow Knight: Silksong",
+        "publisher": "Team Cherry",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店 API 的发行、平台、作品代表图与说明；未将评价数换算为销量或玩家总数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hollow_Knight:_Silksong?useskin=vector",
+        "title": "Hollow Knight: Silksong — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取并保存 Gameplay 段落；具体规则按社区资料标注，未声称安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "黄蜂以骨钉进行近身攻击，攻击动作会受徽章风格影响。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "在长椅选择徽章、工具和丝线技能，徽章限制各色工具的配置。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "攻击可以积累丝线，再用丝线治疗或发动丝线技能。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "红色工具有使用次数，需要消耗贝壳碎片补充。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "长椅提供恢复和配置功能，也是失去全部生命后的复活点。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "quest-progression",
+        "note": "愿望任务由人物或任务板提供，并记入菜单。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "wall-climb",
+        "note": "攀附能力使黄蜂可以沿墙攀爬。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "取得 Cling Grip 后。"
+      },
+      {
+        "id": "grappling",
+        "note": "Clawline 提供抓钩式位移。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "取得 Clawline 后。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1030300&l=english&cc=us"
+    },
+    "aliases": [
+      "空洞骑士：丝之歌"
+    ]
+  },
+  {
+    "id": "black-myth-wukong",
+    "name": "黑神话：悟空 / Black Myth: Wukong",
+    "studio": "Game Science",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "操纵天命人探索各章区域，以棍法、闪避、法术和变化应对妖怪与首领，并调整技能与装备。",
+    "analysis": "棍势、法术和变化承担不同攻防任务，重击又需要经营棍势资源；配置选择需要与玩家能否读懂敌人动作一起考虑。",
+    "loop": [
+      "探索章节场景、发现人物与敌人",
+      "观察出招，用棍法、闪避和法术处理攻防",
+      "在土地庙调整技能与配置，再挑战后续区域"
+    ],
+    "learning": [
+      "把近战积累的资源用于重击，可以让连续进攻和等待窗口之间形成取舍。"
+    ],
+    "caveats": [
+      "变化与常规法术的消耗方式不同，需要分别安排使用时机。"
+    ],
+    "resources": [
+      "气力：攻击、奔跑及闪避使用",
+      "法力、法术冷却与棍势限制不同招式的使用"
+    ],
+    "progression": [
+      "灵光点发展技能，亦可重新分配",
+      "装备、法宝与精魄扩展可选配置"
+    ],
+    "scopeLabel": "标准单人主流程",
+    "scopeNotes": "单人主流程，研究棍法、法术、变化、土地庙与角色配置。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2358720&l=english&cc=us",
+        "title": "Black Myth: Wukong",
+        "publisher": "Game Science",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店 API 的发行、平台、作品代表图与说明；未将评价数换算为销量或玩家总数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Black_Myth:_Wukong?useskin=vector",
+        "title": "Black Myth: Wukong — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取并保存 Gameplay 段落；具体规则按社区资料标注，未声称安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "棍法以劈、立、戳等棍势提供不同近战动作。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "dodge-move",
+        "note": "玩家主动闪避攻击，闪避会消耗气力。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "奔跑、攻击与闪避共享气力；常规法术另受法力约束。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "轻击与及时闪避等行动积累棍势资源，供重击使用。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "法术和变化具有冷却，不能连续无限施放。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "玩家组合不同法术、精魄、法宝及装备。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "respec",
+        "note": "技能点“灵光点”可以重新分配以调整打法。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "土地庙沿流程提供检查点与返回位置。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2358720&l=english&cc=us"
+    },
+    "aliases": [
+      "黑神话：悟空"
+    ]
+  },
+  {
+    "id": "cyberpunk-2077",
+    "name": "赛博朋克 2077 / Cyberpunk 2077",
+    "studio": "CD PROJEKT RED",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "shooter",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "action-combat",
+      "buildcrafting",
+      "exploration",
+      "dialogue-choice",
+      "vehicle-driving"
+    ],
+    "summary": "作为雇佣兵 V 在夜之城接取任务，以枪械、近战或黑客能力处理行动，并用义体和角色配置发展自己的打法。",
+    "analysis": "角色配置会改变解决任务的办法，而任务选择又影响剧情和人物关系；战斗成长与叙事选择并行，不能只把它当作第一人称射击案例。",
+    "loop": [
+      "接取委托、探索夜之城并选择处理办法",
+      "使用战斗、潜行或黑客能力完成目标",
+      "获得报酬和成长，调整义体与武器，再接取新任务"
+    ],
+    "learning": [
+      "让配置影响可用办法，而非只提高伤害数值，能让同一个任务产生不同玩法。"
+    ],
+    "caveats": [
+      "本条采用 2.x 版本规则，部分能力与初始版本不同。",
+      "往日之影的狗镇与遗物能力需要扩展内容。"
+    ],
+    "resources": [
+      "武器、义体和能力配置决定行动手段",
+      "任务经验与街头声望分别影响成长和可接触内容"
+    ],
+    "progression": [
+      "任务选择和对话可以通向不同结果",
+      "武器熟练、属性和义体能力持续发展"
+    ],
+    "scopeLabel": "2.x 基础游戏单人主线",
+    "scopeNotes": "2.x 版本基础游戏的单人主线与委托。往日之影另有狗镇和遗物能力。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1091500&l=english&cc=us",
+        "title": "Cyberpunk 2077",
+        "publisher": "CD PROJEKT RED",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店 API 的发行、平台、作品代表图与说明；未将评价数换算为销量或玩家总数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cyberpunk_2077?useskin=vector",
+        "title": "Cyberpunk 2077 — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取并保存 Gameplay 段落；具体规则按社区资料标注，未声称安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "玩家以第一人称使用并瞄准枪械。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "melee-attack",
+        "note": "近战武器提供与枪械不同的贴身攻击办法。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "武器与义体配置改变玩家可用的攻击和移动手段。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "玩家可在夜之城驾驶载具。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "人物对话提供回应选项，出身也会影响部分选项。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "route-branching",
+        "note": "任务中的选择可以使剧情走向和结局不同。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "quest-progression",
+        "note": "中间人提供委托，任务完成后获得后续报酬与内容。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "character-experience",
+        "note": "主线任务提供角色成长所需的经验。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/48a93d6445a67520ea49833c93dae8f2e68fc540/header_alt_assets_9.jpg?t=1792682505",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1091500&l=english&cc=us"
+    },
+    "aliases": [
+      "赛博朋克 2077"
+    ]
+  },
+  {
+    "id": "hi-fi-rush",
+    "name": "完美音浪 / Hi-Fi RUSH",
+    "studio": "Tango Gameworks",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "rhythm-game",
+      "platformer"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "rhythm-play",
+      "platforming"
+    ],
+    "summary": "在随音乐运转的关卡里操纵阿茶战斗，按拍输入可提高攻击表现，并通过招架和节奏应答处理敌人。",
+    "analysis": "它将真实的动作攻防与音乐拍点结合：按拍提高表现，但玩家仍要处理敌人、空间和攻击窗口，不能与只判定谱面输入的音游混为一类。",
+    "loop": [
+      "穿越关卡并观察敌人攻击节奏",
+      "使用近战、连段与招架处理战斗",
+      "收集齿轮购买新招式，进入下一段关卡"
+    ],
+    "learning": [
+      "基础动作可以自动合拍，而准确输入额外奖励表现，能在可玩性与节奏熟练度之间分层。"
+    ],
+    "caveats": [
+      "普通攻击可以在未准确踩拍时发动；准确输入会改善战斗表现。",
+      "BPM RUSH、Rhythm Tower 等是主线之外的额外挑战。"
+    ],
+    "resources": [
+      "齿轮用于购买新招式、能力和增益"
+    ],
+    "progression": [
+      "招式和能力随流程解锁",
+      "通关后可重访关卡，并开放额外挑战"
+    ],
+    "scopeLabel": "标准单人主流程",
+    "scopeNotes": "普通单人主线，研究关卡中的节奏战斗与招式成长。额外挑战单独开放。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1817230&l=english&cc=us",
+        "title": "Hi-Fi RUSH",
+        "publisher": "KRAFTON, Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店 API 的发行、平台、作品代表图与说明；未将评价数换算为销量或玩家总数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hi-Fi_Rush?useskin=vector",
+        "title": "Hi-Fi Rush — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取并保存 Gameplay 段落；具体规则按社区资料标注，未声称安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "rhythmic-input",
+        "note": "准确跟随拍点输入会提高攻击效果，部分战斗要求节奏应答。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "melee-attack",
+        "note": "阿茶在关卡中使用近战攻击处理敌人。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "parry",
+        "note": "在敌人攻击命中的时刻招架，可以取消该次攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "loot-drop",
+        "note": "战斗和关卡探索可以取得齿轮，再用于购买能力。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成主线后开放重访关卡、额外难度和Rhythm Tower。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "首次完成主线后。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817230/header.jpg?t=1764916407",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1817230&l=english&cc=us"
+    },
+    "aliases": [
+      "完美音浪"
+    ],
+    "referenceOnly": true,
+    "coverageNote": "已核对节奏判定、近战、招架、齿轮获取与通关解锁。平台移动和芯片配置的细分机制资料仍待补齐。"
+  },
+  {
+    "id": "crypt-of-the-necrodancer",
+    "name": "节奏地牢 / Crypt of the NecroDancer",
+    "studio": "Brace Yourself Games",
+    "year": 2014,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "roguelite",
+      "rhythm-game"
+    ],
+    "playStyleIds": [
+      "rhythm-play",
+      "platforming",
+      "action-combat"
+    ],
+    "summary": "按照音乐拍点在地牢棋格中移动和攻击，学习怪物的固定行动规律，并带着新装备继续下层。",
+    "analysis": "拍点同时限制玩家行动和敌人节奏，让空间走位变成连续的节奏判断；失拍不一定直接扣血，却可能把角色留在危险位置。",
+    "loop": [
+      "观察地形、怪物与当前节拍",
+      "按拍移动、攻击并收集装备和金币",
+      "通过关卡或失败返回大厅，调整后再次挑战"
+    ],
+    "learning": [
+      "将敌人的空间模式与音乐周期对应，能让节奏反馈直接参与战术判断。"
+    ],
+    "caveats": [
+      "2014 年开放抢先体验，2015 年正式发行。",
+      "本条研究 Cadence 普通分区；其他角色和 All Zones 的规则另计。",
+      "音乐持续推进，玩家等待时也会错过行动拍点。"
+    ],
+    "resources": [
+      "金币用于地牢中的购买",
+      "钻石可投入大厅中的持久强化"
+    ],
+    "progression": [
+      "分区挑战失败会丢失本次的物品和金币",
+      "钻石和已解锁内容按本模式规则保留"
+    ],
+    "scopeLabel": "Cadence 普通分区冒险",
+    "scopeNotes": "Cadence 的普通分区冒险。其他角色与 All Zones 模式的节奏、强化和失败规则可能不同。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=247080&l=english&cc=us",
+        "title": "Crypt of the NecroDancer",
+        "publisher": "Brace Yourself Games / Klei Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取官方商店 API 的发行、平台、作品代表图与说明；未将评价数换算为销量或玩家总数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Crypt_of_the_NecroDancer?useskin=vector",
+        "title": "Crypt of the NecroDancer — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取并保存 Gameplay 段落；具体规则按社区资料标注，未声称安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "rhythmic-input",
+        "note": "普通角色需要按音乐拍点移动或攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "direct-movement",
+        "note": "玩家直接选择角色在地牢棋格上的移动方向。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "melee-attack",
+        "note": "玩家接近敌人，并依据武器攻击范围在拍点上攻击。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "generated-layout",
+        "note": "地下城楼层会生成不同布局。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续击败敌人且不受伤或失拍，会累积金币倍率；失拍会打断倍率。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "run-reset",
+        "note": "死亡后返回大厅，并失去本次地牢中的装备与金币。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "persistent-stat-upgrade",
+        "note": "大厅可用钻石购买跨次冒险保留的能力强化。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      },
+      {
+        "id": "damage-health",
+        "note": "角色受怪物攻击会失去生命，生命耗尽则本次冒险结束。",
+        "source": 1,
+        "evidenceKind": "community_documentation"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/247080/d82a7663aad7a678370462212071264cbee7fb47/header.jpg?t=1791916929",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=247080&l=english&cc=us"
+    },
+    "aliases": [
+      "节奏地牢"
+    ]
+  }
+]

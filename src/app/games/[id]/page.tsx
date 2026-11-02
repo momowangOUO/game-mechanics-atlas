@@ -64,7 +64,7 @@ export default async function GamePage({
         description={game.summary}
       >
         <div className="detail-header-tools">
-          <span className="chip">真实案例</span>
+          <span className="chip">{game.referenceOnly ? "参考条目" : "游戏案例"}</span>
           <Link className="button" href={`/graph?game=${game.id}`}>
             游戏机制总览 ↗
           </Link>
@@ -73,6 +73,7 @@ export default async function GamePage({
           </Link>
         </div>
       </PageHead>
+      {game.referenceOnly && <section className="scope-box" aria-label="资料进度"><h2>资料进度</h2><p>{game.coverageNote}</p></section>}
       <div className="game-layout">
         <div className="game-worksheet">
           <GameCover game={game} large />

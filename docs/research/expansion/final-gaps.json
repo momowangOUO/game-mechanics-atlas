@@ -146,7 +146,7 @@
     ],
     "playStyleIds": [
       "aiming-shooting",
-      "tactical-command"
+      "spatial-planning"
     ],
     "summary": "五人队伍轮换进攻与防守，用无人机和监控搜集情报，再以墙体破坏、垂直进攻和独特装置争取爆破目标。",
     "analysis": "地图的墙面既能防守，也能被改成视线和入口；情报价值会随玩家改变建筑结构而变化。",
@@ -755,115 +755,6 @@
     ]
   },
   {
-    "id": "eville",
-    "name": "恶灵村 / Eville",
-    "studio": "VestGames",
-    "year": 2022,
-    "platforms": [
-      "pc"
-    ],
-    "mobileOrigin": false,
-    "genreIds": [
-      "social-deduction"
-    ],
-    "playStyleIds": [
-      "social-negotiation",
-      "investigation-deduction"
-    ],
-    "summary": "在村落昼夜里以随机职责调查或制造谋杀，用角色技能、物品和证词判断同伴，再通过投票处置嫌疑人。",
-    "analysis": "调查手段能留下具体可争辩的信息，凶手又能夜间移动、偷窃和诅咒，使交流围绕实际行动的后果展开。",
-    "loop": [
-      "获得秘密职责与阵营",
-      "白天调查、交易和讨论，夜间使用角色能力行动",
-      "投票处置嫌疑人，按阵营条件争取胜利"
-    ],
-    "learning": [
-      "社交推理若提供可追溯的行动工具，可以让发言争论有明确的信息来源。"
-    ],
-    "caveats": [
-      "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。"
-    ],
-    "resources": [
-      "药剂可保护、治疗或毒害角色",
-      "商店物品用于自保、规避陷阱和收集情报"
-    ],
-    "progression": [
-      "每次会话重新随机分配职责",
-      "死亡后可成为幽灵，以新的能力影响仍活着的玩家"
-    ],
-    "scopeLabel": "普通村民与共谋者会话",
-    "scopeNotes": "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。",
-    "sources": [
-      {
-        "url": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us",
-        "title": "Eville",
-        "publisher": "Steam / VestGames",
-        "type": "official_store",
-        "checkedAt": "2026-11-02",
-        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
-      }
-    ],
-    "mechanics": [
-      {
-        "id": "hidden-role",
-        "note": "村民与共谋者的阵营不向所有玩家公开，双方需要判断谁可信",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "identity-voting",
-        "note": "白天可召开会议并投票处决被怀疑的玩家",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "role-asymmetry",
-        "note": "侦探、陷阱师、先知与灵媒等职责具有不同调查或行动能力",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "random-draw",
-        "note": "每场按人数分配随机职责，不能固定记住某人的身份",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "day-night-cycle",
-        "note": "白天讨论和判断嫌疑，夜晚允许共谋者潜入住处等职责行动",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "barter-trade",
-        "note": "向商贩或黑市购买情报与保护类物品",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "present"
-      },
-      {
-        "id": "scouting-tracking",
-        "note": "特定职责可以看脚印、放置观察结界等，定位其他玩家的行动",
-        "source": 0,
-        "evidenceKind": "official_description",
-        "status": "conditional",
-        "condition": "本场职责提供脚印或观察结界等调查能力"
-      }
-    ],
-    "cover": {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/header.jpg?t=1773308897",
-      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
-    },
-    "aliases": [
-      "恶灵村"
-    ]
-  },
-  {
     "id": "untrusted",
     "name": "Untrusted",
     "studio": "playuntrusted.com",
@@ -878,8 +769,7 @@
     ],
     "playStyleIds": [
       "social-negotiation",
-      "investigation-deduction",
-      "tactical-command"
+      "investigation-deduction"
     ],
     "summary": "在黑客团队中隐藏身份、记录行动并交叉核对日志，按日夜选择技能，一边突破网络一边找出潜伏特工。",
     "analysis": "日志能被伪造，阵营看到的网络范围又不同；玩家必须同时验证人的说法和机器上的记录。",

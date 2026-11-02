@@ -93,6 +93,8 @@ test("registry points only at generated entity resources and real page alternate
     groups: taxonomyGroups.length,
     mechanics: dataset.mechanics.length,
     games: dataset.games.length,
+    detailedCases: dataset.games.filter(game => !game.referenceOnly).length,
+    referenceCases: dataset.games.filter(game => game.referenceOnly).length,
     types: dataset.genres.length,
     recipes: dataset.recipes.length,
     instances: dataset.instances.length,

@@ -71,7 +71,7 @@ test("sitemap matches all content routes without query variants or invented modi
   const catalog = await (
     await request.get(appPath("/data/v1/catalog.json"))
   ).json();
-  const indexes = ["/", "/taxonomy", "/mechanics", "/games", "/games/coverage", "/play-styles", "/types", "/graph", "/lab", "/compare", "/heat", "/method", "/sources", "/for-agents", "/copyright"];
+  const indexes = ["/", "/taxonomy", "/mechanics", "/games", "/games/coverage", "/games/discovery", "/play-styles", "/types", "/graph", "/lab", "/compare", "/heat", "/method", "/sources", "/for-agents", "/copyright"];
   const expected = new Set([
     ...indexes.map(canonicalUrl),
     ...playStyles.map(row => canonicalUrl(`/play-styles/${row.id}`)),
@@ -102,6 +102,8 @@ test("static machine resources expose real IDs, exact instance conditions and so
     groups: taxonomyGroups.length,
     mechanics: dataset.mechanics.length,
     games: dataset.games.length,
+    detailedCases: dataset.games.filter(game => !game.referenceOnly).length,
+    referenceCases: dataset.games.filter(game => game.referenceOnly).length,
     types: dataset.genres.length,
     recipes: dataset.recipes.length,
     instances: dataset.instances.length,

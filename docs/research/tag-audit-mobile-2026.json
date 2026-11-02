@@ -1,0 +1,2701 @@
+[
+  {
+    "id": "clash-of-clans",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "reason": "建设村庄及军队攻防支撑策略、指挥与生产。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Clash+of+Clans&entity=software&country=us&limit=5"
+    ],
+    "changed": false
+  },
+  {
+    "id": "hay-day",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "management-production"
+    ],
+    "reason": "种植、饲养和加工订单构成持续农场经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Hay+Day&entity=software&country=us&limit=5"
+    ],
+    "changed": false
+  },
+  {
+    "id": "rise-of-kingdoms",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "exploration"
+    ],
+    "reason": "城市经营、地图侦察和联盟调兵分别支持经营、探索与指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Rise+of+Kingdoms&entity=software&country=us&limit=5"
+    ],
+    "changed": false
+  },
+  {
+    "id": "lords-mobile",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "collection-training"
+    ],
+    "reason": "王国建设和联盟战斗为策略与经营；英雄招募培养支持收集培养。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Lords+Mobile&entity=software&country=us&limit=5"
+    ],
+    "changed": false
+  },
+  {
+    "id": "the-battle-of-polytopia",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "exploration",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "exploration",
+      "management-production",
+      "turn-based-combat"
+    ],
+    "reason": "部落在地图上逐回合移动、攻击和发展科技；保留探索、经营与单位指挥，并标记回合战斗。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=The+Battle+of+Polytopia&entity=software&country=us&limit=5",
+      "https://store.steampowered.com/news/posts/?appids=874390&enddate=1594736726"
+    ],
+    "changed": true
+  },
+  {
+    "id": "farmville-3",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "management-production"
+    ],
+    "reason": "繁育、工人生产和订单扩建共同构成农场经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=FarmVille+3&entity=software&country=us&limit=5",
+      "https://www.pocketgamer.biz/zynga-soft-launches-farmville-3-animals/",
+      "https://www.farmville3.com/helpinghands"
+    ],
+    "changed": false
+  },
+  {
+    "id": "idle-apocalypse",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "reason": "高塔生产与末日重开持续投资，符合模拟经营及放置增量。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Idle+Apocalypse&entity=software&country=us&limit=5"
+    ],
+    "changed": false
+  },
+  {
+    "id": "summoners-war",
+    "oldGenreIds": [
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "选择魔灵及符文后，在回合中选择目标和技能；保留收集培养，改用回合战斗，不把编队本身算作战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Summoners+War&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Summoners_War:_Sky_Arena"
+    ],
+    "changed": true
+  },
+  {
+    "id": "clash-royale",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "tactical-command"
+    ],
+    "reason": "八卡组牌和实时部署围绕争夺塔楼，支持策略、出牌和指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Clash+Royale&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Clash_Royale"
+    ],
+    "changed": false
+  },
+  {
+    "id": "brawl-stars",
+    "oldGenreIds": [
+      "action"
+    ],
+    "newGenreIds": [
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "aiming-shooting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "aiming-shooting"
+    ],
+    "reason": "玩家直接操控英雄走位射击并争夺目标，动作与射击方向成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Brawl+Stars&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Brawl_Stars"
+    ],
+    "changed": false
+  },
+  {
+    "id": "arknights",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "collection-training",
+      "management-production"
+    ],
+    "reason": "部署干员守线是塔防与指挥；招募培养及基建生产各占核心循环。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Arknights&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Arknights"
+    ],
+    "changed": false
+  },
+  {
+    "id": "blue-archive",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "reason": "编队后选择技能时机支持策略指挥，学生培养支持收集养成。 关卡地图允许移动和交换多支小队的位置，因此保留战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Blue+Archive&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Blue_Archive",
+      "https://forum.nexon.com/bluearchive-en/board_view?board=3222&thread=2121114",
+      "https://bluearchive.gg/special-summer-mission-rabbit-squad-challenge-4/",
+      "https://en.wikipedia.org/wiki/Blue_Archive"
+    ],
+    "changed": false
+  },
+  {
+    "id": "cookie-run-kingdom",
+    "oldGenreIds": [
+      "simulation-management",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "collection-training"
+    ],
+    "reason": "王国生产、招募培养和自动战斗并重；饼干位置按角色规则自动排列，移除战术指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1509450845",
+      "https://en.wikipedia.org/wiki/Cookie_Run:_Kingdom"
+    ],
+    "changed": true
+  },
+  {
+    "id": "guardian-tales",
+    "oldGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "直接控制英雄战斗与关卡探索为动作冒险，角色招募培养另有证据。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1485526957",
+      "https://en.wikipedia.org/wiki/Guardian_Tales"
+    ],
+    "changed": false
+  },
+  {
+    "id": "fate-grand-order",
+    "oldGenreIds": [
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "英灵轮流选择技能与指令卡作战；保留卡牌运用和角色培养，并标记回合战斗。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1183802626",
+      "https://en.wikipedia.org/wiki/Fate/Grand_Order"
+    ],
+    "changed": true
+  },
+  {
+    "id": "archero",
+    "oldGenreIds": [
+      "action"
+    ],
+    "newGenreIds": [
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "reason": "移动躲避、停步攻击构成动作战斗；地下城关卡前进包含探索。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Archero&entity=software&country=us&limit=5",
+      "https://www.bayjinger.com/2019/07/17/archero/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "cards-universe-everything",
+    "oldGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "reason": "卡牌收藏、组牌和轮次出牌是数字卡牌对战的核心。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Cards+Universe+Everything&entity=software&country=us&limit=5",
+      "https://www.cardstheuniverseandeverything.com/cue-starter-guide"
+    ],
+    "changed": false
+  },
+  {
+    "id": "bloons-td-6",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command"
+    ],
+    "reason": "部署并升级猴子塔抵御路线敌人，属于塔防与战术布防。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Bloons+TD+6&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Bloons_TD_6"
+    ],
+    "changed": false
+  },
+  {
+    "id": "buriedbornes",
+    "oldGenreIds": [
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "选择职业、探索房间并在回合中使用技能；保留探索和角色培养，以回合战斗替换战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Buriedbornes&entity=software&country=us&limit=5",
+      "https://nussygame.com/en/bb1/10years/",
+      "https://nussygame.com/en/bb1/10years/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "pokemon-unite",
+    "oldGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "newGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "玩家直接操作一只宝可梦争夺得分目标，保留动作与 MOBA；个人英雄操作不等于指挥其他单位。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Pokemon+Unite&entity=software&country=us&limit=5",
+      "https://www.pokemonunite.jp/en/howtoplay/about/",
+      "https://www.pokemonunite.jp/en/howtoplay/tips/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "family-island",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "exploration"
+    ],
+    "reason": "岛屿采集探索连接耕种、加工和家园扩建，经营与探索均为循环。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Family+Island&entity=software&country=us&limit=5",
+      "https://melsoft-games.helpshift.com/hc/en/11-family-island/faq/1663-what-is-the-beaver-grove/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "the-tower-idle-tower-defense",
+    "oldGenreIds": [
+      "tower-defense",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management"
+    ],
+    "reason": "防御塔抵挡波次并将收益投入长期升级，塔防与增量并存。 按本轮口径，单角色操控、固定防线或技能配置不单列多单位战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=The+Tower+Idle+Tower+Defense&entity=software&country=us&limit=5",
+      "https://the-tower-idle-tower-defense.game-vault.net/wiki/Workshop",
+      "https://the-tower-idle-tower-defense.game-vault.net/wiki/Cards"
+    ],
+    "changed": true
+  },
+  {
+    "id": "boom-beach",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production",
+      "exploration"
+    ],
+    "reason": "海岛建设和资源生产连接侦察、部队部署与合作进攻。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Boom+Beach&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Boom_Beach"
+    ],
+    "changed": false
+  },
+  {
+    "id": "pirates-outlaws",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "reason": "构筑并打出卡牌、选择航线和港口，策略卡牌及路线探索有依据。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Pirates+Outlaws&entity=software&country=us&limit=5",
+      "https://www.droidgamers.com/reviews/pirates-outlaws-review/",
+      "https://toucharcade.com/2019/03/13/pirates-outlaws-review/",
+      "https://store.steampowered.com/app/1046300/Pirates_Outlaws/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "kingdom-rush",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command"
+    ],
+    "reason": "选择塔位、升级分支并使用英雄防守，属于策略塔防指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Kingdom+Rush&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Kingdom_Rush"
+    ],
+    "changed": false
+  },
+  {
+    "id": "epic-seven",
+    "oldGenreIds": [
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "玩家在回合中选择英雄技能并管理灵魂，同时培养角色装备；以回合战斗替换战术指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1322399438",
+      "https://worthplaying.com/article/2019/5/3/reviews/114136-mobile-review-epic-seven/",
+      "https://www.rpgfan.com/review/epic-seven/",
+      "https://newsroom.smilegate.com/en/eng/Epic_Seven_YUNA_Engine_EN",
+      "https://www.hideoutgacha.com/games/epic-seven/general-info"
+    ],
+    "changed": true
+  },
+  {
+    "id": "afk-arena",
+    "oldGenreIds": [
+      "strategy",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "collection-training",
+      "incremental-management"
+    ],
+    "newPlayStyleIds": [
+      "collection-training",
+      "incremental-management"
+    ],
+    "reason": "领取离线收益并配置英雄进行自动战斗，是增量养成策略。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1375425432",
+      "https://en.wikipedia.org/wiki/AFK_Arena",
+      "https://www.gamepressure.com/games/afk-arena/za5876",
+      "https://www.deconstructoroffun.com/blog/2019/6/6/afk-arena-puts-lilith-into-the-billionaire-club"
+    ],
+    "changed": false
+  },
+  {
+    "id": "uniwar",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "turn-based-combat"
+    ],
+    "reason": "多个单位在六角格逐回合移动、攻击与占领基地，战术指挥和回合战斗都直接成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=UniWar&entity=software&country=us&limit=5",
+      "https://www.uniwar.com/howtoplay.page?redirectTo=basicInfo",
+      "https://www.pocketgamer.com/uniwar-a-k-a-uniwar-hd/review/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "meteorfall-journeys",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "reason": "选择使用或跳过卡牌并在旅途遭遇增添新牌，属于策略出牌冒险。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Meteorfall+Journeys&entity=software&country=us&limit=5",
+      "https://toucharcade.com/?p=230013"
+    ],
+    "changed": false
+  },
+  {
+    "id": "infinitode-2",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "incremental-management"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "incremental-management"
+    ],
+    "reason": "布置防御塔、开采资源并研究永久升级，塔防指挥和增量均成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Infinitode+2&entity=software&country=us&limit=5",
+      "https://www.appbrain.com/app/infinitode-2-tower-defense/com.prineside.tdi2"
+    ],
+    "changed": false
+  },
+  {
+    "id": "tap-titans-2",
+    "oldGenreIds": [
+      "action",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "collection-training"
+    ],
+    "reason": "点击、招募和转生组成放置培养循环；没有空间走位或动作攻防，移除动作类型。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Tap+Titans+2&entity=software&country=us&limit=5",
+      "https://www.bluestacks.com/blog/game-guides/tap-titans-2/tt2-leveling-guide-en.html",
+      "https://apps.apple.com/us/app/tap-titans-2-hero-legends/id1120294802"
+    ],
+    "changed": true
+  },
+  {
+    "id": "pokemon-go",
+    "oldGenreIds": [
+      "adventure"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "现实地图寻找地点、捕捉并培养宝可梦，探索与收集培养成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1094591345",
+      "https://en.wikipedia.org/wiki/Pokémon_Go",
+      "https://pokemongo.com/news/raidsrollout?game_client=iOS",
+      "https://pokemongo.com/news/launch"
+    ],
+    "changed": false
+  },
+  {
+    "id": "sky-children-of-the-light",
+    "oldGenreIds": [
+      "adventure"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "puzzle-solving"
+    ],
+    "reason": "飞行寻找国度与先祖，并合作开启机关，冒险探索和解谜均有依据。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1462117269",
+      "https://en.wikipedia.org/wiki/Sky:_Children_of_the_Light",
+      "https://thatgamecompany.helpshift.com/hc/en/17-sky-children-of-the-light/faq/764-how-do-i-obtain-candles-and-hearts-how-do-i-send-a-heart-or-gift-of-light-to-my-friend/",
+      "https://thatgamecompany.helpshift.com/hc/en/17-sky-children-of-the-light/faq/1453-what-is-the-player-to-player-friendship-system-how-do-i-unlock-abilities-with-my-friend/",
+      "https://www.gamespot.com/reviews/sky-children-of-the-light-review-flying-free/1900-6417262/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "mobile-legends-bang-bang",
+    "oldGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "newGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "玩家操作单名英雄与队友推线、攻击基地；保留动作和 MOBA，移除多单位战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Mobile+Legends+Bang+Bang&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Mobile_Legends:_Bang_Bang"
+    ],
+    "changed": true
+  },
+  {
+    "id": "monster-hunter-now",
+    "oldGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "现实地图寻找怪物、主动狩猎并用素材打造装备，动作探索与培养并存。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Monster+Hunter+Now&entity=software&country=us&limit=5",
+      "https://niantic.helpshift.com/hc/en/39-monster-hunter-now/faq/3776-how-to-play-monster-hunter-now/",
+      "https://niantic.helpshift.com/hc/en/39-monster-hunter-now/faq/3943-hunting-monsters/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "candy-crush-saga",
+    "oldGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing"
+    ],
+    "reason": "交换相邻糖果匹配消除并满足目标，三消、解谜及匹配方向成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Candy+Crush+Saga&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Candy_Crush_Saga"
+    ],
+    "changed": false
+  },
+  {
+    "id": "royal-match",
+    "oldGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing"
+    ],
+    "reason": "有限步数内匹配并完成修复任务，核心仍是三消解谜。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Royal+Match&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Royal_Match",
+      "https://github.com/NetX-lab/GameGen-Verifier/blob/main/spec/royal_match.md"
+    ],
+    "changed": false
+  },
+  {
+    "id": "cytus-ii",
+    "oldGenreIds": [
+      "action",
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "reason": "扫描线对应点击、长按和滑动音符；没有动作类型要求的空间攻防，移除动作。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1290687550",
+      "https://en.wikipedia.org/wiki/Cytus",
+      "https://www.9game.cn/sts2/2207466.html",
+      "https://rayark.com/en/games/cytus2/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "yu-gi-oh-duel-links",
+    "oldGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "collection-training"
+    ],
+    "reason": "组建卡组并运用决斗技能，卡牌收集培养与对战是核心。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Yu-Gi-Oh+Duel+Links&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Yu-Gi-Oh!_Duel_Links"
+    ],
+    "changed": false
+  },
+  {
+    "id": "card-crawl",
+    "oldGenreIds": [
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "reason": "处理有限空间中的装备和怪物牌，卡牌运用及解谜成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Card+Crawl&entity=software&country=us&limit=5",
+      "https://www.gamepressure.com/games/card-crawl/zc4134",
+      "https://toucharcade.com/2015/03/13/card-crawl-review"
+    ],
+    "changed": false
+  },
+  {
+    "id": "card-thief",
+    "oldGenreIds": [
+      "puzzle",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "puzzle",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "reason": "在卡牌棋盘规划潜入路线、守卫和宝箱，策略解谜及出牌成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Card+Thief&entity=software&country=us&limit=5",
+      "https://toucharcade.com/2017/03/22/card-thief-review-it-eventually-stole-my-heart/",
+      "https://www.stuff.tv/review/app-of-the-week-card-thief-review/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "the-battle-cats",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "reason": "选择猫咪阵容并派兵守护基地，塔防指挥和角色培养均成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=The+Battle+Cats&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/The_Battle_Cats",
+      "https://www.ponos.jp/en/games/thebattlecats/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "egg-inc",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "reason": "孵化、运输和研究构成生产，转生与永久加成构成放置增量。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Egg+Inc&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Egg,_Inc."
+    ],
+    "changed": false
+  },
+  {
+    "id": "idle-miner-tycoon",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "reason": "矿井、电梯、仓库和经理协同生产，离线与重置支持增量经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Idle+Miner+Tycoon&entity=software&country=us&limit=5",
+      "https://www.leetdom.com/reviews/idle-miner-tycoon",
+      "https://kolibri-games.helpshift.com/hc/en/3-idle-miner-tycoon/faq/48-how-does-the-prestige-system-work/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "idle-slayer",
+    "oldGenreIds": [
+      "action",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "action",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "action-combat"
+    ],
+    "reason": "官方说明可跳跃与击败敌人；结合已读的首领战规避与弓攻击资料，保留动作战斗和放置增量。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Idle+Slayer&entity=software&country=us&limit=5",
+      "https://tap-guides.com/2026/09/03/idle-slayer-ascension-guide-2/",
+      "https://store.steampowered.com/app/1353300/Idle_Slayer/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "80-days",
+    "oldGenreIds": [
+      "adventure"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "dialogue-choice"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "dialogue-choice"
+    ],
+    "reason": "环球路线选择、事件回应及途中交易支撑冒险探索和对话选择。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=80+Days&entity=software&country=us&limit=5",
+      "https://www.pcgamer.com/80-days-review/",
+      "https://en.wikipedia.org/wiki/80_Days_(2014_video_game)"
+    ],
+    "changed": false
+  },
+  {
+    "id": "sorcery",
+    "oldGenreIds": [
+      "adventure"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "dialogue-choice",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "dialogue-choice",
+      "puzzle-solving"
+    ],
+    "reason": "地图分岔、文字回应与剑术法术判断支持冒险、选择和解谜。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Sorcery%21&entity=software&country=us&limit=5",
+      "https://toucharcade.com/2013/05/13/sorcery-review/",
+      "https://www.pcworld.com/article/419443/sorcery-parts-one-and-two-review-choose-your-own-adventure-in-this-glorious-steve-jackson-adaptatio.html"
+    ],
+    "changed": false
+  },
+  {
+    "id": "reigns",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "dialogue-choice",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "dialogue-choice"
+    ],
+    "reason": "主要操作是二选一维持四方指标与继承事件，缺少持续生产系统，移除经营生产方向。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Reigns&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Reigns_(video_game)",
+      "https://gamingtrend.com/interviews/one-night-with-the-king-reigns-developer-interviewed-on-games-success/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "plants-vs-zombies-2",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "reason": "布置植物抵挡分路僵尸并收集升级植物，塔防指挥和培养成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Plants+vs+Zombies+2&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Plants_vs._Zombies_2",
+      "https://news.ea.com/press-releases/press-releases-details/2013/PopCap-Launches-Plants-vs.-Zombies-2-Worldwide/default.aspx"
+    ],
+    "changed": false
+  },
+  {
+    "id": "iron-marines",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command"
+    ],
+    "reason": "指挥部队、控制资源点并切换兵种，符合即时策略和战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Iron+Marines&entity=software&country=us&limit=5",
+      "https://www.ironhidegames.com/Games/iron-marines",
+      "https://statelyplay.com/2017/09/21/review-iron-marines/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "stormbound",
+    "oldGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "buildcrafting",
+      "card-play"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "buildcrafting",
+      "card-play"
+    ],
+    "reason": "构筑卡组、在棋盘部署部队并推进战线，数字卡牌、构筑和指挥均成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Stormbound&entity=software&country=us&limit=5",
+      "https://statelyplay.com/2017/09/27/review-stormbound/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "path-to-nowhere",
+    "oldGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "tower-defense",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "reason": "培养禁闭者并在战场调整站位阻挡敌人，塔防、指挥和养成成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Path+to+Nowhere&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Path_to_Nowhere"
+    ],
+    "changed": false
+  },
+  {
+    "id": "pokemon-tcg-pocket",
+    "oldGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "collection-training",
+      "buildcrafting",
+      "card-play"
+    ],
+    "newPlayStyleIds": [
+      "collection-training",
+      "buildcrafting",
+      "card-play"
+    ],
+    "reason": "开包收藏、组牌和轮流附能战斗，数字卡牌、构筑与培养均成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Pokemon+TCG+Pocket&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Trading_Card_Game_Pocket",
+      "https://cardgamer.com/guides/battle-and-build-decks-in-pokemon-tcg-pocket/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "last-day-on-earth",
+    "oldGenreIds": [
+      "action",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "action",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "management-production",
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "management-production",
+      "action-combat"
+    ],
+    "reason": "采集、制作、建设和危险区域战斗构成动作生存与经营；主动战斗保留。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1241932094",
+      "https://mmohuts.com/review/last-day-on-earth-survival/nggallery/page/3",
+      "https://www.droidharvest.com/2017/11/last-day-on-earth-guide.html",
+      "https://kefirgames.helpshift.com/hc/en/5-last-day-on-earth/faq/42-what-happens-if-my-character-dies/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "state-of-survival",
+    "oldGenreIds": [
+      "strategy",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "reason": "聚居地生产、训练部队和联盟作战支撑经营与战略指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1452474937",
+      "https://br1greenhouse.github.io/SentinelGameAcademy/games/state-of-survival/01-introduzione.html?lang=en",
+      "https://en.wikipedia.org/wiki/FunPlus",
+      "https://www.mmodude.com/farming-guides/state-of-survival-resources-and-biocaps-farming-guide/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "last-war-survival",
+    "oldGenreIds": [
+      "strategy",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "collection-training",
+      "tactical-command"
+    ],
+    "reason": "基地生产、英雄编队和联盟对抗支撑经营、培养与指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id6448786147",
+      "https://en.wikipedia.org/wiki/Last_War:_Survival_Game",
+      "https://www.lastwarvault.com/guides/general/squad-building/",
+      "https://www.lastwarvault.com/guides/general/getting-started/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "diablo-immortal",
+    "oldGenreIds": [
+      "action"
+    ],
+    "newGenreIds": [
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "主动操控角色探索和作战，技能装备及秘境掉落支撑动作探索养成。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1492005122",
+      "https://en.wikipedia.org/wiki/Diablo_Immortal",
+      "https://www.icy-veins.com/diablo-immortal/elder-rifts",
+      "https://news.blizzard.com/en-us/article/23788298/diablo-immortaltmyour-roadmap-to-hell"
+    ],
+    "changed": false
+  },
+  {
+    "id": "legends-of-idleon",
+    "oldGenreIds": [
+      "simulation-management",
+      "action"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "collection-training"
+    ],
+    "reason": "多角色可主动战斗或采集，也可离线生产并分配天赋；保留动作及增量培养。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1636526901",
+      "https://www.digitaltq.com/wiki/idleon/beginner-guide",
+      "https://www.reddit.com/r/AndroidGaming/comments/jr8m1m/dev_released_my_mmo_to_android_today_im_a_solo/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "pocket-city",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "management-production"
+    ],
+    "reason": "城市分区、供电及公共服务规划构成城市经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Pocket+City&entity=software&country=us&limit=5",
+      "https://pocketcitygame.com/info.html",
+      "https://www.destructoid.com/reviews/review-pocket-city/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "dream-house-days",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "collection-training"
+    ],
+    "reason": "布置公寓、研究家具及帮助租客发展，经营和租客培养均有依据。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Dream+House+Days&entity=software&country=us&limit=5",
+      "https://toucharcade.com/2013/09/02/dream-house-days-review/",
+      "https://www.pocketgamer.com/dream-house-days/become-an-android-landlord-in-free-kairosoft-game-dream-house-days/",
+      "https://www.pocketgamer.com/dream-house-days/how-to-be-the-worlds-best-landlord-in-dream-house-days-hints-tips-and-tricks/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "township",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "management-production"
+    ],
+    "reason": "农作物、加工和运输订单形成生产链，支撑模拟经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Township&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Township_(video_game)"
+    ],
+    "changed": false
+  },
+  {
+    "id": "idle-supermarket-tycoon",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "reason": "部门扩建、雇员与收银投资形成自动化增量经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Idle+Supermarket+Tycoon&entity=software&country=us&limit=5",
+      "https://codigames.helpshift.com/hc/en/7-idle-supermarket-tycoon/faq/417-tips-to-make-more-money/",
+      "https://www.mrguider.org/cheats/idle-supermarket-tycoon-guide-tips-cheats-strategies/",
+      "https://www.touchtapplay.com/idle-supermarket-tycoon-cheats-tips-strategy-guide/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "subway-surfers",
+    "oldGenreIds": [
+      "action"
+    ],
+    "newGenreIds": [
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "platforming"
+    ],
+    "reason": "换道跳跃躲避障碍属于移动走位，既无攻击也无动作战斗；改为移动跳跃方向。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Subway+Surfers&entity=software&country=us&limit=5",
+      "https://sybo.helpshift.com/hc/en/5-subway-surfers/section/53-gameplay/",
+      "https://en.wikipedia.org/wiki/Subway_Surfers",
+      "https://play.google.com/store/apps/editorial?hl=en_US&id=mc_games_editorialevergreen_subway_surfers_starter_tips_postinstall_fcp",
+      "https://sybo.helpshift.com/hc/en/5-subway-surfers/faq/156-daily-high-score/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "orna",
+    "oldGenreIds": [
+      "turn-based-rpg",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "turn-based-rpg",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "现实位置探索、回合技能与装备发展支撑冒险和养成；回合战斗取代不适用的战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Orna&entity=software&country=us&limit=5",
+      "https://playorna.com/faq/",
+      "https://www.ornalegends.com/home/the-ultimate-ornarpg-beginner-basics-guide",
+      "https://play.google.com/store/apps/details?id=playorna.com.orna&hl=en_US",
+      "https://playorna.com/releases/?p=20"
+    ],
+    "changed": true
+  },
+  {
+    "id": "ingress",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "exploration"
+    ],
+    "reason": "前往现实地点、连接传送门并争夺控制场，保留战略与探索；并不直接指挥多个战斗单位。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Ingress+Prime&entity=software&country=us&limit=5",
+      "https://support.ingress.com/hc/en-us/articles/41140308463131-Initial-Briefing",
+      "https://support.ingress.com/hc/en-us/articles/41140376184091-Hacking-Portals",
+      "https://support.ingress.com/hc/en-us/articles/41140354084123-Glossary",
+      "https://support.ingress.com/hc/en-us/articles/41140346305307-Defending-Friendly-Portals",
+      "https://en.wikipedia.org/wiki/Ingress_(video_game)"
+    ],
+    "changed": true
+  },
+  {
+    "id": "night-of-the-full-moon",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "exploration"
+    ],
+    "reason": "通过牌组出牌推进冒险，职业与途中卡牌取舍支持策略卡牌。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Night+of+the+Full+Moon&entity=software&country=us&limit=5",
+      "https://www.pocketgamer.com/night-of-the-full-moon/review/",
+      "https://tgexp.com/night-of-the-full-moon/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "dawncaster",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "reason": "职业牌组、途中取牌与事件选择支持卡牌、探索及对话选择。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Dawncaster&entity=software&country=us&limit=5",
+      "https://www.reddit.com/r/AndroidGaming/comments/m8tay6/dawncaster_deckbuilding_rpg/",
+      "https://www.148apps.com/dawncaster/dawncaster-review/",
+      "https://www.jeremietessier.com/reviews/2022/4/6/ilook-at-dawncaster-deckbuilder-rpg"
+    ],
+    "changed": false
+  },
+  {
+    "id": "idle-mastermind",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "reason": "巢穴生产、手下派遣和长期研究组成增量模拟经营。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Idle+Mastermind&entity=software&country=us&limit=5",
+      "https://www.reddit.com/r/idlemastermind/comments/mgayt4/faq/",
+      "https://www.reddit.com/r/idlemastermind/comments/f7gdrl/march_4th_google_play_open_beta/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "cats-and-soup",
+    "oldGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production",
+      "collection-training"
+    ],
+    "reason": "猫咪岗位与技能影响料理生产，设施投资和离线收益支持经营与培养。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Cats+and+Soup&entity=software&country=us&limit=5",
+      "https://www.mrguider.org/cheats/cats-soup-cheats-guide-wiki/",
+      "https://www.talkandroid.com/460384-cats-and-soup-game-guide-tips-tricks-and-strategies/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "asphalt-9-legends",
+    "oldGenreIds": [
+      "racing"
+    ],
+    "newGenreIds": [
+      "racing"
+    ],
+    "oldPlayStyleIds": [
+      "vehicle-driving",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "vehicle-driving",
+      "collection-training"
+    ],
+    "reason": "驾驶赛车、漂移氮气并解锁强化车辆，赛车驾驶与收集培养成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Asphalt+Legends&entity=software&country=us&limit=5",
+      "https://apps.apple.com/ua/story/id1500622939",
+      "https://www.gameloft.com/newsroom/buckle-up-for-the-official-launch-of-asphalt-9-legends-4294",
+      "https://gameloft.helpshift.com/hc/en/15-asphalt-legends/faq/612-how-do-i-upgrade-a-car/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "legends-of-runeterra",
+    "oldGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "strategy",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "card-play"
+    ],
+    "reason": "官方规则明确使用卡牌、选择攻击者并安排阻挡；按卡牌战斗口径保留卡牌运用，不重复标战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Legends+of+Runeterra&entity=software&country=us&limit=5",
+      "https://en.wikipedia.org/wiki/Legends_of_Runeterra",
+      "https://support.riotgames.com/en-us/legends-of-runeterra/gameplay/let-s-talk-about-mana",
+      "https://support.riotgames.com/zh-cn/legends-of-runeterra/gameplay/card-types-and-how-they-work",
+      "https://support.riotgames.com/ms-my/legends-of-runeterra/gameplay/i-can-see-my-opponent-s-card",
+      "https://support.riotgames.com/en-us/legends-of-runeterra/gameplay/round-faq"
+    ],
+    "changed": true
+  },
+  {
+    "id": "solitairica",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "reason": "按点数消牌并决定施法时机是卡牌解谜；没有指挥单位或部署阵形，移除战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Solitairica&entity=software&country=us&limit=5",
+      "https://www.pocketgamer.com/solitairica/review/",
+      "https://www.bigbossbattle.com/review-solitairica/",
+      "https://store.steampowered.com/app/463980/Solitairica/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "wuthering-waves",
+    "oldGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "action",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "主动闪避弹反与开放世界探索相结合，收集声骸和培养角色另有明确用途。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Wuthering+Waves&entity=software&country=us&limit=5",
+      "https://www.talkandroid.com/468913-basic-combat-guide-wuthering-waves/",
+      "https://wutheringwaves.party/en/guides/echo-system-guide/",
+      "https://en.wikipedia.org/wiki/Wuthering_Waves"
+    ],
+    "changed": false
+  },
+  {
+    "id": "onmyoji-arena",
+    "oldGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "newGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "玩家操作一名式神争夺兵线、野区与基地；保留动作 MOBA，移除多单位战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Onmyoji+Arena&entity=software&country=us&limit=5",
+      "https://zh.wikipedia.org/wiki/%E5%86%B3%E6%88%98%EF%BC%81%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "https://www.reddit.com/r/OnmyojiArena/comments/wpwhr2/first_time_player/",
+      "https://www.onmyojiarena.us/news/20240920/28859_1181844.html"
+    ],
+    "changed": true
+  },
+  {
+    "id": "runescape",
+    "oldGenreIds": [
+      "adventure",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "gathering-survival",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "collection-training"
+    ],
+    "reason": "任务世界探索与技能经验、装备制作支撑冒险和培养；材料采集本身不等于生存压力或生产经营。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1332022656",
+      "https://en.wikipedia.org/wiki/RuneScape",
+      "https://www.runescape.com/game-guide/skills",
+      "https://www.jagex.com/news/runescape-launches-on-ios-and-android"
+    ],
+    "changed": true
+  },
+  {
+    "id": "honor-of-kings",
+    "oldGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "newGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "各自控制一名英雄并协作推塔，动作 MOBA 成立；不把队伍合作等同多单位指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Honor+of+Kings&entity=software&country=us&limit=5",
+      "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80",
+      "https://hokstats.gg/guides/build-and-emblem-guide/",
+      "https://www.honorofkings.com/global-en/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "tsuki-odyssey",
+    "oldGenreIds": [
+      "simulation-management",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "life-simulation",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "life-simulation",
+      "exploration"
+    ],
+    "reason": "钓鱼、买家具、布置树屋和探访村民构成生活模拟与村庄探索。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Tsuki+Odyssey&entity=software&country=us&limit=5",
+      "https://www.talkandroid.com/9957-tsukis-odyssey-guide-tips-and-tricks/",
+      "https://www.reddit.com/r/tsukiodysseygame/comments/1171o6h/tsuki_odyssey_faq/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "motorsport-manager-mobile-3",
+    "oldGenreIds": [
+      "racing",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "racing",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "reason": "签约车手、研发车辆并决定轮胎和进站，赛车经营与战术安排成立。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Motorsport+Manager+Mobile+3&entity=software&country=us&limit=5",
+      "https://www.motorsportmagazine.com/articles/e-sports/esports/motorsport-manager-mobile-3-review/",
+      "https://www.autosport.com/esports/news/motorsport-manager-mobile-3-game-review-5297620/5297620/",
+      "https://www.playsportgames.com/motorsport-manager-mobile-3-faqs/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "league-of-legends-wild-rift",
+    "oldGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "newGenreIds": [
+      "action",
+      "strategy",
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "直接操作一名英雄分路、争夺野区目标；保留动作 MOBA，移除多单位战术指挥。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=League+of+Legends+Wild+Rift&entity=software&country=us&limit=5",
+      "https://wildrift.leagueoflegends.com/en-us/game-overview/",
+      "https://support.riotgames.com/en-us/wild-rift/gameplay/runes/",
+      "https://support.riotgames.com/en-us/wild-rift/gameplay/map-and-modes",
+      "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/upcoming-changes-to-testing/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "resortopia",
+    "oldGenreIds": [
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "life-simulation",
+      "incremental-management"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "life-simulation",
+      "incremental-management"
+    ],
+    "reason": "旅馆接待、设施升级和离线收益支持经营增量；家具与日常服务支持生活模拟。",
+    "sourceUrls": [
+      "https://itunes.apple.com/search?term=Resortopia&entity=software&country=us&limit=5",
+      "https://www.mrguider.org/guides/resortopia-guide/",
+      "https://www.talkandroid.com/9982-resortopia-guide-tips-tricks-and-strategies/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "homescapes",
+    "oldGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing"
+    ],
+    "reason": "通过三消取得星星，再用星星执行翻修；装修任务不构成独立的持续生产经营。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1195621598",
+      "https://playrix.helpshift.com/hc/en/14-homescapes/faq/1087-how-do-i-play-match-3-levels/",
+      "https://playrix.helpshift.com/hc/en/14-homescapes/faq/16701-power-ups-and-how-to-use-them-1767805250/",
+      "https://playrix.helpshift.com/hc/en/14-homescapes/section/148-tasks-areas/",
+      "https://playrix.helpshift.com/hc/en/14-homescapes/faq/16349-what-are-lives-and-how-to-refill-them/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "project-sekai",
+    "oldGenreIds": [
+      "action",
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "按节奏点击、长按滑动并培养角色卡；音符判定不等于空间动作攻防，移除动作。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1580044138",
+      "https://colorfulstage.com/aboutgame/gameplay/",
+      "https://blog.nanao.moe/game-reviews/project-sekai-colorful-stage",
+      "https://www.sega.jp/game/detail/pjsekai/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "arcaea",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "音轨判定是节奏操作；搭档选择及成长影响世界模式步数，收集培养有依据。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1205999125",
+      "https://en.wikipedia.org/wiki/Arcaea",
+      "https://wikiwiki.jp/arcaea/ワールドモード"
+    ],
+    "changed": false
+  },
+  {
+    "id": "puzzle-and-dragons",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "reason": "限时移动宝珠匹配驱动怪物队伍战斗，三消、回合角色和队伍培养成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id563474464",
+      "https://en.wikipedia.org/wiki/Puzzle_&_Dragons"
+    ],
+    "changed": false
+  },
+  {
+    "id": "bang-dream-girls-band-party",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "节奏演出与成员招募培养共同决定乐队表现。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1335529760",
+      "https://en.wikipedia.org/wiki/BanG_Dream!_Girls_Band_Party!",
+      "https://bang-dream-gbp-en.bushiroad.com/faq/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "d4dj-groovy-mix",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "音符、滑杆和唱盘用于节奏演出，成员配置和培养支持收集培养。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1550248186",
+      "https://d4dj-groovymix.jp/system/",
+      "https://wikiwiki.jp/rhythmgame/D4DJ%20Groovy%20Mix"
+    ],
+    "changed": false
+  },
+  {
+    "id": "empires-and-puzzles",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "reason": "消除驱动英雄技能，招募培养和要塞生产分别支持三消、角色与经营。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1117841866",
+      "https://www.empiresandpuzzles.com/about"
+    ],
+    "changed": false
+  },
+  {
+    "id": "marvel-puzzle-quest",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "reason": "轮流匹配获取行动点并使用英雄能力，支持三消、回合角色和培养。 回合内选择角色行动或技能也是主要玩法，补充回合战斗方向。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id618349779",
+      "https://en.wikipedia.org/wiki/Marvel_Puzzle_Quest",
+      "https://forums.505go.com/t/frequently-asked-gameplay-questions/20",
+      "https://gameinformer.com/games/marvel_puzzle_quest_dark_reign/b/android/archive/2013/10/22/not-a-review-marvel-puzzle-quest-dark-reign-.aspx"
+    ],
+    "changed": true
+  },
+  {
+    "id": "idolmaster-cinderella-girls-starlight-stage",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "偶像组合的节奏演出及课程培养构成核心循环。",
+    "sourceUrls": [
+      "https://apps.apple.com/jp/app/id1016318735",
+      "https://en.wikipedia.org/wiki/The_Idolmaster_Cinderella_Girls:_Starlight_Stage"
+    ],
+    "changed": false
+  },
+  {
+    "id": "ensemble-stars-music",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "招募培养偶像卡后配置演出与支援成员，节奏和养成并重。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1624693630",
+      "https://en.wikipedia.org/wiki/Ensemble_Stars!",
+      "https://bluejpgames.com/ensemble-stars-music/",
+      "https://themagicrain.com/2020/03/ensemble-stars-is-finally-here/",
+      "https://ensemble-stars-music.zendesk.com/hc/ja/articles/39115189409945-スキル効果"
+    ],
+    "changed": false
+  },
+  {
+    "id": "harry-potter-puzzles-and-spells",
+    "oldGenreIds": [
+      "match-three"
+    ],
+    "newGenreIds": [
+      "match-three"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "reason": "三消关卡与神奇动物解锁升级为两个明确循环，收集培养成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1434505322",
+      "https://zyngasupport.helpshift.com/hc/en/79-harry-potter-puzzles-spells/faq/15942-how-do-i-play/",
+      "https://zyngasupport.helpshift.com/hc/en/79-harry-potter-puzzles-spells/faq/15945-what-are-lives/",
+      "https://zyngasupport.helpshift.com/hc/en/79-harry-potter-puzzles-spells/faq/19474-how-do-magical-creatures-work/",
+      "https://zyngasupport.helpshift.com/hc/en/79-harry-potter-puzzles-spells/faq/16484-what-are-leagues/",
+      "https://zyngasupport.helpshift.com/hc/en/79-harry-potter-puzzles-spells/faq/22407-how-do-i-play-the-escape-from-azkaban-event/",
+      "https://www.zynga.com/blog/zynga-launches-harry-potter-puzzles-spells-worldwide/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "lanota",
+    "oldGenreIds": [
+      "rhythm-game",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "reason": "圆盘谱面和绘本解锁是节奏演出与故事进度；选择歌曲地图不等于探索未知空间。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1050535507",
+      "https://en.wikipedia.org/wiki/Lanota",
+      "https://toucharcade.com/2016/08/02/lanota-review/",
+      "https://apps.apple.com/us/app/lanota-music-game-with-story/id1050535507"
+    ],
+    "changed": true
+  },
+  {
+    "id": "puzzles-and-survival",
+    "oldGenreIds": [
+      "match-three",
+      "strategy",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "strategy",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "reason": "三消战斗、英雄培养及基地生产并存，策略与经营标签成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1517980891",
+      "https://www.pocketgamer.com/puzzles-survival/guide-tips/",
+      "https://www.mrguider.org/guides/puzzles-and-survival-guide/",
+      "https://kotaku.com/games/puzzles-and-survival"
+    ],
+    "changed": false
+  },
+  {
+    "id": "puzzle-combat",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "reason": "英雄编队的三消战斗与军事基地发展并重，角色培养和经营成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/jp/app/id1455487903",
+      "https://www.zynga.com/blog/zynga-launches-modern-match-3-mobile-game-puzzle-combat/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "voez",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "reason": "移动轨道上的音符判定、歌曲挑战是节奏游戏的核心。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1007929736",
+      "https://en.wikipedia.org/wiki/Voez",
+      "https://toucharcade.com/2016/06/01/voez-review/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "superstar-smtown",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play",
+      "collection-training"
+    ],
+    "reason": "节奏演出、艺人卡配置和强化支持节奏操作与收集培养。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id890937532",
+      "https://en.wikipedia.org/wiki/SuperStar_SM_Town",
+      "https://ssuperstar-guide.blogspot.com/2014/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "gems-of-war",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "reason": "宝石匹配积攒魔力，编组部队施法并培养角色；牌面匹配和技能选择不单列多单位指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id897954560",
+      "https://store.steampowered.com/app/329110/",
+      "https://community.gemsofwar.com/t/kingdom-domination/406",
+      "https://gemsofwar.com/1-0-8-arrives/",
+      "https://gemsofwar.com/celebrating-10-years-of-adventure-in-gems-of-war/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "magic-puzzle-quest",
+    "oldGenreIds": [
+      "match-three",
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "card-play",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "card-play",
+      "buildcrafting"
+    ],
+    "reason": "三消充能并施放构筑牌组中的卡牌，匹配、出牌和构筑都直接参与战斗。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1031755344",
+      "https://en.wikipedia.org/wiki/Magic:_The_Gathering_–_Puzzle_Quest",
+      "https://marvelpuzzlequest.com/developer-blog-adapting-cards-to-magic-puzzle-quest/",
+      "https://d3go.helpshift.com/hc/en/4-magic-puzzle-quest/faq/299-how-do-you-build-a-deck/",
+      "https://geekdad.com/2015/12/magic-the-gathering-puzzlequest/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "puzzle-quest-3",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training"
+    ],
+    "reason": "角色与技能配置后消除宝石、积累魔力并强化装备，三消及养成成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1490519951",
+      "https://puzzlequest3.com/evolving-the-match-3-rpg/",
+      "https://www.gamespot.com/reviews/puzzle-quest-3-review-more-puzzle-less-quest/1900-6417842/",
+      "https://www.pocketgamer.com/puzzle-quest-3/review/",
+      "https://puzzlequest3.com/new-game-mode-action-points/",
+      "https://puzzlequest3.com/puzzle-quest-3-available-now/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "call-of-antia",
+    "oldGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "newGenreIds": [
+      "match-three",
+      "turn-based-rpg",
+      "simulation-management"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "collection-training",
+      "management-production"
+    ],
+    "reason": "英雄队伍匹配棋块攻击，城堡生产和英雄培养共同构成三消经营。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1583719419",
+      "https://www.bluestacks.com/blog/game-guides/call-of-antia/coa-beginner-guide-en.html",
+      "https://funplus.com/funplus-invites-players-to-discover-and-protect-a-fantastical-world-in-call-of-antia-a-brand-new-match-3-rpg/",
+      "https://callofantia.com/fr/news/v1-0-0-nouvelle-version-nouveau-voyage-2/"
+    ],
+    "changed": false
+  },
+  {
+    "id": "auto-chess-mobile",
+    "oldGenreIds": [
+      "auto-battler",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "auto-battler",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "reason": "随机商店买棋、站位与羁绊后自动战斗，自动战斗构筑和指挥成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1464482102",
+      "https://1gamerdash.com/auto-chess-drodo-mobile-release/",
+      "https://1gamerdash.com/beginner-guide-auto-chess/",
+      "https://www.invenglobal.com/articles/8334/auto-chess-is-now-playable-on-ios-too-but-youll-have-to-dig-to-find-it"
+    ],
+    "changed": false
+  },
+  {
+    "id": "super-auto-pets",
+    "oldGenreIds": [
+      "auto-battler",
+      "strategy"
+    ],
+    "newGenreIds": [
+      "auto-battler",
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "reason": "购买合并宠物、排列队伍再自动交战，自动战斗构筑和指挥成立。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1597449908",
+      "https://en.wikipedia.org/wiki/Super_Auto_Pets"
+    ],
+    "changed": false
+  },
+  {
+    "id": "vainglory",
+    "oldGenreIds": [
+      "moba",
+      "strategy",
+      "action"
+    ],
+    "newGenreIds": [
+      "moba",
+      "strategy",
+      "action"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "reason": "实时操作单名英雄并与队友推进防线；保留动作 MOBA，不把团队合作当作多单位指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id671464704",
+      "https://www.mobygames.com/game/73709/vainglory/",
+      "https://toucharcade.com/2014/11/20/vainglory-review/",
+      "https://de.vainglorygame.com/news/just-beginning-to-vainglorious-explaining-items-part-1-blue-crystal-items/",
+      "https://en.wikipedia.org/wiki/Vainglory_(video_game)"
+    ],
+    "changed": true
+  },
+  {
+    "id": "ulala-idle-adventure",
+    "oldGenreIds": [
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "collection-training",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "collection-training"
+    ],
+    "reason": "组队自动狩猎，通过调整技能和宠物提升队伍；保留增量与收集培养，移除战术指挥。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1473544990",
+      "https://butwhytho.net/2019/10/review-ulala-idle-adventures/",
+      "https://www.mrguider.org/articles/ulala-idle-adventure-guide-tips-cheats-for-beginners/",
+      "https://mobilemodegaming.com/2019/09/12/ulala-idle-adventure-is-now-out-on-appstore-and-playstore/",
+      "https://www.mrguider.org/articles/ulala-idle-adventure-pets-how-to-unlock-level-up-use-elements/"
+    ],
+    "changed": true
+  },
+  {
+    "id": "almost-a-hero",
+    "oldGenreIds": [
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "collection-training",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "collection-training",
+      "buildcrafting"
+    ],
+    "reason": "英雄分工、装备与戒指配置形成组合；转生投资和角色培养支撑增量与构筑。",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/id1116630619",
+      "https://www.jeremietessier.com/reviews/2019/11/9/ilook-at-almost-a-hero",
+      "https://sfwdog.com/mobile/incremental/almost-a-hero",
+      "https://www.mobygames.com/game/129127/almost-a-hero/"
+    ],
+    "changed": false
+  }
+]

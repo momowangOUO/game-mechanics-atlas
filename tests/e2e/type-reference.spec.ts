@@ -48,12 +48,13 @@ test("type reference can expose a conditional cooperative scope instead of inven
   page,
 }) => {
   await gotoApp(page, "/types/party-cooperation");
-  const deepRock = page.locator(".case-grid > article").filter({
-    has: page.locator(`a[href="${appHref("/games/deep-rock-galactic")}"]`),
+  const conditionalCase = page.locator(".case-grid > article").filter({
+    has: page.locator(`a[href="${appHref("/games/peak")}"]`),
   });
-  await expect(deepRock).toContainText("条件成立");
-  await expect(deepRock).toContainText("成立条件：");
-  const link = deepRock.getByRole("link", { name: "查看这个范围的机制记录 →" });
+  await expect(conditionalCase).toContainText("条件成立");
+  await expect(conditionalCase).toContainText("成立条件：");
+  await expect(conditionalCase).toContainText("使用多人合作模式");
+  const link = conditionalCase.getByRole("link", { name: "查看这个范围的机制记录 →" });
   const href = await link.getAttribute("href");
   const scope = new URL(href!, "http://localhost").searchParams.get("scope");
   await link.click();

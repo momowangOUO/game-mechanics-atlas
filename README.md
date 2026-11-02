@@ -6,7 +6,7 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 
 [在线网站 / Website](https://momowangouo.github.io/game-mechanics-atlas/) · [分类参考 / Taxonomy](https://momowangouo.github.io/game-mechanics-atlas/taxonomy/) · [GitHub 点星支持 / Star](https://github.com/momowangOUO/game-mechanics-atlas) · [AI / Agent 资料入口](https://momowangouo.github.io/game-mechanics-atlas/for-agents/)
 
-![首页桌面页面](docs/reader-overview/runtime/rin-1440.png)
+![首页桌面页面](docs/catalog-review/runtime/home-1440.png)
 
 ![分类分组插画、大图标与连续图解](docs/continuous-reading/runtime/group-1440.png)
 
@@ -17,9 +17,10 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 | 入口                                                                                  | 内容                                                           |
 | ------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | [分类参考](https://momowangouo.github.io/game-mechanics-atlas/taxonomy/)              | 9 个维度、51 个分组、127 条机制的定义、边界和游戏用法          |
-| [游戏范例](https://momowangouo.github.io/game-mechanics-atlas/games/)                 | 459 款游戏、3196 条机制记录与 974 项来源，按模式和系统范围查阅 |
-| [传统类型](https://momowangouo.github.io/game-mechanics-atlas/types/)                 | 47 个类型的玩法过程、设计问题和相近类型区别                    |
-| [核心玩法](https://momowangouo.github.io/game-mechanics-atlas/play-styles/)           | 21 个玩法方向的说明与全部游戏范例                              |
+| [游戏范例](https://momowangouo.github.io/game-mechanics-atlas/games/)                 | 513 款游戏、3572 条机制记录与 1130 项来源，按模式和系统范围查阅 |
+| [传统类型](https://momowangouo.github.io/game-mechanics-atlas/types/)                 | 48 个类型的玩法过程、设计问题和相近类型区别                    |
+| [核心玩法](https://momowangouo.github.io/game-mechanics-atlas/play-styles/)           | 22 个玩法方向的说明与全部游戏范例                              |
+| [直播与传播案例](https://momowangouo.github.io/game-mechanics-atlas/games/discovery/) | 38 项有来源的观察，区分已收录案例与待补作品                     |
 | [类型 × 核心玩法](https://momowangouo.github.io/game-mechanics-atlas/games/coverage/) | 同一研究范围内的组合案例、平台与年代筛选、补查记录             |
 | [机制模块关系图](https://momowangouo.github.io/game-mechanics-atlas/graph/)           | 拖动、缩放、筛选维度，追踪相邻机制和相关游戏                   |
 | [研究提示词](https://momowangouo.github.io/game-mechanics-atlas/lab/)                 | 32 组配方入口、3 种研究模板，可编辑、复制与下载 Markdown       |
@@ -28,7 +29,9 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 
 127 项机制均配有独立图标、图像模型生成的三格漫画、规则示意图和真实游戏范例。51 个分组另有独立插画。支持 Ctrl/Cmd K 全局搜索、手机连续阅读和减少动态偏好。每次整页打开或刷新会展示品牌 Logo；站内切换不重复播放。
 
-案例包括 131 款已核实手机发行的游戏、97 款手机原生或先发作品，以及 114 款原作发表于 2010 年及以前的经典游戏。46 个传统类型及全部 21 个核心玩法方向达到至少十款案例；语言解谜暂有 4 款完整案例，其他候选仍在补证。987 个类型与玩法组合中，358 个已有案例，25 个空缺留有有限范围的检索记录，604 个仍待补查。未收录不等于市场空白。[本轮扩充与画风修正](docs/content-expansion/README.md)
+当前包括 505 款详细案例、8 款注明资料缺口的参考条目；147 款有已核实手机发行，111 款手机原生或先发，114 款原作于 2010 年及以前发行。年代筛选连续覆盖 2010 年及以前、2011–2019 年与 2020 年及以后。
+
+全部 22 个核心玩法方向和 42 个传统类型已有至少十款案例；另外六类继续补查，不用牵强标签或冷门作品凑数。1056 个类型与玩法组合中，387 个已有案例，25 个空缺留有有限范围的检索记录，644 个仍待补查。收录优先考虑明确商业与受众证据，直播观看不当作搜索需求或玩家总数。[本轮热门补档、标签与收录审查](docs/catalog-review/README.md) · [前一轮扩充与画风修正](docs/content-expansion/README.md)
 
 选择分类维度后，整页展示该维度的所有分组、机制、图解和游戏用法。分组目录用于跳转位置，不隐藏内容；桌面与手机都可直接向下阅读三格漫画及规则图。机制图标以大方框呈现，漫画每格最大显示为 600 像素。游戏与对比页同样按章节连续展开，目录、搜索结果和排行榜不再分页；研究提示词保留四个编写步骤。[连续阅读与分组插画](docs/continuous-reading/README.md)
 

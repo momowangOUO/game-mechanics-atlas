@@ -1,0 +1,2700 @@
+[
+  {
+    "id": "clair-obscur-expedition-33",
+    "name": "光与影：33号远征队 / Clair Obscur: Expedition 33",
+    "studio": "Sandfall Interactive",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "turn-based-rpg"
+    ],
+    "playStyleIds": [
+      "turn-based-combat",
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "以远征队角色轮流选择技能，同时亲自闪避、招架敌方攻击，使用自由瞄准打击弱点并探索绘世者的大陆。",
+    "analysis": "敌方回合仍需要玩家持续观察动作，因此配置与时机掌握共同决定结果；同一场战斗既保留回合选择，也保留失败后能练习的防御节奏。",
+    "loop": [
+      "探索大陆、发现支线与旅行同伴",
+      "配置角色装备、属性和技能协同",
+      "按回合选择行动，并实时应对敌方招式"
+    ],
+    "learning": [
+      "在敌方回合保留实时防御，让玩家在等待出手机会时仍有需要观察和应对的事情。"
+    ],
+    "caveats": [
+      "战斗按回合展开；敌方进攻时，玩家需要判断实时闪避或招架的时机。"
+    ],
+    "resources": [
+      "技能、属性与装备共同组成角色方案",
+      "自由瞄准让弱点位置影响射击选择"
+    ],
+    "progression": [
+      "角色与队伍配置持续发展",
+      "特殊旅行同伴开放新的地图抵达方式"
+    ],
+    "scopeLabel": "2025本体主线与常规探索",
+    "scopeNotes": "范围为本体主线中的队伍战斗与大陆探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1903340&l=english&cc=us",
+        "title": "Clair Obscur: Expedition 33",
+        "publisher": "Steam / Sandfall Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Clair_Obscur:_Expedition_33",
+        "title": "Clair Obscur: Expedition 33 — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "以角色回合组织技能和攻击选择",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "在敌方出招时实时闪避",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "按敌方攻击时机进行实时招架与反击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "自由瞄准敌方弱点发动远程打击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "通过装备、属性、技能与角色协同配置队伍方案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "ability-gating",
+        "note": "招募特殊同伴取得新旅行方式，抵达世界地图中的隐藏地点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "探索中发现隐藏任务并推进远征",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/be3305b02d4db0dffa3458537118423bf2792d7e/header.jpg?t=1782830877",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1903340&l=english&cc=us"
+    },
+    "aliases": [
+      "光与影：33号远征队"
+    ]
+  },
+  {
+    "id": "split-fiction",
+    "name": "双影奇境 / Split Fiction",
+    "studio": "Hazelight Studios",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "platformer",
+      "adventure",
+      "action"
+    ],
+    "playStyleIds": [
+      "platforming",
+      "puzzle-solving",
+      "action-combat"
+    ],
+    "summary": "两名玩家分别操纵米欧和佐伊，在交错的科幻与奇幻关卡中跑跳、抓钩并组合各自能力，寻找逃离故事机器的道路。",
+    "analysis": "章节更换能力，却反复要求玩家观察伙伴的位置与需求；合作关系的连续性使大量短暂规则仍能组成一段完整旅程。",
+    "loop": [
+      "认识本章节两人的不同能力",
+      "通过跑跳、抓钩与配合处理障碍",
+      "完成当前故事段，进入另一种规则环境"
+    ],
+    "learning": [
+      "合作中的角色差异可以反复更换，但双方必须始终看得见彼此能提供什么帮助。"
+    ],
+    "caveats": [
+      "全程需要两名玩家合作。辅助菜单提供跳到下一检查点的选项。"
+    ],
+    "resources": [
+      "两名玩家各自的位置与能力权限相互补充",
+      "失败难度可通过辅助选项调整"
+    ],
+    "progression": [
+      "主线持续开放不同章节与能力组合",
+      "关卡检查点支撑局部重试"
+    ],
+    "scopeLabel": "双人合作主线",
+    "scopeNotes": "范围为米欧与佐伊共同穿越科幻、奇幻世界的本体主线。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2001120&l=english&cc=us",
+        "title": "Split Fiction",
+        "publisher": "Steam / Hazelight Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.ea.com/able/resources/split-fiction/split-fiction",
+        "title": "Split Fiction Accessibility Resources",
+        "publisher": "Electronic Arts",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://www.destructoid.com/complete-split-fiction-controls-for-pc-and-controllers/",
+        "title": "Complete Split Fiction controls for PC and controllers",
+        "publisher": "Destructoid",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Split_Fiction",
+        "title": "Split Fiction — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取玩法段与发行表，核对章节能力不对称和已发行平台；未试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "两位玩家共同通过科幻与奇幻故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "双方的共同目标是协作离开窃取创意的机器",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "两位玩家分别直接控制自己的角色移动",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "以跳跃跨越关卡中的空间间隔",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "使用冲刺在关卡中快速位移与避险",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "grappling",
+        "note": "使用抓钩连接关卡中的抓取点",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "每章两人的能力不同，需要相互配合才能推进",
+        "source": 3,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2001120&l=english&cc=us"
+    },
+    "aliases": [
+      "双影奇境"
+    ]
+  },
+  {
+    "id": "death-stranding-2-on-the-beach",
+    "name": "死亡搁浅2：冥滩之上 / DEATH STRANDING 2: ON THE BEACH",
+    "studio": "KOJIMA PRODUCTIONS、Nixxes Software ",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "vehicle-driving",
+      "aiming-shooting",
+      "spatial-planning"
+    ],
+    "summary": "为下一段运送选择工具和路线，在昼夜、天气及灾害变化中穿越澳大利亚，用设施与异步互助降低运输阻力。",
+    "analysis": "一条路线的价值会随天气、装备和其他玩家的建设变化；运输准备与沿途基础设施让重复经过的地形逐渐变成可经营的通路。",
+    "loop": [
+      "准备装备、制造武器并选择运送路线",
+      "徒步或驾车越过地形，潜行避敌或交战",
+      "完成连接与运送，利用设施和他人的帮助继续远行"
+    ],
+    "learning": [
+      "共享建设可以让运输效率的提高来自玩家之间长期累积的帮助，而不只是角色数值增长。"
+    ],
+    "caveats": [
+      "联机时可利用其他玩家留下的设施与物资，双方无需同时在线；离线流程没有其他玩家贡献。"
+    ],
+    "resources": [
+      "装备和货物影响旅途准备",
+      "共享储物柜与公共工程提供异步资源帮助",
+      "APAS能力改善射击或隐蔽表现"
+    ],
+    "progression": [
+      "连接网络与运送推进故事",
+      "技能与可获得装备逐步扩展运输手段"
+    ],
+    "scopeLabel": "本体运送与探索",
+    "scopeNotes": "原作于2025年在PS5发行，PC版于2026年推出。范围为Sam的本体运送、探索与设施建设。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3280350&l=english&cc=us",
+        "title": "DEATH STRANDING 2: ON THE BEACH",
+        "publisher": "Steam / KOJIMA PRODUCTIONS、Nixxes Software ",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-us/games/death-stranding-2-on-the-beach/",
+        "title": "Death Stranding 2: On the Beach — overview and FAQs",
+        "publisher": "Sony Interactive Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Death_Stranding_2:_On_the_Beach",
+        "title": "Death Stranding 2: On the Beach — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "day-night-cycle",
+        "note": "在昼夜交替中规划并进行旅程",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "season-weather",
+        "note": "时间雨、沙尘暴和森林火灾等环境变化影响行进",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "可用静默制服、诱饵全息影像或远程工具避开敌人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "出发前可制造机枪、霰弹枪和榴弹发射器等武器",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "使用制造的远程武器处理沿途威胁",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "其他玩家留下的桥梁、公共工程和货物可支持自己的运送，自己的行动也能帮助他人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "开启在线连接并使用Social Strand异步互助；离线流程没有其他玩家贡献。"
+      },
+      {
+        "id": "direct-movement",
+        "note": "玩家直接控制Sam徒步穿过开放地形，也可用车辆运货",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "通过运送货物与连接地区推进Sam的使命",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/6270c77b0729e2df0a17d660286eeddfd9169386/header.jpg?t=1774022345",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3280350&l=english&cc=us"
+    },
+    "aliases": [
+      "死亡搁浅2：冥滩之上"
+    ]
+  },
+  {
+    "id": "kingdom-come-deliverance-2",
+    "name": "天国：拯救2 / Kingdom Come: Deliverance II",
+    "studio": "Warhorse Studios",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "在中世纪波希米亚探索与接取任务，以剑、钝器、弓弩或早期火器战斗，并通过实际使用提升亨利的技能。",
+    "analysis": "武器、潜行与制作技能随使用提高，角色会逐渐擅长玩家常用的做法；不同任务再让这些专长面对不同处境。",
+    "loop": [
+      "探索城镇与森林，接受人物任务",
+      "选择武器、潜行或正面应战",
+      "通过使用与学习发展技能，选择适合自己的专长"
+    ],
+    "learning": [
+      "技能随实际使用提高，让角色逐渐擅长玩家惯用的做法；不同任务又为这些专长提供新的使用场合。"
+    ],
+    "caveats": [
+      "不含三项剧情扩展。"
+    ],
+    "resources": [
+      "武器与防护装备需要维护",
+      "技能使用和教师学习支持成长",
+      "专长改变可用行动和战斗效果"
+    ],
+    "progression": [
+      "武器、潜行、锻造与炼金等能力按使用发展",
+      "任务与选择改变亨利后续经历"
+    ],
+    "scopeLabel": "2025本体主线与探索",
+    "scopeNotes": "范围为亨利在本体中的任务、探索、战斗与技能成长。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1771300&l=english&cc=us",
+        "title": "Kingdom Come: Deliverance II",
+        "publisher": "Steam / Warhorse Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.deepsilver.com/games/kingdom-come-deliverance-ii",
+        "title": "Kingdom Come: Deliverance II — Combat and RPG Elements",
+        "publisher": "Deep Silver / Warhorse Studios",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Kingdom_Come:_Deliverance_II",
+        "title": "Kingdom Come: Deliverance II — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "剑、钝器与徒手提供不同近身战斗方式",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "观察对手并掌握招架时机",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "可使用弓、弩和早期火器作战",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-experience",
+        "note": "技能随使用提升，武器、潜行、锻造和炼金的熟练度相互关联",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择不同武器风格与专长，形成自己的应战方案",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "逐渐开放狂暴、干扰警犬等专长行动",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "通过任务推进经历，也可从教师获得学习机会",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1777975568",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1771300&l=english&cc=us"
+    },
+    "aliases": [
+      "天国：拯救2"
+    ]
+  },
+  {
+    "id": "monster-hunter-wilds",
+    "name": "怪物猎人：荒野 / Monster Hunter Wilds",
+    "studio": "CAPCOM Co., Ltd.",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "追踪并狩猎大型怪物，用伤口和集中弱点争取攻击机会，再把所得素材制成武器护甲，为下一次狩猎调整配置。",
+    "analysis": "怪物材料把战斗目标与装备目标相连，伤口又让局部瞄准同时产生即时伤害和额外资源；环境变化使同一猎物的处境也会改变。",
+    "loop": [
+      "准备装备与食物，前往调查或狩猎",
+      "观察怪物、制造并破坏伤口，采集环境素材",
+      "用所得材料制作与强化装备，接取后续狩猎"
+    ],
+    "learning": [
+      "局部弱点可以同时连接战斗判断、资源产出与下一次配装，让循环中的各阶段相互解释。"
+    ],
+    "caveats": [
+      "后续剧情扩展新增的怪物与规则不在此范围。"
+    ],
+    "resources": [
+      "怪物素材用于武器护甲",
+      "食材提供暂时增益",
+      "鹭鹰龙可携带第二把武器，途中切换"
+    ],
+    "progression": [
+      "武器护甲与材料库存持续发展",
+      "任务开放后可重复可选狩猎补足材料"
+    ],
+    "scopeLabel": "2025本体常规狩猎",
+    "scopeNotes": "范围为本体中的装备准备、生态探索与常规狩猎。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2246340&l=english&cc=us",
+        "title": "Monster Hunter Wilds",
+        "publisher": "Steam / CAPCOM Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-ie/games/monster-hunter-wilds/monster-hunter-wilds-starters-guide/",
+        "title": "Monster Hunter Wilds: New hunter’s handbook",
+        "publisher": "Sony Interactive Entertainment / Capcom",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Monster_Hunter_Wilds",
+        "title": "Monster Hunter Wilds — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "season-weather",
+        "note": "荒芜期、异常气候期与丰饶期改变生态和怪物活动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "狩猎所得素材用于锻造新武器与护甲",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "用投射器钩索在移动途中采集环境物资",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "瞄准并发射捕获网或投射器弹药",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择武器与护甲，骑乘鹭鹰龙时可切换所携第二把武器",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "集中攻击破坏怪物伤口会额外获得素材",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在合适地点设置临时营地，地点风险影响其被怪物破坏的可能",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四名玩家共同探索禁足地并狩猎怪物",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用多人合作模式；单人游玩不包含其他玩家。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1787549555",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2246340&l=english&cc=us"
+    },
+    "aliases": [
+      "怪物猎人：荒野"
+    ]
+  },
+  {
+    "id": "metaphor-refantazio",
+    "name": "暗喻幻想 / Metaphor: ReFantazio",
+    "studio": "ATLUS",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "turn-based-rpg"
+    ],
+    "playStyleIds": [
+      "turn-based-combat",
+      "action-combat",
+      "buildcrafting",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "summary": "乘铁甲战车往返城镇与迷宫，安排白天任务和夜间交往，以阿基态配置队伍，在即时接敌与回合战斗间应对旅途。",
+    "analysis": "旅行、迷宫和人物关系竞争同一段日程；队伍配置不只在战前发生，也依赖之前把时间投入哪些人和哪些行动。",
+    "loop": [
+      "选择日程、任务与旅行目的地",
+      "探索迷宫，以即时动作接敌并进入回合战斗",
+      "夜间增进关系和德性，发展下一阶段队伍"
+    ],
+    "learning": [
+      "把关系发展和迷宫探索放入同一份日程预算，能让角色互动成为有机会成本的玩法选择。"
+    ],
+    "caveats": [
+      "时间预算来自游戏内日程，玩家需要在任务、探索和交往之间分配可用时间。"
+    ],
+    "resources": [
+      "游戏内时间限制可完成的活动",
+      "阿基态能力改变队伍方案",
+      "关系与德性是日常发展的投入"
+    ],
+    "progression": [
+      "探索与任务推进王位竞逐",
+      "人物关系与阿基态能力持续发展"
+    ],
+    "scopeLabel": "2024本体主线",
+    "scopeNotes": "范围为本体主线中的旅行、迷宫探索、人物交往与战斗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2679460&l=english&cc=us",
+        "title": "Metaphor: ReFantazio",
+        "publisher": "Steam / ATLUS",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Metaphor:_ReFantazio",
+        "title": "Metaphor: ReFantazio — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "主要强敌战斗按回合进行",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "通过阿基态力量配置角色与队伍能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "day-night-cycle",
+        "note": "白天开展任务与迷宫探索，夜间安排关系和德性活动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "日程有限，任务、探索与人物活动需要选择先后",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "通过交往增进与人物的纽带",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "承担任务并参与王位竞逐，推动旅程",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2679460/header.jpg?t=1764776325",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2679460&l=english&cc=us"
+    },
+    "aliases": [
+      "暗喻幻想"
+    ]
+  },
+  {
+    "id": "persona-3-reload-2024",
+    "name": "女神异闻录3 Reload（2024重制版） / Persona 3 Reload",
+    "studio": "ATLUS",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "turn-based-rpg"
+    ],
+    "playStyleIds": [
+      "turn-based-combat",
+      "buildcrafting",
+      "life-simulation",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "summary": "白天安排学习与人物交往，影时间探索塔尔塔罗斯，用人格面具、弱点追加行动和重制版的换手机制组织队伍战斗。",
+    "analysis": "日常能力与社群关系决定准备空间，弱点追加与换手则让战斗中的行动分配更灵活；重制版将原有日程循环接入新的队友协作手段。",
+    "loop": [
+      "安排日间活动、培养社群与属性",
+      "在影时间探索迷宫并进行回合战斗",
+      "合成人格面具、完成委托，再调整日常与队伍安排"
+    ],
+    "learning": [
+      "换手让弱点命中带来的追加行动能在队员间重新分配，日常培养也因此影响战斗配合。"
+    ],
+    "caveats": [
+      "不含Episode Aigis。"
+    ],
+    "resources": [
+      "学力、魅力、勇气限制部分日常行动",
+      "人格面具提供不同战斗能力",
+      "社群与宿舍相处影响队伍发展"
+    ],
+    "progression": [
+      "人格面具全书记录已获得内容",
+      "委托与迷宫推进故事，社群关系持续发展"
+    ],
+    "scopeLabel": "2024重制版本体",
+    "scopeNotes": "采用2024年Reload重制版，讨论校园日常、塔尔塔罗斯探索与队伍战斗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2161700&l=english&cc=us",
+        "title": "Persona 3 Reload",
+        "publisher": "Steam / ATLUS",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://asia.sega.com/p3r/en/",
+        "title": "Persona 3 Reload — Game System",
+        "publisher": "ATLUS / SEGA",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Persona_3_Reload",
+        "title": "Persona 3 Reload — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "击中弱点触发One More，Reload可把追加行动Shift给另一名队友",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "ability-check",
+        "note": "部分日常行动检查学力、魅力或勇气条件",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "与人物相处提升社群关系，宿舍交往还可取得同伴战斗特性",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "在天鹅绒房间合成人格面具，得到新的人格面具",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "collectible-catalog",
+        "note": "可将人格面具登记进全书供后续管理",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成伊丽莎白的委托取得奖励",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "配置适合探索与战斗的同伴队伍",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2161700&l=english&cc=us"
+    },
+    "aliases": [
+      "女神异闻录3 Reload（2024重制版）"
+    ]
+  },
+  {
+    "id": "final-fantasy-7-rebirth",
+    "name": "最终幻想VII 重生 / FINAL FANTASY VII REBIRTH",
+    "studio": "Square Enix",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration",
+      "tactical-command"
+    ],
+    "summary": "直接攻击累积ATB，再为队员选择能力与魔法，配置魔晶石和联手技，并在米德加之外的区域探索。",
+    "analysis": "普攻不仅削减生命，也为指令行动筹集预算；队员间的联手又把各自的能力使用联系起来，使切换角色和准备魔晶石有明确用途。",
+    "loop": [
+      "探索区域并发展队伍配置",
+      "用实时攻击累积ATB，调用队员技能和魔法",
+      "通过联手行动与区域推进开放更多战斗选择"
+    ],
+    "learning": [
+      "普通攻击积累ATB，再由ATB支持技能与魔法，使动作操作直接影响队伍指令的使用机会。"
+    ],
+    "caveats": [
+      "指令菜单会减慢战斗进程，时间并未完全停止。"
+    ],
+    "resources": [
+      "能力消耗ATB，魔法还需MP",
+      "武器与魔晶石决定技能权限",
+      "联手槽和极限槽由战斗行为累积"
+    ],
+    "progression": [
+      "队伍等级与亲密度开放更多联手能力",
+      "区域与剧情持续推进旅程"
+    ],
+    "scopeLabel": "2024本体Active战斗",
+    "scopeNotes": "范围为本体Active模式下的队伍战斗与区域探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2909400&l=english&cc=us",
+        "title": "FINAL FANTASY VII REBIRTH",
+        "publisher": "Steam / Square Enix",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.square-enix.com/ffvii/en-gb/games/rebirth/battle/",
+        "title": "FINAL FANTASY VII REBIRTH — Battle",
+        "publisher": "Square Enix",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VII_Rebirth",
+        "title": "Final Fantasy VII Rebirth — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "实时普通攻击造成伤害并帮助积累ATB",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "普通攻击转为ATB，能力使用累积联手槽，受伤或打出失衡累积极限槽",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "技能需要ATB，魔法同时占用ATB和MP，不能同时无限使用",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "在武器与护甲中配置魔晶石来取得魔法和能力",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "召唤兽会自动作战，也接受特定能力命令",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "提升同伴亲密度与队伍等级可开放更多联手能力",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "Active模式中角色动作与敌方交战持续进行，指令菜单只减慢时间",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1789446799",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2909400&l=english&cc=us"
+    },
+    "aliases": [
+      "最终幻想VII 重生"
+    ]
+  },
+  {
+    "id": "final-fantasy-16",
+    "name": "最终幻想XVI / FINAL FANTASY XVI",
+    "studio": "Square Enix",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "操纵克莱夫用剑术、闪避与不同召唤兽能力即时作战，积累失衡机会，并在据点承接任务、制作与强化装备。",
+    "analysis": "敌方失衡窗口把持续应对与集中输出分开，召唤兽能力切换则提供不同的开场、削韧与爆发方案。",
+    "loop": [
+      "从据点准备技能装备并接受任务",
+      "在野外或迷宫即时交战，利用失衡打出伤害",
+      "回到据点制作强化，开放后续故事与能力"
+    ],
+    "learning": [
+      "失衡窗口让玩家有机会把保留的技能集中投入短暂的输出阶段。"
+    ],
+    "caveats": [
+      "同行角色主要由AI控制，玩家可以向托加尔下达支援指令。两项剧情扩展不在此范围。"
+    ],
+    "resources": [
+      "能力学习与装备制作需要投入",
+      "敌方失衡槽决定短暂进攻窗口",
+      "据点提供补给与铁匠服务"
+    ],
+    "progression": [
+      "故事中获得更多召唤兽力量",
+      "能力和装备持续发展"
+    ],
+    "scopeLabel": "2023本体主线与战斗",
+    "scopeNotes": "范围为克莱夫在本体中的即时战斗、区域探索与据点准备。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2515020&l=english&cc=us",
+        "title": "FINAL FANTASY XVI",
+        "publisher": "Steam / Square Enix",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://uk.finalfantasyxvi.com/battle",
+        "title": "FINAL FANTASY XVI — Battle",
+        "publisher": "Square Enix",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_XVI",
+        "title": "Final Fantasy XVI — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "使用剑术近身攻击敌人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "从多种召唤兽能力和剑术中选择发展方向",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "战斗中可闪避敌方攻击",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "累积敌方失衡槽，使其短暂受控并承受更多攻击",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "据点铁匠可制作和强化已有装备",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "在据点接受人物委托和讨伐任务",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "故事推进获得新的召唤兽力量和对应战斗手段",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/header.jpg?t=1773294537",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2515020&l=english&cc=us"
+    },
+    "aliases": [
+      "最终幻想XVI"
+    ]
+  },
+  {
+    "id": "armored-core-6-fires-of-rubicon",
+    "name": "装甲核心VI：境界天火 / ARMORED CORE™ VI FIRES OF RUBICON™",
+    "studio": "FromSoftware, Inc.",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "buildcrafting",
+      "platforming"
+    ],
+    "summary": "为任务搭配武器、机体和内部零件，在三维空间机动与同时开火，用冲击累积使敌机失衡后集中打击。",
+    "analysis": "武器和机动不是两套独立配置：腿部、推进器与发电机影响可用位置，武器的冲击与伤害分工则影响何时值得贴近或撤开。",
+    "loop": [
+      "按任务选择机体零件与武装",
+      "利用三维移动和多武器同时射击寻找优势",
+      "观察失败原因，卖买零件调整机体后再次挑战"
+    ],
+    "learning": [
+      "腿部、推进器和武装共同决定机体能采用哪些位置与攻防办法。"
+    ],
+    "caveats": [
+      "不含PvP竞技。"
+    ],
+    "resources": [
+      "资金购买零件，同一零件买卖价格相等",
+      "双手与双肩最多四处武器位置",
+      "冲击累积影响双方失衡"
+    ],
+    "progression": [
+      "任务推进开放后续挑战",
+      "已购零件可重新配置以适应不同目标"
+    ],
+    "scopeLabel": "2023本体单人任务",
+    "scopeNotes": "范围为单人任务中的零件装配、三维机动与多武器交战。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1888160&l=english&cc=us",
+        "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
+        "publisher": "Steam / FromSoftware, Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://armoredcore6.bn-ent.net/en/information/?p=22",
+        "title": "ARMORED CORE VI FIRES OF RUBICON Beginner’s Guide",
+        "publisher": "Bandai Namco / FromSoftware",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Armored_Core_VI:_Fires_of_Rubicon",
+        "title": "Armored Core VI: Fires of Rubicon — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "选择武器、框架及内部零件，腿部、发电机和推进器共同影响机动",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "在三维战场直接控制机体水平与垂直移动",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "移动与推进闪避可同射击同时执行",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "可同时使用双手与双肩位置的枪械或导弹",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "持续攻击累积冲击失稳，槽满后目标进入失衡并承受更高伤害",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "敌我机体都会受伤，己方失衡也会暴露在高伤害中",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "零件买卖价格相同，可卖出已有零件筹资改装",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1748630736",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1888160&l=english&cc=us"
+    },
+    "aliases": [
+      "装甲核心VI：境界天火"
+    ]
+  },
+  {
+    "id": "stellar-blade",
+    "name": "剑星 / Stellar Blade™",
+    "studio": "SHIFT UP Corporation",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "用轻重攻击、精准格挡与闪避应对孽奇拔，积累贝塔能量施展技能，在废土探索中扩展战斗能力和装备。",
+    "analysis": "招架能让敌人失衡，精准闪避则保留贴身反击位置；防守方式因此不仅决定免伤，也决定下一步从哪里、用什么进攻。",
+    "loop": [
+      "探索废土并观察敌方招式",
+      "以格挡或闪避创造近身攻击机会",
+      "配置新能力装备，消耗贝塔能量处理更强敌人"
+    ],
+    "learning": [
+      "防守成功后的空间位置和反击权限，能让招架与闪避形成不同用途，而不仅是两种免伤按钮。"
+    ],
+    "caveats": [
+      "Boss Challenge是独立挑战模式，不在主线分析范围。"
+    ],
+    "resources": [
+      "贝塔技能消耗有限能量",
+      "技能点与强化材料需要选择用途",
+      "装备与能力选择改变应战方式"
+    ],
+    "progression": [
+      "主线逐渐开放新动作与装备强化",
+      "可调整技能和装备以适应不同敌人"
+    ],
+    "scopeLabel": "本体主线",
+    "scopeNotes": "原作于2024年在PS5发行，PC版于2025年推出。范围为伊芙的本体主线与战斗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3489700&l=english&cc=us",
+        "title": "Stellar Blade™",
+        "publisher": "Steam / SHIFT UP Corporation",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-au/editorial/stellar-blade-beginners-guide-to-combat/",
+        "title": "Stellar Blade: A beginner’s guide to combat",
+        "publisher": "Sony Interactive Entertainment / SHIFT UP",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Stellar_Blade",
+        "title": "Stellar Blade — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "以轻攻击、重攻击及二者组合发动剑术",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "敌方命中前准确格挡可完全抵消伤害",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "闪避或精准闪避躲开来袭攻击，部分致命攻击可用Blink应对",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "posture-break",
+        "note": "反复精准格挡使敌人失衡，开放惩戒攻击",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "在战斗中积累贝塔能量，再消耗它施放贝塔技能",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "Rush突进攻击使用后有短暂冷却",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择能力与护甲，并结合武器强化调整战斗方案",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3489700/header.jpg?t=1776466244",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3489700&l=english&cc=us"
+    },
+    "aliases": [
+      "剑星"
+    ]
+  },
+  {
+    "id": "helldivers-2",
+    "name": "绝地潜兵2 / HELLDIVERS™ 2",
+    "studio": "Arrowhead Game Studios",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shooter",
+      "party-cooperation"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "summary": "四人小队携带武器、护甲和战备支援降落敌星，协同完成任务并回收样本，同时避免自己的火力误伤队友。",
+    "analysis": "队伍火力越强，友军误伤的协调成本也越高；出发前的职责互补与战场上的投掷位置，共同影响支援武器是否真正有效。",
+    "loop": [
+      "选择任务、武器护甲和战备方案",
+      "协作射击、呼叫支援并完成地图目标",
+      "带回样本和奖励，扩展后续装备选择"
+    ],
+    "learning": [
+      "共享目标之外加入不可忽略的误伤，会让火力布置与队伍交流产生直接的规则后果。"
+    ],
+    "caveats": [
+      "友军火力同样会伤及队友，射击与呼叫支援都需要顾及伙伴位置。"
+    ],
+    "resources": [
+      "弹药需要补给",
+      "战备支援有不同部署时间与次数",
+      "征用币、奖章和样本支持后续解锁"
+    ],
+    "progression": [
+      "完成任务与行动开放更多装备和挑战",
+      "全体玩家的任务结果推动银河战争"
+    ],
+    "scopeLabel": "本体合作任务与常规战备",
+    "scopeNotes": "范围为小队合作任务中的配装、战备支援、目标完成与样本回收。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=553850&l=english&cc=us",
+        "title": "HELLDIVERS™ 2",
+        "publisher": "Steam / Arrowhead Game Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-us/editorial/a-beginner-s-guide-to-helldivers-2/",
+        "title": "A cadet’s guide to Helldivers 2",
+        "publisher": "Sony Interactive Entertainment / Arrowhead",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Helldivers_2",
+        "title": "Helldivers 2 — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "以第三人称枪械和投掷爆炸物打击敌方",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四名玩家组成小队共同执行任务",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择不同武器、护甲和战备支援构成任务方案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "友军火力同样可能杀伤队友",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "可用奖章和征用币取得武器护甲及战备内容",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成主要与附加作战目标取得奖励",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "阵亡潜兵掉落武器、弹药和样本，可由复投者或同伴拾回",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成较简单行动后可进入更危险的作战",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/850e2f9e5bb15c5706bb9a1edc832f4f782e8be5/header.jpg?t=1793395133",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=553850&l=english&cc=us"
+    },
+    "aliases": [
+      "绝地潜兵2"
+    ]
+  },
+  {
+    "id": "palworld",
+    "name": "幻兽帕鲁 / Palworld",
+    "studio": "Pocketpair",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "collection-training",
+      "management-production",
+      "spatial-planning",
+      "exploration"
+    ],
+    "summary": "捕获和培养帕鲁，分配它们采矿、种植和生产，在有食物与敌对势力压力的世界建立据点并继续探索。",
+    "analysis": "同一只帕鲁既是战斗与旅行伙伴，也是生产劳力；食物供给和岗位匹配让生物收集与基地运营互相依赖。",
+    "loop": [
+      "探索环境、捕获帕鲁并寻找资源",
+      "建造设施，按特长分配采矿、种植和生产",
+      "供给食物、培育后代并准备更危险的探索"
+    ],
+    "learning": [
+      "把收集对象的特长用于生产岗位，可以让培养目标由“更多更强”扩展到实际的生产瓶颈。"
+    ],
+    "caveats": [
+      "只有联机模式包含其他玩家的合作行动。"
+    ],
+    "resources": [
+      "食物维持角色与帕鲁生产",
+      "矿石等环境材料支持建设",
+      "遗传特性使繁育结果存在培养价值"
+    ],
+    "progression": [
+      "据点和帕鲁队伍逐渐发展",
+      "繁育与岗位选择扩展生产能力"
+    ],
+    "scopeLabel": "本体生存与据点经营",
+    "scopeNotes": "2024年开放抢先体验，2026年正式发行。范围为生存探索、帕鲁培养与据点经营。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1623730&l=english&cc=us",
+        "title": "Palworld",
+        "publisher": "Steam / Pocketpair",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Palworld",
+        "title": "Palworld — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      },
+      {
+        "url": "https://www.palworld.co.jp/en/?target=company",
+        "title": "Palworld Entertainment — company and game history",
+        "publisher": "Palworld Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方公司介绍：2024年1月开始抢先体验；现行商店正式版日期不改变首发year。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "workforce-assignment",
+        "note": "将不同特长帕鲁分配到生火、发电、采矿或农务岗位",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "安排播种浇水收获，并繁育继承亲代特性的帕鲁",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建造据点与生产设施，可让帕鲁协助建设",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "食物稀缺影响生存，生产中的帕鲁也需要持续供食",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "潜入保育区捕获稀有帕鲁，需要避免被发现",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "从环境开采矿石等物资供生产使用",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "联机玩家可共同探索世界与经营生存活动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用联机合作模式；单人流程不包含其他玩家。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1623730&l=english&cc=us"
+    },
+    "aliases": [
+      "幻兽帕鲁"
+    ]
+  },
+  {
+    "id": "repo",
+    "name": "R.E.P.O.",
+    "studio": "semiwork",
+    "year": 2025,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "spatial-planning"
+    ],
+    "summary": "与同伴潜入怪物盘踞的建筑，使用物理抓取工具搬运贵重物，把尽量完好的货物送到回收点换取资金。",
+    "analysis": "货物的重量、形状与易碎性让收益不只取决于是否找到物品；回程如何协作搬运，也会持续改变已经取得的价值。",
+    "loop": [
+      "搜索建筑并辨认高价值货物",
+      "协调抓取与搬运，避开怪物和碰撞",
+      "完成回收额度后带回资金，购买工具再进入下一关"
+    ],
+    "learning": [
+      "货物的重量与易碎性让搬运路线和碰撞直接影响最终收益。"
+    ],
+    "caveats": [
+      "货物碰撞或破损会降低回收价值。赛车等额外模式不在此范围。"
+    ],
+    "resources": [
+      "物品损坏会降低可兑换价值",
+      "SURPLUS用于工具、武器和补给",
+      "不同货物需要不同搬运空间与协作"
+    ],
+    "progression": [
+      "同一轮关卡间可购买提升和装备",
+      "探索地图与怪物配置会变化"
+    ],
+    "scopeLabel": "抢先体验合作回收模式",
+    "scopeNotes": "范围为抢先体验主模式中的建筑搜索、货物搬运与合作回收。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3241660&l=english&cc=us",
+        "title": "R.E.P.O.",
+        "publisher": "Steam / semiwork",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/R.E.P.O.",
+        "title": "R.E.P.O. — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "最多六名玩家共同搜集并搬运物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "使用物理抓取工具处理有重量、会受重力影响的货物和环境对象",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "把贵重物运到回收点才可取得对应SURPLUS资金",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "使用赚得的资金购买工具与武器",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "建筑中的怪物会攻击并杀死玩家",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每次探索的模块化房间、物品和敌人分布可以变化",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "关卡间资金要在升级、武器、工具与恢复资源间取舍",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/62177765c05399116f0453fe1177b00ceed698c4/header_alt_assets_3.jpg?t=1793278962",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3241660&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "peak",
+    "name": "PEAK",
+    "studio": "Team PEAK",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "adventure",
+      "platformer"
+    ],
+    "playStyleIds": [
+      "platforming",
+      "gathering-survival",
+      "exploration"
+    ],
+    "summary": "独自或结伴攀登每日轮换的荒岛山峰，寻找食物与攀爬工具，处理伤势带来的体力上限损失并相互拉扶。",
+    "analysis": "伤势和负重会挤占下一段攀爬的体力空间，因此一次失误不仅造成当下危险，也会改变后面能够选择的路线。",
+    "loop": [
+      "观察山壁与队友位置，寻找物资",
+      "控制体力攀爬，布设绳索并帮助伙伴",
+      "处理饥饿与伤势，跨过下一片生物群系"
+    ],
+    "learning": [
+      "伤势会压缩后续攀爬的体力预算，因此队友的补给与拉扶会影响整段登山路线。"
+    ],
+    "caveats": [
+      "岛屿地图每24小时轮换，同一天可以反复挑战同一布局。"
+    ],
+    "resources": [
+      "体力支持攀爬",
+      "饥饿、伤势与负重会减少可用体力",
+      "食物、绳索和岩钉提供不同补救办法"
+    ],
+    "progression": [
+      "同一天可以反复尝试同一岛屿",
+      "成就开放外观，成功登顶后可挑战更高难度"
+    ],
+    "scopeLabel": "登顶主线／单人或多人合作",
+    "scopeNotes": "范围为单人或多人合作的登顶流程，包含后续更新加入的生物群系变体。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3527290&l=english&cc=us",
+        "title": "PEAK",
+        "publisher": "Steam / Team PEAK",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Peak_(video_game)",
+        "title": "Peak — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取玩法、体力与负重、背包及发行表；区分已更新生物群系与旧商店介绍。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "wall-climb",
+        "note": "直接攀爬山壁，使用绳索与岩钉帮助后续通过",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四名侦察员互相拉上边缘并协助登顶",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用多人合作模式；单人游玩不包含其他玩家。"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "在岛上搜寻食物与有用的生存物资",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "需要寻找食物并处理伤势才能持续上升",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "同一份体力预算用于选择不同攀爬路线与补救行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "跌落与危险造成伤势，继而限制后续攀爬",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "背包可增加携带空间，但携带物重量也会影响体力",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1792684718",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3527290&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "blue-prince",
+    "name": "蓝途王子 / Blue Prince",
+    "studio": "Dogubomb",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "logic-puzzle",
+      "roguelite",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "puzzle-solving",
+      "exploration",
+      "spatial-planning"
+    ],
+    "summary": "每次开门从候选中选择下一间房，在有限步数和钥匙宝石预算下拼接宅邸，寻找46号房并跨房间搜集谜题线索。",
+    "analysis": "房间既是路径、资源来源，也可能是下一道谜题的线索；日重置保留的知识使没抵达终点的探索仍可能改变下一天的计划。",
+    "loop": [
+      "开门查看候选房间，选择连接方式",
+      "收集钥匙宝石与工具，交叉寻找谜题提示",
+      "结束当天并重置房间，把知识和永久发展带进下一天"
+    ],
+    "learning": [
+      "把生成空间的选择权交给玩家后，探索路线本身就能成为需要管理资源的谜题。"
+    ],
+    "caveats": [
+      "宅邸布局和多数随身物品每日重置；永久升级与已经掌握的谜题知识可以延续。"
+    ],
+    "resources": [
+      "步数限制当日穿行",
+      "钥匙用于门锁，宝石用于特定房型",
+      "金币可换工具和食物"
+    ],
+    "progression": [
+      "多数房间与随身物品随日重置",
+      "永久庄园升级与玩家掌握的谜题知识延续"
+    ],
+    "scopeLabel": "本体宅邸探索与谜题",
+    "scopeNotes": "范围为宅邸中的房间规划、资源安排与跨房间解谜。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1569580&l=english&cc=us",
+        "title": "Blue Prince",
+        "publisher": "Steam / Dogubomb",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://blog.playstation.com/?p=403457",
+        "title": "A tour of Blue Prince’s shifting rooms",
+        "publisher": "Tonda Ros / Dogubomb / PlayStation Blog",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Blue_Prince",
+        "title": "Blue Prince — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取三选一随机平面图、门向阻塞、步数与多种货币、日重置及永久升级说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "random-draw",
+        "note": "每次开新门从三个随机房间平面图中选择其一",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "通过选择房间逐步构成当日宅邸布局",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "次日宅邸布局重置，普通当日物品与进度不会全部保留",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "找到永久庄园蓝图升级后，后续探索可继续获益",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "某一房间的线索可能解开另一房间的谜题，需要跨房间关联",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "步数用于房间间穿行，钥匙、宝石和金币也各有竞争用途",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "房间门向与既有通路连接情况影响未来能走的路线，错接可形成死路",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1569580/879ac248a3b548a6bbc32771b950756378e7e922/header.jpg?t=1793379538",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1569580&l=english&cc=us"
+    },
+    "aliases": [
+      "蓝途王子"
+    ]
+  },
+  {
+    "id": "dispatch",
+    "name": "Dispatch",
+    "studio": "AdHoc Studio",
+    "year": 2025,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "simulation-management",
+      "adventure",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "tactical-command",
+      "dialogue-choice"
+    ],
+    "summary": "在超英调度中心查看突发事件，按英雄能力与可出勤状态分派队伍，同时通过办公室对话处理关系和故事分支。",
+    "analysis": "人物既是需要调度的行动能力，也是会记住玩家选择的同事；任务效率与关系处理因此不能完全分开优化。",
+    "loop": [
+      "查看地图上的紧急事件与英雄状态",
+      "选择派遣对象，等待返回并管理后续出勤",
+      "在剧情中作出回应，发展关系与英雄能力"
+    ],
+    "learning": [
+      "让同一角色同时承担生产能力和人物关系，可以使管理选择与叙事后果互相补足。"
+    ],
+    "caveats": [
+      "英雄完成任务后需要等待才能再次出勤，会影响后续事件的人手安排。"
+    ],
+    "resources": [
+      "英雄技能与待命时间限制同时可处理的任务",
+      "人员关系影响队伍凝聚与后续选择"
+    ],
+    "progression": [
+      "英雄逐渐开放能力",
+      "对白与重要决定影响关系、效忠与故事走向"
+    ],
+    "scopeLabel": "完整八章／调度与分支故事",
+    "scopeNotes": "游戏于2025年分批发行。范围为完整八章中的英雄调度、办公室关系与剧情选择。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2592160&l=english&cc=us",
+        "title": "Dispatch",
+        "publisher": "Steam / AdHoc Studio",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dispatch_(video_game)",
+        "title": "Dispatch — Gameplay and episode release schedule",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取按属性特性分派英雄、冷却管理、分支对话与八章节发行表；不把短暂黑客小游戏扩写为主玩法。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "dialogue-choice",
+        "note": "办公室闲谈与生死抉择中选择回应或行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "决定影响人物效忠及故事的后续路线",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "选择会改变自己与英雄之间的关系",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "按紧急任务情况选择派遣适合的英雄",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "升级英雄技能并开放新的行动能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "action-cooldown",
+        "note": "英雄派出后的返回与待命限制下一次可派遣时间",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2592160/header.jpg?t=1792683942",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2592160&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "schedule-1",
+    "name": "Schedule I",
+    "studio": "TVGS",
+    "year": 2025,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "simulation-management"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "vehicle-driving"
+    ],
+    "summary": "在虚构城市经营违法商品的生产与分销，从手工加工和送货起步，探索配方并雇用员工，扩展自动化供应链。",
+    "analysis": "制作、送货和雇工处于同一条利润循环，自动化的意义是逐步把玩家从重复操作转向产能与分销安排。",
+    "loop": [
+      "获得原料并制作、试验商品变体",
+      "步行或驾车送货，安排经销人员",
+      "投资新场所与员工，扩展生产分销规模"
+    ],
+    "learning": [
+      "经营规模扩大后，玩家可以把重复的生产和送货交给员工，转而安排产能、人员与分销。"
+    ],
+    "caveats": [
+      "内容和配方可能随抢先体验更新调整。"
+    ],
+    "resources": [
+      "现金用于原料、房产与雇工",
+      "不同产品具有不同加工流程",
+      "警察与竞争势力带来经营风险"
+    ],
+    "progression": [
+      "购入场所和员工扩大业务",
+      "新配方与产品变体拓展可销售选择"
+    ],
+    "scopeLabel": "2025抢先体验经营流程",
+    "scopeNotes": "范围为抢先体验版本中虚构城市的生产、送货、雇工与业务扩展。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3164500&l=english&cc=us",
+        "title": "Schedule I",
+        "publisher": "Steam / TVGS",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Schedule_I_(video_game)",
+        "title": "Schedule I (video game) — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取发行信息框，按核验日排除尚未发行平台；首发与移植同条记录，未据社区类型标签决定genre。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/3164500/Schedule_I/?curator_clanid=41243762",
+        "title": "Schedule I — Early Access",
+        "publisher": "Steam / TVGS",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取2025-03-24抢先体验日期和当前抢先体验说明；机制采用已发布正文，不把开发计划当现有规则。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "recipe-crafting",
+        "note": "按不同产品的游戏内流程加工成品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-discovery",
+        "note": "试验并发现带有特殊效果的新变体配方",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "雇用员工与经销人员承担生产分销工作",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-investment",
+        "note": "购买场所和雇用人员扩大业务产能与范围",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "把制作商品交给城市顾客取得经营收入",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "可驾驶车辆在城市运送商品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "遭遇威胁时可以拳头与近战武器应战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "联机玩家可共同经营扩展业务",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用联机合作模式；单人流程不包含其他玩家。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1785744977",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3164500&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "hades-2",
+    "name": "哈迪斯II / Hades II",
+    "studio": "Supergiant Games",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "roguelite",
+      "action-rpg"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "summary": "以墨利诺厄挑战地下与地表路线，在每次行动中组合夜之武器、神赐与巫术，失败后回到据点继续成长和发展关系。",
+    "analysis": "单局能力变化提供临场组合，回归据点又让失败推动关系与长期准备；故事与数值积累共同解释了为什么还要再次出发。",
+    "loop": [
+      "选择夜之武器与出发方案",
+      "清理房间、选择神赐并使用魔力强化攻击",
+      "失败或完成路线后回到据点，投入材料准备下一轮"
+    ],
+    "learning": [
+      "单局强化改变当前应战方案，长期积累影响下一次出发准备，使失败后的再次尝试仍有新的选择。"
+    ],
+    "caveats": [
+      "本轮神赐随尝试结束重置，据点升级与人物关系可以延续到下一轮。"
+    ],
+    "resources": [
+      "魔力支持更强的Omega招式",
+      "材料用于咒语、能力与武器发展",
+      "本局神赐和长期升级处于不同范围"
+    ],
+    "progression": [
+      "当局神赐随本轮结束重置",
+      "据点升级与人物关系跨尝试延续"
+    ],
+    "scopeLabel": "正式版本体常规挑战",
+    "scopeNotes": "2024年开放抢先体验，2025年推出v1.0。范围为正式版中的地下与地表挑战。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1145350&l=english&cc=us",
+        "title": "Hades II",
+        "publisher": "Steam / Supergiant Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.supergiantgames.com/blog/hades2-faq/",
+        "title": "Hades II FAQ",
+        "publisher": "Supergiant Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hades_II",
+        "title": "Hades II — Gameplay",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取冲刺、魔力与Omega攻击、三选一神赐、死亡回归与据点长期准备；年份以官方FAQ为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "选择夜之武器，并以神赐组织能力方案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "通过据点与旅途互动发展人物关系",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "用无形之器收集巫术材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-stat-upgrade",
+        "note": "长期强化影响后续尝试的能力与容错",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "冲刺闪避为战斗提供短距离机动",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "random-upgrade-offer",
+        "note": "取得神赐时从三个效果候选中选择本局提升",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "死亡且无剩余死亡蔑视后返回交叉路，开始后续尝试",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "魔力预算在多种Omega强化攻击间分配",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1145350&l=english&cc=us"
+    },
+    "aliases": [
+      "哈迪斯II"
+    ]
+  },
+  {
+    "id": "animal-well",
+    "name": "动物井 / ANIMAL WELL",
+    "studio": "Billy Basso",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "metroidvania",
+      "platformer",
+      "puzzle"
+    ],
+    "playStyleIds": [
+      "platforming",
+      "exploration",
+      "puzzle-solving"
+    ],
+    "summary": "在动物与机关构成的互联迷宫中跳跃探索，寻找泡泡棒、飞盘等多用途工具，利用物件和环境的不同反应解开道路。",
+    "analysis": "新工具既能开放地点，也可能重写对旧场景的理解；角色缺少正面对抗能力，使观察生物行为与尝试工具成为持续的解题办法。",
+    "loop": [
+      "跳跃穿过房间，观察动物与机关",
+      "找到工具并试验不止一种用途",
+      "回访旧区域与隐藏连接，继续寻找谜题线索"
+    ],
+    "learning": [
+      "让每件工具具有多种可发现用途，可以让回访依靠知识与想法，而不只依靠新钥匙。"
+    ],
+    "caveats": [
+      "电话用于保存和死亡后重试；点亮蜡烛用于驱散房间中的幽灵。"
+    ],
+    "resources": [
+      "生命以心表示，水果可恢复或补充容错",
+      "工具提供不同环境作用",
+      "有限消耗物可以暂时驱散危险"
+    ],
+    "progression": [
+      "新工具开放此前无法进入的区域",
+      "电话保存点记录重试位置，通关后仍有更多秘密"
+    ],
+    "scopeLabel": "单人首轮探索与工具谜题",
+    "scopeNotes": "范围为单人首轮的迷宫探索与工具谜题，不含需要群体合作的后续ARG谜题。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=813230&l=english&cc=us",
+        "title": "ANIMAL WELL",
+        "publisher": "Steam / Billy Basso",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Animal_Well",
+        "title": "Animal Well — Gameplay and release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并阅读所引玩法说明；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "直接操纵小生物在横向房间移动",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "跳跃跨越平台和危险地形",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "ability-gating",
+        "note": "部分通路需要特定工具才能进入",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "在飞盘、悠悠球、泡泡棒等工具之间选择适合当前环境的手段",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "动物或幽灵攻击会减少心，水果可恢复生命",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "生命耗尽后在最后互动过的电话保存点重现",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "观察场景细节、动物和物品相互作用，为隐藏谜题寻找线索",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg?t=1788379439",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=813230&l=english&cc=us"
+    },
+    "aliases": [
+      "动物井"
+    ]
+  },
+  {
+    "id": "pacific-drive",
+    "name": "超自然车旅 / Pacific Drive",
+    "studio": "Ironwood Studios",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "survival-craft",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "vehicle-driving",
+      "gathering-survival",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "从车库驾驶旅行车进入异常禁区，搜集零件和数据，保持燃油与车体状态，赶在区域风暴吞没路线前带着物资返回。",
+    "analysis": "车辆既是移动工具也是需要保护和改装的生存空间；路线危险与零件用途相连，让出发准备和临时维修都成为实际决策。",
+    "loop": [
+      "在车库准备物资、配置零件并选择路线",
+      "驾驶探索禁区，搜刮并处理车损与异常",
+      "安全返回，利用后备厢物资修车改装后再出发"
+    ],
+    "learning": [
+      "反复维护和改装同一辆车，让车辆状态持续影响每一次出行的路线与准备。"
+    ],
+    "caveats": [
+      "部分材料只出现在更危险的区域，取得后还需要安全带回车库。"
+    ],
+    "resources": [
+      "燃油保证行驶，车体保护角色免受辐射",
+      "零件和资源用于维修制作",
+      "后备厢带回物资支持车库发展"
+    ],
+    "progression": [
+      "车辆与车库升级跨出行保留",
+      "每次进入禁区会面对变化的天气、道路和异常"
+    ],
+    "scopeLabel": "2024本体驾驶生存流程",
+    "scopeNotes": "范围为从车库出发、探索禁区、维修车辆与带回物资的本体流程。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1458140&l=english&cc=us",
+        "title": "Pacific Drive",
+        "publisher": "Steam / Ironwood Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-us/games/pacific-drive/",
+        "title": "Pacific Drive — platform and release",
+        "publisher": "Sony Interactive Entertainment / Kepler Interactive",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取PS5平台与2024-02-22发行字段；未采用商店宽泛的Driving/Racing分类推定竞速玩法。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "直接驾驶旅行车穿越禁区并逃离风暴",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "在环境中搜刮零件、材料与有用物资",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "把搜得资源制作成车辆装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "实验不同模组与车体部件以应对路况和异常",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "在车库修复、加固并升级自己的旅行车",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "需要维持燃油与车体完整才能持续安全行驶",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "risk-staking",
+        "note": "部分有用材料只存在于更危险地点，需要权衡额外收益与出行风险",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "安全回到车库后使用后备厢物资发展车辆和据点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1458140/3a5fa1e845c13b48f9e2ed042f4538ac62bd16ed/header.jpg?t=1792430302",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1458140&l=english&cc=us"
+    },
+    "aliases": [
+      "超自然车旅"
+    ]
+  }
+]

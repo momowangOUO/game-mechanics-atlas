@@ -1,0 +1,4939 @@
+[
+  {
+    "id": "balatro",
+    "oldGenreIds": [
+      "roguelite",
+      "deckbuilder"
+    ],
+    "newGenreIds": [
+      "roguelite",
+      "deckbuilder"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用扑克牌型与小丑效果构建计分方案，逐轮达到盲注要求。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2379780",
+      "https://www.playbalatro.com/",
+      "https://en.wikipedia.org/wiki/Balatro_(video_game)"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "从当前牌组中抽取手牌。；小丑与多种卡牌效果可组合形成连携。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Balatro_(video_game)",
+          "https://store.steampowered.com/app/2379780"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "可选择带不同修饰的起始卡组。；塔罗牌强化普通牌，星球牌提升牌型等级。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2379780"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：用扑克牌型与小丑效果构建计分方案，逐轮达到盲注要求。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2379780",
+          "https://www.playbalatro.com/",
+          "https://en.wikipedia.org/wiki/Balatro_(video_game)"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "deckbuilder",
+        "decision": "保留",
+        "reason": "主循环依据：用扑克牌型与小丑效果构建计分方案，逐轮达到盲注要求。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2379780",
+          "https://www.playbalatro.com/",
+          "https://en.wikipedia.org/wiki/Balatro_(video_game)"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "peglin",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用瞄准弹珠击中钉子造成伤害，收集弹珠与遗物后进入新地图。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1296610",
+      "https://rednexus.games/",
+      "https://en.wikipedia.org/wiki/Peglin"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "官方说明要求瞄准，并以弹珠击钉结算伤害。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1296610"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "不同弹珠与遗物提供不同能力。；收集并升级弹珠与遗物。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1296610"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：用瞄准弹珠击中钉子造成伤害，收集弹珠与遗物后进入新地图。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1296610",
+          "https://rednexus.games/",
+          "https://en.wikipedia.org/wiki/Peglin"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "slay-the-spire",
+    "oldGenreIds": [
+      "roguelite",
+      "deckbuilder"
+    ],
+    "newGenreIds": [
+      "roguelite",
+      "deckbuilder"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "changed": true,
+    "reason": "单角色以卡牌与遗物作决策，不指挥多个单位或部署阵形。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/646570",
+      "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "根据抽到的手牌和费用出牌，用卡牌效果应对敌人。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/646570",
+          "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "四个角色各有独特卡牌。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/646570"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "单角色以卡牌与遗物作决策，不指挥多个单位或部署阵形。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/646570",
+          "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：沿分支路线攀塔，通过卡牌与遗物逐步构建应对敌人的方案。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/646570",
+          "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "deckbuilder",
+        "decision": "保留",
+        "reason": "主循环依据：沿分支路线攀塔，通过卡牌与遗物逐步构建应对敌人的方案。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/646570",
+          "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "hades",
+    "oldGenreIds": [
+      "roguelite",
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "roguelite",
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：反复尝试逃离冥界，用神祇祝福改变本轮战斗，并发展跨轮成长与关系。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1145360",
+      "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "部分冥界武器提供近身攻击。；冲刺用于避开攻击并调整位置。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Hades_(video_game)"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "可以使用不同神话武器。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1145360"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：反复尝试逃离冥界，用神祇祝福改变本轮战斗，并发展跨轮成长与关系。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1145360",
+          "https://en.wikipedia.org/wiki/Hades_(video_game)"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：反复尝试逃离冥界，用神祇祝福改变本轮战斗，并发展跨轮成长与关系。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1145360",
+          "https://en.wikipedia.org/wiki/Hades_(video_game)"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "cult-of-the-lamb",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：把外出战斗的资源投入教团营地，通过设施、仪式与追随者维持共同体。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1313140",
+      "https://en.wikipedia.org/wiki/Cult_of_the_Lamb"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "远征中使用近身武器对抗敌人。；可闪避敌人的攻击。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Cult_of_the_Lamb"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "安排追随者劳动。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Cult_of_the_Lamb"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：把外出战斗的资源投入教团营地，通过设施、仪式与追随者维持共同体。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1313140",
+          "https://en.wikipedia.org/wiki/Cult_of_the_Lamb"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "backpack-battles",
+    "oldGenreIds": [
+      "auto-battler"
+    ],
+    "newGenreIds": [
+      "auto-battler"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：购买不同形状的物品并安排背包位置，用自动战斗检验组合效果。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2427700",
+      "https://playwithfurcifer.github.io/backpack-battles-presskit"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "多个职业与子职业提供不同起点。；物品组合可形成更强装备。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2427700"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "官方强调购买内容与摆放方式均影响强度。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2427700"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "auto-battler",
+        "decision": "保留",
+        "reason": "主循环依据：购买不同形状的物品并安排背包位置，用自动战斗检验组合效果。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2427700",
+          "https://playwithfurcifer.github.io/backpack-battles-presskit"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "loop-hero",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "spatial-planning",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "spatial-planning",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过摆放地形与敌人卡片塑造英雄自动行走的路线，再把资源投入营地。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1282730",
+      "https://en.wikipedia.org/wiki/Loop_Hero"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "沿环路摆放地形、建筑及敌人卡片，位置与相邻关系影响后续遭遇。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1282730",
+          "https://en.wikipedia.org/wiki/Loop_Hero"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "出发前选择职业与卡组。；途中装备更强的战利品。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1282730"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：通过摆放地形与敌人卡片塑造英雄自动行走的路线，再把资源投入营地。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1282730",
+          "https://en.wikipedia.org/wiki/Loop_Hero"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "vampire-survivors",
+    "oldGenreIds": [
+      "survivor-like",
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "survivor-like",
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "platforming",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "platforming",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：移动避开敌群并收集经验，选择武器升级，尽可能延长存活时间。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1794680",
+      "https://en.wikipedia.org/wiki/Vampire_Survivors"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "platforming",
+        "decision": "保留",
+        "reason": "玩家移动角色躲避敌人。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Vampire_Survivors"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "选择武器并集中提升其等级。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1794680"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "survivor-like",
+        "decision": "保留",
+        "reason": "主循环依据：移动避开敌群并收集经验，选择武器升级，尽可能延长存活时间。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1794680",
+          "https://en.wikipedia.org/wiki/Vampire_Survivors"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：移动避开敌群并收集经验，选择武器升级，尽可能延长存活时间。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1794680",
+          "https://en.wikipedia.org/wiki/Vampire_Survivors"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "risk-of-rain-2",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在逐渐增强的敌人中搜集道具，用效果组合推进到终点或继续循环。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/632360"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "主循环依据：在逐渐增强的敌人中搜集道具，用效果组合推进到终点或继续循环。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632360"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "幸存者具有不同战斗风格与替代技能。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632360"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：在逐渐增强的敌人中搜集道具，用效果组合推进到终点或继续循环。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632360"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "inscryption",
+    "oldGenreIds": [
+      "deckbuilder"
+    ],
+    "newGenreIds": [
+      "deckbuilder"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "puzzle-solving"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：开篇小屋把献祭出牌、路线构筑与房间解谜连接起来。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1092790",
+      "https://www.inscryption.com/",
+      "https://en.wikipedia.org/wiki/Inscryption"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "官方列出获取生物卡牌与构筑要素。；从卡组抽牌构成手牌。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1092790",
+          "https://en.wikipedia.org/wiki/Inscryption"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "开篇小屋可调查并解决房间谜题，探索结果会反馈到卡牌流程。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1092790",
+          "https://www.inscryption.com/",
+          "https://en.wikipedia.org/wiki/Inscryption"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "deckbuilder",
+        "decision": "保留",
+        "reason": "主循环依据：开篇小屋把献祭出牌、路线构筑与房间解谜连接起来。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1092790",
+          "https://www.inscryption.com/",
+          "https://en.wikipedia.org/wiki/Inscryption"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "stardew-valley",
+    "oldGenreIds": [
+      "farming-life-sim"
+    ],
+    "newGenreIds": [
+      "farming-life-sim"
+    ],
+    "oldPlayStyleIds": [
+      "life-simulation",
+      "management-production",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "life-simulation",
+      "management-production",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：经营农场、探索矿洞并与镇民交往，用每日安排推进多条生活目标。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/413150",
+      "https://www.stardewvalley.net/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "life-simulation",
+        "decision": "保留",
+        "reason": "官方说明交友发展与人物事件。；种植作物、果树并饲养动物。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/413150"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：经营农场、探索矿洞并与镇民交往，用每日安排推进多条生活目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/413150"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：经营农场、探索矿洞并与镇民交往，用每日安排推进多条生活目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/413150"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "farming-life-sim",
+        "decision": "保留",
+        "reason": "主循环依据：经营农场、探索矿洞并与镇民交往，用每日安排推进多条生活目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/413150",
+          "https://www.stardewvalley.net/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "minecraft",
+    "oldGenreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "newGenreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "spatial-planning",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "spatial-planning",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在生存模式采集方块、制作工具并建造，创造模式另行提供不同资源规则。",
+    "sourceUrls": [
+      "https://www.minecraft.net/en-us/about-minecraft"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "生存模式需要应对饥饿与生命威胁。；官方描述采木、采矿与寻找材料。",
+        "sourceUrls": [
+          "https://www.minecraft.net/en-us/about-minecraft"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "使用方块创造建筑与世界。",
+        "sourceUrls": [
+          "https://www.minecraft.net/en-us/about-minecraft"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "探索生成的广阔世界。",
+        "sourceUrls": [
+          "https://www.minecraft.net/en-us/about-minecraft"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "sandbox-survival",
+        "decision": "保留",
+        "reason": "主循环依据：在生存模式采集方块、制作工具并建造，创造模式另行提供不同资源规则。",
+        "sourceUrls": [
+          "https://www.minecraft.net/en-us/about-minecraft"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "survival-craft",
+        "decision": "保留",
+        "reason": "主循环依据：在生存模式采集方块、制作工具并建造，创造模式另行提供不同资源规则。",
+        "sourceUrls": [
+          "https://www.minecraft.net/en-us/about-minecraft"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "tetris",
+    "oldGenreIds": [
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "matching-clearing",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "matching-clearing",
+      "puzzle-solving"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：移动并旋转落下的方块，填满横行消除，在速度压力下管理堆叠空间。",
+    "sourceUrls": [
+      "https://tetris.com/about",
+      "https://en.wikipedia.org/wiki/Tetris",
+      "https://www.basicfun.com/wp-content/uploads/2025/06/09686_1L_IM.pdf"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "matching-clearing",
+        "decision": "保留",
+        "reason": "官方明确无空隙横行被消除。；官方 How Do You Play 明确旋转下落方块。",
+        "sourceUrls": [
+          "https://tetris.com/about"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "主循环依据：移动并旋转落下的方块，填满横行消除，在速度压力下管理堆叠空间。",
+        "sourceUrls": [
+          "https://tetris.com/about"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：移动并旋转落下的方块，填满横行消除，在速度压力下管理堆叠空间。",
+        "sourceUrls": [
+          "https://tetris.com/about",
+          "https://en.wikipedia.org/wiki/Tetris",
+          "https://www.basicfun.com/wp-content/uploads/2025/06/09686_1L_IM.pdf"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "cookie-clicker",
+    "oldGenreIds": [
+      "incremental-idle"
+    ],
+    "newGenreIds": [
+      "incremental-idle"
+    ],
+    "oldPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "incremental-management",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：把饼干投入自动生产和升级，让产出支持下一轮扩张。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1454400",
+      "https://cookieclicker.com/",
+      "https://en.wikipedia.org/wiki/Cookie_Clicker"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "incremental-management",
+        "decision": "保留",
+        "reason": "官方明确花费饼干以获取更多饼干。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1454400"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "官方明确花费饼干以获取更多饼干。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1454400"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "incremental-idle",
+        "decision": "保留",
+        "reason": "主循环依据：把饼干投入自动生产和升级，让产出支持下一轮扩张。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1454400",
+          "https://cookieclicker.com/",
+          "https://en.wikipedia.org/wiki/Cookie_Clicker"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dead-cells",
+    "oldGenreIds": [
+      "roguelite",
+      "metroidvania"
+    ],
+    "newGenreIds": [
+      "roguelite",
+      "metroidvania"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "platforming",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "platforming",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在变化的城堡中战斗与探索，死亡重开，同时保留部分能力和路径权限。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/588650",
+      "https://dead-cells.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "二维动作战斗用于击败敌人。；官方正文描述 emergency roll。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/588650"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "platforming",
+        "decision": "保留",
+        "reason": "控制附身躯体移动和探索。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/588650"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "武器与变异提供不同战斗选择。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/588650"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：在变化的城堡中战斗与探索，死亡重开，同时保留部分能力和路径权限。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/588650",
+          "https://dead-cells.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "metroidvania",
+        "decision": "保留",
+        "reason": "主循环依据：在变化的城堡中战斗与探索，死亡重开，同时保留部分能力和路径权限。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/588650",
+          "https://dead-cells.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "escape-from-tarkov",
+    "oldGenreIds": [
+      "extraction-shooter"
+    ],
+    "newGenreIds": [
+      "extraction-shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "gathering-survival"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "gathering-survival"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：携带装备进入突袭，搜索战利品并判断是否能安全带到撤离点。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/3932890",
+      "https://en.wikipedia.org/wiki/Escape_from_Tarkov"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "使用枪械进行第一人称射击。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Escape_from_Tarkov"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "弹药与医疗等补给有限。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Escape_from_Tarkov"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "extraction-shooter",
+        "decision": "保留",
+        "reason": "主循环依据：携带装备进入突袭，搜索战利品并判断是否能安全带到撤离点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/3932890",
+          "https://en.wikipedia.org/wiki/Escape_from_Tarkov"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "game-of-dice",
+    "oldGenreIds": [
+      "strategy"
+    ],
+    "newGenreIds": [
+      "strategy"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting"
+    ],
+    "changed": true,
+    "reason": "购买地产并收取通行费属于棋盘经济对抗，缺少持续生产链与生产调度，不归入经营与生产。",
+    "sourceUrls": [
+      "https://play.google.com/store/apps/details?id=com.joycity.god",
+      "https://corp.joycity.com/en/intro?p=history"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "可选择角色、骰子与技能卡。",
+        "sourceUrls": [
+          "https://play.google.com/store/apps/details?id=com.joycity.god"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "删除",
+        "reason": "购买地产并收取通行费属于棋盘经济对抗，缺少持续生产链与生产调度，不归入经营与生产。",
+        "sourceUrls": [
+          "https://play.google.com/store/apps/details?id=com.joycity.god",
+          "https://corp.joycity.com/en/intro?p=history"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "strategy",
+        "decision": "保留",
+        "reason": "主循环依据：掷骰在棋盘上移动，取得地盘、向对手收取费用，争取让对手破产。",
+        "sourceUrls": [
+          "https://play.google.com/store/apps/details?id=com.joycity.god",
+          "https://corp.joycity.com/en/intro?p=history"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "shape-of-dreams",
+    "oldGenreIds": [
+      "roguelite",
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "roguelite",
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：把技能射击、闪避和可变构筑结合，在单人或四人合作中应对变化的梦境战斗。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/2444750",
+      "https://blog.playstation.com/2026/09/17/co-op-roguelite-shape-of-dreams-launches-today-on-ps5",
+      "https://www.playshapeofdreams.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "部分旅者使用快速近身突击。；闪避来袭攻击是单人战斗的重要操作。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2444750"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "不同旅者具有不同战斗风格。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2444750"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：把技能射击、闪避和可变构筑结合，在单人或四人合作中应对变化的梦境战斗。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2444750",
+          "https://blog.playstation.com/2026/09/17/co-op-roguelite-shape-of-dreams-launches-today-on-ps5",
+          "https://www.playshapeofdreams.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：把技能射击、闪避和可变构筑结合，在单人或四人合作中应对变化的梦境战斗。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/2444750",
+          "https://blog.playstation.com/2026/09/17/co-op-roguelite-shape-of-dreams-launches-today-on-ps5",
+          "https://www.playshapeofdreams.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "hollow-knight",
+    "oldGenreIds": [
+      "metroidvania",
+      "platformer"
+    ],
+    "newGenreIds": [
+      "metroidvania",
+      "platformer"
+    ],
+    "oldPlayStyleIds": [
+      "platforming",
+      "action-combat",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "platforming",
+      "action-combat",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在相互连通的地下世界探索、战斗，并用新能力打开路线。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/367520",
+      "https://www.hollowknight.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "platforming",
+        "decision": "保留",
+        "reason": "玩家在二维场景中主动移动与探索。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/367520"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "挥砍用于对抗沿途敌人。；官方列出闪避和冲刺操作。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/367520"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "地图、指南针与标记工具辅助定位。；新能力包含更高跳跃和冲刺，可用于探索。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/367520"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "metroidvania",
+        "decision": "保留",
+        "reason": "主循环依据：在相互连通的地下世界探索、战斗，并用新能力打开路线。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/367520",
+          "https://www.hollowknight.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "platformer",
+        "decision": "保留",
+        "reason": "主循环依据：在相互连通的地下世界探索、战斗，并用新能力打开路线。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/367520",
+          "https://www.hollowknight.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "celeste",
+    "oldGenreIds": [
+      "precision-platformer",
+      "platformer"
+    ],
+    "newGenreIds": [
+      "precision-platformer",
+      "platformer"
+    ],
+    "oldPlayStyleIds": [
+      "platforming"
+    ],
+    "newPlayStyleIds": [
+      "platforming"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用跳跃、空中冲刺和攀爬通过短小而精确的平台挑战。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/504230",
+      "https://www.celestegame.com/",
+      "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "platforming",
+        "decision": "保留",
+        "reason": "玩家控制角色穿过平台与障碍。；跳跃是官方列出的基础操作。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/504230"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "precision-platformer",
+        "decision": "保留",
+        "reason": "主循环依据：用跳跃、空中冲刺和攀爬通过短小而精确的平台挑战。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/504230",
+          "https://www.celestegame.com/",
+          "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "platformer",
+        "decision": "保留",
+        "reason": "主循环依据：用跳跃、空中冲刺和攀爬通过短小而精确的平台挑战。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/504230",
+          "https://www.celestegame.com/",
+          "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "sekiro",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过招架、姿态压制、潜行和义手工具应对敌人。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/814380",
+      "https://www.sekirothegame.com/",
+      "https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "武器与忍术用于近身对抗。；偏转敌方攻击用于建立处决机会。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/814380",
+          "https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：通过招架、姿态压制、潜行和义手工具应对敌人。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/814380"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：通过招架、姿态压制、潜行和义手工具应对敌人。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/814380",
+          "https://www.sekirothegame.com/",
+          "https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dark-souls-3",
+    "oldGenreIds": [
+      "soulslike",
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "soulslike",
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：探索相连区域，以武器、盾牌和法术应对敌人，并在篝火间推进。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/374320",
+      "https://en.wikipedia.org/wiki/Dark_Souls_III",
+      "https://www.fromsoftware.jp/manual/darksouls3/win/basic.html",
+      "https://www.fromsoftware.jp/manual/darksouls3/win/screen.html",
+      "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html",
+      "https://www.fromsoftware.jp/manual/darksouls3/win/action2.html",
+      "https://www.fromsoftware.jp/manual/darksouls3/win/bonfire.html"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "武器有普通与强力近战攻击。；翻滚用于躲避攻击。",
+        "sourceUrls": [
+          "https://www.fromsoftware.jp/manual/darksouls3/win/basic.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：探索相连区域，以武器、盾牌和法术应对敌人，并在篝火间推进。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/374320"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "玩家选择武器、护甲、盾牌与法术配置。",
+        "sourceUrls": [
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "soulslike",
+        "decision": "保留",
+        "reason": "主循环依据：探索相连区域，以武器、盾牌和法术应对敌人，并在篝火间推进。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/374320",
+          "https://en.wikipedia.org/wiki/Dark_Souls_III",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/basic.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/screen.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action2.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/bonfire.html"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：探索相连区域，以武器、盾牌和法术应对敌人，并在篝火间推进。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/374320",
+          "https://en.wikipedia.org/wiki/Dark_Souls_III",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/basic.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/screen.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action1.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/action2.html",
+          "https://www.fromsoftware.jp/manual/darksouls3/win/bonfire.html"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "monster-hunter-world",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "changed": true,
+    "reason": "记录支持狩猎和装备制作；收集装备不等于获取并培养角色。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/582010"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：追踪并狩猎大型怪物，用材料制作装备后挑战更强目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/582010"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "十四类武器各有攻击特点，特殊工具也有装备上限。；获得更强装备后挑战更强怪物。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/582010"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "删除",
+        "reason": "记录支持狩猎和装备制作；收集装备不等于获取并培养角色。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/582010"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：追踪并狩猎大型怪物，用材料制作装备后挑战更强目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/582010"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "genshin-impact",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "action-combat",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "action-combat",
+      "collection-training"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：探索提瓦特，切换角色组合元素反应，并用任务与材料推进成长。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Genshin_Impact"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：探索提瓦特，切换角色组合元素反应，并用任务与材料推进成长。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Genshin_Impact"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：探索提瓦特，切换角色组合元素反应，并用任务与材料推进成长。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Genshin_Impact"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "保留",
+        "reason": "主循环依据：探索提瓦特，切换角色组合元素反应，并用任务与材料推进成长。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Genshin_Impact"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：探索提瓦特，切换角色组合元素反应，并用任务与材料推进成长。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Genshin_Impact"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "doom-eternal",
+    "oldGenreIds": [
+      "shooter"
+    ],
+    "newGenreIds": [
+      "shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "action-combat"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：以高速移动和多种武器对抗恶魔，并通过攻击方式补充战斗资源。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/782330"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "枪械与武器改装用于射击恶魔。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/782330"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "腕刃与电锯提供近身攻击手段。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/782330"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "shooter",
+        "decision": "保留",
+        "reason": "主循环依据：以高速移动和多种武器对抗恶魔，并通过攻击方式补充战斗资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/782330"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "world-of-warcraft",
+    "oldGenreIds": [
+      "rpg"
+    ],
+    "newGenreIds": [
+      "rpg"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "action-combat",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "exploration"
+    ],
+    "changed": true,
+    "reason": "常规目标选择与技能释放不足以证明动作战斗定义所需的主动攻防；单个角色升级也不等于以获取并培养多个对象为核心。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/World_of_Warcraft",
+      "https://news.blizzard.com/en-us/article/23837944/get-into-the-grid-of-things-with-the-updated-ui-and-hud"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：在持续在线世界中完成任务、提升角色，并参与组队地下城与交易。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/World_of_Warcraft"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "删除",
+        "reason": "现有目标选择与技能释放记录不足以证明动作战斗定义所需的主动攻防时机。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/World_of_Warcraft",
+          "https://news.blizzard.com/en-us/article/23837944/get-into-the-grid-of-things-with-the-updated-ui-and-hud"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "删除",
+        "reason": "单角色升级、职业天赋和装备成长不等于以获取并持续培养多个角色或对象为核心。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/World_of_Warcraft",
+          "https://news.blizzard.com/en-us/article/23837944/get-into-the-grid-of-things-with-the-updated-ui-and-hud"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "rpg",
+        "decision": "保留",
+        "reason": "主循环依据：在持续在线世界中完成任务、提升角色，并参与组队地下城与交易。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/World_of_Warcraft",
+          "https://news.blizzard.com/en-us/article/23837944/get-into-the-grid-of-things-with-the-updated-ui-and-hud"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "into-the-breach",
+    "oldGenreIds": [
+      "tactical-turn-based"
+    ],
+    "newGenreIds": [
+      "tactical-turn-based"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "turn-based-combat",
+      "puzzle-solving"
+    ],
+    "changed": true,
+    "reason": "多个机甲按回合移动、攻击和保护建筑，同时具备小队指挥与回合战斗。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/590380"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "不同机甲小队与驾驶员参与配置。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/590380"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "主循环依据：在敌人意图公开的回合战场上，保护为机甲供能的建筑。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/590380"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "turn-based-combat",
+        "decision": "新增",
+        "reason": "多个机甲按回合移动、攻击和保护建筑，同时具备小队指挥与回合战斗。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/590380"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "tactical-turn-based",
+        "decision": "保留",
+        "reason": "主循环依据：在敌人意图公开的回合战场上，保护为机甲供能的建筑。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/590380"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "ftl",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：指挥飞船与船员，在随机星系中分配能源、处理事件并争取抵达终点。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/212680"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "主循环依据：指挥飞船与船员，在随机星系中分配能源、处理事件并争取抵达终点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/212680"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "船员接受岗位与行动命令。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/212680"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：指挥飞船与船员，在随机星系中分配能源、处理事件并争取抵达终点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/212680"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "xcom-2",
+    "oldGenreIds": [
+      "tactical-turn-based"
+    ],
+    "newGenreIds": [
+      "tactical-turn-based"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "turn-based-combat",
+      "collection-training"
+    ],
+    "changed": true,
+    "reason": "玩家部署士兵，在回合中选择移动与攻击；小队指挥与回合战斗均成立。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/268500",
+      "https://store.steampowered.com/app/268500/XCOM_2/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "按战术计划组建小队。；招募不同职业的抵抗战士。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/268500"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "保留",
+        "reason": "招募不同职业的士兵，并通过各职业技能树持续发展。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/268500",
+          "https://store.steampowered.com/app/268500/XCOM_2/"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "turn-based-combat",
+        "decision": "新增",
+        "reason": "玩家部署士兵，在回合中选择移动与攻击；小队指挥与回合战斗均成立。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/268500",
+          "https://store.steampowered.com/app/268500/XCOM_2/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "tactical-turn-based",
+        "decision": "保留",
+        "reason": "主循环依据：经营移动基地，招募与研究装备，再指挥小队潜入并完成战术任务。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/268500",
+          "https://store.steampowered.com/app/268500/XCOM_2/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "civilization-6",
+    "oldGenreIds": [
+      "four-x"
+    ],
+    "newGenreIds": [
+      "four-x"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "spatial-planning",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "spatial-planning",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过城市布局、科技文化与外交，在多条胜利路径之间规划帝国。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/289070"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "玩家在地图上安排和移动多个单位，并决定军事行动。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/289070"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "城区、奇观与改良设施各占地图格。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/289070"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：通过城市布局、科技文化与外交，在多条胜利路径之间规划帝国。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/289070"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "four-x",
+        "decision": "保留",
+        "reason": "主循环依据：通过城市布局、科技文化与外交，在多条胜利路径之间规划帝国。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/289070"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "starcraft-2",
+    "oldGenreIds": [
+      "real-time-strategy"
+    ],
+    "newGenreIds": [
+      "real-time-strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：采集资源、建设基地并指挥不同种族的部队实时交战。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/StarCraft_II"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "玩家选择并指挥多个兵种移动、编队和交战。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/StarCraft_II"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：采集资源、建设基地并指挥不同种族的部队实时交战。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/StarCraft_II"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "real-time-strategy",
+        "decision": "保留",
+        "reason": "主循环依据：采集资源、建设基地并指挥不同种族的部队实时交战。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/StarCraft_II"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "age-of-empires-2",
+    "oldGenreIds": [
+      "real-time-strategy"
+    ],
+    "newGenreIds": [
+      "real-time-strategy"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "tactical-command",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：采集、建设并升级文明，在军队与经济之间分配实时注意力。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/813780",
+      "https://www.ageofempires.com/games/aoeiide",
+      "https://en.wikipedia.org/wiki/Age_of_Empires_II:_Definitive_Edition"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "玩家指挥不同兵种移动与攻击，协调多单位争夺地图。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/813780",
+          "https://www.ageofempires.com/games/aoeiide",
+          "https://en.wikipedia.org/wiki/Age_of_Empires_II:_Definitive_Edition"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：采集、建设并升级文明，在军队与经济之间分配实时注意力。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/813780"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "real-time-strategy",
+        "decision": "保留",
+        "reason": "主循环依据：采集、建设并升级文明，在军队与经济之间分配实时注意力。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/813780",
+          "https://www.ageofempires.com/games/aoeiide",
+          "https://en.wikipedia.org/wiki/Age_of_Empires_II:_Definitive_Edition"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "against-the-storm",
+    "oldGenreIds": [
+      "city-builder",
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "city-builder",
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在周期性风暴前建立聚落，满足不同种族需求并把成果带入后续远征。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1336490",
+      "https://eremitegames.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "雨衣、啤酒与馅饼等生产满足居民需求。；不同种族有各自专长与需求。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1336490"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "每次远征建立新的聚落。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1336490"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "city-builder",
+        "decision": "保留",
+        "reason": "主循环依据：在周期性风暴前建立聚落，满足不同种族需求并把成果带入后续远征。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1336490",
+          "https://eremitegames.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：在周期性风暴前建立聚落，满足不同种族需求并把成果带入后续远征。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1336490",
+          "https://eremitegames.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "frostpunk",
+    "oldGenreIds": [
+      "city-builder"
+    ],
+    "newGenreIds": [
+      "city-builder"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在严寒中管理城市供热、食物与劳动，并用法律处理生存压力。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/323190",
+      "https://11bitstudios.com/games/frostpunk"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "法律涉及工作安排与劳动制度。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/323190"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "建造最后的城市与基础设施。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/323190"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "city-builder",
+        "decision": "保留",
+        "reason": "主循环依据：在严寒中管理城市供热、食物与劳动，并用法律处理生存压力。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/323190",
+          "https://11bitstudios.com/games/frostpunk"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "factorio",
+    "oldGenreIds": [
+      "factory-automation"
+    ],
+    "newGenreIds": [
+      "factory-automation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：把采矿、加工和运输连接成自动工厂，并处理供电、扩张与防御问题。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/427520",
+      "https://www.factorio.com/",
+      "https://www.factorio.com/game/content"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "矿石、冶炼与装配连接成加工流程。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/427520"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "玩家建设和维护工厂设施。；传送带、铁路与机器人输送资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/427520"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "factory-automation",
+        "decision": "保留",
+        "reason": "主循环依据：把采矿、加工和运输连接成自动工厂，并处理供电、扩张与防御问题。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/427520",
+          "https://www.factorio.com/",
+          "https://www.factorio.com/game/content"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "satisfactory",
+    "oldGenreIds": [
+      "factory-automation"
+    ],
+    "newGenreIds": [
+      "factory-automation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在外星地表建立立体工厂，通过传送带、管线和交通连接远处资源。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/526870",
+      "https://www.satisfactorygame.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "工厂承担自动化生产。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/526870"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "玩家可建设多层工厂。；传送带、卡车与火车连接产地。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/526870"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：在外星地表建立立体工厂，通过传送带、管线和交通连接远处资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/526870"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "factory-automation",
+        "decision": "保留",
+        "reason": "主循环依据：在外星地表建立立体工厂，通过传送带、管线和交通连接远处资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/526870",
+          "https://www.satisfactorygame.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dyson-sphere-program",
+    "oldGenreIds": [
+      "factory-automation"
+    ],
+    "newGenreIds": [
+      "factory-automation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：从行星上的小型生产线出发，建立跨星系物流并建设戴森球。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1366540"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "原料通过输送带进入加工设施，再成为下个环节的投入。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1366540"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "建造大规模生产设施和戴森球。；运输船队连接不同行星。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1366540"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "factory-automation",
+        "decision": "保留",
+        "reason": "主循环依据：从行星上的小型生产线出发，建立跨星系物流并建设戴森球。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1366540"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "oxygen-not-included",
+    "oldGenreIds": [
+      "colony-simulation"
+    ],
+    "newGenreIds": [
+      "colony-simulation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在小行星地下维持氧气、温度和食物，连接能源与流体系统。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/457140",
+      "https://www.klei.com/games/oxygen-not-included"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "废物可回收为燃料或可呼吸气体。；玩家指挥殖民者进行挖掘与资源作业。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/457140"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "殖民地包含挖掘、管路与电网。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/457140"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "colony-simulation",
+        "decision": "保留",
+        "reason": "主循环依据：在小行星地下维持氧气、温度和食物，连接能源与流体系统。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/457140",
+          "https://www.klei.com/games/oxygen-not-included"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "rimworld",
+    "oldGenreIds": [
+      "colony-simulation"
+    ],
+    "newGenreIds": [
+      "colony-simulation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：管理背景各异的殖民者，让生产、伤病和关系共同演化为聚落故事。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/294100"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "人物背景决定擅长和拒绝的工作。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/294100"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "玩家可调动多名殖民者守卫聚落并安排战斗位置。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/294100"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "colony-simulation",
+        "decision": "保留",
+        "reason": "主循环依据：管理背景各异的殖民者，让生产、伤病和关系共同演化为聚落故事。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/294100"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dwarf-fortress",
+    "oldGenreIds": [
+      "colony-simulation"
+    ],
+    "newGenreIds": [
+      "colony-simulation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在生成的世界中挖掘与建设要塞，维持矮人的物资、情绪和社会活动。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/975370"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "玩家指挥矮人开采与作业。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/975370"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "玩家建设并维持矮人要塞。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/975370"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "colony-simulation",
+        "decision": "保留",
+        "reason": "主循环依据：在生成的世界中挖掘与建设要塞，维持矮人的物资、情绪和社会活动。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/975370"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "cities-skylines",
+    "oldGenreIds": [
+      "city-builder"
+    ],
+    "newGenreIds": [
+      "city-builder"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：规划道路与分区，为居民提供服务，并观察交通和财政的连锁变化。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/255710"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：规划道路与分区，为居民提供服务，并观察交通和财政的连锁变化。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/255710"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "从零建设城市结构。；道路和本地交通由模拟系统运行。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/255710"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "city-builder",
+        "decision": "保留",
+        "reason": "主循环依据：规划道路与分区，为居民提供服务，并观察交通和财政的连锁变化。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/255710"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "potion-craft",
+    "oldGenreIds": [
+      "simulation-management",
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "simulation-management",
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "puzzle-solving",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "puzzle-solving",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用研磨、搅拌与加热在炼金地图上规划药剂效果，再销售给顾客。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1210320",
+      "https://www.potioncraft.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "材料和设备需要直接物理交互。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1210320"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：用研磨、搅拌与加热在炼金地图上规划药剂效果，再销售给顾客。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1210320"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "simulation-management",
+        "decision": "保留",
+        "reason": "主循环依据：用研磨、搅拌与加热在炼金地图上规划药剂效果，再销售给顾客。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1210320",
+          "https://www.potioncraft.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：用研磨、搅拌与加热在炼金地图上规划药剂效果，再销售给顾客。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1210320",
+          "https://www.potioncraft.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "baba-is-you",
+    "oldGenreIds": [
+      "logic-puzzle"
+    ],
+    "newGenreIds": [
+      "logic-puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "puzzle-solving"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：推动文字组成规则，让物件性质、控制对象和胜利条件随布局改变。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/736260",
+      "https://en.wikipedia.org/wiki/Baba_Is_You"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "推动方块是改写规则的基本操作。；文字排列直接改变世界规则。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/736260"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "logic-puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：推动文字组成规则，让物件性质、控制对象和胜利条件随布局改变。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/736260",
+          "https://en.wikipedia.org/wiki/Baba_Is_You"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "portal-2",
+    "oldGenreIds": [
+      "logic-puzzle",
+      "puzzle"
+    ],
+    "newGenreIds": [
+      "logic-puzzle",
+      "puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "puzzle-solving",
+      "platforming"
+    ],
+    "newPlayStyleIds": [
+      "puzzle-solving",
+      "platforming"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过成对传送门连接空间，利用物理对象与装置解开测试室。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/620",
+      "https://www.thinkwithportals.com/",
+      "https://en.wikipedia.org/wiki/Portal_2",
+      "https://www.thinkwithportals.com/about.php"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "传送门可转移对象并利用运动完成抛射。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Portal_2"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "platforming",
+        "decision": "保留",
+        "reason": "玩家在实验室与测试室中主动移动。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Portal_2"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "logic-puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：通过成对传送门连接空间，利用物理对象与装置解开测试室。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/620",
+          "https://www.thinkwithportals.com/",
+          "https://en.wikipedia.org/wiki/Portal_2",
+          "https://www.thinkwithportals.com/about.php"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：通过成对传送门连接空间，利用物理对象与装置解开测试室。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/620",
+          "https://www.thinkwithportals.com/",
+          "https://en.wikipedia.org/wiki/Portal_2",
+          "https://www.thinkwithportals.com/about.php"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "outer-wilds",
+    "oldGenreIds": [
+      "investigation-adventure"
+    ],
+    "newGenreIds": [
+      "investigation-adventure"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "investigation-deduction"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "investigation-deduction"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在不断循环的太阳系中探索，利用新发现的知识抵达之前无法理解的地点。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/753640"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "发现太阳系秘密帮助理解循环及其停止办法。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/753640"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "遗迹与外星文字用于解释世界谜团。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/753640"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "investigation-adventure",
+        "decision": "保留",
+        "reason": "主循环依据：在不断循环的太阳系中探索，利用新发现的知识抵达之前无法理解的地点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/753640"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "return-of-the-obra-dinn",
+    "oldGenreIds": [
+      "investigation-adventure"
+    ],
+    "newGenreIds": [
+      "investigation-adventure"
+    ],
+    "oldPlayStyleIds": [
+      "investigation-deduction",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "investigation-deduction",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过死亡片段、人员名册与空间细节，判断失踪船员的身份和死因。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/653530",
+      "https://obradinn.com/",
+      "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "提交人员身份与死亡判断后由系统核验。；衣着、工作位置与对话帮助辨认人物。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "身份推理依赖把不同死亡片段的信息组合。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "investigation-adventure",
+        "decision": "保留",
+        "reason": "主循环依据：通过死亡片段、人员名册与空间细节，判断失踪船员的身份和死因。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/653530",
+          "https://obradinn.com/",
+          "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "the-witness",
+    "oldGenreIds": [
+      "logic-puzzle"
+    ],
+    "newGenreIds": [
+      "logic-puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "puzzle-solving",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "puzzle-solving",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在开放岛屿观察环境，通过一组组画线谜题理解没有文字讲解的规则。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/210970",
+      "https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)",
+      "https://the-witness.net/news/about"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "提交的画线路径需满足面板规则并获得反馈。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "在岛上寻找不同区域和面板，通过观察环境学习规则。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/210970",
+          "https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)",
+          "https://the-witness.net/news/about"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "logic-puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：在开放岛屿观察环境，通过一组组画线谜题理解没有文字讲解的规则。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/210970",
+          "https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)",
+          "https://the-witness.net/news/about"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "chants-of-sennaar",
+    "oldGenreIds": [
+      "language-puzzle"
+    ],
+    "newGenreIds": [
+      "language-puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "investigation-deduction",
+      "puzzle-solving"
+    ],
+    "newPlayStyleIds": [
+      "investigation-deduction",
+      "puzzle-solving"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：观察不同民族的生活和对话，记录符号并逐步推断语言。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1931770",
+      "https://www.focus-entmt.com/en/games/chants-of-sennaar"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "通过解谜检验对符号含义的理解。；观察各族生活和环境帮助理解语言。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1931770"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "puzzle-solving",
+        "decision": "保留",
+        "reason": "通过解谜检验对符号含义的理解。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1931770"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "language-puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：观察不同民族的生活和对话，记录符号并逐步推断语言。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1931770",
+          "https://www.focus-entmt.com/en/games/chants-of-sennaar"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "papers-please",
+    "oldGenreIds": [
+      "logic-puzzle"
+    ],
+    "newGenreIds": [
+      "logic-puzzle"
+    ],
+    "oldPlayStyleIds": [
+      "investigation-deduction",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "investigation-deduction"
+    ],
+    "changed": true,
+    "reason": "审查证件并用工资维持家庭，不构成持续生产与分配系统。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/239030",
+      "https://papersplea.se/",
+      "https://en.wikipedia.org/wiki/Papers,_Please"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "需要判断文件与人物信息是否符合规则。；检查证件并结合搜身、指纹等系统判断入境资格。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/239030"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "删除",
+        "reason": "审查证件并用工资维持家庭，不构成持续生产与分配系统。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/239030",
+          "https://papersplea.se/",
+          "https://en.wikipedia.org/wiki/Papers,_Please"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "logic-puzzle",
+        "decision": "保留",
+        "reason": "主循环依据：在规则不断变化的边境检查站核验证件，并用工作收入维持家庭。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/239030",
+          "https://papersplea.se/",
+          "https://en.wikipedia.org/wiki/Papers,_Please"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dishonored-2",
+    "oldGenreIds": [
+      "immersive-sim"
+    ],
+    "newGenreIds": [
+      "immersive-sim"
+    ],
+    "oldPlayStyleIds": [
+      "exploration",
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "exploration",
+      "action-combat"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：组合潜行、超自然能力、武器和环境路径，选择如何处理任务目标。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/403640"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：组合潜行、超自然能力、武器和环境路径，选择如何处理任务目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/403640"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "正面战斗是官方明确提供的解法。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/403640"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "immersive-sim",
+        "decision": "保留",
+        "reason": "主循环依据：组合潜行、超自然能力、武器和环境路径，选择如何处理任务目标。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/403640"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dominion",
+    "oldGenreIds": [
+      "deckbuilder"
+    ],
+    "newGenreIds": [
+      "deckbuilder"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：从共同牌库市场购买卡牌，逐步改造自己的牌组并积累终局胜利点。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1131620"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "从初始地产与铜币组成的牌组逐步买入更多牌。；选择卡牌组合以形成连携。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1131620"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "主循环依据：从共同牌库市场购买卡牌，逐步改造自己的牌组并积累终局胜利点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1131620"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "deckbuilder",
+        "decision": "保留",
+        "reason": "主循环依据：从共同牌库市场购买卡牌，逐步改造自己的牌组并积累终局胜利点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1131620"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "hearthstone",
+    "oldGenreIds": [
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在有限法力下打出卡牌、组织随从攻击，尝试击败对方英雄。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Hearthstone"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "每回合从牌库抽取手牌。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Hearthstone"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "对局前准备英雄与套牌。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Hearthstone"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "digital-card-duel",
+        "decision": "保留",
+        "reason": "主循环依据：在有限法力下打出卡牌、组织随从攻击，尝试击败对方英雄。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Hearthstone"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "marvel-snap",
+    "oldGenreIds": [
+      "digital-card-duel"
+    ],
+    "newGenreIds": [
+      "digital-card-duel"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用小型卡组争夺三个地点，并通过加注与撤退管理对局风险。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1997040",
+      "https://marvelsnap.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "角色卡的独特能力与地点规则共同影响结果。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1997040"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "套牌由十二张卡组成，每个卡位都需要取舍。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1997040"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "digital-card-duel",
+        "decision": "保留",
+        "reason": "主循环依据：用小型卡组争夺三个地点，并通过加注与撤退管理对局风险。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1997040",
+          "https://marvelsnap.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "teamfight-tactics",
+    "oldGenreIds": [
+      "auto-battler"
+    ],
+    "newGenreIds": [
+      "auto-battler"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：从共享英雄池招募并配置阵容，让自动战斗检验经济与站位选择。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Teamfight_Tactics"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "通过共同特质和角色功能组织阵容。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Teamfight_Tactics"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "安排多个英雄的位置与组合，再让阵容自动战斗。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Teamfight_Tactics"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "auto-battler",
+        "decision": "保留",
+        "reason": "主循环依据：从共享英雄池招募并配置阵容，让自动战斗检验经济与站位选择。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Teamfight_Tactics"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "luck-be-a-landlord",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "buildcrafting",
+      "management-production"
+    ],
+    "newPlayStyleIds": [
+      "buildcrafting",
+      "management-production"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：向老虎机池中加入具有联动的符号，争取在租金期限前获得足够收入。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1404850",
+      "https://en.wikipedia.org/wiki/Luck_Be_a_Landlord"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "物品选择影响当前构筑。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1404850"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "加入符号改变以后每次旋转的收入能力。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Luck_Be_a_Landlord"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：向老虎机池中加入具有联动的符号，争取在租金期限前获得足够收入。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1404850",
+          "https://en.wikipedia.org/wiki/Luck_Be_a_Landlord"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "monster-train",
+    "oldGenreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：以卡组守卫三层列车，在路线选择、单位部署与卡牌升级之间构筑方案。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1102190",
+      "https://www.themonstertrain.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "card-play",
+        "decision": "保留",
+        "reason": "沿途招募单位并加入新卡。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1102190"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "不同起始牌组与氏族提供配置方向。；卡牌可接受多种升级。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1102190"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "保留",
+        "reason": "将不同单位部署在三层列车，权衡各层的拦截与容量。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1102190",
+          "https://www.themonstertrain.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "deckbuilder",
+        "decision": "保留",
+        "reason": "主循环依据：以卡组守卫三层列车，在路线选择、单位部署与卡牌升级之间构筑方案。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1102190",
+          "https://www.themonstertrain.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：以卡组守卫三层列车，在路线选择、单位部署与卡牌升级之间构筑方案。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1102190",
+          "https://www.themonstertrain.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "league-of-legends",
+    "oldGenreIds": [
+      "moba"
+    ],
+    "newGenreIds": [
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "changed": true,
+    "reason": "玩家一般只直接控制自己的英雄；团队协作不等于多单位指挥。",
+    "sourceUrls": [
+      "https://www.leagueoflegends.com/en-us/how-to-play",
+      "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/en_US/champion/Lux.json"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：五人队伍围绕兵线、野区与防御塔组织行动，推进到敌方主基地。",
+        "sourceUrls": [
+          "https://www.leagueoflegends.com/en-us/how-to-play"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "玩家一般只直接控制自己的英雄；团队协作不等于多单位指挥。",
+        "sourceUrls": [
+          "https://www.leagueoflegends.com/en-us/how-to-play",
+          "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/en_US/champion/Lux.json"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "moba",
+        "decision": "保留",
+        "reason": "主循环依据：五人队伍围绕兵线、野区与防御塔组织行动，推进到敌方主基地。",
+        "sourceUrls": [
+          "https://www.leagueoflegends.com/en-us/how-to-play",
+          "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/en_US/champion/Lux.json"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dota-2",
+    "oldGenreIds": [
+      "moba"
+    ],
+    "newGenreIds": [
+      "moba"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "action-combat"
+    ],
+    "changed": true,
+    "reason": "玩家通常操控一名英雄；少数角色的召唤物不代表主要循环是多单位指挥。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/570",
+      "https://en.wikipedia.org/wiki/Dota_2"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：选择英雄并与队友获取经验和装备，围绕地图资源推进敌方远古遗迹。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/570"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "玩家通常操控一名英雄；少数角色的召唤物不代表主要循环是多单位指挥。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/570",
+          "https://en.wikipedia.org/wiki/Dota_2"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "moba",
+        "decision": "保留",
+        "reason": "主循环依据：选择英雄并与队友获取经验和装备，围绕地图资源推进敌方远古遗迹。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/570",
+          "https://en.wikipedia.org/wiki/Dota_2"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "counter-strike-2",
+    "oldGenreIds": [
+      "tactical-shooter"
+    ],
+    "newGenreIds": [
+      "tactical-shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting"
+    ],
+    "changed": true,
+    "reason": "玩家直接操控一名角色射击；队伍沟通不等于单人多单位指挥。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/730",
+      "https://en.wikipedia.org/wiki/Counter-Strike_2"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "玩家使用枪械进行第一人称射击。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Counter-Strike_2"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "玩家直接操控一名角色射击；队伍沟通不等于单人多单位指挥。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/730",
+          "https://en.wikipedia.org/wiki/Counter-Strike_2"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "tactical-shooter",
+        "decision": "保留",
+        "reason": "主循环依据：在爆破对局中分配装备与信息，围绕安放、保护或拆除炸弹取胜。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/730",
+          "https://en.wikipedia.org/wiki/Counter-Strike_2"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "valorant",
+    "oldGenreIds": [
+      "tactical-shooter"
+    ],
+    "newGenreIds": [
+      "tactical-shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting"
+    ],
+    "changed": true,
+    "reason": "特工技能与队伍配合不等于单人多单位指挥。",
+    "sourceUrls": [
+      "https://playvalorant.com/en-us/news/announcements/beginners-guide"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "枪械瞄准与射击是主要交锋手段。",
+        "sourceUrls": [
+          "https://playvalorant.com/en-us/news/announcements/beginners-guide"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "特工技能与队伍配合不等于单人多单位指挥。",
+        "sourceUrls": [
+          "https://playvalorant.com/en-us/news/announcements/beginners-guide"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "tactical-shooter",
+        "decision": "保留",
+        "reason": "主循环依据：将精确射击与特工技能组合，协作完成爆破进攻或防守。",
+        "sourceUrls": [
+          "https://playvalorant.com/en-us/news/announcements/beginners-guide"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "rocket-league",
+    "oldGenreIds": [
+      "vehicle-sport",
+      "sports"
+    ],
+    "newGenreIds": [
+      "vehicle-sport",
+      "sports"
+    ],
+    "oldPlayStyleIds": [
+      "vehicle-driving",
+      "sports-control"
+    ],
+    "newPlayStyleIds": [
+      "vehicle-driving",
+      "sports-control"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：驾驶可跳跃和加速的赛车触球，与队友争取把球送入对方球门。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Rocket_League"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "vehicle-driving",
+        "decision": "保留",
+        "reason": "玩家驾驶火箭动力车辆。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Rocket_League"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "sports-control",
+        "decision": "保留",
+        "reason": "玩家驾驶火箭动力车辆。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Rocket_League"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "vehicle-sport",
+        "decision": "保留",
+        "reason": "主循环依据：驾驶可跳跃和加速的赛车触球，与队友争取把球送入对方球门。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Rocket_League"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "sports",
+        "decision": "保留",
+        "reason": "主循环依据：驾驶可跳跃和加速的赛车触球，与队友争取把球送入对方球门。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Rocket_League"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "splatoon-3",
+    "oldGenreIds": [
+      "tactical-shooter"
+    ],
+    "newGenreIds": [
+      "shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting"
+    ],
+    "changed": true,
+    "reason": "涂地对抗是射击和地面覆盖竞争，不是爆破式战术射击，也非多单位指挥。",
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Splatoon_3"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "武器喷射墨汁攻击并涂色。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Splatoon_3"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "涂地对抗是射击和地面覆盖竞争，不是爆破式战术射击，也非多单位指挥。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Splatoon_3"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "tactical-shooter",
+        "decision": "删除",
+        "reason": "涂地对抗是射击和地面覆盖竞争，不是爆破式战术射击，也非多单位指挥。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Splatoon_3"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "shooter",
+        "decision": "新增",
+        "reason": "涂地对抗是射击和地面覆盖竞争，不是爆破式战术射击，也非多单位指挥。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Splatoon_3"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "deep-rock-galactic",
+    "oldGenreIds": [
+      "party-cooperation"
+    ],
+    "newGenreIds": [
+      "shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "gathering-survival"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "gathering-survival"
+    ],
+    "changed": true,
+    "reason": "核心包括合作采矿与枪械战斗，四人合作本身不足以归入聚会游戏。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/548430",
+      "https://www.deeprockgalactic.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "射击用于对抗多种洞穴敌人。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/548430"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "玩家开采有价值的矿物。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/548430"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "party-cooperation",
+        "decision": "删除",
+        "reason": "核心包括合作采矿与枪械战斗，四人合作本身不足以归入聚会游戏。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/548430",
+          "https://www.deeprockgalactic.com/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "shooter",
+        "decision": "新增",
+        "reason": "核心包括合作采矿与枪械战斗，四人合作本身不足以归入聚会游戏。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/548430",
+          "https://www.deeprockgalactic.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "overcooked-2",
+    "oldGenreIds": [
+      "party-cooperation"
+    ],
+    "newGenreIds": [
+      "party-cooperation"
+    ],
+    "oldPlayStyleIds": [
+      "management-production",
+      "tactical-command"
+    ],
+    "newPlayStyleIds": [
+      "management-production"
+    ],
+    "changed": true,
+    "reason": "各玩家分别控制厨师，彼此分工不等于单人指挥多名单位。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/728880"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "management-production",
+        "decision": "保留",
+        "reason": "主循环依据：在不断变化的厨房中分工备料、烹饪和传递，争取更高服务得分。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/728880"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "各玩家分别控制厨师，彼此分工不等于单人指挥多名单位。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/728880"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "party-cooperation",
+        "decision": "保留",
+        "reason": "主循环依据：在不断变化的厨房中分工备料、烹饪和传递，争取更高服务得分。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/728880"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "dont-starve-together",
+    "oldGenreIds": [
+      "survival-craft"
+    ],
+    "newGenreIds": [
+      "survival-craft"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：与伙伴采集、制作和建设，在充满危险的荒野维持生存。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/322330"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "饥饿构成持续生存要求。；采集荒野资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/322330"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：与伙伴采集、制作和建设，在充满危险的荒野维持生存。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/322330"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "survival-craft",
+        "decision": "保留",
+        "reason": "主循环依据：与伙伴采集、制作和建设，在充满危险的荒野维持生存。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/322330"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "subnautica",
+    "oldGenreIds": [
+      "survival-craft"
+    ],
+    "newGenreIds": [
+      "survival-craft"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "spatial-planning"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在外星海洋采集和建造，管理氧气并用新装备进入更深区域。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/264710"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "需要寻找食物与水。；氧气供应限制远程探索。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/264710"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "新装备允许抵达更深和更远的区域。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/264710"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "可在海床建设不同布局的栖息地。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/264710"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "survival-craft",
+        "decision": "保留",
+        "reason": "主循环依据：在外星海洋采集和建造，管理氧气并用新装备进入更深区域。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/264710"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "valheim",
+    "oldGenreIds": [
+      "survival-craft"
+    ],
+    "newGenreIds": [
+      "survival-craft"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "spatial-planning",
+      "action-combat"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "spatial-planning",
+      "action-combat"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在程序生成的群岛探索建造，通过装备和首领挑战逐步扩展远征范围。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/892970",
+      "https://www.valheim.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "不同地区提供不同资源。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/892970"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "建设长屋与基地。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/892970"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：在程序生成的群岛探索建造，通过装备和首领挑战逐步扩展远征范围。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/892970"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "survival-craft",
+        "decision": "保留",
+        "reason": "主循环依据：在程序生成的群岛探索建造，通过装备和首领挑战逐步扩展远征范围。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/892970",
+          "https://www.valheim.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "project-zomboid",
+    "oldGenreIds": [
+      "sandbox-survival"
+    ],
+    "newGenreIds": [
+      "sandbox-survival"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在持续衰败的城镇搜索补给、建立安全点，并管理角色的生存需求。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/108600"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "饥饿、口渴、疲劳与心理状态影响生存。；搜刮物资与武器。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/108600"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：在持续衰败的城镇搜索补给、建立安全点，并管理角色的生存需求。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/108600"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "sandbox-survival",
+        "decision": "保留",
+        "reason": "主循环依据：在持续衰败的城镇搜索补给、建立安全点，并管理角色的生存需求。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/108600"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "lethal-company",
+    "oldGenreIds": [
+      "adventure"
+    ],
+    "newGenreIds": [
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "gathering-survival",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：为公司在废弃设施搜集废品，协调队友赶在危险扩大前返航。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/1966720"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "gathering-survival",
+        "decision": "保留",
+        "reason": "利润额度和工具投入构成资源压力。；在废弃卫星设施收集废品。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1966720"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：为公司在废弃设施搜集废品，协调队友赶在危险扩大前返航。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1966720"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "adventure",
+        "decision": "保留",
+        "reason": "主循环依据：为公司在废弃设施搜集废品，协调队友赶在危险扩大前返航。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/1966720"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "hunt-showdown-1896",
+    "oldGenreIds": [
+      "extraction-shooter"
+    ],
+    "newGenreIds": [
+      "extraction-shooter"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：追踪赏金目标，在环境威胁与其他猎人之间判断交战和撤离时机。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/594650",
+      "https://www.huntshowdown.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "枪械射击是主要战斗手段。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/594650"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：追踪赏金目标，在环境威胁与其他猎人之间判断交战和撤离时机。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/594650"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "extraction-shooter",
+        "decision": "保留",
+        "reason": "主循环依据：追踪赏金目标，在环境威胁与其他猎人之间判断交战和撤离时机。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/594650",
+          "https://www.huntshowdown.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "animal-crossing-new-horizons",
+    "oldGenreIds": [
+      "farming-life-sim"
+    ],
+    "newGenreIds": [
+      "farming-life-sim"
+    ],
+    "oldPlayStyleIds": [
+      "life-simulation",
+      "collection-training",
+      "spatial-planning"
+    ],
+    "newPlayStyleIds": [
+      "life-simulation",
+      "spatial-planning"
+    ],
+    "changed": true,
+    "reason": "鱼虫和化石是采集收藏，不是能持续提升能力的培养对象。",
+    "sourceUrls": [
+      "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch",
+      "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons",
+      "https://animalcrossing.nintendo.com/new-horizons/explore/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "life-simulation",
+        "decision": "保留",
+        "reason": "与岛上居民持续互动。；游戏时间与现实昼夜对应。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "删除",
+        "reason": "鱼虫和化石是采集收藏，不是能持续提升能力的培养对象。",
+        "sourceUrls": [
+          "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch",
+          "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons",
+          "https://animalcrossing.nintendo.com/new-horizons/explore/"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "spatial-planning",
+        "decision": "保留",
+        "reason": "布置房屋与岛屿设施。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "farming-life-sim",
+        "decision": "保留",
+        "reason": "主循环依据：按真实日期经营岛屿，采集制作、装饰环境并与居民建立联系。",
+        "sourceUrls": [
+          "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch",
+          "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons",
+          "https://animalcrossing.nintendo.com/new-horizons/explore/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "among-us",
+    "oldGenreIds": [
+      "social-deduction"
+    ],
+    "newGenreIds": [
+      "social-deduction"
+    ],
+    "oldPlayStyleIds": [
+      "social-negotiation",
+      "investigation-deduction"
+    ],
+    "newPlayStyleIds": [
+      "social-negotiation",
+      "investigation-deduction"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：船员完成任务并通过讨论投票识别潜伏者，伪装者则破坏并消灭船员。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/945360",
+      "https://www.innersloth.com/games/among-us"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "social-negotiation",
+        "decision": "保留",
+        "reason": "部分随机玩家成为伪装者，其身份对船员保密。；会议可投票驱逐被怀疑者。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/945360"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "管理地图与监控摄像头帮助观察行为。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/945360"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "social-deduction",
+        "decision": "保留",
+        "reason": "主循环依据：船员完成任务并通过讨论投票识别潜伏者，伪装者则破坏并消灭船员。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/945360",
+          "https://www.innersloth.com/games/among-us"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "osu",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：按照谱面节奏点击、拖动与旋转，保持连击并提高判定准确度。",
+    "sourceUrls": [
+      "https://osu.ppy.sh/wiki/en/Game_mode/osu!",
+      "https://osu.ppy.sh/wiki/en/Client/Keyboard_shortcuts"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "rhythm-play",
+        "decision": "保留",
+        "reason": "点击时机相对节奏目标决定判定。",
+        "sourceUrls": [
+          "https://osu.ppy.sh/wiki/en/Game_mode/osu!"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "rhythm-game",
+        "decision": "保留",
+        "reason": "主循环依据：按照谱面节奏点击、拖动与旋转，保持连击并提高判定准确度。",
+        "sourceUrls": [
+          "https://osu.ppy.sh/wiki/en/Game_mode/osu!",
+          "https://osu.ppy.sh/wiki/en/Client/Keyboard_shortcuts"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "beat-saber",
+    "oldGenreIds": [
+      "rhythm-game"
+    ],
+    "newGenreIds": [
+      "rhythm-game"
+    ],
+    "oldPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "newPlayStyleIds": [
+      "rhythm-play"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：按节拍与方向挥动光剑切块，并躲避障碍完成音乐关卡。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/620980",
+      "https://beatsaber.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "rhythm-play",
+        "decision": "保留",
+        "reason": "操作需匹配音乐节拍。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/620980"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "rhythm-game",
+        "decision": "保留",
+        "reason": "主循环依据：按节拍与方向挥动光剑切块，并躲避障碍完成音乐关卡。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/620980",
+          "https://beatsaber.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "mario-kart-8-deluxe",
+    "oldGenreIds": [
+      "vehicle-sport",
+      "racing"
+    ],
+    "newGenreIds": [
+      "racing"
+    ],
+    "oldPlayStyleIds": [
+      "vehicle-driving"
+    ],
+    "newPlayStyleIds": [
+      "vehicle-driving"
+    ],
+    "changed": true,
+    "reason": "核心目标是驾驶赛车争取竞速名次，改归竞速。",
+    "sourceUrls": [
+      "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch",
+      "https://en.wikipedia.org/wiki/Mario_Kart_8"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "vehicle-driving",
+        "decision": "保留",
+        "reason": "玩家控制赛车转向与速度。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mario_Kart_8"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "vehicle-sport",
+        "decision": "删除",
+        "reason": "核心目标是驾驶赛车争取竞速名次，改归竞速。",
+        "sourceUrls": [
+          "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch",
+          "https://en.wikipedia.org/wiki/Mario_Kart_8"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "racing",
+        "decision": "保留",
+        "reason": "主循环依据：驾驶赛车争夺名次，用道具、漂移与路线选择应对赛道变化。",
+        "sourceUrls": [
+          "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch",
+          "https://en.wikipedia.org/wiki/Mario_Kart_8"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "path-of-exile",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：用技能宝石、天赋网络与装备构建角色，在地图挑战和物品经济中持续迭代。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/238960"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "主循环依据：用技能宝石、天赋网络与装备构建角色，在地图挑战和物品经济中持续迭代。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/238960"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "玩家配置职业、装备与宝石。；所有职业共享庞大天赋树，从不同位置出发。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/238960"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：用技能宝石、天赋网络与装备构建角色，在地图挑战和物品经济中持续迭代。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/238960"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "disco-elysium",
+    "oldGenreIds": [
+      "rpg",
+      "investigation-adventure",
+      "adventure"
+    ],
+    "newGenreIds": [
+      "rpg",
+      "investigation-adventure",
+      "adventure"
+    ],
+    "oldPlayStyleIds": [
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "newPlayStyleIds": [
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：通过对话、观察与角色能力调查案件，选择如何回应城市中的人和事。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/632470",
+      "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+      "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "dialogue-choice",
+        "decision": "保留",
+        "reason": "主循环依据：通过对话、观察与角色能力调查案件，选择如何回应城市中的人和事。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632470"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "investigation-deduction",
+        "decision": "保留",
+        "reason": "以调查和询问推进凶案判断。；观察城市与人物帮助调查。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632470"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "rpg",
+        "decision": "保留",
+        "reason": "主循环依据：通过对话、观察与角色能力调查案件，选择如何回应城市中的人和事。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632470",
+          "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+          "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "investigation-adventure",
+        "decision": "保留",
+        "reason": "主循环依据：通过对话、观察与角色能力调查案件，选择如何回应城市中的人和事。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632470",
+          "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+          "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "adventure",
+        "decision": "保留",
+        "reason": "主循环依据：通过对话、观察与角色能力调查案件，选择如何回应城市中的人和事。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/632470",
+          "https://discoelysium.com/devblog/2016/10/06/active-skill-checks",
+          "https://steamcommunity.com/app/632470/discussions/0/3175526477766541689/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "binding-of-isaac-rebirth",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在随机地下室射击敌人，用改变角色能力的宝物形成不同尝试。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/250900"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "游戏以射击对抗地下室敌人。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/250900"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "选择并组合地下室中获得的宝物，以改变射击和角色能力。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/250900"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：在随机地下室射击敌人，用改变角色能力的宝物形成不同尝试。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/250900"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "noita",
+    "oldGenreIds": [
+      "roguelite"
+    ],
+    "newGenreIds": [
+      "roguelite"
+    ],
+    "oldPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "aiming-shooting",
+      "buildcrafting",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：在逐像素模拟的世界中组合魔法，利用燃烧、液体和破坏探索地下。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/881100",
+      "https://noitagame.com/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "aiming-shooting",
+        "decision": "保留",
+        "reason": "主循环依据：在逐像素模拟的世界中组合魔法，利用燃烧、液体和破坏探索地下。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/881100"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "主循环依据：在逐像素模拟的世界中组合魔法，利用燃烧、液体和破坏探索地下。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/881100"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "每次探索生成新的世界。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/881100"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "roguelite",
+        "decision": "保留",
+        "reason": "主循环依据：在逐像素模拟的世界中组合魔法，利用燃烧、液体和破坏探索地下。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/881100",
+          "https://noitagame.com/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "caves-of-qud",
+    "oldGenreIds": [
+      "traditional-roguelike"
+    ],
+    "newGenreIds": [
+      "traditional-roguelike"
+    ],
+    "oldPlayStyleIds": [
+      "tactical-command",
+      "exploration",
+      "buildcrafting"
+    ],
+    "newPlayStyleIds": [
+      "turn-based-combat",
+      "exploration",
+      "buildcrafting"
+    ],
+    "changed": true,
+    "reason": "单角色逐回合探索与战斗，不因策略选择归入多单位战术指挥。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/333640"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "tactical-command",
+        "decision": "删除",
+        "reason": "单角色逐回合探索与战斗，不因策略选择归入多单位战术指挥。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/333640"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "世界结合程序生成与手工地点。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/333640"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "buildcrafting",
+        "decision": "保留",
+        "reason": "角色创建可选择突变、植入体与出身。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/333640"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "turn-based-combat",
+        "decision": "新增",
+        "reason": "单角色逐回合探索与战斗，不因策略选择归入多单位战术指挥。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/333640"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "traditional-roguelike",
+        "decision": "保留",
+        "reason": "主循环依据：在模拟世界中用突变、植入体与社会关系处理任务，选择死亡或检查点规则。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/333640"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "phantom-blade-zero",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：单人武侠动作 RPG，在快速攻防中使用武器，并以首领武器打开新的探索路径。",
+    "sourceUrls": [
+      "https://store.steampowered.com/app/4115450/Phantom-Blade-Zero/",
+      "https://www.playstation.com/en-us/games/phantom-blade-zero/",
+      "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "官方说明以普通和重攻击输入执行近身打击。；官方说明通过闪避输入改变位置并躲避攻击。",
+        "sourceUrls": [
+          "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "取得特定 Phantom Edge 后可破开障碍或抵达此前无法进入的位置。",
+        "sourceUrls": [
+          "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：单人武侠动作 RPG，在快速攻防中使用武器，并以首领武器打开新的探索路径。",
+        "sourceUrls": [
+          "https://store.steampowered.com/app/4115450/Phantom-Blade-Zero/",
+          "https://www.playstation.com/en-us/games/phantom-blade-zero/",
+          "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  },
+  {
+    "id": "monster-hunter-outlanders",
+    "oldGenreIds": [
+      "action-rpg"
+    ],
+    "newGenreIds": [
+      "action-rpg"
+    ],
+    "oldPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "newPlayStyleIds": [
+      "action-combat",
+      "exploration",
+      "collection-training"
+    ],
+    "changed": false,
+    "reason": "既有案例主循环：移动端探索与狩猎动作游戏，可单人探索，也可与好友组成 4 人狩猎小队。",
+    "sourceUrls": [
+      "https://monsterhunteroutlanders.com/en/index.html",
+      "https://monsterhunteroutlanders.com/en/news-monster-hunter-outlanders-official-launch-faq.html",
+      "https://play.google.com/store/apps/details?id=com.tencent.mhadv&hl=en",
+      "https://www.capcom.co.jp/ir/english/news/html/e260929.html",
+      "https://www.ludens.com.tw/monster-hunter-outlanders-buddy-guide/"
+    ],
+    "tagChecks": [
+      {
+        "dimension": "playStyle",
+        "id": "action-combat",
+        "decision": "保留",
+        "reason": "官网角色说明展示大锤蓄力打击、双刀连续斩击等主动近身攻击。",
+        "sourceUrls": [
+          "https://monsterhunteroutlanders.com/en/index.html"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "exploration",
+        "decision": "保留",
+        "reason": "主循环依据：移动端探索与狩猎动作游戏，可单人探索，也可与好友组成 4 人狩猎小队。",
+        "sourceUrls": [
+          "https://monsterhunteroutlanders.com/en/index.html"
+        ]
+      },
+      {
+        "dimension": "playStyle",
+        "id": "collection-training",
+        "decision": "保留",
+        "reason": "已打开的攻略说明不同随从可获取、升级和专属训练。",
+        "sourceUrls": [
+          "https://monsterhunteroutlanders.com/en/index.html",
+          "https://monsterhunteroutlanders.com/en/news-monster-hunter-outlanders-official-launch-faq.html",
+          "https://play.google.com/store/apps/details?id=com.tencent.mhadv&hl=en",
+          "https://www.capcom.co.jp/ir/english/news/html/e260929.html",
+          "https://www.ludens.com.tw/monster-hunter-outlanders-buddy-guide/"
+        ]
+      },
+      {
+        "dimension": "genre",
+        "id": "action-rpg",
+        "decision": "保留",
+        "reason": "主循环依据：移动端探索与狩猎动作游戏，可单人探索，也可与好友组成 4 人狩猎小队。",
+        "sourceUrls": [
+          "https://monsterhunteroutlanders.com/en/index.html",
+          "https://monsterhunteroutlanders.com/en/news-monster-hunter-outlanders-official-launch-faq.html",
+          "https://play.google.com/store/apps/details?id=com.tencent.mhadv&hl=en",
+          "https://www.capcom.co.jp/ir/english/news/html/e260929.html",
+          "https://www.ludens.com.tw/monster-hunter-outlanders-buddy-guide/"
+        ]
+      }
+    ],
+    "evidenceNote": "主要依据原始案例的已记录来源与机制；另行打开的资料仅用于相应条目，未安装或试玩。",
+    "genreScope": "此处列直接类型；分类器会根据类型层级补充父类型。"
+  }
+]

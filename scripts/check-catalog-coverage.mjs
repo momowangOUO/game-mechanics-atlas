@@ -21,24 +21,12 @@ for (const mechanic of dataset.mechanics) {
   require(mechanicScenes[mechanic.id]?.frames.length ===
     3, `${mechanic.id}: missing three-panel captions`);
 }
-require(summary.games >= 320, "fewer than 320 complete cases");
+require(summary.detailedCases >= 320, "fewer than 320 detailed cases");
 require(summary.mobile >= 100, "fewer than 100 verified mobile releases");
 require(summary.mobileOrigin >= 60, "fewer than 60 mobile-origin cases");
 require(summary.classics >= 60, "fewer than 60 classics");
-const exceptions = {
-  "language-puzzle": {
-    minimum: 4,
-    reason:
-      "已核实四款完整案例；Sethian、Epigraph等候选仍缺足够机制依据，未用于凑数。",
-  },
-};
-for (const row of summary.byGenre)
-  require(row.count >=
-    (exceptions[row.id]?.minimum ??
-      10), `${row.id}: ${row.count} games, target 10`);
-for (const row of summary.byPlayStyle)
-  require(row.count >=
-    10, `${row.id}: ${row.count} play-direction cases, target 10`);
+// Ten examples is a research target, not a reason to admit unsupported games.
+const coverageTarget = 10;
 const sourceIds = new Set(dataset.sources.map((source) => source.id));
 const styleIds = new Set(playStyles.map((style) => style.id));
 const genreIds = new Set(dataset.genres.map((genre) => genre.id));
@@ -74,9 +62,9 @@ for (const review of coverageReviews) {
 }
 const report = {
   ...summary,
-  genreExceptions: summary.byGenre
-    .filter((row) => row.count < 10)
-    .map((row) => ({ ...row, ...exceptions[row.id] })),
+  coverageTarget,
+  genreGaps: summary.byGenre.filter((row) => row.count < coverageTarget),
+  playDirectionGaps: summary.byPlayStyle.filter((row) => row.count < coverageTarget),
   errors,
 };
 fs.mkdirSync(".build", { recursive: true });
@@ -88,6 +76,8 @@ console.log(
   JSON.stringify(
     {
       games: summary.games,
+      detailedCases: summary.detailedCases,
+      referenceCases: summary.referenceCases,
       mobile: summary.mobile,
       mobileOrigin: summary.mobileOrigin,
       classics: summary.classics,
@@ -96,7 +86,8 @@ console.log(
       coveredCells: summary.coveredCells,
       reviewedEmpty: summary.reviewedEmpty,
       pendingCells: summary.pendingCells,
-      exceptions: report.genreExceptions,
+      genreGaps: report.genreGaps,
+      playDirectionGaps: report.playDirectionGaps,
       errors,
     },
     null,

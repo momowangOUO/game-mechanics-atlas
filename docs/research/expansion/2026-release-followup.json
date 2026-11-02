@@ -1,0 +1,642 @@
+[
+  {
+    "id": "mewgenics",
+    "name": "Mewgenics",
+    "studio": "Edmund McMillen、Tyler Glaiel",
+    "year": 2026,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch-2"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "roguelite",
+      "tactical-turn-based",
+      "turn-based-rpg"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "buildcrafting",
+      "collection-training",
+      "turn-based-combat"
+    ],
+    "summary": "从家中猫群组队，配置职业项圈投入格位回合冒险；把归来的经验、伤痕与突变带进繁育，培养下一代队伍。",
+    "analysis": "一次冒险中的角色发展会影响未来可繁育的血脉，阵亡风险之外还有是否保留或交出某只猫的长期取舍；队伍构筑因此跨越了一代角色。",
+    "loop": [
+      "从猫群选择队员并配置职业项圈",
+      "在回合战场安排站位与能力组合",
+      "让归来的猫繁育，或把部分猫交给NPC发展房屋"
+    ],
+    "learning": [
+      "遗传成长把单个角色的经历转为未来队伍的输入，使战斗和繁育在同一条长期循环中互相影响。"
+    ],
+    "caveats": [
+      "归来的猫可以继续繁育，部分猫也可交给NPC换取房屋升级。"
+    ],
+    "resources": [
+      "食物、金钱和宝物支持下一轮准备",
+      "猫的职业、技能与遗传特性决定队伍潜力"
+    ],
+    "progression": [
+      "归来的猫保留经历和经验",
+      "技能与突变可以遗传给后代，房屋发展拓展长期准备"
+    ],
+    "scopeLabel": "2026本体战术冒险与繁育",
+    "scopeNotes": "范围为2026年发行版中的猫队回合战斗、角色培养与繁育。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=686060&l=english&cc=us",
+        "title": "Mewgenics",
+        "publisher": "Steam / Edmund McMillen、Tyler Glaiel",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mewgenics",
+        "title": "Mewgenics — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并读取所引规则与发行资料；未安装或试玩。"
+      },
+      {
+        "url": "https://www.playstation.com/en-us/games/mewgenics/",
+        "title": "Mewgenics — PS5 official store",
+        "publisher": "Sony Interactive Entertainment / Nicalis",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取 PS5 平台、2026-09-08 上市日期与回合冒险说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "猫队与敌人在回合战斗中行动，需要安排位置和技能",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "给出战猫配置不同职业项圈，选择对应能力方向",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "从家中猫群组织战术冒险队伍，搭配职业与能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "繁育猫并让后代继承技能、突变和遗传特征",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "冒险归来的猫保留战斗经验，影响后续培养",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "可把部分猫交给NPC，换取房屋的发展与升级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686060/aa8075d11165fef4d4d0d09c156f0da0623b5da1/header.jpg?t=1788661023",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=686060&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "slay-the-spire-2",
+    "name": "杀戮尖塔2 / Slay the Spire 2",
+    "studio": "Mega Crit",
+    "year": 2026,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "summary": "选择角色攀登变化的高塔，通过战斗奖励与商店调整卡组，在已知敌方意图和有限能量下安排每回合出牌；也可四人合作。",
+    "analysis": "敌方意图给出可判断的当回合压力，卡组又决定能够抽到哪些应对；路线、牌组与出牌因此分处不同时间尺度，但共同影响生存。",
+    "loop": [
+      "选择角色与高塔路线",
+      "观察敌方意图，分配能量并按序出牌",
+      "取得奖励、删买卡牌和遗物，继续挑战或结束本轮"
+    ],
+    "learning": [
+      "合作模式可以共享胜负目标，同时保留每位玩家独立的卡组、资源和奖励选择。"
+    ],
+    "caveats": [
+      "联机时各玩家分别管理自己的卡组、费用与奖励，共同争取战斗胜利。"
+    ],
+    "resources": [
+      "每回合能量在攻击、防御与其他牌效间分配",
+      "金币可用于卡牌、药水、遗物或删牌",
+      "各角色有不同初始牌组和可得牌池"
+    ],
+    "progression": [
+      "本轮卡组随攀塔发展，失败后重新开始",
+      "完成尝试可开放时间线内容、人物与功能"
+    ],
+    "scopeLabel": "2026抢先体验／单人与合作",
+    "scopeNotes": "范围为抢先体验版本中的单人攀塔与可选合作模式。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2868840&l=english&cc=us",
+        "title": "Slay the Spire 2",
+        "publisher": "Steam / Mega Crit",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Slay_the_Spire_II",
+        "title": "Slay the Spire II — Gameplay and early access release",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取角色牌池、地图、能量、敌方意图、商店、失败重开与合作规则；发行时间与EA状态亦由官方商店正文核对。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "in-run-deck-growth",
+        "note": "在攀塔过程中获得新牌，并可通过商店买牌或删牌调整本轮卡组",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "玩家和怪物轮流执行回合行动",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "intent-preview",
+        "note": "在自己出牌前可获知怪物计划进行的行动",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "有限能量用于不同牌费，金币也在多类商店服务间取舍",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每轮幕地图和分支路线随机生成，环境版本也可能不同",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "商店出售卡牌、药水与遗物，并提供删牌服务",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "战斗失败结束本轮，需要重新开始攀塔",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "可选最多四人共同攀塔，使用合作专属卡与队伍协同",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用多人合作模式；单人流程不包含其他玩家。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2868840&l=english&cc=us"
+    },
+    "aliases": [
+      "杀戮尖塔2"
+    ]
+  },
+  {
+    "id": "marathon-2026",
+    "name": "Marathon",
+    "studio": "Bungie",
+    "year": 2026,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "选择具备不同能力的疾行者外壳，单独或结队进入殖民地搜刮，与玩家和敌方势力交火，成功撤离后才把战利品存入仓库。",
+    "analysis": "装备既提高这一趟的胜算，也成为下一次失败可能付出的成本；临时结盟和背叛又让搜刮路线的风险不能只由地形和敌人数推定。",
+    "loop": [
+      "选择外壳、可改装武器与能力方案",
+      "进入地图搜刮、完成契约并应对敌我队伍",
+      "成功撤离存入仓库，再投入装备开始新行动"
+    ],
+    "learning": [
+      "成功带回的装备还可以投入下一次行动，让成长成果继续参与风险与收益的取舍。"
+    ],
+    "caveats": [
+      "可以单人进入，也可两至三人组队；携入装备与途中收获都承担损失风险。"
+    ],
+    "resources": [
+      "携入装备与所得战利品承担行动风险",
+      "仓库存放成功撤出的收获",
+      "契约奖励支持后续配装"
+    ],
+    "progression": [
+      "赛季中积累装备与角色能力选择",
+      "后续行动可携入更有价值的装备以争取奖励"
+    ],
+    "scopeLabel": "2026本体常规撤离",
+    "scopeNotes": "范围为2026年新作中的PvPvE搜刮、契约与撤离流程。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3065800&l=english&cc=us",
+        "title": "Marathon",
+        "publisher": "Steam / Bungie",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Marathon_(2026_video_game)",
+        "title": "Marathon (2026 video game) — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并读取所引规则与发行资料；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "使用可改装枪械参与PvP与PvE交火",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "其他玩家队伍也在地图搜刮并争夺生存与战利品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "可从击败的玩家与敌人身上取得装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "成功撤离后才将所得收获充实到仓库",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "接受并完成契约获取奖励",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择疾行者外壳，并配置可改装武器与能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "risk-staking",
+        "note": "把更好的既有装备投入行动，以承担损失风险换取更高奖励",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "可以两人或三人结队探索、交战并争取撤离",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "使用多人合作模式；单人流程不包含其他玩家。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3065800/c3093fec19fed6eb0750a87261c53743a5757827/header.jpg?t=1786061300",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3065800&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "crimson-desert",
+    "name": "红色沙漠 / Crimson Desert Enhanced",
+    "studio": "Pearl Abyss",
+    "year": 2026,
+    "platforms": [
+      "pc",
+      "mac",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "platforming",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "以克里夫为主线角色在帕卫尔探索，攀墙滑翔、接受任务，用武器与徒手技应对敌人，收集资源重建灰鬃营地。",
+    "analysis": "移动能力既服务战斗中的位置变化，也让悬崖、遗迹与空中区域连接成可探索空间；营地与装备发展又为野外活动提供回访用途。",
+    "loop": [
+      "探索城镇、荒野与遗迹，接取遭遇任务",
+      "攀爬和滑翔抵达新路径，结合武器与徒手技交战",
+      "采集与制作补充准备，强化装备并发展灰鬃营地"
+    ],
+    "learning": [
+      "攀爬、滑翔和机动既影响交战位置，也让遗迹与高处区域成为探索路线的一部分。"
+    ],
+    "caveats": [
+      "翁卡和德米安的专属武器与动作不在此范围。"
+    ],
+    "resources": [
+      "资源用于烹饪、装备强化与营地发展",
+      "不同武器与技能组合提供不同进攻方式"
+    ],
+    "progression": [
+      "主线推进灰鬃重建与克里夫旅程",
+      "装备、技能和营地随探索发展"
+    ],
+    "scopeLabel": "克里夫主线与常规探索",
+    "scopeNotes": "范围为克里夫的本体主线与探索，采用现行Enhanced整合更新。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3321460&l=english&cc=us",
+        "title": "Crimson Desert Enhanced",
+        "publisher": "Steam / Pearl Abyss",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Crimson_Desert",
+        "title": "Crimson Desert — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取原作发行时间、已发行平台和未来Switch 2移植计划；不采用其未来平台作为现已发行平台。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "武器攻击可衔接拳打、踢击与近身擒拿",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "在交战中使用闪避和滑步改变位置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "可使用多种远程武器应对敌人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "wall-climb",
+        "note": "攀登悬崖与墙面，再从高处滑翔探索",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "通过任务、遭遇与挑战推进大陆故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "在野外搜集资源，并通过钓鱼与狩猎取得补给材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "把收集材料用于使已有装备更强",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1792637341",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3321460&l=english&cc=us"
+    },
+    "aliases": [
+      "红色沙漠"
+    ]
+  },
+  {
+    "id": "nioh-3",
+    "name": "仁王3 / Nioh 3",
+    "studio": "KOEI TECMO GAMES CO., LTD.",
+    "year": 2026,
+    "platforms": [
+      "pc",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "action-rpg"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "在开放区域探索与战斗，随时切换武士和忍者风格，以残心、精准格挡或迅捷回避管理精力与忍术资源。",
+    "analysis": "两种风格采用不同的资源循环与移动方式：武士通过残心恢复精力并清除常暗池，忍者以雾制造诱饵和低消耗移动，切换也就改变了恢复资源与调整位置的办法。",
+    "loop": [
+      "探索区域并观察敌方威胁",
+      "在武士与忍者风格之间选择应战手段",
+      "用攻击、防御或回避积累资源，配置新武技与忍术继续挑战"
+    ],
+    "learning": [
+      "风格切换同时改变资源恢复与位移方式，因此也会改变玩家继续进攻或调整位置的办法。"
+    ],
+    "caveats": [
+      "武士的残心可以恢复精力并净化常暗；忍者的雾用于回避和制造诱饵，没有残心的恢复与净化效果。"
+    ],
+    "resources": [
+      "精力影响普通攻防持续性",
+      "忍术槽与技研槽由战斗行为积累",
+      "不同风格有不同恢复和规避手段"
+    ],
+    "progression": [
+      "取得武技忍术后可在菜单配置",
+      "开放区域与任务推进角色旅程"
+    ],
+    "scopeLabel": "2026本体／武士与忍者风格",
+    "scopeNotes": "范围为本体玩家角色在武士、忍者两种风格之间切换的战斗与探索。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3681010&l=english&cc=us",
+        "title": "Nioh 3",
+        "publisher": "Steam / KOEI TECMO GAMES CO., LTD.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取官方商店说明、发行和桌面平台字段及官方封面链接；未安装或试玩。"
+      },
+      {
+        "url": "https://www.gamecity.ne.jp/manual/nioh3/eng/3200.html",
+        "title": "Nioh 3 Official Web Manual — Samurai Style",
+        "publisher": "Koei Tecmo / Team NINJA",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取残心、常暗净化、技研、精准防御和三架势；不把忍者没有的残心恢复写给忍者。"
+      },
+      {
+        "url": "https://www.gamecity.ne.jp/manual/nioh3/eng/3300.html",
+        "title": "Nioh 3 Official Web Manual — Ninja Style",
+        "publisher": "Koei Tecmo / Team NINJA",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际读取雾、忍术槽、精准回避和踏敌跳跃；明确需要先取得的武技忍术及风格条件。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Nioh_3",
+        "title": "Nioh 3 — release and platforms",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "实际访问并读取所引规则与发行资料；未安装或试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "武士以武器攻击和武技进行近身交战",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用武士风格，并已取得所需武技。"
+      },
+      {
+        "id": "parry",
+        "note": "武士在敌方攻击命中时准确防御可化解攻击并恢复精力",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用武士风格，并已取得所需武技。"
+      },
+      {
+        "id": "dodge-move",
+        "note": "忍者准确回避可延长无敌时间并接续闪避",
+        "source": 2,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用忍者风格，并已取得所需忍术或武技。"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "忍者通过攻击与回避积累忍术槽，再消耗它发动忍术",
+        "source": 2,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用忍者风格，并已取得所需忍术或武技。"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "新取得忍术可在主菜单中选择配置",
+        "source": 2,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用忍者风格，并已取得所需忍术或武技。"
+      },
+      {
+        "id": "jump",
+        "note": "忍者在敌人附近空中再跳，可踏敌绕到其背后",
+        "source": 2,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用忍者风格，并已取得所需忍术或武技。"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "忍者攻击后使用雾可留下诱饵，暂时吸引敌方注意",
+        "source": 2,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "使用忍者风格，并已取得所需忍术或武技。"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3681010/a21264e9fd476dcb2901c2432b598107d024c5a8/header.jpg?t=1772090941",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3681010&l=english&cc=us"
+    },
+    "aliases": [
+      "仁王3"
+    ]
+  }
+]

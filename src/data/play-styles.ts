@@ -36,6 +36,12 @@ export const playStyles = [
     mechanicIds: ["drag-placement", "area-control", "round-phases"],
   },
   {
+    id: "turn-based-combat",
+    name: "回合战斗",
+    definition: "按回合为角色选择技能、目标或移动，安排出手顺序与应对方式。",
+    mechanicIds: ["sequential-turns", "round-phases", "damage-health"],
+  },
+  {
     id: "exploration",
     name: "探索",
     definition: "寻找道路、地点与未知内容，获得能推进游戏的信息或物品。",
@@ -159,6 +165,7 @@ export const platformLabels: Record<string, string> = {
   playstation: "PlayStation",
   xbox: "Xbox",
   switch: "Nintendo Switch",
+  "switch-2": "Nintendo Switch 2",
   "nintendo-legacy": "任天堂早期主机",
   handheld: "掌机",
   ios: "iOS",
