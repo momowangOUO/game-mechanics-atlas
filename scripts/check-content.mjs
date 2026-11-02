@@ -1,13 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import "./register-typescript.mjs";
+const {dataset}=await import("../src/lib/knowledge.ts");
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (name) =>
   JSON.parse(fs.readFileSync(path.join(root, "docs/research", name), "utf8"));
-const evidence = read("game-evidence.json"),
-  dossier = read("mechanic-dossiers.json"),
-  mix = read("genre-recipes.json"),
-  relationships = read("mechanic-relationships.json");
+const evidence = dataset,
+  dossier = {mechanisms:dataset.mechanics},
+  mix = {compositeTypes:dataset.genres,recipes:dataset.recipes},
+  relationships = dataset.relationships;
 const errors = [];
 const check = (ok, message) => {
   if (!ok) errors.push(message);
@@ -73,9 +75,9 @@ for (const m of dossier.mechanisms)
   for (const id of m.evidenceRefs)
     check(gameIds.has(id), `${m.id}: missing game evidence`);
 const urlCount = new Set(evidence.sources.map((s) => s.url)).size;
-check(evidence.games.length === 82, "expected 82 games");
+check(evidence.games.length >= 320, "expected at least 320 complete games");
 check(dossier.mechanisms.length >= 120, "expected at least 120 mechanics");
-check(mix.compositeTypes.length === 32, "expected 32 genres");
+check(mix.compositeTypes.length >= 32, "expected at least the original 32 genres");
 check(mix.recipes.length === 32, "expected 32 recipes");
 check(relationships.length >= 120, "expected at least 120 relationships");
 check(
@@ -100,7 +102,8 @@ const report = {
   supportedInstances: positive.length,
   sources: evidence.sources.length,
   uniqueSourceURLs: urlCount,
-  currentReadSourceIds: checked.size,
+  historicalVerificationFileSourceIds: checked.size,
+  sourcesWithVerificationNotes: evidence.sources.filter(source=>source.verificationNote?.trim()).length,
   minimumSupportedInstancesPerGame: Math.min(
     ...evidence.games.map(
       (g) =>

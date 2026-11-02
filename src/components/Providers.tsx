@@ -183,6 +183,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
     game: "游戏案例",
     genre: "复合类型",
     recipe: "组合配方",
+    playStyle: "核心玩法方向",
   };
   const allResults = searchCatalog(query);
   const results = allResults.map((item) => ({

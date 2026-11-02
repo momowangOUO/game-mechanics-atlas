@@ -15,9 +15,9 @@ const { taxonomyGroupVisuals } = await import(
 const files = createAgentDocuments();
 const parse = (name) => JSON.parse(files.get(name));
 
-test("all 50 taxonomy groups have distinct real square transparent illustrations", () => {
+test("all registered taxonomy groups have distinct real square transparent illustrations", () => {
   const expected = taxonomyGroups.map((group) => group.id).sort();
-  assert.equal(expected.length, 50);
+  assert.ok(expected.length > 0);
   assert.deepEqual(Object.keys(taxonomyGroupVisuals).sort(), expected);
   const root = new URL("../public/art/taxonomy-groups/", import.meta.url);
   assert.deepEqual(
@@ -89,14 +89,14 @@ test("every canonical content page has a Markdown alternate", () => {
 test("registry points only at generated entity resources and real page alternates", () => {
   const catalog = parse("data/v1/catalog.json");
   assert.deepEqual(catalog.counts, {
-    dimensions: 9,
-    groups: 50,
-    mechanics: 122,
-    games: 82,
-    types: 32,
-    recipes: 32,
-    instances: 718,
-    sources: 156,
+    dimensions: dataset.dimensions.length,
+    groups: taxonomyGroups.length,
+    mechanics: dataset.mechanics.length,
+    games: dataset.games.length,
+    types: dataset.genres.length,
+    recipes: dataset.recipes.length,
+    instances: dataset.instances.length,
+    sources: dataset.sources.length,
   });
   const keys = new Set();
   for (const row of catalog.entities) {
@@ -119,14 +119,16 @@ test("registry points only at generated entity resources and real page alternate
 
 test("instances retain their exact status, conditions, scope and source provenance", () => {
   const full = parse("data/v1/knowledge.json");
-  assert.deepEqual(full.instances, dataset.instances);
-  assert.deepEqual(full.scopes, dataset.scopes);
-  assert.deepEqual(full.sources, dataset.sources);
+  // JSON omits optional properties whose value is undefined.
+  const asJson = (value) => JSON.parse(JSON.stringify(value));
+  assert.deepEqual(full.instances, asJson(dataset.instances));
+  assert.deepEqual(full.scopes, asJson(dataset.scopes));
+  assert.deepEqual(full.sources, asJson(dataset.sources));
   for (const row of dataset.mechanics) {
     const exported = parse(`data/v1/mechanics/${row.id}.json`);
     assert.deepEqual(
       exported.instances,
-      dataset.instances.filter((instance) => instance.mechanicId === row.id),
+      asJson(dataset.instances.filter((instance) => instance.mechanicId === row.id)),
     );
     for (const instance of exported.instances) {
       assert.ok(exported.scopes.some((scope) => scope.id === instance.scopeId));

@@ -4,9 +4,8 @@ import { readFileSync } from "node:fs";
 const mechanicDirectory = JSON.parse(
   readFileSync("docs/research/mechanic-dossiers.json", "utf8"),
 ).mechanisms as { dimension: string }[];
-const gameDirectory = JSON.parse(
-  readFileSync("docs/research/game-evidence.json", "utf8"),
-).games as { genreIds: string[] }[];
+await import("../../scripts/register-typescript.mjs");
+const { games: gameDirectory } = await import("../../src/lib/knowledge.ts");
 
 async function visit(page: Page, path: string) {
   const response = await gotoApp(page, path);

@@ -61,6 +61,7 @@ for (const width of [1440, 390, 320]) {
     await page.setViewportSize({ width, height: 900 });
     await gotoApp(page, "/taxonomy?mechanic=jump");
     const frame = page.locator('[class*="iconFrame"]').first();
+    await frame.scrollIntoViewIfNeeded();
     await expect(frame).toBeVisible();
     const expectedFrame = width > 700 ? 160 : 128;
     const expectedIcon = width > 700 ? 128 : 112;

@@ -1,9 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { gotoApp, appHref } from "./navigation";
-import { readFileSync } from "node:fs";
-const sourceCount = JSON.parse(
-  readFileSync("docs/research/game-evidence.json", "utf8"),
-).sources.length;
+await import("../../scripts/register-typescript.mjs");
+const { sources } = await import("../../src/lib/knowledge.ts");
+const sourceCount = sources.length;
 
 test("official covers keep their source identity and full image", async ({
   page,

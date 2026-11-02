@@ -5,12 +5,8 @@ import { gotoApp } from "./navigation";
 const dossier = JSON.parse(
   readFileSync("docs/research/mechanic-dossiers.json", "utf8"),
 );
-const evidence = JSON.parse(
-  readFileSync("docs/research/game-evidence.json", "utf8"),
-);
-const recipes = JSON.parse(
-  readFileSync("docs/research/genre-recipes.json", "utf8"),
-);
+await import("../../scripts/register-typescript.mjs");
+const { games, sources, genres } = await import("../../src/lib/knowledge.ts");
 
 async function noPageOverflow(page: Page) {
   expect(
@@ -26,14 +22,14 @@ for (const width of [320, 390, 768, 1440]) {
   }) => {
     await page.setViewportSize({ width, height: 900 });
     for (const [path, selector, count] of [
-      ["/games", ".catalog-games .case-card", evidence.games.length],
+      ["/games", ".catalog-games .case-card", games.length],
       [
         "/mechanics",
         ".mechanic-grid .mechanic-card",
         dossier.mechanisms.length,
       ],
-      ["/types", ".type-index-grid > a", recipes.compositeTypes.length],
-      ["/sources", ".source-catalog > article", evidence.sources.length],
+      ["/types", ".type-index-grid > a", genres.length],
+      ["/sources", ".source-catalog > article", sources.length],
     ] as const) {
       await gotoApp(page, path);
       await expect(page.locator(selector)).toHaveCount(count);

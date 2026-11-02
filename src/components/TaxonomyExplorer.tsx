@@ -231,8 +231,8 @@ function Explorer({ params }: { params: Pick<URLSearchParams, "get"> }) {
         <p>按维度查分类，对照图解和游戏范例理解每条规则。</p>
         <div className={styles.catalogStats}>
           <span>9 个维度</span>
-          <span>50 个分组</span>
-          <span>122 项机制</span>
+          <span>{taxonomyGroups.length} 个分组</span>
+          <span>{mechanics.length} 项机制</span>
           <a href="#classification-guide">分类怎么读 ↓</a>
         </div>
       </header>

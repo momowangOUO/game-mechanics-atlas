@@ -1,5 +1,7 @@
 # GitHub Pages 发布验收
 
+2026-11-02 的案例扩充、组合目录与漫画画风修正见[本轮验收](content-expansion/verification.md)。当前发布状态请查看对应提交的 [Pages 工作流](https://github.com/momowangOUO/game-mechanics-atlas/actions/workflows/pages.yml)。
+
 当前机制图解、全站文案、品牌与机器阅读版本见[本轮验收](mechanic-visuals/verification.md)及 [Pages 工作流](https://github.com/momowangOUO/game-mechanics-atlas/actions/workflows/pages.yml)。下列为仓库转公开时的首发记录。
 
 日期：2026-11-01（Asia/Shanghai）。用户明确要求将网站对应的原仓库改为公开，同时公布静态网站。

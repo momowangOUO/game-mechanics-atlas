@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { availableParallelism } from "node:os";
 const requestedBasePath = process.env.PAGES_BASE_PATH ?? "";
 const basePath =
   requestedBasePath === "/" ? "" : requestedBasePath.replace(/\/$/, "");
@@ -14,5 +15,8 @@ const config: NextConfig = {
   reactStrictMode: true,
   devIndicators: false,
   images: { unoptimized: true },
+  // Large static case pages duplicate the catalog in each worker. Bound
+  // concurrency to avoid memory pressure on high-core development machines.
+  experimental: { cpus: Math.max(1, Math.min(4, availableParallelism() - 1)) },
 };
 export default config;

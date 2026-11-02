@@ -1,6 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { appPath, appHref } from "./navigation";
 import { readFileSync } from "node:fs";
+await import("../../scripts/register-typescript.mjs");
+const { dataset } = await import("../../src/lib/knowledge.ts");
+const { taxonomyGroups } = await import("../../src/data/taxonomy-reference.ts");
+const { playStyles } = await import("../../src/data/play-styles.ts");
 const { instances, sources } = JSON.parse(
   readFileSync("docs/research/game-evidence.json", "utf8"),
 );
@@ -26,7 +30,7 @@ test("new taxonomy routes deliver distinct titles, canonical URLs and readable S
   const taxonomyRoutes = (catalog.entities as CatalogEntity[]).filter(
     (row) => row.kind === "dimension" || row.kind === "taxonomyGroup",
   );
-  expect(taxonomyRoutes).toHaveLength(59);
+  expect(taxonomyRoutes).toHaveLength(dataset.dimensions.length + taxonomyGroups.length);
   const routes = [
     ...taxonomyRoutes.map((row) => ({
       path: row.canonicalUrl.slice(SITE_URL.length).replace(/\/$/, ""),
@@ -67,27 +71,14 @@ test("sitemap matches all content routes without query variants or invented modi
   const catalog = await (
     await request.get(appPath("/data/v1/catalog.json"))
   ).json();
-  const indexes = [
-    "/",
-    "/taxonomy",
-    "/mechanics",
-    "/games",
-    "/types",
-    "/graph",
-    "/lab",
-    "/compare",
-    "/heat",
-    "/method",
-    "/sources",
-    "/for-agents",
-    "/copyright",
-  ];
+  const indexes = ["/", "/taxonomy", "/mechanics", "/games", "/games/coverage", "/play-styles", "/types", "/graph", "/lab", "/compare", "/heat", "/method", "/sources", "/for-agents", "/copyright"];
   const expected = new Set([
     ...indexes.map(canonicalUrl),
-    ...(catalog.entities as CatalogEntity[]).map((row) => row.canonicalUrl),
+    ...playStyles.map(row => canonicalUrl(`/play-styles/${row.id}`)),
+    ...(catalog.entities as CatalogEntity[]).map(row => row.canonicalUrl),
   ]);
   expect(new Set(urls)).toEqual(expected);
-  expect(urls).toHaveLength(308);
+  expect(urls).toHaveLength(expected.size);
   expect(new Set(urls).size).toBe(urls.length);
   expect(urls).toContain(canonicalUrl("/copyright"));
   expect(xml).not.toContain("<lastmod>");
@@ -107,14 +98,14 @@ test("static machine resources expose real IDs, exact instance conditions and so
   expect(catalogResponse.status()).toBe(200);
   const catalog = await catalogResponse.json();
   expect(catalog.counts).toEqual({
-    dimensions: 9,
-    groups: 50,
-    mechanics: 122,
-    games: 82,
-    types: 32,
-    recipes: 32,
-    instances: 718,
-    sources: 156,
+    dimensions: dataset.dimensions.length,
+    groups: taxonomyGroups.length,
+    mechanics: dataset.mechanics.length,
+    games: dataset.games.length,
+    types: dataset.genres.length,
+    recipes: dataset.recipes.length,
+    instances: dataset.instances.length,
+    sources: dataset.sources.length,
   });
   const conditional = instances.find(
     (row: { status: string; sourceIds: string[] }) =>

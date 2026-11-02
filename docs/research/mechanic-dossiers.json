@@ -1,19 +1,19 @@
 {
   "schemaNote": "本文件是平台机制档案的研究稿；定义、设计价值、风险与实现建议均由编辑归纳，不代表学界的统一标准。",
-  "preparedAt": "2026-10-31",
+  "preparedAt": "2026-11-02",
   "vocabularySource": "taxonomy-notes.md",
   "gameEvidenceSource": "game-evidence.json",
   "coverage": {
-    "mechanics": 122,
+    "mechanics": 127,
     "dimensions": 9,
     "perDimension": {
-      "interaction": 17,
-      "rules": 17,
+      "interaction": 18,
+      "rules": 18,
       "temporal": 13,
       "buildcraft": 11,
-      "progression": 11,
-      "economy": 21,
-      "information": 15,
+      "progression": 12,
+      "economy": 22,
+      "information": 16,
       "participants": 7,
       "variability": 10
     }
@@ -3861,6 +3861,161 @@
       "epistemicStatus": "editorial_definition",
       "corePlayTags": ["节奏", "计分挑战"],
       "aliases": ["combo", "连击"]
+    },
+    {
+      "id": "dialogue-choice",
+      "name": "对话选择",
+      "dimension": "interaction",
+      "definition": "玩家从明确的回应或行动选项中作出选择，改变对话、人物反应或后续事件。",
+      "inclusionRules": [
+        "回应或行动由玩家主动选择。",
+        "选项会改变当前交谈或后续状态，影响可大可小。"
+      ],
+      "exclusionRules": [
+        "只点击继续阅读预写文本不计入。",
+        "流程路线的选择本身另看路线分支。"
+      ],
+      "misconceptions": ["选择对话不一定进行数值检定，也不一定形成不同结局。"],
+      "designValue": ["让玩家表达态度或决定怎样应对眼前的人物与情境。"],
+      "risks": [
+        "选项表达与实际结果不一致会妨碍判断。",
+        "所有选项都只重复同一句回应，容易让选择失去意义。"
+      ],
+      "adaptation": ["先确定选项影响当下反应、人物关系还是后续事件。"],
+      "complexity": "中",
+      "implementationNotes": "记录选项条件、回应和必要状态，检查分支汇合后仍需保留的影响。",
+      "relatedMechanics": [
+        "route-branching",
+        "ability-check",
+        "relationship-progression"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition",
+      "corePlayTags": ["叙事", "推理"],
+      "aliases": ["对话选项", "dialogue choice"]
+    },
+    {
+      "id": "match-removal",
+      "name": "匹配消除",
+      "dimension": "rules",
+      "definition": "对象形成规定的匹配关系后被移除，盘面随之变化；匹配条件由具体游戏规定。",
+      "inclusionRules": [
+        "移除以颜色、形状、类型或其他明确匹配关系为条件。",
+        "匹配后的移除会改变可继续操作的盘面。"
+      ],
+      "exclusionRules": [
+        "填满一整行而不要求对象相同，另记满行消除。",
+        "只把同类对象升级为更高等级，且不采用该匹配移除过程时，不直接归入。"
+      ],
+      "misconceptions": ["匹配消除不一定要求三个对象，也不一定采用交换操作。"],
+      "designValue": ["让一次操作改变后续可选操作，并支持连锁与目标规划。"],
+      "risks": [
+        "随机补入对象可能使结果难以判断。",
+        "特效与连锁过密时，需要清楚交代目标如何推进。"
+      ],
+      "adaptation": ["分别写清匹配条件、输入方式、移除顺序和盘面补充规则。"],
+      "complexity": "中",
+      "implementationNotes": "统一处理匹配检测、移除、补入与连锁阶段，避免同一对象重复结算。",
+      "relatedMechanics": [
+        "line-completion-clear",
+        "combo-chain",
+        "score-threshold"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition",
+      "corePlayTags": ["空间解谜", "计分挑战"],
+      "aliases": ["三消", "match removal"]
+    },
+    {
+      "id": "keyword-search",
+      "name": "关键词检索",
+      "dimension": "information",
+      "definition": "玩家以关键词查询游戏中的受限资料库，获得与查询条件对应的信息。",
+      "inclusionRules": [
+        "资料由游戏提供的检索系统返回。",
+        "不同查询会影响可找到的记录或可访问的信息。"
+      ],
+      "exclusionRules": [
+        "普通界面里的文字输入不计入。",
+        "已经发现的信息单纯归档，另看线索记录。"
+      ],
+      "misconceptions": ["关键词检索不等于猜密码，也不要求存在自然语言理解。"],
+      "designValue": ["让玩家通过提出查询主动寻找信息，并连接分散记录。"],
+      "risks": ["同义词与输入容错不足可能让正确思路得不到回应。"],
+      "adaptation": ["明确查询范围、匹配方式与返回结果上限。"],
+      "complexity": "中",
+      "implementationNotes": "保留可重复的检索规则，检查别名、空结果与信息解锁条件。",
+      "relatedMechanics": [
+        "clue-journal",
+        "deduction-validation",
+        "language-decoding"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition",
+      "corePlayTags": ["推理"],
+      "aliases": ["资料检索", "keyword search"]
+    },
+    {
+      "id": "character-experience",
+      "name": "角色经验升级",
+      "dimension": "progression",
+      "definition": "角色积累通用经验，达到规定门槛后提升等级，并按规则获得能力或数值变化。",
+      "inclusionRules": [
+        "经验属于角色的整体等级进度。",
+        "达到经验门槛触发等级提升。"
+      ],
+      "exclusionRules": [
+        "只提升某项技能熟练度，另记技能经验成长。",
+        "直接购买属性或解锁内容，不因使用等级字样就计入。"
+      ],
+      "misconceptions": ["角色等级上升不保证每次都能自由分配属性。"],
+      "designValue": ["把多次行动积累成可见的能力发展。"],
+      "risks": ["重复刷取经验可能盖过原有的玩法挑战。"],
+      "adaptation": [
+        "分别说明经验来源、升级门槛和升级后变化；局内与跨局成长另记范围。"
+      ],
+      "complexity": "低",
+      "implementationNotes": "统一结算经验与升级事件，处理一次获得经验跨过多级门槛的情况。",
+      "relatedMechanics": [
+        "skill-experience",
+        "persistent-stat-upgrade",
+        "skill-tree"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition",
+      "corePlayTags": ["构筑"],
+      "aliases": ["角色升级", "通用经验", "character experience"]
+    },
+    {
+      "id": "match-charging",
+      "name": "消除充能",
+      "dimension": "economy",
+      "definition": "匹配或消除指定对象后，按规则积累对应能力的能量或资源，供后续行动使用。",
+      "inclusionRules": [
+        "产出的能量或资源取决于被匹配或消除的对象。",
+        "这些资源可供之后的技能或行动消耗。"
+      ],
+      "exclusionRules": [
+        "只增加分数、没有可供行动使用的资源，不计入。",
+        "击杀敌人获得补给另看战斗资源转换。"
+      ],
+      "misconceptions": [
+        "完成匹配不一定立即充满技能，也不一定所有颜色都供给同一资源。"
+      ],
+      "designValue": ["让盘面操作同时决定后续可用的能力。"],
+      "risks": ["颜色、归属和充能反馈不清会妨碍玩家规划。"],
+      "adaptation": ["明确哪些对象给哪些能力充能，以及资源上限与消耗方式。"],
+      "complexity": "中",
+      "implementationNotes": "将消除结算与能量分配分开处理，检查连锁、溢出和多角色资源归属。",
+      "relatedMechanics": [
+        "match-removal",
+        "combat-resource-conversion",
+        "resource-scarcity"
+      ],
+      "evidenceRefs": [],
+      "epistemicStatus": "editorial_definition",
+      "corePlayTags": ["空间解谜", "资源"],
+      "aliases": ["匹配充能", "消除积攒技能能量"]
     }
   ],
   "classificationReview": {

@@ -5,11 +5,12 @@ import {
   mechanicExamples,
 } from "../data/taxonomy-reference";
 import { matchesCatalog, normalizeSearch } from "./catalog-search";
+import { playStyles } from "../data/play-styles";
 
 export type CatalogResult = {
   id: string;
   name: string;
-  kind: "dimension" | "group" | "mechanic" | "genre" | "game" | "recipe";
+  kind: "dimension" | "group" | "mechanic" | "genre" | "game" | "recipe" | "playStyle";
   path: string;
   description: string;
   extra: string;
@@ -36,6 +37,7 @@ const gameText = (id: string) => {
   return [game?.name, ...(game?.aliases ?? [])].join(" ");
 };
 const entries: CatalogResult[] = [
+  ...playStyles.map(style=>({id:style.id,name:style.name,kind:"playStyle" as const,path:"核心玩法方向",description:style.definition,extra:games.filter(game=>game.playStyleIds?.includes(style.id)).map(game=>game.name).join(" "),href:`/play-styles/${style.id}`})),
   ...taxonomyDimensions.map((info) => {
     const d = dimensions.find((d) => d.id === info.dimensionId)!;
     return {

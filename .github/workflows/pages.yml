@@ -30,6 +30,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: node scripts/check-content.mjs
+      - run: npm run check:coverage
       - run: npm run test:readlink
       - run: npm run test:static
       - run: npm run test:agent-data

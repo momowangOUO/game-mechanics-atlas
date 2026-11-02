@@ -7,6 +7,10 @@ export const taxonomyGroupVisuals: Record<
     iconSrc: "/art/taxonomy-groups/movement-basics.webp",
     description: "靴子跨越台阶与攀越障碍",
   },
+  "dialogue-options": {
+    iconSrc: "/art/taxonomy-groups/dialogue-options.webp",
+    description: "对话选项与交谈资料",
+  },
   "mobility-tools": {
     iconSrc: "/art/taxonomy-groups/mobility-tools.webp",
     description: "抓钩连接传送入口",

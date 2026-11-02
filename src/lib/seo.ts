@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { dimensions, games, genres, mechanics } from "./knowledge";
 import { taxonomyGroups } from "../data/taxonomy-reference";
+import { playStyles } from "../data/play-styles";
 
 /** The public deployment is fixed; local preview prefixes never define canonicals. */
 export const SITE_URL = "https://momowangouo.github.io/game-mechanics-atlas";
@@ -57,6 +58,8 @@ export function pageMetadata(
 }
 
 export const indexPageMetadata: Record<string, Metadata> = {
+  "/games/coverage": pageMetadata("类型与核心玩法组合：游戏案例覆盖","按类型、玩法、平台和年代查找具体游戏，查看收录数量及组合核对记录。","/games/coverage"),
+  "/play-styles": pageMetadata("核心玩法方向与游戏案例","了解玩家主要在做什么，并查找相应的完整游戏案例。","/play-styles"),
   "/": pageMetadata("游戏机制分类与案例参考", SITE_DESCRIPTION, "/"),
   "/taxonomy": pageMetadata(
     "玩法分类图鉴：九个维度与机制分组",
@@ -127,6 +130,7 @@ export function publicContentPaths() {
     ...mechanics.map(({ id }) => `/mechanics/${id}`),
     ...games.map(({ id }) => `/games/${id}`),
     ...genres.map(({ id }) => `/types/${id}`),
+    ...playStyles.map(({ id }) => `/play-styles/${id}`),
     ...dimensions.map(({ id }) => `/taxonomy/${id}`),
     ...taxonomyGroups.map(
       ({ dimensionId, id }) => `/taxonomy/${dimensionId}/${id}`,

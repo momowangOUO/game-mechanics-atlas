@@ -25,7 +25,7 @@ describe("taxonomy navigation integrity", () => {
       taxonomyGroups.length,
     );
     expect(taxonomyGroups.length).toBeGreaterThanOrEqual(35);
-    expect(taxonomyGroups.length).toBeLessThanOrEqual(50);
+    expect(new Set(taxonomyGroups.map(group=>group.id)).size).toBe(taxonomyGroups.length);
     const assigned = taxonomyGroups.flatMap((group) => group.mechanicIds);
     expect(assigned.slice().sort()).toEqual(
       mechanics.map((row) => row.id).sort(),

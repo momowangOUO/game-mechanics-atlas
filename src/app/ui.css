@@ -2413,6 +2413,29 @@ html[data-effects="reduced"] .trend-line {
     font-size: 10px;
   }
 }
+.case-grid.continuous-cases {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  overflow: visible;
+}
+.case-grid.continuous-cases > article {
+  min-width: 0;
+}
+.case-grid.continuous-cases .case-card {
+  min-width: 0;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .case-grid.continuous-cases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .case-grid.continuous-cases {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 .cover .official-game-art {
   object-fit: contain;
   background: #17141e;

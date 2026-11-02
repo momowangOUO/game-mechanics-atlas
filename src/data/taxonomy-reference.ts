@@ -334,7 +334,7 @@ const groupDrafts: GroupDraft[] = [
     function: "让玩家知道何时完成局部目标，并用可读的成绩反馈引导操作。",
     boundary:
       "满行消除不等于任意同色匹配；连续成功计数也不是多个效果同时叠加。",
-    mechanicIds: ["score-threshold", "line-completion-clear", "combo-chain"],
+    mechanicIds: ["score-threshold", "line-completion-clear", "combo-chain", "match-removal"],
     examplePairs: [
       ["balatro", "score-threshold"],
       ["tetris", "line-completion-clear"],
@@ -1009,12 +1009,14 @@ const groupDrafts: GroupDraft[] = [
   },
 ];
 
+groupDrafts.push({id:"dialogue-options",dimensionId:"interaction",name:"对话回应",explanation:"通过选择回应参与交谈，让人物对当前选择作出反应。",function:"把表达态度、询问信息和决定行动交给玩家。",boundary:"选择如何回应，不等于决定信息是否正确，也不保证形成不同结局。",mechanicIds:["dialogue-choice"],examplePairs:[]});
+groupDrafts.find(group=>group.mechanicIds.includes("skill-experience"))!.mechanicIds.push("character-experience");
+groupDrafts.find(group=>group.mechanicIds.includes("clue-journal"))!.mechanicIds.push("keyword-search");
+groupDrafts.find(group=>group.mechanicIds.includes("combat-resource-conversion"))!.mechanicIds.push("match-charging");
 export const taxonomyGroups: TaxonomyGroup[] = groupDrafts.map(
   ({ examplePairs, ...group }) => ({
     ...group,
-    examples: examplePairs.map(([gameId, mechanicId]) =>
-      example(gameId, mechanicId),
-    ),
+    examples: examplePairs.length ? examplePairs.map(([gameId, mechanicId]) => example(gameId, mechanicId)) : positiveInstances.filter(row=>group.mechanicIds.includes(row.mechanicId)).slice(0,3).map(toExample),
   }),
 );
 

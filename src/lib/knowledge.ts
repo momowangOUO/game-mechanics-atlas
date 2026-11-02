@@ -2,6 +2,9 @@ import dossierData from '../../docs/research/mechanic-dossiers.json';
 import gameData from '../../docs/research/game-evidence.json';
 import recipeData from '../../docs/research/genre-recipes.json';
 import relationshipData from '../../docs/research/mechanic-relationships.json';
+import { expandCatalog } from './expand-catalog';
+import { expandedGenres } from '../data/expanded-types';
+import { genreParents } from '../data/genre-relations';
 import { DimensionIdSchema, MechanicSchema, GameSchema, GameModeSchema, ScopeSchema, MechanicInstanceSchema, CompositeGenreSchema, HybridRecipeSchema, MechanicRelationshipSchema, SourceSchema } from './model';
 import type { DimensionId, Mechanic, Game, GameMode, Scope, MechanicInstance, CompositeGenre, HybridRecipe, MechanicRelationship, Source, MechanicStatus } from './model';
 export const dimensions: {id:DimensionId;name:string;description:string;color:string;short:string}[] = [
@@ -17,12 +20,15 @@ export const dimensions: {id:DimensionId;name:string;description:string;color:st
 ];
 
 export const mechanics = dossierData.mechanisms.map(raw => MechanicSchema.parse(raw));
-export const sources = gameData.sources.map(raw => SourceSchema.parse(raw));
-export const games = gameData.games.map(raw => GameSchema.parse(raw));
-export const gameModes = gameData.gameModes.map(raw => GameModeSchema.parse(raw));
-export const scopes = gameData.scopes.map(raw => ScopeSchema.parse(raw));
-export const instances = gameData.instances.map(raw => MechanicInstanceSchema.parse(raw));
-export const genres = recipeData.compositeTypes.map(raw => CompositeGenreSchema.parse(raw));
+const expanded = expandCatalog(gameData.games.map(raw => GameSchema.parse(raw)),gameData.sources.map(raw => SourceSchema.parse(raw)));
+export const sources = expanded.sources;
+export const games = expanded.games;
+export const gameModes = [...gameData.gameModes.map(raw => GameModeSchema.parse(raw)),...expanded.gameModes];
+export const scopes = [...gameData.scopes.map(raw => ScopeSchema.parse(raw)),...expanded.scopes];
+export const instances = [...gameData.instances.map(raw => MechanicInstanceSchema.parse(raw)),...expanded.instances];
+const evidenceGameByScope=new Map(scopes.map(scope=>[scope.id,scope.gameId]));
+for(const mechanic of mechanics)mechanic.evidenceRefs=[...new Set([...mechanic.evidenceRefs,...instances.filter(row=>row.mechanicId===mechanic.id&&(row.status==='present'||row.status==='conditional')).map(row=>evidenceGameByScope.get(row.scopeId)!).filter(Boolean)])];
+export const genres = [...recipeData.compositeTypes,...expandedGenres].map(raw => CompositeGenreSchema.parse({...raw,parentGenreIds:genreParents[raw.id]??[]}));
 export const recipes = recipeData.recipes.map(raw => HybridRecipeSchema.parse({...raw,evidenceNotes:[recipeData.recipePolicy.meaning,recipeData.recipePolicy.exampleMeaning,recipeData.exampleReferenceNotes[raw.id as keyof typeof recipeData.exampleReferenceNotes]]}));
 export const relationships = relationshipData.map(raw => MechanicRelationshipSchema.parse(raw));
 export type KnowledgeDataset = {dimensions:typeof dimensions;mechanics:Mechanic[];sources:Source[];games:Game[];gameModes:GameMode[];scopes:Scope[];instances:MechanicInstance[];genres:CompositeGenre[];recipes:HybridRecipe[];relationships:MechanicRelationship[]};

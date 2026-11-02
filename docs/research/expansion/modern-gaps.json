@@ -1,0 +1,5630 @@
+[
+  {
+    "id": "wildfrost",
+    "name": "雪居之地 / Wildfrost",
+    "studio": "Deadpan Games、Gaziter",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "summary": "挑选领队并沿分支道路救出伙伴，用卡牌调整双方的攻击倒计数，在雪原中组建能活到终点的队伍。",
+    "analysis": "攻击不会在每回合同时发生；倒计数让控场、加速和救援伙伴的先后次序成为构筑的一部分。",
+    "loop": [
+      "选择领队与行进路线",
+      "救出伙伴、购买卡牌并进行战斗",
+      "返回雪居扩建，解锁下次旅途的内容"
+    ],
+    "learning": [
+      "把敌方行动的具体时点显示出来，可以让等待本身成为可计划的战术资源。"
+    ],
+    "caveats": [
+      "每日挑战另有条件；倒计数是攻击等待回合数，不是现实时间。"
+    ],
+    "resources": [
+      "零钱用于向旅行商人购买卡牌",
+      "伙伴的倒计数决定攻击何时发生"
+    ],
+    "progression": [
+      "每次旅途形成不同卡组",
+      "城镇建筑带来的卡牌和部族解锁跨旅途保留"
+    ],
+    "scopeLabel": "普通雪原旅途",
+    "scopeNotes": "每日挑战另有条件；倒计数是攻击等待回合数，不是现实时间。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1811990&l=english&cc=us",
+        "title": "Wildfrost",
+        "publisher": "Steam / Deadpan Games、Gaziter",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "战斗按回合进行，卡牌的攻击计数随回合下降",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "intent-preview",
+        "note": "敌我卡牌显示距离自动攻击的剩余计数",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "计数归零的伙伴和敌人按规则自动发动攻击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "途中招募伙伴并取得物品卡，扩充当次卡组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "给已有伙伴安装护符，改变其能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "选择地图道路，决定经过的救援、宝物和商店",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "扩建雪居后，后续旅途可出现新卡、部族和事件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1811990/dd2032e0f2caab9c6ba560ab988cdec8d1ab3f24/header.jpg?t=1778084209",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1811990&l=english&cc=us"
+    },
+    "aliases": [
+      "雪居之地"
+    ]
+  },
+  {
+    "id": "griftlands",
+    "name": "欺诈之地 / Griftlands",
+    "studio": "Klei Entertainment",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "dialogue-choice"
+    ],
+    "summary": "同时经营战斗牌组和交涉牌组，接任务、结交人物，以武力或谈判在各自的故事中求生。",
+    "analysis": "放过敌人会留下未来威胁，杀死敌人又可能激怒其朋友；关系将一次战斗的结果带到后面的任务。",
+    "loop": [
+      "挑选工作与相处对象",
+      "使用交涉或战斗卡组解决冲突",
+      "承担关系后果，取得卡牌继续人物故事"
+    ],
+    "learning": [
+      "让非战斗交涉拥有独立的构筑，可以保留两种解决办法之间的长期取舍。"
+    ],
+    "caveats": [
+      "2019年开始公开付费测试，2021年正式版；三名主角有各自地图与故事，不能当成同时控制的三人队。"
+    ],
+    "resources": [
+      "战斗与交涉使用各自的卡牌资产",
+      "受雇同伴和宠物提供支援"
+    ],
+    "progression": [
+      "当次故事的关系和卡组随决策发展",
+      "重新游玩会遇到不同任务、敌人和事件组合"
+    ],
+    "scopeLabel": "三名主角的普通战役",
+    "scopeNotes": "2019年开始公开付费测试，2021年正式版；三名主角有各自地图与故事，不能当成同时控制的三人队。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=601840&l=english&cc=us",
+        "title": "Griftlands",
+        "publisher": "Steam / Klei Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Griftlands",
+        "title": "Griftlands - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "选择Sal、Rook或Smith，使用其专属能力和初始卡组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "从敌人掉落及任务奖励取得新卡，分别经营交涉与战斗牌组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败对手可取得强力物品卡",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "杀死或放过人物会改变其朋友及本人对玩家的态度",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "unit-drafting",
+        "note": "雇佣佣兵、寻找宠物或请朋友协助",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "任务、朋友和处理冲突的方式改变人物故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "不同尝试出现不同敌人、任务与事件组合",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601840/header.jpg?t=1790880986",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=601840&l=english&cc=us"
+    },
+    "aliases": [
+      "欺诈之地"
+    ]
+  },
+  {
+    "id": "roguebook",
+    "name": "Roguebook",
+    "studio": "Abrakam Entertainment SA",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "exploration"
+    ],
+    "summary": "带两名英雄进入会变化的书页，以有限墨水揭开六角地图，取得卡牌、宝石和遗物迎战书中敌人。",
+    "analysis": "探索工具决定能看到哪些收益，前后排又决定谁承受伤害；地图和战斗都要求为两名英雄安排互补分工。",
+    "loop": [
+      "挑选英雄搭档",
+      "用墨水揭图并访问遭遇",
+      "调整卡组与前后排，击败敌人后进入下一页"
+    ],
+    "learning": [
+      "用不同形状的探索消耗品，可以把揭图过程变成路线选择。"
+    ],
+    "caveats": [
+      "普通结局后的Epilogue有额外难度；不把后续难度规则当作初始规则。"
+    ],
+    "resources": [
+      "魔法墨水揭开不同形状的区域",
+      "书页用于购买后续升级"
+    ],
+    "progression": [
+      "当次地图和卡组随旅途变化",
+      "英雄升级可解锁新卡，书页购买的升级持续保留"
+    ],
+    "scopeLabel": "普通Roguebook挑战",
+    "scopeNotes": "普通结局后的Epilogue有额外难度；不把后续难度规则当作初始规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1076200&l=english&cc=us",
+        "title": "Roguebook",
+        "publisher": "Steam / Abrakam Entertainment SA",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "开局从英雄中选择两人，各有卡池、遗物和技能树",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每次打开书本都会生成地图、危险与秘密",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "fog-of-war",
+        "note": "未使用墨水的六角书页保持未揭示状态",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "不同墨水揭开不同图案，需要决定优先暴露哪些地图区域",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "在旅途中从遭遇取得卡牌，逐步组成当前卡组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "把宝石嵌入已有卡牌以强化其效果",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "英雄收集卡牌后可选择其技能树中的能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1076200/header.jpg?t=1778174412",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1076200&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "chrono-ark",
+    "name": "超时空方舟 / Chrono Ark",
+    "studio": "Al Fine",
+    "year": 2019,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "summary": "招募调查员组成至多四人的队伍，把各人的技能卡汇入战斗方案，在扭曲之地收集时光碎片。",
+    "analysis": "构筑的基本单位既是卡牌也是队员；加入一名调查员，会同时改变技能供给和队伍的协同空间。",
+    "loop": [
+      "招募并训练调查员",
+      "组合技能卡与道具对抗敌人",
+      "收集时光碎片，失败后重组队伍再出发"
+    ],
+    "learning": [
+      "当队员决定卡牌来源时，招募选择本身就是卡组构筑。"
+    ],
+    "caveats": [
+      "2019年开放抢先体验，2024年正式版；本例不将剧情持续解锁等同于每次队伍成长都保留。"
+    ],
+    "resources": [
+      "调查员的技能卡构成当前战斗选择",
+      "道具与遗物补充队伍能力"
+    ],
+    "progression": [
+      "队伍全灭会重置当次取得的成长",
+      "持续游玩会发现更多可选内容和故事"
+    ],
+    "scopeLabel": "正式版调查队流程",
+    "scopeNotes": "2019年开放抢先体验，2024年正式版；本例不将剧情持续解锁等同于每次队伍成长都保留。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1188930&l=english&cc=us",
+        "title": "Chrono Ark",
+        "publisher": "Steam / Al Fine",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1188930/?l=english",
+        "title": "Chrono Ark on Steam",
+        "publisher": "Steam / Al Fine",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "unit-drafting",
+        "note": "从独特调查员中招募队员",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "最多安排四名队员并组合其技能卡",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "以队员技能、物品、遗物与Lucy技能组织当前战斗方案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "训练与推进中取得技能卡，改变当前可用卡组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "队伍全灭后，当次取得的内容按roguelite规则重置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "多次探索会开放更多可用选项",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "收集扭曲之地的时光碎片，以运行钟楼恢复世界",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1188930/header.jpg?t=1751505204",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1188930&l=english&cc=us"
+    },
+    "aliases": [
+      "超时空方舟"
+    ]
+  },
+  {
+    "id": "library-of-ruina",
+    "name": "废墟图书馆 / Library Of Ruina",
+    "studio": "ProjectMoon",
+    "year": 2020,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "summary": "用收藏的书邀请宾客，让司书以卡牌和骰子对抗他们，再把胜者取得的新书投入下一场接待。",
+    "analysis": "情感提高会加剧战斗，也可能带来更稀有的书；胜利收益与战中风险通过同一套状态增长相连。",
+    "loop": [
+      "组合书籍发出邀请",
+      "查看宾客卡牌并安排司书应对",
+      "把宾客化成书，用于新卡、司书和下一次邀请"
+    ],
+    "learning": [
+      "将胜利所得同时用作装备和下一次挑战的入场条件，可以把战斗串成一条清晰的成长链。"
+    ],
+    "caveats": [
+      "2020年抢先体验、2021年正式版；与《脑叶公司》是不同游戏，不把前作管理规则带入本例。"
+    ],
+    "resources": [
+      "书可转成战斗卡、司书身体或邀请材料",
+      "情感状态改变战斗效果与奖励质量"
+    ],
+    "progression": [
+      "藏书扩大后可邀请更强宾客",
+      "城市与图书馆的故事随接待层层展开"
+    ],
+    "scopeLabel": "正式版主线接待",
+    "scopeNotes": "2020年抢先体验、2021年正式版；与《脑叶公司》是不同游戏，不把前作管理规则带入本例。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1256670&l=english&cc=us",
+        "title": "Library Of Ruina",
+        "publisher": "Steam / ProjectMoon",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1256670/?l=english",
+        "title": "Library Of Ruina on Steam",
+        "publisher": "Steam / ProjectMoon",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "intent-preview",
+        "note": "执行前可查看宾客即将使用的卡牌，据此选择对抗牌",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dice-roll",
+        "note": "卡牌上的骰子结果决定交锋成败，效果会修正骰值",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "利用书形成司书身体与战斗卡的配置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败宾客后取得由其化成的书",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "交锋推高情感，可能产生正面效果或带惩罚的强力能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "接待逐步揭示Angela、Roland与城市的故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1256670/header.jpg?t=1670980516",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1256670&l=english&cc=us"
+    },
+    "aliases": [
+      "废墟图书馆"
+    ]
+  },
+  {
+    "id": "across-the-obelisk",
+    "name": "横跨方尖碑 / Across the Obelisk",
+    "studio": "Dreamsite Games",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "deckbuilder",
+      "roguelite"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "summary": "带领四名英雄沿分支旅程构筑各自牌组，在事件选择和战术战斗中完成四幕营救。",
+    "analysis": "每名队员独立构筑又需要互相配合，使一次奖励选择既要照顾个人强度，也要维持全队职责。",
+    "loop": [
+      "配置四名英雄",
+      "沿道路处理随机事件并取得卡牌",
+      "升级队伍，击败各幕首领继续营救"
+    ],
+    "learning": [
+      "多人共同构筑的讨论可以围绕职责互补展开，而不只比较谁拿到最强卡。"
+    ],
+    "caveats": [
+      "2021年抢先体验、2022年正式版；方尖碑模式的随机选牌与周挑战预设地图不混入普通冒险。"
+    ],
+    "resources": [
+      "卡牌与装备分配到不同英雄",
+      "经验和特长点支持持续强化"
+    ],
+    "progression": [
+      "旅程中的选择改变事件与故事结果",
+      "经验解锁特长；不同模式有独立的卡组与地图规则"
+    ],
+    "scopeLabel": "普通冒险模式",
+    "scopeNotes": "2021年抢先体验、2022年正式版；方尖碑模式的随机选牌与周挑战预设地图不混入普通冒险。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1385380&l=english&cc=us",
+        "title": "Across the Obelisk",
+        "publisher": "Steam / Dreamsite Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1385380/?l=english",
+        "title": "Across the Obelisk on Steam",
+        "publisher": "Steam / Dreamsite Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "从不同职业的英雄中配置四人队伍",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "旅途中取得并升级英雄卡牌，扩展各人的牌组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "已有卡牌可升级以形成更强组合",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "选择前进道路、帮助对象和事件回应，改变故事展开",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "旅途包含程序化事件及随机遭遇",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "英雄赚取经验并解锁特长点以强化能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "经过四幕首领挑战，推进救出公主的目标",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1385380/header.jpg?t=1790078458",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1385380&l=english&cc=us"
+    },
+    "aliases": [
+      "横跨方尖碑"
+    ]
+  },
+  {
+    "id": "marauders",
+    "name": "掠夺者 / Marauders",
+    "studio": "Small Impact Games",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter",
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "vehicle-driving",
+      "buildcrafting"
+    ],
+    "summary": "驾驶飞船进入太空劫掠区，登舰搜刮并与玩家和AI交火，成功逃出后留下装备与经验。",
+    "analysis": "飞船既承担前往劫掠点的移动，也能被抢走；撤离风险跨越舱内枪战和舱外航行两种空间。",
+    "loop": [
+      "准备装备并驾驶飞船",
+      "登上设施劫掠、与敌人交火",
+      "携带战利品逃离，再改装装备与飞船"
+    ],
+    "learning": [
+      "在出发工具也能被夺走的情况下，返程保障会成为战术目标。"
+    ],
+    "caveats": [
+      "仅据官方仍可访问的玩法说明整理；在线服务和匹配状态不构成本例已试玩的结论。"
+    ],
+    "resources": [
+      "劫掠品用于出售、装备及制造飞船",
+      "弹药和携带装备投入每次行动"
+    ],
+    "progression": [
+      "成功带出的装备可跨行动保留",
+      "经验解锁新物品，武器与飞船可持续改装"
+    ],
+    "scopeLabel": "普通多人劫掠",
+    "scopeNotes": "仅据官方仍可访问的玩法说明整理；在线服务和匹配状态不构成本例已试玩的结论。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1789480&l=english&cc=us",
+        "title": "Marauders",
+        "publisher": "Steam / Small Impact Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1789480/?l=english",
+        "title": "Marauders on Steam",
+        "publisher": "Steam / Small Impact Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "直接驾驶飞船前往危险区域并参与太空交火",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "第一人称枪战使用带弹道模拟的枪械",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "必须活着逃出劫掠区，才能兑现所获战利品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "给武器安装模组，并升级飞船武装",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "跨行动保留经验，用于解锁新物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "使用搜刮资源建造新飞船",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "其他队伍可射杀玩家或强行夺走飞船",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1789480/header_alt_assets_2.jpg?t=1760719452",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1789480&l=english&cc=us"
+    },
+    "aliases": [
+      "掠夺者"
+    ]
+  },
+  {
+    "id": "gray-zone-warfare",
+    "name": "灰区战争 / Gray Zone Warfare",
+    "studio": "MADFINGER Games, a.s.",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter",
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "在拉芒执行商人任务、搜集装备，利用藏身处制造物品，再把走私货物带到危险区域换取收益。",
+    "analysis": "安全售卖与公开走私形成两条收益路径；高价交付会暴露活动区域，主动把利润换成额外对抗。",
+    "loop": [
+      "执行任务并寻找物资",
+      "建设藏身处、制造工具与货物",
+      "选择安全出售或限时走私，提升商人声望"
+    ],
+    "learning": [
+      "让高利润任务主动公开危险区域，可以用收益选择调节玩家遭遇的密度。"
+    ],
+    "caveats": [
+      "该游戏2024年发行抢先体验；本例按2026年10月公开的0.5规则整理，PvE中走私面对AI，PvEvP才涉及敌方玩家。"
+    ],
+    "resources": [
+      "世界搜得的资源用于藏身处设施与制作",
+      "金钱和商人声望支持持续运营"
+    ],
+    "progression": [
+      "0.5版本保留任务、等级与商人进度",
+      "软清档重置仓库物资和金钱"
+    ],
+    "scopeLabel": "0.5 Rogue Ops公开更新",
+    "scopeNotes": "该游戏2024年发行抢先体验；本例按2026年10月公开的0.5规则整理，PvE中走私面对AI，PvEvP才涉及敌方玩家。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2479810&l=english&cc=us",
+        "title": "Gray Zone Warfare",
+        "publisher": "Steam / MADFINGER Games, a.s.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已访问官方商店API并读取开发者、发行日期、桌面平台与封面元数据；本次API游戏说明正文为空，机制事实全部引用来源1的公开开发者更新。"
+      },
+      {
+        "url": "https://www.grayzonewarfare.com/news/rogue-ops-out-now-changelog",
+        "title": "ROGUE OPS OUT NOW",
+        "publisher": "MADFINGER Games",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取0.5公开更新中的藏身处、制作、走私、软清档、武器与AI感知规则；未试玩。"
+      },
+      {
+        "url": "https://www.shacknews.com/article/139752/helicopter-transport-gray-zone-warfare",
+        "title": "How to call for helicopter transport - Gray Zone Warfare",
+        "publisher": "Shacknews",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取地图呼叫运输、到达LZ登机返回营地及携带搜得物资返回的操作说明；0.5官方更新仍提及LZ直升机系统，旧攻略的具体等待数值不纳入本例。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/2479810/?l=english",
+        "title": "Save 35% on Gray Zone Warfare on Steam",
+        "publisher": "Steam / MADFINGER Games, a.s.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "使用枪械与瞄准镜交火，弹种会改变伤口效果",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "达到商人等级后建立藏身处，建造并升级生产站",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "搜集材料与配方，在藏身处制作工具、刺激剂和商品",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "可把制成品卖给商人，以较低风险取得收入",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "主线任务、长期合约及藏身处任务更新进度并给出奖励",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "枪械可安装多种瞄具与武器部件",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "stealth-detection",
+        "note": "AI会调查声音、追查最后位置，并在警觉和交火状态间变化",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2479810/cce8bf6b32325d29562a6c1dc24c8e705204ff6a/header_alt_assets_6.jpg?t=1793375678",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2479810&l=english&cc=us"
+    },
+    "aliases": [
+      "灰区战争"
+    ]
+  },
+  {
+    "id": "ghosts-of-tabor",
+    "name": "塔博尔幽灵 / Ghosts of Tabor",
+    "studio": "Combat Waffle Studios",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter",
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "在VR中选择枪械和补给进入劫掠区，搜刮、维持饥渴与健康，找到撤离点把装备带回安全屋。",
+    "analysis": "VR的装备操作被放进带出风险里；一次行动不仅考验交火，也检验出发前是否带足维持生存的物品。",
+    "loop": [
+      "从安全屋整理装具",
+      "探索地图、搜集物品并对抗玩家或AI",
+      "到达撤离点，带回物资供下次准备"
+    ],
+    "learning": [
+      "把消耗品清单和装备选择放在同一次出发准备中，可以让补给成为构筑的一部分。"
+    ],
+    "caveats": [
+      "本例要求VR设备；安全屋陈列是装备储存，不因此当作收集图鉴。"
+    ],
+    "resources": [
+      "弹药、医疗、食物和水支持在场生存",
+      "金钱用于市场和商人交易"
+    ],
+    "progression": [
+      "武器和装具收藏留在安全屋",
+      "完成商人任务开放专属货物"
+    ],
+    "scopeLabel": "Steam VR普通撤离流程",
+    "scopeNotes": "本例要求VR设备；安全屋陈列是装备储存，不因此当作收集图鉴。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1957780&l=english&cc=us",
+        "title": "Ghosts of Tabor",
+        "publisher": "Steam / Combat Waffle Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1957780/?l=english",
+        "title": "Ghosts of Tabor on Steam",
+        "publisher": "Steam / Combat Waffle Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "进入行动前选择携带的武器、防具与补给",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "到指定撤离点活着离开，才能带回装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "健康、饥饿和口渴需要治疗、进食及饮水维持",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "向AI商人及玩家市场交易装备和物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "制作物品及不同口径、类型的弹药",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "给武器安装附件以定制用途",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成商人任务解锁特殊商品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "劫掠中同时面对其他玩家与武装AI",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1957780/603bbfc5b960364ccbf709be475bb2aa25562131/header.jpg?t=1788933700",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1957780&l=english&cc=us"
+    },
+    "aliases": [
+      "塔博尔幽灵"
+    ]
+  },
+  {
+    "id": "arc-raiders",
+    "name": "ARC突袭者 / ARC Raiders",
+    "studio": "Embark Studios",
+    "year": 2025,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "从地下据点准备装备，上地表搜刮并对抗ARC机器与其他掠夺者，再把物资用于制造、交易和技能成长。",
+    "analysis": "交火声音能引来其他队伍，打赢机器不等于安全；装备强度和暴露风险在同一场探索中相互牵制。",
+    "loop": [
+      "在工坊准备装具",
+      "上地表完成商人任务并搜刮",
+      "回据点出售或制作，升级工坊和技能"
+    ],
+    "learning": [
+      "当战斗会吸引第三方时，敌人弱点和周围信息应一起进入玩家的攻击决策。"
+    ],
+    "caveats": [
+      "以实际商店说明中的正式版持续更新范围为准；不同地图天气与条件会变化，不将所有行动视为相同布局。"
+    ],
+    "resources": [
+      "搜刮物可卖钱或用于制作装备",
+      "技能点分配到生存、机动与体能分支"
+    ],
+    "progression": [
+      "经验提升角色等级并获得技能点",
+      "蓝图和工坊升级支持更高级制作"
+    ],
+    "scopeLabel": "普通地表搜刮流程",
+    "scopeNotes": "以实际商店说明中的正式版持续更新范围为准；不同地图天气与条件会变化，不将所有行动视为相同布局。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1808500&l=english&cc=us",
+        "title": "ARC Raiders",
+        "publisher": "Steam / Embark Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "recipe-crafting",
+        "note": "用搜刮材料与ARC零件制作枪械、装置和装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "在工坊修理并强化已有装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "升级工作站并学习蓝图，开放高级制造物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "完成任务等活动取得经验，升级后获得技能点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "在生存、机动与体能三条技能路径中分配点数",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "接受地下商人的地表任务，完成后取得装备、材料和经验",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "season-weather",
+        "note": "不同地图条件与天气改变每次地表行动的危险",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "其他掠夺者可争夺物资并攻击玩家",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/41ee6c5c81a5797132879892586465b917acc563/header_alt_assets_9.jpg?t=1793353805",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1808500&l=english&cc=us"
+    },
+    "aliases": [
+      "ARC突袭者"
+    ]
+  },
+  {
+    "id": "vigor",
+    "name": "Vigor",
+    "studio": "Bohemia Interactive",
+    "year": 2018,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "带着自选装备进入遭遇地图争抢物资，在辐射云抵达前撤出，用所得资源经营庇护所。",
+    "analysis": "出口随时可走，但高价值空投和资源事件不断诱使玩家延迟离开；辐射把贪心转成明确的返程压力。",
+    "loop": [
+      "准备枪械与消耗品",
+      "争抢资源事件、空投与战术地点",
+      "从出口逃离，用所得扩建庇护所"
+    ],
+    "learning": [
+      "把撤离设为持续可选行动，再用移动危险迫使其最终发生，可以让风险预算由玩家自己把握。"
+    ],
+    "caveats": [
+      "2018年先在Xbox公开发行，2024年登陆Steam；Shootout与Elimination是其他模式，本例不混用其重生和队战规则。"
+    ],
+    "resources": [
+      "带出的资源建造与升级庇护所",
+      "庇护所提供制作、材料和皇冠产出"
+    ],
+    "progression": [
+      "成功撤出的物资留作建设",
+      "死亡丢失这次携带与获取的装备"
+    ],
+    "scopeLabel": "Encounter遭遇模式",
+    "scopeNotes": "2018年先在Xbox公开发行，2024年登陆Steam；Shootout与Elimination是其他模式，本例不混用其重生和队战规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2818260&l=english&cc=us",
+        "title": "Vigor",
+        "publisher": "Steam / Bohemia Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Vigor_%28video_game%29",
+        "title": "Vigor (video game) - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "出发前挑选武器与消耗品，形成潜行搜刮或交火装具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "成功从指定出口撤出才能保留资源，死亡会失去物资",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "投入行动所得建造和升级庇护所",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-investment",
+        "note": "升级庇护所后可持续生成皇冠和其他材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "在军械库制作下次行动所需的装备与消耗品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "area-control",
+        "note": "控制地图战术地点可取得遭遇中的优势",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "横扫地图的辐射云会杀死仍被困其中的人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家可争夺空投、资源事件和其他人的装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2818260/b094a53f163355afd252d36feee13e75f94dc4ae/header.jpg?t=1771426885",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2818260&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "the-cycle-frontier",
+    "name": "风暴奇侠 / The Cycle: Frontier",
+    "studio": "YAGER",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "从轨道站配置装备降落外星地表，接派系任务、搜集资源，并成功乘撤离艇带走所得。",
+    "analysis": "地表收益和丢装风险推动玩家判断何时返回，而派系任务让同一处危险地点在后续承担新的目标。",
+    "loop": [
+      "选定装具与降落区域",
+      "搜集材料、执行任务并处理玩家和生物威胁",
+      "撤离后出售、制作和升级私人居所"
+    ],
+    "learning": [
+      "让任务进度开放更危险地点，可以把重复撤离转换成逐步扩展的探索范围。"
+    ],
+    "caveats": [
+      "官方明确于2023年9月27日停服；这是一份历史玩法案例，不表示当前仍可连接官方服务。"
+    ],
+    "resources": [
+      "携带装备会在死亡时遗落",
+      "战利品可购买、制作装备或升级住所"
+    ],
+    "progression": [
+      "派系任务提高等级并开放高级装备",
+      "第三赛季取消强制清档，但服务终止结束了在线运行"
+    ],
+    "scopeLabel": "停服前第三赛季历史版本",
+    "scopeNotes": "官方明确于2023年9月27日停服；这是一份历史玩法案例，不表示当前仍可连接官方服务。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=868270&l=english&cc=us",
+        "title": "The Cycle: Frontier",
+        "publisher": "Steam / YAGER",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "在站内按目标选择枪械和装备后降落",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "成功撤离保留所得，死亡会把装备与战利品留在地面",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "把带回的材料制作成更好的装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "升级私人居所以支持后续行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成三大派系的工作和战役，提高派系进度",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "派系战役开放高级武器及Tharis等地点权限",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "给已有枪械添加扩容弹匣、照明和穿甲等附件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "地表实例中的其他玩家可争夺物资并交战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/868270/header.jpg?t=1695833372",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=868270&l=english&cc=us"
+    },
+    "aliases": [
+      "风暴奇侠"
+    ]
+  },
+  {
+    "id": "lost-rift",
+    "name": "Lost Rift",
+    "studio": "People Can Fly",
+    "year": 2025,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "gathering-survival",
+      "spatial-planning"
+    ],
+    "summary": "在自己的PvE岛屿采集、搭营与制作装备，再前往其他不稳定岛屿执行高风险撤离远征。",
+    "analysis": "建造岛与远征岛承担不同压力，营地提供长期准备，外出搜刮则引入时限和玩家竞争。",
+    "loop": [
+      "采集并扩建个人营地",
+      "接任务、制作装具准备远征",
+      "前往不稳定岛屿搜刮，在时限内带出物资"
+    ],
+    "learning": [
+      "通过相连的安全建设区与危险远征区，可以让营地投入产生清晰的外出用途。"
+    ],
+    "caveats": [
+      "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。"
+    ],
+    "resources": [
+      "木石等材料用于营地设施和装备",
+      "远征高价值物资支持进一步建设"
+    ],
+    "progression": [
+      "营地设施持续保留",
+      "任务和可招募幸存者揭示群岛秘密"
+    ],
+    "scopeLabel": "公开抢先体验的营地与远征",
+    "scopeNotes": "2025年开始抢先体验；PvE岛营地与PvPvE远征是相连但不同区域，不能写成所有玩家随时都能袭击私人营地。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us",
+        "title": "Lost Rift",
+        "publisher": "Steam / People Can Fly",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/3494520/?l=english",
+        "title": "Lost Rift on Steam",
+        "publisher": "Steam / People Can Fly",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "从个人岛屿环境采集建营和制作所需材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "用材料建造工作台、烹饪设施和模块化庇护所",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "在营地制作远征所需装备与生存设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "extraction-bank",
+        "note": "去其他不稳定岛屿搜刮，须成功撤离带回高价值资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成任务并招募幸存者，逐步揭开登岛原因",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "season-weather",
+        "note": "飓风、火灾、雷击和浓雾威胁岛上行动与营地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "PvPvE远征允许其他队伍争抢物资并交火",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "选择PvPvE远征模式"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3494520/b67ab35e39bbd079b27215814b729af569993126/header.jpg?t=1774014823",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=3494520&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "zero-sievert",
+    "name": "零希沃特 / ZERO Sievert",
+    "studio": "CABO Studio",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "extraction-shooter",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "exploration",
+      "buildcrafting"
+    ],
+    "summary": "从地下堡垒出发探索生成的废土区域，用带回的物资交易、改枪和扩建，再接新的派系任务。",
+    "analysis": "地形、藏身点和物资位置会重排，玩家能累积装备知识，却仍需在每趟行动里重新找安全线路。",
+    "loop": [
+      "在堡垒交易并配置枪械",
+      "进入废土搜刮、战斗和执行任务",
+      "活着返回后改装、扩建并提升技能"
+    ],
+    "learning": [
+      "把武器熟练度和通用角色成长分开，能同时鼓励专精和尝试不同装备。"
+    ],
+    "caveats": [
+      "2022年抢先体验、2024年正式版；没有与真人抢夺同场物资的PvP，本例不因撤离分类写入多人对抗。"
+    ],
+    "resources": [
+      "搜得物品可制作、交易或升级堡垒",
+      "武器配件支持不同射击配置"
+    ],
+    "progression": [
+      "武器熟练度和猎人经验分别成长",
+      "派系声望开放任务与高级物资"
+    ],
+    "scopeLabel": "正式版单人废土探索",
+    "scopeNotes": "2022年抢先体验、2024年正式版；没有与真人抢夺同场物资的PvP，本例不因撤离分类写入多人对抗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1782120&l=english&cc=us",
+        "title": "ZERO Sievert",
+        "publisher": "Steam / CABO Studio",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1782120/?l=english",
+        "title": "ZERO Sievert on Steam",
+        "publisher": "Steam / CABO Studio",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "generated-layout",
+        "note": "每次废土旅程重生成布局、藏身点与物资位置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "用枪械模组改变已有武器配置和属性",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-experience",
+        "note": "不同武器种类分别获得经验，提高换弹、伤害等能力并开放专长",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "猎人另有通用等级与特长，用于应对废土挑战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "承接多条人物与派系任务，逐步获得世界线索",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与堡垒商人交易搜得物品和装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "把废土物品投入自己的堡垒区域升级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "social-diplomacy",
+        "note": "选择加入Green Army或Crimson Corporation，累积声望开放独有任务",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1782120/header.jpg?t=1788990111",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1782120&l=english&cc=us"
+    },
+    "aliases": [
+      "零希沃特"
+    ]
+  },
+  {
+    "id": "terraria",
+    "name": "泰拉瑞亚 / Terraria",
+    "studio": "Re-Logic",
+    "year": 2011,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "action-combat",
+      "spatial-planning"
+    ],
+    "summary": "在随机生成的二维世界挖掘材料、制作装备、建造住所，并向更深的洞穴和更强的敌人推进。",
+    "analysis": "地形既是阻碍也是建材；探索收获能立即改变玩家自己的通路和家园。",
+    "loop": [
+      "挖掘洞穴寻找材料和宝物",
+      "制作工具装备并建设住所",
+      "挑战更强敌人，继续探索新区域"
+    ],
+    "learning": [
+      "可破坏地形若同时提供建造材料，探索和建设便能自然互相供给。"
+    ],
+    "caveats": [
+      "不将特殊种子、旅途模式和高难度角色规则写成所有世界共有的设定。"
+    ],
+    "resources": [
+      "环境原料用于装备、机器和建筑",
+      "宝物支持后续战斗与探索"
+    ],
+    "progression": [
+      "世界中的建设与地形改动可以积累",
+      "玩家决定探索、建造和战斗的优先次序"
+    ],
+    "scopeLabel": "桌面版普通沙盒世界",
+    "scopeNotes": "不将特殊种子、旅途模式和高难度角色规则写成所有世界共有的设定。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=105600&l=english&cc=us",
+        "title": "Terraria",
+        "publisher": "Steam / Re-Logic",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "generated-layout",
+        "note": "建立新世界时随机生成地形",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "深入洞穴取得矿物等可用原料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "把原材料制作成装备、机器与建筑物件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建造自己的城镇和住所，供遇见的盟友居住",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "挖掘改变原有洞穴和地表，形成新的空间",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "探索中的敌人和更强首领带来实际战斗与生存威胁",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1792530636",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=105600&l=english&cc=us"
+    },
+    "aliases": [
+      "泰拉瑞亚"
+    ]
+  },
+  {
+    "id": "rust",
+    "name": "腐蚀 / Rust",
+    "studio": "Facepunch Studios",
+    "year": 2013,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "spatial-planning",
+      "aiming-shooting"
+    ],
+    "summary": "从石头和火把起步采集材料、制作武器与基地，在环境和其他幸存者的威胁下保护储备。",
+    "analysis": "物资储存在可被袭击的基地中，让生产效率、选址和防御长期绑定；安全不是一次获得的资格。",
+    "loop": [
+      "采集并满足基本生存",
+      "研究技术、制作装备和扩建基地",
+      "防御或袭击其他基地，继续争取资源"
+    ],
+    "learning": [
+      "当生产成果能被他人夺走时，仓储位置与防御也应被纳入资源效率。"
+    ],
+    "caveats": [
+      "2013年抢先体验、2018年正式版；服务器与模组会改变清档和规则，不把固定周期写成全服统一事实。"
+    ],
+    "resources": [
+      "食物与水维持生存",
+      "木石等材料用于工具、设施和防御"
+    ],
+    "progression": [
+      "研究技术树开放制作能力",
+      "世界物资与建设按服务器的持久化和清档规则保留"
+    ],
+    "scopeLabel": "桌面版普通生存服务器",
+    "scopeNotes": "2013年抢先体验、2018年正式版；服务器与模组会改变清档和规则，不把固定周期写成全服统一事实。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=252490&l=english&cc=us",
+        "title": "Rust",
+        "publisher": "Steam / Facepunch Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Rust_%28video_game%29",
+        "title": "Rust (video game) - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "从岛屿环境搜集建造和制作所需材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "制作工具、武器与护甲以维持生存",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建设基地储物、防御领土和控制附近资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "研究技术树，开放后续制作内容",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "需要饮水与食物，并应对饥渴等持续需求",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "建立农场以持续获得作物资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家可以攻击别人、袭击基地并抢走储备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "普通生成世界按程序建立岛屿地形",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=252490&l=english&cc=us"
+    },
+    "aliases": [
+      "腐蚀"
+    ]
+  },
+  {
+    "id": "ark-survival-evolved",
+    "name": "方舟：生存进化 / ARK: Survival Evolved",
+    "studio": "Studio Wildcard、Instinct Games、Efecto Studios、Virtual Basement LLC",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "collection-training",
+      "spatial-planning"
+    ],
+    "summary": "在岛上采集、制作和建造，将野生生物击昏驯养后用于运输、战斗与繁殖，扩展自己的生存能力。",
+    "analysis": "驯养需要先付出风险与食物，之后又引入持续照料；生物的能力把驯服收益延伸到移动、生产与防御。",
+    "loop": [
+      "搜集资源并建立庇护",
+      "击昏、喂养和训练生物",
+      "骑乘、繁殖并探索更危险的地区"
+    ],
+    "learning": [
+      "让可培养单位同时承担运输与战斗功能，可以让收集成为生存系统的实际投入。"
+    ],
+    "caveats": [
+      "2015年抢先体验、2017年正式版；不把Survival Ascended重制作为另一款收录，官方旧服务器状态也不代表单机失效。"
+    ],
+    "resources": [
+      "食物和水随行动消耗",
+      "材料与蓝图用于设施装备",
+      "饲料维持驯养过程及生物需求"
+    ],
+    "progression": [
+      "玩家和驯养生物均可升级",
+      "学习Engram后保留对应制作知识，建设与储备留在世界"
+    ],
+    "scopeLabel": "Survival Evolved普通单机或自建服务器",
+    "scopeNotes": "2015年抢先体验、2017年正式版；不把Survival Ascended重制作为另一款收录，官方旧服务器状态也不代表单机失效。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=346110&l=english&cc=us",
+        "title": "ARK: Survival Evolved",
+        "publisher": "Steam / Studio Wildcard、Instinct Games、Efecto Studios、Virtual Basement LLC",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ark%3A_Survival_Evolved",
+        "title": "Ark: Survival Evolved - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "砍树、开采金属及其他节点获得材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "按蓝图或已学Engram消耗材料制造装备与构件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "以拼接构件建造多层庇护所及储备设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "播种、浇水、施肥，并配对驯养生物繁殖后代",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "角色和驯养生物持续需要食物，角色还须饮水",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "thermal-regulation",
+        "note": "用火、住所和衣物的隔热控制极端温度影响",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "携带重量使角色移动变慢，限制远行运载",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "角色通过行动取得经验升级，驯养生物也能继续升级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1793226330",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=346110&l=english&cc=us"
+    },
+    "aliases": [
+      "方舟：生存进化"
+    ]
+  },
+  {
+    "id": "7-days-to-die",
+    "name": "七日杀 / 7 Days to Die",
+    "studio": "The Fun Pimps",
+    "year": 2013,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "aiming-shooting",
+      "spatial-planning"
+    ],
+    "summary": "在僵尸废土挖矿、搜刮与建造防御工事，通过制作、技能和商人任务准备下一轮威胁。",
+    "analysis": "建筑承重使防线的空间设计带来直接后果，玩家既要考虑火力，也要避免自己搭建的工事垮塌。",
+    "loop": [
+      "探索地点并取得材料",
+      "制作装备、耕作和修建防线",
+      "应对僵尸，接商人任务继续成长"
+    ],
+    "learning": [
+      "建筑稳定性可以让防御设计产生可观察的空间代价。"
+    ],
+    "caveats": [
+      "2013年抢先体验、2024年1.0；本例不据标题臆写固定七天数值，世界及服务器设置可能改变节奏。"
+    ],
+    "resources": [
+      "材料用于工具、车辆、陷阱和维修",
+      "食物来自种植与狩猎"
+    ],
+    "progression": [
+      "属性和专长形成角色成长",
+      "书籍与图纸开放知识，建设留在当前世界"
+    ],
+    "scopeLabel": "桌面版正式版普通生存",
+    "scopeNotes": "2013年抢先体验、2024年1.0；本例不据标题臆写固定七天数值，世界及服务器设置可能改变节奏。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=251570&l=english&cc=us",
+        "title": "7 Days to Die",
+        "publisher": "Steam / The Fun Pimps",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/251570/?l=english",
+        "title": "Save 45% on 7 Days to Die on Steam",
+        "publisher": "Steam / The Fun Pimps",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "recipe-crafting",
+        "note": "按配方制作并修理武器、工具、车辆和装备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "搭建带陷阱、电力和防御位置的据点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "建筑和地形可被破坏，承重不足会发生坍塌",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "可选择随机生成的城镇、道路、洞穴与地形世界",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "商人提供带地点和奖励的任务工作",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "商人购买和出售玩家物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "种植菜园持续取得食物资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "在五类主要属性下选择多种专长强化角色",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1793138252",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=251570&l=english&cc=us"
+    },
+    "aliases": [
+      "七日杀"
+    ]
+  },
+  {
+    "id": "grounded",
+    "name": "禁闭求生 / Grounded",
+    "studio": "Obsidian Entertainment",
+    "year": 2020,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "action-combat",
+      "buildcrafting"
+    ],
+    "summary": "以蚂蚁大小探索后院、建造基地和制作武器，在昆虫威胁中追查缩小身体的原因。",
+    "analysis": "昆虫会对玩家的干扰作出报复，基地因此不是永久安全区；外出收益与家园防御形成相互影响。",
+    "loop": [
+      "探索后院不同环境",
+      "制作、强化装备并配置突变能力",
+      "完成故事目标，防御被吸引来的昆虫"
+    ],
+    "learning": [
+      "让玩家行为改变基地遭遇，可以把探索与守家写进同一条因果链。"
+    ],
+    "caveats": [
+      "2020年抢先体验、2022年正式版；不是Grounded 2，本例不混入续作内容。"
+    ],
+    "resources": [
+      "材料支持基地和装具制作",
+      "突变与Milk Molars用于选择角色能力"
+    ],
+    "progression": [
+      "装备和角色能力随探索强化",
+      "共享世界会保存建设与故事进度"
+    ],
+    "scopeLabel": "原作正式版生存故事",
+    "scopeNotes": "2020年抢先体验、2022年正式版；不是Grounded 2，本例不混入续作内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=962130&l=english&cc=us",
+        "title": "Grounded",
+        "publisher": "Steam / Obsidian Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/962130/?l=english",
+        "title": "Grounded on Steam",
+        "publisher": "Steam / Obsidian Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "base-construction",
+        "note": "建造基地作为后院生存的持续据点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "制作适合后院威胁的护甲与武器",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "强化已有武器和护甲，改变性能",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "按需要启用突变和Milk Molars提供的能力与加成",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "encounter-placement",
+        "note": "激活MIX.R可把昆虫吸引到后院特定地点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "追查为何缩小、幕后人物和回家方式，推进故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "巨型昆虫会攻击角色，遭到干扰后也可能袭击基地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/962130/header.jpg?t=1768264530",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=962130&l=english&cc=us"
+    },
+    "aliases": [
+      "禁闭求生"
+    ]
+  },
+  {
+    "id": "raft",
+    "name": "木筏求生 / Raft",
+    "studio": "Redbeet Interactive",
+    "year": 2016,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "spatial-planning"
+    ],
+    "summary": "用钩子捞取海上漂流物，把小木筏扩成能生产与远航的家，再前往岛屿寻找文明遗迹。",
+    "analysis": "生存据点本身在航行，扩建必须同时服务当下饥渴和下一站探索，海面资源也随航线经过。",
+    "loop": [
+      "抛钩收集漂浮材料",
+      "制作生存设施并扩建木筏",
+      "航向岛屿探索、研究新物品，再继续漂流"
+    ],
+    "learning": [
+      "移动的基地可以让资源经过、生产准备和探索目的地共享同一条航程。"
+    ],
+    "caveats": [
+      "2016年公开免费原型，2018年付费抢先体验；本例规则按完整故事版，未把原型单独列成另一款。"
+    ],
+    "resources": [
+      "木材与漂浮废料用于制作和扩建",
+      "食物与饮水维持生存"
+    ],
+    "progression": [
+      "研究台开放新配方",
+      "木筏设施和已推进的故事目的地持续积累"
+    ],
+    "scopeLabel": "2022完整故事版",
+    "scopeNotes": "2016年免费原型是同一作品的首次公开版本；此例按2022完整故事版分析，资源和章节不追溯套到原型。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=648800&l=english&cc=us",
+        "title": "Raft",
+        "publisher": "Steam / Redbeet Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Raft_%28video_game%29",
+        "title": "Raft (video game) - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "用钩子捞漂流物，也可到礁石和岛上采集",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "把材料做成生存设备、武器和种植设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "扩张木筏，逐步形成可居住的漂浮基地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "在研究台解锁新物品的制作方法",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "角色需要食物与水，空腹和口渴威胁存活",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "种植作物、照料牲畜，形成持续食物来源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成岛屿挑战、取得线索并找到下一处故事目的地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "鲨鱼及岛上危险要求玩家防御和战斗",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=648800&l=english&cc=us"
+    },
+    "aliases": [
+      "木筏求生"
+    ]
+  },
+  {
+    "id": "core-keeper",
+    "name": "护核纪元 / Core Keeper",
+    "studio": "Pugstorm",
+    "year": 2022,
+    "platforms": [
+      "pc",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "gathering-survival",
+      "exploration",
+      "action-combat",
+      "spatial-planning"
+    ],
+    "summary": "在地下采矿、耕作和建造基地，制作更强工具挑战泰坦，逐步揭开核心与洞穴文明的秘密。",
+    "analysis": "采矿为基地提供材料，自动化又减轻重复采集，使玩家有能力把精力移向更远的生态区与首领。",
+    "loop": [
+      "挖掘洞穴取得原料",
+      "制作工具、建设基地和农场",
+      "挑战泰坦并扩展到新生态区"
+    ],
+    "learning": [
+      "自动化减轻已掌握区域的日常劳动，可以把成长收益转成更广的探索范围。"
+    ],
+    "caveats": [
+      "2022年抢先体验、2024年正式版；可选乐器、玩家活动和模组不计入核心玩法方向。"
+    ],
+    "resources": [
+      "矿石和材料用于工具、陷阱与机器",
+      "天赋点用于选择角色能力"
+    ],
+    "progression": [
+      "技能与天赋逐步成长",
+      "基地、农业与自动化设施持续提供支持"
+    ],
+    "scopeLabel": "正式版普通地下世界",
+    "scopeNotes": "2022年抢先体验、2024年正式版；可选乐器、玩家活动和模组不计入核心玩法方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1621690&l=english&cc=us",
+        "title": "Core Keeper",
+        "publisher": "Steam / Pugstorm",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1621690/?l=english",
+        "title": "Core Keeper on Steam",
+        "publisher": "Steam / Pugstorm",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "深入洞穴采掘矿石、宝石和其他原料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "制作镐、鱼竿、铲、炸弹与其他工具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "以不同材料建设地下基地和功能设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "种植花园并饲养、照料动物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-investment",
+        "note": "安装自动机械以持续承担采矿、熔炼和储存",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-tree",
+        "note": "获得天赋点后选择能力强化战斗与探索",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与地下商人交换物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败怪物、迷你首领和泰坦后取得稀有物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/header.jpg?t=1791454740",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1621690&l=english&cc=us"
+    },
+    "aliases": [
+      "护核纪元"
+    ]
+  },
+  {
+    "id": "no-mans-sky",
+    "name": "无人深空 / No Man's Sky",
+    "studio": "Hello Games",
+    "year": 2016,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sandbox-survival",
+      "survival-craft"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "gathering-survival",
+      "vehicle-driving",
+      "buildcrafting"
+    ],
+    "summary": "驾驶飞船在生成的星系与星球间探索，采集与交易资源，升级飞船、武器和防护服以走向更危险区域。",
+    "analysis": "移动距离、货运收益和环境耐受对应不同升级需求，让同一份资源随玩家当前旅行目的改变价值。",
+    "loop": [
+      "选定星球并飞行抵达",
+      "探索、采集或交易资源",
+      "升级货舱、引擎和防护装备，继续远航"
+    ],
+    "learning": [
+      "把运输能力和环境耐受分成不同成长投入，可以让远行目标决定升级次序。"
+    ],
+    "caveats": [
+      "本例使用已发布更新后的普通玩法，不把各次限时远征的专属条件写进所有存档。"
+    ],
+    "resources": [
+      "行星资源可交易获利",
+      "货舱容量影响能带走和出售多少物品"
+    ],
+    "progression": [
+      "飞船、武器和防护服可持续强化",
+      "发现记录可在共享银河地图上保留与分享"
+    ],
+    "scopeLabel": "普通探索生存流程",
+    "scopeNotes": "本例使用已发布更新后的普通玩法，不把各次限时远征的专属条件写进所有存档。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=275850&l=english&cc=us",
+        "title": "No Man's Sky",
+        "publisher": "Steam / Hello Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "generated-layout",
+        "note": "宇宙按程序生成星球、环境和生命种类",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "直接驾驶飞船往返星球表面与太空",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "在行星寻找并开采可交易的资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "把资源出售获利，围绕星际贸易规划行程",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "升级飞船速度、武器、货舱、引擎与防护服",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "货舱空间限制单次能够运载的资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "敌意生物、海盗及有毒环境会威胁玩家生存",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/9f1ca9e3b7d1dccb7b5af404a6739ddc1118ef32/header_alt_assets_26.jpg?t=1793196605",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=275850&l=english&cc=us"
+    },
+    "aliases": [
+      "无人深空"
+    ]
+  },
+  {
+    "id": "mindustry",
+    "name": "像素工厂 / Mindustry",
+    "studio": "AnukenDev",
+    "year": 2017,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation",
+      "tower-defense",
+      "real-time-strategy"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "tactical-command"
+    ],
+    "summary": "修建采矿、加工和运输网络为炮塔供弹，同时制造部队进攻敌方基地，逐区扩展行星工业。",
+    "analysis": "防御不是独立消耗的金币，而是工厂实时送来的弹药与能源；前线压力能直接暴露生产与物流瓶颈。",
+    "loop": [
+      "采集并建立生产运输线",
+      "给炮塔供弹、制造部队",
+      "守住核心或攻下敌区，研究技术后扩张"
+    ],
+    "learning": [
+      "让防御持续消耗实体物流，可以让玩家从战场反馈读出工厂的问题。"
+    ],
+    "caveats": [
+      "2017年已有公开版本，2019年上Steam；沙盒与PvP另有目标，本例以战役规则为准。"
+    ],
+    "resources": [
+      "矿物与加工材料用于建筑、弹药和单位",
+      "电力、冷却液支撑高级设施"
+    ],
+    "progression": [
+      "研究新方块开放技术",
+      "已占领区可继续生产并向其他区发射资源"
+    ],
+    "scopeLabel": "两个行星的普通战役",
+    "scopeNotes": "2017年已有公开版本，2019年上Steam；沙盒与PvP另有目标，本例以战役规则为准。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1127400&l=english&cc=us",
+        "title": "Mindustry",
+        "publisher": "Steam / AnukenDev",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mindustry",
+        "title": "Mindustry - Wikipedia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取首发、公开测试与后续移植的日期记录；只用于区分原作年份和当前分析版本。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "production-chain",
+        "note": "把开采物多阶段加工成建筑材料、弹药与单位投入",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "传送带和跨区发射台持续输送资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "fluid-network",
+        "note": "运输冷却液和润滑液以支持生产及炮塔",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "为炮塔、护盾和其他设施供应电力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建造生产建筑、炮塔和支援设施保护核心",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "投入战役进度研究新方块，扩展工厂能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "area-control",
+        "note": "攻下敌方领土后可放置更多核心并取得资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1127400/98714db25e9ef5a6ea3d39cd0709a60aae41e8dd/header.jpg?t=1784823019",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1127400&l=english&cc=us"
+    },
+    "aliases": [
+      "像素工厂"
+    ]
+  },
+  {
+    "id": "shapez",
+    "name": "异形工厂 / shapez",
+    "studio": "Tobias Springer",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation",
+      "logic-puzzle"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "开采、切分、叠合与染色几何图形，把指定形状送到中心，在不断提高的需求中扩建自动工厂。",
+    "analysis": "没有生存消耗和建筑费用后，难点集中在转换规则、线路复用和吞吐量，扩张服务于解题而不是攒钱。",
+    "loop": [
+      "读取中心需要的图形",
+      "设计切割、染色和叠层生产线",
+      "输送达标后解锁设备，迎接更复杂形状"
+    ],
+    "learning": [
+      "移除生存惩罚后，生产游戏仍可由逐步复杂的目标形状提供明确挑战。"
+    ],
+    "caveats": [
+      "资源无限、没有敌人和计时压力；不因有采矿机就写成稀缺资源生存。"
+    ],
+    "resources": [
+      "形状与颜料是可持续开采的原料",
+      "运输吞吐决定满足需求的速度"
+    ],
+    "progression": [
+      "交付要求推进等级并解锁建筑",
+      "已建产线可复制扩建或改造"
+    ],
+    "scopeLabel": "普通等级与自动化沙盒",
+    "scopeNotes": "资源无限、没有敌人和计时压力；不因有采矿机就写成稀缺资源生存。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1318690&l=english&cc=us",
+        "title": "shapez",
+        "publisher": "Steam / Tobias Springer",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1318690/?l=english",
+        "title": "shapez on Steam",
+        "publisher": "Steam / Tobias Springer",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "用矿机从地图节点提取基础形状和颜料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "切割、染色、混色与叠层把前序产物继续加工",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "把原料与成品沿运输线送往下一工序及HUB",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建设并扩张持续工作的自动化工厂",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "向HUB交付要求的形状后开放新建筑与等级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "blueprint-replication",
+        "note": "用复制粘贴工具重复部署既有生产线",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1318690/header.jpg?t=1788789036",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1318690&l=english&cc=us"
+    },
+    "aliases": [
+      "异形工厂"
+    ]
+  },
+  {
+    "id": "shapez-2",
+    "name": "异形工厂2 / shapez 2 - Factory",
+    "studio": "tobspr Games",
+    "year": 2024,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation",
+      "logic-puzzle"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "在三层平台间组织形状生产，以太空传送带和列车连接工厂，把复杂几何成品送达研究目标。",
+    "analysis": "多层运输让空间占用本身成为设计变量；免费重建允许玩家把尝试成本集中在理解和优化上。",
+    "loop": [
+      "拆解目标形状的加工步骤",
+      "布置多层工序并连接运输",
+      "交付成品解锁新技术，扩展到其他平台"
+    ],
+    "learning": [
+      "多层结构若能直观看见物流，复杂空间规划也能通过低成本重建逐步掌握。"
+    ],
+    "caveats": [
+      "2024年抢先体验、2026年正式版；实验六边形模式有不同图形，本例不混入主模式。"
+    ],
+    "resources": [
+      "无限原料支持持续加工",
+      "平台与运输空间决定生产组织"
+    ],
+    "progression": [
+      "完成研究解锁建筑与新形状机制",
+      "蓝图库保存可复用的工厂设计"
+    ],
+    "scopeLabel": "正式版普通主模式",
+    "scopeNotes": "2024年抢先体验、2026年正式版；实验六边形模式有不同图形，本例不混入主模式。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2162800&l=english&cc=us",
+        "title": "shapez 2 - Factory",
+        "publisher": "Steam / tobspr Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/2162800/?l=english",
+        "title": "shapez 2 - Factory on Steam",
+        "publisher": "Steam / tobspr Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "从节点自动提取基础几何形状",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "把形状拆分、堆叠、染色并重新组合成目标成品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "用跨平台传送带和太空列车连接生产站",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在三层建筑与平台空间中建设工厂",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "交付指定形状开放新的建筑、机制和升级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "blueprint-replication",
+        "note": "保存、加载与分享生产设计蓝图以重复部署",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2162800/680ac087db67c922e0340548103235a7529ec5df/header.jpg?t=1788787557",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2162800&l=english&cc=us"
+    },
+    "aliases": [
+      "异形工厂2"
+    ]
+  },
+  {
+    "id": "techtonica",
+    "name": "地心工业 / Techtonica",
+    "studio": "Fire Hose Games",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "exploration"
+    ],
+    "summary": "在发光的地下洞穴挖掘矿藏、扫描遗迹与技术，用传送带和机械臂把手工作业扩成自动工厂。",
+    "analysis": "地形需要主动开凿，探索找到的技术又能改变可用生产方法，工厂扩张与洞穴推进因此互相驱动。",
+    "loop": [
+      "开采并建立初始生产",
+      "探索设施、扫描遗物和技术",
+      "开凿更大洞穴并自动化产线，推进调查"
+    ],
+    "learning": [
+      "当新工具同时改善开路和生产，探索奖励就能持续改变基地设计。"
+    ],
+    "caveats": [
+      "2023年抢先体验、2024年正式版；故事与工厂位于同一战役范围，不把纯沙盒设置当主线条件。"
+    ],
+    "resources": [
+      "矿藏为机器与生产提供原料",
+      "电力和运输连接支撑设备运转"
+    ],
+    "progression": [
+      "研究设施与遗物开放新技术",
+      "工厂和新工具扩大可达的地下空间"
+    ],
+    "scopeLabel": "正式版剧情战役",
+    "scopeNotes": "2023年抢先体验、2024年正式版；故事与工厂位于同一战役范围，不把纯沙盒设置当主线条件。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1457320&l=english&cc=us",
+        "title": "Techtonica",
+        "publisher": "Steam / Fire Hose Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1457320/?l=english",
+        "title": "Techtonica on Steam",
+        "publisher": "Steam / Fire Hose Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "挖掘地下矿藏取得生产材料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "以多个加工设备把矿物转为后续工业投入与产物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "传送带和机械臂连接采矿与加工步骤",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "专用设备需要供电才能支持开采和生产",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "用MOLE黑洞枪移除岩墙，开出工厂与探索空间",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "在设施和遗物中发现、扫描新技术",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "调查失败的远征并与立方体伙伴推进完整剧情",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1457320/header.jpg?t=1734628470",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1457320&l=english&cc=us"
+    },
+    "aliases": [
+      "地心工业"
+    ]
+  },
+  {
+    "id": "factory-town",
+    "name": "工厂小镇 / Factory Town",
+    "studio": "Erik Asmussen",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation",
+      "city-builder"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "从原料生产村民所需的食品与用品，以工人和机械物流连接工坊与市场，靠销售收益研究并扩大城镇。",
+    "analysis": "没有敌人与饥荒，工人搬运和自动运输之间的替换成为主要成长；产量与居民幸福共同衡量布局效率。",
+    "loop": [
+      "生产村庄需要的货品",
+      "安排工人或自动运输把货物送到工序和市场",
+      "取得收入、研究科技并扩大供应链"
+    ],
+    "learning": [
+      "自动化可以替换早期人工工作，使扩张的意义表现为组织方式变化。"
+    ],
+    "caveats": [
+      "2019年抢先体验、2021年正式版；没有饥荒压力，不把居民需求解释成食物断供就死亡。"
+    ],
+    "resources": [
+      "原料进入食物、衣物和工具等加工链",
+      "销售收入支持科技与扩张"
+    ],
+    "progression": [
+      "科技开放更强运输与魔法生产",
+      "村庄和物流配置持续发展"
+    ],
+    "scopeLabel": "八张战役地图与普通自建地图",
+    "scopeNotes": "2019年抢先体验、2021年正式版；没有饥荒压力，不把居民需求解释成食物断供就死亡。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=860890&l=english&cc=us",
+        "title": "Factory Town",
+        "publisher": "Steam / Erik Asmussen",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/860890/?l=english",
+        "title": "Factory Town on Steam",
+        "publisher": "Steam / Erik Asmussen",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "production-chain",
+        "note": "从原材料逐步生产食品、服装、工具及魔法物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "分配工人搬运生产建筑与市场之间的货物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "滑道、传送带、铁路和管道持续转移物资",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "使用销售收益研究改善供应链的新技术",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建设工坊、市场与自动化基础设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "利用地形塑造工具改造地势以适应建设",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "八张战役地图分别给出需要完成的目标",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/860890/header.jpg?t=1789310709",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=860890&l=english&cc=us"
+    },
+    "aliases": [
+      "工厂小镇"
+    ]
+  },
+  {
+    "id": "autonauts",
+    "name": "Autonauts",
+    "studio": "Denki",
+    "year": 2017,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation",
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "采集基础材料造出机器人，用可视化指令教它们重复劳动，再组织食物、住房与衣物供应满足殖民者。",
+    "analysis": "生产能力来自玩家明确写下的行为步骤；自动化失败时，反馈落在机器人正在执行的具体操作上。",
+    "loop": [
+      "采集并制作首批工具与机器人",
+      "示范动作、设置重复和任务",
+      "扩展生产与生活供应，提高殖民者需求层次"
+    ],
+    "learning": [
+      "把重复劳动表达成可查看的步骤，有助于玩家定位自动化中的缺漏。"
+    ],
+    "caveats": [
+      "2017年已有公开原型；本例采用商业完整版规则，不用原型的材料数值说明后续全部内容。"
+    ],
+    "resources": [
+      "木石等原料进入工具、机器人与建筑",
+      "机器人可升级脑容量与任务能力"
+    ],
+    "progression": [
+      "自动化脚本和设施持续积累",
+      "殖民者需求推动生产链进一步复杂化"
+    ],
+    "scopeLabel": "2019商业版普通殖民流程",
+    "scopeNotes": "官方itch.io明确保留2017原型，商业完整版2019年发行；本例的玩法范围是商业版，未将原型另计。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=979120&l=english&cc=us",
+        "title": "Autonauts",
+        "publisher": "Steam / Denki",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://denki.itch.io/autonauts",
+        "title": "Autonauts Prototype",
+        "publisher": "Denki",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方原型页的2017-07-04发布日期及与Steam完整版的明确区分；原型不另收为游戏。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "从星球收集树枝、石头与其他天然原料",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "按蓝图把原料做成工具和首批工作机器人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "建设殖民地住房、工作设施与供应场所",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "通过可视化语言教机器人执行指定劳动并重复任务",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "把采集、种植、加工和烹饪等步骤连接为殖民者供应",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "自动化耕种与畜牧以持续提供资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "殖民者需要食物、住房和衣物等生活支持",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/979120/header.jpg?t=1791470037",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=979120&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "desynced",
+    "name": "Desynced",
+    "studio": "Stage Games Inc.",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "factory-automation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "buildcrafting"
+    ],
+    "summary": "用可改装的无人机承担采矿与运输，建设不依赖传送带的工业网络，再编排其行为以修复受损飞船。",
+    "analysis": "无人机同时是运输工具和可配置作业单元，网络扩张需要考虑设备用途与调度，而不只是铺路。",
+    "loop": [
+      "派无人机建立采矿与设施",
+      "连接物流网络并配置机器行为",
+      "研究技术、扩张工业以支持修复目标"
+    ],
+    "learning": [
+      "用可改装运输单元替代固定运输带，会把物流优化转向能力配置与调度。"
+    ],
+    "caveats": [
+      "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。"
+    ],
+    "resources": [
+      "矿物与加工材料进入生产链",
+      "能源储存和发电维持设施与机器人"
+    ],
+    "progression": [
+      "科技树开放先进无人机和建筑",
+      "组件与脚本可按问题重新安排"
+    ],
+    "scopeLabel": "正式版普通自动化流程",
+    "scopeNotes": "2023年抢先体验、2026年正式版；没有传送带，不能套用传送带连线作为本作物流事实。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us",
+        "title": "Desynced",
+        "publisher": "Steam / Stage Games Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1450900/?l=english",
+        "title": "Save 30% on Desynced on Steam",
+        "publisher": "Steam / Stage Games Inc.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "production-chain",
+        "note": "以矿物和多级加工设施建立工业转换链",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "transport-network",
+        "note": "连接网络的无人机会自动接受并搬运物资订单",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "管理发电与储能，支撑基地工作",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "研究科技树开放高级单位与设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "为无人机装上适合其工作用途的工具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "给机器人和设施设置参数或拖放脚本，安排具体行为",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在行星建设采矿、加工与飞船修复所需设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1450900/917f1af87f61fdc2aa66407223bbb802b842fdcc/header.jpg?t=1789395759",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1450900&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "surviving-mars",
+    "name": "火星求生 / Surviving Mars",
+    "studio": "Haemimont Games、Abstraction",
+    "year": 2018,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation",
+      "city-builder"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "选赞助机构和着陆点，在火星建设穹顶、能源与生命支持设施，让具有不同特质的殖民者维持生活和研究。",
+    "analysis": "停电在缺氧环境中直接转成生命威胁，基础设施的冗余与居民个体需求必须一同进入扩张计划。",
+    "loop": [
+      "选择机构与殖民地点",
+      "建设生产及生命支持网络，接纳殖民者",
+      "维持需求、研究突破并应对火星谜团"
+    ],
+    "learning": [
+      "当基础设施故障会传播到居民生存，容量余量也应成为布局的重要信息。"
+    ],
+    "caveats": [
+      "不把Green Planet等扩展内容或重新制作版本的规则作为基础版共有事实。"
+    ],
+    "resources": [
+      "机构提供起始资源和资金",
+      "氧气、食物和电力支撑居民与设施"
+    ],
+    "progression": [
+      "研究开放新建筑和能力",
+      "殖民地发展中可能展开一条火星谜团"
+    ],
+    "scopeLabel": "2018原作基础殖民流程",
+    "scopeNotes": "不把Green Planet等扩展内容或重新制作版本的规则作为基础版共有事实。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=464920&l=english&cc=us",
+        "title": "Surviving Mars",
+        "publisher": "Steam / Haemimont Games、Abstraction",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "base-construction",
+        "note": "建造穹顶、工厂、商业设施和基础设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "在火星矿藏开采殖民所需矿物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "耕作取得殖民者食物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "居民须获得食物、氧气和生活服务才能持续生存",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "供电支持生命设施，停电可能使缺氧危机扩大",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "固定与随机技术相结合，探索可获得科学突破",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "world-simulation",
+        "note": "居民特质与问题会影响需要、行为及其他殖民者",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/464920/header.jpg?t=1779438914",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=464920&l=english&cc=us"
+    },
+    "aliases": [
+      "火星求生"
+    ]
+  },
+  {
+    "id": "space-haven",
+    "name": "太空避难所 / Space Haven",
+    "studio": "Bugbyte Ltd.",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "tactical-command"
+    ],
+    "summary": "逐格建造移民飞船，调节空气、温度和舒适度，派船员搜索废船，并在航行中维持整支平民队伍。",
+    "analysis": "船内空间既容纳生活也承受战斗，舱体受损会引发火灾、气体和温度连锁，分区布局直接影响事故边界。",
+    "loop": [
+      "建造船体与生命支持",
+      "安排生活、生产和外出探索",
+      "回收资源，处理事故并跃迁寻找新家"
+    ],
+    "learning": [
+      "生活空间和受损空间使用同一套模拟时，隔舱设计能成为玩家自己的事故预案。"
+    ],
+    "caveats": [
+      "2020年抢先体验、2026年正式版；船员可能被俘且可营救，不能把每次失联都写成永久死亡。"
+    ],
+    "resources": [
+      "氧气、二氧化碳和温度决定舱室能否使用",
+      "原矿与回收品用于船体和设施"
+    ],
+    "progression": [
+      "船员技能、关系与健康持续变化",
+      "飞船建设和储备伴随航程积累"
+    ],
+    "scopeLabel": "正式版普通移民航程",
+    "scopeNotes": "2020年抢先体验、2026年正式版；船员可能被俘且可营救，不能把每次失联都写成永久死亡。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=979110&l=english&cc=us",
+        "title": "Space Haven",
+        "publisher": "Steam / Bugbyte Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/979110/?l=english",
+        "title": "Space Haven on Steam",
+        "publisher": "Steam / Bugbyte Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "base-construction",
+        "note": "逐格放置船壳、舱门、墙和功能设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "fluid-network",
+        "note": "生命支持与净化设备改变舱室氧气、二氧化碳和危险气体分布",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "thermal-regulation",
+        "note": "设置温度调节器维持船员可生存的舱室温度",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "用能源节点建立船内供电分配",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "船员需要进食、睡眠、卫生、安全及社交",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "为探索队配置宇航服、枪械与个人物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "world-simulation",
+        "note": "爆炸可引发火、烟、有害气体与船壳破口的连锁影响",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与航程中遭遇的其他群体交易资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/979110/73529f7afc14ec281cad99fe0284cbed06c552f0/header.jpg?t=1779957549",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=979110&l=english&cc=us"
+    },
+    "aliases": [
+      "太空避难所"
+    ]
+  },
+  {
+    "id": "going-medieval",
+    "name": "前往中世纪 / Going Medieval",
+    "studio": "Foxy Voxel",
+    "year": 2021,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "tactical-command"
+    ],
+    "summary": "带领疫后幸存者建造多层聚落，按个人技能分工、研究装备，并用城墙、陷阱和部队抵挡袭击。",
+    "analysis": "立体建筑允许生产、居住与防御共享同一块地形；人的才能和需求决定这座要塞能否正常运作。",
+    "loop": [
+      "采集并修建住所与工坊",
+      "满足居民需求、研究制作技术",
+      "配置防御并指挥作战，扩展聚落"
+    ],
+    "learning": [
+      "立体建造与个体分工结合时，建筑布局也要为具体的人服务。"
+    ],
+    "caveats": [
+      "2021年抢先体验、2026年正式版；随机地图是多层地形，不意味着所有建筑布局都自动生成。"
+    ],
+    "resources": [
+      "石、黏土等材料投入建筑和工坊",
+      "食物、衣物与生活空间维持居民"
+    ],
+    "progression": [
+      "居民在狩猎和战斗中提高能力",
+      "聚落从少数旅行者发展为设防城镇"
+    ],
+    "scopeLabel": "正式版普通聚落",
+    "scopeNotes": "2021年抢先体验、2026年正式版；随机地图是多层地形，不意味着所有建筑布局都自动生成。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1029780&l=english&cc=us",
+        "title": "Going Medieval",
+        "publisher": "Steam / Foxy Voxel",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1029780/?l=english",
+        "title": "Going Medieval on Steam",
+        "publisher": "Steam / Foxy Voxel",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "base-construction",
+        "note": "修建多层堡垒、地下空间、工坊与居室",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "收集石头、黏土及其他环境材料用于建设",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "新聚落的多层地图按规则随机生成",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "挖掘并塑造土地与水域以服务建筑和军事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "研究中世纪技术以开放装备与生产",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "根据居民技能与性格安排适合的工作",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "满足饥饿、衣物和其他个人需求维持居民状态",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-experience",
+        "note": "居民通过狩猎和战斗等行为提升相关能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029780/6758fe8aecc08e47f18f3394cb774c13a3b068d4/header_alt_assets_22.jpg?t=1793293280",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1029780&l=english&cc=us"
+    },
+    "aliases": [
+      "前往中世纪"
+    ]
+  },
+  {
+    "id": "clanfolk",
+    "name": "氏族人 / Clanfolk",
+    "studio": "MinMax Games Ltd.",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "在苏格兰高地经营跨世代家族，安排作息、田地、工坊与客栈，为冬天储备并把生存技能传给下一代。",
+    "analysis": "季节改变资源机会，家庭成员又会变老离去；眼前产能与未来接班人需要同时准备。",
+    "loop": [
+      "采集、耕作并安排每日工作",
+      "加工储备、完善住所与衣物",
+      "熬过冬季，培养后代并经营外来客人与交易"
+    ],
+    "learning": [
+      "把技能传承纳入长期生存，可以让培养新人不只是扩充眼前劳动力。"
+    ],
+    "caveats": [
+      "天气会改变物资状态，不把潮湿、寒冷和火灾仅当装饰；本例不扩成战术征服游戏。"
+    ],
+    "resources": [
+      "食物、柴火和衣物支持越冬",
+      "原料进入季节性的制作生产链",
+      "现金可雇工与经营客栈"
+    ],
+    "progression": [
+      "家庭成员结婚、育儿、衰老和死亡",
+      "技能在工作与代际学习中增长，房屋和家业延续"
+    ],
+    "scopeLabel": "普通家族生存",
+    "scopeNotes": "天气会改变物资状态，不把潮湿、寒冷和火灾仅当装饰；本例不扩成战术征服游戏。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1700870&l=english&cc=us",
+        "title": "Clanfolk",
+        "publisher": "Steam / MinMax Games Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1700870/?l=english",
+        "title": "Clanfolk on Steam",
+        "publisher": "Steam / MinMax Games Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "season-weather",
+        "note": "四季改变可采资源、耕作条件和越冬压力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "thermal-regulation",
+        "note": "用火、住所和皮衣保持体温，冰水需加热融化",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "播种、耕作与养殖提供持续资源",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "原料经过多阶段加工形成食品、建材和衣物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "按特质、技能和作息分派家族工作，也可雇佣外人",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-experience",
+        "note": "年轻成员跟随长辈劳动学习狩猎、烹饪和耕作技能",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与其他氏族商人交易物资，声誉影响到访商品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "安排休息、进食和社交以维持成员健康与满足",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1700870/header.jpg?t=1793269608",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1700870&l=english&cc=us"
+    },
+    "aliases": [
+      "氏族人"
+    ]
+  },
+  {
+    "id": "stranded-alien-dawn",
+    "name": "搁浅：异星黎明 / Stranded: Alien Dawn",
+    "studio": "Haemimont Games",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "tactical-command"
+    ],
+    "summary": "管理一小群异星幸存者，采集、耕种和研究技术，把简陋营地扩成能抵御野兽与天气的基地。",
+    "analysis": "每个人有不同技能和负面特质，灾害又会同时出现；防御投资必须与照顾伤病和情绪争夺有限劳动。",
+    "loop": [
+      "搜集材料并满足生存",
+      "研究、制作和完善生活设施",
+      "抵挡生物袭击与环境事件，继续强化据点"
+    ],
+    "learning": [
+      "多种危机共用同一批人员时，角色特长与基地冗余都能形成有效的准备。"
+    ],
+    "caveats": [
+      "2022年抢先体验、2023年正式版；不同场景的胜利目标和扩展人物不作为全部流程共有规则。"
+    ],
+    "resources": [
+      "有限材料用于基地、药物和武器",
+      "食物来自耕种与狩猎"
+    ],
+    "progression": [
+      "幸存者技能可以改善",
+      "研究解锁先进设施与自动防御"
+    ],
+    "scopeLabel": "原作基础生存场景",
+    "scopeNotes": "2022年抢先体验、2023年正式版；不同场景的胜利目标和扩展人物不作为全部流程共有规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1324130&l=english&cc=us",
+        "title": "Stranded: Alien Dawn",
+        "publisher": "Steam / Haemimont Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1324130/?l=english",
+        "title": "Stranded: Alien Dawn on Steam",
+        "publisher": "Steam / Haemimont Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "resource-gathering",
+        "note": "采集环境物资并回收坠落太空残骸",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "种植、培育和收割作物取得食物",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "从营地扩建为带围墙、家具和炮塔的基地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "technology-research",
+        "note": "研究新技术以开放设备与更先进建筑",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "需要维持幸存者进食、健康、快乐与娱乐",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "利用各自技能和正负特质安排幸存者工作",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "每次经历会出现不同随机故事、生物威胁和事件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "season-weather",
+        "note": "波动天气与极端环境要求调整生存准备",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1324130/header.jpg?t=1759746262",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1324130&l=english&cc=us"
+    },
+    "aliases": [
+      "搁浅：异星黎明"
+    ]
+  },
+  {
+    "id": "noble-fates",
+    "name": "贵族命运 / Noble Fates",
+    "studio": "Xobermon, LLC",
+    "year": 2021,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning",
+      "social-negotiation"
+    ],
+    "summary": "建设并统治会记住恩怨的幻想王国，分配住房与战利品、处理邻国关系，在继承和战争中维持臣民忠诚。",
+    "analysis": "物资分配不是单纯的效率指令；角色对信仰、待遇和过去行为的记忆，会转成效忠、背叛和外交后果。",
+    "loop": [
+      "建设城堡并组织生产",
+      "照顾臣民、分配财物与处理来客",
+      "应对邻国、袭击与继承，延续王国"
+    ],
+    "learning": [
+      "让角色记住分配与待遇，可以把经营决策转成后续可理解的人际结果。"
+    ],
+    "caveats": [
+      "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。"
+    ],
+    "resources": [
+      "粮食与财富维持臣民和领地",
+      "住房和战利品分配影响效忠"
+    ],
+    "progression": [
+      "臣民保留观念与记忆",
+      "统治者死亡后可由继承者继续王国，关系随新统治者变化"
+    ],
+    "scopeLabel": "普通幻想王国模拟",
+    "scopeNotes": "截至引用版本包含多种族和法师系统；本例不把偶尔直接操纵法师另列为整部游戏的主要动作方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us",
+        "title": "Noble Fates",
+        "publisher": "Steam / Xobermon, LLC",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1769420/?l=english",
+        "title": "Noble Fates on Steam",
+        "publisher": "Steam / Xobermon, LLC",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "base-construction",
+        "note": "逐砖建城或挖掘山中要塞，并给贵族分配住房",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "workforce-assignment",
+        "note": "命令臣民建设、耕种、狩猎、制作和战斗",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "耕地和饲养牲畜维持王国食品供应",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "待遇、信仰与记忆累积改变忠诚，可能导致逃离或背叛",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "social-diplomacy",
+        "note": "以信仰、结盟、谈判及过去行为改变邻国关系",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "与容许来往的王国和访客交易，出售物品或出租房间",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "world-simulation",
+        "note": "人物的记忆、观念和继承关系持续相互影响，产生新的冲突",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1769420/9f8ce562f54c87f169f25d9cf80ebcf0b3bd91c6/header.jpg?t=1792510725",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1769420&l=english&cc=us"
+    },
+    "aliases": [
+      "贵族命运"
+    ]
+  },
+  {
+    "id": "timberborn",
+    "name": "海狸浮生记 / Timberborn",
+    "studio": "Mechanistry",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "colony-simulation",
+      "city-builder"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "spatial-planning"
+    ],
+    "summary": "经营海狸聚落，筑坝、引水和堆叠建筑，在旱季与污染水来临前保障食物、用水和工业。",
+    "analysis": "水既是生存条件又是生产能源和可塑空间，改一段河道可能同时改变农田、动力与安全。",
+    "loop": [
+      "收集木材并建设聚落",
+      "修坝引水、组织农业和工业",
+      "储备应对旱灾与污染，再扩展水利和城镇"
+    ],
+    "learning": [
+      "把同一种介质同时用于生存、生产和空间改造，可以让基础建设产生多重后果。"
+    ],
+    "caveats": [
+      "2021年抢先体验、2026年正式版；两派系建筑和人口规则有差异，不把一方独有机制说成通用规则。"
+    ],
+    "resources": [
+      "木材转为建筑与机械",
+      "金属来自旧世界废墟",
+      "食物和水需要为旱季储备"
+    ],
+    "progression": [
+      "设施、科技和高级机器人扩大生产规模",
+      "居民福利随饮食、娱乐和环境改善"
+    ],
+    "scopeLabel": "正式版普通聚落",
+    "scopeNotes": "2021年抢先体验、2026年正式版；两派系建筑和人口规则有差异，不把一方独有机制说成通用规则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1062090&l=english&cc=us",
+        "title": "Timberborn",
+        "publisher": "Steam / Mechanistry",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1062090/?l=english",
+        "title": "Timberborn on Steam",
+        "publisher": "Steam / Mechanistry",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取Early Access Release Date字段，核对最早公开年份；玩法正文仍以当前所述版本为准。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "fluid-network",
+        "note": "水坝、闸门、渡槽与运河改变三维水流和储水",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "用爆破开挖运河隧道，重塑土地",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "agriculture-husbandry",
+        "note": "维持田地与树林生产，干旱时需要灌溉",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "把木材经锯木与后续工序转为复杂工业投入",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "energy-network",
+        "note": "用水轮、引擎与动力网络驱动机械设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在有限空间中堆叠住所、工坊及支撑平台",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "season-weather",
+        "note": "周期旱季和有毒废水改变取水、灌溉与储备要求",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "海狸需要饮食及娱乐等福利支持",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1062090/eeb2babf15cbf4ebc175316a5d3e42a060f3d97c/header.jpg?t=1788438437",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1062090&l=english&cc=us"
+    },
+    "aliases": [
+      "海狸浮生记"
+    ]
+  },
+  {
+    "id": "danganronpa-2",
+    "name": "超级弹丸论破2：再见绝望学园 / Danganronpa 2: Goodbye Despair",
+    "studio": "Spike Chunsoft Co., Ltd.、Abstraction Games",
+    "year": 2012,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "dialogue-choice"
+    ],
+    "summary": "在岛上与同学建立关系，凶案发生后搜集证据，再用言弹击破学级裁判中的矛盾并复原案件。",
+    "analysis": "自由时间得到的人物理解与技能，和案件中的事实核查并行；裁判则把推理落实为选证据、找发言和操作时机。",
+    "loop": [
+      "与同学交流并推进日常",
+      "发生案件后调查现场与证词",
+      "在学级裁判验证推理，进入下一章"
+    ],
+    "learning": [
+      "把推理结论转换成明确提交动作，能让玩家知道系统正在验证哪条证据关系。"
+    ],
+    "caveats": [
+      "2012年先在PSP发行、2016年移植PC；岛屿模式、宠物和其他独立小游戏不计入主要方向。"
+    ],
+    "resources": [
+      "希望碎片可换取裁判技能",
+      "黑白熊币可换礼物，礼物帮助人物互动"
+    ],
+    "progression": [
+      "人物互动累积希望碎片与技能",
+      "调查结果成为本章可用证据，章节逐步揭开故事"
+    ],
+    "scopeLabel": "Steam版主线日常、调查与裁判",
+    "scopeNotes": "2012年先在PSP发行、2016年移植PC；岛屿模式、宠物和其他独立小游戏不计入主要方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=413420&l=english&cc=us",
+        "title": "Danganronpa 2: Goodbye Despair",
+        "publisher": "Steam / Spike Chunsoft Co., Ltd.、Abstraction Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Danganronpa_2:_Goodbye_Despair",
+        "title": "Danganronpa 2: Goodbye Despair",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取玩法中的自由时间、希望碎片、礼物、言弹与裁判结构，以及2012年PSP首发资料。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "在凶案现场查找证明机会、动机与手段的线索",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "询问同学并在自由时间选择交流对象与回应",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "把证据对应到裁判发言，正确指出矛盾才可推进",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "将选定的言弹瞄准并射向移动发言中的争论点",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "自由时间互动与送礼积累希望碎片，进一步获得人物内容和技能",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "用希望碎片取得可在学级裁判中发挥作用的技能",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "每章调查和裁判要求找出案件真相，完成后继续故事",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413420/header.jpg?t=1781085654",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=413420&l=english&cc=us"
+    },
+    "aliases": [
+      "超级弹丸论破2：再见绝望学园"
+    ]
+  },
+  {
+    "id": "danganronpa-v3",
+    "name": "新弹丸论破V3：大家的自相残杀新学期 / Danganronpa V3: Killing Harmony",
+    "studio": "Spike Chunsoft Co., Ltd.",
+    "year": 2017,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "dialogue-choice"
+    ],
+    "summary": "在封闭学园调查凶案、与学生交流，把证据变成言弹，在持续推进的辩论中找矛盾或选择说谎。",
+    "analysis": "证据不再只用于驳倒错误，部分裁判还要求用谎言打开僵局；玩家要判断争论的推进方式，而不只是找唯一真话。",
+    "loop": [
+      "日常交流并探索学园",
+      "凶案发生后搜集现场证据",
+      "对照发言、反驳或作伪证，通过本章裁判"
+    ],
+    "learning": [
+      "同一证据若能被转述为谎言，操作界面需要清楚提示它改变了怎样的论证关系。"
+    ],
+    "caveats": [
+      "不收录通关后的棋盘育成与地下城模式，也不把赌场或逃脱平台关列成整部游戏的主要方向。"
+    ],
+    "resources": [
+      "黑白熊币可换取送给同学的物品",
+      "集中力帮助辨认裁判中的信息"
+    ],
+    "progression": [
+      "人物亲密度随送礼与交流提升",
+      "主线按各章凶案与裁判推进"
+    ],
+    "scopeLabel": "主线学园生活、调查与学级裁判",
+    "scopeNotes": "不收录通关后的棋盘育成与地下城模式，也不把赌场或逃脱平台关列成整部游戏的主要方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=567640&l=english&cc=us",
+        "title": "Danganronpa V3: Killing Harmony",
+        "publisher": "Steam / Spike Chunsoft Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.danganronpa.com/pages/v3/system/",
+        "title": "システム｜ニューダンガンロンパV3",
+        "publisher": "Spike Chunsoft",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方系统页的日常、搜查、言弹、谎言长按、主线章节及送礼亲密度规则；附加模式明确排除。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "调查现场与学生证词，取得案件证据",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "把正确言弹打入矛盾发言，或在争论中提供相应论据",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "瞄准画面流动发言的弱点后发射言弹",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "hold-input",
+        "note": "按住言弹发射键，把证据转换成含义不同的谎言弹",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "自由行动时选择与学生交谈，在推理对话中选择回答",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "用礼物与交流提高亲密度，了解人物新的侧面",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "每章找出案件凶手后，才推进到下一章",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/567640/header.jpg?t=1750134757",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=567640&l=english&cc=us"
+    },
+    "aliases": [
+      "新弹丸论破V3：大家的自相残杀新学期"
+    ]
+  },
+  {
+    "id": "ai-the-somnium-files",
+    "name": "AI：梦境档案 / AI: The Somnium Files",
+    "studio": "Spike Chunsoft Co., Ltd.",
+    "year": 2019,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "puzzle-solving",
+      "dialogue-choice"
+    ],
+    "summary": "调查现实现场并询问证人，再进入六分钟梦境，以有限行动时间解开心锁，沿不同路线拼出连环案真相。",
+    "analysis": "梦境交互的时间代价让看似随意的尝试成为预算决策；支线所得信息又改变玩家对其他场景的理解。",
+    "loop": [
+      "检查现场、选择问题询问人物",
+      "进入梦境，权衡交互耗时并打开心锁",
+      "回到调查并使用流程图探索其他路线"
+    ],
+    "learning": [
+      "把交互耗时列成可比较的成本，可以让非战斗解谜也出现清晰的资源取舍。"
+    ],
+    "caveats": [
+      "六分钟含每项交互的规定耗时，不把它全部解释为不停倒数的实时规划阶段。"
+    ],
+    "resources": [
+      "梦境的六分钟由行动逐项消耗",
+      "证据与信息连接现实和梦境调查"
+    ],
+    "progression": [
+      "路线完成状态保留于流程图",
+      "部分结局需要先获得其他路线的信息"
+    ],
+    "scopeLabel": "完整主线调查与Somnium",
+    "scopeNotes": "六分钟含每项交互的规定耗时，不把它全部解释为不停倒数的实时规划阶段。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=948740&l=english&cc=us",
+        "title": "AI: The Somnium Files",
+        "publisher": "Steam / Spike Chunsoft Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.spike-chunsoft.com/games/ai-the-somnium-files/",
+        "title": "AI: THE SOMNIUM FILES",
+        "publisher": "Spike Chunsoft",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官网六分钟梦境、三种视觉模式、问询及多结局说明。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/AI:_The_Somnium_Files",
+        "title": "AI: The Somnium Files",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取玩法段的光标提问、行动耗时、心锁分支、第三人称移动与流程图跳转；未将剧情描述冒充操作规则。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "利用放大、X光及热成像调查现场，发现普通视野之外的证据",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "以光标选择人物并挑选与人物或场景相关的问题",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "梦境中直接控制人形Aiba在第三人称空间移动",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "每次梦境交互消耗规定秒数，需要在六分钟预算内选择行动",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "按正确对象和行动顺序打开心锁，开放更深的梦境区域",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "不同心锁处理方式会使离开梦境后的故事进入不同路线",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/948740/header.jpg?t=1750221445",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=948740&l=english&cc=us"
+    },
+    "aliases": [
+      "AI：梦境档案"
+    ]
+  },
+  {
+    "id": "ai-nirvana-initiative",
+    "name": "AI：梦境档案 涅槃肇始 / AI: THE SOMNIUM FILES - nirvanA Initiative",
+    "studio": "Spike Chunsoft Co., Ltd.",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "puzzle-solving",
+      "dialogue-choice"
+    ],
+    "summary": "交替调查过去和现在的半身案件，用虚拟现场复原证据，在梦境中理解特殊规则并选择打开心锁的方法。",
+    "analysis": "现实现场要求证据无矛盾地复原，梦境却遵循当事人的记忆规则；两种解谜依据让玩家不断调整判断方式。",
+    "loop": [
+      "问询并用AI眼球检查现场",
+      "在虚拟现实中回答疑点、复原事件",
+      "进入有限时间梦境解锁信息，继续案件"
+    ],
+    "learning": [
+      "同一调查可以用两套不同的可验证规则组织，让玩家区分现实证据与角色记忆的逻辑。"
+    ],
+    "caveats": [
+      "不是原作或2025年衍生作；此例不将舞蹈等零散环节单列为主要玩法方向。"
+    ],
+    "resources": [
+      "梦境每项行动消耗自身时间成本",
+      "已发现的梦境Keys提示该梦境的特殊规则"
+    ],
+    "progression": [
+      "调查线索推动案件",
+      "梦境的开锁方法可能把故事带向不同分支"
+    ],
+    "scopeLabel": "完整主线现实调查与梦境",
+    "scopeNotes": "不是原作或2025年衍生作；此例不将舞蹈等零散环节单列为主要玩法方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1449200&l=english&cc=us",
+        "title": "AI: THE SOMNIUM FILES - nirvanA Initiative",
+        "publisher": "Steam / Spike Chunsoft Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.spike-chunsoft.com/news/ai-the-somnium-files-nirvana-initiative-new-characters-investigative-elements-and-story-details-revealed/",
+        "title": "New Characters, Investigative Elements, and Story Details Revealed",
+        "publisher": "Spike Chunsoft",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取调查、Wink Psync、虚拟现实与无矛盾事件复原的开发者说明。"
+      },
+      {
+        "url": "https://www.spike-chunsoft.com/news/new-game-system-details-for-ai-the-somnium-files-nirvana-initiative/",
+        "title": "New Game System Details for AI: THE SOMNIUM FILES – nirvanA Initiative",
+        "publisher": "Spike Chunsoft",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取现实与梦境双结构、六分钟限制以及新增上下移动的公开系统说明。"
+      },
+      {
+        "url": "https://www.spike-chunsoft.com/news/ai2-somnium-new-characters/",
+        "title": "New Somnium Elements and Characters Revealed",
+        "publisher": "Spike Chunsoft",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取每项行动时间成本、心锁分支、Keys规则及Conscious Antibodies的公开说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "利用X光、热成像、夜视与虚拟现场寻找可用线索",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "向证人与嫌疑人问询，必要时用Wink Psync了解隐藏想法",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "在Truth Reenactment中把线索用于疑点，消除矛盾后重现事件",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "direct-movement",
+        "note": "在陆地、空中和水下梦境直接控制Aiba或Tama探索",
+        "source": 2,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "梦境行动消耗各自规定的秒数，须在六分钟内选择有效步骤",
+        "source": 3,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "解除各层Mental Lock后才能进入后面的梦境区域",
+        "source": 3,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "部分心锁有不止一种解除方式，选择会使故事分歧",
+        "source": 3,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "knowledge-gating",
+        "note": "理解并揭开梦境Keys后，用已有交互按该梦境规则选择正确行动",
+        "source": 3,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449200/header.jpg?t=1715701149",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1449200&l=english&cc=us"
+    },
+    "aliases": [
+      "AI：梦境档案 涅槃肇始"
+    ]
+  },
+  {
+    "id": "zero-time-dilemma",
+    "name": "极限脱出：零时困境 / Zero Escape: Zero Time Dilemma",
+    "studio": "Chime",
+    "year": 2016,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "logic-puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving",
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "summary": "从三个小组的片段中选择体验顺序，在密室搜寻工具解谜，作出生死决定，再把碎片拼回时间线。",
+    "analysis": "角色会忘记片段之间的经历，玩家却在流程图上积累全局信息；选择体验的顺序也参与了悬念组织。",
+    "loop": [
+      "选择人物与故事片段",
+      "调查密室、寻找工具并提交谜题答案",
+      "作出生死选择，回流程图检查其他结果"
+    ],
+    "learning": [
+      "把已体验片段放回时间线，可以让界面承担玩家整理因果关系的工作。"
+    ],
+    "caveats": [
+      "每片段代表90分钟的故事段落，不代表每道密室题都有90分钟现实倒计时；角色失忆也不是每次把玩家进度清空。"
+    ],
+    "resources": [
+      "工具与房间线索用于当前密室",
+      "死亡后得到的密码连接逃生条件"
+    ],
+    "progression": [
+      "完成片段后记录到故事流程图",
+      "可重访片段探索其他结局与时间线"
+    ],
+    "scopeLabel": "主线Decision Game",
+    "scopeNotes": "每片段代表90分钟的故事段落，不代表每道密室题都有90分钟现实倒计时；角色失忆也不是每次把玩家进度清空。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=311240&l=english&cc=us",
+        "title": "Zero Escape: Zero Time Dilemma",
+        "publisher": "Steam / Spike Chunsoft Co., Ltd.",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Zero_Time_Dilemma",
+        "title": "Zero Time Dilemma",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取玩法段的片段选择、流程图、密室工具、三维朝向题、概率决定与密码逃生结构；未把90分钟叙事长度当操作时限。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "在3D密室内寻找物件、提示和可用工具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "在生死决定中选择方案，部分决定可直接输入答案",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "道德选择通向不同生存结果和多个结局",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "特定生死机关按概率决定枪中是否击发实弹",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "进入含概率枪械机关的Decision Game片段"
+      },
+      {
+        "id": "piece-rotation",
+        "note": "部分密室题要求把三维对象的各面朝向对齐",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "进入要求对齐三维物件的密室谜题"
+      },
+      {
+        "id": "knowledge-gating",
+        "note": "从不同时间线得知密码与信息，再利用已有输入行动打开后续流程",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311240/header.jpg?t=1715700046",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=311240&l=english&cc=us"
+    },
+    "aliases": [
+      "极限脱出：零时困境"
+    ]
+  },
+  {
+    "id": "raging-loop",
+    "name": "人狼村之谜 / Raging Loop",
+    "studio": "KEMCO",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "visual-novel"
+    ],
+    "playStyleIds": [
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "summary": "在封闭村落的宴会中选择行动，经历死亡与时间回返，把前次得到的钥匙用于打开新的故事路线。",
+    "analysis": "坏结局提供的信息能成为后续选项的实际前提，死亡因而兼有失败和揭露新证据两种作用。",
+    "loop": [
+      "阅读事件并选择回应",
+      "经历宴会、调查与结局",
+      "从流程图回到节点，利用钥匙进入新路线"
+    ],
+    "learning": [
+      "让坏结局留下明确的解锁物，可以帮助玩家理解重试获得了什么。"
+    ],
+    "caveats": [
+      "2015年先在移动平台发行，2017年移植PC；这是有顺序锁定的故事，不是每局随机分配身份的多人狼人杀。"
+    ],
+    "resources": [
+      "钥匙代表已获得的关键信息，可开放受锁选择",
+      "人物动机与宴会线索用于理解不同路线"
+    ],
+    "progression": [
+      "部分信息与路线权限跨回返保留",
+      "通关后Revelation Mode增加人物内心与新场景"
+    ],
+    "scopeLabel": "完整故事及通关后的揭示内容",
+    "scopeNotes": "2015年先在移动平台发行，2017年移植PC；这是有顺序锁定的故事，不是每局随机分配身份的多人狼人杀。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=648100&l=english&cc=us",
+        "title": "Raging Loop",
+        "publisher": "Steam / KEMCO",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Raging_Loop",
+        "title": "Raging Loop",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取2015年移动版首发、钥匙锁定选项、流程图、死亡回返和揭示模式的说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "dialogue-choice",
+        "note": "关键节点从行动与回应中选择，改变故事发展",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "不同选择进入不同路线与结局，但部分主线需按解锁顺序体验",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "timed-loop",
+        "note": "主角死亡触发回到入村前后时点，保留自己的记忆",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "用流程图直接回到已有场景或选择点继续尝试",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "某些死亡或选择给予钥匙，后续路线仍能用来开放新选项",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成故事后开放Revelation Mode，查看角色内心和新增场景",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648100/header.jpg?t=1726532443",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=648100&l=english&cc=us"
+    },
+    "aliases": [
+      "人狼村之谜"
+    ]
+  },
+  {
+    "id": "i-was-a-teenage-exocolonist",
+    "name": "我曾是青少年太空殖民者 / I Was a Teenage Exocolonist",
+    "studio": "Northway Games",
+    "year": 2022,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "dialogue-choice",
+      "card-play",
+      "life-simulation"
+    ],
+    "summary": "按月选择学习、工作和探索，把成长经历化成记忆卡，组合手牌跨过挑战并改变殖民地与朋友的命运。",
+    "analysis": "生活选择既改变关系与技能，又成为以后挑战使用的卡牌；过去经历因而以可操作的形式留在当前决策里。",
+    "loop": [
+      "选择本月工作、学习或探索",
+      "经历人物事件并取得记忆卡",
+      "出牌应对挑战，进入下一月并承担后果"
+    ],
+    "learning": [
+      "把人生经历转成挑战组件，可以让叙事选择与后续规则建立直接关系。"
+    ],
+    "caveats": [
+      "战斗卡也用于考试、关系和逃生等挑战；不把所有卡牌关卡都写成攻击敌人的战斗。"
+    ],
+    "resources": [
+      "记忆卡提供挑战可用手牌",
+      "十五类能力随成长发展，影响生活与探索"
+    ],
+    "progression": [
+      "月度选择累积成不同人生结局",
+      "过去人生的记忆可在后续人生发现其他事件"
+    ],
+    "scopeLabel": "完整人生故事",
+    "scopeNotes": "战斗卡也用于考试、关系和逃生等挑战；不把所有卡牌关卡都写成攻击敌人的战斗。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1148760&l=english&cc=us",
+        "title": "I Was a Teenage Exocolonist",
+        "publisher": "Steam / Northway Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.gamedeveloper.com/business/-i-was-a-teenage-exocolonist-turns-life-experiences-into-a-card-game",
+        "title": "I Was a Teenage Exocolonist turns life experiences into a card game",
+        "publisher": "Game Developer / Sarah Northway interview",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取设计师访谈，核对按月重复工作提升特定技能、专精特长、记忆卡构筑与跨人生记忆；访谈未作为本站试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "dialogue-choice",
+        "note": "按月选择生活行动与事件回应，改变人物和殖民地未来",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "成长经历转成新记忆卡，扩展这次人生的可用卡组",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "skill-experience",
+        "note": "反复从事选择的工作或课程，提升对应的数项技能，专精后取得实用特长",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "与朋友、父母及可约会角色互动，逐步改变关系",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "每月选择累积，决定多种不同人生与殖民地结局",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "persistent-unlock",
+        "note": "跨人生保留过去记忆，用于发现新的故事事件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1148760/header.jpg?t=1783360165",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1148760&l=english&cc=us"
+    },
+    "aliases": [
+      "我曾是青少年太空殖民者"
+    ]
+  },
+  {
+    "id": "gnosia",
+    "name": "古诺希亚 / GNOSIA",
+    "studio": "Petit Depotto",
+    "year": 2019,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "social-deduction",
+      "rpg"
+    ],
+    "playStyleIds": [
+      "social-negotiation",
+      "investigation-deduction",
+      "dialogue-choice"
+    ],
+    "summary": "与飞船成员讨论隐藏的古诺希亚身份，投票冷冻嫌疑人，在循环中提高说服能力并收集人物秘密。",
+    "analysis": "数值成长改变发言的社会效果，而身份推理仍依赖当前对话；长期人物线索与一局局表决互相推进。",
+    "loop": [
+      "按身份加入本轮讨论",
+      "判断发言、争取意见并投票冷冻成员",
+      "结束循环，利用事件和人物记录继续解开谜团"
+    ],
+    "learning": [
+      "在重复社交对局中保留人物信息，可以让理解角色成为长期进展。"
+    ],
+    "caveats": [
+      "2019年PS Vita首发、2022年PC移植；讨论对象是NPC，不把合作与对抗写成真人联机。"
+    ],
+    "resources": [
+      "角色属性决定说服、欺骗和被怀疑的概率",
+      "人物Notes记录特殊事件透露的信息"
+    ],
+    "progression": [
+      "人物资料与新讨论指令可持续解锁",
+      "下一轮角色、人数和事件会变化"
+    ],
+    "scopeLabel": "普通单人循环",
+    "scopeNotes": "2019年PS Vita首发、2022年PC移植；讨论对象是NPC，不把合作与对抗写成真人联机。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1608290&l=english&cc=us",
+        "title": "GNOSIA",
+        "publisher": "Steam / Petit Depotto",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gnosia",
+        "title": "Gnosia",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取2019年PS Vita首发与2022年PC移植资料；本例核心规则优先引用官方商店正文。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "hidden-role",
+        "note": "古诺希亚伪装为人类，真实身份影响该轮目标",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "identity-voting",
+        "note": "讨论后投票，把怀疑对象送入冷冻睡眠",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "可扮演不同职责，其信息与行动条件不同",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "从讨论指令选择怀疑、回应和其他发言方式",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "ability-check",
+        "note": "角色属性影响说服、说谎和被投票冷冻的机会",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "randomized-encounters",
+        "note": "循环里可随机触发不同人物事件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "人物事件把新线索记录为可回看的Notes",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "触发指定人物事件会开放新的讨论指令",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1608290/header.jpg?t=1764922887",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1608290&l=english&cc=us"
+    },
+    "aliases": [
+      "古诺希亚"
+    ]
+  },
+  {
+    "id": "paranormasight-seven-mysteries",
+    "name": "灵视异闻 FILE23 本所七大不可思议 / PARANORMASIGHT: The Seven Mysteries of Honjo",
+    "studio": "Xeen / Square Enix",
+    "year": 2023,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "investigation-deduction",
+      "dialogue-choice",
+      "puzzle-solving"
+    ],
+    "summary": "切换多名持咒者的故事，在环视场景与对话中理解诅咒条件，回到关键节点改变致命结果。",
+    "analysis": "角色掌握的信息和玩家跨路线得知的信息并不相同；流程图让玩家把别处学到的规则带回原先的困局。",
+    "loop": [
+      "环视场景并询问人物",
+      "依据线索判断或应对诅咒",
+      "从故事图重访节点，切换人物推进真相"
+    ],
+    "learning": [
+      "让玩家跨人物保存知识，可以在角色信息受限时仍提供清楚的推理进展。"
+    ],
+    "caveats": [
+      "不是2026年新作The Mermaid’s Curse；360度场景环视不等于自由步行的开放世界。"
+    ],
+    "resources": [
+      "案件文件记录人物与背景信息",
+      "已学诅咒条件帮助决定安全的行动"
+    ],
+    "progression": [
+      "故事图保留开放的角色章节",
+      "调查会增加文件和可重访的分支"
+    ],
+    "scopeLabel": "2023完整主线",
+    "scopeNotes": "不是2026年新作The Mermaid’s Curse；360度场景环视不等于自由步行的开放世界。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2106840&l=english&cc=us",
+        "title": "PARANORMASIGHT: The Seven Mysteries of Honjo",
+        "publisher": "Steam / Square Enix",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Paranormasight:_The_Seven_Mysteries_of_Honjo",
+        "title": "Paranormasight: The Seven Mysteries of Honjo",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取玩法中全景调查、问题检验、流程图、死亡回返与多视角说明，并核对实际开发商。"
+      },
+      {
+        "url": "https://gameplay.tips/guides/paranormasight-the-seven-mysteries-of-honjo-100-walkthrough-with-all-achievements.html",
+        "title": "Paranormasight – 100% Walkthrough with All Achievements",
+        "publisher": "Gameplay Tips community guide",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取公开流程中的Files记录、故事图跳转和跨路线信息应用；不采纳作者对现实时间成就的猜测。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "environmental-clues",
+        "note": "在360度场景中检查环境，找出关键线索与物件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "选择人物对话和行动，在冲突中决定是否使用诅咒",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "关键决定改变人物生死和故事分支",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "死亡后回到早先场景，尝试不同决定改变结果",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "调查中根据已获得信息回答推理问题，检验对事件的理解",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "调查对象和地点会加入Files，供后续查阅",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "knowledge-gating",
+        "note": "从其他路线得知信息后，回到原场景用现有输入和选择解决困局",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2106840/header.jpg?t=1776154854",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2106840&l=english&cc=us"
+    },
+    "aliases": [
+      "灵视异闻 FILE23 本所七大不可思议"
+    ]
+  },
+  {
+    "id": "scarlet-hollow",
+    "name": "猩红山谷 / Scarlet Hollow",
+    "studio": "Black Tabby Games",
+    "year": 2020,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "visual-novel",
+      "investigation-adventure"
+    ],
+    "playStyleIds": [
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "summary": "选两种人物特质进入矿镇，在调查怪事和与居民相处的过程中作出取舍，让能力、关系和过去行为共同改变后续事件。",
+    "analysis": "特质不是一条通向最佳结局的数值阶梯；不同专长让玩家看到不同信息，也让同一个困境出现不同解法。",
+    "loop": [
+      "创建人物并选两种特质",
+      "调查矿镇怪事，与人物交谈并决定行动",
+      "承担选择与关系后果，进入下一天和章节"
+    ],
+    "learning": [
+      "能力选项可以确保在自身擅长的事情上发挥作用，同时用看到的信息差异支持不同的人物体验。"
+    ],
+    "caveats": [
+      "2020年已公开完整第一章，2021年开始商业抢先体验；当前故事尚未完结，不虚构未发布章节或最终结局。"
+    ],
+    "resources": [
+      "两种特质形成当前角色可用的行动范围",
+      "人物关系以多种感受发展，而非单一好感值"
+    ],
+    "progression": [
+      "已作决定与人物看法在故事中延续",
+      "不同人物构筑可揭示不同信息和分支"
+    ],
+    "scopeLabel": "已公开的前五章普通人物流程",
+    "scopeNotes": "2020年已公开完整第一章，2021年开始商业抢先体验；当前故事尚未完结，不虚构未发布章节或最终结局。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1609230&l=english&cc=us",
+        "title": "Scarlet Hollow",
+        "publisher": "Steam / Black Tabby Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://blacktabbygames.medium.com/designing-scarlet-hollows-trait-based-roleplaying-system-24f2b4f4906",
+        "title": "Designing Scarlet Hollow’s trait-based roleplaying system",
+        "publisher": "Tony Howard-Arias / Black Tabby Games",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取开发者关于二选七特质、特质对话、隐藏关系与具体威吓及开锁结果的设计说明；未把其玩家小样本调查当普遍结论。"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1406040/Scarlet_Hollow/",
+        "title": "Scarlet Hollow — Episode 1",
+        "publisher": "Steam / Black Tabby Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取完整第一章于2020-09-25发行，以及旧页退役、存档衔接商业版的说明；不重复收录第一章。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "创建人物时从七种特质中选择两种，形成这次故事的能力配置",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "ability-check",
+        "note": "对话和行动检查是否具有相应特质；合适特质可让威吓、脱困或开锁成功",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "选择回应和行动，改变人物反应及故事发展",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "relationship-progression",
+        "note": "每次选择影响人物对玩家的多种看法，形成朋友、对手或其他关系",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "人物构筑、关系与重要决定使故事沿不同路径展开",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "调查闹鬼房屋、树林异象与废弃矿井，拼出矿镇过去的事件",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1609230/d4f8fbd2a9e2dee092816572ffc1e45a30e24568/header.jpg?t=1790184504",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1609230&l=english&cc=us"
+    },
+    "aliases": [
+      "猩红山谷"
+    ]
+  },
+  {
+    "id": "homicipher",
+    "name": "文字化化 / Homicipher",
+    "studio": "八名木Games",
+    "year": 2022,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "language-puzzle",
+      "visual-novel"
+    ],
+    "playStyleIds": [
+      "puzzle-solving",
+      "dialogue-choice",
+      "investigation-deduction"
+    ],
+    "summary": "通过异界人物的表情、手势和指物推测词义，把解释填入自己的词典，在行动分支中寻找逃离的方法。",
+    "analysis": "词典允许保留暂时不准确的解释，旧场景又可重看；理解不是一次答对的问题，而是不断用新语境修正的过程。",
+    "loop": [
+      "观察人物和物件，推测陌生词义",
+      "填入解释并选择对话或行动",
+      "从失败前重试或跳回章节，用新词义继续探索"
+    ],
+    "learning": [
+      "保留玩家自己的词义解释，再允许重读场景，可以让语言学习过程本身成为进展。"
+    ],
+    "caveats": [
+      "官方记录2022年先公开浏览器与下载原型，2024年完整发行；本例按完整PC版，明确没有好感度管理，不虚构好感攻略系统。"
+    ],
+    "resources": [
+      "个人词典保存自己的解释与猜测",
+      "人物和环境语境提供比对词义的依据"
+    ],
+    "progression": [
+      "旗标开放新选项",
+      "已遇见场景可在章节中重新访问，词典帮助重读旧对话"
+    ],
+    "scopeLabel": "2024完整PC版／2.0.5规则",
+    "scopeNotes": "官方记录2022年先公开浏览器与下载原型，2024年完整发行；本例按完整PC版，明确没有好感度管理，不虚构好感攻略系统。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=2302660&l=english&cc=us",
+        "title": "Homicipher",
+        "publisher": "Steam / 八名木Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.gamespress.com/Homicipher---A-Unique-Language-Interpretation-Horror-Adventure-Now-Ava",
+        "title": "Homicipher - A Unique Language-Interpretation Horror Adventure Now Available",
+        "publisher": "Gamirror Games / Games Press",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取发行商2024-11-01原始新闻稿中的词典输入、语境理解与错误也可提供线索的说明。"
+      },
+      {
+        "url": "https://317.zashiki.com/mozibake/",
+        "title": "文字化化/Homicipher PC版公式サイト",
+        "publisher": "八名木Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方History：2022-10-07原型公开，2024-11-01完整作品发行；未将各次试玩版和Switch移植另算作品。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "language-decoding",
+        "note": "结合表情、动作和指向物推断异界语言词义，而不是逐字替换现实语言",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "检查场景物件并观察人物指物，为词义与行动提供语境",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "在探索和交谈节点选择行动，推动事件和不同人物路线",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "行动可能引出小变化、新路线或即时死亡，故事存在不同结局",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "游戏结束后可无惩罚地从刚才的节点重试",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "取得故事旗标后开放原先不可选的行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "点击未知词并填入自己的解释，保存在可继续补充的个人词典",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2302660/header.jpg?t=1754307794",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=2302660&l=english&cc=us"
+    },
+    "aliases": [
+      "文字化化"
+    ]
+  }
+]

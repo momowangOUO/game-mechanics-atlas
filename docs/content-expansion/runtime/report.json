@@ -1,0 +1,66 @@
+[
+  {
+    "id": "dialogue",
+    "width": 390,
+    "path": "/mechanics/dialogue-choice/",
+    "imagePath": "docs/content-expansion/runtime/dialogue-390.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "charging",
+    "width": 390,
+    "path": "/mechanics/match-charging/",
+    "imagePath": "docs/content-expansion/runtime/charging-390.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "coverage",
+    "width": 390,
+    "path": "/games/coverage/?genre=match-three&play=matching-clearing",
+    "imagePath": "docs/content-expansion/runtime/coverage-390.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "mobile-game",
+    "width": 390,
+    "path": "/games/puzzle-and-dragons/",
+    "imagePath": "docs/content-expansion/runtime/mobile-game-390.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "dialogue",
+    "width": 1440,
+    "path": "/mechanics/dialogue-choice/",
+    "imagePath": "docs/content-expansion/runtime/dialogue-1440.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "charging",
+    "width": 1440,
+    "path": "/mechanics/match-charging/",
+    "imagePath": "docs/content-expansion/runtime/charging-1440.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "coverage",
+    "width": 1440,
+    "path": "/games/coverage/?genre=match-three&play=matching-clearing",
+    "imagePath": "docs/content-expansion/runtime/coverage-1440.png",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "id": "mobile-game",
+    "width": 1440,
+    "path": "/games/puzzle-and-dragons/",
+    "imagePath": "docs/content-expansion/runtime/mobile-game-1440.png",
+    "overflow": 0,
+    "errors": []
+  }
+]

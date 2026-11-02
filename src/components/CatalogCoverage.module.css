@@ -1,0 +1,257 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+.stats span {
+  padding: 12px 16px;
+  border: 2px solid #826c92;
+  background: #342a44;
+  color: #f1e3bd;
+  font-size: 14px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  background: #eee3ca;
+  color: #342b43;
+  border: 3px solid #847091;
+}
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 180px;
+  font-size: 13px;
+}
+.controls select {
+  max-width: 100%;
+  background: #fff5df;
+  color: #342b43;
+  min-height: 44px;
+}
+.controls .check {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.check input {
+  width: 20px;
+  height: 20px;
+}
+.note {
+  line-height: 1.9;
+  color: #c5b5cf;
+  font-size: 13px;
+  margin: 16px 0;
+}
+.desktop {
+  overflow: auto;
+  max-height: 700px;
+  border: 2px solid #8e759f;
+  background: #211d2d;
+}
+.matrix {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 1600px;
+  width: 100%;
+  font-size: 12px;
+}
+.matrix caption {
+  text-align: left;
+  padding: 15px;
+  background: #342b43;
+  color: #dac69d;
+}
+.matrix th {
+  padding: 12px 8px;
+  background: #382d48;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border: 1px solid #5e4c70;
+  color: #e5d5bd;
+  min-width: 74px;
+}
+.matrix th:first-child {
+  left: 0;
+  min-width: 150px;
+  z-index: 3;
+}
+.matrix tbody th {
+  z-index: 1;
+  white-space: nowrap;
+}
+.matrix td {
+  border: 1px solid #493d56;
+  text-align: center;
+}
+.matrix td button {
+  width: 100%;
+  min-height: 44px;
+  background: transparent;
+  border: 0;
+  color: #9c8aaa;
+  font-size: 14px;
+}
+.matrix td[data-status="has_examples"] {
+  background: #34464a;
+}
+.matrix td[data-status="has_examples"] button {
+  color: #a3e4d1;
+  font-weight: bold;
+}
+.matrix td[data-status="researched_no_examples"] {
+  background: #544332;
+}
+.matrix td button:hover,
+.matrix td button:focus-visible {
+  background: #67527d;
+  outline: 2px solid #e1bf7c;
+  outline-offset: -3px;
+}
+.phone {
+  display: none;
+}
+.results {
+  margin: 36px 0;
+  padding: 24px;
+  border: 2px solid #9a81ac;
+  scroll-margin-top: 24px;
+  background: #292335;
+  min-height: 160px;
+}
+.results h2 {
+  font-size: 26px;
+  color: #f1dfb8;
+}
+.results > p {
+  line-height: 1.9;
+}
+.status {
+  color: #94d7ca;
+  font-size: 14px;
+}
+.scope {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #bfa7d1;
+}
+.review {
+  border-left: 3px solid #d6b77a;
+  padding: 15px;
+  background: #393042;
+  margin: 20px 0;
+}
+.review p,
+.review li {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.gaps {
+  padding: 24px;
+  background: #eee4cf;
+  color: #362b43;
+  border: 2px solid #7f698d;
+  margin: 36px 0;
+}
+.gaps h2 {
+  color: #362b43;
+}
+.gaps > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.gaps > div a {
+  padding: 10px;
+  background: #dfd1e5;
+  border: 1px solid #9a86a5;
+  color: #483052;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+}
+.gaps p {
+  line-height: 1.9;
+}
+.gaps > a {
+  color: #6c4780;
+}
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .phone {
+    display: block;
+    margin: 20px 0;
+  }
+  .phone > button {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    background: #30273e;
+    border: 1px solid #8b729e;
+    color: #ebdbf5;
+    padding: 16px;
+    margin: 10px 0;
+    min-height: 80px;
+  }
+  .phone strong,
+  .phone small {
+    display: block;
+  }
+  .phone small {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #c0aecb;
+    margin-top: 7px;
+  }
+  .phone b {
+    font-size: 12px;
+    color: #d9be85;
+    min-width: 60px;
+  }
+  .controls {
+    padding: 15px;
+    gap: 12px;
+  }
+  .controls label {
+    min-width: 100%;
+    font-size: 14px;
+  }
+  .results {
+    padding: 16px;
+  }
+  .results h2 {
+    font-size: 23px;
+  }
+  .gaps {
+    padding: 16px;
+  }
+  .gaps > div {
+    grid-template-columns: 1fr;
+  }
+  .stats {
+    gap: 6px;
+  }
+  .stats span {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .results > div > article {
+    min-width: 0;
+  }
+  .results a {
+    overflow-wrap: anywhere;
+  }
+}

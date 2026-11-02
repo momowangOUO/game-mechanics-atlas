@@ -20,6 +20,12 @@ import { promptTemplates } from "../src/lib/research-prompt.ts";
 import { mechanicScenes } from "../src/data/mechanic-scenes.ts";
 import { taxonomyGroupVisuals } from "../src/data/taxonomy-group-visuals.ts";
 import { currentTrends } from "../src/lib/current-trends.ts";
+import { playStyles } from "../src/data/play-styles.ts";
+import {
+  catalogCoverageSummary,
+  getCoverageCell,
+  coverageReviews,
+} from "../src/lib/catalog-coverage.ts";
 
 const DEFAULT_OUTPUT = fileURLToPath(new URL("../public/", import.meta.url));
 const author = {
@@ -234,6 +240,44 @@ export function createAgentDocuments() {
       )}`,
     );
   }
+  for (const style of playStyles) {
+    const examples = dataset.games.filter((game) =>
+      game.playStyleIds?.includes(style.id),
+    );
+    addEntity("play-styles", "playStyle", style, `/play-styles/${style.id}`, {
+      gameIds: examples.map((game) => game.id),
+    });
+    markdown(
+      `/play-styles/${style.id}`,
+      style.name,
+      `${style.definition}\n${section(
+        "游戏范例",
+        examples.map((game) => link(game.name, `/games/${game.id}`)),
+      )}`,
+    );
+  }
+  json("data/v1/coverage.json", {
+    schemaVersion: 1,
+    interpretation:
+      "数量为本站已收录的同范围案例，不表示搜索热度或全市场供给；未找到案例不证明市场空白。",
+    summary: catalogCoverageSummary(),
+    reviews: coverageReviews,
+    cells: dataset.genres.flatMap((genre) =>
+      playStyles.map((style) => {
+        const cell = getCoverageCell(genre.id, style.id);
+        return {
+          genreId: genre.id,
+          playStyleId: style.id,
+          status: cell.status,
+          matches: cell.matches.map((match) => ({
+            gameId: match.game.id,
+            scopeId: match.scopeId,
+            role: match.role,
+          })),
+        };
+      }),
+    ),
+  });
   for (const dimension of dataset.dimensions) {
     const guide = taxonomyDimensions.find(
       (guide) => guide.dimensionId === dimension.id,
@@ -373,6 +417,19 @@ export function createAgentDocuments() {
         ]);
     if (path === "/sources")
       body += section("来源目录", sourceMarkdown(dataset.sources));
+    if (path === "/play-styles")
+      body += section(
+        "核心玩法方向",
+        playStyles.map((style) => link(style.name, `/play-styles/${style.id}`)),
+      );
+    if (path === "/games/coverage")
+      body += section("组合覆盖", [
+        "按同一作用范围匹配传统类型与核心玩法，数量是本站样本，不是搜索需求。",
+        `[组合覆盖JSON](${SITE_URL}/data/v1/coverage.json)`,
+        ...catalogCoverageSummary().byGenre.map(
+          (row) => `${link(row.name, `/types/${row.id}`)}：${row.count} 款`,
+        ),
+      ]);
     if (path === "/copyright")
       body +=
         section(
@@ -422,6 +479,7 @@ export function createAgentDocuments() {
     taxonomyDimensions,
     taxonomyGroups,
     classificationLevels,
+    playStyles,
     mechanicIllustrations: Object.fromEntries(
       dataset.mechanics.map(({ id }) => [id, mechanicIllustration(id)]),
     ),
@@ -437,6 +495,7 @@ export function createAgentDocuments() {
       "dimension",
       "taxonomyGroup",
       "recipe",
+      "playStyle",
     ],
     commonFields: {
       schemaVersion: "导出接口版本",

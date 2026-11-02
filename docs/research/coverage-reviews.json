@@ -1,0 +1,352 @@
+[
+  {
+    "genreId": "traditional-roguelike",
+    "playStyleId": "sports-control",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "traditional roguelike sports game golf hockey turn based dungeon"
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/"
+    ],
+    "note": "对照地牢战斗与体育项目操作，检索未核实同时具备两者核心规则的作品。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "traditional-roguelike",
+    "playStyleId": "social-negotiation",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "traditional roguelike social deduction hidden roles cooperative dungeon"
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/"
+    ],
+    "note": "检索侧重隐藏身份与合作地牢；人物对话本身不等于交涉博弈。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "card-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language deciphering game collectible card battle deckbuilding"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "字母卡片拖放不等于根据手牌和费用出牌；语言学习卡牌也不自动等于陌生语言破译。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "vehicle-driving",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language deciphering puzzle racing driving game language decoding"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重破译语言与玩家控制驾驶方向、线路的组合。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "sports-control",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language deciphering puzzle sports football game language translation"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重陌生语言破译和玩家实际操作运动员或器材。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "incremental-management",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language deciphering puzzle idle incremental game decoding language"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重破译陌生语言与产出再投入升级的持续循环。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "rhythm-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language decipherment game rhythm beat puzzle mysterious language"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重推断语言和按节拍完成判定，不把背景音乐算作节奏操作。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "action-combat",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language decipherment game real time action combat puzzle"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重陌生语言推断与靠时机、位置操作战斗；破译失败受伤不足以证明动作战斗。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "language-puzzle",
+    "playStyleId": "life-simulation",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "language decipherment game farming life simulator linguistic mystery"
+    ],
+    "sourceUrls": [
+      "https://elliptic-flow.itch.io/decipher-quest"
+    ],
+    "note": "检索侧重陌生语言破译与持续安排日常活动、发展生活关系。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "extraction-shooter",
+    "playStyleId": "life-simulation",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "extraction shooter farming life sim extraction combat game"
+    ],
+    "sourceUrls": [
+      "https://www.marauders.game/"
+    ],
+    "note": "检索侧重带风险撤离的射击与持续发展的日常生活，基地或仓库本身不等于生活模拟。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "extraction-shooter",
+    "playStyleId": "rhythm-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "extraction shooter rhythm music beat shooter game"
+    ],
+    "sourceUrls": [
+      "https://www.marauders.game/"
+    ],
+    "note": "节奏射击不自动具备带战利品撤离的循环，检索未核实两者同范围结合。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "extraction-shooter",
+    "playStyleId": "matching-clearing",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "extraction shooter match three puzzle extraction"
+    ],
+    "sourceUrls": [
+      "https://www.marauders.game/"
+    ],
+    "note": "检索侧重带风险撤离的射击与匹配消除规则的结合。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "extraction-shooter",
+    "playStyleId": "sports-control",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "extraction shooter golf sports gameplay survival loot"
+    ],
+    "sourceUrls": [
+      "https://www.marauders.game/"
+    ],
+    "note": "检索侧重撤离射击中直接操作运动员或运动器材完成体育得分。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "extraction-shooter",
+    "playStyleId": "card-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "extraction shooter turn based collectible card deckbuilding extraction game"
+    ],
+    "sourceUrls": [
+      "https://www.marauders.game/"
+    ],
+    "note": "检索侧重撤离射击与根据手牌和费用作决策的卡牌规则。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "tower-defense",
+    "playStyleId": "social-negotiation",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "tower defense social deduction hidden roles cooperative game"
+    ],
+    "sourceUrls": [
+      "https://www.kongregate.com/en/games/torngamedev/kana-seito-defense"
+    ],
+    "note": "检索侧重防线布置与隐藏角色、投票或欺骗；合作建塔不自动等于塔防。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "rhythm-game",
+    "playStyleId": "investigation-deduction",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "rhythm music game investigate mystery evidence deduction gameplay"
+    ],
+    "sourceUrls": [
+      "https://anarch.games/noisz/about.html"
+    ],
+    "note": "悬疑故事背景不足以证明玩家收集核对证据并推断事件。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "rhythm-game",
+    "playStyleId": "card-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "rhythm game card deck building beats combat"
+    ],
+    "sourceUrls": [
+      "https://anarch.games/noisz/about.html"
+    ],
+    "note": "检索侧重节奏判定与有手牌、费用和出牌顺序的卡牌玩法。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "rhythm-game",
+    "playStyleId": "management-production",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "rhythm music game run restaurant business management"
+    ],
+    "sourceUrls": [
+      "https://anarch.games/noisz/about.html"
+    ],
+    "note": "检索侧重节奏判定与持续安排投入、生产、分配；曲目解锁不等同经营。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "rhythm-game",
+    "playStyleId": "spatial-planning",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "rhythm game city building management construction beat timing"
+    ],
+    "sourceUrls": [
+      "https://anarch.games/noisz/about.html"
+    ],
+    "note": "检索侧重节奏判定与承载功能的建筑或设施布局。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "visual-novel",
+    "playStyleId": "sports-control",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "visual novel sports tennis gameplay game narrative"
+    ],
+    "sourceUrls": [
+      "https://amoriem-labs.itch.io/encore"
+    ],
+    "note": "体育社团或比赛剧情不自动等于直接操作运动员或器材。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "factory-automation",
+    "playStyleId": "rhythm-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "factory automation rhythm based music production game"
+    ],
+    "sourceUrls": [
+      "https://gvononestack.itch.io/factorhythm"
+    ],
+    "note": "FactoRHYTHM 要求建造传送带使机器输出符合节奏；公开说明尚未证实玩家输入本身接受节拍判定。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "factory-automation",
+    "playStyleId": "investigation-deduction",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "factory automation language decipher translation puzzle"
+    ],
+    "sourceUrls": [
+      "https://gvononestack.itch.io/factorhythm"
+    ],
+    "note": "检索涉及自动化生产与破译语言；破译语言不必然包含核对证据判断人物或事件。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "factory-automation",
+    "playStyleId": "social-negotiation",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "factory automation social deduction hidden role multiplayer game"
+    ],
+    "sourceUrls": [
+      "https://gvononestack.itch.io/factorhythm"
+    ],
+    "note": "检索侧重自动化生产与隐藏角色、说服或欺骗。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "four-x",
+    "playStyleId": "rhythm-play",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "4x grand strategy rhythm music beat game"
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/3056890/CardwovenEmpires/"
+    ],
+    "note": "检索侧重探索、扩张、开发、征服与按拍判定输入同时构成玩法。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  },
+  {
+    "genreId": "four-x",
+    "playStyleId": "investigation-deduction",
+    "status": "researched_no_examples",
+    "checkedAt": "2026-11-02",
+    "scope": "跨平台、年代不限；本轮只核对本条关键词检索可见结果及所列对照页面，未穷尽独立作品、其他语言或线下资料。",
+    "queries": [
+      "4x strategy game language decipherment alien communication puzzle"
+    ],
+    "sourceUrls": [
+      "https://store.steampowered.com/app/3056890/CardwovenEmpires/"
+    ],
+    "note": "检索涉及 4X 与异星语言破译；外星文字设定本身不证明玩家核对证据推理。 本轮未找到可核实的同范围核心案例，不能据此断定不存在。"
+  }
+]

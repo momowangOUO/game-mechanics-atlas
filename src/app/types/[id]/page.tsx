@@ -100,31 +100,33 @@ export default async function TypePage({
             ["核心组成", genre.requiredMechanics],
             ["常见组成", genre.commonMechanics],
             ["可选组成", genre.optionalMechanics],
-          ].map(([title, ids]) => (
-            <section className="detail-section" key={String(title)}>
-              <h2>{String(title)}</h2>
-              {(ids as string[]).length ? (
-                <div className="type-chips">
-                  {(ids as string[]).map((mechanicId) => {
-                    const mechanic = getMechanic(mechanicId);
-                    return (
-                      <Link
-                        key={mechanicId}
-                        href={`/mechanics/${mechanicId}`}
-                        className="chip"
-                      >
-                        {mechanic?.name} ↗
-                      </Link>
-                    );
-                  })}
-                </div>
-              ) : (
-                <p className="scope-box">
-                  此列表暂无条目。核心组成未列出时，不能据此认定所有游戏都符合该类型。
-                </p>
-              )}
-            </section>
-          ))}
+          ]
+            .filter(([, ids]) => (ids as string[]).length > 0)
+            .map(([title, ids]) => (
+              <section className="detail-section" key={String(title)}>
+                <h2>{String(title)}</h2>
+                {(ids as string[]).length ? (
+                  <div className="type-chips">
+                    {(ids as string[]).map((mechanicId) => {
+                      const mechanic = getMechanic(mechanicId);
+                      return (
+                        <Link
+                          key={mechanicId}
+                          href={`/mechanics/${mechanicId}`}
+                          className="chip"
+                        >
+                          {mechanic?.name} ↗
+                        </Link>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <p className="scope-box">
+                    此列表暂无条目。核心组成未列出时，不能据此认定所有游戏都符合该类型。
+                  </p>
+                )}
+              </section>
+            ))}
           <section className="detail-section">
             <h2>边界与容易混淆的地方</h2>
             <ul className="content-list">
@@ -144,13 +146,13 @@ export default async function TypePage({
       {relatedGames.length > 0 && (
         <>
           <div className="section-head">
-            <h2>典型参照：具体看哪些规则？</h2>
+            <h2>游戏范例 · {relatedGames.length} 款</h2>
           </div>
           <p className="catalog-note">
-            类型标签由本站编辑整理，用于检索；具体机制以案例中的证据和适用范围为准。
+            按模式或系统查看这些游戏如何使用相关机制。
           </p>
           <div className={`case-grid ${styles.references}`}>
-            {relatedGames.slice(0, 6).map((game) => {
+            {relatedGames.map((game) => {
               const ids = [
                 ...genre.requiredMechanics,
                 ...genre.commonMechanics,
@@ -160,7 +162,7 @@ export default async function TypePage({
                 getInstances(game.id, scopeId).filter(
                   (instance) =>
                     ["present", "conditional"].includes(instance.status) &&
-                    ids.includes(instance.mechanicId),
+                    (!ids.length || ids.includes(instance.mechanicId)),
                 );
               const defaultScope = scopes.find(
                 (scope) => scope.id === game.defaultScopeId,
@@ -214,19 +216,6 @@ export default async function TypePage({
               );
             })}
           </div>
-          {relatedGames.length > 6 && (
-            <p className="catalog-note">
-              此处先展示 6 款参照。全部 {relatedGames.length} 款：
-              {relatedGames.slice(6).map((game, index) => (
-                <span key={game.id}>
-                  {index > 0 && "、"}
-                  <Link className="cyan" href={`/games/${game.id}`}>
-                    {game.name}
-                  </Link>
-                </span>
-              ))}
-            </p>
-          )}
         </>
       )}
     </>

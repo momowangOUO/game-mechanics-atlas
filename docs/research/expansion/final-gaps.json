@@ -1,0 +1,1123 @@
+[
+  {
+    "id": "squad",
+    "name": "战术小队 / Squad",
+    "studio": "Offworld",
+    "year": 2015,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "tactical-command",
+      "vehicle-driving"
+    ],
+    "summary": "在大型阵营战中按小队协作，选择装备、运输补给和修建前线工事，用侦察与压制配合完成进攻。",
+    "analysis": "火力除了造成伤害，还会降低敌方还击能力；前线设施又依赖补给，让后勤与侧翼移动共同决定一次交锋能否延续。",
+    "loop": [
+      "加入小队并选择装具",
+      "依据地图与队内通信行动，运输补给并建立阵地",
+      "交火、压制和协同推进，维护前线支持"
+    ],
+    "learning": [
+      "火力若能改变敌方的观察和还击条件，掩护与机动就能形成直接的规则配合。"
+    ],
+    "caveats": [
+      "2015年抢先体验、2020年正式版；新Fireteam是独立PvE任务，本例不将其五人目标混入50对50战场。"
+    ],
+    "resources": [
+      "弹药支持步兵、载具与固定火力",
+      "建造材料投入前线工事和补给设施"
+    ],
+    "progression": [
+      "一次战斗内保留修建的阵地并持续维护",
+      "更换地图后按新战局重新组织，小队协作经验由玩家积累"
+    ],
+    "scopeLabel": "普通50对50多人阵营战",
+    "scopeNotes": "2015年抢先体验、2020年正式版；新Fireteam是独立PvE任务，本例不将其五人目标混入50对50战场。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=393380&l=english&cc=us",
+        "title": "Squad",
+        "publisher": "Steam / Offworld",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.joinsquad.com/archive/squad-update-6-0-release-notes-eb2b4",
+        "title": "Squad Update 6.0 Release Notes",
+        "publisher": "Offworld",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取已发布步兵改版中的画中画瞄具、压制、受伤与团队协作变化；不采用旧版具体压制数值。"
+      },
+      {
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/393380/manuals/Squad_EA-Manual_1_0.pdf",
+        "title": "Squad User Manual, Version 1.0, 13 Dec 2015",
+        "publisher": "Offworld Industries / Squad manual",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已访问并读取原始手册中的发行里程碑和操作目录；只用其中2015年抢先体验记录校核年份，不把早期未完成系统当现行规则。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Squad_(video_game)",
+        "title": "Squad (video game)",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取2015年抢先体验、2020年正式版及当前平台记录；未将未来计划的主机版记作已发布平台。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "通过画中画瞄具及不同武器射击，瞄准与弹道影响命中",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "按阵营可用武器与载具选择适合战术的出战装具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两支五十人阵营在同一战场直接交战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "九人小队及其他小队需要通信、配合机动和火力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "map-navigation",
+        "note": "用地图工具与世界标记报告位置、组织战术和导航",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "投入材料建设机枪、反坦克炮、沙袋等前线设施",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "受压制时作战效率下降，较强火力造成更强且更持久的压制",
+        "source": 1,
+        "evidenceKind": "developer_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/393380/0b19b50aabea356bd8f534fbe7d6db9bd227810a/header.jpg?t=1792423549",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=393380&l=english&cc=us"
+    },
+    "aliases": [
+      "战术小队"
+    ]
+  },
+  {
+    "id": "rainbow-six-siege",
+    "name": "彩虹六号：围攻 / Tom Clancy's Rainbow Six Siege",
+    "studio": "Ubisoft Montreal",
+    "year": 2015,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "tactical-command"
+    ],
+    "summary": "五人队伍轮换进攻与防守，用无人机和监控搜集情报，再以墙体破坏、垂直进攻和独特装置争取爆破目标。",
+    "analysis": "地图的墙面既能防守，也能被改成视线和入口；情报价值会随玩家改变建筑结构而变化。",
+    "loop": [
+      "按攻守方组织干员与计划",
+      "布防或侦察，判断敌人位置和进入路线",
+      "破障交火并完成爆破目标，再轮换攻守"
+    ],
+    "learning": [
+      "可改造的战场需要与侦察工具一起设计，让情报能指导玩家真正改变路线。"
+    ],
+    "caveats": [
+      "不把新增6对6、训练或节日活动规则混入此例；赛事手册仅补证血量、伤害和爆破参数存在，不将其中数值写成所有模式通用设置。"
+    ],
+    "resources": [
+      "无人机、监控与干员装置提供情报和战术手段",
+      "可强化的墙体、入口与可破坏表面决定安全路线"
+    ],
+    "progression": [
+      "对局内攻守轮换并分别结算回合",
+      "长期解锁内容与具体免费权限依现行版本，不能代替战术执行"
+    ],
+    "scopeLabel": "普通5对5攻防；以爆破为目标示例",
+    "scopeNotes": "不把新增6对6、训练或节日活动规则混入此例；赛事手册仅补证血量、伤害和爆破参数存在，不将其中数值写成所有模式通用设置。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=359550&l=english&cc=us",
+        "title": "Tom Clancy's Rainbow Six Siege",
+        "publisher": "Steam / Ubisoft Montreal",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://staticctf.ubisoft.com/177v1kh0db6l/1XNmcTeiAklhke8ZakXGQP/175376ab02833893e1cee4d770f4f82b/Rainbow_Six_Siege_Rulebook_2025.pdf",
+        "title": "Rainbow Six Siege Rulebook 2025",
+        "publisher": "Nerd Street / Ubisoft hosted rulebook",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取赛事手册的射击、生命和受伤状态、爆破及阶段设置；赛事的具体参数仅属于其赛事范围。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "用枪械瞄准射击，掩体、入口与射线位置决定交火机会",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "五名进攻方与五名防守方在同一回合对抗",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "攻方以无人机侦察并突破，守方强化入口与墙体、设置装置抵御进攻",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "破坏墙面和楼板，创造原本没有的入口与射线",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "scouting-tracking",
+        "note": "通过无人机和监控取得敌人位置及防御布置的信息",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队员协调侦察、破障和进攻，或协同维护防守位置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "干员有生命与受伤状态，敌方射击和伤害会改变其是否还能作战",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/555b5051d332c5f6b86f88ba5dfd80404dc91aaa/header_alt_assets_27.jpg?t=1792001976",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=359550&l=english&cc=us"
+    },
+    "aliases": [
+      "彩虹六号：围攻"
+    ]
+  },
+  {
+    "id": "insurgency-sandstorm",
+    "name": "叛乱：沙漠风暴 / Insurgency: Sandstorm",
+    "studio": "New World Interactive",
+    "year": 2018,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "tactical-command",
+      "buildcrafting"
+    ],
+    "summary": "在高伤害的团队交火中选择职业与装备，以有限补给点和携带重量换取火力、弹药与机动，再协同夺取目标。",
+    "analysis": "更强的装备同时占用预算和负重，角色分工又限制可用武器；准备界面的取舍会直接改变前线行动能力。",
+    "loop": [
+      "选择职业并分配装备预算",
+      "沿战线配合交火、夺取目标",
+      "按模式目标结算，重新安排下一次出战"
+    ],
+    "learning": [
+      "装备预算与重量若施加不同限制，可以让火力和机动之间的取舍更具体。"
+    ],
+    "caveats": [
+      "合作Checkpoint、Outpost及限时修改器有不同补给和重生规则；本例不把一种模式的固定补给点数推广到所有模式。"
+    ],
+    "resources": [
+      "补给点用于武器、配件和装备",
+      "弹药在战斗中有限",
+      "装备重量影响移动与耐力"
+    ],
+    "progression": [
+      "人物有长期外观和等级进度",
+      "普通PvP装具主要受当局职业、预算和规则约束"
+    ],
+    "scopeLabel": "普通目标制PvP，采用Push与Frontline的共有装具规则",
+    "scopeNotes": "合作Checkpoint、Outpost及限时修改器有不同补给和重生规则；本例不把一种模式的固定补给点数推广到所有模式。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=581320&l=english&cc=us",
+        "title": "Insurgency: Sandstorm",
+        "publisher": "Steam / New World Interactive",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Insurgency:_Sandstorm",
+        "title": "Insurgency: Sandstorm",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取职业、补给点、负重、火力支援及不同PvP/合作模式规则；已区分被移除的Competitive等旧模式。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "在没有准星辅助的常规交火中瞄准射击，弹道与精度影响命中",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "枪械造成高致命伤害，少量命中就可能结束一次交火",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "Security与Insurgents两队直接争夺目标并交战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "步枪兵、爆破手、机枪手、观察员与指挥官拥有不同装备和职责",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "出战前选武器、配件、护甲、携弹具与其他装备",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "有限补给点无法覆盖所有武器和配件，必须在装备用途间取舍",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "所带装备累加重量，较高重量降低耐力与移动速度",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "area-control",
+        "note": "在Push与Frontline中依次占领目标，推进到敌方弹药库",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581320/header_alt_assets_3.jpg?t=1791994390",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=581320&l=english&cc=us"
+    },
+    "aliases": [
+      "叛乱：沙漠风暴"
+    ]
+  },
+  {
+    "id": "hell-let-loose",
+    "name": "人间地狱 / Hell Let Loose",
+    "studio": "Black Matter / Expression Games / Cover 6 Studios",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "tactical-command",
+      "vehicle-driving"
+    ],
+    "summary": "在五十对五十的二战战场上担任步兵、侦察、装甲或指挥角色，调配物资、建防线并夺取战略分区。",
+    "analysis": "占领前线不只是击败眼前敌人，还需要资源和部署让队伍持续出现在合适的位置；个人职责连接到整支队伍的推进。",
+    "loop": [
+      "选择单位和战斗职责",
+      "沿战略分区进攻防守，调配载具与支援",
+      "占领并守住关键区域，继续推进全队战线"
+    ],
+    "learning": [
+      "把大型战场拆成清楚的职责与占领目标，可以让个人操作对应到全队的持续推进。"
+    ],
+    "caveats": [
+      "2019年抢先体验、2021年正式版；原开发Black Matter与后续Expression Games明确区分，不混入另一款Hell Let Loose: Vietnam。"
+    ],
+    "resources": [
+      "资源和补给用于支援、轰炸、载具与阵地",
+      "角色装具随职责不同"
+    ],
+    "progression": [
+      "玩家等级和各职责等级分别提高",
+      "职责成长开放制服、装具和外观内容，战场部署按局重建"
+    ],
+    "scopeLabel": "普通Warfare与Offensive战场",
+    "scopeNotes": "2019年抢先体验、2021年正式版；原开发Black Matter与后续Expression Games明确区分，不混入另一款Hell Let Loose: Vietnam。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=686810&l=english&cc=us",
+        "title": "Hell Let Loose",
+        "publisher": "Steam / Expression Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hell_Let_Loose",
+        "title": "Hell Let Loose",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取2019年抢先体验、2021年正式版、原开发与后续团队移交，以及Warfare和Offensive的区域控制结构。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "aimed-launch",
+        "note": "使用有弹道与后坐力差异的枪械、反坦克炮和火炮射击",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两支五十人队伍围绕同一战场目标直接对抗",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "军官、军医、侦察、坦克成员与指挥官有不同武器和装备职责",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "area-control",
+        "note": "地图分成可占领的战略分区，双方必须组织进攻与防守",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "直接操纵坦克及其他二战载具参与合成作战",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "在战场修建工事，强化己方防御位置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "有限物资用于轰炸、载具和支援能力，指挥层需要选择使用方向",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "玩家另有整体等级进度，与单一职责的等级区分",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686810/7655099ca004b09198b83713ad0d8215b98f7d5f/header_alt_assets_6.jpg?t=1790181050",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=686810&l=english&cc=us"
+    },
+    "aliases": [
+      "人间地狱"
+    ]
+  },
+  {
+    "id": "wreckfest",
+    "name": "撞车嘉年华 / Wreckfest",
+    "studio": "Bugbear",
+    "year": 2013,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch",
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "vehicle-sport",
+      "racing"
+    ],
+    "playStyleIds": [
+      "vehicle-driving",
+      "buildcrafting"
+    ],
+    "summary": "为接触式竞速或撞车竞技配置车体和性能部件，用操纵、碰撞与车辆耐久争取冲线或生存到最后。",
+    "analysis": "重装甲能提高存活，却增加重量并改变操控；防守和进攻的取舍在改车与比赛中连续发生。",
+    "loop": [
+      "选赛事并配置车辆",
+      "竞速中争夺位置，或在竞技场制造有效碰撞",
+      "取得经验与赛事进展，解锁新车和升级"
+    ],
+    "learning": [
+      "把防护提升明确转为操控代价，可以让改装选择在驾驶手感中得到反馈。"
+    ],
+    "caveats": [
+      "2013年以Next Car Game公开早期版本，2014年上Steam，2018年正式版；不是Wreckfest 2，也不将模组自造载具计入基础车型。"
+    ],
+    "resources": [
+      "车体强度承担碰撞损耗",
+      "装甲、发动机部件与重量共同影响性能"
+    ],
+    "progression": [
+      "职业生涯取得经验并开放车辆与升级",
+      "单场比赛的破损不等于角色永久死亡"
+    ],
+    "scopeLabel": "正式版职业生涯与普通多人赛事",
+    "scopeNotes": "2013年以Next Car Game公开早期版本，2014年上Steam，2018年正式版；不是Wreckfest 2，也不将模组自造载具计入基础车型。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=228380&l=english&cc=us",
+        "title": "Wreckfest",
+        "publisher": "Steam / Bugbear",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wreckfest",
+        "title": "Wreckfest",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取车辆受损影响操控、赛事目标及2013年官网早期发行、2014年Steam抢先体验和2018年正式版的区别。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "控制车辆转向、加速和制动，争取竞速名次或竞技场生存",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "用碰撞、挤压和顶撞影响对方车体运动，使其偏离线路或撞上障碍",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "按竞速或撞车竞技的目标挑选车辆及其装甲和性能配置",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "为已有车辆安装发动机性能部件或加固装甲，改变其属性",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "在线赛事中可与其他玩家竞速并撞毁彼此车辆",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "推进职业锦标赛并获得经验后，开放更多车型和升级",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/header.jpg?t=1742490584",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=228380&l=english&cc=us"
+    },
+    "aliases": [
+      "撞车嘉年华"
+    ]
+  },
+  {
+    "id": "burnout-paradise",
+    "name": "火爆狂飙：天堂 / Burnout Paradise",
+    "studio": "Criterion Games / Stellar Entertainment（Remastered）",
+    "year": 2008,
+    "platforms": [
+      "pc",
+      "playstation",
+      "xbox",
+      "switch"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "vehicle-sport",
+      "racing"
+    ],
+    "playStyleIds": [
+      "vehicle-driving",
+      "exploration"
+    ],
+    "summary": "在天堂市自行选择路线参加竞速、撞击和特技赛事，用危险驾驶补充加速，并解锁更多车辆与街道记录。",
+    "analysis": "不固定赛道让城市认路成为驾驶能力的一部分；同一条近路既可能赢得时间，也可能破坏特技连段或车辆状态。",
+    "loop": [
+      "探索街道并在路口选择赛事",
+      "规划路线，结合加速、特技和撞击完成目标",
+      "升级驾照、取得新车，再挑战其他街道和赛事"
+    ],
+    "learning": [
+      "开放道路可以承载多种驾驶目标，但需要明确区分路线选择、目标分和车辆损伤各自的结算。"
+    ],
+    "caveats": [
+      "原作2008年发行；本例按Remastered手册，重制与移植不重复计数。摩托、Party和警匪等附加模式仅作版本边界，不把它们的独有条件混成汽车生涯通则。"
+    ],
+    "resources": [
+      "加速槽可由危险驾驶补回",
+      "车辆耐久影响撞击赛事能否继续"
+    ],
+    "progression": [
+      "赢得赛事积累驾照进度",
+      "收集发现记录与新车辆持续保留，后续可回城选择挑战"
+    ],
+    "scopeLabel": "Remastered普通汽车生涯与在线赛事",
+    "scopeNotes": "原作2008年发行；本例按Remastered手册，重制与移植不重复计数。摩托、Party和警匪等附加模式仅作版本边界，不把它们的独有条件混成汽车生涯通则。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1238080&l=english&cc=us",
+        "title": "Burnout™ Paradise Remastered",
+        "publisher": "Steam / Stellar Entertainment、Criterion Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://eaassets-a.akamaihd.net/eahelp/manuals/bpr-pc-en.pdf",
+        "title": "Burnout Paradise Remastered PC Manual",
+        "publisher": "Electronic Arts / Criterion Games",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方手册的驾驶、城市地图、车辆损伤、Stunt Run连段和分数目标、Discovery及驾照解锁；没有将普通连续攻击套成连击计数。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Burnout_Paradise",
+        "title": "Burnout Paradise",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已核对2008年原作、2009年PC版、2018年Remastered与后续移植的年份及开发者；本例不宣称原版旧在线服务仍可用。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "直接输入转向、加速、制动、手刹和加速槽控制车辆",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "map-navigation",
+        "note": "用城市地图、路口指示和路牌判断路线，普通点到点赛事不限定唯一赛道",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "在线可与其他玩家竞速或以撞击对抗",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "Road Rage与Marked Man中累计伤害进入危险状态，再次严重撞击会输掉赛事；维修站可恢复",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "选择Road Rage或Marked Man等计入累积车辆损伤的赛事"
+      },
+      {
+        "id": "score-threshold",
+        "note": "Stunt Run需要在时限内用特技分达到目标分数",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "选择Stunt Run特技赛事"
+      },
+      {
+        "id": "combo-chain",
+        "note": "Super Jump、撞广告牌和翻滚等特技增加连段倍率；倒计时内接续特技或加速维持连段，超时后结算连段分数",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "conditional",
+        "condition": "选择Stunt Run特技赛事"
+      },
+      {
+        "id": "collectible-catalog",
+        "note": "Discovery持续记录发现的广告牌、跳台、可破坏路障和服务地点",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成要求的赛事或发现收集目标，可开放新的车辆",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238080/header.jpg?t=1779987578",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1238080&l=english&cc=us"
+    },
+    "aliases": [
+      "火爆狂飙：天堂"
+    ]
+  },
+  {
+    "id": "eville",
+    "name": "恶灵村 / Eville",
+    "studio": "VestGames",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "social-deduction"
+    ],
+    "playStyleIds": [
+      "social-negotiation",
+      "investigation-deduction"
+    ],
+    "summary": "在村落昼夜里以随机职责调查或制造谋杀，用角色技能、物品和证词判断同伴，再通过投票处置嫌疑人。",
+    "analysis": "调查手段能留下具体可争辩的信息，凶手又能夜间移动、偷窃和诅咒，使交流围绕实际行动的后果展开。",
+    "loop": [
+      "获得秘密职责与阵营",
+      "白天调查、交易和讨论，夜间使用角色能力行动",
+      "投票处置嫌疑人，按阵营条件争取胜利"
+    ],
+    "learning": [
+      "社交推理若提供可追溯的行动工具，可以让发言争论有明确的信息来源。"
+    ],
+    "caveats": [
+      "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。"
+    ],
+    "resources": [
+      "药剂可保护、治疗或毒害角色",
+      "商店物品用于自保、规避陷阱和收集情报"
+    ],
+    "progression": [
+      "每次会话重新随机分配职责",
+      "死亡后可成为幽灵，以新的能力影响仍活着的玩家"
+    ],
+    "scopeLabel": "普通村民与共谋者会话",
+    "scopeNotes": "夜间能力依职责而异，不是每名玩家都能自由谋杀或与幽灵交谈；角色装饰不是主要玩法方向。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us",
+        "title": "Eville",
+        "publisher": "Steam / VestGames",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "hidden-role",
+        "note": "村民与共谋者的阵营不向所有玩家公开，双方需要判断谁可信",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "identity-voting",
+        "note": "白天可召开会议并投票处决被怀疑的玩家",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "侦探、陷阱师、先知与灵媒等职责具有不同调查或行动能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "每场按人数分配随机职责，不能固定记住某人的身份",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "day-night-cycle",
+        "note": "白天讨论和判断嫌疑，夜晚允许共谋者潜入住处等职责行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "barter-trade",
+        "note": "向商贩或黑市购买情报与保护类物品",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "scouting-tracking",
+        "note": "特定职责可以看脚印、放置观察结界等，定位其他玩家的行动",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "本场职责提供脚印或观察结界等调查能力"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1220170/header.jpg?t=1773308897",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1220170&l=english&cc=us"
+    },
+    "aliases": [
+      "恶灵村"
+    ]
+  },
+  {
+    "id": "untrusted",
+    "name": "Untrusted",
+    "studio": "playuntrusted.com",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "social-deduction"
+    ],
+    "playStyleIds": [
+      "social-negotiation",
+      "investigation-deduction",
+      "tactical-command"
+    ],
+    "summary": "在黑客团队中隐藏身份、记录行动并交叉核对日志，按日夜选择技能，一边突破网络一边找出潜伏特工。",
+    "analysis": "日志能被伪造，阵营看到的网络范围又不同；玩家必须同时验证人的说法和机器上的记录。",
+    "loop": [
+      "按秘密阵营与职业取得能力",
+      "日夜各选行动，黑入节点或调查人物",
+      "核对日志并投票，争取目标节点或阵营清除胜利"
+    ],
+    "learning": [
+      "允许伪造的记录需要配合可交叉检查的时间与人物信息，才能让欺骗保留推理空间。"
+    ],
+    "caveats": [
+      "不是编写真实攻击程序的教学工具；游戏以预设职业技能结算。中立职业还有独立胜利条件，不能简单归入两大阵营。"
+    ],
+    "resources": [
+      "每个日夜只有一次技能行动",
+      "行动期限限制黑客团队推进",
+      "节点日志与个人日志是判断身份的证据"
+    ],
+    "progression": [
+      "一局内节点被逐步攻破，网络权限随之扩大",
+      "新局按新身份和网络拓扑重新展开；头像解锁是外观进度"
+    ],
+    "scopeLabel": "普通NETSEC与AGENT多人行动",
+    "scopeNotes": "不是编写真实攻击程序的教学工具；游戏以预设职业技能结算。中立职业还有独立胜利条件，不能简单归入两大阵营。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=1502660&l=english&cc=us",
+        "title": "Untrusted",
+        "publisher": "Steam / playuntrusted.com",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.playuntrusted.com/manual/basic-rules/",
+        "title": "Basic Rules",
+        "publisher": "playuntrusted.com",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已实际读取官网规则全文，核对日夜单行动预算、投票、节点视野、可伪造连接日志与阵营共享目标；未进行游戏试玩。"
+      },
+      {
+        "url": "https://www.playuntrusted.com/manual/factions/",
+        "title": "Factions",
+        "publisher": "playuntrusted.com",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取NETSEC、AGENT与中立职业的胜利条件，以及Agent Leader转化内鬼的权限边界。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "hidden-role",
+        "note": "特工潜伏在黑客队伍中，须隐藏身份以阻止NETSEC",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "黑入、网络调查和现场调查职业有不同技能及成功能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "clue-journal",
+        "note": "玩家保存Personal Log，结合节点连接时间和玩家聊天历史比对说法",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "round-phases",
+        "note": "每个完整日夜循环分白天与夜晚，常见行动分别围绕网络节点和人物调查",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "每个白天和夜晚只可提交一项职业行动，行动天数也有限",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "identity-voting",
+        "note": "白天和夜晚均可投票，决定将一名玩家移出行动",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "fog-of-war",
+        "note": "NETSEC开始只见入口节点，攻破后逐步看见相邻节点；AGENT开局掌握完整拓扑",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "NETSEC成员共同推进到指定目标节点的root access，阵营目标完成时成员共享胜利",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1502660/header.jpg?t=1783943991",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=1502660&l=english&cc=us"
+    },
+    "aliases": []
+  },
+  {
+    "id": "dungeon-defenders",
+    "name": "地牢守护者 / Dungeon Defenders",
+    "studio": "Trendy Entertainment / Chromatic Games",
+    "year": 2010,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux",
+      "playstation",
+      "xbox",
+      "ios",
+      "android"
+    ],
+    "mobileOrigin": true,
+    "genreIds": [
+      "tower-defense",
+      "action-rpg"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "aiming-shooting",
+      "spatial-planning",
+      "buildcrafting"
+    ],
+    "summary": "选择有独特防御建筑与攻击方式的英雄，布置塔与陷阱后亲自迎敌，以掉落和经验强化下一波防线。",
+    "analysis": "英雄装备和防御设施共同消耗成长投入，使角色构筑与场地布置互相补充，玩家要判断哪里需要自己出手。",
+    "loop": [
+      "选择英雄并配置装备、防御设施",
+      "直接战斗并守住Eternia水晶",
+      "取得掉落、经验和法力，强化英雄及装备继续波次"
+    ],
+    "learning": [
+      "让玩家既能建设又能亲自补位，可以把局部防线问题转成清楚的即时行动选择。"
+    ],
+    "caveats": [
+      "2010年先有移动版First Wave，本例按2011电脑/主机版核心战役；不混入Eternity、Awakened、Redux或续作规则，PvP Deathmatch也不在此范围。"
+    ],
+    "resources": [
+      "储备法力用于强化装备或与其他玩家交易",
+      "敌人掉落金钱和装备，宠物也可培养和交易"
+    ],
+    "progression": [
+      "击杀与完成波次取得经验，提升英雄和能力",
+      "装备与宠物可强化，并储存在角色的物品箱与酒馆"
+    ],
+    "scopeLabel": "2011电脑版普通战役防守",
+    "scopeNotes": "2010年先有移动版First Wave，本例按2011电脑/主机版核心战役；不混入Eternity、Awakened、Redux或续作规则，PvP Deathmatch也不在此范围。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/api/appdetails?appids=65800&l=english&cc=us",
+        "title": "Dungeon Defenders",
+        "publisher": "Steam / Chromatic Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取官方商店数据中的游戏说明、开发者、发行日期、桌面平台及图像链接；机制依据限于说明正文，未进行游戏试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dungeon_Defenders",
+        "title": "Dungeon Defenders",
+        "publisher": "Wikipedia contributors",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "已读取2010年移动初版与2011年PC/主机发行的关系，以及普通战役的水晶保护、波次、建设和英雄成长；不把后续独立版本重复收录。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "选择基础职业，并在出战前整理英雄的武器、防具等装具",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "不同职业拥有不同攻击、防御塔和技能树，在合作中承担不同职责",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败敌人后取得金钱和装备，也能遇到首领特殊掉落",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "击杀和完成波次取得角色经验，用于提升英雄和能力",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "把储备法力投入已有装备，强化其属性",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四人在线或分屏合作，结合职业优缺点守住水晶",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "队友共同维护同一批Eternia水晶，水晶被摧毁会使该关失败",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/65800/header.jpg?t=1792705345",
+      "sourceUrl": "https://store.steampowered.com/api/appdetails?appids=65800&l=english&cc=us"
+    },
+    "aliases": [
+      "地牢守护者"
+    ]
+  }
+]

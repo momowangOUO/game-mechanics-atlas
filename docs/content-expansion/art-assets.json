@@ -1,0 +1,78 @@
+{
+  "tool": "Codex built-in image_gen",
+  "styleReferences": [
+    "public/art/comics/jump.webp",
+    "public/art/comics/direct-movement.webp",
+    "public/art/chibi-guide.webp"
+  ],
+  "review": "首版对话与消除漫画因人物比例和上色偏离被否决；对话重画、匹配消除重画并修正第二格的匹配状态后采用。",
+  "assets": [
+    {
+      "id": "dialogue-choice",
+      "kind": "mechanics",
+      "file": "public/art/mechanics/dialogue-choice.webp",
+      "sha256": "dec5d3b901ad6fb6b3e86e0cd00d8888c893c64e44479a58b9e543a3c133d80a"
+    },
+    {
+      "id": "dialogue-choice",
+      "kind": "comics",
+      "file": "public/art/comics/dialogue-choice.webp",
+      "sha256": "76cb80ddea93f2f8966b5bc76fde706abbfdc05ec488a1a98535a7f0772e5455"
+    },
+    {
+      "id": "match-removal",
+      "kind": "mechanics",
+      "file": "public/art/mechanics/match-removal.webp",
+      "sha256": "aeaaaf6161d1adfb6d05a29415c620429eee2d2e4442af33c32972aed0af178f"
+    },
+    {
+      "id": "match-removal",
+      "kind": "comics",
+      "file": "public/art/comics/match-removal.webp",
+      "sha256": "591aa2ff270c769f7b3828da9642e04e24e465bf772ac5534a49e0c0d45d0dba"
+    },
+    {
+      "id": "keyword-search",
+      "kind": "mechanics",
+      "file": "public/art/mechanics/keyword-search.webp",
+      "sha256": "05744938188add93d42ad28c0acf89b9c8a1a4e8bf6da6e2f6d0181253e444a6"
+    },
+    {
+      "id": "keyword-search",
+      "kind": "comics",
+      "file": "public/art/comics/keyword-search.webp",
+      "sha256": "18c6110549f625b9a899577fcfde054f6d91bf12c4e6fac9debc4a4e0d4a02e3"
+    },
+    {
+      "id": "character-experience",
+      "kind": "mechanics",
+      "file": "public/art/mechanics/character-experience.webp",
+      "sha256": "6a104fcc93dc4e41857df294d7b25c80f1ce36be5104707e06a81f77d67a2aa7"
+    },
+    {
+      "id": "character-experience",
+      "kind": "comics",
+      "file": "public/art/comics/character-experience.webp",
+      "sha256": "6712fc176f1e4b421e77674a9bb84b41d031f1019f122ccc4100b3eb5571a001"
+    },
+    {
+      "id": "match-charging",
+      "kind": "mechanics",
+      "file": "public/art/mechanics/match-charging.webp",
+      "sha256": "928a266eecc1f6794c5330d454c6248343a2eec82448b1a4cf53a1ba2e053194"
+    },
+    {
+      "id": "match-charging",
+      "kind": "comics",
+      "file": "public/art/comics/match-charging.webp",
+      "sha256": "182e2a81049cab99ff9c4b491c89be6a1ee476250a6cf7cc8697753bb747bad3"
+    },
+    {
+      "id": "dialogue-options",
+      "kind": "taxonomy-groups",
+      "file": "public/art/taxonomy-groups/dialogue-options.webp",
+      "sha256": "dab7214792ff2abf4f98a0b7d1c7e13606cfaf7fdc26620d5b940edf56c802d4"
+    }
+  ],
+  "productionBrief": "以原有跳跃、直接移动漫画为参考，保持Q版橙发绿披风旅人与黑长发紫蝴蝶结RIN，粗轮廓线、分块阴影、暖色手绘石木背景。场景按情境、操作、结果展开，图内不生成中文说明。"
+}

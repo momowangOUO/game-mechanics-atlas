@@ -34,6 +34,10 @@ export const GameSchema = z.object({
   analysis:text,factNotes:texts,scopeNotes:text,coreLoop:texts,learning:texts,caveats:texts,sourceIds:texts,
   defaultScopeId:text,genreIds:texts,corePlayTags:texts,resourceNotes:texts,progressionNotes:texts,
   metadataNote:text,accent:text.optional(),symbol:text.optional(),aliases:texts.optional(),
+  platforms:texts.optional(),originalReleaseYear:z.number().int().min(1950).max(2100).optional(),mobileOrigin:z.boolean().optional(),
+  playStyleIds:texts.optional(),
+  genreAssignments:z.array(z.object({genreId:text,scopeId:text,sourceIds:texts,rationale:text}).strict()).optional(),
+  playStyleAssignments:z.array(z.object({playStyleId:text,scopeId:text,role:z.enum(['primary','supporting']),sourceIds:texts,rationale:text}).strict()).optional(),
 }).strict();
 export type Game = z.infer<typeof GameSchema>;
 export const MechanicInstanceSchema = z.object({
@@ -50,6 +54,7 @@ export const MechanicInstanceSchema = z.object({
 export type MechanicInstance = z.infer<typeof MechanicInstanceSchema>;
 export const CompositeGenreSchema = z.object({
   id:text,name:text,definition:text,requiredMechanics:texts,commonMechanics:texts,optionalMechanics:texts,boundaries:texts,
+  parentGenreIds:texts.optional(),
 }).strict();
 export type CompositeGenre = z.infer<typeof CompositeGenreSchema>;
 export const MechanicRelationshipSchema = z.object({

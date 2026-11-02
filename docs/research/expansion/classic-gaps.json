@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "mortal-kombat-1992",
+    "name": "真人快打 / Mortal Kombat",
+    "studio": "Midway",
+    "year": 1992,
+    "platforms": [
+      "arcade",
+      "nintendo-legacy",
+      "handheld",
+      "pc",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "fighting"
+    ],
+    "playStyleIds": [
+      "action-combat"
+    ],
+    "summary": "选择格斗家进行限时一对一对战，通过拳脚和特殊技赢下回合。",
+    "analysis": "独立防御按钮使角色可以原地抵挡，但普通招式仍会造成少量伤害，防守并非没有代价。",
+    "loop": [
+      "选择角色并观察对手",
+      "调整距离，攻击或防御",
+      "赢下两个回合并继续面对下一个对手"
+    ],
+    "learning": [
+      "为安全防守设置清晰代价，可以保留反击机会，也避免完全消除进攻压力。"
+    ],
+    "caveats": [
+      "以1992年街机原作为主；移植版的表现和内容可能不同。"
+    ],
+    "resources": [
+      "生命槽、剩余时间和角色招式"
+    ],
+    "progression": [
+      "两回合获胜取得比赛胜利；单人模式继续挑战后续对手。"
+    ],
+    "scopeLabel": "街机原版对战",
+    "scopeNotes": "终结技发生在对手已被击败后。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mortal_Kombat_(1992_video_game)?useskin=vector",
+        "title": "Mortal Kombat (1992 video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "使用八方向摇杆调整格斗家的位置。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "玩家使用高低拳脚、扫腿和上勾拳等近身攻击。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "受击会减少生命，先耗尽对手生命或时间结束时生命更多者获胜。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "回合计时持续运行，时间耗尽时比较剩余生命。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "第二名玩家可加入单人游戏并与当前玩家对战。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开战前选择可玩角色，各角色具有不同特殊招式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/33/Mortal_Kombat_cover.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mortal_Kombat_(1992_video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "marvel-vs-capcom-2",
+    "name": "漫威对卡普空 2 / Marvel vs. Capcom 2",
+    "studio": "Capcom",
+    "year": 2000,
+    "platforms": [
+      "arcade",
+      "other",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "fighting"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "buildcrafting"
+    ],
+    "summary": "组建三人格斗队，切换角色并呼叫队友支援。",
+    "analysis": "场下队友缓慢恢复生命，但召唤支援时也会受击，因此切换既影响恢复也影响风险。",
+    "loop": [
+      "选择三名角色和支援方式",
+      "对战中切换角色并累积超必杀槽",
+      "使用支援或超必杀，击败对方整队"
+    ],
+    "learning": [
+      "让替补角色同时承担恢复与支援风险，可以让队伍配置影响战斗节奏。"
+    ],
+    "caveats": [
+      "以2000年街机团队对战为主；家用版本的角色解锁方式不同。"
+    ],
+    "resources": [
+      "三名角色生命槽、支援能力与超必杀槽"
+    ],
+    "progression": [
+      "整队生命耗尽即告负；街机版另有角色解锁进度。"
+    ],
+    "scopeLabel": "街机团队对战",
+    "scopeNotes": "不把家用版点数商店当作街机原版规则。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marvel_vs._Capcom_2:_New_Age_of_Heroes?useskin=vector",
+        "title": "Marvel vs. Capcom 2: New Age of Heroes - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "每队选择三名角色，角色各有不同支援动作。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "三名角色生命全部耗尽时队伍失败，场下角色缓慢恢复生命。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "前台角色使用近身攻击和特殊招式交战。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "造成或承受伤害会积累超必杀槽，用于发动强力招式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "对战模式允许两名玩家各自操控队伍竞争。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "双方角色与计时器在实时比赛中持续推进。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/19/MVC2_Arcade_Flyer.jpg/250px-MVC2_Arcade_Flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Marvel_vs._Capcom_2:_New_Age_of_Heroes?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "killer-instinct-1994",
+    "name": "杀手本能 / Killer Instinct",
+    "studio": "Rare",
+    "year": 1994,
+    "platforms": [
+      "arcade",
+      "nintendo-legacy",
+      "handheld",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "fighting"
+    ],
+    "playStyleIds": [
+      "action-combat"
+    ],
+    "summary": "选择角色进行一对一格斗，用连击和破连击耗尽对手的双层生命。",
+    "analysis": "两层生命在同一场战斗连续消耗，中间不会恢复，迫使玩家把资源管理贯穿整场比赛。",
+    "loop": [
+      "选择角色并接近对手",
+      "连接自动连击或使用破连击反制",
+      "耗尽对手两层生命赢得比赛"
+    ],
+    "learning": [
+      "让回合间不自动恢复生命，可以改变玩家对早期损失的判断。"
+    ],
+    "caveats": [
+      "以1994年街机版基本对战为主；后续移植版可能有不同模式。"
+    ],
+    "resources": [
+      "两层生命槽与角色招式"
+    ],
+    "progression": [
+      "耗尽对手两层生命后获胜。"
+    ],
+    "scopeLabel": "街机原版对战",
+    "scopeNotes": "破连击只能在对手连击的特定阶段发动。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Killer_Instinct_(1994_video_game)?useskin=vector",
+        "title": "Killer Instinct (1994 video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制角色在对战场地中移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "双方使用角色招式进行近身攻击。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "角色拥有两层生命槽，耗尽两层即失败且中间不恢复。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家可以进行一对一格斗对抗。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "双方在同一场格斗中实时发起攻击和反制。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开战前选择不同格斗家，决定本场可使用的角色招式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d7/Killer_Instinct_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Killer_Instinct_(1994_video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "punch-out-nes-1987",
+    "name": "拳无虚发 / Punch-Out!!",
+    "studio": "Nintendo R&D3",
+    "year": 1987,
+    "platforms": [
+      "nintendo-legacy"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sports",
+      "fighting"
+    ],
+    "playStyleIds": [
+      "sports-control",
+      "action-combat"
+    ],
+    "summary": "控制小麦克闪避和反击对手，一路挑战拳击排名。",
+    "analysis": "反击时机可以获得星星用于强力上勾拳，而攻击落空或挨打会消耗心数，鼓励先观察对手。",
+    "loop": [
+      "观察对手动作并闪避",
+      "抓住时机反击取得星星",
+      "使用上勾拳并通过各级拳击赛"
+    ],
+    "learning": [
+      "把强力动作的资源奖励交给准确反击，可以让观察成为进攻的一部分。"
+    ],
+    "caveats": [
+      "以NES版基础规则为主；最终对手因发行版本不同而变化。"
+    ],
+    "resources": [
+      "心数、星星、回合时间和击倒次数"
+    ],
+    "progression": [
+      "输掉特定比赛可能降低排名，多次失败会结束游戏。"
+    ],
+    "scopeLabel": "NES单人拳击",
+    "scopeNotes": "不同版本最终对手为泰森或虚构的 Mr. Dream。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Punch-Out%21%21_(1987_video_game)?useskin=vector",
+        "title": "Punch-Out!! (1987 video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "melee-attack",
+        "note": "玩家使用左右拳和消耗星星的强力上勾拳。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "玩家主动向左或向右闪避来拳。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "在特定时机反击对手可获得星星，用于发动上勾拳。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "心数耗尽后角色进入疲劳状态，暂时不能进攻，但仍可防御和闪避。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "score-threshold",
+        "note": "部分比赛在三回合结束时依据击拳分数是否达标判定胜负。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "conditional",
+        "condition": "仅适用于允许以点数判胜的比赛"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "赢得各等级冠军后可进入最终梦幻赛。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c8/Mike_Tyson%27s_Punch-Out%21%21_NES_Box.jpg/250px-Mike_Tyson%27s_Punch-Out%21%21_NES_Box.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punch-Out%21%21_(1987_video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "mario-kart-64",
+    "name": "马力欧卡丁车 64 / Mario Kart 64",
+    "studio": "Nintendo EAD",
+    "year": 1996,
+    "platforms": [
+      "nintendo-legacy"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "racing",
+      "vehicle-sport"
+    ],
+    "playStyleIds": [
+      "vehicle-driving"
+    ],
+    "summary": "驾驶卡丁车竞速，利用漂移、随机道具和赛道捷径争取名次。",
+    "analysis": "随机道具让竞争者能改变彼此的路线与速度，漂移和角色重量又保留了驾驶方面的选择。",
+    "loop": [
+      "选择角色、赛道和发动机等级",
+      "驾驶、漂移并使用道具",
+      "完成杯赛或与其他玩家对抗"
+    ],
+    "learning": [
+      "让道具和驾驶技巧同时影响名次，可以让选手从不同方面争取机会。"
+    ],
+    "caveats": [
+      "以Nintendo 64原版为主；计时赛不出现对手或赛道道具。"
+    ],
+    "resources": [
+      "角色重量、比赛积分和道具"
+    ],
+    "progression": [
+      "150cc全部杯赛取得满分后解锁镜像模式。"
+    ],
+    "scopeLabel": "Nintendo 64原版",
+    "scopeNotes": "计时赛可通过 Controller Pak 分享幽灵数据。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mario_Kart_64?useskin=vector",
+        "title": "Mario Kart 64 - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "玩家驾驶卡丁车并通过漂移改变过弯路线。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开赛前选择不同重量级的角色，其速度和操控不同。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "碰触问号箱会获得随机道具。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "150cc所有杯赛取得满分后开放镜像赛道模式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "分屏对战支持两至四名玩家竞速或争夺气球。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "asynchronous-opponent",
+        "note": "计时赛可读取另一名玩家通过存储卡分享的幽灵记录。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a1/Mario_Kart_64.jpg/250px-Mario_Kart_64.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mario_Kart_64?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "burnout-3-takedown",
+    "name": "火爆狂飙 3：撞击 / Burnout 3: Takedown",
+    "studio": "Criterion Games",
+    "year": 2004,
+    "platforms": [
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "racing",
+      "vehicle-sport"
+    ],
+    "playStyleIds": [
+      "vehicle-driving"
+    ],
+    "summary": "高速驾驶并撞击对手，通过危险驾驶积攒加速。",
+    "analysis": "击溃对手会补满并延长加速槽，但自己撞毁会损失加速，使激进驾驶兼具收益与风险。",
+    "loop": [
+      "驾驶并通过漂移、逆行等动作积攒加速",
+      "撞毁对手以延长加速槽",
+      "完成比赛和世界巡回赛，解锁车辆"
+    ],
+    "learning": [
+      "让同一套风险行为同时产生资源和失败代价，可以让高速选择持续影响比赛。"
+    ],
+    "caveats": [
+      "以原版单人竞速及道路狂怒为主；多人模式不提供慢动作撞击时间。"
+    ],
+    "resources": [
+      "加速槽、车辆状态、赛事奖牌"
+    ],
+    "progression": [
+      "完成赛事取得奖牌，可解锁车辆和后续活动。"
+    ],
+    "scopeLabel": "原版世界巡回赛与竞速",
+    "scopeNotes": "道路狂怒要求在时限或车辆报废前达到指定撞击次数。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Burnout_3:_Takedown?useskin=vector",
+        "title": "Burnout 3: Takedown - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "玩家驾驶车辆通过城市和公路，并可通过漂移过弯。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "撞毁对手会补充并扩展加速槽。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "撞车后可触发短暂慢动作，并调整残骸方向尝试撞击对手。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "获得奖牌或达成累计撞击里程碑可以解锁新车辆。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "分屏和在线模式允许玩家对抗竞速。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "车辆、交通和对手在比赛中实时移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/93/Burnout_3_-_Takedown_Coverart.jpg/250px-Burnout_3_-_Takedown_Coverart.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Burnout_3:_Takedown?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "dodonpachi",
+    "name": "怒首领蜂 / DoDonPachi",
+    "studio": "Cave",
+    "year": 1997,
+    "platforms": [
+      "arcade",
+      "playstation",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "驾驶战机切换普通射击与激光，在密集弹幕中连击敌人。",
+    "analysis": "持续击毁敌人维持连击槽，而按住激光会降低移动速度，使得分机会与避弹能力发生取舍。",
+    "loop": [
+      "选择机体和射击强化模式",
+      "切换普通弹与激光，维持连击",
+      "达成条件后挑战第二轮和隐藏区域"
+    ],
+    "learning": [
+      "让高火力输入同时改变机动性，可以为弹幕中的攻击时机提供明确权衡。"
+    ],
+    "caveats": [
+      "以1997年街机原作为主；家用移植存在差异。"
+    ],
+    "resources": [
+      "生命、炸弹库存、武器等级和连击槽"
+    ],
+    "progression": [
+      "满足一命通关及额外条件后进入更难的第二轮。"
+    ],
+    "scopeLabel": "街机原版",
+    "scopeNotes": "激光与普通射击模式下的炸弹效果不同。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/DoDonPachi?useskin=vector",
+        "title": "DoDonPachi - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家操控不同机体在弹幕中移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开局选择三种机体及普通射击或激光强化。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "hold-input",
+        "note": "按住射击键持续发射激光，松开后不再保持该射击状态。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "取得P道具可增强战机射击和激光。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续击毁敌人维持连击槽，槽耗尽时连击中断并影响得分。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "满足一币通关及其他条件后可进入第二轮，随后可开放隐藏区域。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c4/DoDonPachi_arcade_flyer.jpg/250px-DoDonPachi_arcade_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DoDonPachi?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "touhou-6-embodiment-of-scarlet-devil",
+    "name": "东方红魔乡 / Embodiment of Scarlet Devil",
+    "studio": "Team Shanghai Alice",
+    "year": 2002,
+    "platforms": [
+      "pc",
+      "switch",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "选择角色与弹型，穿越密集弹幕并应对多阶段首领。",
+    "analysis": "擦弹计分与限量符卡鼓励接近危险，但生存、得分和保险动作需要不同取舍。",
+    "loop": [
+      "选择角色与弹型",
+      "降低移动速度精确避弹并攻击",
+      "在必要时使用符卡，收集道具挑战首领"
+    ],
+    "learning": [
+      "让得分机会靠近危险区域时，应保留清晰的弹幕和命中判定反馈。"
+    ],
+    "caveats": [
+      "以2002年Windows原作为主；2026年新经典版为后续发行。"
+    ],
+    "resources": [
+      "生命、炸弹、火力与得分"
+    ],
+    "progression": [
+      "达到指定分数可增加生命；首领符卡记录可在菜单查看。"
+    ],
+    "scopeLabel": "Windows原版",
+    "scopeNotes": "使用炸弹会影响部分符卡的无失误奖励。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Embodiment_of_Scarlet_Devil?useskin=vector",
+        "title": "Embodiment of Scarlet Devil - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家移动角色，专注模式降低移动速度以便精确避弹。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开局选择角色与弹型，不同组合具有不同攻击和炸弹。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "使用炸弹暂时无敌并清除敌方弹幕。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "score-threshold",
+        "note": "达到规定分数可以获得额外生命。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败敌人会掉落得分和增强火力的道具。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "collectible-catalog",
+        "note": "已遇到的首领符卡可在得分菜单中查看。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/8b/Th06cover.jpg/250px-Th06cover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Embodiment_of_Scarlet_Devil?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "einhander",
+    "name": "独臂擎天 / Einhänder",
+    "studio": "Square",
+    "year": 1997,
+    "platforms": [
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "驾驶战机夺取敌方武器舱，在横向卷轴关卡中战斗。",
+    "analysis": "武器舱既有弹药限制，也能改变安装位置及射击角度，让战利品影响当下攻击方式。",
+    "loop": [
+      "选择战机并进入关卡",
+      "夺取被击毁敌人留下的武器舱",
+      "连续破坏敌方核心，维持得分倍率"
+    ],
+    "learning": [
+      "让缴获武器带有方向和弹药差异，可以使战场拾取成为即时配置决策。"
+    ],
+    "caveats": [
+      "以PlayStation原作为主；日本版额外提供不限续关但不计分的难度。"
+    ],
+    "resources": [
+      "武器舱、弹药和击破倍率"
+    ],
+    "progression": [
+      "连续击破核心会提升计数，停止击破则计数下降。"
+    ],
+    "scopeLabel": "PlayStation原版",
+    "scopeNotes": "武器舱弹药耗尽后会被丢弃。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Einh%C3%A4nder?useskin=vector",
+        "title": "Einhänder - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制战机在二维平面移动并调整速度。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开局选择不同型号的战机。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击毁敌人后可拾取其留下的武器舱。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "玩家可改变武器舱位于机体上方或下方，调整射击角度。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续摧毁敌方核心提升计数和倍率，停下后计数下降。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "敌机、弹幕和玩家战机在卷轴关卡中持续运动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/0/0c/Einhander.JPG/250px-Einhander.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Einh%C3%A4nder?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "star-fox-64",
+    "name": "星际火狐 64 / Star Fox 64",
+    "studio": "Nintendo EAD",
+    "year": 1997,
+    "platforms": [
+      "nintendo-legacy",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting",
+      "vehicle-driving"
+    ],
+    "summary": "驾驶飞船或载具沿不同路线作战，并支援受到追击的队友。",
+    "analysis": "关卡表现会开启不同路线，队友是否存活也影响后续提供的提示或支援。",
+    "loop": [
+      "驾驶载具射击敌人并保护队友",
+      "完成关卡目标，选择可用分支",
+      "获取奖章并开放更多多人内容"
+    ],
+    "learning": [
+      "让路线条件和队友状态延续到后续关卡，可以让一次战斗的结果影响下一次选择。"
+    ],
+    "caveats": [
+      "以Nintendo 64原版为范围；部分首领战和多人使用全方位移动模式。"
+    ],
+    "resources": [
+      "护盾、蓄力攻击、队友状态和关卡奖章"
+    ],
+    "progression": [
+      "获得奖章可开放额外多人载具及专家模式。"
+    ],
+    "scopeLabel": "Nintendo 64原版",
+    "scopeNotes": "多数关卡沿固定方向推进，少数区域允许自由移动。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Star_Fox_64?useskin=vector",
+        "title": "Star Fox 64 - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "玩家驾驶飞船、坦克或潜艇，并在画面内调整位置。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "飞船和坦克可以蓄力并对目标发射锁定激光。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "飞船护盾可通过拾取圆环恢复，受损机翼也可修复。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "完成不同目标后开放不同路线，玩家在任务结束后选择。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "取得指定奖章后开放额外多人载具和专家模式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "分屏多人模式支持最多四人对抗。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/63/StarFox64_N64_Game_Box.jpg/250px-StarFox64_N64_Game_Box.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Star_Fox_64?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "geometry-wars-retro-evolved",
+    "name": "几何战争：复古进化 / Geometry Wars: Retro Evolved",
+    "studio": "Bizarre Creations",
+    "year": 2005,
+    "platforms": [
+      "xbox",
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "在单屏竞技场中双摇杆移动和射击，尽可能存活并积累分数。",
+    "analysis": "击败敌人会提高倍率，但失去生命会使倍率归零，让高分过程和生存风险直接相连。",
+    "loop": [
+      "独立控制飞船移动和射击方向",
+      "应对数量和频率不断增加的敌人",
+      "使用有限炸弹并保持生命以累积倍率"
+    ],
+    "learning": [
+      "让得分倍率在失败时重置，可以把持续生存转化为可见的得分压力。"
+    ],
+    "caveats": [
+      "分析2005年独立发行的Retro Evolved，不把2003年赛车游戏内最初迷你游戏计为同一版本。"
+    ],
+    "resources": [
+      "生命、炸弹、武器和得分倍率"
+    ],
+    "progression": [
+      "达到指定分数可获得额外生命和炸弹；生命耗尽结束。"
+    ],
+    "scopeLabel": "Retro Evolved单人模式",
+    "scopeNotes": "PC版和Xbox 360版所含附加模式可能不同。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Geometry_Wars:_Retro_Evolved?useskin=vector",
+        "title": "Geometry Wars: Retro Evolved - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "左摇杆独立控制飞船的移动方向。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "右摇杆独立控制射击方向。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "score-threshold",
+        "note": "得分达到规定节点时获得额外生命和炸弹。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续击毁敌人积累倍率，失去生命时倍率归零。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "event-director",
+        "note": "随游戏推进，敌人的出现数量和频率逐步增加。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "敌人生成、移动和射击持续实时进行。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/ef/Geometrywarscover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Geometry_Wars:_Retro_Evolved?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "radiant-silvergun",
+    "name": "银枪 / Radiant Silvergun",
+    "studio": "Treasure",
+    "year": 1998,
+    "platforms": [
+      "arcade",
+      "other",
+      "xbox",
+      "switch",
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "组合三种武器并连续击毁同色敌人，提高战机武器威力。",
+    "analysis": "武器组合改变攻击范围，而同色连击同时影响得分和正在使用的武器成长。",
+    "loop": [
+      "组合三种武器形成不同攻击",
+      "选择敌人颜色并维持连击",
+      "利用武器成长和蓄能剑应对首领"
+    ],
+    "learning": [
+      "让同一连击既影响得分也影响武器表现，可以使计分规则参与通关策略。"
+    ],
+    "caveats": [
+      "以1998年街机原版为主；后续移植可能增加选项。"
+    ],
+    "resources": [
+      "不同武器、剑的能量和同色连击"
+    ],
+    "progression": [
+      "连续同色击破提升当前武器等级，强化在本次游戏中保留。"
+    ],
+    "scopeLabel": "街机原版",
+    "scopeNotes": "转换为其他颜色的敌机会中断原有连击。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Radiant_Silvergun?useskin=vector",
+        "title": "Radiant Silvergun - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制战机在纵向卷轴画面中移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "同时使用三种武器可挥动近距离剑攻击。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "用剑吸收特定敌弹可积攒屏幕清除攻击所需能量。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "持续同色连击可提高当前武器等级并增强其效果。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续击毁同色敌人提高得分奖励，击毁其他颜色会中断。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "敌机、弹幕和玩家攻击在关卡中实时推进。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/ff/Radiant_Silvergun_flyer.jpg/250px-Radiant_Silvergun_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Radiant_Silvergun?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "raiden-1990",
+    "name": "雷电 / Raiden",
+    "studio": "Seibu Kaihatsu",
+    "year": 1990,
+    "platforms": [
+      "arcade",
+      "pc",
+      "playstation",
+      "nintendo-legacy",
+      "handheld",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "驾驶战机穿越八个街机关卡，与敌机交火并使用炸弹清理弹幕。",
+    "analysis": "两名玩家的飞机相互射击可以产生额外攻击，使合作位置本身成为战斗策略。",
+    "loop": [
+      "移动战机并收集武器强化",
+      "在密集攻击中使用有限炸弹",
+      "通过八关，继续挑战更高难度循环"
+    ],
+    "learning": [
+      "让合作行为改变攻击方式，可以让协作不仅是增加第二名玩家。"
+    ],
+    "caveats": [
+      "以1990年街机版为范围；其他移植版可能具有额外模式。"
+    ],
+    "resources": [
+      "生命、炸弹、武器强化和检查点"
+    ],
+    "progression": [
+      "失去全部生命可投入币续关，并从最近检查点继续。"
+    ],
+    "scopeLabel": "街机原版",
+    "scopeNotes": "通关八关后返回第一关并提高难度。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Raiden_(video_game)?useskin=vector",
+        "title": "Raiden (video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家操控战机移动以避开敌人攻击。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "收集武器强化道具以增强战机火力。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "双人合作时，向另一架玩家战机射击可产生攻击敌人的特殊弹。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "checkpoint-respawn",
+        "note": "全部生命耗尽后续关，从最近检查点继续。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成第八关后开始难度更高的下一轮。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "战机、敌人和弹幕在卷轴画面中实时移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/6b/Raiden_arcadeflyer.png/250px-Raiden_arcadeflyer.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Raiden_(video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "1942-1984",
+    "name": "1942",
+    "studio": "Capcom",
+    "year": 1984,
+    "platforms": [
+      "arcade",
+      "nintendo-legacy",
+      "handheld",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "驾驶战机击落敌机编队，并使用翻滚暂时躲避攻击。",
+    "analysis": "滚转次数有限且未使用会计入奖励，玩家需要决定何时用它规避危险。",
+    "loop": [
+      "移动战机并射击来袭编队",
+      "取得编队留下的火力强化",
+      "必要时使用翻滚避弹并争取过关奖励"
+    ],
+    "learning": [
+      "给紧急避险动作设置有限次数和保留奖励，可以让风险判断持续贯穿关卡。"
+    ],
+    "caveats": [
+      "以街机Revision B为范围；运营者可调整奖励生命阈值。"
+    ],
+    "resources": [
+      "生命、限量翻滚次数和强化道具"
+    ],
+    "progression": [
+      "取得规定分数可获得额外生命。"
+    ],
+    "scopeLabel": "街机Revision B",
+    "scopeNotes": "不同街机设置会改变奖励生命的分数条件。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1942_(video_game)?useskin=vector",
+        "title": "1942 (video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://www.arcade-museum.com/Videogame/1942--capcom",
+        "title": "1942 - Videogame by Capcom | Museum of the Game",
+        "publisher": "Museum of the Game",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅红色编队强化道具和翻滚规则；未安装试玩。"
+      },
+      {
+        "url": "https://arcadertfm.com/m/1942",
+        "title": "1942 (Revision B) (Capcom, 1984) - Specs, DIP Switches & Manuals | ArcadeRTFM",
+        "publisher": "ArcadeRTFM",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅Revision B奖励生命的可调整拨码阈值。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制战机移动，躲避敌机和弹幕。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "dodge-move",
+        "note": "使用限量翻滚时战机暂时离开战斗平面，以躲避射击。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "拾取强化标记可改变火力，例如双重或更宽的射击。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击毁红色敌机编队会出现可拾取的强化标记。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "score-threshold",
+        "note": "街机拨码可设置达到指定分数时奖励额外生命。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "战机、编队和弹幕在关卡中实时移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/52/1942_arcade_flyer.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+      "sourceUrl": "https://en.wikipedia.org/wiki/1942_(video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "nhl-94",
+    "name": "NHL ’94",
+    "studio": "High Score Productions",
+    "year": 1993,
+    "platforms": [
+      "other",
+      "nintendo-legacy",
+      "pc",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sports"
+    ],
+    "playStyleIds": [
+      "sports-control"
+    ],
+    "summary": "控制冰球队滑行、传球和射门，争夺比赛胜利。",
+    "analysis": "传球与一触即射可以快速完成进攻，而球员切换和守门员操作为防守提供不同选择。",
+    "loop": [
+      "选择球队并安排阵容",
+      "滑行、传球并选择射门方向",
+      "防守对手并完成比赛或季后赛"
+    ],
+    "learning": [
+      "让同一套简洁输入随攻防状态改变用途，可以降低操作负担。"
+    ],
+    "caveats": [
+      "以Genesis原版为主；后来的Rewind版本发行在其他平台。"
+    ],
+    "resources": [
+      "球队阵容、比赛时间及球员属性"
+    ],
+    "progression": [
+      "可保存玩家和比赛记录；季后赛按赛程推进。"
+    ],
+    "scopeLabel": "Genesis原版",
+    "scopeNotes": "守门员可手动控制。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/NHL_94?useskin=vector",
+        "title": "NHL '94 - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://www.nhl94.com/multimedia/manuals/NHL94_GEN.pdf",
+        "title": "NHL Hockey ’94 Genesis Instruction Manual",
+        "publisher": "EA Sports",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅Genesis版移动、射门、换线和多人控制；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家通过方向键控制当前冰球运动员滑行。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "方向键决定传球或射门方向。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "hold-input",
+        "note": "射门键短按为手腕射门，持续按住可进行大力抽射。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "比赛中可进行球员换线，改变场上队员配置。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家可分别控制球队进行比赛。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "冰球和双方运动员在比赛中实时移动。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/40/NHL_%2794_Cover.jpg/250px-NHL_%2794_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NHL_94?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "nba-2k11",
+    "name": "NBA 2K11",
+    "studio": "Visual Concepts",
+    "year": 2010,
+    "platforms": [
+      "pc",
+      "playstation",
+      "handheld",
+      "xbox",
+      "nintendo-legacy"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sports"
+    ],
+    "playStyleIds": [
+      "sports-control",
+      "management-production"
+    ],
+    "summary": "控制球队进行篮球比赛，或经营球队与创建球员的职业生涯。",
+    "analysis": "球队经营与球员生涯采用不同进度尺度：一边调整组织阵容，一边逐场提升个人能力。",
+    "loop": [
+      "选择比赛、球队或职业模式",
+      "操作球员传球和投篮，完成比赛",
+      "通过选秀经营阵容，或提升自建球员能力"
+    ],
+    "learning": [
+      "把个人成长和球队经营分成不同模式，可以针对各自的长期目标提供清楚反馈。"
+    ],
+    "caveats": [
+      "以2010年PC版为主；线上服务是否可用未作本机验证。"
+    ],
+    "resources": [
+      "球队阵容、球员属性和挑战完成情况"
+    ],
+    "progression": [
+      "职业球员属性可逐场提升；乔丹挑战完成后开放相关奖励。"
+    ],
+    "scopeLabel": "PC版比赛与职业模式",
+    "scopeNotes": "不同平台控制方式有所不同。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/NBA_2K11?useskin=vector",
+        "title": "NBA 2K11 - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/65950/manuals/NBA2K11_PC_onlinemanual_v1.pdf",
+        "title": "NBA 2K11 PC Online Manual",
+        "publisher": "2K Sports",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读PC控制与模式说明；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家以摇杆或键盘控制球员移动。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "经理模式管理球队人员并调整阵容。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "unit-drafting",
+        "note": "球队经营模式包含选秀，用于补充组织中的球员。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "persistent-stat-upgrade",
+        "note": "自建球员的职业生涯中可以升级个人属性。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成乔丹挑战可开放相关鞋款和另一项生涯模式。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "比赛中的球员移动、传球和投篮持续进行。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/91/NBA_2K11_cover.jpg/250px-NBA_2K11_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_2K11?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "fifa-road-to-world-cup-98",
+    "name": "FIFA 98：世界杯之路 / FIFA: Road to World Cup 98",
+    "studio": "EA Canada",
+    "year": 1997,
+    "platforms": [
+      "pc",
+      "playstation",
+      "handheld",
+      "nintendo-legacy",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "sports"
+    ],
+    "playStyleIds": [
+      "sports-control",
+      "management-production"
+    ],
+    "summary": "选择足球队，通过资格赛和正赛争夺世界杯冠军。",
+    "analysis": "球队阵型与场上射门控制分别作用于长期准备和即时执行，让赛前选择与比赛过程相互配合。",
+    "loop": [
+      "选择球队并设定阵容与阵型",
+      "控制球员传球、射门和防守",
+      "通过资格赛继续挑战世界杯正赛"
+    ],
+    "learning": [
+      "把赛前阵型选择和场中操作连接起来，可以让组织决策在比赛中有明确体现。"
+    ],
+    "caveats": [
+      "以Nintendo 64版手册为依据；不要与另售的World Cup 98混同。"
+    ],
+    "resources": [
+      "球队阵容、比赛比分和赛事进度"
+    ],
+    "progression": [
+      "通过资格赛后可进入第一轮；存储卡可保存进度。"
+    ],
+    "scopeLabel": "Nintendo 64版世界杯之路",
+    "scopeNotes": "不同平台控制按键可能不同。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/FIFA:_Road_to_World_Cup_98?useskin=vector",
+        "title": "FIFA: Road to World Cup 98 - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://www.videogamemanual.com/n64/FIFA%20-%20Road%20to%20World%20Cup%2098%20%28USA%29.pdf",
+        "title": "FIFA: Road to World Cup 98 Nintendo 64 Instruction Booklet",
+        "publisher": "EA Sports",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅N64版操控、球队管理、双人和资格赛说明；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "控球球员通过摇杆按镜头方向移动。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "按住射门键时可用摇杆选择球门射门方向。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "球队管理允许调整球员阵容、战术、阵型与站位。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成资格赛后进入世界杯第一轮。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两名玩家可使用两个控制器对抗比赛。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "双方球员在比赛中实时移动、传球和防守。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/9a/FIFA_98_cover.jpg/250px-FIFA_98_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA:_Road_to_World_Cup_98?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "samurai-shodown-1993",
+    "name": "侍魂 / Samurai Shodown",
+    "studio": "SNK",
+    "year": 1993,
+    "platforms": [
+      "arcade",
+      "other",
+      "nintendo-legacy",
+      "handheld",
+      "playstation"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "fighting"
+    ],
+    "playStyleIds": [
+      "action-combat"
+    ],
+    "summary": "操控持武器的格斗家，用斩击、闪避和招架击败对手。",
+    "analysis": "受伤会积累怒气，达到上限后短时间提高攻击力，使落后的一方仍有反击机会。",
+    "loop": [
+      "选择剑士并观察对手攻击",
+      "通过前冲、后撤和斩击争取位置",
+      "利用怒气强化或时机招架改变局势"
+    ],
+    "learning": [
+      "让受伤带来有限时间的反击资源时，需要确保双方都能看见状态变化。"
+    ],
+    "caveats": [
+      "以1993年街机MVS原版为主；空手接白刃只在角色失去武器时可用。"
+    ],
+    "resources": [
+      "生命槽、怒气槽和角色武器"
+    ],
+    "progression": [
+      "怒气满时暂时提高伤害，持续时间结束后重置。"
+    ],
+    "scopeLabel": "MVS街机原版",
+    "scopeNotes": "不是2019年同名作品。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Samurai_Shodown_(1993_video_game)?useskin=vector",
+        "title": "Samurai Shodown (1993 video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://samuraianiv.snk-corp.co.jp/english/title/samurai-shodown1/",
+        "title": "SERIES TITLES:SAMURAI SHODOWN OFFICIAL WEBSITE",
+        "publisher": "SNK",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅1993原版攻击、怒气、空手接招与恢复道具；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家可前冲或后撤改变与对手的距离。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "melee-attack",
+        "note": "角色使用轻、中、重斩击与踢击进行近身格斗。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "受到攻击会减少生命，治疗食物可恢复。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "怒气槽满后角色短时间提高攻击力，时间到后恢复。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "parry",
+        "note": "失去武器时，可在正确时机徒手接住对手武器攻击。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "仅限角色失去武器时"
+      },
+      {
+        "id": "real-time-update",
+        "note": "双方在同一场战斗中实时攻击和移动。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/eb/Samurai_Shodown_arcade_flyer.jpg/250px-Samurai_Shodown_arcade_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Samurai_Shodown_(1993_video_game)?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "battle-garegga",
+    "name": "战斗加雷加 / Battle Garegga",
+    "studio": "Raizing",
+    "year": 1996,
+    "platforms": [
+      "arcade",
+      "other",
+      "playstation",
+      "xbox"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "shoot-em-up",
+      "shooter"
+    ],
+    "playStyleIds": [
+      "aiming-shooting"
+    ],
+    "summary": "驾驶战机收集僚机与炸弹，在密集弹幕中争取连锁得分。",
+    "analysis": "勋章连续收集会提高下一枚价值，但漏掉后价值重置，迫使玩家在危险位置判断是否追逐。",
+    "loop": [
+      "操控战机射击并收集支援装置",
+      "连续收集勋章，取得炸弹资源",
+      "应对随着行动变化的难度并推进关卡"
+    ],
+    "learning": [
+      "连续奖励在漏掉后归零时，玩家需要权衡保持连锁和安全移动。"
+    ],
+    "caveats": [
+      "以1996年街机原版为主；资料的玩法段落缺少逐项出处，作为编辑整理而非官方说明。"
+    ],
+    "resources": [
+      "僚机、炸弹库存、生命和勋章价值"
+    ],
+    "progression": [
+      "勋章连续取得会增值；掉出画面后下一枚重置。"
+    ],
+    "scopeLabel": "街机原版",
+    "scopeNotes": "难度会受射击、强化和失去生命等行为影响。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_Garegga?useskin=vector",
+        "title": "Battle Garegga - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "玩家控制战机在弹幕中移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "绿色强化道具最多为战机增加四个僚机。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combat-resource-conversion",
+        "note": "击毁普通地面敌人会掉落小型炸弹代币，累计后可形成大炸弹。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "combo-chain",
+        "note": "连续收集勋章提高下一枚价值，漏掉后重置。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "event-director",
+        "note": "射击、强化和失去生命等行为会影响后续难度。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "敌机、弹幕和道具在关卡中持续移动。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/e3/Battle_Garegga_arcade_flyer.jpg/250px-Battle_Garegga_arcade_flyer.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Battle_Garegga?useskin=vector"
+    },
+    "aliases": []
+  },
+  {
+    "id": "wipeout-1995",
+    "name": "反重力赛车 / Wipeout",
+    "studio": "Psygnosis",
+    "year": 1995,
+    "platforms": [
+      "playstation",
+      "pc",
+      "other"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "racing",
+      "vehicle-sport"
+    ],
+    "playStyleIds": [
+      "vehicle-driving"
+    ],
+    "summary": "驾驶不同性能的反重力赛车，利用赛道强化和武器争取名次。",
+    "analysis": "赛车性能选择决定基础操控，而限时护盾可帮助玩家应对来自竞争对手的攻击。",
+    "loop": [
+      "选择车队和飞行器",
+      "驾驶通过赛道并拾取武器",
+      "防御或干扰对手，赢得赛事并开放隐藏赛道"
+    ],
+    "learning": [
+      "让防御道具只持续短时间，可以使使用时机成为竞争判断的一部分。"
+    ],
+    "caveats": [
+      "以1995年PlayStation版为主；多人通过连接线进行。"
+    ],
+    "resources": [
+      "飞行器性能、武器和护盾"
+    ],
+    "progression": [
+      "完成Rapier锦标赛全部赛道可开放隐藏赛道。"
+    ],
+    "scopeLabel": "PlayStation原版",
+    "scopeNotes": "不同车辆的加速、最高速度和转向能力不同。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wipeout_(video_game)?useskin=vector",
+        "title": "Wipeout (video game) - Wikipedia",
+        "publisher": "Wikipedia",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读信息框和玩法章节；未安装试玩。"
+      },
+      {
+        "url": "https://www.gamezero.com/team-0/pro_page/faq/wipeout.html",
+        "title": "ProPage - WipeOut Strategy Guide",
+        "publisher": "Game Zero Magazine",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "查阅1995攻略中的护盾持续效果；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "vehicle-steering",
+        "note": "玩家驾驶反重力飞行器通过弯道和赛道。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开赛前选择车队和车辆，不同车辆具有不同操控属性。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "status-effect",
+        "note": "护盾激活后短时间防御武器攻击。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "完成Rapier锦标赛全部赛道后开放隐藏赛道。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两名玩家可使用PlayStation连接线相互竞速。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "玩家和对手在赛道上实时行驶并使用道具。",
+        "source": 0,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c3/WipEoutCover.jpg/250px-WipEoutCover.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Wipeout_(video_game)?useskin=vector"
+    },
+    "aliases": []
+  }
+]

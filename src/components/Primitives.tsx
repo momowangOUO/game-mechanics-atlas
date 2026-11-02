@@ -249,38 +249,46 @@ export function GameCover({
     label: game.name,
   };
   const official = gameArtSources[game.id]?.kind === "official";
+  const reference = gameArtSources[game.id]?.kind === "reference";
   return (
     <div
       className={`cover ${large ? "game-feature-cover" : ""}`}
       style={{ background: item.color }}
       role="img"
-      aria-label={`${game.name} ${official ? "官方代表图" : "原创玩法示意，非官方封面"}`}
+      aria-label={`${game.name} ${official ? "官方代表图" : reference ? "游戏资料图" : "原创玩法示意，非官方封面"}`}
     >
       <ArtImage
         src={gameArt(game.id)}
         alt=""
-        className={`game-cover-art${official ? " official-game-art" : ""}`}
+        className={`game-cover-art${official || reference ? " official-game-art" : ""}`}
         width={1672}
         height={941}
       />
       <small>
         {official
           ? "GAME ARCHIVE / 官方代表图"
-          : "MECHANICS STUDY / 原创玩法示意"}
+          : reference
+            ? "GAME ARCHIVE / 游戏资料图"
+            : "MECHANICS STUDY / 原创玩法示意"}
       </small>
-      {!official && <span className="cover-title">{item.label}</span>}
+      {!official && !reference && (
+        <span className="cover-title">{item.label}</span>
+      )}
     </div>
   );
 }
-export function GameCard({ game }: { game: Game }) {
+export function GameCard({ game, scopeId }: { game: Game; scopeId?: string }) {
   return (
-    <Link className="case-card interactive-card" href={`/games/${game.id}`}>
+    <Link
+      className="case-card interactive-card"
+      href={`/games/${game.id}${scopeId ? `?scope=${encodeURIComponent(scopeId)}` : ""}`}
+    >
       <GameCover game={game} />
       <div className="case-body">
         <h3>{game.name}</h3>
         <p>{game.summary}</p>
         <div className="row">
-          {game.corePlayTags.slice(0, 2).map((tag) => (
+          {game.corePlayTags.map((tag) => (
             <span className="chip" key={tag}>
               {tag}
             </span>
@@ -296,9 +304,9 @@ export function GameArtCredit({ gameId }: { gameId: string }) {
     source?.publisher === "Publisher via official Steam store"
       ? "官方 Steam 商店"
       : source?.publisher;
-  return source?.kind === "official" ? (
+  return source?.kind === "official" || source?.kind === "reference" ? (
     <p className="tiny evidence-note game-art-credit">
-      官方代表图 · {publisher} ·{" "}
+      {source.kind === "official" ? "官方代表图" : "游戏资料图"} · {publisher} ·{" "}
       <a href={source.sourceUrl} target="_blank" rel="noreferrer">
         查看图源 ↗
       </a>

@@ -1,12 +1,12 @@
 import { expect, test } from "@playwright/test";
 import { gotoApp, appHref } from "./navigation";
 import { readFileSync } from "node:fs";
+await import("../../scripts/register-typescript.mjs");
+const { games, genres } = await import("../../src/lib/knowledge.ts");
 const snapshotDate = JSON.parse(
   readFileSync("src/data/current-trends.json", "utf8"),
 ).collectedAt.slice(0, 10);
-const gamesCount = JSON.parse(
-  readFileSync("docs/research/game-evidence.json", "utf8"),
-).games.length;
+const gamesCount = games.length;
 
 test("category search finds composite types and words separated by spaces", async ({
   page,
@@ -124,7 +124,7 @@ test("phone catalogs expose complete scrollable lists without ordinary result pa
     ),
   ).toBe(0);
   await gotoApp(page, "/types");
-  await expect(page.locator(".type-index-grid > a")).toHaveCount(32);
+  await expect(page.locator(".type-index-grid > a")).toHaveCount(genres.length);
   await expect(page.getByRole("navigation", { name: "目录分页" })).toHaveCount(
     0,
   );

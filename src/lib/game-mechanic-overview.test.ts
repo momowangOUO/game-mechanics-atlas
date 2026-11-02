@@ -75,14 +75,13 @@ describe("game mechanic overview", () => {
       dataset.games.find((g) => g.id === "minecraft")!.defaultScopeId,
     );
     for (const game of dataset.games) {
+      const gameScopeIds=new Set(dataset.scopes.filter(scope=>scope.gameId===game.id).map(scope=>scope.id));
       const expected = [
         ...new Set(
           dataset.instances
             .filter(
               (i) =>
-                dataset.scopes.some(
-                  (s) => s.id === i.scopeId && s.gameId === game.id,
-                ) && ["present", "conditional"].includes(i.status),
+                gameScopeIds.has(i.scopeId) && ["present", "conditional"].includes(i.status),
             )
             .map((i) => i.mechanicId),
         ),

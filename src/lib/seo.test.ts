@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import sitemap from "@/app/sitemap";
 import { dimensions, games, genres, mechanics } from "./knowledge";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
+import { playStyles } from "@/data/play-styles";
 import {
   AUTHOR_NAME,
   SITE_URL,
@@ -43,12 +44,14 @@ describe("public SEO contract", () => {
         games.length +
         genres.length +
         dimensions.length +
-        taxonomyGroups.length,
+        taxonomyGroups.length +
+        playStyles.length,
     );
     expect(dimensions).toHaveLength(9);
-    expect(taxonomyGroups).toHaveLength(50);
+    expect(new Set(taxonomyGroups.map((group) => `${group.dimensionId}/${group.id}`)).size).toBe(taxonomyGroups.length);
     for (const group of taxonomyGroups)
       expect(paths).toContain(`/taxonomy/${group.dimensionId}/${group.id}`);
+    for (const style of playStyles) expect(paths).toContain(`/play-styles/${style.id}`);
     expect(sitemap().map((row) => row.url)).toEqual(paths.map(canonicalUrl));
     expect(
       sitemap().every(

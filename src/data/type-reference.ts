@@ -7,7 +7,8 @@ export type TypeReference = {
   compareId: string;
   difference: string;
 };
-export const typeReferences: TypeReference[] = [
+import { expandedTypeReferences } from "./expanded-types";
+const originalTypeReferences: TypeReference[] = [
   {
     id: "roguelite",
     playerTask: "在一次次有限尝试中，用当局获得的选择应对变化的挑战。",
@@ -458,5 +459,6 @@ export const typeReferences: TypeReference[] = [
       "派对协作以共同完成任务为前景；社交推理可能存在隐藏的冲突目标。多人同场不必然意味着同一类合作关系。",
   },
 ];
+export const typeReferences: TypeReference[] = [...originalTypeReferences,...expandedTypeReferences];
 export const getTypeReference = (id: string) =>
   typeReferences.find((reference) => reference.id === id);

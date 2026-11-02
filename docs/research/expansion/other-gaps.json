@@ -1,0 +1,2437 @@
+[
+  {
+    "id": "mechabellum",
+    "name": "钢铁指挥官 / Mechabellum",
+    "studio": "Game River",
+    "year": 2023,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "tactical-command"
+    ],
+    "summary": "部署并升级机甲部队，预测对手阵容，让双方自动交战。",
+    "analysis": "战前摆位、单位克制和局内科技升级共同决定战局，操作速度不直接决定射击结果。",
+    "loop": [
+      "观察对手部队并购买增援",
+      "布置阵型、选择单位科技",
+      "自动战斗后根据战况调整"
+    ],
+    "learning": [
+      "让对手可见的部署成为下一轮反制的依据。"
+    ],
+    "caveats": [
+      "对战、生存及裂隙模式规则不同；2023 年为抢先体验发行。"
+    ],
+    "resources": [
+      "补给：部署或升级部队",
+      "单位科技：改变所选部队的战斗方式"
+    ],
+    "progression": [
+      "局内部队和科技在对局中延续，下一场重新开始"
+    ],
+    "scopeLabel": "常规自动战斗",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/669330/",
+        "title": "Mechabellum on Steam",
+        "publisher": "Dreamhaven",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://www.paradoxinteractive.com/media/press-releases/paradox-interactive/mechabellum-launches-into-early-access-today",
+        "title": "Mechabellum Launches into Early Access",
+        "publisher": "Paradox Interactive",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "unit-drafting",
+        "note": "使用补给部署轻型机甲、狙击单位或重型战车。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "选择部队种类并布置其阵型以应对敌方。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "部署结束后双方部队自动战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "战前在机库配置单位科技，对局中再选择解锁对应升级。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "在一对一模式中与另一名玩家争胜。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "合作生存模式中与队友迎战 AI 波次。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "合作生存模式"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/669330/845165412668d8b6765b3fa19639ea7c5b1d892c/header_alt_assets_2.jpg?t=1793544977",
+      "sourceUrl": "https://store.steampowered.com/app/669330/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "despots-game",
+    "name": "暴君的游戏 / Despot’s Game",
+    "studio": "Konfa Games",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "roguelite",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "tactical-command",
+      "exploration"
+    ],
+    "summary": "为一群人类选择装备和职业，在随机迷宫中组织自动战斗。",
+    "analysis": "装备决定队员的战斗角色，迷宫内的损失和阵容构筑共同影响能否走到最后。",
+    "loop": [
+      "选择战利品并改造队员",
+      "探索生成的迷宫并应对遭遇",
+      "让队伍自动交战，继续调整阵容"
+    ],
+    "learning": [
+      "让同一个装备选择同时改变单位职责与队伍协同。"
+    ],
+    "caveats": [
+      "后期玩家阵容对抗属于通关后的模式；2021 年首次抢先体验。"
+    ],
+    "resources": [
+      "装备：赋予人类不同职业和能力",
+      "队员：战斗中可能失去"
+    ],
+    "progression": [
+      "迷宫及当前队伍随新一局重新生成"
+    ],
+    "scopeLabel": "单人迷宫与通关后对抗",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1227280/",
+        "title": "Despot's Game: Dystopian Battle Simulator on Steam",
+        "publisher": "tinyBuild",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://www.ps4blog.net/2023/06/nintendo-switch-despots-game-review/",
+        "title": "Despot’s Game Review",
+        "publisher": "PS4Blog",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "generated-layout",
+        "note": "每次尝试重新生成迷宫布局。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "组合巫师、忍者等不同职责的队员。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "为人类选择装备，使其转变为不同职业。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "布置好队员后由他们自动战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "队员需要食物；补给不足会使队伍在迷宫中面临饥饿风险。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "通过迷宫后可与其他玩家的最终阵容对抗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "通关后的玩家阵容对抗"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1227280/header.jpg?t=1781522438",
+      "sourceUrl": "https://store.steampowered.com/app/1227280/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "astronarch",
+    "name": "Astronarch",
+    "studio": "Dale Turner",
+    "year": 2020,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "roguelite",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "tactical-command",
+      "exploration"
+    ],
+    "summary": "招募英雄、安排站位与装备，在随机路径中自动战斗。",
+    "analysis": "队伍技能、装备分配和路线风险互相作用，前排保护和输出位置需要结合遭遇判断。",
+    "loop": [
+      "挑选英雄并分配装备",
+      "在不同区域间选择路线",
+      "应对自动战斗并继续收集物品"
+    ],
+    "learning": [
+      "让路线选择和队伍配置共同决定遭遇难度。"
+    ],
+    "caveats": [
+      "腐化等级和外观光环在首次胜利后才出现；2020 年抢先体验。"
+    ],
+    "resources": [
+      "英雄：提供不同技能",
+      "装备：改变队伍属性及能力"
+    ],
+    "progression": [
+      "英雄解锁和通关后的难度选项跨尝试保留"
+    ],
+    "scopeLabel": "单人自动战斗冒险",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1234940/",
+        "title": "Astronarch on Steam",
+        "publisher": "Dale Turner",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "从不同英雄中选择成员并安排队伍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "英雄在战斗中自动施展技能并攻击。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "spatial-loadout",
+        "note": "在战斗前安排英雄站位，决定前排与后排配置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "每个章节可在不同区域之间选择行进路线。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "获得古代与魔法装备，改变英雄属性和能力。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "首次胜利后开放额外腐化难度。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1234940/header.jpg?t=1774346350",
+      "sourceUrl": "https://store.steampowered.com/app/1234940/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "the-last-flame",
+    "name": "将熄之焰 / The Last Flame",
+    "studio": "Hotloop",
+    "year": 2024,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "roguelite",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "tactical-command",
+      "exploration"
+    ],
+    "summary": "招募英雄并制作装备，在自动战斗之间选择路线和构筑队伍。",
+    "analysis": "英雄、遗物与装备构成多层组合，路径和资源管理决定是否能支撑最终阵容。",
+    "loop": [
+      "招募英雄并制作或分配装备",
+      "选择地图路线和战斗站位",
+      "自动作战，收集战利品并继续冒险"
+    ],
+    "learning": [
+      "在自动战斗之间保留清晰的路线与构筑决策。"
+    ],
+    "caveats": [
+      "无尽模式与难度挑战独立；2024 年为抢先体验发行。"
+    ],
+    "resources": [
+      "英雄与装备：构成战斗配置",
+      "资源：用于制作和后续选择"
+    ],
+    "progression": [
+      "每次冒险构筑独立，无尽模式追求更高层数"
+    ],
+    "scopeLabel": "单人自动战斗冒险",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1830970/",
+        "title": "The Last Flame on Steam",
+        "publisher": "Hotloop, Surefire.Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://gamerhour.net/reviews/the-last-flame-complete-game-review/",
+        "title": "The Last Flame: Complete Game Review",
+        "publisher": "GamerHour",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读装备锻造材料与配方组合。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "招募具有不同能力的英雄并搭配队伍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "队伍根据战前配置自动作战。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "spatial-loadout",
+        "note": "在战斗前安排英雄位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "在地图上选择不同路径和遭遇。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "将配方与传家材料组合，制作具有不同效果的装备。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "战斗与探索提供可用于构筑的装备。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1830970/header.jpg?t=1763223756",
+      "sourceUrl": "https://store.steampowered.com/app/1830970/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "hadean-tactics",
+    "name": "Hadean Tactics",
+    "studio": "Emberfish Games",
+    "year": 2021,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "deckbuilder",
+      "roguelite",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "card-play",
+      "tactical-command"
+    ],
+    "summary": "招募自动作战的灵魂，使用卡牌影响战局并探索不断变化的地狱。",
+    "analysis": "自动部队和手动卡牌共同参与战斗，卡牌、遗物和单位联盟可以围绕同一策略组合。",
+    "loop": [
+      "招募单位并构建牌组",
+      "沿生成的地图选择路线",
+      "自动战斗中打出卡牌干预"
+    ],
+    "learning": [
+      "让玩家在自动战斗中保留直接干预队伍的手段。"
+    ],
+    "caveats": [
+      "自定义英雄和卡组可选；2021 年首次抢先体验。"
+    ],
+    "resources": [
+      "卡牌：提供战斗中主动效果",
+      "单位与遗物：构成阵容和被动组合"
+    ],
+    "progression": [
+      "每次冒险的卡牌和路线重新生成"
+    ],
+    "scopeLabel": "单人牌组与自动战斗",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1260590/",
+        "title": "Hadean Tactics on Steam",
+        "publisher": "Emberfish Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://www.4gamer.net/games/701/G070190/20240219014/",
+        "title": "Hadean Tactics 自动战斗介绍",
+        "publisher": "4Gamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "team-composition",
+        "note": "招募不同灵魂并结合其技能与联盟。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "受招募单位会自动为英雄作战。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "in-run-deck-growth",
+        "note": "在冒险过程中获得卡牌，用来影响战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每次冒险生成新的地图路径。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "选择前往不同区域、事件和首领的路线。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "开始前可选择自定义英雄与起始牌组。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pause-planning",
+        "note": "可暂停自动战斗，在剩余能量允许时出牌或调整攻击目标。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1260590/d4498733d941656ba78d67c82eddd1e62d55840f/header.jpg?t=1793551274",
+      "sourceUrl": "https://store.steampowered.com/app/1260590/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "just-king",
+    "name": "吾王保卫战 / Just King",
+    "studio": "VISH",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "auto-battler",
+      "roguelite",
+      "action"
+    ],
+    "playStyleIds": [
+      "buildcrafting",
+      "action-combat"
+    ],
+    "summary": "操纵国王移动，围绕国王编排自动作战的四名英雄。",
+    "analysis": "自动攻击与玩家控制队伍位置并存，英雄羁绊和装备决定面对敌群时的打法。",
+    "loop": [
+      "招募并安排四名英雄",
+      "移动国王并利用自动攻击击败敌群",
+      "用奖励购买物品并挑战区域首领"
+    ],
+    "learning": [
+      "让玩家操纵整体位置，同时把技能执行交给队伍。"
+    ],
+    "caveats": [
+      "各区域可单独重复，无尽模式会逐步提高难度；2022 年抢先体验。"
+    ],
+    "resources": [
+      "英雄：围绕国王占据队伍位置",
+      "奖励与物品：用于强化阵容"
+    ],
+    "progression": [
+      "当前队伍成长限于本次冒险"
+    ],
+    "scopeLabel": "单人区域冒险",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1059980/",
+        "title": "Just King on Steam",
+        "publisher": "VISH, IndieArk",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://steamcommunity.com/id/Morimorimori/recommended/1059980",
+        "title": "Just King player review",
+        "publisher": "Steam Community",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.pcgamer.com/for-dollar3-this-fantasy-autobattler-will-consume-your-entire-week/",
+        "title": "Just King autobattler overview",
+        "publisher": "PC Gamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读战斗、英雄装备和分支地图说明。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "战斗中移动国王，改变整个队伍在场上的位置。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "从不同英雄中选择四人并搭配羁绊。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "automatic-resolution",
+        "note": "英雄自动攻击，玩家负责队伍位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败敌人获得奖励，用于升级英雄和购买物品。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "为英雄装备不同物品以改变其战斗表现。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "route-branching",
+        "note": "在分支地图上选择战斗、精英敌人、宝藏或事件路线。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1059980/51da1dfd01c65a40a5e508dea7960bbe28e82da3/header.jpg?t=1759350845",
+      "sourceUrl": "https://store.steampowered.com/app/1059980/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "smite",
+    "name": "神之浩劫 / SMITE",
+    "studio": "Titan Forge Games",
+    "year": 2014,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "moba",
+      "action",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "summary": "操纵神话角色参加第三人称 MOBA 战斗，推进兵线并摧毁敌方泰坦。",
+    "analysis": "第三人称视角让瞄准与视野判断直接参与传统三路地图的团队决策。",
+    "loop": [
+      "选择神明并分配队伍职责",
+      "击败小兵与野怪以获取金币和经验",
+      "合作摧毁防御塔并击败敌方泰坦"
+    ],
+    "learning": [
+      "改变视角会改变同一地图中的瞄准和信息获取方式。"
+    ],
+    "caveats": [
+      "征服模式采用三路五对五，竞技场等模式目标不同；2014 年为 PC 原版。"
+    ],
+    "resources": [
+      "金币：购买局内装备",
+      "经验：提升本局神明等级"
+    ],
+    "progression": [
+      "对局内等级和装备在新对局中重置"
+    ],
+    "scopeLabel": "征服模式",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/386360/",
+        "title": "SMITE® on Steam",
+        "publisher": "Hi-Rez Studios",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://news.xbox.com/en-us/2015/08/22/games-smite-beginners-guide/",
+        "title": "Smite: A Beginner’s Guide",
+        "publisher": "Xbox Wire",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.pcgamesn.com/smite/smite-beginners-guide",
+        "title": "Smite beginner’s guide",
+        "publisher": "PCGamesN",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.gamespot.com/articles/smite-release-date-announced/1100-6416403/",
+        "title": "Smite release date announced",
+        "publisher": "GameSpot",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2014 年原始 PC 发行。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "直接控制神明在地图上移动并参与战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "以第三人称视角瞄准并施放远程攻击。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两队各五名神明争取摧毁对方泰坦。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队友分工推进、支援和争夺野区。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "击败小兵或野怪可以获得金币用于购买装备。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "击败敌方单位获得经验，提升本局等级。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "辅助负责保护和治疗队友，其他职责侧重不同作战任务。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386360/header.jpg?t=1764627618",
+      "sourceUrl": "https://store.steampowered.com/app/386360/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "eternal-card-game",
+    "name": "永恒卡牌 / Eternal Card Game",
+    "studio": "Dire Wolf",
+    "year": 2016,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "digital-card-duel",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting"
+    ],
+    "summary": "构筑卡组并轮流使用单位、力量和法术，在对局中应对对方行动。",
+    "analysis": "快速法术允许防守方在特定时机回应，使手牌与未使用的资源具有战术价值。",
+    "loop": [
+      "从收藏中构筑卡组",
+      "打出力量与单位并选择攻击",
+      "利用快速法术回应，降低对手生命"
+    ],
+    "learning": [
+      "为对手回合保留有限反应窗口，增加手牌博弈。"
+    ],
+    "caveats": [
+      "选秀和构筑模式的组牌方式不同；2016 年为 Steam 抢先体验。"
+    ],
+    "resources": [
+      "力量：支付卡牌费用",
+      "手牌与牌库：提供后续选择"
+    ],
+    "progression": [
+      "收藏中的卡牌与已保存的卡组跨对局保留"
+    ],
+    "scopeLabel": "构筑与选秀对战",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/531640/",
+        "title": "Eternal Card Game on Steam",
+        "publisher": "Dire Wolf",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/EternalAdvancedRules.pdf",
+        "title": "Eternal Advanced Rules",
+        "publisher": "Dire Wolf",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Eternal_(video_game)",
+        "title": "Eternal",
+        "publisher": "Wikipedia",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2016 年移动版与 Steam 抢先体验发行。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "对战前从收藏中构筑卡组。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "双方轮流进行回合与攻击。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "random-draw",
+        "note": "回合开始时从牌库抽取卡牌。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "攻击和法术减少角色生命，生命降至零结束对局。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "hidden-hand",
+        "note": "玩家持有手牌并根据对方未知选择规划出牌。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "rule-modifier",
+        "note": "快速法术可在规定的对方回合时机使用，改变通常由行动方操作的节奏。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/531640/header_alt_assets_0.jpg?t=1767902540",
+      "sourceUrl": "https://store.steampowered.com/app/531640/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "faeria",
+    "name": "Faeria",
+    "studio": "Abrakam Entertainment SA",
+    "year": 2016,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "digital-card-duel",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "spatial-planning"
+    ],
+    "summary": "构筑卡组并在棋盘上创造地形，用生物争夺资源和攻击对手。",
+    "analysis": "玩家共同改变战场地形，使卡牌条件、单位位置和资源井争夺同时影响对局。",
+    "loop": [
+      "选择并构筑牌组",
+      "创造地形、使用卡牌部署生物",
+      "争夺资源井并攻击对方"
+    ],
+    "learning": [
+      "让棋盘建设成为卡牌决策的一部分。"
+    ],
+    "caveats": [
+      "选秀、合作任务和单人谜题各有规则；2016 年抢先体验。"
+    ],
+    "resources": [
+      "法力：支付卡牌费用",
+      "地形：影响单位的部署和移动"
+    ],
+    "progression": [
+      "收藏卡牌和已构筑卡组跨对局保留"
+    ],
+    "scopeLabel": "棋盘卡牌对战",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/397060/",
+        "title": "Faeria on Steam",
+        "publisher": "Versus Evil, tinyBuild",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Faeria",
+        "title": "Faeria",
+        "publisher": "Wikipedia",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.faeria.com/news/announcements/4-faeria-is-now-in-early-access",
+        "title": "Faeria is now in Early Access",
+        "publisher": "Abrakam",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "对战前从卡牌收藏中构筑牌组。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "mutable-environment",
+        "note": "在战场上创造山地、森林、湖泊或沙漠。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "通过单位占据资源井附近位置获取法力。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "双方轮流创造地形、出牌并移动单位。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "生物互相造成伤害，生命降至零时从棋盘移除；对手化身生命归零则获胜。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "玩家使用各自牌组进行对抗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397060/header.jpg?t=1773309610",
+      "sourceUrl": "https://store.steampowered.com/app/397060/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "mythgard",
+    "name": "Mythgard",
+    "studio": "Monumental, LLC",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "digital-card-duel",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "card-play",
+      "buildcrafting",
+      "spatial-planning"
+    ],
+    "summary": "构筑神话题材牌组，通过七条战线部署生物、施放法术并管理魔力。",
+    "analysis": "把一张手牌转化为对应颜色魔力后，该牌会回到牌库；短期资源和未来抽牌价值由同一次选择连接。",
+    "loop": [
+      "选择牌组并安排手牌",
+      "将卡牌转化为魔力，部署生物和法术",
+      "利用战线位置与对方交战"
+    ],
+    "learning": [
+      "让资源生成消耗当前手牌选择，但保留该牌未来再次出现的可能。"
+    ],
+    "caveats": [
+      "烧牌不会永久移除该卡；选秀、双人合作和剧情模式规则不同。"
+    ],
+    "resources": [
+      "魔力宝石：决定可使用的卡牌",
+      "手牌与牌库：在资源转化和出牌之间取舍"
+    ],
+    "progression": [
+      "卡牌收藏和构筑牌组跨对局保留"
+    ],
+    "scopeLabel": "标准卡牌对战",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/839910/",
+        "title": "Mythgard on Steam",
+        "publisher": "Monumental, LLC",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://as.com/meristation/2019/10/07/analisis/1570469415_131687.html",
+        "title": "Mythgard, Análisis",
+        "publisher": "Meristation",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读烧牌、手牌和生命值规则。"
+      },
+      {
+        "url": "https://www.pocketgamer.com/mythgard/mythgard-rhino-games-ccg-is-available-in-open-beta-now-for-ios-and-android/",
+        "title": "Mythgard open beta",
+        "publisher": "Pocket Gamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2019 年移动公开测试发行。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "loadout-selection",
+        "note": "对战前选择并构筑牌组。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "sequential-turns",
+        "note": "双方按回合部署生物、施法并攻击。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "spatial-loadout",
+        "note": "在七条战线中选择生物和附魔的位置。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-scarcity",
+        "note": "将手牌转化为对应颜色的魔力，以支付后续卡牌费用。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "damage-health",
+        "note": "生物和法术会减少对手生命，生命耗尽时赢得对局。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "双人合作模式中两名玩家搭配牌组并肩作战。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "双人合作模式"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/839910/header.jpg?t=1668104343",
+      "sourceUrl": "https://store.steampowered.com/app/839910/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "heroes-of-the-storm",
+    "name": "风暴英雄 / Heroes of the Storm",
+    "studio": "Blizzard Entertainment",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "mac"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "moba",
+      "action",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "tactical-command"
+    ],
+    "summary": "选择暴雪世界的英雄，与队友争夺地图目标并摧毁对方核心。",
+    "analysis": "团队共享经验让每条兵线的贡献影响全队，而不同战场目标要求队伍在推进和集结之间转换。",
+    "loop": [
+      "选择英雄并与队友分配路线",
+      "击败小兵积累团队经验并选择天赋",
+      "争夺战场目标，推进并摧毁敌方核心"
+    ],
+    "learning": [
+      "把团队共同成长与地图目标结合，强化跨路协作。"
+    ],
+    "caveats": [
+      "不同战场目标与地图布局不同；此处描述常规五对五。"
+    ],
+    "resources": [
+      "团队经验：提升全队对局等级",
+      "天赋：在指定等级选择英雄能力"
+    ],
+    "progression": [
+      "对局等级和天赋在下一场重置"
+    ],
+    "scopeLabel": "常规五对五战场",
+    "scopeNotes": "依据暴雪官方入门与发行说明，以及玩家指南对共享经验的解释。",
+    "sources": [
+      {
+        "url": "https://news.blizzard.com/en-us/article/20131412/a-year-in-the-storm",
+        "title": "A Year in the Storm",
+        "publisher": "Blizzard Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://news.blizzard.com/en-us/article/24242866/five-tips-for-beginners",
+        "title": "Five tips for beginners",
+        "publisher": "Blizzard Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://blizzardwatch.com/2015/05/18/heroes-of-the-storm-guide-newbies/",
+        "title": "Heroes of the Storm guide for newbies",
+        "publisher": "Blizzard Watch",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://espnpressroom.com/us/files/2019/04/4404_2019_ESPNE_Esports_MediaGuide_FINAL.pdf",
+        "title": "Heroes of the Storm Viewer’s Guide",
+        "publisher": "ESPN",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "操纵英雄在战场移动，及时支援队友。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "pvp-opposition",
+        "note": "两支五人队伍争夺战场并进攻对方基地。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "队友合作清兵线、集合并完成地图目标。",
+        "source": 1,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "全队共享经验并共同提升对局等级。",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "团队达到指定等级后，英雄可以选择新的天赋。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "area-control",
+        "note": "部分战场要求队伍持续控制目标区域。",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://bnetcmsus-a.akamaihd.net/cms/blog_header/sk/SKXY0VZ3XLC61464364768325.jpg",
+      "sourceUrl": "https://news.blizzard.com/en-us/article/20131412/a-year-in-the-storm"
+    },
+    "aliases": []
+  },
+  {
+    "id": "it-takes-two",
+    "name": "双人成行 / It Takes Two",
+    "studio": "Hazelight Studios",
+    "year": 2021,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "platformer",
+      "adventure"
+    ],
+    "playStyleIds": [
+      "platforming",
+      "puzzle-solving",
+      "action-combat"
+    ],
+    "summary": "两名玩家分别控制科迪和小梅，用互补能力穿越不断变化的关卡。",
+    "analysis": "角色能力按章节变化，许多障碍要求一人创造条件、另一人立即利用。",
+    "loop": [
+      "分别控制两名角色探索",
+      "交换信息并组合章节能力",
+      "共同通过障碍，进入下一场景"
+    ],
+    "learning": [
+      "用明确的能力分工让两位玩家都对同一进度负责。"
+    ],
+    "caveats": [
+      "锤子与钉子仅适用于相应章节；全程需要两名玩家。"
+    ],
+    "resources": [
+      "钉子：在特定章节提供开关或摆荡支点",
+      "角色能力：随章节改变"
+    ],
+    "progression": [
+      "章节推进和已完成进度可继续"
+    ],
+    "scopeLabel": "双人合作主线",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1426210/",
+        "title": "It Takes Two on Steam",
+        "publisher": "Electronic Arts",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://arstechnica.com/gaming/2021/03/it-takes-two-hands-on-legitimately-good-co-op-fun-if-you-mute-the-story/",
+        "title": "It Takes Two hands-on",
+        "publisher": "Ars Technica",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "两名玩家分别操纵角色在场景中移动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "角色通过跳跃跨越平台之间的空隙。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "两名玩家配合穿过只有共同操作才能解决的障碍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "两人必须共同完成当前障碍才能继续前进。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "锤子章节中小梅持锤，科迪负责发射和收回钉子。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "conditional",
+        "condition": "锤子与钉子章节"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "科迪瞄准并发射钉子以按下开关或制造支点。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "conditional",
+        "condition": "锤子与钉子章节"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg?t=1777395376",
+      "sourceUrl": "https://store.steampowered.com/app/1426210/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "a-way-out",
+    "name": "逃出生天 / A Way Out",
+    "studio": "Hazelight Studios",
+    "year": 2018,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "adventure",
+      "action"
+    ],
+    "playStyleIds": [
+      "exploration",
+      "action-combat"
+    ],
+    "summary": "两名玩家分别扮演利奥和文森特，合作越狱并继续逃亡。",
+    "analysis": "分屏让玩家同时处理不同任务，一方制造掩护时另一方可以推进共同计划。",
+    "loop": [
+      "分别控制两名囚犯",
+      "分工制造掩护并取得工具",
+      "协作越过障碍并推进逃亡"
+    ],
+    "learning": [
+      "用同时发生的互补任务让分屏成为协作工具。"
+    ],
+    "caveats": [
+      "必须两人游玩；不同章节采用不同操作。原作于 2018 年发行，Steam 版较晚。"
+    ],
+    "resources": [
+      "凿子：用于越狱过程",
+      "两名角色：承担不同任务"
+    ],
+    "progression": [
+      "剧情章节进度在会话之间保留"
+    ],
+    "scopeLabel": "双人合作越狱主线",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1222700/",
+        "title": "A Way Out on Steam",
+        "publisher": "Electronic Arts",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/A_Way_Out",
+        "title": "A Way Out",
+        "publisher": "Wikipedia",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://epiloguegaming.com/collaboration-cooperation-and-contention-in-a-way-out/",
+        "title": "Collaboration, Cooperation, and Contention in A Way Out",
+        "publisher": "Epilogue Gaming",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "两位玩家各自操纵角色行动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "两人共同完成越狱任务。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "两名角色必须共同越过障碍才能继续逃亡。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "早期一人分散护士和守卫注意，另一人寻找凿子。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "conditional",
+        "condition": "取得凿子的越狱段落"
+      },
+      {
+        "id": "wall-climb",
+        "note": "两人背靠背配合向上攀爬竖井。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "conditional",
+        "condition": "竖井攀爬段落"
+      },
+      {
+        "id": "synchronous-session",
+        "note": "两位玩家在同一分屏会话中同时行动和观察。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/header.jpg?t=1777323433",
+      "sourceUrl": "https://store.steampowered.com/app/1222700/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "moving-out",
+    "name": "胡闹搬家 / Moving Out",
+    "studio": "SMG Studio / Devm Games",
+    "year": 2020,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "action"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "puzzle-solving"
+    ],
+    "summary": "独自或与朋友搬运家具，将物品从复杂房屋装进搬家卡车。",
+    "analysis": "物体大小、惯性和场景障碍让玩家需要协商路线与抛接，而非只决定搬运顺序。",
+    "loop": [
+      "查看需要搬运的家具",
+      "与队友抬起、投掷并穿过障碍",
+      "将指定物品装进卡车完成订单"
+    ],
+    "learning": [
+      "用容易理解的共同任务制造自然的空间协作。"
+    ],
+    "caveats": [
+      "多人时部分大件需要合力搬运；辅助模式会改变难度。"
+    ],
+    "resources": [
+      "家具：需按关卡目标搬进卡车",
+      "空间：门窗和卡车容积影响路线"
+    ],
+    "progression": [
+      "搬家任务解锁新的地点"
+    ],
+    "scopeLabel": "故事搬家关卡",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/996770/",
+        "title": "Moving Out on Steam",
+        "publisher": "Team17",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Moving_Out_(video_game)",
+        "title": "Moving Out",
+        "publisher": "Wikipedia",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "direct-movement",
+        "note": "控制搬运工在房屋和卡车之间移动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "jump",
+        "note": "搬运时可跳过窗口等障碍。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "physics-manipulation",
+        "note": "抬起、搬动或投掷家具，利用物理运动通过障碍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "destructible-terrain",
+        "note": "可打碎窗户，为家具开辟新的搬运路线。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "多人合作抬运部分大型家具。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "玩家共同把指定物品装入同一辆卡车，完成搬家订单。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/996770/header.jpg?t=1781014487",
+      "sourceUrl": "https://store.steampowered.com/app/996770/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "keep-talking-and-nobody-explodes",
+    "name": "Keep Talking and Nobody Explodes",
+    "studio": "Steel Crate Games",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "logic-puzzle"
+    ],
+    "playStyleIds": [
+      "puzzle-solving",
+      "investigation-deduction"
+    ],
+    "summary": "一名玩家观察炸弹并操作模块，其他玩家查阅手册、通过交流指导拆解。",
+    "analysis": "观察者和手册持有者掌握不同信息，正确拆解依赖双方用准确描述对齐条件。",
+    "loop": [
+      "观察模块并向专家描述",
+      "专家在手册中查找对应规则",
+      "按指令操作，拆完全部模块"
+    ],
+    "learning": [
+      "把同一个解题任务拆成互补的信息位置，迫使玩家确认描述。"
+    ],
+    "caveats": [
+      "手册专家不直接观察炸弹；部分模式或模组会改变模块组合。"
+    ],
+    "resources": [
+      "时间：倒计时结束前需要完成拆解",
+      "失误次数：达到上限会引爆炸弹"
+    ],
+    "progression": [
+      "任务完成后可挑战新的模块组合"
+    ],
+    "scopeLabel": "本地合作拆弹",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/341800/",
+        "title": "Keep Talking and Nobody Explodes on Steam",
+        "publisher": "Steel Crate Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/341800/manuals/KeepTalkingAndNobodyExplodes-BombDefusalManual-v1.pdf",
+        "title": "Bomb Defusal Manual",
+        "publisher": "Steel Crate Games",
+        "type": "manual",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "拆弹员与查阅手册的专家通过交流共同完成任务。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "拆弹员能看到炸弹，专家能查阅拆弹手册。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "参与者共同拆除同一炸弹上的全部模块。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "planning-timer",
+        "note": "拆弹阶段有倒计时，归零会引爆炸弹。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "environmental-clues",
+        "note": "根据模块的线缆颜色和数量，结合手册推断需要执行的操作。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      },
+      {
+        "id": "deduction-validation",
+        "note": "按条件选择并剪断线缆；错误操作会累计失误。",
+        "source": 1,
+        "evidenceKind": "manual",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/header.jpg?t=1699020889",
+      "sourceUrl": "https://store.steampowered.com/app/341800/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "plateup",
+    "name": "餐瘾地城 / PlateUp!",
+    "studio": "It's happening",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "simulation-management",
+      "roguelite"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "life-simulation"
+    ],
+    "summary": "多人共同经营餐厅，布置厨房、烹饪并在营业日满足顾客。",
+    "analysis": "营业中的紧张协作与打烊后的设备选择交替，餐厅布局直接影响服务效率。",
+    "loop": [
+      "选择菜品并布置厨房",
+      "分工处理烹饪、上菜和顾客",
+      "营业结束后购买设备并调整布局"
+    ],
+    "learning": [
+      "将即时协作与轮次之间的经营决策连接。"
+    ],
+    "caveats": [
+      "可单人或最多四人合作；不同菜品和餐厅布局会改变所需步骤。"
+    ],
+    "resources": [
+      "金币：购买设备",
+      "食材与餐具：用于完成顾客订单"
+    ],
+    "progression": [
+      "单次餐厅设备在营业日之间保留；进度可开放新内容"
+    ],
+    "scopeLabel": "多人餐厅经营",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1599600/",
+        "title": "PlateUp! on Steam",
+        "publisher": "Yogscast Games, Gamersky Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "最多四名玩家共同烹饪、接待并服务顾客。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "玩家共同经营同一家餐厅并满足营业目标。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "依选定菜品加工食材并组合成顾客所需菜肴。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "利用营业所得购买设备并放置在餐厅。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每次餐厅采用程序生成的场地与条件。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "run-reset",
+        "note": "餐厅经营结束后可在新地点重新开始。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "production-chain",
+        "note": "连接设备处理食材，形成连续的厨房生产流程。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1599600/ca2449fda2ccb4e2bb81a3f027f76b6fba04b7fb/header_alt_assets_19.jpg?t=1793009385",
+      "sourceUrl": "https://store.steampowered.com/app/1599600/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "unrailed",
+    "name": "一起开火车 / Unrailed!",
+    "studio": "Indoor Astronaut",
+    "year": 2019,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "action"
+    ],
+    "playStyleIds": [
+      "management-production",
+      "gathering-survival",
+      "spatial-planning"
+    ],
+    "summary": "合作采集木材与矿石、制造并铺设轨道，防止持续前进的火车脱轨。",
+    "analysis": "火车持续前进而工具数量有限，采集、运输与铺轨必须围绕同一进度协调。",
+    "loop": [
+      "砍树、采矿并把材料送回列车",
+      "制作轨道并向前铺设",
+      "升级车厢，进入新地形"
+    ],
+    "learning": [
+      "让持续推进的共同目标迫使玩家动态分配工作。"
+    ],
+    "caveats": [
+      "不同游戏模式和地图难度不同；2019 年首次抢先体验。"
+    ],
+    "resources": [
+      "木材与铁：用于制作轨道",
+      "工具：同类工具数量有限，需要队友协调"
+    ],
+    "progression": [
+      "升级车厢在当前旅程中保留"
+    ],
+    "scopeLabel": "合作铺轨模式",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1016920/",
+        "title": "Unrailed! on Steam",
+        "publisher": "Daedalic Entertainment",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://www.nintendoworldreport.com/review/55152/unrailed-switch-review",
+        "title": "Unrailed! Review",
+        "publisher": "Nintendo World Report",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.lenetronportfolio.com/_files/ugd/5957ca_44c885c4a9324e42a29d87ec89699683.pdf",
+        "title": "Unrailed interaction analysis",
+        "publisher": "Le Netron portfolio",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.daedalicsupport.com/en/games/unrailed%21/",
+        "title": "Unrailed FAQ",
+        "publisher": "Daedalic Entertainment",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "最多四名玩家分工采集、制造和铺设轨道。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "队友共同延长同一条铁轨，使火车继续前进。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "resource-gathering",
+        "note": "使用斧头砍树、用镐开采矿石。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "将木材与铁送入列车生产轨道。",
+        "source": 2,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "real-time-update",
+        "note": "火车持续前进，玩家不及时铺轨会导致脱轨。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "世界地形按程序生成，每次路线不同。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016920/header.jpg?t=1789381506",
+      "sourceUrl": "https://store.steampowered.com/app/1016920/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "lovers-in-a-dangerous-spacetime",
+    "name": "危险时空的恋人 / Lovers in a Dangerous Spacetime",
+    "studio": "Asteroid Base",
+    "year": 2015,
+    "platforms": [
+      "pc",
+      "mac",
+      "linux"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "party-cooperation",
+      "action",
+      "shoot-em-up"
+    ],
+    "playStyleIds": [
+      "action-combat",
+      "vehicle-driving",
+      "exploration"
+    ],
+    "summary": "玩家在同一艘飞船内奔跑，分别操作引擎、护盾和炮台，营救太空动物。",
+    "analysis": "每个岗位都需要有人实际操作，玩家必须根据威胁移动到合适站位并协调飞船航向。",
+    "loop": [
+      "在飞船内分配炮台、引擎和护盾岗位",
+      "驾驶飞船探索并救援动物",
+      "收集宝石强化飞船，继续穿越关卡"
+    ],
+    "learning": [
+      "用共享载具上的空间分工形成随战况变化的合作。"
+    ],
+    "caveats": [
+      "单人模式由 AI 宠物协助；多人采用本地合作。"
+    ],
+    "resources": [
+      "飞船岗位：分别控制引擎、武器和护盾",
+      "太空宝石：改变或强化岗位功能"
+    ],
+    "progression": [
+      "获救动物可解锁新的飞船布局"
+    ],
+    "scopeLabel": "本地合作飞船关卡",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/252110/",
+        "title": "Lovers in a Dangerous Spacetime on Steam",
+        "publisher": "Asteroid Base",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "cooperative-play",
+        "note": "玩家共同操作同一艘飞船的多个岗位。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "shared-objective",
+        "note": "全体成员共同驾驶飞船并营救被困动物。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "role-asymmetry",
+        "note": "不同岗位分别控制推进、护盾和武器，玩家可在岗位间切换。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "vehicle-steering",
+        "note": "操作引擎控制飞船航向和移动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "aimed-launch",
+        "note": "操作炮台瞄准并射击敌人。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "equipment-upgrade",
+        "note": "将太空宝石放入飞船岗位，组合改变其能力。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "generated-layout",
+        "note": "每次关卡的空间布局会随机变化。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252110/header.jpg?t=1745967822",
+      "sourceUrl": "https://store.steampowered.com/app/252110/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "troubleshooter-abandoned-children",
+    "name": "纷争终结者：被遗弃的孩子们 / TROUBLESHOOTER: Abandoned Children",
+    "studio": "Dandylion",
+    "year": 2017,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-turn-based",
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "buildcrafting"
+    ],
+    "summary": "带领调查员执行回合战术任务，通过职业、专精与队伍组合应对不同敌人。",
+    "analysis": "角色职业和专精组合改变可用战术，招募新成员还会开放对应的非战斗功能。",
+    "loop": [
+      "招募并配置调查员",
+      "在回合制任务中分配行动",
+      "取得经验与专精，解锁新能力"
+    ],
+    "learning": [
+      "让队伍成员的职业同时影响战斗和战斗外功能。"
+    ],
+    "caveats": [
+      "任务与角色构筑不同；2017 年为抢先体验首发。"
+    ],
+    "resources": [
+      "经验：提升角色等级",
+      "专精：装配后提供不同能力"
+    ],
+    "progression": [
+      "角色等级、已获专精和公司成员持续保留"
+    ],
+    "scopeLabel": "单人回合战术任务",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/470310/",
+        "title": "TROUBLESHOOTER: Abandoned Children on Steam",
+        "publisher": "Dandylion",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://wiki-origin.giantbomb.com/wiki/Games/Troubleshooter_Abandoned_Children",
+        "title": "Troubleshooter: Abandoned Children",
+        "publisher": "Giant Bomb",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/news/posts/?appids=470310&enddate=1663224824&feed=steam_community_announcements",
+        "title": "Troubleshooter development anniversary",
+        "publisher": "Dandylion",
+        "type": "developer",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "核对 2017 年抢先体验与正式版时间。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "角色按回合顺序行动并使用各自技能。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "选择具有不同职业与能力的调查员组成队伍。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "在任务前选择并配置角色专精。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "character-experience",
+        "note": "击败敌人获得经验，达到要求可提升角色等级。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "objective-unlock",
+        "note": "招募猎人或工程师后分别开放驯服野兽或制作无人机的功能。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "完成不同案件与任务，推进调查员团队的故事。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/470310/header.jpg?t=1747107944",
+      "sourceUrl": "https://store.steampowered.com/app/470310/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "wartales",
+    "name": "战争传说 / Wartales",
+    "studio": "Shiro Games",
+    "year": 2021,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-turn-based",
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "exploration",
+      "gathering-survival"
+    ],
+    "summary": "带领佣兵探索开放世界，接受委托，管理营地并进行回合战术战斗。",
+    "analysis": "角色专长、装备和队伍维持成本连接战斗与旅行，扩充队伍也会提高后勤压力。",
+    "loop": [
+      "招募佣兵并接取合约",
+      "探索并安排营地休整",
+      "回合制战斗后处理战利品和队伍需求"
+    ],
+    "learning": [
+      "让战斗之外的食物、工资和携带能力影响扩编决策。"
+    ],
+    "caveats": [
+      "支持单人或最多四人合作；2021 年首次抢先体验。"
+    ],
+    "resources": [
+      "食物和工资：维持佣兵队伍",
+      "装备与材料：用于战斗配置和制作"
+    ],
+    "progression": [
+      "佣兵、装备及营地设施跨任务保留"
+    ],
+    "scopeLabel": "佣兵队伍与回合战斗",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/1527950/",
+        "title": "Wartales on Steam",
+        "publisher": "Shiro Games",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2846784226",
+        "title": "A New Player’s Guide to Wartales Early Access",
+        "publisher": "Steam Community",
+        "type": "community",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://store.steampowered.com/news/posts/?enddate=1638371978&feed=steam_community_announcements",
+        "title": "Wartales Early Access launch",
+        "publisher": "Shiro Games",
+        "type": "official_site",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "战斗以回合制进行，逐个决定佣兵行动。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "招募具有不同专长和装备偏好的佣兵。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "为队员选择技能和装备以准备战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "upkeep-needs",
+        "note": "休息时需为佣兵准备食物并支付工资。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "inventory-capacity",
+        "note": "队伍的携带能力限制可运输的物品重量。",
+        "source": 1,
+        "evidenceKind": "community_documentation",
+        "status": "present"
+      },
+      {
+        "id": "quest-progression",
+        "note": "接受并完成委托或悬赏，获得报酬和后续目标。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "cooperative-play",
+        "note": "最多四名玩家共同探索并协调战斗。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "conditional",
+        "condition": "多人合作模式"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1527950/header.jpg?t=1788942263",
+      "sourceUrl": "https://store.steampowered.com/app/1527950/"
+    },
+    "aliases": []
+  },
+  {
+    "id": "expeditions-rome",
+    "name": "远征军：罗马 / Expeditions: Rome",
+    "studio": "Logic Artists",
+    "year": 2022,
+    "platforms": [
+      "pc"
+    ],
+    "mobileOrigin": false,
+    "genreIds": [
+      "tactical-turn-based",
+      "turn-based-rpg",
+      "strategy"
+    ],
+    "playStyleIds": [
+      "tactical-command",
+      "exploration",
+      "dialogue-choice"
+    ],
+    "summary": "指挥罗马军团与同伴，在回合战术战斗和政治抉择中推进远征。",
+    "analysis": "武器提供不同攻击动作，人物技能与军团层面的营地和地域管理形成两种决策尺度。",
+    "loop": [
+      "配置执政官与同伴的技能和装备",
+      "指挥小队进行回合制战斗",
+      "扩建营地、招募军团并推进远征"
+    ],
+    "learning": [
+      "让角色装备改变具体战术动作，同时为军团层面的选择保留空间。"
+    ],
+    "caveats": [
+      "小队战术战斗和军团远征采用不同的决策规则。"
+    ],
+    "resources": [
+      "装备：决定可用的攻击动作",
+      "军团资源：支持营地和战役"
+    ],
+    "progression": [
+      "角色成长、装备与军团营地跨战斗保留"
+    ],
+    "scopeLabel": "主线小队战斗与军团远征",
+    "scopeNotes": "以所列版本与模式为范围；年份采用首次公开发行年份，后续更新可能改变具体内容。",
+    "sources": [
+      {
+        "url": "https://store.steampowered.com/app/987840/",
+        "title": "Expeditions: Rome on Steam",
+        "publisher": "THQ Nordic",
+        "type": "official_store",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "读取 Steam 官方商品正文、平台和官方封面；未安装试玩。"
+      },
+      {
+        "url": "https://rpgamer.com/review/expeditions-rome-review/",
+        "title": "Expeditions: Rome Review",
+        "publisher": "RPGamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引规则或发行资料；未安装试玩。"
+      },
+      {
+        "url": "https://www.gameskinny.com/tips/expeditions-rome-crafting-and-upgrades-guide/",
+        "title": "Expeditions: Rome Crafting and Upgrades Guide",
+        "publisher": "GameSkinny",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+      },
+      {
+        "url": "https://nichegamer.com/reviews/expeditions-rome-review/",
+        "title": "Expeditions: Rome Review",
+        "publisher": "Niche Gamer",
+        "type": "editorial",
+        "checkedAt": "2026-11-02",
+        "verificationNote": "阅读所引玩法与发行信息，未安装试玩。"
+      }
+    ],
+    "mechanics": [
+      {
+        "id": "sequential-turns",
+        "note": "双方按回合行动，每名战斗者具有移动与行动机会。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "team-composition",
+        "note": "选择并配置同伴与亲卫队员组成战斗队伍。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loadout-selection",
+        "note": "选择武器、技能和道具，改变角色可用动作。",
+        "source": 1,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "loot-drop",
+        "note": "通过探索和战斗取得武器、护甲及战术物品。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "recipe-crafting",
+        "note": "使用材料制作武器、护甲或战术用品。",
+        "source": 2,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      },
+      {
+        "id": "base-construction",
+        "note": "改善军营，支持军团远征与地域控制。",
+        "source": 0,
+        "evidenceKind": "official_description",
+        "status": "present"
+      },
+      {
+        "id": "dialogue-choice",
+        "note": "在政治剧情中作出对话选择，影响人物和故事走向。",
+        "source": 3,
+        "evidenceKind": "editorial_analysis",
+        "status": "present"
+      }
+    ],
+    "cover": {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/987840/header.jpg?t=1786105603",
+      "sourceUrl": "https://store.steampowered.com/app/987840/"
+    },
+    "aliases": []
+  }
+]
