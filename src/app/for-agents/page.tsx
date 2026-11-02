@@ -24,6 +24,9 @@ export default function ForAgentsPage() {
           <a href={publicAssetPath("/llms.txt")}>llms.txt 阅读导航 →</a>
           <a href={publicAssetPath("/data/v1/catalog.json")}>JSON 实体目录 →</a>
           <a href={publicAssetPath("/data/v1/schema.json")}>数据结构说明 →</a>
+          <a href={publicAssetPath("/data/search-demand/current-trends.json")}>
+            近期游戏搜索快照 →
+          </a>
           <a href={publicAssetPath("/data/v1/knowledge.json")}>
             完整公开知识数据 →
           </a>

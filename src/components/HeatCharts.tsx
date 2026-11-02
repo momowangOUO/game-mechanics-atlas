@@ -10,7 +10,11 @@ import {
 } from "@/lib/heat";
 import { CountUp, SeedBadge } from "./Primitives";
 import { useSearchData } from "./SearchDataProvider";
-import { annualSearchSnapshot } from "@/lib/search-demand";
+import {
+  snapshotDate,
+  videoGameTrends,
+  volumeBucket,
+} from "@/lib/current-trends";
 
 export function formatAmount(value: number) {
   if (value >= 100000000)
@@ -428,26 +432,29 @@ export function HomeHeatHighlights() {
   return (
     <>
       <div className="small-card">
-        <p className="eyebrow">GOOGLE YEAR IN SEARCH / 2025 · 全球</p>
+        <p className="eyebrow">
+          GOOGLE TRENDING NOW / {snapshotDate} · 中国台湾
+        </p>
         <h3 className="serif" style={{ fontSize: 23, margin: "10px 0" }}>
-          2025 年游戏搜索飙升榜
+          近期游戏搜索趋势
         </h3>
         <ol className="home-heat-ranking">
-          {annualSearchSnapshot.entries.slice(0, 5).map((entry) => (
-            <li key={entry.rank}>
-              <Link href="/heat">
-                <span>{entry.query}</span>
-                <strong>#{entry.rank}</strong>
-              </Link>
-            </li>
-          ))}
+          {videoGameTrends("TW")
+            .slice(0, 5)
+            .map((entry) => (
+              <li key={entry.id}>
+                <Link href="/heat">
+                  <span>{entry.query}</span>
+                  <strong>{volumeBucket(entry.volumeLowerBound)}</strong>
+                </Link>
+              </li>
+            ))}
         </ol>
         <p className="filter-note">
-          Google 官方年度飙升名次 · 2025-01-01 至 11-25
-          对比上年同期。名次反映增长，不代表搜索总量或当前需求。
+          近七天走热词条 · 数值为搜索量档位下限，更新时间 {snapshotDate}。
         </p>
         <Link className="button" href="/heat">
-          查看榜单来源与统计范围 →
+          查看其他地区与来源 →
         </Link>
       </div>
       <p className="catalog-note">

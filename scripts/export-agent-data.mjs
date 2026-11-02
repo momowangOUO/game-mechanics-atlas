@@ -18,6 +18,7 @@ import {
 } from "../src/lib/seo.ts";
 import { promptTemplates } from "../src/lib/research-prompt.ts";
 import { mechanicScenes } from "../src/data/mechanic-scenes.ts";
+import { currentTrends } from "../src/lib/current-trends.ts";
 
 const DEFAULT_OUTPUT = fileURLToPath(new URL("../public/", import.meta.url));
 const author = {
@@ -379,7 +380,7 @@ export function createAgentDocuments() {
     if (path === "/heat")
       body += section(
         "数据范围",
-        "此 Markdown 提供页面的静态阅读摘要。年度搜索榜的原始来源、区间、地区和方法以网页公开展示的数据与其来源为准；本 JSON 知识接口不提供当前需求排名、合成搜索量或本地导入数据。",
+        `近期资料采集于 ${currentTrends.collectedAt}，覆盖中国台湾、中国香港、日本、美国的近 ${currentTrends.windowHours / 24} 天 Google Trending Now Games 词条。数值为搜索量档位下限，不是精确次数，也不聚合成类别、机制或组合需求。快照：[current-trends.json](${SITE_URL}/data/search-demand/current-trends.json)；统计方法：[Google Trends](${currentTrends.methodologyUrl})。2025 年年度榜保留为历史资料。本知识接口不提供合成搜索量或用户本地导入数据。`,
       );
     markdown(path, title, body);
   }

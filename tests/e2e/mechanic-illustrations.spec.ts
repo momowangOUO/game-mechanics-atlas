@@ -61,19 +61,42 @@ test("phone comic exposes all three panels without horizontal scrolling", async 
   await gotoApp(page, "/mechanics/jump/");
   const story = page.getByRole("region", { name: "跳跃图解" });
   const visibleFrames = story.locator("figure:visible");
-  await expect(visibleFrames).toHaveCount(1);
-  await story.evaluate((e) => e.scrollIntoView({ block: "center" }));
-  const next = story.getByRole("button", { name: "下一格 →" });
-  await next.click();
+  await expect(visibleFrames).toHaveCount(3);
   await expect(
     story.getByRole("navigation", { name: "漫画分镜" }),
-  ).toContainText("2 / 3");
-  await next.click();
-  await expect(next).toBeDisabled();
-  await story.getByRole("button", { name: "← 上一格" }).click();
-  await expect(
-    story.getByRole("navigation", { name: "漫画分镜" }),
-  ).toContainText("2 / 3");
+  ).not.toBeVisible();
+  let previousBottom = 0;
+  for (const [index, frame] of (await visibleFrames.all()).entries()) {
+    const image = frame.locator("img");
+    await expect(image).toHaveAttribute(
+      "alt",
+      new RegExp(`跳跃漫画第${index + 1}格：`),
+    );
+    await frame.scrollIntoViewIfNeeded();
+    await expect(frame.locator("figcaption")).toBeInViewport();
+    await expect
+      .poll(() =>
+        image.evaluate((element: HTMLImageElement) => element.naturalWidth),
+      )
+      .toBe(1800);
+    const drawing = (await frame.locator("[data-panel]").boundingBox())!;
+    expect(drawing.width).toBeGreaterThan(220);
+    expect(drawing.height).toBeGreaterThan(220);
+    const bounds = await frame.evaluate((element) => {
+      const rect = element.getBoundingClientRect();
+      return { top: rect.top + scrollY, bottom: rect.bottom + scrollY };
+    });
+    expect(bounds.top).toBeGreaterThanOrEqual(previousBottom);
+    previousBottom = bounds.bottom;
+  }
+  expect(
+    await page.evaluate(() => document.documentElement.scrollHeight),
+  ).toBeGreaterThan(844);
+  expect(
+    await story.evaluate(
+      (element) => element.scrollHeight - element.clientHeight,
+    ),
+  ).toBeLessThanOrEqual(2);
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth),
   ).toBeLessThanOrEqual(390);

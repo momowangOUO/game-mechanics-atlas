@@ -6,6 +6,55 @@
   vertical-align: middle;
   filter: drop-shadow(0 2px 0 #15132055);
 }
+.comicLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 72px;
+  margin: 13px 0 7px;
+  padding: 7px;
+  border: 1px solid #af95c4;
+  background: #382c45;
+  color: #eadcf1;
+  text-decoration: none;
+  box-shadow: 3px 3px #15101c;
+}
+.comicLink > span:nth-child(2) {
+  flex: 1;
+}
+.comicLink strong {
+  display: block;
+  font-size: 14px;
+}
+.comicLink small {
+  display: block;
+  font-size: 11px;
+  color: #bdabca;
+  margin-top: 3px;
+}
+.comicLink > b {
+  font-size: 18px;
+  color: #e0c491;
+  margin-right: 5px;
+}
+.comicPreview {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  border: 1px solid #c6accf;
+  flex-shrink: 0;
+}
+.comicPreview > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300%;
+  height: 100%;
+  max-width: none;
+  object-fit: fill;
+}
 .icon > img,
 .icon > span {
   width: 100%;
@@ -615,4 +664,84 @@
   padding: 5px 7px;
   font-size: 10px;
   white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .story,
+  .compact {
+    height: auto;
+    min-height: 0;
+    flex: none;
+  }
+  .frames,
+  .compact .frames {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 10px;
+    flex: none;
+    container-type: normal;
+  }
+  .frame,
+  .activeFrame,
+  .compact .frame,
+  .compact .activeFrame {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+  .compact .panelNumber {
+    position: static;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .comicDrawing,
+  .compact .comicDrawing {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    max-height: none;
+    max-width: none;
+    align-self: auto;
+  }
+  .frame figcaption,
+  .compact .frame figcaption {
+    display: block;
+    border-left: 0;
+    min-height: 0;
+    padding: 12px 13px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .compact .frame figcaption strong {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .framePager,
+  .compact .framePager {
+    display: none;
+  }
+  .compact .modeSwitch button {
+    min-height: 42px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .compact .ruleDiagram {
+    display: block;
+    min-height: 0;
+    flex: none;
+  }
+  .compact .ruleDiagram svg {
+    height: 190px;
+    width: 100%;
+    max-height: none;
+  }
+  .compact .ruleDiagram figcaption {
+    font-size: 13px;
+  }
+  .compact .diagramSteps button {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

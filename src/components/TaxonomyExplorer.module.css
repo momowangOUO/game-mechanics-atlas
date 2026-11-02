@@ -2,6 +2,32 @@
   --dimension-accent: #c4aff0;
   margin-top: 22px;
 }
+.comicCallout {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 11px 13px;
+  background: #524064;
+  color: #fff4d8;
+  border: 2px solid #80638e;
+  box-shadow: 3px 3px #c3b0c4;
+  text-align: left;
+  min-height: 48px;
+  cursor: pointer;
+}
+.comicCallout > span {
+  font-size: 25px;
+  line-height: 1;
+}
+.comicCallout strong {
+  font-size: 15px;
+}
+.comicCallout small {
+  margin-left: auto;
+  font-size: 11px;
+}
 .heading {
   display: flex;
   justify-content: space-between;
@@ -679,14 +705,14 @@
   flex: 1;
   align-content: start;
 }
-.resultList > button {
+.resultList > :is(button, a) {
   text-align: left;
   padding: 20px;
   border: 1px solid #786186;
   color: #e9dcec;
   background: #201d2c;
 }
-.resultList > button > span {
+.resultList > :is(button, a) > span {
   color: #b69ac9;
   font-size: 10px;
 }
@@ -1194,10 +1220,10 @@
     gap: 8px;
     grid-template-columns: 1fr;
   }
-  .resultList > button {
+  .resultList > :is(button, a) {
     padding: 10px 12px;
   }
-  .resultList > button > span {
+  .resultList > :is(button, a) > span {
     font-size: 9px;
   }
   .resultList h2 {
@@ -1339,7 +1365,7 @@
   .resultList {
     gap: 6px;
   }
-  .resultList > button {
+  .resultList > :is(button, a) {
     padding: 7px 10px;
   }
 }
@@ -1353,7 +1379,7 @@
       background 140ms,
       border-color 140ms;
   }
-  .resultList > button:hover,
+  .resultList > :is(button, a):hover,
   .groupList button:hover,
   .mechanicList button:hover {
     border-color: #c4aff0;
@@ -1394,5 +1420,104 @@
   .comicDialog > section > header h2 > span {
     width: 30px !important;
     height: 30px !important;
+  }
+}
+@media (max-width: 700px) {
+  .atlas {
+    height: auto;
+    min-height: 0;
+    display: block;
+    padding-bottom: 20px;
+  }
+  .steps {
+    scroll-margin-top: 12px;
+  }
+  :global(body):has(.atlas) :global(.footer) {
+    display: block;
+  }
+  :global(body):has(.atlas) :global(.frame) {
+    padding-bottom: 80px;
+  }
+  .workspace {
+    display: block;
+    min-height: 0;
+    flex: none;
+  }
+  .workspace .panel {
+    min-height: 0;
+    height: auto;
+  }
+  .dimensionList {
+    display: block;
+    flex: none;
+  }
+  .dimensionList .mobileHidden {
+    display: flex;
+  }
+  .mobilePager {
+    display: none;
+  }
+  .groupList,
+  .mechanicList,
+  .resultList {
+    flex: none;
+    grid-auto-rows: auto;
+  }
+  .dimensionDetails[open] {
+    position: static;
+    inset: auto;
+    margin: 0 12px 12px;
+    padding: 12px;
+  }
+  .readingContent {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    flex: none;
+    font-size: 13px;
+    line-height: 1.9;
+    padding: 15px;
+  }
+  .readingContent h3 {
+    font-size: 14px;
+  }
+  .readingContent h3:not(:first-child) {
+    margin-top: 22px;
+  }
+  .readingContent .example {
+    margin: 0 0 20px;
+  }
+  .readingContent.comicContent {
+    padding: 10px;
+  }
+  .comicCallout {
+    padding: 12px;
+    margin: 10px 0 4px;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .comicCallout small {
+    margin-left: 0;
+    font-size: 11px;
+  }
+  .readingLinks a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .sourceLink {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 11px;
+  }
+  .comicDialog {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .comicDialog > :global(.window-head) {
+    position: sticky;
+    top: 0;
+    z-index: 5;
   }
 }

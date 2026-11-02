@@ -2,9 +2,15 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState, useSyncExternalStore, type CSSProperties } from "react";
+import {
+  useState,
+  useSyncExternalStore,
+  useEffect,
+  useRef,
+  type CSSProperties,
+} from "react";
 import { dimensions, mechanics, games, scopes } from "@/lib/knowledge";
-import { matchesCatalog } from "@/lib/catalog-search";
+import { searchCatalog } from "@/lib/catalog-index";
 import { evidenceLabels } from "@/lib/evidence-labels";
 import {
   taxonomyDimensions,
@@ -30,7 +36,7 @@ function subscribeViewport(callback: () => void) {
   return () => window.removeEventListener("resize", callback);
 }
 function viewportPageSize() {
-  return window.innerWidth > 700 ? 3 : window.innerHeight <= 740 ? 1 : 2;
+  return window.innerWidth > 700 ? 3 : 200;
 }
 
 function Pager({
@@ -47,6 +53,7 @@ function Pager({
   label: string;
 }) {
   const pages = Math.max(1, Math.ceil(count / size));
+  if (size >= 9) return null;
   return (
     <nav className={styles.pager} aria-label={label}>
       <button
@@ -73,9 +80,11 @@ function Pager({
 function Example({
   example,
   conditionOnly = false,
+  full = false,
 }: {
   example: TaxonomyExample;
   conditionOnly?: boolean;
+  full?: boolean;
 }) {
   const game = games.find((item) => item.id === example.gameId);
   const scope = scopes.find((item) => item.id === example.scopeId);
@@ -93,10 +102,10 @@ function Example({
         {example.evidenceKind && <> · {evidenceLabels[example.evidenceKind]}</>}
       </small>
       {!conditionOnly && <p>{example.observation}</p>}
-      {conditionOnly && example.condition && (
+      {(conditionOnly || full) && example.condition && (
         <p className={styles.condition}>成立条件：{example.condition}</p>
       )}
-      {!conditionOnly && example.condition && (
+      {!conditionOnly && !full && example.condition && (
         <p className={styles.conditionHint}>条件实例 · 下一页查看成立条件。</p>
       )}
       <Link
@@ -124,8 +133,15 @@ function Explorer({
     viewportPageSize,
     () => 3,
   );
-  const dimensionPageSize = pageSize === 1 ? 2 : 3;
-  const resultPageSize = pageSize === 1 ? 2 : 4;
+  const mobile = pageSize === 200;
+  const stepsRef = useRef<HTMLElement>(null);
+  const [selectionRevision, setSelectionRevision] = useState(0);
+  useEffect(() => {
+    if (mobile && selectionRevision)
+      stepsRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [selectionRevision, mobile]);
+  const dimensionPageSize = mobile ? 9 : 3;
+  const resultPageSize = mobile ? 500 : 4;
   const linkedMechanic = mechanics.find(
     (item) => item.id === params.get("mechanic"),
   );
@@ -216,44 +232,8 @@ function Explorer({
         ]
       : [{ example, conditionOnly: false }],
   );
-  const searchResults = [
-    ...taxonomyDimensions.map((info) => {
-      const d = dimensions.find((item) => item.id === info.dimensionId)!;
-      return {
-        id: d.id,
-        name: d.name,
-        kind: "dimension" as const,
-        path: "一级 · 分类维度",
-        description: info.explanation,
-        extra: `${info.question} ${info.use} ${info.boundary}`,
-      };
-    }),
-    ...taxonomyGroups.map((g) => ({
-      id: g.id,
-      name: g.name,
-      kind: "group" as const,
-      path: `二级 · ${dimensions.find((d) => d.id === g.dimensionId)!.name}`,
-      description: g.explanation,
-      extra: `${g.function} ${g.boundary} ${g.examples.map((e) => games.find((game) => game.id === e.gameId)?.name).join(" ")}`,
-    })),
-    ...mechanics.map((m) => ({
-      ...m,
-      kind: "mechanic" as const,
-      path: `三级 · ${dimensions.find((d) => d.id === m.dimension)!.name} / ${taxonomyGroups.find((g) => g.mechanicIds.includes(m.id))?.name}`,
-      description: m.definition,
-      extra: [
-        ...m.designValue,
-        ...m.inclusionRules,
-        ...m.exclusionRules,
-        ...m.corePlayTags,
-        ...(mechanicExamples[m.id] ?? []).map(
-          (e) =>
-            `${games.find((g) => g.id === e.gameId)?.name} ${e.observation}`,
-        ),
-      ].join(" "),
-    })),
-  ].filter((item) =>
-    matchesCatalog(item, query, `${item.description} ${item.extra}`),
+  const searchResults = searchCatalog(query).filter(
+    (item) => item.kind !== "recipe",
   );
   const safeResultPage = Math.min(
     resultPage,
@@ -273,6 +253,7 @@ function Explorer({
     setReading("comic");
     setReadingPage(0);
     setStage(1);
+    setSelectionRevision((value) => value + 1);
   }
   function selectGroup(id: string) {
     const next = taxonomyGroups.find((item) => item.id === id)!;
@@ -293,6 +274,7 @@ function Explorer({
     setReading("comic");
     setReadingPage(0);
     setStage(2);
+    setSelectionRevision((value) => value + 1);
   }
   function selectMechanic(id: string) {
     const next = taxonomyGroups.find((item) => item.mechanicIds.includes(id))!;
@@ -313,12 +295,13 @@ function Explorer({
     setReading("comic");
     setReadingPage(0);
     setStage(3);
+    setSelectionRevision((value) => value + 1);
   }
   const selectResult = (item: (typeof searchResults)[number]) => {
     if (item.kind === "dimension")
       selectDimension(item.id as typeof dimensionId);
     else if (item.kind === "group") selectGroup(item.id);
-    else selectMechanic(item.id);
+    else if (item.kind === "mechanic") selectMechanic(item.id);
     setQuery("");
   };
 
@@ -419,18 +402,28 @@ function Explorer({
                 safeResultPage * resultPageSize,
                 safeResultPage * resultPageSize + resultPageSize,
               )
-              .map((item) => (
-                <button
-                  key={`${item.kind}-${item.id}`}
-                  onClick={() => selectResult(item)}
-                >
-                  <span>{item.path}</span>
-                  <h2>
-                    {item.name} <small>→</small>
-                  </h2>
-                  <p>{item.description}</p>
-                </button>
-              ))}
+              .map((item) =>
+                item.kind === "game" || item.kind === "genre" ? (
+                  <Link key={`${item.kind}-${item.id}`} href={item.href}>
+                    <span>{item.path}</span>
+                    <h2>
+                      {item.name} <small>↗</small>
+                    </h2>
+                    <p>{item.description}</p>
+                  </Link>
+                ) : (
+                  <button
+                    key={`${item.kind}-${item.id}`}
+                    onClick={() => selectResult(item)}
+                  >
+                    <span>{item.path}</span>
+                    <h2>
+                      {item.name} <small>→</small>
+                    </h2>
+                    <p>{item.description}</p>
+                  </button>
+                ),
+              )}
             {!searchResults.length && (
               <div className={styles.noResults}>
                 <h2>没有找到匹配的分类或机制</h2>
@@ -449,7 +442,11 @@ function Explorer({
         </section>
       ) : (
         <>
-          <nav className={styles.steps} aria-label="分类浏览层级">
+          <nav
+            ref={stepsRef}
+            className={styles.steps}
+            aria-label="分类浏览层级"
+          >
             {["维度", "分组", "机制", "阅读"].map((name, index) => (
               <button
                 key={name}
@@ -699,6 +696,19 @@ function Explorer({
                 <h2>
                   <MechanicIcon id={mechanic.id} size={40} /> {mechanic.name}
                 </h2>
+                <button
+                  type="button"
+                  aria-label="看图理解"
+                  className={styles.comicCallout}
+                  onClick={() => {
+                    setExpandedPanel(0);
+                    setComicOpen(true);
+                  }}
+                >
+                  <span aria-hidden="true">▧</span>
+                  <strong>看图理解</strong>
+                  <small>三格演示 · {mechanic.name} ↗</small>
+                </button>
               </header>
               <div
                 className={styles.readingTabs}
@@ -745,7 +755,25 @@ function Explorer({
                     }}
                   />
                 )}
-                {reading === "purpose" && (
+                {reading === "purpose" && mobile && (
+                  <>
+                    <h3>标准定义</h3>
+                    <p>{mechanic.definition}</p>
+                    <h3>设计作用</h3>
+                    <ul>
+                      {mechanic.designValue.map((text) => (
+                        <li key={text}>{text}</li>
+                      ))}
+                    </ul>
+                    <h3>常见设计问题</h3>
+                    <ul>
+                      {mechanic.risks.map((text) => (
+                        <li key={text}>{text}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {reading === "purpose" && !mobile && (
                   <>
                     <h3>
                       {["标准定义", "设计作用", "常见设计问题"][readingPage]}
@@ -771,7 +799,23 @@ function Explorer({
                     />
                   </>
                 )}
-                {reading === "boundary" && (
+                {reading === "boundary" && mobile && (
+                  <>
+                    <h3>纳入条件</h3>
+                    <ul>
+                      {mechanic.inclusionRules.map((text) => (
+                        <li key={text}>{text}</li>
+                      ))}
+                    </ul>
+                    <h3>排除边界</h3>
+                    <ul>
+                      {mechanic.exclusionRules.map((text) => (
+                        <li key={text}>{text}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {reading === "boundary" && !mobile && (
                   <>
                     <h3>{readingPage === 0 ? "纳入条件" : "排除边界"}</h3>
                     <ul>
@@ -793,7 +837,15 @@ function Explorer({
                 )}
                 {reading === "examples" && (
                   <>
-                    {examples.length ? (
+                    {mobile && examples.length ? (
+                      examples.map((example) => (
+                        <Example
+                          key={`${example.gameId}-${example.scopeId}`}
+                          example={example}
+                          full
+                        />
+                      ))
+                    ) : examples.length ? (
                       <>
                         <Example
                           example={examplePages[examplePage].example}

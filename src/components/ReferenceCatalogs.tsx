@@ -4,6 +4,9 @@ import { useState } from "react";
 import { sources, genres, games } from "@/lib/knowledge";
 import { getTypeReference } from "@/data/type-reference";
 import { EmptyState } from "./Primitives";
+import { useCatalogPageSize } from "@/lib/use-catalog-page-size";
+import { searchCatalog } from "@/lib/catalog-index";
+import { matchesCatalog } from "@/lib/catalog-search";
 
 const sourceLabels: Record<string, string> = {
   manual: "规则手册",
@@ -41,6 +44,7 @@ function Pager({
   );
 }
 export function SourceCatalog() {
+  const pageSize = useCatalogPageSize(10);
   const [query, setQuery] = useState(""),
     [type, setType] = useState(""),
     [page, setPage] = useState(1);
@@ -51,7 +55,7 @@ export function SourceCatalog() {
         .toLowerCase()
         .includes(query.trim().toLowerCase()),
   );
-  const total = Math.ceil(rows.length / 10),
+  const total = Math.ceil(rows.length / pageSize),
     current = Math.min(page, Math.max(1, total));
   return (
     <section aria-label="来源检索">
@@ -88,7 +92,7 @@ export function SourceCatalog() {
         <span>{rows.length} 条来源</span>
       </div>
       <div className="source-catalog">
-        {rows.slice((current - 1) * 10, current * 10).map((s) => (
+        {rows.slice((current - 1) * pageSize, current * pageSize).map((s) => (
           <article key={s.id} id={s.id}>
             <span className="eyebrow">{sourceLabels[s.type] ?? s.type}</span>
             <h2>{s.title}</h2>
@@ -108,19 +112,31 @@ export function SourceCatalog() {
           description="换个关键词，或将来源类别改为“全部来源”。"
         />
       )}
-      <Pager page={current} total={total} onPage={setPage} />
+      {pageSize < 1000 && (
+        <Pager page={current} total={total} onPage={setPage} />
+      )}
     </section>
   );
 }
 export function TypeCatalog() {
+  const pageSize = useCatalogPageSize(8);
   const [query, setQuery] = useState(""),
     [page, setPage] = useState(1);
-  const rows = genres.filter((g) =>
-    `${g.id} ${g.name} ${g.definition} ${getTypeReference(g.id)?.playerTask ?? ""}`
-      .toLowerCase()
-      .includes(query.trim().toLowerCase()),
+  const matched = new Set(
+    searchCatalog(query)
+      .filter((item) => item.kind === "genre")
+      .map((item) => item.id),
   );
-  const total = Math.ceil(rows.length / 8),
+  const rows = genres.filter(
+    (g) =>
+      matched.has(g.id) ||
+      matchesCatalog(
+        g,
+        query,
+        `${g.definition} ${getTypeReference(g.id)?.playerTask ?? ""}`,
+      ),
+  );
+  const total = Math.ceil(rows.length / pageSize),
     current = Math.min(page, Math.max(1, total));
   return (
     <section aria-label="类型检索">
@@ -140,7 +156,7 @@ export function TypeCatalog() {
         <span>{rows.length} 个类型</span>
       </div>
       <div className="type-index-grid">
-        {rows.slice((current - 1) * 8, current * 8).map((g) => (
+        {rows.slice((current - 1) * pageSize, current * pageSize).map((g) => (
           <Link
             className="mechanic-card interactive-card"
             key={g.id}
@@ -173,7 +189,9 @@ export function TypeCatalog() {
           description="试试中文名、英文名，或缩短关键词。"
         />
       )}
-      <Pager page={current} total={total} onPage={setPage} />
+      {pageSize < 1000 && (
+        <Pager page={current} total={total} onPage={setPage} />
+      )}
     </section>
   );
 }

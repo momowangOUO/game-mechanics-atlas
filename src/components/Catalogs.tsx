@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { DimensionIcon } from "./Art";
-import { MechanicIcon, MechanicExamples } from "./MechanicVisuals";
+import {
+  MechanicIcon,
+  MechanicExamples,
+  MechanicComicLink,
+} from "./MechanicVisuals";
 import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { dimensions, games, genres, mechanics } from "@/lib/knowledge";
@@ -11,6 +15,7 @@ import { EmptyState, GameCard, PageHead, Reveal } from "./Primitives";
 import { matchesCatalog } from "@/lib/catalog-search";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
 import taxonomyStyles from "./TaxonomyExplorer.module.css";
+import { useCatalogPageSize } from "@/lib/use-catalog-page-size";
 
 function Pagination({
   page,
@@ -53,6 +58,7 @@ export function MechanicCatalog({
     [page, setPage] = useState(1),
     [drawer, setDrawer] = useState(false);
   const genre = genres.find((g) => g.id === initialGenre);
+  const pageSize = useCatalogPageSize(8);
   const genreIds = genre
     ? new Set([
         ...genre.requiredMechanics,
@@ -70,11 +76,15 @@ export function MechanicCatalog({
           (!dimension || m.dimension === dimension) &&
           (!core || m.corePlayTags.includes(core)) &&
           (!genreIds || genreIds.has(m.id)) &&
-          matchesCatalog(m, query, m.definition),
+          matchesCatalog(
+            m,
+            query,
+            `${m.definition} ${dimensions.find((d) => d.id === m.dimension)?.name} ${taxonomyGroups.find((g) => g.mechanicIds.includes(m.id))?.name}`,
+          ),
       ),
     [query, dimension, core, genreIds],
   );
-  const total = Math.ceil(filtered.length / 8),
+  const total = Math.ceil(filtered.length / pageSize),
     safePage = Math.min(page, Math.max(1, total));
   const reset = () => {
     setQuery("");
@@ -209,7 +219,7 @@ export function MechanicCatalog({
             <>
               <motion.div layout className="mechanic-grid">
                 {filtered
-                  .slice((safePage - 1) * 8, safePage * 8)
+                  .slice((safePage - 1) * pageSize, safePage * pageSize)
                   .map((mechanic, i) => {
                     const d = dimensions.find(
                       (d) => d.id === mechanic.dimension,
@@ -248,20 +258,23 @@ export function MechanicCatalog({
                           </div>
                         </Link>
                         <MechanicExamples id={mechanic.id} small />
+                        <MechanicComicLink id={mechanic.id} />
                       </Reveal>
                     );
                   })}
               </motion.div>
-              <Pagination
-                page={safePage}
-                total={total}
-                onPage={(p) => {
-                  setPage(p);
-                  document
-                    .querySelector(".catalog-toolbar")
-                    ?.scrollIntoView({ block: "start", behavior: "instant" });
-                }}
-              />
+              {pageSize < 1000 && (
+                <Pagination
+                  page={safePage}
+                  total={total}
+                  onPage={(p) => {
+                    setPage(p);
+                    document
+                      .querySelector(".catalog-toolbar")
+                      ?.scrollIntoView({ block: "start", behavior: "instant" });
+                  }}
+                />
+              )}
             </>
           ) : (
             <EmptyState>
@@ -290,6 +303,7 @@ export function MechanicCatalog({
 }
 
 export function GameCatalog() {
+  const pageSize = useCatalogPageSize(6);
   const [query, setQuery] = useState(""),
     [genre, setGenre] = useState(""),
     [core, setCore] = useState(""),
@@ -299,9 +313,16 @@ export function GameCatalog() {
     (g) =>
       (!genre || g.genreIds.includes(genre)) &&
       (!core || g.corePlayTags.includes(core)) &&
-      matchesCatalog(g, query, g.summary),
+      matchesCatalog(
+        g,
+        query,
+        `${g.summary} ${genres
+          .filter((genre) => g.genreIds.includes(genre.id))
+          .map((genre) => `${genre.name} ${genre.id}`)
+          .join(" ")}`,
+      ),
   );
-  const total = Math.ceil(filtered.length / 6),
+  const total = Math.ceil(filtered.length / pageSize),
     safePage = Math.min(page, Math.max(1, total));
   const reset = () => {
     setQuery("");
@@ -378,22 +399,26 @@ export function GameCatalog() {
       {filtered.length ? (
         <>
           <div className="case-grid catalog-games">
-            {filtered.slice((safePage - 1) * 6, safePage * 6).map((g, i) => (
-              <Reveal key={g.id} index={i}>
-                <GameCard game={g} />
-              </Reveal>
-            ))}
+            {filtered
+              .slice((safePage - 1) * pageSize, safePage * pageSize)
+              .map((g, i) => (
+                <Reveal key={g.id} index={i}>
+                  <GameCard game={g} />
+                </Reveal>
+              ))}
           </div>
-          <Pagination
-            page={safePage}
-            total={total}
-            onPage={(p) => {
-              setPage(p);
-              document
-                .querySelector(".game-catalog-controls")
-                ?.scrollIntoView({ block: "start", behavior: "instant" });
-            }}
-          />
+          {pageSize < 1000 && (
+            <Pagination
+              page={safePage}
+              total={total}
+              onPage={(p) => {
+                setPage(p);
+                document
+                  .querySelector(".game-catalog-controls")
+                  ?.scrollIntoView({ block: "start", behavior: "instant" });
+              }}
+            />
+          )}
         </>
       ) : (
         <EmptyState title="暂时没有匹配的游戏">

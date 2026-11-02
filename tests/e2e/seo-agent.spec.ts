@@ -87,7 +87,7 @@ test("sitemap matches all content routes without query variants or invented modi
     ...(catalog.entities as CatalogEntity[]).map((row) => row.canonicalUrl),
   ]);
   expect(new Set(urls)).toEqual(expected);
-  expect(urls).toHaveLength(306);
+  expect(urls).toHaveLength(308);
   expect(new Set(urls).size).toBe(urls.length);
   expect(urls).toContain(canonicalUrl("/copyright"));
   expect(xml).not.toContain("<lastmod>");
@@ -110,11 +110,11 @@ test("static machine resources expose real IDs, exact instance conditions and so
     dimensions: 9,
     groups: 50,
     mechanics: 122,
-    games: 80,
+    games: 82,
     types: 32,
     recipes: 32,
-    instances: 705,
-    sources: 149,
+    instances: 718,
+    sources: 156,
   });
   const conditional = instances.find(
     (row: { status: string; sourceIds: string[] }) =>

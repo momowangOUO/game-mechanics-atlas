@@ -13,10 +13,8 @@ import {
 import Link from "next/link";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { usePathname } from "next/navigation";
-import { dimensions, games, genres, mechanics, recipes } from "@/lib/knowledge";
-import { taxonomyGroups } from "@/data/taxonomy-reference";
 import { SearchDataProvider } from "./SearchDataProvider";
-import { matchesCatalog } from "@/lib/catalog-search";
+import { searchCatalog } from "@/lib/catalog-index";
 import { MechanicIcon } from "./MechanicVisuals";
 
 type MotionPreference = "auto" | "full" | "reduced";
@@ -178,69 +176,21 @@ export function AppProviders({ children }: { children: ReactNode }) {
     }),
     [effects, preference],
   );
-  const normalized = query.trim().toLocaleLowerCase();
-  const matches = (name: string, id: string, extra = "") =>
-    `${name} ${id} ${extra}`.toLocaleLowerCase().includes(normalized);
-  const results = [
-    ...dimensions
-      .filter((dimension) =>
-        matches(dimension.name, dimension.id, dimension.description),
-      )
-      .slice(0, 2)
-      .map((dimension) => ({
-        name: dimension.name,
-        kind: "一级维度",
-        meta: dimension.description,
-        href: `/taxonomy?dimension=${dimension.id}`,
-      })),
-    ...taxonomyGroups
-      .filter((group) =>
-        matches(group.name, group.id, `${group.explanation} ${group.function}`),
-      )
-      .slice(0, 3)
-      .map((group) => ({
-        name: group.name,
-        kind: "二级分组",
-        meta: group.explanation,
-        href: `/taxonomy?group=${group.id}`,
-      })),
-    ...mechanics
-      .filter((m) => matchesCatalog(m, query, m.definition))
-      .slice(0, 5)
-      .map((m) => ({
-        name: m.name,
-        kind: "机制档案",
-        meta: m.definition,
-        href: `/mechanics/${m.id}`,
-      })),
-    ...games
-      .filter((g) => matchesCatalog(g, query, g.summary))
-      .slice(0, 4)
-      .map((g) => ({
-        name: g.name,
-        kind: "游戏案例",
-        meta: g.summary,
-        href: `/games/${g.id}`,
-      })),
-    ...genres
-      .filter((g) => matches(g.name, g.id))
-      .slice(0, 2)
-      .map((g) => ({
-        name: g.name,
-        kind: "复合类型",
-        meta: g.definition,
-        href: `/types/${g.id}`,
-      })),
-    ...recipes
-      .filter((r) => matches(r.name, r.id))
-      .slice(0, 2)
-      .map((r) => ({
-        name: r.name,
-        kind: "组合配方",
-        meta: r.synergies[0] || "编写组合研究提示词",
-        href: `/lab?recipe=${r.id}`,
-      })),
-  ];
+  const resultKinds = {
+    dimension: "一级维度",
+    group: "二级分组",
+    mechanic: "机制档案",
+    game: "游戏案例",
+    genre: "复合类型",
+    recipe: "组合配方",
+  };
+  const allResults = searchCatalog(query);
+  const results = allResults.slice(0, 18).map((item) => ({
+    name: item.name,
+    kind: resultKinds[item.kind],
+    meta: item.description,
+    href: item.href,
+  }));
   return (
     <UIContext.Provider value={value}>
       <SearchDataProvider>
@@ -269,10 +219,13 @@ export function AppProviders({ children }: { children: ReactNode }) {
               <span className="keycap">ESC</span>
             </div>
             <p className="search-help">
-              {normalized
+              {query.trim()
                 ? "按名称、ID 和说明查找本站档案。"
                 : "例如：卡组、Balatro、重开、撤离。"}
-              <span aria-live="polite">{results.length} 项</span>
+              <span aria-live="polite">
+                {allResults.length} 项
+                {allResults.length > 18 ? " · 显示前 18 项" : ""}
+              </span>
             </p>
             <motion.div layout className="search-results">
               {results.length ? (
@@ -303,8 +256,14 @@ export function AppProviders({ children }: { children: ReactNode }) {
               ) : (
                 <div className="empty-state">
                   <span aria-hidden="true">◇</span>
-                  <h3>没有找到匹配的档案</h3>
-                  <p>换个关键词，或打开分类参考逐层查找。</p>
+                  <h3>
+                    {query.trim() ? "没有找到匹配的档案" : "输入关键词开始查找"}
+                  </h3>
+                  <p>
+                    {query.trim()
+                      ? "换个关键词，或打开分类参考逐层查找。"
+                      : "可以输入分类名、游戏名或几个规则关键词。"}
+                  </p>
                   <Link
                     href="/taxonomy"
                     className="button primary"

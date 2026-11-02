@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Fortnite",
+    "terms": [
+      "fortnite",
+      "フォートナイト"
+    ],
+    "sourceUrl": "https://www.fortnite.com/"
+  },
+  {
+    "name": "Grand Theft Auto VI",
+    "terms": [
+      "gta 6",
+      "gta6",
+      "gta vi",
+      "俠盜獵車手vi"
+    ],
+    "sourceUrl": "https://www.rockstargames.com/VI"
+  },
+  {
+    "name": "Minecraft",
+    "gameId": "minecraft",
+    "terms": [
+      "minecraft",
+      "マイクラ",
+      "マインクラフト",
+      "我的世界"
+    ],
+    "sourceUrl": "https://www.minecraft.net/"
+  },
+  {
+    "name": "League of Legends",
+    "gameId": "league-of-legends",
+    "terms": [
+      "league of legends",
+      "英雄聯盟",
+      "英雄联盟",
+      "lol 世界賽",
+      "lol worlds"
+    ],
+    "sourceUrl": "https://www.leagueoflegends.com/"
+  },
+  {
+    "name": "VALORANT",
+    "gameId": "valorant",
+    "terms": [
+      "valorant",
+      "特戰英豪",
+      "无畏契约"
+    ],
+    "sourceUrl": "https://playvalorant.com/"
+  },
+  {
+    "name": "Monster Hunter Outlanders",
+    "terms": [
+      "monster hunter outlanders",
+      "魔物獵人旅人",
+      "モンスターハンターアウトランダーズ"
+    ],
+    "sourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+    "gameId": "monster-hunter-outlanders"
+  },
+  {
+    "name": "Phantom Blade Zero · 影之刃零",
+    "terms": [
+      "phantom blade zero",
+      "影之刃零",
+      "ファントムブレードゼロ"
+    ],
+    "sourceUrl": "https://pbz.s-game.com/en-US/",
+    "gameId": "phantom-blade-zero"
+  },
+  {
+    "name": "Pokémon UNITE",
+    "terms": [
+      "pokemon unite",
+      "pokémon unite",
+      "寶可夢大集結",
+      "ポケモンユナイト"
+    ],
+    "sourceUrl": "https://unite.pokemon.com/"
+  },
+  {
+    "name": "Final Fantasy XIV",
+    "terms": [
+      "ff14",
+      "final fantasy xiv"
+    ],
+    "sourceUrl": "https://www.finalfantasyxiv.com/"
+  },
+  {
+    "name": "Destiny 2",
+    "terms": [
+      "destiny 2"
+    ],
+    "sourceUrl": "https://www.bungie.net/7/en/Destiny/NewLight"
+  },
+  {
+    "name": "Pikmin",
+    "terms": [
+      "pikmin",
+      "ピクミン"
+    ],
+    "sourceUrl": "https://www.nintendo.com/jp/character/pikmin/"
+  },
+  {
+    "name": "Wordle",
+    "terms": [
+      "wordle"
+    ],
+    "sourceUrl": "https://www.nytimes.com/games/wordle/index.html"
+  }
+]

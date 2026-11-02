@@ -28,6 +28,7 @@ import { listGameScopes } from "@/lib/graph-layout";
 import { evidenceLabels } from "@/lib/evidence-labels";
 import { gameMechanicOverview } from "@/lib/game-mechanic-overview";
 import GameMechanicInventory from "./GameMechanicInventory";
+import { MechanicComicLink } from "./MechanicVisuals";
 
 type GameView = "mechanics" | "loop" | "relations" | "heat";
 export default function GameViews({ game }: { game: Game }) {
@@ -183,6 +184,7 @@ function ScopedGameViews({
                           }
                         </span>
                         <p>{observation.rationale}</p>
+                        <MechanicComicLink id={mechanic.id} />
                         <span className="scope-label">
                           记录范围：
                           {observation.scopeNote || currentScope.label}

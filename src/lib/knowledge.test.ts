@@ -6,7 +6,7 @@ describe('canonical catalog',()=>{
   it('keeps nine dimensions and normalized references',()=>{
     expect(dimensions).toHaveLength(9);expect(new Set(dimensions.map(d=>d.id)).size).toBe(9);
     expect(DimensionIdSchema.safeParse('roguelite').success).toBe(false);
-    expect(mechanics.length).toBeGreaterThanOrEqual(120);expect(games).toHaveLength(80);expect(genres).toHaveLength(32);expect(recipes).toHaveLength(32);
+    expect(mechanics.length).toBeGreaterThanOrEqual(120);expect(games).toHaveLength(82);expect(genres).toHaveLength(32);expect(recipes).toHaveLength(32);
     expect(relationships.length).toBeGreaterThanOrEqual(120);expect(instances.filter(i=>['present','conditional'].includes(i.status)).length).toBeGreaterThanOrEqual(600);
     expect(new Set(sources.map(s=>s.url)).size).toBeGreaterThanOrEqual(120);expect(validateKnowledge()).toEqual([]);
     for(const game of games){expect(getInstances(game.id).filter(i=>['present','conditional'].includes(i.status)).length,game.id).toBeGreaterThanOrEqual(6);expect(game.coreLoop.length).toBeGreaterThanOrEqual(3);expect(game.coreLoop.length).toBeLessThanOrEqual(6);}

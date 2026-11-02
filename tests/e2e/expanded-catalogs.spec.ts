@@ -1,5 +1,9 @@
 import { test, expect } from "@playwright/test";
 import { gotoApp, appHref } from "./navigation";
+import { readFileSync } from "node:fs";
+const sourceCount = JSON.parse(
+  readFileSync("docs/research/game-evidence.json", "utf8"),
+).sources.length;
 
 test("official covers keep their source identity and full image", async ({
   page,
@@ -23,22 +27,26 @@ test("reference catalogs search, paginate and explain an empty result", async ({
   await gotoApp(page, "/sources");
   const sourceCatalog = page.getByRole("region", { name: "来源检索" });
   await expect(sourceCatalog.locator("article")).toHaveCount(10);
+  await sourceCatalog.getByRole("button", { name: "下一页 →" }).click();
+  await expect(
+    sourceCatalog.getByRole("button", { name: "← 上一页" }),
+  ).toBeEnabled();
   await page.setViewportSize({ width: 390, height: 844 });
+  await expect(sourceCatalog.locator("article")).toHaveCount(sourceCount);
+  await expect(
+    sourceCatalog.getByRole("navigation", { name: "目录分页" }),
+  ).toHaveCount(0);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth - innerWidth,
     ),
   ).toBe(0);
-  await sourceCatalog.getByRole("button", { name: "下一页 →" }).click();
-  await expect(
-    sourceCatalog.getByRole("button", { name: "← 上一页" }),
-  ).toBeEnabled();
   await sourceCatalog
     .getByRole("searchbox", { name: "搜索来源" })
     .fill("zzzz-no-source-765");
   await expect(sourceCatalog.getByText("没有匹配的来源")).toBeVisible();
   await sourceCatalog.getByRole("searchbox", { name: "搜索来源" }).fill("");
-  await expect(sourceCatalog.locator("article")).toHaveCount(10);
+  await expect(sourceCatalog.locator("article")).toHaveCount(sourceCount);
   await gotoApp(page, "/types");
   await page.getByRole("searchbox", { name: "搜索复合类型" }).fill("MOBA");
   await expect(

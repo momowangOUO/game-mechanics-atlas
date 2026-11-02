@@ -9,6 +9,14 @@ const { mechanicScenes } = await import("../src/data/mechanic-scenes.ts");
 const files = createAgentDocuments();
 const parse = (name) => JSON.parse(files.get(name));
 
+test("current search snapshot links remain direct JSON URLs", () => {
+  const heat = files.get("heat/index.md");
+  assert.ok(
+    heat.includes(`${SITE_URL}/data/search-demand/current-trends.json)`),
+  );
+  assert.equal(heat.includes("current-trends.json/"), false);
+});
+
 test("every canonical content page has a Markdown alternate", () => {
   for (const path of publicContentPaths()) {
     const name = `${path === "/" ? "" : path.slice(1) + "/"}index.md`;
@@ -24,11 +32,11 @@ test("registry points only at generated entity resources and real page alternate
     dimensions: 9,
     groups: 50,
     mechanics: 122,
-    games: 80,
+    games: 82,
     types: 32,
     recipes: 32,
-    instances: 705,
-    sources: 149,
+    instances: 718,
+    sources: 156,
   });
   const keys = new Set();
   for (const row of catalog.entities) {

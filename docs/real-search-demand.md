@@ -1,6 +1,21 @@
 # 真实搜索资料与采集范围
 
-默认页面不再加载合成搜索量。已接入 Google 官方的 2025 年全球 Games 飙升搜索榜，保留官方十个名次、原始词条、来源、采集时间和证据摘要；它是实际发布的历史搜索资料。
+默认页面展示 Google Trending Now 的近期电子游戏搜索快照，2025 年全球 Games 飙升榜保留为历史资料。两种资料分别标注来源、指标和统计范围，不拼成一张排名。
+
+## 近期快照：2026-11-02
+
+- 来源：[Google Trending Now](https://trends.google.com/trending?geo=TW&category=6&hours=168)，近七天，Games 分类。
+- 地区：中国台湾、中国香港、日本、美国，各自展示，不跨地区求和。
+- 当前发布 38 个已核对的电子游戏词条：9、6、10、13 项。它们是近期走热的词条，不是全部游戏的搜索榜。
+- 指标：Google 公布的搜索量档位下限、相对通常水平的增长、开始走热与回落时间。`2万+` 保留为档位，不改成精确的 20,000 次；`1,000%` 保留来源的显示上限。
+- 词条可能因发售、赛事、更新、服务器状态或攻略而上榜。相近词条可能重叠，不相加成游戏、类型、机制或组合总需求。
+- 公开文件：`src/data/current-trends.json`、`public/data/search-demand/current-trends.json` 和四份 `trending-地区-source.json`。每份来源片段保留原数组数值与 SHA-256；完整官方 HTML 保存在忽略的 `.build/search-demand/`。
+- 只发布已核对的电子游戏搜索，排除纯赌博与传统棋牌。原始 Games 池中的彩票、赛马、棋类等未进入公开数据，详见[收录范围](content-scope.md)。
+- 手动更新：`node scripts/collect-current-trends.mjs`。没有定时研究或自动更新任务。网站显示实际采集日期，不宣称持续实时更新。
+
+采集适配参考了 MIT 许可的 [google-trends-now](https://github.com/RuochenLyu/google-trends-now) 对数据格式的说明；本项目没有安装其依赖或执行远程脚本，实际数据直接读取 Google 页面。解析仅使用 JSON，不执行页面脚本；字段或地区不符时停止，保留原快照。
+
+Google 的[统计说明](https://support.google.com/trends/answer/3076011?hl=en)解释了走热状态、分档流量与时间窗口。近期游戏名搜索没有被分配成某个机制的直接测量。
 
 ## 已取得的数据
 
@@ -14,9 +29,9 @@
 
 年度榜不能作为当前类型需求、原子机制需求、机制组合需求或蓝海结论的依据。没有该主题的直接测量时，页面仍显示未采集。
 
-## 本次未取得的数据
+## 类型对比仍未取得
 
-2026-10-31，本机用一次 Google Trends explore 请求比较 `roguelike`、`deck-building game`、`auto battler`、`idle game`、`extraction shooter`。地区为全球，网页搜索，全部类别，区间为 2026-07-31 至 2026-10-30。实际返回 HTTP 429，没有取得时间序列。
+2026-11-02，再次请求同组 `roguelike`、`deck-building game`、`auto battler`、`idle game`、`extraction shooter`。地区为全球，网页搜索，全部类别，区间为 2026-08-04 至 2026-11-02，实际返回 HTTP 429，没有取得时间序列。采集脚本已改为按执行日期生成近 90 天区间。
 
 完整请求参数、时间、状态码及响应 SHA-256 在快照中；原始错误响应为 `public/data/search-demand/genre-request-response.txt`。页面显示未取得，不把失败视为零，也不生成替代排名。官网 explore 页的工具读取同样失败。本次没有使用浏览量或在线人数替代搜索次数。
 

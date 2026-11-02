@@ -73,7 +73,7 @@ for (const m of dossier.mechanisms)
   for (const id of m.evidenceRefs)
     check(gameIds.has(id), `${m.id}: missing game evidence`);
 const urlCount = new Set(evidence.sources.map((s) => s.url)).size;
-check(evidence.games.length === 80, "expected 80 games");
+check(evidence.games.length === 82, "expected 82 games");
 check(dossier.mechanisms.length >= 120, "expected at least 120 mechanics");
 check(mix.compositeTypes.length === 32, "expected 32 genres");
 check(mix.recipes.length === 32, "expected 32 recipes");

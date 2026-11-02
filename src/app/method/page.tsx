@@ -192,10 +192,14 @@ export default function MethodPage() {
           <p>
             默认展示有来源的真实搜索资料。没有直接搜索数据的类别、机制与组合标为“未取得”或“未采集”，不补造次数、趋势或市场机会。
           </p>
-          <h3>已取得：Google 官方年度搜索趋势</h3>
+          <h3>近期词条与历史榜单分别查看</h3>
           <p>
-            当前公开展示的是 Google Year in Search {annualSearchSnapshot.year}{" "}
-            全球 Games 榜，共 {annualSearchSnapshot.entries.length} 条。统计区间{" "}
+            近期资料来自 Google Trending
+            Now，展示四个地区近七天走热的电子游戏词条、搜索量档位和开始走热的时间。词条可能因新作发布、赛事、更新或攻略而上榜；不能把某款游戏的搜索全部分配给它包含的机制。
+          </p>
+          <p>
+            历史资料保留 Google Year in Search {annualSearchSnapshot.year} 全球
+            Games 榜，共 {annualSearchSnapshot.entries.length} 条。统计区间{" "}
             {annualSearchSnapshot.dateStart} 至 {annualSearchSnapshot.dateEnd}
             ，与上一年同期比较。榜单反映当年的搜索增长趋势，原文没有公布各词的次数和增长百分比；不能把它改写成“搜索最多的游戏”，也不能当作当前类别的需求排名。
           </p>

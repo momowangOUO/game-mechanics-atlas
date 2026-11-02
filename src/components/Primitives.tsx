@@ -10,6 +10,7 @@ import { ArtImage, MaidPortrait } from "./Art";
 import { chapterArt, gameArt, type ChapterId, type MaidState } from "@/lib/art";
 import gameArtSourceData from "@/data/game-art-sources.json";
 import { rinDialogue } from "@/data/rin-dialogue";
+import { GameLoopDiagram } from "./GameLoopDiagram";
 const gameArtSources: Record<
   string,
   { kind: string; sourceUrl: string; publisher: string }
@@ -328,14 +329,5 @@ export function EmptyState({
   );
 }
 export function LoopDiagram({ steps }: { steps: string[] }) {
-  return (
-    <ol className="loop" aria-label="核心循环">
-      {steps.map((step, i) => (
-        <li className="loop-step" key={`${i}-${step}`}>
-          <small>STEP {String(i + 1).padStart(2, "0")}</small>
-          <strong>{step}</strong>
-        </li>
-      ))}
-    </ol>
-  );
+  return <GameLoopDiagram steps={steps} />;
 }

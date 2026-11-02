@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "preparedAt": "2026-10-31",
+  "preparedAt": "2026-11-02",
   "evidencePolicy": "事实按模式与版本引用。官方说明、手册与社区整理分别标注；编辑分析不构成游戏事实。本轮没有安装试玩。未检索项保持unknown，不把资料缺失写成absent。",
   "sources": [
     {
@@ -1495,6 +1495,79 @@
       "type": "manual",
       "claimScope": "09686 产品说明书第 2 页的 Marathon 模式：屏幕标出 Next Queue，Tips 说明可借后续对象预览规划当前方块摆放。",
       "verificationNote": "实际读取制造商托管的 2 页 PDF；只用于这一具体产品和模式，不外推到所有 Tetris 版本。"
+    },
+    {
+      "id": "phantom-blade-zero-steam",
+      "title": "Phantom Blade Zero — Steam 官方商店",
+      "url": "https://store.steampowered.com/app/4115450/Phantom-Blade-Zero/",
+      "publisher": "S-GAME Publishing",
+      "checkedAt": "2026-11-02",
+      "type": "official_store",
+      "claimScope": "Steam 页面所示发行日期为 2026-10-28，支持单人；说明近身攻防、武器与 Phantom Edges。日期仅保留商店显示口径。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：cc1aa3cb73d48f75a996ae6d00750e14756f932dfc6c6de2833b60987e6a85ba。"
+    },
+    {
+      "id": "phantom-blade-zero-playstation",
+      "title": "Phantom Blade Zero — PlayStation 官方游戏页",
+      "url": "https://www.playstation.com/en-us/games/phantom-blade-zero/",
+      "publisher": "Sony Interactive Entertainment / S-GAME",
+      "checkedAt": "2026-11-02",
+      "type": "official_site",
+      "claimScope": "PS5 页面列出 1 名玩家、30 余种主武器和 20 余种 Phantom Edges；官方截图与说明展示战斗和探索。只据此记录作品概况及代表图。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：11f40188c6238e0032418334b2f5969532ef366aa2cc640dd8890cbd5699a959。"
+    },
+    {
+      "id": "phantom-blade-zero-combat-2026",
+      "title": "Phantom Blade Zero: How boss weapons transform combat and exploration",
+      "url": "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/",
+      "publisher": "Sony Interactive Entertainment",
+      "checkedAt": "2026-11-02",
+      "type": "official_site",
+      "claimScope": "PlayStation 官方博客的 PS5 战斗与探索详解：攻击、闪避、完美招架、Sha-Chi 失衡、命中累积战斗资源、首领武器和武器开放路径。文章作者为平台博客撰稿人，不冒称开发者自述。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：d167d97224eb8ee13de43e360600d99b6c04d12832323ccf8a9dda37fdcbefc9。",
+      "publishedAt": "2026-10-28",
+      "author": "Phil Hornshaw"
+    },
+    {
+      "id": "monster-hunter-outlanders-home",
+      "title": "Monster Hunter Outlanders — 官方玩法与角色介绍",
+      "url": "https://monsterhunteroutlanders.com/en/index.html",
+      "publisher": "Level Infinite / TiMi Studio Group",
+      "checkedAt": "2026-11-02",
+      "type": "official_site",
+      "claimScope": "官网说明野外采集及设施建设，列出角色武器与 Assault、Support、Disruptor 职责；Rhodes 的蓄力攻击获得和转化能量。角色说明不外推至所有角色。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：d5b92df18b5c6334c2eec48f5ec85637747589ee6815d0cf39b4ec4647eb08bb。"
+    },
+    {
+      "id": "monster-hunter-outlanders-launch-2026",
+      "title": "Monster Hunter Outlanders Official Launch FAQ",
+      "url": "https://monsterhunteroutlanders.com/en/news-monster-hunter-outlanders-official-launch-faq.html",
+      "publisher": "Level Infinite",
+      "checkedAt": "2026-11-02",
+      "type": "official_site",
+      "claimScope": "国际版 FAQ 列出 2026-10-29 上线、iOS/Android 和手柄支持；不据此推断中国大陆版上线状态、跨服互通或具体控制数值。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：8834b00eb61b7757bcfb037ce3e2b5208bd4715e46b5d4b76c08552b78fd0b83。"
+    },
+    {
+      "id": "monster-hunter-outlanders-googleplay",
+      "title": "Monster Hunter Outlanders — Google Play 官方商店",
+      "url": "https://play.google.com/store/apps/details?id=com.tencent.mhadv&hl=en",
+      "publisher": "Level Infinite",
+      "checkedAt": "2026-11-02",
+      "type": "official_store",
+      "claimScope": "发行方在 Google Play 的产品说明确认单人探索、与好友组建 4 人狩猎小队及当前武器类型。只读取发行方说明，不把用户评论作为官方依据。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：cc3bcab83007d9edc6cd4395c97a2ab65a205529fcb718c8bb36ff4aa1c78bec。"
+    },
+    {
+      "id": "monster-hunter-outlanders-capcom-2026",
+      "title": "Monster Hunter Outlanders Launches on Mobile on October 29, 2026!",
+      "url": "https://www.capcom.co.jp/ir/english/news/html/e260929.html",
+      "publisher": "CAPCOM",
+      "checkedAt": "2026-11-02",
+      "type": "official_site",
+      "claimScope": "CAPCOM 公告列出国际版 iOS/Android 发行日期 2026-10-29，说明由 TiMi 开发；中国大陆版另列为 2027 年起。代表图取自该公告。",
+      "verificationNote": "2026-11-02 实际读取官方页面；只核验正文所述范围，未安装试玩。采集正文 SHA-256：9cdfff2ccf63ad9ed371bfe6688ddb2e2dab77896da5e63197168b9b1e6bd459。",
+      "publishedAt": "2026-09-29"
     }
   ],
   "games": [
@@ -4546,6 +4619,118 @@
       "progressionNotes": ["突变、植入体、技能与阵营关系塑造角色。"],
       "metadataNote": "类型、循环步骤与借鉴分析为编辑归纳；实例条目按具体来源标明证据类型。",
       "aliases": ["卡德洞窟", "Caves of Qud", "caves of qud"]
+    },
+    {
+      "id": "phantom-blade-zero",
+      "name": "影之刃零",
+      "studio": "S-GAME Studio",
+      "year": 2026,
+      "yearBasis": "Steam 商店显示的正式发行日期为 2026-10-28；PlayStation 官方文章列 PS5 为 10 月 29 日。年份取 2026，不将不同平台或地区的日期合并为同一时刻。",
+      "summary": "单人武侠动作 RPG，在快速攻防中使用武器，并以首领武器打开新的探索路径。",
+      "analysis": "以下为编辑分析：首领先展示武器的应对方式，击败后玩家取得对应武器；部分武器还会打开路径，让战斗奖励与后续探索相连。",
+      "factNotes": [
+        "官方商店列为单人游戏。",
+        "官方说明主武器与 Phantom Edges 具有不同用途。",
+        "PS5 官方详解说明完美招架、Sha-Chi 失衡和武器开放路径。"
+      ],
+      "scopeNotes": "机制记录限定为 2026-11-02 核验的 PS5 单人主流程官方说明；Steam 只用于独立核对发行年份。不补写多人、全武器例外或后续补丁规则。",
+      "coreLoop": [
+        "探索道路与支线",
+        "闪避、招架并近身交战",
+        "击败首领取得武器",
+        "用新武器探索此前受阻的区域"
+      ],
+      "learning": [
+        "编辑分析：可以比较同一奖励怎样同时改变战斗选择与探索权限。"
+      ],
+      "caveats": [
+        "连续动作组合不等于本站定义的“连续成功计数”；本次没有据此加入 combo-chain。",
+        "没有核验掉落概率、招架帧数或所有武器的适用条件。"
+      ],
+      "sourceIds": [
+        "phantom-blade-zero-steam",
+        "phantom-blade-zero-playstation",
+        "phantom-blade-zero-combat-2026"
+      ],
+      "defaultScopeId": "phantom-blade-zero:standard",
+      "genreIds": [
+        "action-rpg"
+      ],
+      "corePlayTags": [
+        "动作",
+        "探索",
+        "武器"
+      ],
+      "resourceNotes": [
+        "格挡消耗 Sha-Chi，切换已装备主武器可补充；命中攻击会累积 Sha-Chi Essence。"
+      ],
+      "progressionNotes": [
+        "本次只核验取得武器后可开放特定路径；未把这一权限记成跨局数值强化。"
+      ],
+      "metadataNote": "类型标签、玩法循环、可借鉴之处与分析由本站编辑归纳；事实及具体范围见各项官方来源。核验日期：2026-11-02。",
+      "aliases": [
+        "Phantom Blade Zero",
+        "PhantomBladeZero",
+        "影之刃零",
+        "影之刃 零"
+      ]
+    },
+    {
+      "id": "monster-hunter-outlanders",
+      "name": "魔物猎人旅人",
+      "studio": "TiMi Studio Group",
+      "year": 2026,
+      "yearBasis": "国际版官方 FAQ 与 CAPCOM 公告列出 2026-10-29 于 iOS/Android 上线；公告将中国大陆版另列为 2027 年起，不混同各地区发行状态。",
+      "summary": "移动端探索与狩猎动作游戏，可单人探索，也可与好友组成 4 人狩猎小队。",
+      "analysis": "以下为编辑分析：野外探索与狩猎交替进行，不同角色的战斗能力提供不同处理方式；联机时还可以观察队友能力如何互补。",
+      "factNotes": [
+        "国际版 FAQ 确认 iOS/Android 与手柄支持。",
+        "Google Play 官方说明确认单人探索和 4 人组队狩猎。",
+        "官网展示野外采集、设施建设与不同角色能力。"
+      ],
+      "scopeNotes": "以 2026-11-02 核验的国际版官方资料为准。基础探索、联机协作及 Rhodes 角色分别建范围；不套用系列其他作品或未核验的中国大陆版规则。",
+      "coreLoop": [
+        "探索野外并采集资源",
+        "与怪物交战",
+        "根据角色能力调整战斗方式",
+        "继续探索与狩猎"
+      ],
+      "learning": [
+        "编辑分析：可分别比较单人行动、角色资源转换和玩家之间的职责差异，避免把它们都归为同一种队伍构筑。"
+      ],
+      "caveats": [
+        "野外设施的跨会话保留规则未核验，不直接记为本站定义的基地建设。",
+        "跨平台互通、付费抽取、装备消耗数值与全部联机限制尚未逐项核验。"
+      ],
+      "sourceIds": [
+        "monster-hunter-outlanders-home",
+        "monster-hunter-outlanders-launch-2026",
+        "monster-hunter-outlanders-googleplay",
+        "monster-hunter-outlanders-capcom-2026"
+      ],
+      "defaultScopeId": "monster-hunter-outlanders:standard",
+      "genreIds": [
+        "action-rpg"
+      ],
+      "corePlayTags": [
+        "动作",
+        "探索",
+        "合作"
+      ],
+      "resourceNotes": [
+        "官网明确野外采集资源；设施的具体配方、消耗与保留范围尚未核验。"
+      ],
+      "progressionNotes": [
+        "装备和角色成长的消耗与保留规则尚未按正式版资料逐项核验。"
+      ],
+      "metadataNote": "类型标签、玩法循环、可借鉴之处与分析由本站编辑归纳；事实及具体范围见各项官方来源。核验日期：2026-11-02。",
+      "aliases": [
+        "Monster Hunter Outlanders",
+        "MHO",
+        "魔物猎人旅人",
+        "魔物獵人旅人",
+        "怪物猎人旅人"
+      ]
     }
   ],
   "gameModes": [
@@ -5416,6 +5601,27 @@
       "name": "Basic Fun 09686 / Marathon",
       "description": "09686 产品说明书所述 Marathon 模式；后续对象预览按此具体范围记录。",
       "scopeId": "tetris:basicfun-09686-marathon"
+    },
+    {
+      "id": "phantom-blade-zero:mode:standard",
+      "gameId": "phantom-blade-zero",
+      "name": "PS5 单人主流程",
+      "description": "根据官方 PS5 战斗与探索说明记录。",
+      "scopeId": "phantom-blade-zero:standard"
+    },
+    {
+      "id": "monster-hunter-outlanders:mode:standard",
+      "gameId": "monster-hunter-outlanders",
+      "name": "国际版基础探索与狩猎",
+      "description": "基础探索与狩猎范围；合作与特定角色分开记录。",
+      "scopeId": "monster-hunter-outlanders:standard"
+    },
+    {
+      "id": "monster-hunter-outlanders:mode:coop",
+      "gameId": "monster-hunter-outlanders",
+      "name": "国际版 4 人组队狩猎",
+      "description": "官方商店确认可与好友组成 4 人狩猎小队。",
+      "scopeId": "monster-hunter-outlanders:coop"
     }
   ],
   "scopes": [
@@ -6803,6 +7009,50 @@
       "label": "Basic Fun 09686 / Marathon 模式",
       "parentScopeId": "tetris:game",
       "versionNote": "制造商产品编号 09686 的说明书范围。"
+    },
+    {
+      "id": "phantom-blade-zero:game",
+      "gameId": "phantom-blade-zero",
+      "kind": "game",
+      "label": "影之刃零"
+    },
+    {
+      "id": "phantom-blade-zero:standard",
+      "gameId": "phantom-blade-zero",
+      "kind": "mode",
+      "label": "PS5 单人主流程",
+      "parentScopeId": "phantom-blade-zero:game",
+      "versionNote": "2026-11-02 核验官方 PS5 说明；不外推至未说明的武器、模式或补丁。"
+    },
+    {
+      "id": "monster-hunter-outlanders:game",
+      "gameId": "monster-hunter-outlanders",
+      "kind": "game",
+      "label": "魔物猎人旅人（国际版）"
+    },
+    {
+      "id": "monster-hunter-outlanders:standard",
+      "gameId": "monster-hunter-outlanders",
+      "kind": "mode",
+      "label": "国际版基础探索与狩猎",
+      "parentScopeId": "monster-hunter-outlanders:game",
+      "versionNote": "2026-11-02 官方商店与官网资料范围。"
+    },
+    {
+      "id": "monster-hunter-outlanders:coop",
+      "gameId": "monster-hunter-outlanders",
+      "kind": "mode",
+      "label": "国际版 4 人组队狩猎",
+      "parentScopeId": "monster-hunter-outlanders:game",
+      "versionNote": "当前官方商店确认的组队狩猎；不继承单人或特定角色的观察。"
+    },
+    {
+      "id": "monster-hunter-outlanders:rhodes",
+      "gameId": "monster-hunter-outlanders",
+      "kind": "character",
+      "label": "Rhodes 的大锤战斗",
+      "parentScopeId": "monster-hunter-outlanders:standard",
+      "versionNote": "仅官网当前角色说明中的能量机制，不外推至其他大锤角色。"
     }
   ],
   "instances": [
@@ -13920,6 +14170,164 @@
       "evidenceKind": "manual",
       "rationale": "说明书屏幕示意标出 Next Queue；Tips 建议观察后续方块，用来规划当前方块的位置。",
       "scopeNote": "仅限 Basic Fun 09686 的 Marathon 模式。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:melee-attack:standard",
+      "mechanicId": "melee-attack",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官方说明以普通和重攻击输入执行近身打击。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:dodge-move:standard",
+      "mechanicId": "dodge-move",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官方说明通过闪避输入改变位置并躲避攻击。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:parry:standard",
+      "mechanicId": "parry",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官方区分持续格挡与完美招架，后者按攻击时机输入并影响对方 Sha-Chi。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:posture-break:standard",
+      "mechanicId": "posture-break",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "Sha-Chi 耗尽会使角色失衡并暴露受击机会；打击、闪避与完美招架可削减敌方槽值。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:combat-resource-conversion:standard",
+      "mechanicId": "combat-resource-conversion",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "命中攻击累积 Sha-Chi Essence；槽满后可释放 Power Surge。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:ability-gating:standard",
+      "mechanicId": "ability-gating",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "取得特定 Phantom Edge 后可破开障碍或抵达此前无法进入的位置。",
+      "scopeNote": "PS5 单人主流程；仅官方详解明确的规则。"
+    },
+    {
+      "id": "phantom-blade-zero:evidence:loot-drop:standard",
+      "mechanicId": "loot-drop",
+      "scopeId": "phantom-blade-zero:standard",
+      "status": "present",
+      "sourceIds": [
+        "phantom-blade-zero-steam",
+        "phantom-blade-zero-combat-2026"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "击败首领后可以取得其武器；不推断随机掉率或每个首领的奖励。",
+      "scopeNote": "PS5 单人主流程的首领武器奖励。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:resource-gathering:standard",
+      "mechanicId": "resource-gathering",
+      "scopeId": "monster-hunter-outlanders:standard",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-home"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官网明确在野外收集资源。",
+      "scopeNote": "国际版基础探索；资源种类与消耗数值未核验。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:melee-attack:standard",
+      "mechanicId": "melee-attack",
+      "scopeId": "monster-hunter-outlanders:standard",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-home"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官网角色说明展示大锤蓄力打击、双刀连续斩击等主动近身攻击。",
+      "scopeNote": "国际版基础狩猎；不表示所有角色都只使用近战。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:cooperative-play:coop",
+      "mechanicId": "cooperative-play",
+      "scopeId": "monster-hunter-outlanders:coop",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-googleplay"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "可与好友组建 4 人狩猎小队，共同进行狩猎。",
+      "scopeNote": "国际版组队狩猎；不扩展至所有任务或地区互通。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:synchronous-session:coop",
+      "mechanicId": "synchronous-session",
+      "scopeId": "monster-hunter-outlanders:coop",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-googleplay"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "好友在同一狩猎小队共同参与当前狩猎，不是读取离线对手记录的对抗。",
+      "scopeNote": "国际版 4 人联机狩猎会话。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:role-asymmetry:coop",
+      "mechanicId": "role-asymmetry",
+      "scopeId": "monster-hunter-outlanders:coop",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-home",
+        "monster-hunter-outlanders-googleplay"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "官网区分 Assault、Support、Disruptor 职责；例如 Madelyn 的技能可支援附近队友。组队中各角色能力不同，但不据此推断固定职业配额。",
+      "scopeNote": "国际版组队狩猎；仅按官网当前角色能力记录。"
+    },
+    {
+      "id": "monster-hunter-outlanders:evidence:combat-resource-conversion:rhodes",
+      "mechanicId": "combat-resource-conversion",
+      "scopeId": "monster-hunter-outlanders:rhodes",
+      "status": "present",
+      "sourceIds": [
+        "monster-hunter-outlanders-home"
+      ],
+      "evidenceKind": "official_description",
+      "rationale": "Rhodes 的不同蓄力攻击获得和转化能量，部分招式消耗能量释放爆炸。",
+      "scopeNote": "仅 Rhodes 的大锤战斗，不代表所有角色共享这套能量规则。"
     }
   ]
 }

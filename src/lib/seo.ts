@@ -94,8 +94,8 @@ export const indexPageMetadata: Record<string, Metadata> = {
     "/compare",
   ),
   "/heat": pageMetadata(
-    "搜索趋势：真实来源与数据边界",
-    "查看保留来源、时间和地区的搜索资料，区分历史搜索增长、相对指数与搜索次数，不用本站收录样本代替市场需求。",
+    "游戏搜索趋势：近期词条与历史榜单",
+    "查看近期游戏搜索词条、搜索量档位与历史榜单，按地区搜索游戏和类别，保留每份资料的来源与采集时间。",
     "/heat",
   ),
   "/method": pageMetadata(

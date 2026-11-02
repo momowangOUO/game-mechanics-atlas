@@ -11,7 +11,7 @@
     "dateEnd": "2025-11-25",
     "comparisonStart": "2024-01-01",
     "comparisonEnd": "2024-11-25",
-    "collectedAt": "2026-10-31T05:21:40.077Z",
+    "collectedAt": "2026-11-02T03:10:23.316Z",
     "sourceUrl": "https://trends.withgoogle.com/year-in-search/2025/",
     "methodologyUrl": "https://trends.withgoogle.com/year-in-search/data-methodology/",
     "rawSha256": "aa27718db98f28922782131b8a545774806adf306e29740b21c9369bd223f857",
@@ -66,10 +66,10 @@
     "provider": "google_trends",
     "status": "unavailable",
     "metric": "relative_search_interest",
-    "collectedAt": "2026-10-31T05:21:42.172Z",
+    "collectedAt": "2026-11-02T03:10:29.453Z",
     "region": "GLOBAL",
-    "dateStart": "2026-07-31",
-    "dateEnd": "2026-10-30",
+    "dateStart": "2026-08-04",
+    "dateEnd": "2026-11-02",
     "terms": [
       "roguelike",
       "deck-building game",
@@ -77,33 +77,33 @@
       "idle game",
       "extraction shooter"
     ],
-    "requestUrl": "https://trends.google.com/trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22roguelike%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22deck-building%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22auto%20battler%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22idle%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%2C%7B%22keyword%22%3A%22extraction%20shooter%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-07-31%202026-10-30%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+    "requestUrl": "https://trends.google.com/trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22roguelike%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-08-04%202026-11-02%22%7D%2C%7B%22keyword%22%3A%22deck-building%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-08-04%202026-11-02%22%7D%2C%7B%22keyword%22%3A%22auto%20battler%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-08-04%202026-11-02%22%7D%2C%7B%22keyword%22%3A%22idle%20game%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-08-04%202026-11-02%22%7D%2C%7B%22keyword%22%3A%22extraction%20shooter%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%222026-08-04%202026-11-02%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
     "request": {
       "comparisonItem": [
         {
           "keyword": "roguelike",
           "geo": "",
-          "time": "2026-07-31 2026-10-30"
+          "time": "2026-08-04 2026-11-02"
         },
         {
           "keyword": "deck-building game",
           "geo": "",
-          "time": "2026-07-31 2026-10-30"
+          "time": "2026-08-04 2026-11-02"
         },
         {
           "keyword": "auto battler",
           "geo": "",
-          "time": "2026-07-31 2026-10-30"
+          "time": "2026-08-04 2026-11-02"
         },
         {
           "keyword": "idle game",
           "geo": "",
-          "time": "2026-07-31 2026-10-30"
+          "time": "2026-08-04 2026-11-02"
         },
         {
           "keyword": "extraction shooter",
           "geo": "",
-          "time": "2026-07-31 2026-10-30"
+          "time": "2026-08-04 2026-11-02"
         }
       ],
       "category": 0,
@@ -111,9 +111,9 @@
     },
     "httpStatus": 429,
     "reason": "Google Trends explore 返回 HTTP 429，未获取搜索指数。",
-    "rawSha256": "c14fd656f2118a2dd8b28c0180814955080ee639317576a431771d500d1f8bf4",
+    "rawSha256": "f5a5d68acdd7e7e243332c791fd54bc75c272ebe3c928985b00c49e7d5e4fb71",
     "evidencePath": "/data/search-demand/genre-request-response.txt",
-    "sourceUrl": "https://trends.google.com/trends/explore?date=2026-07-31%202026-10-30&q=roguelike,deck-building%20game,auto%20battler,idle%20game,extraction%20shooter",
+    "sourceUrl": "https://trends.google.com/trends/explore?date=2026-08-04%202026-11-02&q=roguelike,deck-building%20game,auto%20battler,idle%20game,extraction%20shooter",
     "apiAccessUrl": "https://developers.google.com/search/apis/trends"
   }
 }

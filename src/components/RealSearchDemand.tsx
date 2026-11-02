@@ -13,6 +13,12 @@ import { heatTopics } from "@/lib/heat";
 import { publicAssetPath } from "@/lib/paths";
 import { PageHead, Window } from "./Primitives";
 import { TrendChart, topicDestination } from "./HeatCharts";
+import CurrentSearchTrends from "./CurrentSearchTrends";
+import {
+  currentTrends,
+  snapshotDate,
+  videoGameTrends,
+} from "@/lib/current-trends";
 
 export function AnnualSearchRanking({
   compact = false,
@@ -122,13 +128,18 @@ export default function RealSearchDemand({
         title="玩家在搜什么？"
         description="查看有来源的搜索资料，分清年度飙升名次、相对搜索指数和实际搜索次数。"
       >
-        <span className="seed">真实来源 · 历史快照</span>
+        <span className="seed">近期快照 · 更新至 {snapshotDate}</span>
       </PageHead>
       <div className="data-strip">
         <div className="metric">
-          <span>OFFICIAL SEARCH SNAPSHOT</span>
-          <strong>{annualSearchSnapshot.entries.length}</strong>
-          <span>Google 2025 全球游戏飙升名次</span>
+          <span>RECENT GAME SEARCHES</span>
+          <strong>
+            {currentTrends.markets.reduce(
+              (total, market) => total + videoGameTrends(market.region).length,
+              0,
+            )}
+          </strong>
+          <span>四个地区的近期电子游戏词条</span>
         </div>
         <div className="metric">
           <span>GENRE SEARCH INTEREST</span>
@@ -146,10 +157,11 @@ export default function RealSearchDemand({
           <span>游戏名称搜索不直接归因到机制</span>
         </div>
       </div>
+      <CurrentSearchTrends />
       {topic && (
         <p className="scope-box">
           正在研究「{topic.name}
-          」。年度榜单没有这个主题的直接搜索数据，暂时无法比较。
+          」。近期游戏搜索不直接等于这个主题的总需求，可结合词条和具体用法查看。
           <Link href={topicDestination(topic.id)}>继续查看主题资料 →</Link>
         </p>
       )}

@@ -43,6 +43,10 @@ export function parseAnnualGames(html) {
 
 export async function collect() {
   const collectedAt = new Date().toISOString();
+  const dateEnd = collectedAt.slice(0, 10);
+  const start = new Date(`${dateEnd}T00:00:00Z`);
+  start.setUTCDate(start.getUTCDate() - 90);
+  const dateStart = start.toISOString().slice(0, 10);
   const evidenceDir = resolve(root, "public/data/search-demand");
   const privateDir = resolve(root, ".build/search-demand");
   await mkdir(evidenceDir, { recursive: true });
@@ -106,7 +110,7 @@ export async function collect() {
     comparisonItem: terms.map((keyword) => ({
       keyword,
       geo: "",
-      time: "2026-07-31 2026-10-30",
+      time: `${dateStart} ${dateEnd}`,
     })),
     category: 0,
     property: "",
@@ -139,8 +143,8 @@ export async function collect() {
     metric: "relative_search_interest",
     collectedAt: new Date().toISOString(),
     region: "GLOBAL",
-    dateStart: "2026-07-31",
-    dateEnd: "2026-10-30",
+    dateStart,
+    dateEnd,
     terms,
     requestUrl: url,
     request,
@@ -149,7 +153,7 @@ export async function collect() {
     rawSha256: hash(body || error),
     evidencePath: "/data/search-demand/genre-request-response.txt",
     sourceUrl:
-      "https://trends.google.com/trends/explore?date=2026-07-31%202026-10-30&q=" +
+      `https://trends.google.com/trends/explore?date=${dateStart}%20${dateEnd}&q=` +
       terms.map(encodeURIComponent).join(","),
     apiAccessUrl: "https://developers.google.com/search/apis/trends",
   };

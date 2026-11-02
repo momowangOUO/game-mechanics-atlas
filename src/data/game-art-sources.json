@@ -478,5 +478,25 @@
     "sourceUrl": "https://www.battlestategames.com/",
     "publisher": "Battlestate Games",
     "imageUrl": "https://www.battlestategames.com/_nuxt/img/eft_banner.99b7dee.svg"
+  },
+  "phantom-blade-zero": {
+    "kind": "official",
+    "sourceUrl": "https://www.playstation.com/en-us/games/phantom-blade-zero/",
+    "publisher": "S-GAME / Sony Interactive Entertainment",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Phantom-Blade-Zero-hero-desktop-01-en-29jul26?wid=1672&fmt=jpg&qlt=90",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "b4f2a56ba2119b8e9dab8edf07600f61a54cdd02b652265f56ced6f68e6b1e05",
+    "outputSha256": "551c843f3f3f6d03eb1d5b96a079a063dfedf02bac8bb36912325d10a918e43a",
+    "preparation": "官方代表图，仅等比缩小并转换为 WebP；未生成或重绘。"
+  },
+  "monster-hunter-outlanders": {
+    "kind": "official",
+    "sourceUrl": "https://www.capcom.co.jp/ir/english/news/html/e260929.html",
+    "publisher": "CAPCOM / TiMi Studio Group / Level Infinite",
+    "imageUrl": "https://www.capcom.co.jp/ir/news/html/images/260929a.png",
+    "checkedAt": "2026-11-02",
+    "sourceSha256": "de199ee6ba34aee68b6a26f5d39effb5b57f858f5ab1cd829457b97a2b503d87",
+    "outputSha256": "4ad1405ff06649f12884e084da3b3d986375fd92fb76f47519065720f0283c0a",
+    "preparation": "官方代表图，仅等比缩小并转换为 WebP；未生成或重绘。"
   }
 }

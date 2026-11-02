@@ -17,18 +17,22 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 | 入口                                                                        | 内容                                                         |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [分类参考](https://momowangouo.github.io/game-mechanics-atlas/taxonomy/)    | 9 个维度、50 个分组、122 条机制的定义、边界和游戏用法        |
-| [游戏范例](https://momowangouo.github.io/game-mechanics-atlas/games/)       | 80 款游戏、705 条机制实例与 149 项来源，按模式和系统范围查阅 |
+| [游戏范例](https://momowangouo.github.io/game-mechanics-atlas/games/)       | 82 款游戏、718 条机制实例与 156 项来源，按模式和系统范围查阅 |
 | [复合类型](https://momowangouo.github.io/game-mechanics-atlas/types/)       | 32 个类型的玩法过程、设计问题和相近类型区别                  |
 | [机制模块关系图](https://momowangouo.github.io/game-mechanics-atlas/graph/) | 拖动、缩放、筛选维度，追踪相邻机制和相关游戏                 |
 | [研究提示词](https://momowangouo.github.io/game-mechanics-atlas/lab/)       | 32 组配方入口、3 种研究模板，可编辑、复制与下载 Markdown     |
 | [游戏对比](https://momowangouo.github.io/game-mechanics-atlas/compare/)     | 对照两款游戏的机制、循环、资源和搜索资料                     |
-| [搜索趋势](https://momowangouo.github.io/game-mechanics-atlas/heat/)        | 附时间与来源的 Google 官方历史快照，以及本地数据导入         |
+| [搜索趋势](https://momowangouo.github.io/game-mechanics-atlas/heat/)        | 更新至 2026-11-02 的四地区近期游戏搜索、历史榜单及本地导入   |
 
 122 项机制均配有独立图标、图像模型生成的三格漫画、规则示意图和真实游戏范例。支持 Ctrl/Cmd K 全局搜索、手机分步浏览和减少动态偏好。每次整页打开或刷新会展示品牌 Logo；站内切换不重复播放。
 
 分类阅读卡默认显示漫画，手机支持逐格阅读与放大。游戏机制总览按维度列出全部已收录机制，并保留不同模式与成立条件；聚焦机制不会隐藏其他方向。[本轮更新](docs/reader-overview/README.md)
 
-分类实例带有游戏、模式、系统或章节等范围，并区分存在、不存在、不适用、未知和有条件成立。编辑分析与来源事实分别标记。搜索页默认使用 Google Year in Search 2025 的历史资料，当前类别需求未取得时保持为空。[分类说明](docs/data-contract.md) · [搜索口径](docs/heat-method.md) · [资料来源](docs/real-search-demand.md)
+分类实例带有游戏、模式、系统或章节等范围，并区分存在、不存在、不适用、未知和有条件成立。编辑分析与来源事实分别标记。搜索页先展示 2026-11-02 的 Google Trending Now 近期快照：四个地区、38 个已核对的电子游戏词条；2025 年榜单保留为历史资料。搜索量档位不当作精确次数，游戏搜索也不分摊为机制需求。[分类说明](docs/data-contract.md) · [搜索口径](docs/heat-method.md) · [资料来源](docs/real-search-demand.md) · [收录范围](docs/content-scope.md)
+
+分类页与全站搜索支持复合类型、常用别名和分词查询，优先显示名称匹配。手机端目录和漫画采用自然滚动；游戏循环图在桌面形成闭合回路，手机按步骤竖排。
+
+[搜索与手机体验更新](docs/search-mobile-update/README.md) · [2026 年游戏补充](docs/research/2026-game-update.md)
 
 ## 本地运行
 

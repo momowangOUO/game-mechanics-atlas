@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "provider": "google_trending_now",
+  "metric": "bucketed_trending_search_volume",
+  "collectedAt": "2026-11-02T03:17:54.240Z",
+  "windowHours": 168,
+  "categoryId": 6,
+  "categoryName": "Games",
+  "methodologyUrl": "https://support.google.com/trends/answer/3076011?hl=en",
+  "markets": [
+    {
+      "region": "TW",
+      "name": "中国台湾",
+      "collectedAt": "2026-11-02T03:17:55.704Z",
+      "sourceUrl": "https://trends.google.com/trending?geo=TW&category=6&hours=168",
+      "rawSha256": "15fcadf6525850b7c8582054aa7131656ca0c4c3c3dc7b47b0817d32b576c059",
+      "excerptSha256": "f5abba65abc27bdf390a0b8edb2d575c37e7b733e6a313e8deed2f1d596d4fb4",
+      "evidencePath": "/data/search-demand/trending-TW-source.json",
+      "entries": [
+        {
+          "id": "TW-1793004000-0",
+          "query": "影之刃零",
+          "volumeLowerBound": 20000,
+          "growthPercent": 400,
+          "startedAt": "2026-10-26T08:40:00.000Z",
+          "endedAt": null,
+          "relatedQueries": [
+            "影之刃零",
+            "影之刃",
+            "影 之 刃 零"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "TW-1793151600-1",
+          "query": "魔物獵人旅人",
+          "volumeLowerBound": 20000,
+          "growthPercent": 700,
+          "startedAt": "2026-10-28T01:40:00.000Z",
+          "endedAt": "2026-11-02T03:10:00.000Z",
+          "relatedQueries": [
+            "魔物獵人旅人",
+            "魔物獵人旅人兌換碼",
+            "魔物獵人 旅人",
+            "魔物獵人:旅人",
+            "魔物獵人",
+            "魔物獵人旅人 pc"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Monster Hunter Outlanders",
+          "gameSourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+          "gameId": "monster-hunter-outlanders"
+        },
+        {
+          "id": "TW-1793538600-2",
+          "query": "俠盜獵車手vi",
+          "volumeLowerBound": 200,
+          "growthPercent": 300,
+          "startedAt": "2026-11-01T13:10:00.000Z",
+          "endedAt": "2026-11-02T00:30:00.000Z",
+          "relatedQueries": [
+            "俠盜獵車手vi",
+            "gta6"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        },
+        {
+          "id": "TW-1793083200-3",
+          "query": "寶可夢大集結",
+          "volumeLowerBound": 2000,
+          "growthPercent": 600,
+          "startedAt": "2026-10-27T06:40:00.000Z",
+          "endedAt": "2026-10-28T12:50:00.000Z",
+          "relatedQueries": [
+            "寶可夢大集結",
+            "寶 可 夢 大 集結"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Pokémon UNITE",
+          "gameSourceUrl": "https://unite.pokemon.com/"
+        },
+        {
+          "id": "TW-1793257800-4",
+          "query": "phantom blade zero",
+          "volumeLowerBound": 1000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-29T07:10:00.000Z",
+          "endedAt": "2026-10-31T11:10:00.000Z",
+          "relatedQueries": [
+            "phantom blade zero"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "TW-1793033400-5",
+          "query": "英雄聯盟",
+          "volumeLowerBound": 10000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-26T16:50:00.000Z",
+          "endedAt": "2026-10-27T22:20:00.000Z",
+          "relatedQueries": [
+            "英雄聯盟",
+            "英雄聯盟世界大賽",
+            "英雄 聯盟 世界 大賽",
+            "t1",
+            "cfo 世界賽",
+            "t1 cfo",
+            "英雄 聯盟",
+            "lol世界賽賽程",
+            "lcp",
+            "英雄聯盟世界賽賽程",
+            "hle",
+            "lol賽程",
+            "英雄聯盟世界賽",
+            "lol 世界 賽 2026",
+            "世界賽賽程",
+            "lol 世界賽",
+            "瑞士輪",
+            "lol",
+            "世界賽 lol",
+            "世界賽"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "League of Legends",
+          "gameSourceUrl": "https://www.leagueoflegends.com/",
+          "gameId": "league-of-legends"
+        },
+        {
+          "id": "TW-1793080200-6",
+          "query": "pokemon unite",
+          "volumeLowerBound": 2000,
+          "growthPercent": 600,
+          "startedAt": "2026-10-27T05:50:00.000Z",
+          "endedAt": "2026-10-28T05:30:00.000Z",
+          "relatedQueries": [
+            "pokemon unite",
+            "pokémon unite"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Pokémon UNITE",
+          "gameSourceUrl": "https://unite.pokemon.com/"
+        },
+        {
+          "id": "TW-1793271000-7",
+          "query": "monster hunter outlanders",
+          "volumeLowerBound": 200,
+          "growthPercent": 200,
+          "startedAt": "2026-10-29T10:50:00.000Z",
+          "endedAt": "2026-10-29T21:40:00.000Z",
+          "relatedQueries": [
+            "monster hunter outlanders"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Monster Hunter Outlanders",
+          "gameSourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+          "gameId": "monster-hunter-outlanders"
+        },
+        {
+          "id": "TW-1793131200-8",
+          "query": "特戰英豪",
+          "volumeLowerBound": 100,
+          "growthPercent": 200,
+          "startedAt": "2026-10-27T20:00:00.000Z",
+          "endedAt": "2026-10-28T00:30:00.000Z",
+          "relatedQueries": [
+            "特戰英豪"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "VALORANT",
+          "gameSourceUrl": "https://playvalorant.com/",
+          "gameId": "valorant"
+        }
+      ]
+    },
+    {
+      "region": "HK",
+      "name": "中国香港",
+      "collectedAt": "2026-11-02T03:17:56.050Z",
+      "sourceUrl": "https://trends.google.com/trending?geo=HK&category=6&hours=168",
+      "rawSha256": "3d546d2071e07f09481b40b27f98879e6390a6e7dedb3191b2923a8d894ae675",
+      "excerptSha256": "79bce6f271b18d7650ae33a94c67bbb96584e1eff4bb84b48b5c95e778f127a8",
+      "evidencePath": "/data/search-demand/trending-HK-source.json",
+      "entries": [
+        {
+          "id": "HK-1793205000-0",
+          "query": "monster hunter outlanders",
+          "volumeLowerBound": 2000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-28T16:30:00.000Z",
+          "endedAt": "2026-10-30T22:40:00.000Z",
+          "relatedQueries": [
+            "monster hunter outlanders"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Monster Hunter Outlanders",
+          "gameSourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+          "gameId": "monster-hunter-outlanders"
+        },
+        {
+          "id": "HK-1793238600-1",
+          "query": "影之刃零",
+          "volumeLowerBound": 2000,
+          "growthPercent": 100,
+          "startedAt": "2026-10-29T01:50:00.000Z",
+          "endedAt": "2026-10-31T21:40:00.000Z",
+          "relatedQueries": [
+            "影之刃零"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "HK-1793232000-2",
+          "query": "魔物獵人旅人",
+          "volumeLowerBound": 1000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-29T00:00:00.000Z",
+          "endedAt": "2026-10-29T21:10:00.000Z",
+          "relatedQueries": [
+            "魔物獵人旅人"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Monster Hunter Outlanders",
+          "gameSourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+          "gameId": "monster-hunter-outlanders"
+        },
+        {
+          "id": "HK-1793491200-3",
+          "query": "lol 世界賽",
+          "volumeLowerBound": 100,
+          "growthPercent": 100,
+          "startedAt": "2026-11-01T00:00:00.000Z",
+          "endedAt": "2026-11-01T00:40:00.000Z",
+          "relatedQueries": [
+            "lol 世界賽"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "League of Legends",
+          "gameSourceUrl": "https://www.leagueoflegends.com/",
+          "gameId": "league-of-legends"
+        },
+        {
+          "id": "HK-1793036400-4",
+          "query": "lol 世界賽",
+          "volumeLowerBound": 500,
+          "growthPercent": 200,
+          "startedAt": "2026-10-26T17:40:00.000Z",
+          "endedAt": "2026-10-27T00:50:00.000Z",
+          "relatedQueries": [
+            "lol 世界賽",
+            "lol 世界賽 2026"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "League of Legends",
+          "gameSourceUrl": "https://www.leagueoflegends.com/",
+          "gameId": "league-of-legends"
+        },
+        {
+          "id": "HK-1793086800-5",
+          "query": "pokemon unite",
+          "volumeLowerBound": 200,
+          "growthPercent": 500,
+          "startedAt": "2026-10-27T07:40:00.000Z",
+          "endedAt": "2026-10-27T20:00:00.000Z",
+          "relatedQueries": [
+            "pokemon unite"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Pokémon UNITE",
+          "gameSourceUrl": "https://unite.pokemon.com/"
+        }
+      ]
+    },
+    {
+      "region": "JP",
+      "name": "日本",
+      "collectedAt": "2026-11-02T03:17:57.063Z",
+      "sourceUrl": "https://trends.google.com/trending?geo=JP&category=6&hours=168",
+      "rawSha256": "d730bc5d9042cefe4441fd576951a43f5ffd8221351f02e6f04ab7dbe731d57d",
+      "excerptSha256": "115e188fcf402561d4b0ec386ad199a803023ebba528721afec96b8e312be44a",
+      "evidencePath": "/data/search-demand/trending-JP-source.json",
+      "entries": [
+        {
+          "id": "JP-1793097000-0",
+          "query": "モンスターハンターアウトランダーズ",
+          "volumeLowerBound": 100000,
+          "growthPercent": 400,
+          "startedAt": "2026-10-27T10:30:00.000Z",
+          "endedAt": null,
+          "relatedQueries": [
+            "モンスターハンターアウトランダーズ",
+            "モンハン",
+            "アウトランダー ズ",
+            "モンハンアウトランダーズ リセマラ",
+            "モンハン アウトランダー",
+            "アウトランダーズ",
+            "アウトランダーズ モンハン",
+            "モンハンアウトランダーズ 攻略",
+            "モンハン アウトランダー ズ リセマラ",
+            "アウトランダーズ リセマラ",
+            "アウトランダー",
+            "モンスターハンターアウトランダーズ リセマラ",
+            "モンハンアウトランダーズ キャラ",
+            "アウトランダー リセマラ",
+            "モンハンアウトランダーズ 最強",
+            "モンハンアウトランダーズ コントローラー",
+            "モンハン リセマラ",
+            "モンハン アウトランダー リセマラ"
+          ],
+          "categoryIds": [
+            6,
+            18
+          ],
+          "gameName": "Monster Hunter Outlanders",
+          "gameSourceUrl": "https://monsterhunteroutlanders.com/en/index.html",
+          "gameId": "monster-hunter-outlanders"
+        },
+        {
+          "id": "JP-1793077200-1",
+          "query": "ポケモンユナイト",
+          "volumeLowerBound": 20000,
+          "growthPercent": 1000,
+          "startedAt": "2026-10-27T05:00:00.000Z",
+          "endedAt": "2026-10-30T16:40:00.000Z",
+          "relatedQueries": [
+            "ポケモンユナイト"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Pokémon UNITE",
+          "gameSourceUrl": "https://unite.pokemon.com/"
+        },
+        {
+          "id": "JP-1793458800-2",
+          "query": "ピクミン",
+          "volumeLowerBound": 5000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-31T15:00:00.000Z",
+          "endedAt": "2026-11-01T12:20:00.000Z",
+          "relatedQueries": [
+            "ピクミン",
+            "pikmin day",
+            "ピクミンデイ"
+          ],
+          "categoryIds": [
+            6,
+            18
+          ],
+          "gameName": "Pikmin",
+          "gameSourceUrl": "https://www.nintendo.com/jp/character/pikmin/"
+        },
+        {
+          "id": "JP-1793370000-3",
+          "query": "ff14 ファンフェス",
+          "volumeLowerBound": 10000,
+          "growthPercent": 100,
+          "startedAt": "2026-10-30T14:20:00.000Z",
+          "endedAt": "2026-11-01T09:40:00.000Z",
+          "relatedQueries": [
+            "ff14 ファンフェス",
+            "ファンフェス ff14",
+            "ファンフェス",
+            "ff14 ファンフェス 2026",
+            "山田涼介",
+            "hey! say! jump"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Final Fantasy XIV",
+          "gameSourceUrl": "https://www.finalfantasyxiv.com/"
+        },
+        {
+          "id": "JP-1793184600-4",
+          "query": "マイクラ switch2",
+          "volumeLowerBound": 10000,
+          "growthPercent": 500,
+          "startedAt": "2026-10-28T10:50:00.000Z",
+          "endedAt": "2026-10-31T05:00:00.000Z",
+          "relatedQueries": [
+            "マイクラ switch2",
+            "マイクラ スイッチ2",
+            "マイン クラフト switch2"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Minecraft",
+          "gameSourceUrl": "https://www.minecraft.net/",
+          "gameId": "minecraft"
+        },
+        {
+          "id": "JP-1793201400-5",
+          "query": "phantom blade zero",
+          "volumeLowerBound": 2000,
+          "growthPercent": 100,
+          "startedAt": "2026-10-28T15:30:00.000Z",
+          "endedAt": "2026-10-30T17:50:00.000Z",
+          "relatedQueries": [
+            "phantom blade zero"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "JP-1793173800-6",
+          "query": "gta6 ps5",
+          "volumeLowerBound": 5000,
+          "growthPercent": 800,
+          "startedAt": "2026-10-28T07:50:00.000Z",
+          "endedAt": "2026-10-28T14:10:00.000Z",
+          "relatedQueries": [
+            "gta6 ps5",
+            "gta6",
+            "gta6 発売日",
+            "グランド セフト オートvi"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        },
+        {
+          "id": "JP-1793445000-7",
+          "query": "ff14 コラボ",
+          "volumeLowerBound": 200,
+          "growthPercent": 100,
+          "startedAt": "2026-10-31T11:10:00.000Z",
+          "endedAt": "2026-10-31T12:30:00.000Z",
+          "relatedQueries": [
+            "ff14 コラボ"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Final Fantasy XIV",
+          "gameSourceUrl": "https://www.finalfantasyxiv.com/"
+        },
+        {
+          "id": "JP-1793028000-8",
+          "query": "ファントムブレードゼロ",
+          "volumeLowerBound": 100,
+          "growthPercent": 75,
+          "startedAt": "2026-10-26T15:20:00.000Z",
+          "endedAt": "2026-10-26T23:30:00.000Z",
+          "relatedQueries": [
+            "ファントムブレードゼロ"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "JP-1793034600-9",
+          "query": "gta6",
+          "volumeLowerBound": 100,
+          "growthPercent": 50,
+          "startedAt": "2026-10-26T17:10:00.000Z",
+          "endedAt": "2026-10-26T17:30:00.000Z",
+          "relatedQueries": [
+            "gta6"
+          ],
+          "categoryIds": [
+            4,
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        }
+      ]
+    },
+    {
+      "region": "US",
+      "name": "美国",
+      "collectedAt": "2026-11-02T03:17:58.154Z",
+      "sourceUrl": "https://trends.google.com/trending?geo=US&category=6&hours=168",
+      "rawSha256": "24fbd8c69485f108ef7598a6cb5258f16ca59b0ccbf1dc0c6d17072c89ff9126",
+      "excerptSha256": "1a3e3719d2ac6756f0f3477c1fb4e38dfbe5c0f813d6301d8d1cdea98ebcf2f2",
+      "evidencePath": "/data/search-demand/trending-US-source.json",
+      "entries": [
+        {
+          "id": "US-1793543400-0",
+          "query": "gta 6 release date",
+          "volumeLowerBound": 100000,
+          "growthPercent": 50,
+          "startedAt": "2026-11-01T14:30:00.000Z",
+          "endedAt": null,
+          "relatedQueries": [
+            "gta 6 release date",
+            "when does gta 6 come out",
+            "when is gta 6 coming out",
+            "gta 6 size",
+            "gta6 file size",
+            "gta delayed",
+            "gta vi file size",
+            "gta vi",
+            "gta 6"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        },
+        {
+          "id": "US-1793508000-1",
+          "query": "fortnite",
+          "volumeLowerBound": 20000,
+          "growthPercent": 75,
+          "startedAt": "2026-11-01T04:40:00.000Z",
+          "endedAt": null,
+          "relatedQueries": [
+            "fortnite",
+            "how rare is the pirate shop in fortnite",
+            "fortnite pirate shop"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Fortnite",
+          "gameSourceUrl": "https://www.fortnite.com/"
+        },
+        {
+          "id": "US-1793512200-2",
+          "query": "new fortnite season",
+          "volumeLowerBound": 20000,
+          "growthPercent": 50,
+          "startedAt": "2026-11-01T05:50:00.000Z",
+          "endedAt": "2026-11-01T18:30:00.000Z",
+          "relatedQueries": [
+            "new fortnite season",
+            "fortnite servers",
+            "is fortnite down",
+            "fortnite battle pass",
+            "when will fortnite servers be back up",
+            "fortnite downtime",
+            "is fortnite down right now",
+            "when are fortnite servers back up",
+            "when will fortnite be back up",
+            "fortnite down",
+            "fortnite update",
+            "when does the new fortnite season come out",
+            "when does fortnite downtime end",
+            "fortnite"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Fortnite",
+          "gameSourceUrl": "https://www.fortnite.com/"
+        },
+        {
+          "id": "US-1793442000-3",
+          "query": "wordle hint",
+          "volumeLowerBound": 50000,
+          "growthPercent": 300,
+          "startedAt": "2026-10-31T10:20:00.000Z",
+          "endedAt": "2026-10-31T16:10:00.000Z",
+          "relatedQueries": [
+            "wordle hint",
+            "wordle hint today",
+            "wordle hint oct 31",
+            "wordle nyt"
+          ],
+          "categoryIds": [
+            6,
+            4
+          ],
+          "gameName": "Wordle",
+          "gameSourceUrl": "https://www.nytimes.com/games/wordle/index.html"
+        },
+        {
+          "id": "US-1793583600-4",
+          "query": "destiny 2 upcoming release timeline",
+          "volumeLowerBound": 500,
+          "growthPercent": 50,
+          "startedAt": "2026-11-02T01:40:00.000Z",
+          "endedAt": "2026-11-02T02:50:00.000Z",
+          "relatedQueries": [
+            "destiny 2 upcoming release timeline",
+            "destiny 2"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Destiny 2",
+          "gameSourceUrl": "https://www.bungie.net/7/en/Destiny/NewLight"
+        },
+        {
+          "id": "US-1793077800-5",
+          "query": "pokemon unite",
+          "volumeLowerBound": 20000,
+          "growthPercent": 200,
+          "startedAt": "2026-10-27T05:10:00.000Z",
+          "endedAt": "2026-10-28T12:10:00.000Z",
+          "relatedQueries": [
+            "pokemon unite",
+            "pokémon unite",
+            "pokemon unite end of service",
+            "pokemon",
+            "pokemon unite game"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Pokémon UNITE",
+          "gameSourceUrl": "https://unite.pokemon.com/"
+        },
+        {
+          "id": "US-1793509800-6",
+          "query": "fortnite new season",
+          "volumeLowerBound": 1000,
+          "growthPercent": 75,
+          "startedAt": "2026-11-01T05:10:00.000Z",
+          "endedAt": "2026-11-01T17:10:00.000Z",
+          "relatedQueries": [
+            "fortnite new season"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Fortnite",
+          "gameSourceUrl": "https://www.fortnite.com/"
+        },
+        {
+          "id": "US-1793520000-7",
+          "query": "rockstar games gta vi",
+          "volumeLowerBound": 5000,
+          "growthPercent": 400,
+          "startedAt": "2026-11-01T08:00:00.000Z",
+          "endedAt": "2026-11-01T15:40:00.000Z",
+          "relatedQueries": [
+            "rockstar games gta vi",
+            "grand theft auto vi",
+            "gta6",
+            "gta games",
+            "gta"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        },
+        {
+          "id": "US-1793116200-8",
+          "query": "gta 6 delay",
+          "volumeLowerBound": 20000,
+          "growthPercent": 600,
+          "startedAt": "2026-10-27T15:50:00.000Z",
+          "endedAt": "2026-10-27T22:40:00.000Z",
+          "relatedQueries": [
+            "gta 6 delay",
+            "gta delayed"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Grand Theft Auto VI",
+          "gameSourceUrl": "https://www.rockstargames.com/VI"
+        },
+        {
+          "id": "US-1793008800-9",
+          "query": "wordle hint",
+          "volumeLowerBound": 20000,
+          "growthPercent": 100,
+          "startedAt": "2026-10-26T10:00:00.000Z",
+          "endedAt": "2026-10-26T13:20:00.000Z",
+          "relatedQueries": [
+            "wordle hint"
+          ],
+          "categoryIds": [
+            6,
+            4
+          ],
+          "gameName": "Wordle",
+          "gameSourceUrl": "https://www.nytimes.com/games/wordle/index.html"
+        },
+        {
+          "id": "US-1793161800-10",
+          "query": "phantom blade zero release date",
+          "volumeLowerBound": 2000,
+          "growthPercent": 50,
+          "startedAt": "2026-10-28T04:30:00.000Z",
+          "endedAt": "2026-10-29T02:10:00.000Z",
+          "relatedQueries": [
+            "phantom blade zero release date",
+            "phantom blade zero game",
+            "phantom blade zero release time",
+            "blade",
+            "phantom blade zero review"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "Phantom Blade Zero · 影之刃零",
+          "gameSourceUrl": "https://pbz.s-game.com/en-US/",
+          "gameId": "phantom-blade-zero"
+        },
+        {
+          "id": "US-1793491200-11",
+          "query": "lol worlds",
+          "volumeLowerBound": 500,
+          "growthPercent": 100,
+          "startedAt": "2026-11-01T00:00:00.000Z",
+          "endedAt": "2026-11-01T00:50:00.000Z",
+          "relatedQueries": [
+            "lol worlds"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "League of Legends",
+          "gameSourceUrl": "https://www.leagueoflegends.com/",
+          "gameId": "league-of-legends"
+        },
+        {
+          "id": "US-1793055600-12",
+          "query": "lol worlds",
+          "volumeLowerBound": 1000,
+          "growthPercent": 100,
+          "startedAt": "2026-10-26T23:00:00.000Z",
+          "endedAt": "2026-10-27T00:00:00.000Z",
+          "relatedQueries": [
+            "lol worlds"
+          ],
+          "categoryIds": [
+            6
+          ],
+          "gameName": "League of Legends",
+          "gameSourceUrl": "https://www.leagueoflegends.com/",
+          "gameId": "league-of-legends"
+        }
+      ]
+    }
+  ]
+}

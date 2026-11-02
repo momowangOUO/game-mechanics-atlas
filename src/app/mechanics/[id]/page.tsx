@@ -90,6 +90,9 @@ export default async function MechanicPage({
         description={mechanic.definition}
       >
         <div className="detail-header-tools">
+          <a className="button primary" href={`#mechanic-comic-${id}`}>
+            ▧ 看图理解
+          </a>
           <Link className="button" href={`/graph?focus=${id}`}>
             在图谱中查看 ⌘
           </Link>

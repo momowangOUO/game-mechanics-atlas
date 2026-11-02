@@ -31,6 +31,31 @@ export function MechanicIcon({
     </span>
   );
 }
+export function MechanicComicLink({ id }: { id: string }) {
+  const mechanic = getMechanic(id);
+  if (!mechanic) return null;
+  return (
+    <Link
+      className={styles.comicLink}
+      href={`/mechanics/${id}#mechanic-comic-${id}`}
+      aria-label={`看图理解：${mechanic.name}`}
+    >
+      <span className={styles.comicPreview} aria-hidden="true">
+        <ArtImage
+          src={`/art/comics/${id}.webp`}
+          width={1800}
+          height={600}
+          alt=""
+        />
+      </span>
+      <span>
+        <strong>看图理解</strong>
+        <small>用三格演示看清规则</small>
+      </span>
+      <b aria-hidden="true">↗</b>
+    </Link>
+  );
+}
 export function MechanicStoryboard({
   id,
   compact = false,
@@ -50,6 +75,7 @@ export function MechanicStoryboard({
   if (!scene || !mechanic) return null;
   return (
     <section
+      id={compact ? undefined : `mechanic-comic-${id}`}
       className={`${styles.story} ${compact ? styles.compact : ""}`}
       aria-label={`${mechanic.name}图解`}
     >

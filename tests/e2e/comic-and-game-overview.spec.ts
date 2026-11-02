@@ -23,28 +23,56 @@ for (const [width, height] of [
       exact: true,
     });
     await expect(comic).toBeVisible();
-    await expect(comic.locator("figure:visible")).toHaveCount(1);
-    for (const number of [1, 2, 3]) {
+    if (width > 700) {
+      await expect(comic.locator("figure:visible")).toHaveCount(1);
+      for (const number of [1, 2, 3]) {
+        await expect(
+          comic.getByRole("navigation", { name: "漫画分镜" }),
+        ).toContainText(`${number} / 3`);
+        if (number < 3)
+          await comic.getByRole("button", { name: "下一格 →" }).click();
+      }
+    } else {
+      await expect(comic.locator("figure:visible")).toHaveCount(3);
       await expect(
         comic.getByRole("navigation", { name: "漫画分镜" }),
-      ).toContainText(`${number} / 3`);
-      if (number < 3)
-        await comic.getByRole("button", { name: "下一格 →" }).click();
+      ).not.toBeVisible();
+      let previousBottom = 0;
+      for (const frame of await comic.locator("figure").all()) {
+        await frame.scrollIntoViewIfNeeded();
+        await expect(frame.locator("figcaption")).toBeInViewport();
+        const drawing = (await frame.locator("[data-panel]").boundingBox())!;
+        expect(drawing.width).toBeGreaterThan(140);
+        expect(drawing.height).toBeGreaterThan(140);
+        const bounds = await frame.evaluate((element) => {
+          const rect = element.getBoundingClientRect();
+          return { top: rect.top + scrollY, bottom: rect.bottom + scrollY };
+        });
+        expect(bounds.top).toBeGreaterThanOrEqual(previousBottom);
+        previousBottom = bounds.bottom;
+      }
+      expect(
+        await page.evaluate(() => document.documentElement.scrollHeight),
+      ).toBeGreaterThan(height);
     }
     await comic.getByRole("button", { name: "规则示意", exact: true }).click();
     await expect(comic.getByRole("img")).toBeVisible();
     const panel = reader.getByRole("tabpanel");
-    expect(
-      await panel.evaluate((e) => e.scrollHeight - e.clientHeight),
-    ).toBeLessThanOrEqual(2);
+    if (width > 700) {
+      expect(
+        await panel.evaluate((e) => e.scrollHeight - e.clientHeight),
+      ).toBeLessThanOrEqual(2);
+    } else {
+      await expect(panel).toHaveCSS("overflow-y", "visible");
+    }
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth - innerWidth,
       ),
     ).toBe(0);
-    await comic
-      .getByRole("button", { name: "放大漫画 ↗", exact: true })
-      .click();
+    const open = reader.getByRole("button", { name: /看图理解/ });
+    await expect(open).toBeVisible();
+    await open.click();
     const dialog = page.getByRole("dialog", {
       name: "闪避位移 · 完整漫画",
       exact: true,
@@ -54,16 +82,40 @@ for (const [width, height] of [
     await expect(image).toBeVisible();
     expect((await image.boundingBox())!.height).toBeGreaterThan(180);
     if (width <= 700) {
-      const pager = await dialog
-        .getByRole("navigation", { name: "漫画分镜" })
-        .boundingBox();
-      expect(pager!.y + pager!.height).toBeLessThanOrEqual(height);
+      await expect(dialog.locator("figure:visible")).toHaveCount(3);
+      await expect(
+        dialog.getByRole("navigation", { name: "漫画分镜" }),
+      ).not.toBeVisible();
+      expect(
+        await dialog.evaluate(
+          (element) => element.scrollHeight - element.clientHeight,
+        ),
+      ).toBeGreaterThan(100);
+      const finalCaption = dialog
+        .locator("figure")
+        .last()
+        .locator("figcaption");
+      await finalCaption.scrollIntoViewIfNeeded();
+      await expect(finalCaption).toBeInViewport();
+      expect(
+        await dialog.evaluate((element) => element.scrollTop),
+      ).toBeGreaterThan(0);
+      await expect(
+        dialog.getByRole("button", { name: "关闭弹窗", exact: true }),
+      ).toBeInViewport();
+      expect(
+        await dialog.evaluate(
+          (element) => element.scrollWidth - element.clientWidth,
+        ),
+      ).toBeLessThanOrEqual(1);
     }
     await page.keyboard.press("Escape");
     await expect(dialog).not.toBeVisible();
-    await expect(
-      comic.getByRole("button", { name: "放大漫画 ↗", exact: true }),
-    ).toBeFocused();
+    await expect(open).toBeFocused();
+    await open.click();
+    await dialog.getByRole("button", { name: "关闭弹窗", exact: true }).click();
+    await expect(dialog).not.toBeVisible();
+    await expect(open).toBeFocused();
   });
 }
 test("a game graph starts with all recorded directions and keeps them when changing focus", async ({
