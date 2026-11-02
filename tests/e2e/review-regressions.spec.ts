@@ -10,6 +10,25 @@ async function hydrated(page: Page) {
   await expect(page.locator('[hidden][id^="S:"]')).toHaveCount(0);
 }
 
+async function publishedHomeSearches(page: Page) {
+  const snapshot = JSON.parse(
+    await readFile("src/data/current-trends.json", "utf8"),
+  );
+  const names = new Set(
+    snapshot.markets
+      .find((market: { region: string }) => market.region === "TW")
+      .entries.map((entry: { query: string }) => entry.query),
+  );
+  const listed = await page
+    .locator(".home-heat-ranking li a > span")
+    .allTextContents();
+  expect(listed).toHaveLength(5);
+  for (const name of listed) expect(names.has(name)).toBe(true);
+  await expect(page.locator(".home-heat-ranking").locator("..")).toContainText(
+    snapshot.collectedAt.slice(0, 10),
+  );
+}
+
 test("search shortcut accepts immediate typing and restores trigger focus", async ({
   page,
 }) => {
@@ -26,8 +45,11 @@ test("search shortcut accepts immediate typing and restores trigger focus", asyn
   await expect(
     dialog.getByRole("textbox", { name: "搜索全部档案" }),
   ).toHaveValue("Balatro");
-  await expect(dialog.getByRole("link")).toHaveCount(1);
-  await expect(dialog.getByRole("link")).toContainText("Balatro");
+  await expect(dialog.getByRole("link").first()).toHaveAttribute(
+    "href",
+    appHref("/games/balatro"),
+  );
+  await expect(dialog.getByRole("link").first()).toContainText("Balatro");
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
   await page.keyboard.press("Meta+k");
@@ -109,7 +131,7 @@ test("imported working data survives case navigation and invalid or synthetic re
   );
   await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
   await hydrated(page);
-  await expect(page.locator(".home-heat-ranking")).toContainText("Arc Raiders");
+  await publishedHomeSearches(page);
   await expect(page.locator(".home-heat-ranking")).not.toContainText("123");
   await expect(page.locator(".home-opportunity-strip")).toHaveCount(0);
   await page
@@ -195,7 +217,7 @@ test("mixed imports containing synthetic records are rejected atomically", async
   await expect(page.locator(".heat-ranking-table tbody tr")).toHaveCount(0);
 });
 
-test("mixed declared sources remain qualified in Compare while home keeps official historical ranks", async ({
+test("mixed declared sources remain qualified in Compare while home keeps published current searches", async ({
   page,
 }) => {
   const records = [
@@ -257,7 +279,7 @@ test("mixed declared sources remain qualified in Compare while home keeps offici
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.getByRole("link", { name: "机制研究室首页", exact: true }).click();
   await hydrated(page);
-  await expect(page.locator(".home-heat-ranking")).toContainText("Arc Raiders");
+  await publishedHomeSearches(page);
   await expect(page.locator(".home-heat-ranking")).not.toContainText("123");
   await expect(page.locator(".home-opportunity-strip")).toHaveCount(0);
 });

@@ -102,7 +102,12 @@ test("game scopes keep creative absence separate from survival unknown", async (
   await page.getByLabel("当前研究范围").selectOption("minecraft:standard");
   await expect(observed.filter({ hasText: "不存在" })).toHaveCount(0);
   await page.getByRole("tab", { name: "循环视图" }).click();
-  await expect(page.locator(".loop-step").first()).toBeVisible();
+  await expect(
+    page
+      .getByRole("list", { name: "核心循环", exact: true })
+      .getByRole("listitem")
+      .first(),
+  ).toBeVisible();
   await page.getByRole("tab", { name: "热度标签" }).click();
   await expect(
     page.getByText("还没有这个主题的直接搜索记录，", {
