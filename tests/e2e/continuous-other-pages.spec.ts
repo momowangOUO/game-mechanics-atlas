@@ -162,7 +162,7 @@ test("own-count ranking displays more than seven measured topics without a pager
   await page.getByRole("button", { name: "分析自己的搜索次数 →" }).click();
   await page.getByRole("button", { name: "导入数据 ⇧" }).click();
   // Isolated importer fixture; it is never added to the production dataset.
-  const records = recipes.compositeTypes
+  const records = genres
     .slice(0, 10)
     .map((genre: { id: string; name: string }, index: number) => ({
       id: `continuous-test-${index}`,
