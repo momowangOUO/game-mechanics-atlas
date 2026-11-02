@@ -66,10 +66,7 @@ test("mechanics filter by canonical dimension, core tag and keyword", async ({
     .filter({ hasText: "核心交互" })
     .click();
   await expect(page.locator(".mechanic-card")).toHaveCount(
-    Math.min(
-      8,
-      mechanicDirectory.filter((m) => m.dimension === "interaction").length,
-    ),
+    mechanicDirectory.filter((m) => m.dimension === "interaction").length,
   );
   await page.getByRole("textbox", { name: "搜索机制" }).fill("不存在的机制987");
   await expect(
@@ -101,14 +98,20 @@ test("game scopes keep creative absence separate from survival unknown", async (
   );
   await page.getByLabel("当前研究范围").selectOption("minecraft:standard");
   await expect(observed.filter({ hasText: "不存在" })).toHaveCount(0);
-  await page.getByRole("tab", { name: "循环视图" }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "核心循环 ↓", exact: true })
+    .click();
   await expect(
     page
       .getByRole("list", { name: "核心循环", exact: true })
       .getByRole("listitem")
       .first(),
   ).toBeVisible();
-  await page.getByRole("tab", { name: "热度标签" }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "搜索资料 ↓", exact: true })
+    .click();
   await expect(
     page.getByText("还没有这个主题的直接搜索记录，", {
       exact: false,
@@ -122,10 +125,7 @@ test("game catalog filters real cases by type and literal search", async ({
   await visit(page, "/games");
   await page.getByLabel("筛选传统类型").selectOption("deckbuilder");
   await expect(page.locator(".catalog-games .case-card")).toHaveCount(
-    Math.min(
-      6,
-      gameDirectory.filter((g) => g.genreIds.includes("deckbuilder")).length,
-    ),
+    gameDirectory.filter((g) => g.genreIds.includes("deckbuilder")).length,
   );
   await page.getByRole("textbox", { name: "搜索游戏" }).fill("Balatro");
   await expect(page.locator(".catalog-games .case-card")).toHaveCount(1);
@@ -297,9 +297,14 @@ test("compare swaps the selected scopes and exposes unknown observations", async
   await expect(page.getByLabel("右侧研究范围", { exact: true })).toHaveValue(
     "minecraft:creative",
   );
-  await page.getByRole("button", { name: /循环与构筑/ }).click();
+  await page
+    .getByRole("navigation", { name: "对比章节" })
+    .getByRole("link", { name: /循环与构筑/ })
+    .click();
   await expect(
-    page.getByText("当前选择与默认范围不同。", { exact: false }),
+    page.getByText("这个范围的循环、资源与成长笔记还未整理。", {
+      exact: false,
+    }),
   ).toBeVisible();
 });
 

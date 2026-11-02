@@ -14,9 +14,15 @@ test("home global search can enter a category group directly", async ({
     .fill("生产与设施投资");
   await dialog.getByRole("link").filter({ hasText: "生产与设施投资" }).click();
   await expect(page).toHaveURL(/\/taxonomy\/?\?group=productive-investment$/);
+  const group = page.getByRole("region", {
+    name: "机制分组：生产与设施投资",
+    exact: true,
+  });
   await expect(
-    page.getByRole("region", { name: "三级原子机制", exact: true }),
-  ).toContainText("生产与设施投资");
+    group.getByRole("heading", { name: "生产与设施投资", exact: true }),
+  ).toBeInViewport();
+  await expect(group.locator("article[data-mechanic-id]")).toHaveCount(4);
+  await expect(group.locator("[data-panel]")).toHaveCount(12);
 });
 
 test("type guide explains play, nearby boundaries and scoped game observations", async ({

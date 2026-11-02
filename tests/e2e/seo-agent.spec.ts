@@ -177,9 +177,20 @@ test("reading and attribution remain available with JavaScript disabled", async 
   )!;
   await page.goto(appHref(group.canonicalUrl.slice(SITE_URL.length)));
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(group.name);
-  await expect(
-    page.getByRole("heading", { name: "游戏范例", exact: true, level: 2 }),
-  ).toBeVisible();
+  const groupData = await (
+    await context.request.get(appPath(`/data/v1/groups/${group.id}.json`))
+  ).json();
+  await expect(page.locator("article[data-mechanic-id]")).toHaveCount(
+    groupData.mechanicIds.length,
+  );
+  for (const mechanicId of groupData.mechanicIds as string[]) {
+    const mechanic = page.locator(`article[data-mechanic-id="${mechanicId}"]`);
+    await expect(
+      mechanic.getByRole("heading", { name: "游戏范例", exact: true, level: 4 }),
+    ).toBeVisible();
+    await expect(mechanic.locator('a[href*="/games/"]')).not.toHaveCount(0);
+    await expect(mechanic.locator('a[href^="https://"]')).not.toHaveCount(0);
+  }
   await expect(
     page.locator('script[type="application/ld+json"]'),
   ).not.toHaveCount(0);

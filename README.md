@@ -8,7 +8,7 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 
 ![首页桌面页面](docs/reader-overview/runtime/rin-1440.png)
 
-![直接移动三格漫画](docs/mechanic-visuals/runtime/direct-movement-desktop.png)
+![分类分组插画、大图标与连续图解](docs/continuous-reading/runtime/group-1440.png)
 
 [操作录屏（MP4）](docs/mechanic-visuals/runtime/research-session.mp4) · [图标与漫画制作记录](docs/mechanic-visuals/README.md) · [全站文案修订](docs/copy-review/2026-11-01.md)
 
@@ -24,9 +24,11 @@ A reference atlas for game designers, created by **魔魔王**. Explore mechanic
 | [游戏对比](https://momowangouo.github.io/game-mechanics-atlas/compare/)     | 对照两款游戏的机制、循环、资源和搜索资料                     |
 | [搜索趋势](https://momowangouo.github.io/game-mechanics-atlas/heat/)        | 更新至 2026-11-02 的四地区近期游戏搜索、历史榜单及本地导入   |
 
-122 项机制均配有独立图标、图像模型生成的三格漫画、规则示意图和真实游戏范例。支持 Ctrl/Cmd K 全局搜索、手机分步浏览和减少动态偏好。每次整页打开或刷新会展示品牌 Logo；站内切换不重复播放。
+122 项机制均配有独立图标、图像模型生成的三格漫画、规则示意图和真实游戏范例。50 个分组另有独立插画。支持 Ctrl/Cmd K 全局搜索、手机连续阅读和减少动态偏好。每次整页打开或刷新会展示品牌 Logo；站内切换不重复播放。
 
-分类阅读卡默认显示漫画，手机支持逐格阅读与放大。游戏机制总览按维度列出全部已收录机制，并保留不同模式与成立条件；聚焦机制不会隐藏其他方向。[本轮更新](docs/reader-overview/README.md)
+选择分类维度后，整页展示该维度的所有分组、机制、图解和游戏用法。分组目录用于跳转位置，不隐藏内容；桌面与手机都可直接向下阅读三格漫画及规则图。机制图标以大方框呈现，漫画每格最大显示为 600 像素。游戏与对比页同样按章节连续展开，目录、搜索结果和排行榜不再分页；研究提示词保留四个编写步骤。[连续阅读与分组插画](docs/continuous-reading/README.md)
+
+游戏机制总览按维度列出全部已收录机制，并保留不同模式与成立条件；聚焦机制不会隐藏其他方向。[游戏机制总览](docs/reader-overview/README.md)
 
 分类实例带有游戏、模式、系统或章节等范围，并区分存在、不存在、不适用、未知和有条件成立。编辑分析与来源事实分别标记。搜索页先展示 2026-11-02 的 Google Trending Now 近期快照：四个地区、38 个已核对的电子游戏词条；2025 年榜单保留为历史资料。搜索量档位不当作精确次数，游戏搜索也不分摊为机制需求。[分类说明](docs/data-contract.md) · [搜索口径](docs/heat-method.md) · [资料来源](docs/real-search-demand.md) · [收录范围](docs/content-scope.md)
 

@@ -15,31 +15,6 @@ import { EmptyState, GameCard, PageHead, Reveal } from "./Primitives";
 import { matchesCatalog } from "@/lib/catalog-search";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
 import taxonomyStyles from "./TaxonomyExplorer.module.css";
-import { useCatalogPageSize } from "@/lib/use-catalog-page-size";
-
-function Pagination({
-  page,
-  total,
-  onPage,
-}: {
-  page: number;
-  total: number;
-  onPage: (page: number) => void;
-}) {
-  return (
-    <nav className="pagination" aria-label="结果分页">
-      <button disabled={page <= 1} onClick={() => onPage(page - 1)}>
-        ← 上一页
-      </button>
-      <span aria-live="polite">
-        {page} / {Math.max(1, total)}
-      </span>
-      <button disabled={page >= total} onClick={() => onPage(page + 1)}>
-        下一页 →
-      </button>
-    </nav>
-  );
-}
 
 export function MechanicCatalog({
   initialDimension = "",
@@ -55,10 +30,8 @@ export function MechanicCatalog({
   const [query, setQuery] = useState(initialQuery),
     [dimension, setDimension] = useState(initialDimension),
     [core, setCore] = useState(initialCore),
-    [page, setPage] = useState(1),
     [drawer, setDrawer] = useState(false);
   const genre = genres.find((g) => g.id === initialGenre);
-  const pageSize = useCatalogPageSize(8);
   const genreIds = genre
     ? new Set([
         ...genre.requiredMechanics,
@@ -84,13 +57,10 @@ export function MechanicCatalog({
       ),
     [query, dimension, core, genreIds],
   );
-  const total = Math.ceil(filtered.length / pageSize),
-    safePage = Math.min(page, Math.max(1, total));
   const reset = () => {
     setQuery("");
     setDimension("");
     setCore("");
-    setPage(1);
   };
   const filters = (suffix: string) => (
     <>
@@ -106,7 +76,6 @@ export function MechanicCatalog({
           className={!dimension ? "selected" : ""}
           onClick={() => {
             setDimension("");
-            setPage(1);
           }}
         >
           全部机制 <span>{mechanics.length}</span>
@@ -118,7 +87,6 @@ export function MechanicCatalog({
             className={dimension === d.id ? "selected" : ""}
             onClick={() => {
               setDimension(d.id);
-              setPage(1);
             }}
           >
             <DimensionIcon id={d.id} />
@@ -137,7 +105,6 @@ export function MechanicCatalog({
         value={core}
         onChange={(event) => {
           setCore(event.target.value);
-          setPage(1);
         }}
       >
         <option value="">全部核心玩法</option>
@@ -194,7 +161,6 @@ export function MechanicCatalog({
                 value={query}
                 onChange={(event) => {
                   setQuery(event.target.value);
-                  setPage(1);
                 }}
                 aria-label="搜索机制"
                 placeholder="搜索名称、英文 ID 或定义…"
@@ -218,63 +184,47 @@ export function MechanicCatalog({
           {filtered.length ? (
             <>
               <motion.div layout className="mechanic-grid">
-                {filtered
-                  .slice((safePage - 1) * pageSize, safePage * pageSize)
-                  .map((mechanic, i) => {
-                    const d = dimensions.find(
-                      (d) => d.id === mechanic.dimension,
-                    );
-                    return (
-                      <Reveal key={mechanic.id} index={i}>
-                        <Link
-                          href={`/mechanics/${mechanic.id}`}
-                          className="mechanic-card interactive-card"
-                        >
-                          <div className="card-top">
-                            <span className="tiny" style={{ color: d?.color }}>
-                              {d?.short} /{" "}
-                              {String(mechanics.indexOf(mechanic) + 1).padStart(
-                                3,
-                                "0",
-                              )}
-                            </span>
-                            <MechanicIcon id={mechanic.id} size={64} />
-                          </div>
-                          <h2>{mechanic.name}</h2>
-                          <p>{mechanic.definition}</p>
-                          <div className="card-bottom">
-                            <span
-                              className="chip"
-                              style={{
-                                color: d?.color,
-                                borderColor: `${d?.color}60`,
-                              }}
-                            >
-                              {d?.name}
-                            </span>
-                            <span className="tiny muted">
-                              实现难度：{mechanic.complexity}
-                            </span>
-                          </div>
-                        </Link>
-                        <MechanicExamples id={mechanic.id} small />
-                        <MechanicComicLink id={mechanic.id} />
-                      </Reveal>
-                    );
-                  })}
+                {filtered.map((mechanic, i) => {
+                  const d = dimensions.find((d) => d.id === mechanic.dimension);
+                  return (
+                    <Reveal key={mechanic.id} index={i}>
+                      <Link
+                        href={`/mechanics/${mechanic.id}`}
+                        className="mechanic-card interactive-card"
+                      >
+                        <div className="card-top">
+                          <span className="tiny" style={{ color: d?.color }}>
+                            {d?.short} /{" "}
+                            {String(mechanics.indexOf(mechanic) + 1).padStart(
+                              3,
+                              "0",
+                            )}
+                          </span>
+                          <MechanicIcon id={mechanic.id} size={64} />
+                        </div>
+                        <h2>{mechanic.name}</h2>
+                        <p>{mechanic.definition}</p>
+                        <div className="card-bottom">
+                          <span
+                            className="chip"
+                            style={{
+                              color: d?.color,
+                              borderColor: `${d?.color}60`,
+                            }}
+                          >
+                            {d?.name}
+                          </span>
+                          <span className="tiny muted">
+                            实现难度：{mechanic.complexity}
+                          </span>
+                        </div>
+                      </Link>
+                      <MechanicExamples id={mechanic.id} small />
+                      <MechanicComicLink id={mechanic.id} />
+                    </Reveal>
+                  );
+                })}
               </motion.div>
-              {pageSize < 1000 && (
-                <Pagination
-                  page={safePage}
-                  total={total}
-                  onPage={(p) => {
-                    setPage(p);
-                    document
-                      .querySelector(".catalog-toolbar")
-                      ?.scrollIntoView({ block: "start", behavior: "instant" });
-                  }}
-                />
-              )}
             </>
           ) : (
             <EmptyState>
@@ -303,11 +253,9 @@ export function MechanicCatalog({
 }
 
 export function GameCatalog() {
-  const pageSize = useCatalogPageSize(6);
   const [query, setQuery] = useState(""),
     [genre, setGenre] = useState(""),
-    [core, setCore] = useState(""),
-    [page, setPage] = useState(1);
+    [core, setCore] = useState("");
   const tags = [...new Set(games.flatMap((g) => g.corePlayTags))].sort();
   const filtered = games.filter(
     (g) =>
@@ -322,13 +270,10 @@ export function GameCatalog() {
           .join(" ")}`,
       ),
   );
-  const total = Math.ceil(filtered.length / pageSize),
-    safePage = Math.min(page, Math.max(1, total));
   const reset = () => {
     setQuery("");
     setGenre("");
     setCore("");
-    setPage(1);
   };
   return (
     <>
@@ -353,7 +298,6 @@ export function GameCatalog() {
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setPage(1);
             }}
           />
         </label>
@@ -364,7 +308,6 @@ export function GameCatalog() {
             value={genre}
             onChange={(e) => {
               setGenre(e.target.value);
-              setPage(1);
             }}
           >
             <option value="">全部传统类型</option>
@@ -382,7 +325,6 @@ export function GameCatalog() {
             value={core}
             onChange={(e) => {
               setCore(e.target.value);
-              setPage(1);
             }}
           >
             <option value="">全部核心玩法</option>
@@ -399,26 +341,12 @@ export function GameCatalog() {
       {filtered.length ? (
         <>
           <div className="case-grid catalog-games">
-            {filtered
-              .slice((safePage - 1) * pageSize, safePage * pageSize)
-              .map((g, i) => (
-                <Reveal key={g.id} index={i}>
-                  <GameCard game={g} />
-                </Reveal>
-              ))}
+            {filtered.map((g, i) => (
+              <Reveal key={g.id} index={i}>
+                <GameCard game={g} />
+              </Reveal>
+            ))}
           </div>
-          {pageSize < 1000 && (
-            <Pagination
-              page={safePage}
-              total={total}
-              onPage={(p) => {
-                setPage(p);
-                document
-                  .querySelector(".game-catalog-controls")
-                  ?.scrollIntoView({ block: "start", behavior: "instant" });
-              }}
-            />
-          )}
         </>
       ) : (
         <EmptyState title="暂时没有匹配的游戏">

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { sources, genres, games } from "@/lib/knowledge";
 import { getTypeReference } from "@/data/type-reference";
 import { EmptyState } from "./Primitives";
-import { useCatalogPageSize } from "@/lib/use-catalog-page-size";
 import { searchCatalog } from "@/lib/catalog-index";
 import { matchesCatalog } from "@/lib/catalog-search";
 
@@ -20,34 +19,9 @@ const sourceLabels: Record<string, string> = {
   community_wiki: "社区百科",
   editorial: "编辑分析",
 };
-function Pager({
-  page,
-  total,
-  onPage,
-}: {
-  page: number;
-  total: number;
-  onPage: (page: number) => void;
-}) {
-  return (
-    <nav className="pagination" aria-label="目录分页">
-      <button disabled={page === 1} onClick={() => onPage(page - 1)}>
-        ← 上一页
-      </button>
-      <span aria-live="polite">
-        {page} / {Math.max(1, total)}
-      </span>
-      <button disabled={page >= total} onClick={() => onPage(page + 1)}>
-        下一页 →
-      </button>
-    </nav>
-  );
-}
 export function SourceCatalog() {
-  const pageSize = useCatalogPageSize(10);
   const [query, setQuery] = useState(""),
-    [type, setType] = useState(""),
-    [page, setPage] = useState(1);
+    [type, setType] = useState("");
   const rows = sources.filter(
     (s) =>
       (!type || s.type === type) &&
@@ -55,8 +29,6 @@ export function SourceCatalog() {
         .toLowerCase()
         .includes(query.trim().toLowerCase()),
   );
-  const total = Math.ceil(rows.length / pageSize),
-    current = Math.min(page, Math.max(1, total));
   return (
     <section aria-label="来源检索">
       <div className="catalog-toolbar">
@@ -67,7 +39,6 @@ export function SourceCatalog() {
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setPage(1);
             }}
             placeholder="标题、出版方或规则关键词"
           />
@@ -78,7 +49,6 @@ export function SourceCatalog() {
             value={type}
             onChange={(e) => {
               setType(e.target.value);
-              setPage(1);
             }}
           >
             <option value="">全部来源</option>
@@ -92,7 +62,7 @@ export function SourceCatalog() {
         <span>{rows.length} 条来源</span>
       </div>
       <div className="source-catalog">
-        {rows.slice((current - 1) * pageSize, current * pageSize).map((s) => (
+        {rows.map((s) => (
           <article key={s.id} id={s.id}>
             <span className="eyebrow">{sourceLabels[s.type] ?? s.type}</span>
             <h2>{s.title}</h2>
@@ -112,16 +82,11 @@ export function SourceCatalog() {
           description="换个关键词，或将来源类别改为“全部来源”。"
         />
       )}
-      {pageSize < 1000 && (
-        <Pager page={current} total={total} onPage={setPage} />
-      )}
     </section>
   );
 }
 export function TypeCatalog() {
-  const pageSize = useCatalogPageSize(8);
-  const [query, setQuery] = useState(""),
-    [page, setPage] = useState(1);
+  const [query, setQuery] = useState("");
   const matched = new Set(
     searchCatalog(query)
       .filter((item) => item.kind === "genre")
@@ -136,8 +101,6 @@ export function TypeCatalog() {
         `${g.definition} ${getTypeReference(g.id)?.playerTask ?? ""}`,
       ),
   );
-  const total = Math.ceil(rows.length / pageSize),
-    current = Math.min(page, Math.max(1, total));
   return (
     <section aria-label="类型检索">
       <div className="catalog-toolbar">
@@ -148,7 +111,6 @@ export function TypeCatalog() {
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setPage(1);
             }}
             placeholder="类型名或定义关键词"
           />
@@ -156,7 +118,7 @@ export function TypeCatalog() {
         <span>{rows.length} 个类型</span>
       </div>
       <div className="type-index-grid">
-        {rows.slice((current - 1) * pageSize, current * pageSize).map((g) => (
+        {rows.map((g) => (
           <Link
             className="mechanic-card interactive-card"
             key={g.id}
@@ -188,9 +150,6 @@ export function TypeCatalog() {
           title="没有匹配的类型"
           description="试试中文名、英文名，或缩短关键词。"
         />
-      )}
-      {pageSize < 1000 && (
-        <Pager page={current} total={total} onPage={setPage} />
       )}
     </section>
   );

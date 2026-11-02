@@ -21,16 +21,15 @@ test("official covers keep their source identity and full image", async ({
   );
 });
 
-test("reference catalogs search, paginate and explain an empty result", async ({
+test("reference catalogs show all results, filter and explain an empty result", async ({
   page,
 }) => {
   await gotoApp(page, "/sources");
   const sourceCatalog = page.getByRole("region", { name: "来源检索" });
-  await expect(sourceCatalog.locator("article")).toHaveCount(10);
-  await sourceCatalog.getByRole("button", { name: "下一页 →" }).click();
+  await expect(sourceCatalog.locator("article")).toHaveCount(sourceCount);
   await expect(
-    sourceCatalog.getByRole("button", { name: "← 上一页" }),
-  ).toBeEnabled();
+    sourceCatalog.getByRole("navigation", { name: "目录分页" }),
+  ).toHaveCount(0);
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(sourceCatalog.locator("article")).toHaveCount(sourceCount);
   await expect(
@@ -57,13 +56,19 @@ test("reference catalogs search, paginate and explain an empty result", async ({
   ).toHaveCount(0);
 });
 
-test("case relations expose a focal selector only in their own view", async ({
+test("case relations retain a focal selector while all chapters remain readable", async ({
   page,
 }) => {
   await gotoApp(page, "/games/balatro");
-  await page.getByRole("tab", { name: "循环视图", exact: true }).click();
-  await expect(page.getByLabel("查看机制")).toHaveCount(0);
-  await page.getByRole("tab", { name: "关系视图", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "核心循环 ↓", exact: true })
+    .click();
+  await expect(page.getByLabel("查看机制")).toBeVisible();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "机制关系 ↓", exact: true })
+    .click();
   await expect(page.getByLabel("查看机制")).toBeVisible();
   const count = await page.locator(".case-relation-graph rect").count();
   expect(count).toBeGreaterThan(0);

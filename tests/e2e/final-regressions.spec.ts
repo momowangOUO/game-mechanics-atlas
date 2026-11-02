@@ -53,7 +53,10 @@ for (const entry of ["home preview", "case relations"] as const) {
         .locator(`.heat-inspector a[href="${appHref("/games/balatro")}"]`)
         .click();
       await hydrated(page);
-      await page.getByRole("tab", { name: "关系视图", exact: true }).click();
+      await page
+        .getByRole("navigation", { name: "游戏研究章节" })
+        .getByRole("link", { name: "机制关系 ↓", exact: true })
+        .click();
     }
     await hydrated(page);
     const node = page
@@ -145,7 +148,10 @@ test("complete measured zeros display zero and flat trend in case and Compare", 
     .first()
     .click();
   await hydrated(page);
-  await page.getByRole("tab", { name: "热度标签", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "搜索资料 ↓", exact: true })
+    .click();
   const caseMini = page.locator(".heat-mini");
   await expect
     .soft(caseMini.locator(".mini-profile-numbers .sr-only"))
@@ -160,7 +166,10 @@ test("complete measured zeros display zero and flat trend in case and Compare", 
     .getByRole("link", { name: "游戏对比", exact: true })
     .click();
   await hydrated(page);
-  await page.getByRole("button", { name: /搜索热度/ }).click();
+  await page
+    .getByRole("navigation", { name: "对比章节" })
+    .getByRole("link", { name: /搜索热度/ })
+    .click();
   const measured = page.locator(".heat-mini").filter({
     has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
   });

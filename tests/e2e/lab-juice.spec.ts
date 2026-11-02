@@ -1,5 +1,9 @@
 import { gotoApp } from "./navigation";
 import { test, expect, type Page } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const mechanicCount = JSON.parse(
+  readFileSync("docs/research/mechanic-dossiers.json", "utf8"),
+).mechanisms.length;
 async function stage(page: Page, name: string) {
   await page
     .getByRole("navigation", { name: "提示词编写步骤" })
@@ -34,18 +38,16 @@ test("changed settings preserve the previous prompt until explicitly regenerated
     0,
   );
 });
-test("candidate paging and dimension filtering preserve independent selections", async ({
+test("full candidate lists and dimension filtering preserve independent selections", async ({
   page,
 }) => {
   await gotoApp(page, "/lab?recipe=aimed-buildcraft");
-  const candidatePager = page.getByRole("navigation", { name: "机制候选分页" });
+  await expect(page.locator('[class*="candidates"] > button')).toHaveCount(
+    mechanicCount,
+  );
   await expect(
-    candidatePager.getByRole("button", { name: "← 上一页" }),
-  ).toBeDisabled();
-  await candidatePager.getByRole("button", { name: "下一页 →" }).click();
-  await expect(
-    candidatePager.getByRole("button", { name: "← 上一页" }),
-  ).toBeEnabled();
+    page.getByRole("navigation", { name: "机制候选分页" }),
+  ).toHaveCount(0);
   await stage(page, "配合与结构");
   await page
     .getByRole("searchbox", { name: "查找机制" })
@@ -83,7 +85,9 @@ for (const [width, height] of [
     await page.setViewportSize({ width, height });
     await gotoApp(page, "/lab?recipe=aimed-buildcraft");
     await expect(page.locator("#research-prompt")).toBeHidden();
-    await expect(page.locator('[class*="candidates"] > button')).toHaveCount(2);
+    await expect(page.locator('[class*="candidates"] > button')).toHaveCount(
+      mechanicCount,
+    );
     await stage(page, "配合与结构");
     await page
       .getByRole("searchbox", { name: "查找机制" })

@@ -3,6 +3,7 @@ import { dimensions, getMechanic } from "@/lib/knowledge";
 import { getTaxonomyGroups } from "@/data/taxonomy-reference";
 import { publicAssetPath } from "@/lib/paths";
 import styles from "./TaxonomyStatic.module.css";
+import { taxonomyGroupVisuals } from "@/data/taxonomy-group-visuals";
 
 /** Ordinary links and summaries remain available before client-side filtering. */
 export function TaxonomyOverview() {
@@ -40,6 +41,15 @@ export function TaxonomyOverview() {
                     key={group.id}
                     href={`/taxonomy/${dimension.id}/${group.id}`}
                   >
+                    <img
+                      src={publicAssetPath(
+                        taxonomyGroupVisuals[group.id].iconSrc,
+                      )}
+                      width={32}
+                      height={32}
+                      alt=""
+                      loading="lazy"
+                    />
                     {group.name}（
                     {group.mechanicIds.filter((id) => getMechanic(id)).length}）
                   </Link>

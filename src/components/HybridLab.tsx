@@ -38,40 +38,6 @@ const signature = (
     sections: [...sections].sort(),
     context,
   });
-function Pager({
-  page,
-  pages,
-  onPage,
-  label,
-}: {
-  page: number;
-  pages: number;
-  onPage: (page: number) => void;
-  label: string;
-}) {
-  if (pages <= 1) return null;
-  return (
-    <nav className={styles.pager} aria-label={label}>
-      <button
-        type="button"
-        onClick={() => onPage(page - 1)}
-        disabled={page === 0}
-      >
-        ← 上一页
-      </button>
-      <span aria-live="polite">
-        {page + 1} / {pages}
-      </span>
-      <button
-        type="button"
-        onClick={() => onPage(page + 1)}
-        disabled={page >= pages - 1}
-      >
-        下一页 →
-      </button>
-    </nav>
-  );
-}
 export default function HybridLab({
   initialInput,
   initialRecipeId = "",
@@ -87,9 +53,6 @@ export default function HybridLab({
   const [group, setGroup] = useState<"mechanics" | "structures">("mechanics");
   const [query, setQuery] = useState("");
   const [dimension, setDimension] = useState<DimensionId | "">("");
-  const [page, setPage] = useState(0);
-  const [selectionPage, setSelectionPage] = useState(0);
-  const [referencePage, setReferencePage] = useState(0);
   const [template, setTemplate] = useState<PromptTemplate>("combination");
   const [sections, setSections] = useState<PromptSection[]>(() =>
     defaultPromptSections("combination"),
@@ -99,7 +62,7 @@ export default function HybridLab({
   const [baseline, setBaseline] = useState("");
   const [generatedKey, setGeneratedKey] = useState("");
   const [status, setStatus] = useState("");
-  const [smallScreen, setSmallScreen] = useState(false);
+  const workflowBar = useRef<HTMLDivElement>(null);
   const textarea = useRef<HTMLTextAreaElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const dialogInvoker = useRef<HTMLElement | null>(null);
@@ -115,18 +78,6 @@ export default function HybridLab({
   const selected = new Set(ids);
   const core = getMechanic(input.core)!;
   const references = useMemo(() => collectPromptReferences(ids), [ids]);
-  const activeReference =
-    references[Math.min(referencePage, Math.max(0, references.length - 1))];
-  useEffect(() => {
-    const media = window.matchMedia("(max-width: 700px)");
-    const update = () => {
-      setSmallScreen(media.matches);
-      setPage(0);
-    };
-    update();
-    media.addEventListener("change", update);
-    return () => media.removeEventListener("change", update);
-  }, []);
   useEffect(() => {
     setStatus("");
   }, [currentKey]);
@@ -144,16 +95,16 @@ export default function HybridLab({
         .toLocaleLowerCase()
         .includes(normalized),
   );
-  const pageSize = smallScreen ? 2 : 4;
-  const pages = Math.ceil(filtered.length / pageSize);
-  const currentPage = Math.min(page, Math.max(0, pages - 1));
-  const selectedPages = Math.ceil(ids.length / 6);
-  const selectedPage = Math.min(selectionPage, selectedPages - 1);
   function navigate(next: number) {
     setStep(next);
     setQuery("");
     setDimension("");
-    setPage(0);
+    requestAnimationFrame(() =>
+      workflowBar.current?.scrollIntoView({
+        block: "start",
+        behavior: "instant",
+      }),
+    );
   }
   function applyPreset(id: string) {
     setPreset(id);
@@ -174,7 +125,6 @@ export default function HybridLab({
         structural.has(getMechanic(id)!.dimension),
       ),
     }));
-    setSelectionPage(0);
   }
   function selectMechanic(id: string) {
     setPreset("");
@@ -268,19 +218,44 @@ export default function HybridLab({
           {initialNote}
         </p>
       )}
-      <nav className={styles.steps} aria-label="提示词编写步骤">
-        {steps.map((name, index) => (
+      <div className={styles.workflowBar} ref={workflowBar}>
+        <nav className={styles.steps} aria-label="提示词编写步骤">
+          {steps.map((name, index) => (
+            <button
+              key={name}
+              type="button"
+              aria-current={step === index ? "step" : undefined}
+              onClick={() => navigate(index)}
+            >
+              <small>0{index + 1}</small>
+              {name}
+            </button>
+          ))}
+        </nav>
+        <nav className={styles.workflowActions} aria-label="切换编写步骤">
           <button
-            key={name}
             type="button"
-            aria-current={step === index ? "step" : undefined}
-            onClick={() => navigate(index)}
+            disabled={step === 0}
+            onClick={() => navigate(step - 1)}
           >
-            <small>0{index + 1}</small>
-            {name}
+            ← 上一步
           </button>
-        ))}
-      </nav>
+          <span>{step + 1} / 4</span>
+          {step < 2 ? (
+            <button type="button" onClick={() => navigate(step + 1)}>
+              下一步 →
+            </button>
+          ) : step === 2 ? (
+            <button type="button" onClick={requestGenerate}>
+              生成提示词 ↗
+            </button>
+          ) : (
+            <button type="button" onClick={() => navigate(2)}>
+              调整要求
+            </button>
+          )}
+        </nav>
+      </div>
       <div className={styles.layout}>
         <Window title="RESEARCH SETUP / 研究设置" className={styles.formWindow}>
           <div className={styles.selection}>
@@ -345,7 +320,6 @@ export default function HybridLab({
                       onClick={() => {
                         setGroup(value);
                         setDimension("");
-                        setPage(0);
                       }}
                     >
                       {label}
@@ -361,7 +335,6 @@ export default function HybridLab({
                     value={query}
                     onChange={(event) => {
                       setQuery(event.target.value);
-                      setPage(0);
                     }}
                     placeholder="名称或规则关键词"
                   />
@@ -372,7 +345,6 @@ export default function HybridLab({
                     value={dimension}
                     onChange={(event) => {
                       setDimension(event.target.value as DimensionId | "");
-                      setPage(0);
                     }}
                   >
                     <option value="">全部维度</option>
@@ -385,61 +357,51 @@ export default function HybridLab({
                 </label>
               </div>
               <div className={styles.matchCount} aria-live="polite">
-                共 {filtered.length} 项 · 每页 {pageSize} 项
+                共 {filtered.length} 项 · 全部列出
               </div>
               <div className={styles.candidates}>
-                {filtered
-                  .slice(currentPage * pageSize, (currentPage + 1) * pageSize)
-                  .map((item) => (
-                    <button
-                      type="button"
-                      key={item.id}
-                      className={styles.candidate}
-                      aria-pressed={
-                        step === 0
-                          ? input.core === item.id
-                          : selected.has(item.id)
+                {filtered.map((item) => (
+                  <button
+                    type="button"
+                    key={item.id}
+                    className={styles.candidate}
+                    aria-pressed={
+                      step === 0
+                        ? input.core === item.id
+                        : selected.has(item.id)
+                    }
+                    disabled={step === 1 && input.core === item.id}
+                    onClick={() => selectMechanic(item.id)}
+                  >
+                    <span className={styles.candidateTitle}>
+                      <MechanicIcon id={item.id} size={30} />
+                      <strong>{item.name}</strong>
+                      <span aria-hidden="true">
+                        {(
+                          step === 0
+                            ? input.core === item.id
+                            : selected.has(item.id)
+                        )
+                          ? "✓"
+                          : "+"}
+                      </span>
+                    </span>
+                    <span className={styles.definition}>{item.definition}</span>
+                    <small>
+                      {
+                        dimensions.find(
+                          (dimension) => dimension.id === item.dimension,
+                        )?.name
                       }
-                      disabled={step === 1 && input.core === item.id}
-                      onClick={() => selectMechanic(item.id)}
-                    >
-                      <span className={styles.candidateTitle}>
-                        <MechanicIcon id={item.id} size={30} />
-                        <strong>{item.name}</strong>
-                        <span aria-hidden="true">
-                          {(
-                            step === 0
-                              ? input.core === item.id
-                              : selected.has(item.id)
-                          )
-                            ? "✓"
-                            : "+"}
-                        </span>
-                      </span>
-                      <span className={styles.definition}>
-                        {item.definition}
-                      </span>
-                      <small>
-                        {
-                          dimensions.find(
-                            (dimension) => dimension.id === item.dimension,
-                          )?.name
-                        }
-                      </small>
-                    </button>
-                  ))}
+                    </small>
+                  </button>
+                ))}
               </div>
               {!filtered.length && (
                 <p className={styles.empty}>
                   没有匹配的机制，试试其他关键词或维度。
                 </p>
               )}
-              <Pager
-                page={currentPage}
-                pages={pages}
-                onPage={setPage}
-                label="机制候选分页"
-              />
             </section>
             <section
               className={styles.setupPanel}
@@ -537,46 +499,40 @@ export default function HybridLab({
                 <span>{ids.length} 项</span>
               </div>
               <ul className={styles.selectedList}>
-                {ids
-                  .slice(selectedPage * 6, (selectedPage + 1) * 6)
-                  .map((id) => (
-                    <li key={id}>
-                      <MechanicIcon id={id} size={23} />
-                      <span>{getMechanic(id)?.name}</span>
-                      {id === input.core ? (
-                        <small>核心</small>
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => removeMechanic(id)}
-                          aria-label={`移除${getMechanic(id)?.name}`}
-                        >
-                          ×
-                        </button>
-                      )}
-                    </li>
-                  ))}
+                {ids.map((id) => (
+                  <li key={id}>
+                    <MechanicIcon id={id} size={23} />
+                    <span>{getMechanic(id)?.name}</span>
+                    {id === input.core ? (
+                      <small>核心</small>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => removeMechanic(id)}
+                        aria-label={`移除${getMechanic(id)?.name}`}
+                      >
+                        ×
+                      </button>
+                    )}
+                  </li>
+                ))}
               </ul>
-              <Pager
-                page={selectedPage}
-                pages={selectedPages}
-                onPage={setSelectionPage}
-                label="已选机制分页"
-              />
             </section>
-            <div className={styles.setupActions}>
-              <span>
-                {promptTemplates.find((item) => item.id === template)?.name} ·{" "}
-                {sections.length} 个输出部分
-              </span>
-              <button
-                className={styles.primary}
-                type="button"
-                onClick={requestGenerate}
-              >
-                {generatedKey ? "重新生成提示词" : "生成提示词"} ↗
-              </button>
-            </div>
+            {step !== 2 && (
+              <div className={styles.setupActions}>
+                <span>
+                  {promptTemplates.find((item) => item.id === template)?.name} ·{" "}
+                  {sections.length} 个输出部分
+                </span>
+                <button
+                  className={styles.primary}
+                  type="button"
+                  onClick={requestGenerate}
+                >
+                  {generatedKey ? "重新生成提示词" : "生成提示词"} ↗
+                </button>
+              </div>
+            )}
           </div>
         </Window>
         <Window
@@ -644,61 +600,34 @@ export default function HybridLab({
                 ? "手动修改会保留；重新生成前会提示确认。"
                 : "提示词在本页内整理，不会发送到模型。")}
           </p>
-          <details className={styles.referenceDetails}>
-            <summary>参照线索 · {references.length} 个案例</summary>
-            {activeReference ? (
-              <div className={styles.referenceCard}>
-                <Link href={`/games/${activeReference.gameId}`}>
-                  {activeReference.name} ↗
-                </Link>
-                <span>范围：{activeReference.scopeLabel}</span>
-                <p>
-                  已确认匹配：
-                  {activeReference.matchedMechanicIds
-                    .map((id) => getMechanic(id)?.name)
-                    .join("、")}
-                </p>
-                <small>
-                  没有匹配的机制仍需分别核对。提示词内附来源与核对日期。
-                </small>
-                <Pager
-                  page={Math.min(referencePage, references.length - 1)}
-                  pages={references.length}
-                  onPage={setReferencePage}
-                  label="提示词参照分页"
-                />
-              </div>
+          <section className={styles.referenceDetails} aria-label="参照线索">
+            <h3>参照线索 · {references.length} 个案例</h3>
+            {references.length ? (
+              references.map((reference) => (
+                <div className={styles.referenceCard} key={reference.gameId}>
+                  <Link href={`/games/${reference.gameId}`}>
+                    {reference.name} ↗
+                  </Link>
+                  <span>范围：{reference.scopeLabel}</span>
+                  <p>
+                    已确认匹配：
+                    {reference.matchedMechanicIds
+                      .map((id) => getMechanic(id)?.name)
+                      .join("、")}
+                  </p>
+                  <small>
+                    没有匹配的机制仍需分别核对。提示词内附来源与核对日期。
+                  </small>
+                </div>
+              ))
             ) : (
               <p className={styles.note}>
                 本站还没有匹配的游戏参照，需要继续查找资料。
               </p>
             )}
-          </details>
+          </section>
         </Window>
       </div>
-      <nav className={styles.mobileControls} aria-label="切换编写步骤">
-        <button
-          type="button"
-          disabled={step === 0}
-          onClick={() => navigate(step - 1)}
-        >
-          ← 上一步
-        </button>
-        <span>{step + 1} / 4</span>
-        {step < 2 ? (
-          <button type="button" onClick={() => navigate(step + 1)}>
-            下一步 →
-          </button>
-        ) : step === 2 ? (
-          <button type="button" onClick={requestGenerate}>
-            生成提示词 ↗
-          </button>
-        ) : (
-          <button type="button" onClick={() => navigate(2)}>
-            调整要求
-          </button>
-        )}
-      </nav>
       <dialog
         ref={dialog}
         className={styles.confirmDialog}

@@ -6,6 +6,38 @@
   vertical-align: middle;
   filter: drop-shadow(0 2px 0 #15132055);
 }
+.icon > img,
+.icon > span {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  aspect-ratio: 1;
+  padding: 0;
+}
+.iconFrame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
+  flex: 0 0 auto;
+  border: 4px solid #453651;
+  outline: 2px solid #c5afd7;
+  outline-offset: -8px;
+  background: #fff3d9;
+  box-shadow: 5px 5px 0 #171320;
+}
+.iconFrame > img,
+.iconFrame > span {
+  display: block;
+  width: 128px;
+  height: 128px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0;
+}
 .comicLink {
   display: flex;
   align-items: center;
@@ -13,7 +45,7 @@
   min-height: 72px;
   margin: 13px 0 7px;
   padding: 7px;
-  border: 1px solid #af95c4;
+  border: 2px solid #af95c4;
   background: #382c45;
   color: #eadcf1;
   text-decoration: none;
@@ -21,15 +53,17 @@
 }
 .comicLink > span:nth-child(2) {
   flex: 1;
+  min-width: 0;
 }
 .comicLink strong {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 .comicLink small {
   display: block;
-  font-size: 11px;
-  color: #bdabca;
+  font-size: 12px;
+  color: #cbbbd5;
   margin-top: 3px;
 }
 .comicLink > b {
@@ -53,31 +87,20 @@
   width: 300%;
   height: 100%;
   max-width: none;
-  object-fit: fill;
-}
-.icon > img,
-.icon > span {
-  width: 100%;
-  height: 100%;
-  min-height: 0;
   object-fit: contain;
-  aspect-ratio: 1;
-  padding: 0;
 }
 .story {
   margin: 24px 0;
-  border: 2px solid #a292b8;
+  border: 3px solid #766184;
   background: #f2ead8;
   color: #302b3e;
   box-shadow: 5px 5px 0 #13111e;
   position: relative;
   isolation: isolate;
+  min-width: 0;
+  scroll-margin-top: 90px;
 }
 .storyHead {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
   padding: 17px 20px;
   background: #ded4e8;
   border-bottom: 2px solid #40384d;
@@ -87,137 +110,48 @@
   letter-spacing: 2px;
   color: #6d567f;
 }
-.storyHead h2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.storyHead .storyTitle {
   font-size: 23px;
-  margin: 2px 0 0 !important;
+  line-height: 1.5;
+  margin: 5px 0 0;
   color: #302b3e;
-}
-.modeSwitch {
-  display: flex;
-  border: 1px solid #665575;
-  flex-shrink: 0;
-}
-.modeSwitch button {
-  padding: 9px 12px;
-  color: #4c3d5d;
-  background: transparent;
-  border: 0;
-  font-size: 12px;
-  cursor: pointer;
-  min-height: 40px;
-}
-.modeSwitch button[aria-pressed="true"] {
-  background: #534162;
-  color: #fff5dd;
-}
-.modeSwitch button:focus-visible,
-.framePager button:focus-visible {
-  outline: 3px solid #2c7f81;
-  outline-offset: 2px;
 }
 .frames {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 9px;
-  padding: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 24px;
+  padding: 24px 20px;
   background-image: radial-gradient(#8a749522 0.8px, transparent 0.8px);
   background-size: 5px 5px;
 }
 .frame {
   margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 604px;
   border: 2px solid #3d3449;
   background: #fff7e5;
-  overflow: hidden;
-  box-shadow: 2px 3px 0 #78678333;
+  box-shadow: 3px 4px 0 #78678355;
   min-width: 0;
 }
 .panelNumber {
-  font: 14px monospace;
+  font: 15px monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 10px;
+  padding: 8px 12px;
   background: #312c40;
   color: #f8efd8;
 }
 .panelNumber span {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 2px;
-  color: #cbb5e9;
-}
-.drawing {
-  height: 210px;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  overflow: hidden;
-  background:
-    linear-gradient(0deg, #dddbc6 0 18%, transparent 18%),
-    repeating-linear-gradient(45deg, #c3b1cc0d 0 2px, transparent 2px 5px);
-}
-.drawing > svg {
-  width: 100%;
-  height: 145px;
-  margin-top: 8px;
-  z-index: 1;
-}
-.chibi {
-  position: absolute;
-  left: -13px;
-  bottom: -10px;
-  width: 90px;
-  height: 137px;
-  object-fit: contain;
-  z-index: 2;
-  filter: drop-shadow(2px 2px 0 #4c405f50);
-}
-.frame:nth-child(2) .chibi {
-  left: auto;
-  right: -10px;
-  transform: scaleX(-1);
-}
-.frame:nth-child(3) .chibi {
-  width: 100px;
-  height: 153px;
-}
-.objectLabel {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: #fdf5de;
-  color: #453650;
-  box-shadow: 2px 2px 0 #2a223a;
-  border: 1px solid #493e55;
-  font-size: 12px;
-  padding: 5px 9px;
-  max-width: calc(100% - 85px);
-  z-index: 3;
-}
-.frame:nth-child(2) .objectLabel {
-  right: auto;
-  left: 9px;
-}
-.frame figcaption {
-  padding: 12px 12px 14px;
-  font-size: 13px;
-  line-height: 1.8;
-  border-top: 1px solid #b9a7b9;
-  min-height: 76px;
-}
-.frame figcaption > strong {
-  font-size: 12px;
-  color: #685474;
-  display: block;
-  margin-bottom: 4px;
-}
-.frame figcaption > p {
-  margin: 0;
-  line-height: 1.85;
+  color: #d9c6f1;
 }
 .comicDrawing {
+  width: 100%;
+  max-width: 600px;
   aspect-ratio: 1;
   position: relative;
   overflow: hidden;
@@ -228,55 +162,72 @@
   width: 300%;
   height: 100%;
   max-width: none;
-  object-fit: fill;
+  object-fit: contain;
 }
 .comicDrawing[data-panel="1"] .comicStrip {
-  transform: translateX(-33.333333%);
+  transform: translateX(-33.3333333333%);
 }
 .comicDrawing[data-panel="2"] .comicStrip {
-  transform: translateX(-66.666667%);
+  transform: translateX(-66.6666666667%);
 }
-.diagramSteps {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 0 20px 20px;
-  background: #fff7e5;
+.frame figcaption {
+  padding: 15px 18px 18px;
+  font-size: 15px;
+  line-height: 1.85;
+  border-top: 1px solid #b9a7b9;
+  overflow-wrap: anywhere;
 }
-.diagramSteps button {
-  background: #ded4e8;
-  border: 1px solid #8a759b;
-  min-height: 42px;
-  padding: 8px 12px;
-  color: #3f334e;
-  cursor: pointer;
+.frame figcaption > strong {
+  font-size: 14px;
+  color: #685474;
+  display: block;
+  margin-bottom: 5px;
 }
-.diagramSteps button[aria-pressed="true"] {
-  background: #534162;
-  color: #fff5dd;
+.frame figcaption > p {
+  margin: 0;
+  line-height: 1.85;
+  color: #302b3e;
 }
-.framePager {
-  display: none;
+.rules {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 20px;
+  border-top: 3px double #766184;
+  padding: 22px 20px 26px;
+  background: #e7ddeb;
+}
+.ruleHeading {
+  width: 100%;
+  max-width: 604px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #453651;
 }
 .ruleDiagram {
   margin: 0;
-  padding: 22px;
-  display: flex;
-  gap: 24px;
-  align-items: center;
+  width: 100%;
+  max-width: 604px;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 2px solid #665375;
   background: #fff7e5;
+  box-shadow: 3px 3px #78678344;
 }
 .ruleDiagram svg {
-  width: 45%;
-  max-width: 360px;
-  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 260 / 150;
 }
 .ruleDiagram figcaption {
+  padding: 11px 15px;
+  border-top: 1px solid #b9a7b9;
   font-size: 14px;
-  line-height: 1.9;
-}
-.ruleDiagram p {
-  margin: 8px 0 0;
+  line-height: 1.7;
+  color: #51405f;
+  overflow-wrap: anywhere;
 }
 .examples {
   display: grid;
@@ -353,10 +304,6 @@
   font-size: 12px;
 }
 .smallExamples .example p {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   font-size: 11px;
   line-height: 1.5;
 }
@@ -364,384 +311,47 @@
   font-size: 12px;
   color: #a79caf;
 }
-.compact .storyHead {
-  padding: 10px;
-}
-.compact .storyHead h2 {
-  font-size: 18px;
-}
-.compact .drawing {
-  height: 170px;
-}
-.compact .drawing > svg {
-  height: 110px;
-}
-.compact .chibi {
-  width: 76px;
-  height: 116px;
-}
-.compact .frame figcaption {
-  font-size: 12px;
-}
-.compact .frames {
-  gap: 5px;
-  padding: 7px;
-}
+
 @media (max-width: 900px) {
-  .drawing {
-    height: 175px;
-  }
-  .drawing > svg {
-    height: 120px;
-  }
-  .chibi {
-    width: 76px;
-    height: 116px;
-  }
-  .frame:nth-child(3) .chibi {
-    width: 80px;
-    height: 122px;
-  }
   .examples {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 700px) {
-  .storyHead {
-    padding: 12px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
+  .iconFrame {
+    width: 128px;
+    height: 128px;
   }
-  .storyHead h2 {
+  .iconFrame > img,
+  .iconFrame > span {
+    width: 112px;
+    height: 112px;
+  }
+  .storyHead {
+    padding: 13px 12px;
+  }
+  .storyHead .storyTitle {
     font-size: 20px;
   }
+  .kicker {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
   .frames,
-  .compact .frames {
-    display: block;
-    padding: 10px;
-  }
-  .frame {
-    display: none;
-  }
-  .activeFrame {
-    display: block;
-  }
-  .drawing,
-  .compact .drawing {
-    height: 205px;
-  }
-  .drawing > svg,
-  .compact .drawing > svg {
-    height: 145px;
-  }
-  .chibi,
-  .compact .chibi {
-    height: 153px;
-    width: 100px;
+  .rules {
+    padding: 16px 10px;
+    gap: 18px;
   }
   .frame figcaption {
+    padding: 12px;
     font-size: 14px;
-    min-height: 74px;
-  }
-  .framePager {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px 12px;
-    font: 12px monospace;
-  }
-  .framePager button {
-    background: #ded4e8;
-    border: 1px solid #8a759b;
-    padding: 10px;
-    min-height: 42px;
-    color: #3f334e;
-  }
-  .framePager button:disabled {
-    opacity: 0.4;
-  }
-  .ruleDiagram {
-    display: block;
-    padding: 14px;
-  }
-  .ruleDiagram svg {
-    width: 100%;
-    max-width: none;
-    height: 160px;
-  }
-  .ruleDiagram figcaption {
-    font-size: 13px;
   }
   .examples {
     gap: 8px;
-  }
-  .smallExamples .example p {
-    -webkit-line-clamp: 1;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   .example {
     transition: none;
-  }
-}
-/* The narrow classification reader uses one illustrated panel at a time. */
-.compact {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-height: 420px;
-  box-shadow: none;
-}
-.compact .storyHead {
-  padding: 5px 8px;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
-.compact .modeSwitch button {
-  min-height: 29px;
-  padding: 5px 8px;
-  font-size: 11px;
-}
-.compact .frames {
-  display: flex;
-  flex: 1;
-  min-height: 0;
-  padding: 6px;
-}
-.compact .frame {
-  display: none;
-}
-.compact .activeFrame {
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  width: 100%;
-  position: relative;
-  min-height: 0;
-}
-.compact .panelNumber {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: 3px 6px;
-  font-size: 11px;
-  gap: 9px;
-}
-.compact .comicDrawing {
-  aspect-ratio: 1;
-  height: 100%;
-  width: auto;
-  max-width: 100%;
-  min-height: 0;
-  justify-self: center;
-}
-.compact .frame figcaption {
-  padding: 8px 10px;
-  min-height: 0;
-  font-size: 12px;
-  line-height: 1.65;
-}
-.compact .frame figcaption strong {
-  font-size: 11px;
-  margin-bottom: 2px;
-}
-.compact .frame figcaption p {
-  line-height: 1.65;
-}
-.compact .framePager {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font: 11px monospace;
-  padding: 0 6px 6px;
-  flex-shrink: 0;
-}
-.compact .framePager button {
-  background: #ded4e8;
-  border: 1px solid #8a759b;
-  padding: 5px 8px;
-  min-height: 29px;
-  color: #3f334e;
-}
-.compact .framePager button:disabled {
-  opacity: 0.4;
-}
-.compact .ruleDiagram {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(0, 1fr) auto;
-  flex: 1;
-  min-height: 0;
-  padding: 8px;
-  gap: 5px;
-}
-.compact .ruleDiagram svg {
-  height: 100%;
-  width: 100%;
-  min-height: 0;
-  max-height: 260px;
-  max-width: none;
-}
-.compact .ruleDiagram figcaption {
-  font-size: 12px;
-  line-height: 1.6;
-}
-.compact .ruleDiagram p {
-  margin: 3px 0;
-}
-.compact .diagramSteps {
-  padding: 0 8px 7px;
-  flex-shrink: 0;
-}
-.compact .diagramSteps button {
-  min-height: 29px;
-  min-width: 34px;
-  padding: 4px 8px;
-}
-@media (max-width: 700px) {
-  .compact {
-    min-height: 0;
-  }
-  .compact .frame figcaption {
-    font-size: 11px;
-  }
-}
-@media (max-width: 700px) and (max-height: 740px) {
-  .compact .activeFrame {
-    grid-template-columns: minmax(0, 1fr) minmax(105px, 0.8fr);
-    grid-template-rows: minmax(0, 1fr);
-  }
-  .compact .frame figcaption {
-    border-top: 0;
-    border-left: 1px solid #b9a7b9;
-    padding: 5px 7px;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 10px;
-  }
-  .compact .comicDrawing {
-    align-self: center;
-    max-height: 100%;
-    max-width: 100%;
-  }
-  .compact .ruleDiagram {
-    grid-template-columns: minmax(0, 1fr) minmax(100px, 0.8fr);
-    grid-template-rows: minmax(0, 1fr);
-  }
-  .compact .ruleDiagram figcaption {
-    font-size: 10px;
-  }
-}
-.compact .frames {
-  container-type: inline-size;
-}
-.compact .comicDrawing {
-  max-height: calc(100cqw - 4px);
-}
-@media (max-width: 700px) and (max-height: 740px) {
-  .compact .comicDrawing {
-    max-height: calc(55cqw - 10px);
-  }
-}
-@media (min-width: 701px) {
-  .compact {
-    height: 420px;
-    min-height: 420px;
-    max-height: 420px;
-    flex: 0 0 420px;
-  }
-}
-.expandComic {
-  border: 1px solid #84708d;
-  background: #f4ead7;
-  color: #4c3d5d;
-  min-height: 29px;
-  padding: 5px 7px;
-  font-size: 10px;
-  white-space: nowrap;
-}
-@media (max-width: 700px) {
-  .story,
-  .compact {
-    height: auto;
-    min-height: 0;
-    flex: none;
-  }
-  .frames,
-  .compact .frames {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-    padding: 10px;
-    flex: none;
-    container-type: normal;
-  }
-  .frame,
-  .activeFrame,
-  .compact .frame,
-  .compact .activeFrame {
-    display: block;
-    width: 100%;
-    min-height: 0;
-    grid-template-columns: none;
-    grid-template-rows: none;
-  }
-  .compact .panelNumber {
-    position: static;
-    padding: 6px 10px;
-    font-size: 13px;
-  }
-  .comicDrawing,
-  .compact .comicDrawing {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    max-height: none;
-    max-width: none;
-    align-self: auto;
-  }
-  .frame figcaption,
-  .compact .frame figcaption {
-    display: block;
-    border-left: 0;
-    min-height: 0;
-    padding: 12px 13px;
-    font-size: 14px;
-    line-height: 1.85;
-  }
-  .compact .frame figcaption strong {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .framePager,
-  .compact .framePager {
-    display: none;
-  }
-  .compact .modeSwitch button {
-    min-height: 42px;
-    padding: 8px 10px;
-    font-size: 12px;
-  }
-  .compact .ruleDiagram {
-    display: block;
-    min-height: 0;
-    flex: none;
-  }
-  .compact .ruleDiagram svg {
-    height: 190px;
-    width: 100%;
-    max-height: none;
-  }
-  .compact .ruleDiagram figcaption {
-    font-size: 13px;
-  }
-  .compact .diagramSteps button {
-    min-height: 44px;
-    min-width: 44px;
   }
 }

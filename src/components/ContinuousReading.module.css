@@ -1,0 +1,39 @@
+.chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0;
+}
+.chapters a {
+  border: 1px solid #75628e;
+  color: #ddd0eb;
+  background: #302a43;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+.chapters a:focus-visible {
+  outline: 2px solid #88cdc5;
+  outline-offset: 3px;
+}
+.chapter {
+  min-width: 0;
+  margin: 36px 0;
+  scroll-margin-top: 24px;
+  overflow-wrap: anywhere;
+}
+.chapter > h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.chapter :global(.case-relation-scroll) {
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  .chapters a {
+    padding: 9px;
+    font-size: 12px;
+  }
+  .chapter > h2 {
+    font-size: 20px;
+  }
+}

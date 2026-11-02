@@ -61,6 +61,23 @@
 .links a {
   line-height: 1.8;
 }
+.links a:has(img) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.links img {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.continuousGroups {
+  margin: 22px 0;
+  min-width: 0;
+}
+.continuousGroups > .links {
+  margin: 15px 0;
+}
 .boundary {
   border-left: 3px solid #dfbd77;
   padding: 16px 20px;

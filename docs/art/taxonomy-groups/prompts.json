@@ -1,0 +1,252 @@
+[
+  {
+    "id": "movement-basics",
+    "prompt": "Use case: stylized-concept. Asset type: one square game taxonomy group inventory illustration. Create ONE isolated large readable concrete illustration, 512x512, genuinely transparent background. Style reference: the existing viewed jump/resource-scarcity/loadout-selection images: chunky irregular ink-black outlines, 90s anime game inventory art, flat cream and purple cel shading with cyan and golden yellow accents, bold simplified silhouette, playful angular forms. No photorealism, no 3D render, no thin-line pictogram, no border, no text/letters/numbers/logos/watermarks, no character face. Centered with 7% clear padding, object(s) fill 86% canvas; readable at 96px. Use concrete objects to communicate the whole group rather than an abstract dimension glyph. Group: 移动与攀越. Subject: A large purple adventure boot stepping up two chunky cream stone ledges, a small cyan upward curved motion arc. Convey ordinary movement, jumping and climbing.",
+    "description": "靴子跨越台阶与攀越障碍"
+  },
+  {
+    "id": "mobility-tools",
+    "prompt": "Use case: stylized-concept. Asset type: one square game taxonomy group inventory illustration. Create ONE isolated large readable concrete illustration, 512x512, genuinely transparent background. Style reference: the existing viewed jump/resource-scarcity/loadout-selection images: chunky irregular ink-black outlines, 90s anime game inventory art, flat cream and purple cel shading with cyan and golden yellow accents, bold simplified silhouette, playful angular forms. No photorealism, no 3D render, no thin-line pictogram, no border, no text/letters/numbers/logos/watermarks, no character face. Centered with 7% clear padding, object(s) fill 86% canvas; readable at 96px. Use concrete objects to communicate the whole group rather than an abstract dimension glyph. Group: 特殊位移与空间连接. Subject: A chunky purple grappling hook with golden tip and cyan rope emerging through a small oval cyan portal rim; bold directional swoosh. Convey special traversal tools and space connections.",
+    "description": "抓钩连接传送入口"
+  },
+  {
+    "id": "attack-defense-input",
+    "prompt": "Use case: stylized-concept. Asset type: one square game taxonomy group inventory illustration. Create ONE isolated large readable concrete illustration, 512x512, genuinely transparent background. Style reference: the existing viewed jump/resource-scarcity/loadout-selection images: chunky irregular ink-black outlines, 90s anime game inventory art, flat cream and purple cel shading with cyan and golden yellow accents, bold simplified silhouette, playful angular forms. No photorealism, no 3D render, no thin-line pictogram, no border, no text/letters/numbers/logos/watermarks, no character face. Centered with 7% clear padding, object(s) fill 86% canvas; readable at 96px. Use concrete objects to communicate the whole group rather than an abstract dimension glyph. Group: 攻击与招架操作. Subject: A broad cream sword colliding diagonally against a purple round buckler with cyan center, one bold yellow impact star. Convey active attack and precisely timed blocking.",
+    "description": "剑刃与盾牌的攻击招架"
+  },
+  {
+    "id": "object-arrangement",
+    "prompt": "Use case: stylized-concept. Asset type: one square game taxonomy group inventory illustration. Create ONE isolated large readable concrete illustration, 512x512, genuinely transparent background. Style reference: the existing viewed jump/resource-scarcity/loadout-selection images: chunky irregular ink-black outlines, 90s anime game inventory art, flat cream and purple cel shading with cyan and golden yellow accents, bold simplified silhouette, playful angular forms. No photorealism, no 3D render, no thin-line pictogram, no border, no text/letters/numbers/logos/watermarks, no character face. Centered with 7% clear padding, object(s) fill 86% canvas; readable at 96px. Use concrete objects to communicate the whole group rather than an abstract dimension glyph. Group: 物件排列与放置. Subject: A cream gloved hand rotating and placing a chunky purple L shaped block into a small cream-and-cyan checker tray. Convey arranging, rotating and placing objects. No characters.",
+    "description": "手掌旋转并摆放积木"
+  },
+  {
+    "id": "physical-world-input",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A large purple mechanical grabbing claw gripping and tilting a rough cream rock, the rock breaking into two pieces with cyan force arcs.",
+    "description": "机械夹爪操纵并破开岩块"
+  },
+  {
+    "id": "timed-input",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A cream gloved finger holding a chunky purple arcade button, with three golden rhythm beat bars and a cyan timing ring.",
+    "description": "按键与节拍表示定时和持续输入"
+  },
+  {
+    "id": "completion-scoring",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A small purple block puzzle tray with one complete golden row bursting into a large cream star trophy shape; cyan check mark accent, no text.",
+    "description": "完成排列后获得星形奖杯"
+  },
+  {
+    "id": "combat-state",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A large flat-drawn purple heart-shaped armor plate with one clearly visible angular crack, a chunky cream shield behind it, one cyan poison droplet and a small yellow dizzy burst. Clear hand-inked two-tone cel shading only, like the viewed inventory item references. No realistic metal texture, no glossy 3D, no red flame aura, no dark vignette.",
+    "description": "心形护甲裂痕与持续状态标记"
+  },
+  {
+    "id": "effect-composition",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two chunky purple and cyan potion bottles pouring yellow and cyan drops into one cream bowl, producing a big angular purple reaction star.",
+    "description": "药瓶混合产生组合效果"
+  },
+  {
+    "id": "spatial-settlement",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Three chunky cream hexagonal land tiles joined edge to edge, a purple banner claiming the center tile and a cyan glow between adjacent tiles.",
+    "description": "相邻地块与领地旗帜"
+  },
+  {
+    "id": "stakes-and-victory",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky golden trophy on one side of a cream balance scale and a pile of purple wager tokens on the other.",
+    "description": "奖杯与押注筹码的胜负比较"
+  },
+  {
+    "id": "judgment-rules",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A large cream die landing beside a purple ballot box, one yellow voting token drops into its slot.",
+    "description": "骰子检定与投票箱"
+  },
+  {
+    "id": "automated-execution",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A large purple wind-up mechanical knight chess piece driven by a golden cog with a cyan looping motion arc.",
+    "description": "齿轮驱动棋子自动执行"
+  },
+  {
+    "id": "turn-order",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Three chunky purple cream and cyan pawn pieces arranged around a golden circular turn arrow, one pawn raised on a little step.",
+    "description": "棋子轮流行动与阶段切换"
+  },
+  {
+    "id": "clock-and-deliberation",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple mechanical stopwatch with a cream face and cyan pause tabs, large yellow hand sweeping around a short time arc, no numerals.",
+    "description": "秒表与暂停钮表示决策时间"
+  },
+  {
+    "id": "flow-choice",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky cream branching path signpost with two purple directional arms, one branch curls back around a cyan loop.",
+    "description": "分岔路标与继续循环"
+  },
+  {
+    "id": "retry-and-loop",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple checkpoint pennant planted on a cream stone platform encircled by one thick cyan reset arrow, a small golden phoenix feather.",
+    "description": "存档旗与重试循环"
+  },
+  {
+    "id": "environment-calendar",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple calendar sheet with no text, split into a yellow sun and cream crescent moon, a cyan rain cloud and tiny leaf.",
+    "description": "日历上的昼夜天气与季节"
+  },
+  {
+    "id": "equipment-build",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. An open purple equipment case divided into chunky square slots, a cream sword shield and golden gem fitted inside, one cyan slot remains empty.",
+    "description": "装备格与可配置器具"
+  },
+  {
+    "id": "ability-build",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Three large purple mechanical sockets linked in a branching shape, with a yellow lightning module and cyan crystal module ready to slot in.",
+    "description": "分支插槽与能力模块"
+  },
+  {
+    "id": "deck-development",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple deck of cream playing cards, one oversized cyan star card being added from above with a golden downward arrow, no suit numbers.",
+    "description": "新卡加入局内卡组"
+  },
+  {
+    "id": "roster-build",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Three distinct chunky chess recruits: a purple armored knight helmet, a cream healer staff pawn and cyan archer hood pawn, on a small selection tray.",
+    "description": "不同职责的队伍招募棋子"
+  },
+  {
+    "id": "deployment-authoring",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A cream gloved hand placing one purple monster-shaped token onto a small cream dungeon room board with cyan paths and yellow event marker.",
+    "description": "在流程地图上放置遭遇棋子"
+  },
+  {
+    "id": "configuration-reuse",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A curled cyan blueprint sheet showing three chunky building silhouettes only, beside an identical purple three-block building lifted by a golden copy arrow.",
+    "description": "蓝图与复制部署的建筑"
+  },
+  {
+    "id": "persistence-and-loss",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple locked treasure chest preserving a golden star, with one broken cream chess pawn outside and a cyan carry-over arrow behind chest.",
+    "description": "保留宝箱与永久破损的棋子"
+  },
+  {
+    "id": "learning-and-research",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. An open cream research book with a purple branching plant sprouting into a golden cog and cyan crystal, no writing.",
+    "description": "书本上的经验与技术发展"
+  },
+  {
+    "id": "access-gates",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple gate locked by three concrete cream key heads: a golden flag, a cyan lightbulb and a purple wing, showing goal knowledge and ability access.",
+    "description": "带目标知识与能力钥匙的门槛"
+  },
+  {
+    "id": "quest-and-relationship",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A cream quest parchment with a golden check mark and a purple handshake seal connected by a cyan cord, no writing.",
+    "description": "任务卷轴与关系握手印章"
+  },
+  {
+    "id": "collection-records",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. An open chunky purple specimen album, four cream pockets with a cyan butterfly silhouette golden coin purple feather and one empty pocket, no text.",
+    "description": "可持续补全的收藏册"
+  },
+  {
+    "id": "resource-acquisition",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple pickaxe beside a cream broken ore rock, golden crystals and a cyan battle-energy orb collected into a small pouch.",
+    "description": "采集工具与掉落供给"
+  },
+  {
+    "id": "resource-constraints",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A small purple backpack stretched full of cream supplies, one final golden ration outside and a nearly empty cyan bottle with low droplet level.",
+    "description": "装满的背包与不足的补给"
+  },
+  {
+    "id": "resource-conversion",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple crafting machine with cream ore entering on left and golden gear output on right, connected by cyan conveyor segment.",
+    "description": "材料加工与生产链"
+  },
+  {
+    "id": "productive-investment",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A small purple workshop with a cream roof, golden coin inserted into its slot and a cyan crop sprout plus gear output beside it.",
+    "description": "投入资源建设持续生产设施"
+  },
+  {
+    "id": "supply-networks",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two chunky cream factory nodes joined by a thick purple pipe and cyan cable, a golden delivery crate travels along the central route.",
+    "description": "管路电缆与运输节点"
+  },
+  {
+    "id": "thermal-management",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple thermometer between a golden flame and a cyan cooling fan, wrapped partly in cream insulation, no numerals.",
+    "description": "产热散热与保温器具"
+  },
+  {
+    "id": "exchange-and-market",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A small cream balance scale on a purple market counter, golden coins exchanged against a cyan potion via two simple curved arrows.",
+    "description": "市场柜台上的交换与定价"
+  },
+  {
+    "id": "resource-ownership",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two cream gloved hands deposit golden coins into a single open purple bank chest, with a cyan exit gate token beside it.",
+    "description": "共同宝库与收益带出"
+  },
+  {
+    "id": "future-preview",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple crystal viewing window showing a cream sword attack silhouette, beside a queued golden puzzle block visible behind cyan glass.",
+    "description": "水晶窗口预览后续行动与对象"
+  },
+  {
+    "id": "hidden-information",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple folding screen hiding a small cream identity mask and two playing cards, cyan eye peeking through a keyhole.",
+    "description": "屏风后的隐藏手牌与身份"
+  },
+  {
+    "id": "inference-and-validation",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A large purple magnifying glass examining cream clue fragments that fit into one golden key, a cyan checkmark beside the solved pieces.",
+    "description": "放大镜核对线索与发现规则"
+  },
+  {
+    "id": "knowledge-organization",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. An open cream notebook connected to a chunky purple folded map with cyan route line and one golden location pin, no text.",
+    "description": "笔记地图与空间定位"
+  },
+  {
+    "id": "sensing-and-tracking",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A purple spyglass above three cream footprints, cyan sound waves pointing toward a hidden golden feather, bold simple silhouette.",
+    "description": "望远镜脚印与声音线索"
+  },
+  {
+    "id": "cooperation-goals",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two cream gloved hands with purple and cyan cuffs lifting the same chunky golden flag together from a shared purple base.",
+    "description": "共同抬起目标旗帜"
+  },
+  {
+    "id": "conflict-and-diplomacy",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two chunky purple and cyan castle towers facing each other, crossed cream swords behind a golden handshake seal between them.",
+    "description": "对立城堡与外交握手"
+  },
+  {
+    "id": "role-differences",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple shield a cream healing staff and a cyan wrench fitted onto three distinct interlocking golden role tokens.",
+    "description": "盾杖扳手表示不同职责"
+  },
+  {
+    "id": "participation-timing",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two chunky purple player tokens: one pair linked by a live cyan circular clock arc, one golden sealed envelope arrives later on the right; no text.",
+    "description": "即时联动与延后提交的参与"
+  },
+  {
+    "id": "random-supply",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple draw bag spills one cream die, a golden upgrade gem and two cyan candidate cards, no card text or dice numerals except pips.",
+    "description": "抽取袋骰子与候选供给"
+  },
+  {
+    "id": "generated-content",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky purple maze board with three cream modular rooms, a cyan mechanical hand rearranges one room while golden encounter tokens vary.",
+    "description": "可变房间布局与遭遇棋子"
+  },
+  {
+    "id": "reproducible-variation",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. Two identical chunky purple dice machines side by side, each fed the same golden seed crystal and outputting the same cream die face, cyan repeat arc.",
+    "description": "相同种子重现相同随机结果"
+  },
+  {
+    "id": "world-state-change",
+    "prompt": "Use case: stylized-concept. Create ONE square isolated inventory illustration 512x512 with genuinely transparent background. Match viewed jump/resource-scarcity/loadout-selection game art: chunky rough black outlines, angular 90s anime game inventory objects, cel-shaded flat cream and purple with cyan and yellow accents. Strong silhouette readable at 96 pixels, minimal detail, 7% padding. No face/character portrait, no text/numbers/logos/watermark, no border, no photorealism or 3D. Concrete meaningful objects representing whole group. A chunky cream miniature globe with purple mountains, a cyan river and golden event bell on a mechanical purple scheduler cog, one environment tile shifts.",
+    "description": "世界状态与事件调度器具"
+  }
+]

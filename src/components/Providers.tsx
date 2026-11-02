@@ -185,7 +185,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
     recipe: "组合配方",
   };
   const allResults = searchCatalog(query);
-  const results = allResults.slice(0, 18).map((item) => ({
+  const results = allResults.map((item) => ({
     name: item.name,
     kind: resultKinds[item.kind],
     meta: item.description,
@@ -224,7 +224,6 @@ export function AppProviders({ children }: { children: ReactNode }) {
                 : "例如：卡组、Balatro、重开、撤离。"}
               <span aria-live="polite">
                 {allResults.length} 项
-                {allResults.length > 18 ? " · 显示前 18 项" : ""}
               </span>
             </p>
             <motion.div layout className="search-results">

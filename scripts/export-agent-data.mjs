@@ -18,6 +18,7 @@ import {
 } from "../src/lib/seo.ts";
 import { promptTemplates } from "../src/lib/research-prompt.ts";
 import { mechanicScenes } from "../src/data/mechanic-scenes.ts";
+import { taxonomyGroupVisuals } from "../src/data/taxonomy-group-visuals.ts";
 import { currentTrends } from "../src/lib/current-trends.ts";
 
 const DEFAULT_OUTPUT = fileURLToPath(new URL("../public/", import.meta.url));
@@ -259,8 +260,19 @@ export function createAgentDocuments() {
   }
   for (const group of taxonomyGroups) {
     const path = `/taxonomy/${group.dimensionId}/${group.id}`;
+    const visual = taxonomyGroupVisuals[group.id];
+    const illustration = visual
+      ? {
+          epistemicStatus: "editorial_illustration",
+          label: "分组示意插画（模型生成）",
+          note: "用于辅助识别本站机制分组，不是游戏截图或游戏事实证据。",
+          description: visual.description,
+          icon: `${SITE_URL}${visual.iconSrc}`,
+        }
+      : undefined;
     addEntity("groups", "taxonomyGroup", group, path, {
       epistemicStatus: "editorial_navigation",
+      illustration,
     });
     const observations = dataset.instances.filter((row) =>
       group.examples.some((example) => example.instanceId === row.id),
@@ -271,7 +283,7 @@ export function createAgentDocuments() {
     markdown(
       path,
       group.name,
-      `${group.explanation}\n${section("作用与边界", [group.function, group.boundary])}${section(
+      `${group.explanation}\n${illustration ? `\n![${illustration.description}](${illustration.icon})\n\n${illustration.label}：${illustration.note}\n` : ""}${section("作用与边界", [group.function, group.boundary])}${section(
         "本组机制",
         group.mechanicIds.map((id) => {
           const mechanic = dataset.mechanics.find((row) => row.id === id);

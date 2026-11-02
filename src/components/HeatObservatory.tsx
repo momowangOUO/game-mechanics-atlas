@@ -172,7 +172,6 @@ function CountObservatory({
   );
   const [selected, setSelected] = useState(initial?.id || "genre:moba"),
     [query, setQuery] = useState(""),
-    [page, setPage] = useState(1),
     [chart, setChart] = useState<"trend" | "scatter">("trend");
   const [importOpen, setImportOpen] = useState(false),
     [inspectOpen, setInspectOpen] = useState(false),
@@ -230,8 +229,6 @@ function CountObservatory({
           ? (b.red || 0) - (a.red || 0)
           : b.demand - a.demand,
     );
-  const pages = Math.ceil(ranked.length / 7),
-    safePage = Math.min(page, Math.max(pages, 1));
   const sourceKinds = [...new Set(stats.map((row) => row.sourceKind))],
     datasets = [...new Set(stats.map((row) => row.datasetId))],
     regions = [...new Set(stats.map((row) => row.region))];
@@ -245,7 +242,7 @@ function CountObservatory({
     setDataset("");
     setRegion("");
     setQuery("");
-    setPage(1);
+
     announce("已清空本地搜索记录。");
   };
   const importData = () => {
@@ -266,7 +263,7 @@ function CountObservatory({
       setSource("");
       setDataset("");
       setRegion("");
-      setPage(1);
+
       setImportErrors([]);
       setImportOpen(false);
       announce("已导入并替换当前记录。请继续核对原始来源。");
@@ -316,7 +313,6 @@ function CountObservatory({
             value={days}
             onChange={(event) => {
               setDays(Number(event.target.value) as 7 | 30 | 90);
-              setPage(1);
             }}
           >
             <option value={7}>最近 7 日</option>
@@ -331,7 +327,6 @@ function CountObservatory({
             value={source}
             onChange={(event) => {
               setSource(event.target.value);
-              setPage(1);
             }}
           >
             <option value="">全部数据来源</option>
@@ -538,7 +533,7 @@ function CountObservatory({
                   key={id}
                   onClick={() => {
                     setView(id);
-                    setPage(1);
+
                     setQuery("");
                   }}
                 >
@@ -557,7 +552,6 @@ function CountObservatory({
                       value={query}
                       onChange={(event) => {
                         setQuery(event.target.value);
-                        setPage(1);
                       }}
                     />
                   </label>
@@ -569,7 +563,6 @@ function CountObservatory({
                         setScoreKind(
                           event.target.value as Exclude<TopicKind, "game">,
                         );
-                        setPage(1);
                       }}
                     >
                       <option value="combination">机制组合内比较</option>
@@ -606,70 +599,47 @@ function CountObservatory({
                           </tr>
                         </thead>
                         <tbody>
-                          {ranked
-                            .slice((safePage - 1) * 7, safePage * 7)
-                            .map((profile, index) => (
-                              <tr
-                                key={profile.topicId}
-                                className={
-                                  selectedProfile?.topicId === profile.topicId
-                                    ? "selected"
-                                    : ""
-                                }
-                              >
-                                <td>
-                                  {String(
-                                    (safePage - 1) * 7 + index + 1,
-                                  ).padStart(2, "0")}
-                                </td>
-                                <td>
-                                  <button
-                                    className="ranking-name"
-                                    onClick={() => selectTopic(profile.topicId)}
-                                  >
-                                    {profile.name}
-                                  </button>
-                                  {profile.supply === 0 && (
-                                    <span className="ranking-status">
-                                      待补游戏样本
-                                    </span>
-                                  )}
-                                  {profile.measurementStatus === "partial" && (
-                                    <span className="ranking-status">
-                                      日期记录不完整
-                                    </span>
-                                  )}
-                                </td>
-                                <td>{formatAmount(profile.demand)}</td>
-                                <td>{profile.supply}</td>
-                                <td>
-                                  {view === "blue"
-                                    ? profile.blue?.toFixed(1)
-                                    : view === "red"
-                                      ? profile.red?.toFixed(1)
-                                      : trendLabel(profile)}
-                                </td>
-                              </tr>
-                            ))}
+                          {ranked.map((profile, index) => (
+                            <tr
+                              key={profile.topicId}
+                              className={
+                                selectedProfile?.topicId === profile.topicId
+                                  ? "selected"
+                                  : ""
+                              }
+                            >
+                              <td>{String(index + 1).padStart(2, "0")}</td>
+                              <td>
+                                <button
+                                  className="ranking-name"
+                                  onClick={() => selectTopic(profile.topicId)}
+                                >
+                                  {profile.name}
+                                </button>
+                                {profile.supply === 0 && (
+                                  <span className="ranking-status">
+                                    待补游戏样本
+                                  </span>
+                                )}
+                                {profile.measurementStatus === "partial" && (
+                                  <span className="ranking-status">
+                                    日期记录不完整
+                                  </span>
+                                )}
+                              </td>
+                              <td>{formatAmount(profile.demand)}</td>
+                              <td>{profile.supply}</td>
+                              <td>
+                                {view === "blue"
+                                  ? profile.blue?.toFixed(1)
+                                  : view === "red"
+                                    ? profile.red?.toFixed(1)
+                                    : trendLabel(profile)}
+                              </td>
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
-                      <nav className="pagination" aria-label="热度排行分页">
-                        <button
-                          disabled={safePage <= 1}
-                          onClick={() => setPage((p) => p - 1)}
-                        >
-                          ← 上一页
-                        </button>
-                        <span>
-                          {safePage} / {pages}
-                        </span>
-                        <button
-                          disabled={safePage >= pages}
-                          onClick={() => setPage((p) => p + 1)}
-                        >
-                          下一页 →
-                        </button>
-                      </nav>
                     </>
                   ) : (
                     <EmptyState

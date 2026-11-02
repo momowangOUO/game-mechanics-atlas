@@ -26,12 +26,14 @@ test("every mechanism has a real generated icon and three-panel comic", async ({
     }),
   );
 });
-test("desktop comic uses illustrated panels and an independent step-by-step diagram", async ({
+test("desktop comic keeps illustrated panels and all independent rule stages visible", async ({
   page,
 }) => {
   await gotoApp(page, "/mechanics/direct-movement/");
   const story = page.getByRole("region", { name: "直接移动图解" });
-  const panels = story.locator("figure");
+  const panels = story
+    .locator("figure")
+    .filter({ has: page.locator("[data-panel]") });
   await expect(panels).toHaveCount(3);
   for (const p of await panels.all()) {
     const image = p.locator("img");
@@ -39,20 +41,21 @@ test("desktop comic uses illustrated panels and an independent step-by-step diag
       "src",
       /art\/comics\/direct-movement\.webp/,
     );
-    expect(await image.evaluate((e: HTMLImageElement) => e.naturalWidth)).toBe(
-      1800,
-    );
+    await image.scrollIntoViewIfNeeded();
+    await expect
+      .poll(() => image.evaluate((e: HTMLImageElement) => e.naturalWidth))
+      .toBe(1800);
   }
-  await story.getByRole("button", { name: "规则示意", exact: true }).click();
-  await expect(story.locator("svg")).toHaveCount(1);
-  const diagram = story.locator("svg");
-  const original = await diagram.innerHTML();
-  await story
-    .getByRole("navigation", { name: "示意步骤" })
-    .getByRole("button")
-    .nth(1)
-    .click();
-  expect(await diagram.innerHTML()).not.toBe(original);
+  await expect(story.locator("svg")).toHaveCount(3);
+  const diagrams = await story.locator("svg").all();
+  const states = await Promise.all(
+    diagrams.map(async (diagram) =>
+      (await diagram.innerHTML()).replace(/rule-[a-zA-Z0-9_-]+/g, "marker"),
+    ),
+  );
+  expect(new Set(states).size).toBe(3);
+  for (const diagram of diagrams) await expect(diagram).toBeVisible();
+  await expect(story.locator("button, nav")).toHaveCount(0);
 });
 test("phone comic exposes all three panels without horizontal scrolling", async ({
   page,
@@ -60,7 +63,9 @@ test("phone comic exposes all three panels without horizontal scrolling", async 
   await page.setViewportSize({ width: 390, height: 844 });
   await gotoApp(page, "/mechanics/jump/");
   const story = page.getByRole("region", { name: "跳跃图解" });
-  const visibleFrames = story.locator("figure:visible");
+  const visibleFrames = story
+    .locator("figure:visible")
+    .filter({ has: page.locator("[data-panel]") });
   await expect(visibleFrames).toHaveCount(3);
   await expect(
     story.getByRole("navigation", { name: "漫画分镜" }),

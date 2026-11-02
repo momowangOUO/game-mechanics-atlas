@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { dimensions, getMechanic, getGame, sources } from "@/lib/knowledge";
+import { dimensions, getMechanic } from "@/lib/knowledge";
 import { taxonomyGroups } from "@/data/taxonomy-reference";
-import {
-  GameCover,
-  GameArtCredit,
-  PageHead,
-  StateBadge,
-} from "@/components/Primitives";
+import { PageHead } from "@/components/Primitives";
 import { BreadcrumbStructuredData } from "@/components/StructuredData";
-import { MechanicIcon, MechanicExamples } from "@/components/MechanicVisuals";
-import { evidenceLabels } from "@/lib/evidence-labels";
+import { MechanismArticle } from "@/components/TaxonomyExplorer";
+import { TaxonomyGroupIcon } from "@/components/TaxonomyGroupIcon";
 import { pageMetadata, SITE_NAME } from "@/lib/seo";
 import styles from "@/components/TaxonomyStatic.module.css";
 
@@ -65,118 +60,52 @@ export default async function GroupPage({ params }: Props) {
         <span>/</span>
         <span>{group.name}</span>
       </nav>
-      <PageHead
-        eyebrow={`TAXONOMY / ${dimension.name}`}
-        title={group.name}
-        description={group.explanation}
-      />
+      <div id={`group-${id}`}>
+        <PageHead
+          eyebrow={`TAXONOMY / ${dimension.name}`}
+          title={group.name}
+          description={group.explanation}
+        >
+          <TaxonomyGroupIcon id={group.id} size={96} />
+        </PageHead>
+      </div>
       <section className={styles.boundary}>
         <h2>作用与边界</h2>
         <p>{group.function}</p>
         <p>{group.boundary}</p>
       </section>
+      <nav className={styles.links} aria-label="本组机制目录">
+        {group.mechanicIds.map((mechanicId) => (
+          <a key={mechanicId} href={`#mechanic-${mechanicId}`}>
+            {getMechanic(mechanicId)?.name} ↓
+          </a>
+        ))}
+      </nav>
       <h2 className={styles.sectionTitle}>
         本组的 {group.mechanicIds.length} 个机制
       </h2>
-      <div className={styles.grid}>
-        {group.mechanicIds.map((mechanicId) => {
-          const mechanic = getMechanic(mechanicId);
-          return mechanic ? (
-            <article className={styles.card} key={mechanic.id}>
-              <div className={styles.cardHeader}>
-                <MechanicIcon id={mechanic.id} size={48} />
-                <h3>
-                  <Link href={`/mechanics/${mechanic.id}`}>
-                    {mechanic.name} →
-                  </Link>
-                </h3>
-              </div>
-              <p>{mechanic.definition}</p>
-              <p>
-                <strong>纳入条件：</strong>
-                {mechanic.inclusionRules.join("；")}
-              </p>
-              <p>
-                <strong>排除边界：</strong>
-                {mechanic.exclusionRules.join("；")}
-              </p>
-              <h4>游戏范例</h4>
-              <MechanicExamples id={mechanic.id} limit={2} />
-            </article>
-          ) : null;
-        })}
-      </div>
-      <h2 className={styles.sectionTitle}>游戏范例</h2>
-      <p className={styles.intro}>
-        每条范例都保留对应范围、状态和来源；有条件成立的机制还会列出条件。
-      </p>
-      {group.examples.length ? (
-        <div className={styles.examples}>
-          {group.examples.map((example) => {
-            const game = getGame(example.gameId);
-            const mechanic = getMechanic(example.mechanicId);
-            return game && mechanic ? (
-              <article className={styles.example} key={example.instanceId}>
-                <Link
-                  href={`/games/${game.id}`}
-                  aria-label={`查看${game.name}游戏案例`}
-                >
-                  <GameCover game={game} />
-                </Link>
-                <div className={styles.exampleBody}>
-                  <GameArtCredit gameId={game.id} />
-                  <h3>
-                    <Link href={`/games/${game.id}`}>{game.name}</Link> ·{" "}
-                    <Link href={`/mechanics/${mechanic.id}`}>
-                      {mechanic.name}
-                    </Link>
-                  </h3>
-                  <div>
-                    <StateBadge status={example.status} />{" "}
-                    <span>{example.scopeLabel}</span>
-                  </div>
-                  <p>{example.observation}</p>
-                  {example.condition && (
-                    <p className="gold">成立条件：{example.condition}</p>
-                  )}
-                  {example.scopeNote && <p>{example.scopeNote}</p>}
-                  <div className={styles.sources}>
-                    <strong>{evidenceLabels[example.evidenceKind]}</strong>
-                    {example.sourceIds.map((sourceId) => {
-                      const source = sources.find((row) => row.id === sourceId);
-                      return source ? (
-                        <a
-                          href={source.url}
-                          key={source.id}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {source.title} ↗ · {source.publisher} · 核验{" "}
-                          {source.checkedAt}
-                        </a>
-                      ) : null;
-                    })}
-                  </div>
-                </div>
-              </article>
-            ) : null;
-          })}
-        </div>
-      ) : (
-        <p className={styles.boundary}>本组暂未收录游戏范例。</p>
-      )}
+      {group.mechanicIds.map((mechanicId) => (
+        <MechanismArticle
+          key={mechanicId}
+          mechanic={getMechanic(mechanicId)!}
+          groupId={group.id}
+        />
+      ))}
       <section className={styles.boundary}>
-        <h2>继续比较</h2>
+        <h2>其他分组</h2>
         <div className={styles.links}>
           {siblings.map((row) => (
-            <Link href={`/taxonomy/${dimensionId}/${row.id}`} key={row.id}>
+            <Link key={row.id} href={`/taxonomy/${dimensionId}/${row.id}`}>
+              <TaxonomyGroupIcon id={row.id} size={40} />
               {row.name} →
             </Link>
           ))}
         </div>
         <p>
-          <Link href={`/taxonomy?group=${id}`}>在交互图鉴中查看本组 →</Link> ·{" "}
-          <Link href="/method">分类与证据说明 →</Link>
+          <Link href={`/taxonomy?group=${id}#group-${id}`}>
+            在分类图鉴中定位本组 →
+          </Link>{" "}
+          · <Link href="/method">分类与证据说明 →</Link>
         </p>
       </section>
     </>

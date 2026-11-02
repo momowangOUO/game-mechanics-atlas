@@ -10,6 +10,10 @@ import { PageHead } from "@/components/Primitives";
 import { BreadcrumbStructuredData } from "@/components/StructuredData";
 import styles from "@/components/TaxonomyStatic.module.css";
 import { pageMetadata, SITE_NAME } from "@/lib/seo";
+import { TaxonomyGroupIcon } from "@/components/TaxonomyGroupIcon";
+import { MechanismArticle } from "@/components/TaxonomyExplorer";
+import atlasStyles from "@/components/TaxonomyExplorer.module.css";
+import type { CSSProperties } from "react";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -63,25 +67,47 @@ export default async function DimensionPage({ params }: Props) {
       <p className={styles.intro}>
         分组由本站编辑整理，把同一维度中作用相近的机制放在一起，方便比较。每项机制仍保留自己的主分类。
       </p>
-      <div className={styles.grid}>
+      <div
+        className={styles.continuousGroups}
+        style={{ "--dimension-accent": dimension.color } as CSSProperties}
+      >
         {groups.map((group) => (
-          <article key={group.id} className={styles.card}>
-            <h3>
-              <Link href={`/taxonomy/${id}/${group.id}`}>{group.name} →</Link>
-            </h3>
-            <p>{group.explanation}</p>
-            <p>{group.function}</p>
+          <section
+            key={group.id}
+            id={`group-${group.id}`}
+            className={atlasStyles.group}
+            data-taxonomy-group={group.id}
+          >
+            <header className={atlasStyles.groupHead}>
+              <TaxonomyGroupIcon id={group.id} size={96} />
+              <div>
+                <span className={atlasStyles.kicker}>02 / 机制分组</span>
+                <h2>{group.name}</h2>
+                <p>{group.function}</p>
+              </div>
+            </header>
+            <p className={atlasStyles.groupIntro}>{group.explanation}</p>
             <div className={styles.links}>
               {group.mechanicIds.map((mechanicId) => {
                 const mechanic = getMechanic(mechanicId);
                 return mechanic ? (
-                  <Link href={`/mechanics/${mechanic.id}`} key={mechanic.id}>
+                  <a href={`#mechanic-${mechanic.id}`} key={mechanic.id}>
                     {mechanic.name}
-                  </Link>
+                  </a>
                 ) : null;
               })}
             </div>
-          </article>
+            <p className={atlasStyles.groupBoundary}>
+              分组边界：{group.boundary}
+            </p>
+            {group.mechanicIds.map((mechanicId) => (
+              <MechanismArticle
+                key={mechanicId}
+                mechanic={getMechanic(mechanicId)!}
+                groupId={group.id}
+              />
+            ))}
+          </section>
         ))}
       </div>
       <div className={styles.links}>

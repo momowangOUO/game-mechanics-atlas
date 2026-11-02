@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useId } from "react";
 import { ArtImage, GameThumbnail } from "./Art";
 import { mechanicScenes } from "@/data/mechanic-scenes";
 import { mechanicExamples } from "@/data/taxonomy-reference";
@@ -31,6 +31,18 @@ export function MechanicIcon({
     </span>
   );
 }
+export function MechanicIconFrame({ id }: { id: string }) {
+  return (
+    <span className={styles.iconFrame} aria-hidden="true">
+      <ArtImage
+        src={`/art/mechanics/${id}.webp`}
+        alt=""
+        width={256}
+        height={256}
+      />
+    </span>
+  );
+}
 export function MechanicComicLink({ id }: { id: string }) {
   const mechanic = getMechanic(id);
   if (!mechanic) return null;
@@ -49,7 +61,7 @@ export function MechanicComicLink({ id }: { id: string }) {
         />
       </span>
       <span>
-        <strong>看图理解</strong>
+        <strong>{mechanic.name} · 三格漫画</strong>
         <small>用三格演示看清规则</small>
       </span>
       <b aria-hidden="true">↗</b>
@@ -58,155 +70,102 @@ export function MechanicComicLink({ id }: { id: string }) {
 }
 export function MechanicStoryboard({
   id,
-  compact = false,
-  initialPanel = 0,
-  onExpand,
+  headingLevel = 2,
 }: {
   id: string;
-  compact?: boolean;
-  initialPanel?: number;
-  onExpand?: (panel: number) => void;
+  headingLevel?: 2 | 3 | 4;
 }) {
-  const scene = mechanicScenes[id],
-    mechanic = getMechanic(id);
-  const [panel, setPanel] = useState(initialPanel),
-    [mode, setMode] = useState<"comic" | "diagram">("comic");
-  const uid = useId().replace(/:/g, "");
+  const scene = mechanicScenes[id];
+  const mechanic = getMechanic(id);
+  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, "");
+  const Heading = `h${headingLevel}` as "h2" | "h3" | "h4";
   if (!scene || !mechanic) return null;
+  const stages = ["情境", "操作", "结果"];
   return (
     <section
-      id={compact ? undefined : `mechanic-comic-${id}`}
-      className={`${styles.story} ${compact ? styles.compact : ""}`}
+      id={`mechanic-comic-${id}`}
+      className={styles.story}
       aria-label={`${mechanic.name}图解`}
     >
       <header className={styles.storyHead}>
-        {!compact && (
-          <div>
-            <span className={styles.kicker}>
-              MECHANIC IN ACTION / 原创教学漫画
-            </span>
-            <h2>
-              <MechanicIcon id={id} size={44} />
-              {mechanic.name}图解
-            </h2>
-          </div>
-        )}
-        <div className={styles.modeSwitch} role="group" aria-label="图解形式">
-          <button
-            aria-pressed={mode === "comic"}
-            onClick={() => setMode("comic")}
-          >
-            三格漫画
-          </button>
-          <button
-            aria-pressed={mode === "diagram"}
-            onClick={() => setMode("diagram")}
-          >
-            规则示意
-          </button>
-        </div>
-        {compact && onExpand && (
-          <button
-            className={styles.expandComic}
-            type="button"
-            onClick={() => onExpand(panel)}
-          >
-            放大漫画 ↗
-          </button>
-        )}
+        <span className={styles.kicker}>MECHANIC IN ACTION / 原创教学漫画</span>
+        <Heading className={styles.storyTitle}>{mechanic.name}图解</Heading>
       </header>
-      {mode === "comic" ? (
-        <>
-          <div className={styles.frames}>
-            {scene.frames.map((caption, i) => (
-              <figure
-                key={i}
-                className={`${styles.frame} ${panel === i ? styles.activeFrame : ""}`}
-              >
-                <div className={styles.panelNumber}>
-                  0{i + 1}
-                  <span>{["情境", "操作", "结果"][i]}</span>
-                </div>
-                <div className={styles.comicDrawing} data-panel={i}>
-                  <ArtImage
-                    className={styles.comicStrip}
-                    src={`/art/comics/${id}.webp`}
-                    width={1800}
-                    height={600}
-                    alt={`${mechanic.name}漫画第${i + 1}格：${caption}`}
-                  />
-                </div>
-                <figcaption>
-                  <strong>{scene.objects[i]}</strong>
-                  <p>{caption}</p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-          <nav className={styles.framePager} aria-label="漫画分镜">
-            <button disabled={panel === 0} onClick={() => setPanel(panel - 1)}>
-              ← 上一格
-            </button>
-            <span>{panel + 1} / 3</span>
-            <button disabled={panel === 2} onClick={() => setPanel(panel + 1)}>
-              下一格 →
-            </button>
-          </nav>
-        </>
-      ) : (
-        <>
-          <figure className={styles.ruleDiagram}>
-            <svg
-              viewBox="0 0 260 150"
-              role="img"
-              aria-label={`${mechanic.name}规则示意：${scene.frames[panel]}`}
-            >
-              <defs>
-                <marker
-                  id={uid}
-                  markerWidth="7"
-                  markerHeight="7"
-                  refX="6"
-                  refY="3"
-                  orient="auto"
-                >
-                  <path d="M0 0L6 3L0 6" fill="#282439" />
-                </marker>
-              </defs>
-              {mechanicArtwork[id]?.(panel, uid)}
-            </svg>
+      <div className={styles.frames}>
+        {scene.frames.map((caption, i) => (
+          <figure key={i} className={styles.frame}>
+            <div className={styles.panelNumber}>
+              0{i + 1}
+              <span>{stages[i]}</span>
+            </div>
+            <div className={styles.comicDrawing} data-panel={i}>
+              <ArtImage
+                className={styles.comicStrip}
+                src={`/art/comics/${id}.webp`}
+                width={1800}
+                height={600}
+                alt={`${mechanic.name}漫画第${i + 1}格：${stages[i]}`}
+              />
+            </div>
             <figcaption>
-              <strong>{scene.objects[panel]}</strong>
-              <p>{scene.frames[panel]}</p>
+              <strong>{scene.objects[i]}</strong>
+              <p>{caption}</p>
             </figcaption>
           </figure>
-          <nav className={styles.diagramSteps} aria-label="示意步骤">
-            {scene.objects.map((label, i) => (
-              <button
-                key={i}
-                aria-pressed={panel === i}
-                aria-label={`${i + 1}. ${label}`}
-                onClick={() => setPanel(i)}
+        ))}
+      </div>
+      <div
+        className={styles.rules}
+        role="group"
+        aria-label={`${mechanic.name}规则示意`}
+      >
+        <p className={styles.ruleHeading}>规则示意</p>
+        {scene.objects.map((label, i) => {
+          const markerId = `rule-${uid}-${i}`;
+          return (
+            <figure key={i} className={styles.ruleDiagram} data-rule-stage={i}>
+              <svg
+                viewBox="0 0 260 150"
+                role="img"
+                aria-label={`${mechanic.name}规则示意第${i + 1}步：${scene.frames[i]}`}
               >
-                {compact ? i + 1 : `${i + 1}. ${label}`}
-              </button>
-            ))}
-          </nav>
-        </>
-      )}
+                <defs>
+                  <marker
+                    id={markerId}
+                    markerWidth="7"
+                    markerHeight="7"
+                    refX="6"
+                    refY="3"
+                    orient="auto"
+                  >
+                    <path d="M0 0L6 3L0 6" fill="#282439" />
+                  </marker>
+                </defs>
+                {mechanicArtwork[id]?.(i, markerId)}
+              </svg>
+              <figcaption>
+                <strong>
+                  0{i + 1} · {label}
+                </strong>
+              </figcaption>
+            </figure>
+          );
+        })}
+      </div>
     </section>
   );
 }
 export function MechanicExamples({
   id,
-  limit = 2,
+  limit,
   small = false,
 }: {
   id: string;
   limit?: number;
   small?: boolean;
 }) {
-  const examples = (mechanicExamples[id] ?? []).slice(0, limit);
+  const curated = mechanicExamples[id] ?? [];
+  const examples = limit === undefined ? curated : curated.slice(0, limit);
   if (!examples.length)
     return <p className={styles.emptyExamples}>游戏范例正在补充。</p>;
   return (

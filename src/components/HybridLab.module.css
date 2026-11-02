@@ -805,3 +805,64 @@
     transition: none !important;
   }
 }
+
+.workflowBar {
+  position: sticky;
+  top: 12px;
+  z-index: 12;
+  background: #211e30;
+  border: 1px solid #73617f;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 3px 3px 0 #090a12;
+}
+.workflowBar .steps {
+  margin: 0 0 10px;
+}
+.workflowActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.workflowActions span {
+  font:
+    11px Consolas,
+    monospace;
+  color: #bdacd0;
+}
+.workflowActions button {
+  font-size: 12px;
+  background: #352b46;
+}
+.referenceDetails h3 {
+  color: #bca4cb;
+  font-size: 13px;
+}
+.referenceCard + .referenceCard {
+  margin-top: 14px;
+  border-top: 1px solid #5f4d6d;
+}
+.lab,
+.lab section,
+.lab button,
+.lab li,
+.lab p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .workflowBar {
+    top: 8px;
+    padding: 7px;
+  }
+  .workflowActions button {
+    padding: 8px;
+    font-size: 11px;
+  }
+  .candidates {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lab[data-step="2"] .summary {
+    display: block;
+  }
+}

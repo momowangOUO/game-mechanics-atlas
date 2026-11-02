@@ -25,8 +25,6 @@ import styles from "./Compare.module.css";
 import { evidenceLabels } from "@/lib/evidence-labels";
 
 type Side = { gameId: string; scopeId: string };
-type View = "mechanics" | "structure" | "heat";
-const pageSize = 12;
 
 function resolvePair(leftId?: string, rightId?: string): [Game, Game] {
   const left = getGame(leftId ?? "") ?? getGame("balatro") ?? games[0];
@@ -70,8 +68,8 @@ function Observation({ instance }: { instance?: MechanicInstance }) {
   if (!instance)
     return <p className={styles.unknown}>这个范围还没有相关记录。</p>;
   return (
-    <details className={styles.observation}>
-      <summary>证据与条件</summary>
+    <div className={styles.observation}>
+      <h4>证据与条件</h4>
       <p className={styles.evidence}>{evidenceLabels[instance.evidenceKind]}</p>
       <p>{instance.rationale}</p>
       {instance.condition && (
@@ -81,7 +79,7 @@ function Observation({ instance }: { instance?: MechanicInstance }) {
         <p className={styles.small}>原始范围：{instance.scopeNote}</p>
       )}
       <SourceLinks ids={instance.sourceIds} />
-    </details>
+    </div>
   );
 }
 
@@ -183,18 +181,26 @@ function StructureFile({ side }: { side: Side }) {
         <p>当前机制范围：{scopeLabel(side.scopeId)}</p>
       </header>
       <div className={styles.paper}>
-        <p className={styles.paperLabel}>默认范围档案 / {defaultRange}</p>
-        {!isDefault && (
+        <p className={styles.paperLabel}>
+          玩法笔记 / {scopeLabel(side.scopeId)}
+        </p>
+        {isDefault ? (
+          <>
+            <p className={styles.small}>
+              以下是根据资料整理的玩法笔记，具体规则请核对机制记录与原始来源。
+            </p>
+            <Notes title="核心循环 · 编辑归纳" items={game.coreLoop} />
+            <Notes title="资源与经济 · 资料笔记" items={game.resourceNotes} />
+            <Notes
+              title="成长与延续 · 资料笔记"
+              items={game.progressionNotes}
+            />
+          </>
+        ) : (
           <p className={styles.rangeWarning}>
-            当前选择与默认范围不同。以下循环、资源和成长笔记仍介绍默认范围，不代表当前模式的规则。
+            这个范围的循环、资源与成长笔记还未整理。可切换到默认范围查看已有笔记。
           </p>
         )}
-        <p className={styles.small}>
-          以下是根据资料整理的玩法笔记，具体规则请核对机制记录与原始来源。
-        </p>
-        <Notes title="核心循环 · 编辑归纳" items={game.coreLoop} />
-        <Notes title="资源与经济 · 资料笔记" items={game.resourceNotes} />
-        <Notes title="成长与延续 · 资料笔记" items={game.progressionNotes} />
       </div>
       <section className={styles.buildSection}>
         <h3>构筑与配置 · 当前范围</h3>
@@ -253,10 +259,8 @@ export default function Compare({
     gameId: initialGames[1].id,
     scopeId: initialGames[1].defaultScopeId,
   });
-  const [view, setView] = useState<View>("mechanics");
   const [dimension, setDimension] = useState("all");
   const [differencesOnly, setDifferencesOnly] = useState(true);
-  const [page, setPage] = useState(1);
   const leftGame = getGame(left.gameId)!;
   const rightGame = getGame(right.gameId)!;
   const leftInstances = getInstances(left.gameId, left.scopeId);
@@ -275,12 +279,7 @@ export default function Compare({
       (dimension === "all" || row.mechanic.dimension === dimension) &&
       (!differencesOnly || row.left !== row.right),
   );
-  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
-  const currentPage = Math.min(page, pageCount);
-  const visible = filtered.slice(
-    (currentPage - 1) * pageSize,
-    currentPage * pageSize,
-  );
+  const visible = filtered;
   const differentCount = rows.filter((row) => row.left !== row.right).length;
   const bothUnknown = rows.filter(
     (row) => row.left === "unknown" && row.right === "unknown",
@@ -293,7 +292,6 @@ export default function Compare({
       gameId: id,
       scopeId: game.defaultScopeId,
     });
-    setPage(1);
   }
   function changeScope(which: "left" | "right", id: string) {
     const side = which === "left" ? left : right;
@@ -302,7 +300,6 @@ export default function Compare({
     )
       return;
     (which === "left" ? setLeft : setRight)({ ...side, scopeId: id });
-    setPage(1);
   }
 
   return (
@@ -326,7 +323,6 @@ export default function Compare({
             onClick={() => {
               setLeft(right);
               setRight(left);
-              setPage(1);
             }}
             aria-label="交换左右游戏与研究范围"
           >
@@ -341,7 +337,7 @@ export default function Compare({
           onScope={(id) => changeScope("right", id)}
         />
       </div>
-      <div className={styles.viewSwitch} role="group" aria-label="对比视图">
+      <nav className={styles.viewSwitch} aria-label="对比章节">
         {(
           [
             ["mechanics", "01", "机制记录"],
@@ -349,236 +345,212 @@ export default function Compare({
             ["heat", "03", "搜索热度"],
           ] as const
         ).map(([id, number, name]) => (
-          <button
-            type="button"
-            key={id}
-            aria-pressed={view === id}
-            onClick={() => setView(id)}
-          >
+          <a key={id} href={`#compare-${id}`}>
             <small>{number}</small>
-            {name}
-          </button>
+            {name} ↓
+          </a>
         ))}
-      </div>
+      </nav>
 
-      {view === "mechanics" && (
-        <section aria-label="机制记录对比">
-          <div className={styles.readingNote}>
-            <div>
-              <span className="eyebrow">READ THE RECORDS</span>
-              <h2>对照机制记录，查看规则差异</h2>
-              <p>
-                “仅看差异”比较两侧所选范围的记录。遇到“条件成立”，请展开查看适用条件；“尚未确认”表示资料不足，不等于没有这项机制。
-              </p>
-            </div>
-            <div className={styles.recordCounts}>
-              <div>
-                <strong>{differentCount}</strong>
-                <span>项记录不同</span>
-              </div>
-              <div>
-                <strong>{bothUnknown}</strong>
-                <span>项双方未知</span>
-              </div>
-            </div>
-          </div>
-          <Window
-            title="MECHANIC MATRIX / 机制对照表"
-            extra={<span>{mechanics.length} 项收录机制</span>}
-            className={styles.matrixWindow}
-          >
-            <div className={styles.filters}>
-              <label className={styles.field}>
-                <span>主维度</span>
-                <select
-                  value={dimension}
-                  onChange={(event) => {
-                    setDimension(event.target.value);
-                    setPage(1);
-                  }}
-                >
-                  <option value="all">全部主维度</option>
-                  {dimensions.map((item) => (
-                    <option key={item.id} value={item.id}>
-                      {item.name}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <div
-                className={styles.recordSwitch}
-                role="group"
-                aria-label="记录筛选"
-              >
-                <button
-                  type="button"
-                  aria-pressed={differencesOnly}
-                  onClick={() => {
-                    setDifferencesOnly(true);
-                    setPage(1);
-                  }}
-                >
-                  仅看差异
-                </button>
-                <button
-                  type="button"
-                  aria-pressed={!differencesOnly}
-                  onClick={() => {
-                    setDifferencesOnly(false);
-                    setPage(1);
-                  }}
-                >
-                  全部记录
-                </button>
-              </div>
-              <p className={styles.resultCount} aria-live="polite">
-                {filtered.length} 项符合筛选
-              </p>
-            </div>
-            <p className={styles.tableNote}>
-              展开“证据与条件”可核对来源。全部记录包含双方尚未确认的机制。
+      <section
+        id="compare-mechanics"
+        className={styles.chapter}
+        aria-label="机制记录对比"
+      >
+        <div className={styles.readingNote}>
+          <div>
+            <span className="eyebrow">READ THE RECORDS</span>
+            <h2>对照机制记录，查看规则差异</h2>
+            <p>
+              “仅看差异”比较两侧所选范围的记录。遇到“条件成立”，请连同适用条件查看；“尚未确认”表示资料不足，不等于没有这项机制。
             </p>
-            {visible.length ? (
-              <table className={styles.table}>
-                <caption className="sr-only">
-                  {leftGame.name}与{rightGame.name}的机制记录对比，第
-                  {currentPage}页，共{pageCount}页
-                </caption>
-                <colgroup>
-                  <col className={styles.mechanicColumn} />
-                  <col />
-                  <col />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th scope="col">机制 / 主维度</th>
-                    <th scope="col">
-                      <span>{leftGame.name}</span>
-                      <small>{scopeLabel(left.scopeId)}</small>
-                    </th>
-                    <th scope="col">
-                      <span>{rightGame.name}</span>
-                      <small>{scopeLabel(right.scopeId)}</small>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {visible.map((row) => (
-                    <tr
-                      key={row.mechanic.id}
-                      className={
-                        row.left !== row.right ? styles.differentRow : ""
-                      }
-                    >
-                      <th scope="row">
-                        <Link href={`/mechanics/${row.mechanic.id}`}>
-                          {row.mechanic.name} ↗
-                        </Link>
-                        <span className={styles.dimension}>
-                          {
-                            dimensions.find(
-                              (item) => item.id === row.mechanic.dimension,
-                            )?.name
-                          }
-                        </span>
-                      </th>
-                      <td>
-                        <StateBadge status={row.left} />
-                        <Observation
-                          instance={leftInstances.find(
-                            (instance) =>
-                              instance.mechanicId === row.mechanic.id,
-                          )}
-                        />
-                      </td>
-                      <td>
-                        <StateBadge status={row.right} />
-                        <Observation
-                          instance={rightInstances.find(
-                            (instance) =>
-                              instance.mechanicId === row.mechanic.id,
-                          )}
-                        />
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            ) : (
-              <EmptyState
-                title="这个筛选下没有记录差异"
-                description="两侧可能记录相同，也可能都还未确认。切换“全部记录”可继续查看。"
-              >
-                <button
-                  type="button"
-                  className="button primary"
-                  onClick={() => {
-                    setDimension("all");
-                    setDifferencesOnly(false);
-                    setPage(1);
-                  }}
-                >
-                  查看全部机制
-                </button>
-              </EmptyState>
-            )}
-            <nav className={styles.pagination} aria-label="机制对比翻页">
-              <p aria-live="polite">
-                第 <strong>{currentPage}</strong> / {pageCount} 页{" "}
-                <span>· 每页最多 {pageSize} 项</span>
-              </p>
-              <div>
-                <button
-                  type="button"
-                  disabled={currentPage <= 1}
-                  onClick={() => setPage(currentPage - 1)}
-                >
-                  ← 上一页
-                </button>
-                <button
-                  type="button"
-                  disabled={currentPage >= pageCount}
-                  onClick={() => setPage(currentPage + 1)}
-                >
-                  下一页 →
-                </button>
-              </div>
-            </nav>
-          </Window>
-        </section>
-      )}
-
-      {view === "structure" && (
-        <section aria-label="循环资源与构筑对比">
-          <p className={styles.sectionIntro}>
-            循环、资源和成长笔记介绍默认范围；构筑与配置记录则对应两侧当前选择。
-          </p>
-          <div className={styles.twoFiles}>
-            <StructureFile side={left} />
-            <StructureFile side={right} />
           </div>
-        </section>
-      )}
-      {view === "heat" && (
-        <section aria-label="搜索热度对比">
-          <div className={styles.readingNote}>
+          <div className={styles.recordCounts}>
             <div>
-              <p className="eyebrow">SEARCH SIGNAL / 搜索记录</p>
-              <h2>搜索关注不等于玩法偏好</h2>
-              <p>
-                这里比较导入记录中与两款游戏相关的搜索次数，不随上方模式切换。来源见标签；这些次数不能说明玩家偏好哪项机制，也不代表销量。
-              </p>
+              <strong>{differentCount}</strong>
+              <span>项记录不同</span>
+            </div>
+            <div>
+              <strong>{bothUnknown}</strong>
+              <span>项双方未知</span>
             </div>
           </div>
-          <div className={styles.twoFiles}>
-            {[leftGame, rightGame].map((game) => (
-              <Window title={`SEARCH FILE / ${game.name}`} key={game.id}>
-                <HeatProfileMini topicId={`game:${game.id}`} />
-              </Window>
-            ))}
+        </div>
+        <Window
+          title="MECHANIC MATRIX / 机制对照表"
+          extra={<span>{mechanics.length} 项收录机制</span>}
+          className={styles.matrixWindow}
+        >
+          <div className={styles.filters}>
+            <label className={styles.field}>
+              <span>主维度</span>
+              <select
+                value={dimension}
+                onChange={(event) => {
+                  setDimension(event.target.value);
+                }}
+              >
+                <option value="all">全部主维度</option>
+                {dimensions.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <div
+              className={styles.recordSwitch}
+              role="group"
+              aria-label="记录筛选"
+            >
+              <button
+                type="button"
+                aria-pressed={differencesOnly}
+                onClick={() => {
+                  setDifferencesOnly(true);
+                }}
+              >
+                仅看差异
+              </button>
+              <button
+                type="button"
+                aria-pressed={!differencesOnly}
+                onClick={() => {
+                  setDifferencesOnly(false);
+                }}
+              >
+                全部记录
+              </button>
+            </div>
+            <p className={styles.resultCount} aria-live="polite">
+              {filtered.length} 项符合筛选
+            </p>
           </div>
-        </section>
-      )}
+          <p className={styles.tableNote}>
+            每项记录下方列出证据、条件和来源。全部记录包含双方尚未确认的机制。
+          </p>
+          {visible.length ? (
+            <table className={styles.table}>
+              <caption className="sr-only">
+                {leftGame.name}与{rightGame.name}的全部筛选机制记录对比
+              </caption>
+              <colgroup>
+                <col className={styles.mechanicColumn} />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">机制 / 主维度</th>
+                  <th scope="col">
+                    <span>{leftGame.name}</span>
+                    <small>{scopeLabel(left.scopeId)}</small>
+                  </th>
+                  <th scope="col">
+                    <span>{rightGame.name}</span>
+                    <small>{scopeLabel(right.scopeId)}</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {visible.map((row) => (
+                  <tr
+                    key={row.mechanic.id}
+                    className={
+                      row.left !== row.right ? styles.differentRow : ""
+                    }
+                  >
+                    <th scope="row">
+                      <Link href={`/mechanics/${row.mechanic.id}`}>
+                        {row.mechanic.name} ↗
+                      </Link>
+                      <span className={styles.dimension}>
+                        {
+                          dimensions.find(
+                            (item) => item.id === row.mechanic.dimension,
+                          )?.name
+                        }
+                      </span>
+                    </th>
+                    <td
+                      data-label={`${leftGame.name} · ${scopeLabel(left.scopeId)}`}
+                    >
+                      <StateBadge status={row.left} />
+                      <Observation
+                        instance={leftInstances.find(
+                          (instance) => instance.mechanicId === row.mechanic.id,
+                        )}
+                      />
+                    </td>
+                    <td
+                      data-label={`${rightGame.name} · ${scopeLabel(right.scopeId)}`}
+                    >
+                      <StateBadge status={row.right} />
+                      <Observation
+                        instance={rightInstances.find(
+                          (instance) => instance.mechanicId === row.mechanic.id,
+                        )}
+                      />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <EmptyState
+              title="这个筛选下没有记录差异"
+              description="两侧可能记录相同，也可能都还未确认。切换“全部记录”可继续查看。"
+            >
+              <button
+                type="button"
+                className="button primary"
+                onClick={() => {
+                  setDimension("all");
+                  setDifferencesOnly(false);
+                }}
+              >
+                查看全部机制
+              </button>
+            </EmptyState>
+          )}
+        </Window>
+      </section>
+      <section
+        id="compare-structure"
+        className={styles.chapter}
+        aria-label="循环资源与构筑对比"
+      >
+        <h2>02 / 循环与构筑</h2>
+        <p className={styles.sectionIntro}>
+          各项内容对应两侧当前选择；尚未整理的范围会标明缺少记录。
+        </p>
+        <div className={styles.twoFiles}>
+          <StructureFile side={left} />
+          <StructureFile side={right} />
+        </div>
+      </section>
+      <section
+        id="compare-heat"
+        className={styles.chapter}
+        aria-label="搜索热度对比"
+      >
+        <div className={styles.readingNote}>
+          <div>
+            <p className="eyebrow">SEARCH SIGNAL / 搜索记录</p>
+            <h2>搜索关注不等于玩法偏好</h2>
+            <p>
+              这里比较导入记录中与两款游戏相关的搜索次数，不随上方模式切换。来源见标签；这些次数不能说明玩家偏好哪项机制，也不代表销量。
+            </p>
+          </div>
+        </div>
+        <div className={styles.twoFiles}>
+          {[leftGame, rightGame].map((game) => (
+            <Window title={`SEARCH FILE / ${game.name}`} key={game.id}>
+              <HeatProfileMini topicId={`game:${game.id}`} />
+            </Window>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

@@ -19,9 +19,9 @@ async function publishedHomeSearches(page: Page) {
       .find((market: { region: string }) => market.region === "TW")
       .entries.map((entry: { query: string }) => entry.query),
   );
-  const listed = await page
-    .locator(".home-heat-ranking li a > span")
-    .allTextContents();
+  const publishedNames = page.locator(".home-heat-ranking li a > span");
+  await expect(publishedNames).toHaveCount(5);
+  const listed = await publishedNames.allTextContents();
   expect(listed).toHaveLength(5);
   for (const name of listed) expect(names.has(name)).toBe(true);
   await expect(page.locator(".home-heat-ranking").locator("..")).toContainText(
@@ -122,7 +122,10 @@ test("imported working data survives case navigation and invalid or synthetic re
     .click();
   await expect(page).toHaveURL(/\/games\/[^/?]+\/?$/);
   await hydrated(page);
-  await page.getByRole("tab", { name: "热度标签", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "搜索资料 ↓", exact: true })
+    .click();
   await expect(page.locator(".heat-mini .seed")).toHaveText(
     "本地导入 · 来源见数据说明",
   );
@@ -253,7 +256,10 @@ test("mixed declared sources remain qualified in Compare while home keeps publis
     .getByRole("link", { name: "游戏对比", exact: true })
     .click();
   await hydrated(page);
-  await page.getByRole("button", { name: /搜索热度/ }).click();
+  await page
+    .getByRole("navigation", { name: "对比章节" })
+    .getByRole("link", { name: /搜索热度/ })
+    .click();
   const balatro = page.locator(".heat-mini").filter({
     has: page.locator(`a[href="${appHref("/heat?topic=game%3Abalatro")}"]`),
   });

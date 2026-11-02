@@ -9,113 +9,66 @@ for (const [width, height] of [
   [390, 844],
   [320, 640],
 ]) {
-  test(`classification reader shows its real comic and all frames at ${width}x${height}`, async ({
+  test(`classification article shows its real comic and all rule stages at ${width}x${height}`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height });
     await gotoApp(page, "/taxonomy?mechanic=dodge-move");
-    const reader = page.getByRole("region", {
-      name: "机制阅读卡",
-      exact: true,
-    });
+    const reader = page.locator('article[data-mechanic-id="dodge-move"]');
     const comic = reader.getByRole("region", {
       name: "闪避位移图解",
       exact: true,
     });
     await expect(comic).toBeVisible();
-    if (width > 700) {
-      await expect(comic.locator("figure:visible")).toHaveCount(1);
-      for (const number of [1, 2, 3]) {
-        await expect(
-          comic.getByRole("navigation", { name: "漫画分镜" }),
-        ).toContainText(`${number} / 3`);
-        if (number < 3)
-          await comic.getByRole("button", { name: "下一格 →" }).click();
-      }
-    } else {
-      await expect(comic.locator("figure:visible")).toHaveCount(3);
-      await expect(
-        comic.getByRole("navigation", { name: "漫画分镜" }),
-      ).not.toBeVisible();
-      let previousBottom = 0;
-      for (const frame of await comic.locator("figure").all()) {
-        await frame.scrollIntoViewIfNeeded();
-        await expect(frame.locator("figcaption")).toBeInViewport();
-        const drawing = (await frame.locator("[data-panel]").boundingBox())!;
-        expect(drawing.width).toBeGreaterThan(140);
-        expect(drawing.height).toBeGreaterThan(140);
-        const bounds = await frame.evaluate((element) => {
-          const rect = element.getBoundingClientRect();
-          return { top: rect.top + scrollY, bottom: rect.bottom + scrollY };
-        });
-        expect(bounds.top).toBeGreaterThanOrEqual(previousBottom);
-        previousBottom = bounds.bottom;
-      }
-      expect(
-        await page.evaluate(() => document.documentElement.scrollHeight),
-      ).toBeGreaterThan(height);
+    await expect(comic.locator("figure:visible")).toHaveCount(6);
+    await expect(comic.locator("[data-panel]")).toHaveCount(3);
+    await expect(comic.locator("[data-rule-stage] svg")).toHaveCount(3);
+    await expect(comic.locator("button, nav")).toHaveCount(0);
+    let previousBottom = 0;
+    for (const frame of await comic.locator("figure").all()) {
+      await frame.scrollIntoViewIfNeeded();
+      await expect(frame.locator("figcaption")).toBeInViewport();
+      const bounds = await frame.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        return { top: rect.top + scrollY, bottom: rect.bottom + scrollY };
+      });
+      expect(bounds.top).toBeGreaterThanOrEqual(previousBottom);
+      previousBottom = bounds.bottom;
     }
-    await comic.getByRole("button", { name: "规则示意", exact: true }).click();
-    await expect(comic.getByRole("img")).toBeVisible();
-    const panel = reader.getByRole("tabpanel");
-    if (width > 700) {
-      expect(
-        await panel.evaluate((e) => e.scrollHeight - e.clientHeight),
-      ).toBeLessThanOrEqual(2);
-    } else {
-      await expect(panel).toHaveCSS("overflow-y", "visible");
+    for (const drawing of await comic.locator("[data-panel]").all()) {
+      const bounds = (await drawing.boundingBox())!;
+      expect(bounds.width).toBeGreaterThan(140);
+      expect(bounds.height).toBeGreaterThan(140);
+      expect(bounds.width).toBeLessThanOrEqual(600);
+      expect(Math.abs(bounds.width - bounds.height)).toBeLessThan(1);
     }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollHeight),
+    ).toBeGreaterThan(height);
+    await expect(reader).toHaveCSS("overflow-y", "visible");
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth - innerWidth,
       ),
     ).toBe(0);
-    const open = reader.getByRole("button", { name: /看图理解/ });
+    const open = reader.getByRole("link", { name: "看图理解 ↓", exact: true });
     await expect(open).toBeVisible();
+    await expect(open).toHaveAttribute("href", "#mechanic-comic-dodge-move");
     await open.click();
-    const dialog = page.getByRole("dialog", {
-      name: "闪避位移 · 完整漫画",
-      exact: true,
-    });
-    await expect(dialog).toBeVisible();
-    const image = dialog.locator("figure:visible img").first();
-    await expect(image).toBeVisible();
-    expect((await image.boundingBox())!.height).toBeGreaterThan(180);
-    if (width <= 700) {
-      await expect(dialog.locator("figure:visible")).toHaveCount(3);
-      await expect(
-        dialog.getByRole("navigation", { name: "漫画分镜" }),
-      ).not.toBeVisible();
-      expect(
-        await dialog.evaluate(
-          (element) => element.scrollHeight - element.clientHeight,
-        ),
-      ).toBeGreaterThan(100);
-      const finalCaption = dialog
-        .locator("figure")
-        .last()
-        .locator("figcaption");
-      await finalCaption.scrollIntoViewIfNeeded();
-      await expect(finalCaption).toBeInViewport();
-      expect(
-        await dialog.evaluate((element) => element.scrollTop),
-      ).toBeGreaterThan(0);
-      await expect(
-        dialog.getByRole("button", { name: "关闭弹窗", exact: true }),
-      ).toBeInViewport();
-      expect(
-        await dialog.evaluate(
-          (element) => element.scrollWidth - element.clientWidth,
-        ),
-      ).toBeLessThanOrEqual(1);
-    }
-    await page.keyboard.press("Escape");
-    await expect(dialog).not.toBeVisible();
-    await expect(open).toBeFocused();
-    await open.click();
-    await dialog.getByRole("button", { name: "关闭弹窗", exact: true }).click();
-    await expect(dialog).not.toBeVisible();
-    await expect(open).toBeFocused();
+    await expect(page).toHaveURL(/#mechanic-comic-dodge-move$/);
+    await expect(
+      comic.getByRole("heading", { name: "闪避位移图解", exact: true }),
+    ).toBeInViewport();
+    await expect(page.getByRole("dialog")).toHaveCount(0);
+    await expect(reader.getByRole("tab")).toHaveCount(0);
+    await comic
+      .locator("figure")
+      .last()
+      .locator("figcaption")
+      .scrollIntoViewIfNeeded();
+    await expect(
+      comic.locator("figure").last().locator("figcaption"),
+    ).toBeInViewport();
   });
 }
 test("a game graph starts with all recorded directions and keeps them when changing focus", async ({
@@ -152,33 +105,50 @@ test("browsing into a mechanism opens its comic instead of the old text page", a
   page,
 }) => {
   await gotoApp(page, "/taxonomy?group=mobility-tools");
-  await page.getByRole("button", { name: /^闪避位移.*阅读/ }).click();
+  const group = page.locator('[data-taxonomy-group="mobility-tools"]');
+  await group
+    .getByRole("navigation", {
+      name: "特殊位移与空间连接机制目录",
+      exact: true,
+    })
+    .getByRole("link", { name: /闪避位移/ })
+    .click();
+  const article = page.locator('article[data-mechanic-id="dodge-move"]');
   await expect(
-    page
-      .getByRole("region", { name: "机制阅读卡", exact: true })
-      .getByRole("region", { name: "闪避位移图解", exact: true }),
+    article.getByRole("region", { name: "闪避位移图解", exact: true }),
   ).toBeVisible();
+  await expect(
+    article.getByRole("link", { name: "看图理解 ↓", exact: true }),
+  ).toHaveAttribute("href", "#mechanic-comic-dodge-move");
 });
 test("case relation view lists all mechanisms and opens the same scope in the interactive graph", async ({
   page,
 }) => {
   await gotoApp(page, "/games/balatro");
-  await page.getByRole("tab", { name: "关系视图", exact: true }).click();
+  const relations = page.getByRole("region", { name: "机制关系", exact: true });
+  await page
+    .getByRole("navigation", { name: "游戏研究章节", exact: true })
+    .getByRole("link", { name: "机制关系 ↓", exact: true })
+    .click();
+  for (const label of ["机制记录", "核心循环", "机制关系", "搜索资料"])
+    await expect(
+      page.getByRole("region", { name: label, exact: true }),
+    ).toBeVisible();
   const game = evidence.games.find((g: { id: string }) => g.id === "balatro");
   const ids = evidence.instances.filter(
     (i: { scopeId: string; status: string }) =>
       i.scopeId === game.defaultScopeId &&
       ["present", "conditional"].includes(i.status),
   );
-  await expect(page.locator(".case-relation-graph rect")).toHaveCount(
+  await expect(relations.locator(".case-relation-graph rect")).toHaveCount(
     ids.length,
   );
   await expect(
-    page
+    relations
       .getByRole("region", { name: "游戏机制总览", exact: true })
       .locator("button[data-mechanic-id]"),
   ).toHaveCount(ids.length);
-  const graphLink = page.getByRole("link", {
+  const graphLink = relations.getByRole("link", {
     name: "在完整交互图谱中查看 ↗",
     exact: true,
   });

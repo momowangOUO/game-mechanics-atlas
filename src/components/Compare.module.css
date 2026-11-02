@@ -108,7 +108,7 @@
   margin: 30px 0 23px;
   gap: 8px;
 }
-.viewSwitch button {
+.viewSwitch a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -120,7 +120,7 @@
   margin-bottom: -1px;
   font-size: 14px;
 }
-.viewSwitch button[aria-pressed="true"] {
+.viewSwitch a[aria-pressed="true"] {
   color: #f4eddf;
   border-bottom-color: #c4aff0;
   background: #302a43;
@@ -558,7 +558,7 @@
   .viewSwitch {
     gap: 0;
   }
-  .viewSwitch button {
+  .viewSwitch a {
     flex: 1;
     justify-content: center;
     gap: 6px;
@@ -642,5 +642,60 @@
   }
   .fileHeader {
     padding: 18px 20px;
+  }
+}
+
+.chapter {
+  min-width: 0;
+  margin: 38px 0;
+  scroll-margin-top: 24px;
+}
+.chapter > h2 {
+  margin-bottom: 18px;
+  font-size: 23px;
+}
+.viewSwitch {
+  flex-wrap: wrap;
+}
+.viewSwitch a {
+  color: #ddd0eb;
+  border-bottom-color: #75628e;
+}
+.viewSwitch a:focus-visible {
+  outline: 2px solid #88cdc5;
+  outline-offset: 3px;
+}
+.observation h4 {
+  font-size: 11px;
+  color: #ddc5ef;
+  margin: 0 0 8px;
+}
+@media (max-width: 480px) {
+  .table,
+  .table tbody,
+  .table tr,
+  .table td,
+  .table tbody th {
+    display: block;
+    width: 100%;
+  }
+  .table colgroup,
+  .table thead {
+    display: none;
+  }
+  .table tbody th {
+    border-top: 3px solid #8a709b;
+    padding: 14px 12px;
+  }
+  .table td {
+    border-right: 0;
+    padding: 14px 12px;
+  }
+  .table td::before {
+    content: attr(data-label);
+    display: block;
+    color: #e9dbf6;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 }

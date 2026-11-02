@@ -15,7 +15,10 @@ for (const width of [1440, 768, 390, 320]) {
   }) => {
     await page.setViewportSize({ width, height: 900 });
     await gotoApp(page, "/games/balatro");
-    await page.getByRole("tab", { name: "循环视图", exact: true }).click();
+    await page
+      .getByRole("navigation", { name: "游戏研究章节" })
+      .getByRole("link", { name: "核心循环 ↓", exact: true })
+      .click();
     const loop = page.getByTestId("game-loop");
     await expect(
       loop.getByRole("list", { name: "核心循环" }).locator("li"),
@@ -75,7 +78,10 @@ test("a nondefault scope stays unknown instead of inheriting the default loop", 
   page,
 }) => {
   await gotoApp(page, "/games/minecraft");
-  await page.getByRole("tab", { name: "循环视图", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "核心循环 ↓", exact: true })
+    .click();
   await expect(page.getByTestId("game-loop")).toBeVisible();
   await page
     .getByLabel("当前研究范围", { exact: true })
@@ -96,7 +102,10 @@ test("connections stay attached when the same loop reflows between desktop and p
 }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await gotoApp(page, "/games/counter-strike-2");
-  await page.getByRole("tab", { name: "循环视图", exact: true }).click();
+  await page
+    .getByRole("navigation", { name: "游戏研究章节" })
+    .getByRole("link", { name: "核心循环 ↓", exact: true })
+    .click();
   const loop = page.getByTestId("game-loop");
   for (const width of [1440, 320, 1440]) {
     await page.setViewportSize({ width, height: 900 });
